@@ -1,0 +1,44 @@
+===============================================================================
+                       CHULLOS TOURS - REGISTRO DE INFORMACIÓN PENDIENTE
+===============================================================================
+Fecha de creación: Agosto 2026
+Estado: Documento de referencia de datos de producción pendientes por actualizar
+
+Este archivo registra los datos e insumos reales que el cliente/equipo debe
+suministrar o actualizar antes del lanzamiento a producción:
+
+-------------------------------------------------------------------------------
+1. REDES SOCIALES OFICIALES (Actualizar en header.tsx y footer.tsx)
+-------------------------------------------------------------------------------
+  [ ] Facebook: Actuamente apunta a 'https://facebook.com/chullostours'
+  [ ] Instagram: Actuamente apunta a 'https://instagram.com/chullostours'
+  [ ] TikTok: Actuamente apunta a 'https://tiktok.com/@chullostours'
+  [ ] TripAdvisor: Actuamente apunta a 'https://tripadvisor.com'
+
+-------------------------------------------------------------------------------
+2. DATOS DE CONTACTO Y CORREO CORPORATIVO (Actualizar en header.tsx)
+-------------------------------------------------------------------------------
+  [ ] Correo electrónico oficial: Actualmente 'info@chullostours.com'
+  [ ] Números de WhatsApp:
+      - Principal: +51 992 558 512
+      - Secundario: +51 973 781 330
+
+-------------------------------------------------------------------------------
+3. RESEÑAS Y TESTIMONIOS REALES (Actualizar en src/app/page.tsx - TESTIMONIALS)
+-------------------------------------------------------------------------------
+  [ ] Proporcionar 3 a 6 reseñas reales de clientes de TripAdvisor o Google Reviews
+      con la siguiente estructura:
+      - Nombre del cliente
+      - País de origen / Bandera
+      - Comentario / Reseña corta
+      - Puntuación de estrellas (1-5)
+      - Tour realizado
+      - (Opcional) Foto de perfil del cliente
+
+-------------------------------------------------------------------------------
+4. INTEGRACIONES / BACKEND (Formularios)
+-------------------------------------------------------------------------------
+  [ ] Formulario de Newsletter (footer.tsx): Conectar con Mailchimp / SendGrid u otro servicio.
+  [ ] Buscador del Hero (page.tsx): Verificar rutas de resultados de búsqueda (`/tours?destino=...`).
+
+===============================================================================

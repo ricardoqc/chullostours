@@ -1,0 +1,351 @@
+{
+  "titulo": "Camino Inca Clásico 4 Días / 3 Noches",
+  "slug": "camino-inca-4-dias",
+  "url": "https://chullostours.com/tours/camino-inca-4-dias/",
+  "metas": {
+    "description": "Embárcate en la caminata más famosa de Sudamérica: Camino Inca 4 Días a Machu Picchu. Recorre Warmiwañusqa, Runkurakay, Sayacmarca y Phuyupatamarca. ¡Reserva con Chullos Tours!",
+    "og_title": "Camino Inca Clásico 4 Días / 3 Noches a Machu Picchu | Chullos Tours",
+    "og_url": "https://chullostours.com/tours/camino-inca-4-dias/"
+  },
+  "atributos": {
+    "duracion": "4 Días / 3 Noches",
+    "ubicacion": "Cusco - Valle Sagrado - Machu Picchu, Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Trekking / Arqueología / Camping / Aventura",
+    "alojamiento_incluido": "Campamentos Turísticos en Tiendas de Montaña",
+    "dificultad": "Desafiante / Exigente",
+    "altitud_maxima": "4,215 m.s.n.m. (Paso de Warmiwañusqa)",
+    "distancia_km": "43 km aprox.",
+    "grupo_max": 16,
+    "nivel_fisico": "Alto (Senderismo andino exigente)"
+  },
+  "resumen": "El Camino Inca Clásico de 4 días es la caminata legendaria por excelencia en Sudamérica. Atraviesa majestuosos pasos de alta montaña, densos bosques de nubes y misteriosos centros arqueológicos incas conectados por senderos milenarios de piedra antes de ingresar triunfalmente a Machu Picchu por la Puerta del Sol (Inti Punku).",
+  "descripcion_completa": "El Camino Inca Clásico de 4 Días y 3 Noches a Machu Picchu es reconocido mundialmente como una de las mejores experiencias de senderismo del planeta. Esta monumental ruta andina sigue las huellas de los incas a través del ancestral red de caminos Qhapaq Ñan, combinando paisajes de alta montaña andina, valles fértiles, bosques de nubes subtropicales y fascinantes complejos arqueológicos de piedra pulida a los que solo se puede acceder a pie.\n\nDurante los cuatro días de expedición, superarás retos memorables como el célebre abra o paso de Warmiwañusqa ('Paso de la Mujer Muerta') a 4,215 m.s.n.m., explorarás ciudadelas incas suspendidas en las nubes como Runkurakay, Sayacmarca, Phuyupatamarca y Wiñay Wayna, y acamparás bajo las estrellas andinas asistido por un equipo profesional de guías, cocineros de montaña y porteadores capacitados.\n\nEl punto culminante del trekking ocurre al amanecer del cuarto día, cuando alcanzamos el Inti Punku (Puerta del Sol) para presenciar los primeros rayos de luz dorada iluminando el enigmático Santuario Histórico de Machu Picchu. Tras la contemplación panorámica, realizarás una visita guiada detallada por la ciudadela y retornarás cómodamente a Cusco a bordo del tren panorámico. Una verdadera aventura transformadora con el respaldo de Chullos Tours como operador autorizado directo.",
+  "propuesta_de_valor": [
+    "Operador autorizado con permisos oficiales garantizados para el Camino Inca.",
+    "Equipo de campamento de primera calidad (carpas térmicas cuatristacionales y colchonetas inflables).",
+    "Menús andinos gourmet nutritivos preparados frescos por chefs de montaña en cada campamento.",
+    "Atención profesional de porteadores tradicionales respetando los estándares de bienestar laboral.",
+    "Guías de alta montaña bilingües altamente experimentados con equipamiento de seguridad y oxígeno."
+  ],
+  "destacados_highlights": [
+    "Paso de Warmiwañusqa (4,215 m.s.n.m.): Desafío y cumbre del trekking con vistas espectaculares.",
+    "Complejo Arqueológico de Sayacmarca: Fortaleza inca construida en la cima de un risco andino.",
+    "Sitio Inca de Phuyupatamarca: 'La Ciudad entre las Nubes' con impresionantes fuentes ceremoniales.",
+    "Ingreso al Amanecer por Inti Punku: Llegada emotiva y vista panorámica primera de Machu Picchu.",
+    "Tour Guiado en Machu Picchu: Recorrido completo por la obra cumbre de la ingeniería incaica."
+  ],
+  "galeria": [
+    {
+      "src": "/tours/camino-inca-4-dias/05.jpg",
+      "alt": "Camino Inca Clásico 4 Días / 3 Noches - 05.jpg"
+    },
+    {
+      "src": "/tours/camino-inca-4-dias/06.avif",
+      "alt": "Camino Inca Clásico 4 Días / 3 Noches - 06.avif"
+    },
+    {
+      "src": "/tours/camino-inca-4-dias/07.avif",
+      "alt": "Camino Inca Clásico 4 Días / 3 Noches - 07.avif"
+    },
+    {
+      "src": "/tours/camino-inca-4-dias/08.avif",
+      "alt": "Camino Inca Clásico 4 Días / 3 Noches - 08.avif"
+    },
+    {
+      "src": "/tours/camino-inca-4-dias/09.jpg",
+      "alt": "Camino Inca Clásico 4 Días / 3 Noches - 09.jpg"
+    },
+    {
+      "src": "/tours/camino-inca-4-dias/11.jpg",
+      "alt": "Camino Inca Clásico 4 Días / 3 Noches - 11.jpg"
+    }
+  ],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "Cusco - KM 82 (Piscacucho) - Patallacta - Wayllabamba",
+      "descripcion": "Encuentro en Cusco, viaje al KM 82 para el control oficial e inicio del trekking suave bordeando el río Urubamba y admirando las ruinas de Patallacta.",
+      "actividades": [
+        "05:00 AM | Recojo del hotel en Cusco y traslado en bus privado hacia el Valle Sagrado.",
+        "07:30 AM | Parada breve en Ollantaytambo para compras de última hora.",
+        "08:30 AM | Llegada al KM 82 (Piscacucho), presentación de documentos e ingreso oficial al parque.",
+        "09:00 AM | Inicio de la caminata bordeando las aguas cristalinas del río Urubamba.",
+        "11:30 AM | Vista panorámica de las imponentes terrazas y ruinas agrícolas de Patallacta.",
+        "13:00 PM | Almuerzo nutritivo preparado por nuestro chef de montaña en Miskay.",
+        "14:30 PM | Ascenso gradual por el valle del río Cusichaca hacia la comunidad de Wayllabamba.",
+        "17:00 PM | Llegada al primer campamento en Wayllabamba (3,000 m.s.n.m.).",
+        "19:00 PM | Cena andina en la carpa comedor y descanso."
+      ],
+      "alojamiento": "Campamento Wayllabamba (Carpas térmicas)",
+      "comidas_incluidas": [
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "dia": 2,
+      "titulo": "Wayllabamba - Paso de Warmiwañusqa - Pacaymayo",
+      "descripcion": "El día más exigente de la ruta, conquistando el mítico abra de Warmiwañusqa a 4,215 m.s.n.m. para luego descender hacia el valle de Pacaymayo.",
+      "actividades": [
+        "06:00 AM | Desayuno fortificante a base de cereales andinos, pan tostado y bebidas calientes.",
+        "07:00 AM | Inicio de la caminata en empinado ascenso a través del bosque andino de Ayapata.",
+        "10:00 AM | Breve parada de descanso en Llulluchapampa para hidratación y frutos secos.",
+        "12:00 PM | Conquista del punto más alto del trekking: el Paso de Warmiwañusqa (4,215 m.s.n.m.). Tiempo para fotos y celebración.",
+        "13:00 PM | Descenso por escalinatas incas hacia el profundo valle de Pacaymayo.",
+        "14:30 PM | Llegada al campamento de Pacaymayo y almuerzo reconfortante.",
+        "16:00 PM | Tarde libre para descanso, recuperación física e interacción con el equipo.",
+        "18:30 PM | Lonche caliente con té de coca y cena especial."
+      ],
+      "alojamiento": "Campamento Pacaymayo (3,600 m.s.n.m.)",
+      "comidas_incluidas": [
+        "Desayuno",
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "dia": 3,
+      "titulo": "Pacaymayo - Runkurakay - Sayacmarca - Phuyupatamarca - Wiñay Wayna",
+      "descripcion": "El tramo más escénico e históricamente rico, atravesando el segundo paso, numerosos complejos incaicos y el hermoso bosque de nubes.",
+      "actividades": [
+        "06:00 AM | Desayuno en el campamento de Pacaymayo.",
+        "07:00 AM | Ascenso al sitio arqueológico circular de Runkurakay y cruce del segundo abra (3,950 m.s.n.m.).",
+        "09:30 AM | Visita guiada a la enigmática fortaleza inca de Sayacmarca construida al borde de un precipicio.",
+        "11:00 AM | Caminata por los túneles incas excavados en roca sólida y bosque nuboso.",
+        "13:00 PM | Visita a Phuyupatamarca ('La Ciudad sobre las Nubes') y almuerzo en la ruta.",
+        "15:30 PM | Descenso por 3,000 escalones incas perfectamente preservados hasta Wiñay Wayna.",
+        "17:00 PM | Llegada al último campamento en Wiñay Wayna (2,650 m.s.n.m.).",
+        "19:00 PM | Cena festiva de despedida con el equipo de cocineros y porteadores."
+      ],
+      "alojamiento": "Campamento Wiñay Wayna",
+      "comidas_incluidas": [
+        "Desayuno",
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "dia": 4,
+      "titulo": "Wiñay Wayna - Inti Punku - Tour en Machu Picchu - Retorno a Cusco",
+      "descripcion": "Caminata final al amanecer hacia el Inti Punku para ver Machu Picchu iluminado por el sol, tour guiado y retorno en tren a Cusco.",
+      "actividades": [
+        "04:00 AM | Despierto temprano y desayuno en el campamento.",
+        "05:00 AM | Control final de ingreso para el tramo Wiñay Wayna - Inti Punku.",
+        "06:30 AM | Llegada a la Puerta del Sol (Inti Punku) y contemplación sublime de Machu Picchu al amanecer.",
+        "08:00 AM | Descenso a la ciudadela inca para el tour guiado completo de 2.5 horas.",
+        "11:00 AM | Descenso en bus hacia Machupicchu Pueblo (Aguas Calientes).",
+        "13:00 PM | Tiempo libre para almorzar (no incluido) y explorar Machupicchu Pueblo.",
+        "15:20 PM | Abordaje del tren turístico con destino a Ollantaytambo.",
+        "17:15 PM | Traslado terrestre en bus privado desde Ollantaytambo a Cusco.",
+        "19:30 PM | Arribo final a la ciudad de Cusco."
+      ],
+      "alojamiento": "No incluido",
+      "comidas_incluidas": [
+        "Desayuno"
+      ]
+    }
+  ],
+  "incluye": [
+    "Reunión informativa previa al viaje (briefing) en nuestra oficina en Cusco.",
+    "Traslado terrestre privado desde Cusco hasta el KM 82 (inicio de caminata).",
+    "Boleto oficial de ingreso al Camino Inca y a la Ciudadela de Machu Picchu.",
+    "Guía profesional de alta montaña bilingüe (Español / Inglés).",
+    "Equipo de camping completo: carpas térmicas profesionales (2 personas por carpa de 4 personas) y colchonetas aislarte.",
+    "Equipo de porteadores para transportar alimentos y carpas de campamento.",
+    "Chef de montaña profesional y equipo de cocina completo.",
+    "Alimentación completa durante la caminata: 3 Desayunos, 3 Almuerzos, 3 Cenas y snacks diarios.",
+    "Ticket de autobús de bajada desde Machu Picchu a Aguas Calientes el Día 4.",
+    "Ticket de tren turístico de retorno desde Aguas Calientes hasta Ollantaytambo.",
+    "Traslado en bus privado Ollantaytambo - Cusco.",
+    "Botiquín de primeros auxilios y oxígeno de emergencia."
+  ],
+  "no_incluye": [
+    "Desayuno del primer día y almuerzo/cena del cuarto día en Aguas Calientes.",
+    "Bolsa de dormir (sleeping bag) adecuada para bajas temperaturas (alquilable con nosotros).",
+    "Porteador personal adicional para equipaje privado (opcional para alquiler).",
+    "Ingresos opcionales a la montaña Huayna Picchu.",
+    "Propinas para el equipo de porteadores, cocinero y guía (voluntarias)."
+  ],
+  "recomendaciones": [
+    "Reservar con 5 a 6 meses de anticipación debido a los cupos diarios extremadamente limitados.",
+    "Aclimatar en la ciudad de Cusco (3,400 m.s.n.m.) por lo menos 2 días completos antes de iniciar el trek.",
+    "Empacar un sleeping bag con rango térmico de -5 °C a -10 °C y bastones de trekking con punta de goma.",
+    "Llevar ropa técnica transpirable, casaca impermeable Gore-Tex, guantes térmicos y gorro de lana.",
+    "Llevar cargador portátil (power bank) para teléfonos y cámaras ya que no hay electricidad en los campamentos."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "KM 82 (Piscacucho)",
+      "tipo": "Punto de Inicio de la Ruta",
+      "descripcion": "Comunidad a orillas del río Urubamba donde se encuentra el puesto de control principal del Camino Inca.",
+      "altitud": "2,600 m.s.n.m."
+    },
+    {
+      "nombre": "Paso de Warmiwañusqa",
+      "tipo": "Paso de Montaña (Abra)",
+      "descripcion": "El abra más alta del trekking, con impresionantes vistas de picos nevados y valles interandinos.",
+      "altitud": "4,215 m.s.n.m."
+    },
+    {
+      "nombre": "Sayacmarca",
+      "tipo": "Complejo Arqueológico Inca",
+      "descripcion": "Fortaleza inexpugnable incaica edificada en lo alto de un acantilado rocoso rodeado de vegetación.",
+      "altitud": "3,600 m.s.n.m."
+    },
+    {
+      "nombre": "Phuyupatamarca",
+      "tipo": "Ciudadela Arqueológica",
+      "descripcion": "Conocida como 'La Ciudad entre las Nubes', célebre por sus baños ceremoniales y miradores andinos.",
+      "altitud": "3,680 m.s.n.m."
+    },
+    {
+      "nombre": "Inti Punku",
+      "tipo": "Puerta del Sol",
+      "descripcion": "Portal monumental de ingreso inca desde donde se contempla por primera vez la vista de Machu Picchu.",
+      "altitud": "2,730 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Qué distancia total se camina en los 4 días?",
+      "respuesta": "La distancia total del trekking es de aproximadamente 43 kilómetros repartidos en cuatro jornadas de caminata."
+    },
+    {
+      "pregunta": "¿Quién lleva mi equipaje durante el Camino Inca 4 Días?",
+      "respuesta": "Nuestro equipo de porteadores transporta las carpas, alimentos y equipos de cocina. Tú llevas tu mochila personal de uso diario (máximo 5-7 kg). Puedes contratar un porteador extra si deseas que lleven tu equipaje personal."
+    },
+    {
+      "pregunta": "¿Hay baños y duchas en los campamentos?",
+      "respuesta": "Los campamentos cuentan con servicios higiénicos básicos gubernamentales. Adicionalmente, Chullos Tours provee carpas baño químicas privadas en los campamentos para mayor comodidad."
+    },
+    {
+      "pregunta": "¿Qué sucede si sufro de mal de altura durante la ruta?",
+      "respuesta": "Nuestros guías están capacitados en primeros auxilios en montaña y llevan un botiquín completo con balón de oxígeno. Si el malestar es severo, se coordina la evacuación segura."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "Camino Inca 4 Días",
+    "meta_title": "Camino Inca Clásico 4 Días a Machu Picchu | Chullos Tours Perú",
+    "meta_description": "Reserva el Camino Inca Clásico 4 Días / 3 Noches. La caminata número uno a Machu Picchu con permisos garantizados, campamentos, porteadores y guía experto.",
+    "canonical": "https://chullostours.com/tours/camino-inca-4-dias/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "Camino Inca Clásico 4 Días / 3 Noches | Chullos Tours",
+      "og_description": "Conquista el legendario Camino Inca de 4 días a Machu Picchu. Una aventura inolvidable por los Andes peruanos.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/camino-inca-4-dias/",
+      "og_image": "/tours/camino-inca-4-dias/05.jpg",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Camino Inca 4 Días a Machu Picchu | Chullos Tours",
+      "description": "Explora el Camino Inca Clásico de 4 Días con equipo profesional, porteadores y guías autorizados.",
+      "image": "/tours/camino-inca-4-dias/05.jpg"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "Camino Inca Clásico 4 Días / 3 Noches",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Machu Picchu",
+      "region": "Cusco",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El Camino Inca Clásico de 4 Días es una expedición de trekking de 43 km operada por Chullos Tours que parte del KM 82, asciende el paso de Warmiwañusqa (4,215 m.s.n.m.), atraviesa Sayacmarca, Phuyupatamarca y Wiñay Wayna, culminando con la llegada a Machu Picchu por el Inti Punku.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Distancia total de caminata",
+        "value": "43 kilómetros"
+      },
+      {
+        "fact": "Duración de la expedición",
+        "value": "4 Días / 3 Noches"
+      },
+      {
+        "fact": "Punto de mayor altitud",
+        "value": "Paso de Warmiwañusqa a 4,215 m.s.n.m."
+      },
+      {
+        "fact": "Alojamiento durante la ruta",
+        "value": "Campamento en carpas de montaña"
+      },
+      {
+        "fact": "Modalidad de servicios",
+        "value": "Todo incluido (Guía, porteadores, cocinero, carpas, tren, ingresos)"
+      },
+      {
+        "fact": "Operador acreditado",
+        "value": "Chullos Tours Cusco"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/camino-inca-4-dias/#product",
+        "name": "Camino Inca Clásico 4 Días / 3 Noches",
+        "description": "Caminata milenaria de 43 km por el Qhapaq Ñan hacia Machu Picchu atravesando pasos andinos, bosques de nubes y citadinas arqueológicas con campamentos y porteadores.",
+        "url": "https://chullostours.com/tours/camino-inca-4-dias/",
+        "image": [
+          "/tours/camino-inca-4-dias/05.jpg",
+          "/tours/camino-inca-4-dias/06.avif",
+          "/tours/camino-inca-4-dias/07.avif",
+          "/tours/camino-inca-4-dias/08.avif",
+          "/tours/camino-inca-4-dias/09.jpg",
+          "/tours/camino-inca-4-dias/11.jpg"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "680.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/camino-inca-4-dias/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://chullostours.com/tours/camino-inca-4-dias/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué distancia total se camina en los 4 días?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La distancia total del trekking es de aproximadamente 43 kilómetros."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Quién lleva mi equipaje durante el Camino Inca 4 Días?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un equipo profesional de porteadores traslada las carpas, alimentos y equipos. El pasajero solo lleva su mochila ligera."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Palette Variables */
+  --primary-color: #6b0014;
+  --primary-hover: #850019;
+  --secondary-color: #ffc000;
+  --secondary-hover: #e6ac00;
+  --headline-color: #1C1C1C;
+  --body-color: #505050;
+  --body-bg-color: #ffffff;
+  --light-color: #f8f9fa;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --yellow-color: #ffc000;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --border-color: #6b0014;
+  --smoke-color: #F7F7F7;
+
+  /* Spacing Scale */
+  --space-section-mobile: 2.5rem;
+  --space-section-desktop: 4.5rem;
+
+  /* Border Radius Tokens */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-card: 1.25rem;
+
+  /* Shadow Tokens */
+  --shadow-card: 0 4px 24px -4px rgba(107, 0, 20, 0.08);
+  --shadow-card-hover: 0 16px 40px -8px rgba(107, 0, 20, 0.18);
+  --shadow-hero: 0 32px 64px -16px rgba(0, 0, 0, 0.40);
+
+  /* Typography Variables */
+  --font-manrope: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-jost: 'Jost', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+@theme {
+  --font-sans: var(--font-manrope);
+  --font-title: var(--font-jost);
+
+  --color-primary: var(--primary-color);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary-color);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-headline: var(--headline-color);
+  --color-body: var(--body-color);
+  --color-body-bg: var(--body-bg-color);
+  --color-light: var(--light-color);
+  --color-black: var(--black-color);
+  --color-white: var(--white-color);
+  --color-yellow: var(--yellow-color);
+  --color-success: var(--success-color);
+  --color-error: var(--error-color);
+  --color-border: var(--border-color);
+  --color-smoke: var(--smoke-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-manrope);
+  color: var(--body-color);
+  background-color: var(--body-bg-color);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-jost);
+  font-weight: 700;
+}
+
+/* Accessibility & Contrast helpers */
+.bg-primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+  color: var(--headline-color);
+}
+
+/* Glassmorphism & Effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-panel-dark {
+  background: rgba(107, 0, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Focus styles for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+}

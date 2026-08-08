@@ -1,0 +1,296 @@
+{
+  "titulo": "Paquete Descubre Cusco 3 Días / 2 Noches",
+  "slug": "descubre-cusco-3-dias",
+  "url": "https://chullostours.com/tours/descubre-cusco-3-dias/",
+  "metas": {
+    "description": "Vive la mejor escapada express a la Capital Inca con el Paquete Descubre Cusco 3 Días. Incluye traslados, City Tour Cusco, Machu Picchu con tren turístico y asistencia personalizada. ¡Reserva con Chullos Tours!",
+    "og_title": "Paquete Descubre Cusco 3 Días / 2 Noches | Chullos Tours",
+    "og_url": "https://chullostours.com/tours/descubre-cusco-3-dias/"
+  },
+  "atributos": {
+    "duracion": "3 Días / 2 Noches",
+    "ubicacion": "Cusco y Machu Picchu, Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Cultural / Historia / Paisaje",
+    "dificultad": "Baja - Moderada",
+    "altitud_maxima": "3,700 m.s.n.m.",
+    "grupo_max": 15,
+    "nivel_fisico": "Fácil (Apto para todas las edades)"
+  },
+  "resumen": "El paquete Descubre Cusco 3 Días y 2 Noches es el itinerario perfecto para viajeros con tiempo limitado que desean explorar lo esencial de la Capital Imperial y la Maravilla del Mundo. Incluye recepción en el aeropuerto, el tradicional City Tour por los templos y fortalezas incas, y la impresionante excursión de día completo a Machu Picchu con tren turístico y guía bilingüe.",
+  "descripcion_completa": "Aprovecha al máximo tu visita a los Andes peruanos con nuestro paquete turístico express de 3 Días / 2 Noches en Cusco. Diseñado minuciosamente para optimizar cada hora de tu viaje, este itinerario te permite conocer la majestuosidad de la civilización inca sin preocupaciones logísticas.\n\nDesde tu llegada al Aeropuerto Internacional Alejandro Velasco Astete, nuestro equipo te brindará una cálida recepción y traslado privado hacia tu hotel. Durante la primera tarde, realizarás el afamado City Tour Cusco, visitando el enigmático Templo del Sol Qorikancha y los monumentales Parques Arqueológicos periféricos: Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay. Esta excursión es ideal para iniciar tu aclimatación gradual a los 3,400 metros de altitud.\n\nEn el segundo día vivirás la experiencia cumbre del viaje: la visita al Santuario Histórico de Machu Picchu. Viajarás en un cómodo tren turístico a través de los cambiantes paisajes del Valle Sagrado hasta el poblado de Aguas Calientes, para luego ascender a la legendaria ciudadela inca. Junto a un guía profesional bilingüe, recorrerás los sectores agrícolas, urbanos y ceremoniales de esta joya de la arquitectura mundial. Finalmente, en el tercer día dispondrás de tiempo libre para comprar artesanías locales antes de tu traslado de retorno al aeropuerto.",
+  "propuesta_de_valor": [
+    "Itinerario optimizado diseñado especialmente para fines de semana o viajes express.",
+    "Traslados privados in/out desde el aeropuerto o terminal terrestre de Cusco.",
+    "Boletos de tren turístico ida y vuelta (servicios Expedition o Voyager) incluidos.",
+    "Guías bilingües oficiales de turismo capacitados en arqueología e historia andina.",
+    "Atención y asistencia personalizada por WhatsApp las 24 horas del día."
+  ],
+  "destacados_highlights": [
+    "Recepción y asistencia personalizada desde tu llegada al aeropuerto de Cusco.",
+    "Visita guiada al Templo del Qorikancha y al Convento colonial de Santo Domingo.",
+    "Recorrido por la majestuosa fortaleza de Sacsayhuamán y sus bloques megalíticos.",
+    "Viaje en tren panorámico bordeando el río Urubamba hacia Aguas Calientes.",
+    "Recorrido guiado oficial por los principales recintos sagrados de Machu Picchu."
+  ],
+  "galeria": [
+    {
+      "src": "/tours/descubre-cusco-3-dias/05.jpg",
+      "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 05.jpg"
+    },
+    {
+      "src": "/tours/descubre-cusco-3-dias/06.avif",
+      "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 06.avif"
+    },
+    {
+      "src": "/tours/descubre-cusco-3-dias/07.avif",
+      "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 07.avif"
+    },
+    {
+      "src": "/tours/descubre-cusco-3-dias/08.jpg",
+      "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 08.jpg"
+    },
+    {
+      "src": "/tours/descubre-cusco-3-dias/09.jpg",
+      "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 09.jpg"
+    },
+    {
+      "src": "/tours/descubre-cusco-3-dias/11.jpg",
+      "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 11.jpg"
+    }
+  ],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "Bienvenida en Cusco y City Tour Arqueológico",
+      "descripcion": "Recepción en el aeropuerto de Cusco, traslado al hotel y recorrido por el Qorikancha y los 4 sitios arqueológicos periféricos.",
+      "actividades": [
+        "Horario según vuelo | Bienvenida y recepción en el Aeropuerto Internacional Alejandro Velasco Astete de Cusco.",
+        "Traslado privado desde el aeropuerto hacia tu hotel en el centro histórico para descanso y aclimatación inicial.",
+        "13:00 PM | Recojo del hotel para dar inicio al City Tour Cusco.",
+        "13:30 PM | Visita guiada al Templo del Sol Qorikancha y Convento de Santo Domingo.",
+        "14:45 PM | Recorrido por el Parque Arqueológico de Sacsayhuamán y sus muros monolíticos.",
+        "15:50 PM | Exploración de las galerías rituales y laberinto de piedra en Q'enqo.",
+        "16:35 PM | Visita al fortín militar de Puka Pukara.",
+        "17:15 PM | Visita al templo del agua de Tambomachay.",
+        "18:30 PM | Retorno al centro de Cusco. Noche de alojamiento en Cusco."
+      ],
+      "alojamiento": "Hotel en Cusco (No incluido o según paquete seleccionado)",
+      "comidas_incluidas": []
+    },
+    {
+      "dia": 2,
+      "titulo": "Excursión Full Day a Machu Picchu y Retorno a Cusco",
+      "descripcion": "Viaje en tren turístico desde Ollantaytambo hacia Aguas Calientes, visita guiada por Machu Picchu y retorno nocturno a Cusco.",
+      "actividades": [
+        "04:00 AM | Recojo temprano de tu hotel en Cusco y traslado en transporte turístico hacia la estación de tren de Ollantaytambo.",
+        "06:10 AM | Abordaje del tren turístico con destino al poblado de Aguas Calientes (Machu Picchu Pueblo).",
+        "07:50 AM | Llegada a Aguas Calientes, encuentro con el guía y abordaje del bus Consettur hacia la ciudadela inca.",
+        "08:40 AM | Visita guiada oficial por los circuitos principales de Machu Picchu (duración aprox. 2.5 horas).",
+        "11:30 AM | Descenso en bus Consettur de regreso al poblado de Aguas Calientes.",
+        "Tiempo libre para almorzar en Aguas Calientes y recorrer el mercado artesanal de la estación.",
+        "14:30 PM o 16:12 PM | Abordaje del tren de retorno hacia la estación de Ollantaytambo.",
+        "Llegada a Ollantaytambo y traslado en bus turístico privado de regreso a Cusco.",
+        "20:00 PM | Llegada estimada al centro histórico de Cusco. Noche de alojamiento en Cusco."
+      ],
+      "alojamiento": "Hotel en Cusco",
+      "comidas_incluidas": []
+    },
+    {
+      "dia": 3,
+      "titulo": "Mañana Libre en Cusco y Traslado de Salida al Aeropuerto",
+      "descripcion": "Mañana destinada a compras souvenirs o paseo por el centro histórico y traslado privado al aeropuerto para tu vuelo de retorno.",
+      "actividades": [
+        "08:00 AM | Desayuno en el hotel y tiempo libre para recorrer la Plaza de Armas, el barrio de San Blas o el Mercado de San Pedro.",
+        "Oportunidad para adquirir souvenirs, artesanías en textil andino y chocolates artesanales.",
+        "3 horas antes de tu vuelo | Traslado privado desde tu hotel hacia el Aeropuerto Velasco Astete de Cusco.",
+        "Asistencia en el embarque y fin de nuestros servicios."
+      ],
+      "alojamiento": "No incluye (Fin del tour)",
+      "comidas_incluidas": [
+        "Desayuno en el hotel"
+      ]
+    }
+  ],
+  "incluye": [
+    "Traslados privados aeropuerto - hotel - aeropuerto en Cusco.",
+    "Transporte turístico climatizado para el City Tour y traslados a la estación de tren.",
+    "Guía profesional oficial de turismo bilingüe (Español / Inglés) en todas las excursiones.",
+    "Boletos de tren turístico ida y vuelta Ollantaytambo - Aguas Calientes - Ollantaytambo.",
+    "Boletos de bus Consettur de subida y bajada a la ciudadela de Machu Picchu.",
+    "Boleto de entrada oficial al Santuario Histórico de Machu Picchu.",
+    "Asistencia turística permanente 24/7 por el equipo de Chullos Tours."
+  ],
+  "no_incluye": [
+    "Boleto Turístico del Cusco BTC (70 PEN parcial o 130 PEN general) e ingreso a Qorikancha (15 PEN).",
+    "Boletos aéreos nacionales o internacionales.",
+    "Noches de hotel en Cusco (disponibles como adicional opcional).",
+    "Alimentación no especificada en el itinerario (almuerzos y cenas).",
+    "Propinas para el personal de guiado y conductores."
+  ],
+  "recomendaciones": [
+    "Reservar con al menos 1 o 2 meses de anticipación para asegurar los ingresos a Machu Picchu y horarios de tren preferenciales.",
+    "Llevar documento de identidad original o pasaporte vigente, requisito obligatorio para abordar el tren y entrar a Machu Picchu.",
+    "Empacar ropa en capas: prendas ligeras para el día en Machu Picchu y chaqueta abrigadora para las noches en Cusco.",
+    "Llevar dinero en efectivo en soles para pagos de boletos turísticos locales y propinas.",
+    "Usar calzado cómodo con suela antideslizante, sombrero, bloqueador solar y repelente de mosquitos."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "Santuario Histórico de Machu Picchu",
+      "tipo": "Maravilla del Mundo Arqueológica",
+      "descripcion": "Ciudadela incaica incrustada en la ceja de selva andina, destacada por sus templos, terrazas agrícolas y avanzada ingeniería hidráulica.",
+      "altitud": "2,430 m.s.n.m."
+    },
+    {
+      "nombre": "Qorikancha (Templo del Sol)",
+      "tipo": "Templo Inca y Convento Colonial",
+      "descripcion": "El centro religioso más sagrado del Imperio Inca sobre el cual se construyó el convento de Santo Domingo.",
+      "altitud": "3,399 m.s.n.m."
+    },
+    {
+      "nombre": "Sacsayhuamán",
+      "tipo": "Parque Arqueológico y Fortaleza",
+      "descripcion": "Imponente complejo megalítico con bloques de piedra tallados de más de 100 toneladas encajados a la perfección.",
+      "altitud": "3,700 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Es suficiente contratar 3 días para conocer Cusco y Machu Picchu?",
+      "respuesta": "Sí, el Paquete Descubre Cusco 3 Días está diseñado estratégicamente para optimizar los tiempos y permitirte conocer los atractivos indispensables como Machu Picchu y el City Tour en una estancia corta."
+    },
+    {
+      "pregunta": "¿Qué tipo de tren se incluye en este paquete?",
+      "respuesta": "Incluimos el servicio de tren turístico Expedition (PeruRail) o Voyager (Inca Rail). Si deseas mejorar tu categoría al tren panorámico Vistadome o 360°, puedes solicitar el upgrade al reservar."
+    },
+    {
+      "pregunta": "¿A qué hora debo programar mi vuelo de llegada y de salida?",
+      "respuesta": "Recomendamos llegar a Cusco en el día 1 antes de las 11:00 AM para realizar el City Tour con tranquilidad. Para el día 3, puedes elegir un vuelo de salida a partir de las 13:00 PM."
+    },
+    {
+      "pregunta": "¿El tour incluye los hoteles de estancia en Cusco?",
+      "respuesta": "La tarifa base cubre todos los traslados, guiados y boletos de excursión. Ofrecemos paquetes completos con hotel de 3, 4 o 5 estrellas según tu presupuesto."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "Paquete Descubre Cusco 3 Dias",
+    "meta_title": "Paquete Descubre Cusco 3 Días / 2 Noches | Chullos Tours",
+    "meta_description": "Reserva el paquete Descubre Cusco 3 Días. Incluye traslados, City Tour Cusco, Machu Picchu con tren turístico y asistencia 24/7. ¡Viaja seguro con Chullos Tours!",
+    "canonical": "https://chullostours.com/tours/descubre-cusco-3-dias/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "Paquete Descubre Cusco 3 Días / 2 Noches | Chullos Tours",
+      "og_description": "Conoce Cusco y Machu Picchu en un viaje express de 3 días con traslados, ingresos y trenes incluidos.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/descubre-cusco-3-dias/",
+      "og_image": "/tours/descubre-cusco-3-dias/05.jpg",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Paquete Descubre Cusco 3 Días / 2 Noches",
+      "description": "Itinerario express de 3 días visitando Sacsayhuamán, Qorikancha y Machu Picchu.",
+      "image": "/tours/descubre-cusco-3-dias/05.jpg"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "Paquete Descubre Cusco 3 Días",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Cusco y Machu Picchu",
+      "region": "Cusco",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El paquete turístico Descubre Cusco 3 Días de Chullos Tours incluye traslados aeropuerto-hotel, excursión City Tour Cusco por Sacsayhuamán y Qorikancha, y tour de día completo a la ciudadela de Machu Picchu con pasajes de tren e ingresos turísticos.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Duración del paquete",
+        "value": "3 Días / 2 Noches"
+      },
+      {
+        "fact": "Principales destinos incluidos",
+        "value": "Cusco centro histórico, Qorikancha, Sacsayhuamán, Ollantaytambo, Machu Picchu"
+      },
+      {
+        "fact": "Servicio de tren incluido",
+        "value": "Tren Turístico Expedition u Ollantaytambo - Aguas Calientes (Ida y vuelta)"
+      },
+      {
+        "fact": "Altitud máxima",
+        "value": "3,700 m.s.n.m. en Sacsayhuamán"
+      },
+      {
+        "fact": "Operador oficial acreditado",
+        "value": "Chullos Tours Cusco"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/descubre-cusco-3-dias/#product",
+        "name": "Paquete Descubre Cusco 3 Días / 2 Noches",
+        "description": "Itinerario express de 3 días visitando la ciudad imperial de Cusco y la maravilla de Machu Picchu con servicios de tren e ingresos incluidos.",
+        "url": "https://chullostours.com/tours/descubre-cusco-3-dias/",
+        "image": [
+          "/tours/descubre-cusco-3-dias/05.jpg",
+          "/tours/descubre-cusco-3-dias/06.avif",
+          "/tours/descubre-cusco-3-dias/07.avif",
+          "/tours/descubre-cusco-3-dias/08.jpg",
+          "/tours/descubre-cusco-3-dias/09.jpg",
+          "/tours/descubre-cusco-3-dias/11.jpg"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "290.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/descubre-cusco-3-dias/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://chullostours.com/tours/descubre-cusco-3-dias/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Es suficiente contratar 3 días para conocer Cusco y Machu Picchu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, el Paquete Descubre Cusco 3 Días está diseñado estratégicamente para optimizar los tiempos y permitirte conocer los atractivos indispensables como Machu Picchu y el City Tour."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué tipo de tren se incluye en este paquete?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Incluimos el servicio de tren turístico Expedition (PeruRail) o Voyager (Inca Rail) con opción a upgrade panorámico Vistadome."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "titulo": "City Tour Cusco Half Day",
+  "slug": "city-tour-cusco",
+  "url": "https://chullostours.com/tours/city-tour-cusco/",
+  "metas": {
+    "description": "Explora los tesoros de la Capital Inca con el City Tour Cusco. Visita Qorikancha, Sacsayhuamán, Q’enqo, Puka Pukara y Tambomachay en un tour guiado de medio día. ¡Reserva con Chullos Tours!",
+    "og_title": "City Tour Cusco Half Day | Descubre la Capital Inca con Chullos Tours",
+    "og_url": "https://chullostours.com/tours/city-tour-cusco/"
+  },
+  "atributos": {
+    "duracion": "5 Horas (Medio Día)",
+    "ubicacion": "Cusco, Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Cultural / Arqueológico / Historia",
+    "dificultad": "Baja",
+    "altitud_maxima": "3,700 m.s.n.m.",
+    "grupo_max": 15,
+    "nivel_fisico": "Fácil (Apto para toda la familia)"
+  },
+  "resumen": "Recorre el corazón del Imperio Inca y la herencia colonial en Cusco. Descubre el majestuoso Templo del Sol Qorikancha y los impresionantes sitios arqueológicos de Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay con guías locales expertos.",
+  "descripcion_completa": "El City Tour Cusco es la experiencia perfecta para dar inicio a tu viaje por la capital histórica del Perú. Durante este recorrido de medio día, viajarás en el tiempo a través de siglos de historia andina y arquitectura monumental. Descubrirás cómo los incas ensamblaron piedras gigantescas sin mortero y cómo la cultura española superpuso sus templos coloniales sobre los cimientos incaicos.\n\nComenzaremos explorando el santuario más sagrado del Imperio Inca, el Qorikancha (Templo del Sol), donde contemplarás fina cantería dorada y el esplendor del Convento de Santo Domingo. Posteriormente, ascendemos hacia las colinas circundantes de Cusco para maravillarnos con Sacsayhuamán, una fortaleza militar y templo ceremonial famoso por sus muros ciclópeos con megalitos que superan las 120 toneladas.\n\nEl recorrido continúa en Q'enqo, un enigmático laberinto de piedra utilizado para ritos ceremoniales y momificación, seguido de Puka Pukara, una fortaleza militar de color rojizo que resguardaba el ingreso a la ciudad. Concluiremos en Tambomachay, conocido como el 'Baño del Inca', un centro ceremonial acuático donde el agua fluye ininterrumpidamente desde tiempos incaicos. Este tour no solo te brindará una inmersión cultural profunda, sino que es la mejor forma de aclimatarse suavemente a la altitud cusqueña antes de realizar caminatas de mayor exigencia.",
+  "propuesta_de_valor": [
+    "Guías oficiales bilingües especialistas en historia, arqueología y cosmovisión andina.",
+    "Transporte turístico moderno con choferes experimentados para tu máxima seguridad.",
+    "Pick-up directo desde tu hotel en el centro histórico de Cusco.",
+    "Itinerario fluido diseñado para evitar las horas de mayor aglomeración turística.",
+    "Aclimatación gradual y cómoda ideal para los primeros días en Cusco."
+  ],
+  "destacados_highlights": [
+    "Qorikancha (Templo del Sol): Admira el máximo exponente de la arquitectura incaica y el contraste con el Convento de Santo Domingo.",
+    "Sacsayhuamán: Recorre la colosal fortaleza ceremonial con muros de piedra encajados a la perfección.",
+    "Q'enqo: Descubre las galerías subterráneas y altares de roca dedicados a rituales ancestrales.",
+    "Puka Pukara: Contempla las vistas panorámicas del valle cusqueño desde esta fortaleza militar inca.",
+    "Tambomachay: Observa la maestría de la ingeniería hidráulica inca en las fuentes sagradas del agua."
+  ],
+  "galeria": [
+    {
+      "src": "/tours/city-tour-cusco/05.avif",
+      "alt": "Templo del Qorikancha en Cusco"
+    },
+    {
+      "src": "/tours/city-tour-cusco/06.jpg",
+      "alt": "Muros megalíticos de la Fortaleza de Sacsayhuamán"
+    },
+    {
+      "src": "/tours/city-tour-cusco/07.jpg",
+      "alt": "Laberinto de roca en el centro ceremonial de Q'enqo"
+    },
+    {
+      "src": "/tours/city-tour-cusco/08.jpg",
+      "alt": "Fortaleza inca de Puka Pukara"
+    },
+    {
+      "src": "/tours/city-tour-cusco/10.avif",
+      "alt": "Fuentes ceremoniales de agua en Tambomachay"
+    }
+  ],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "City Tour Cusco: Qorikancha y Parques Arqueológicos Periféricos",
+      "descripcion": "Recorrido vespertino guiado por los monumentos históricos más importantes dentro y alrededor de la ciudad de Cusco.",
+      "actividades": [
+        "13:00 PM | Recojo del hotel: Nuestro transporte y guía pasarán por tu hotel ubicado en el centro histórico de Cusco.",
+        "13:30 PM | Visita al Qorikancha: Recorrido guiado por el Templo del Sol y el Convento de Santo Domingo (duración approx. 1 hora).",
+        "14:45 PM | Fortaleza de Sacsayhuamán: Visita guiada por el complejo ceremonial y sus bastiones megalíticos (duración approx. 1 hora).",
+        "15:50 PM | Centro Arqueológico de Q'enqo: Exploración de los canales de piedra rituales y salas subterráneas.",
+        "16:35 PM | Complejo de Puka Pukara: Recorrido por las terrazas, escalinatas y recintos de la 'Fortaleza Roja'.",
+        "17:15 PM | Fuentes de Tambomachay: Visita al recinto de culto al agua y canales prehispánicos en funcionamiento.",
+        "18:30 PM | Retorno a Cusco: Traslado de regreso finalizando cerca de la Plaza de Armas de Cusco."
+      ],
+      "alojamiento": "No incluido",
+      "comidas_incluidas": []
+    }
+  ],
+  "incluye": [
+    "Recojo de su hotel en el centro histórico de Cusco.",
+    "Transporte turístico cómodo y climatizado durante todo el recorrido.",
+    "Guía profesional oficial de turismo bilingüe (Español / Inglés).",
+    "Asistencia turística permanente antes y durante la excursión."
+  ],
+  "no_incluye": [
+    "Boleto Turístico del Cusco (BTC) - Parcial (70 PEN) o General (130 PEN).",
+    "Boleto de entrada al Qorikancha (15 PEN por persona en efectivo).",
+    "Alimentación, snacks y bebidas durante la excursión.",
+    "Propinas para el guía y el conductor (voluntarias)."
+  ],
+  "recomendaciones": [
+    "Comprar o llevar el Boleto Turístico del Cusco (BTC Parcial Circuito 1) y 15 soles en efectivo para el ingreso a Qorikancha.",
+    "Llevar ropa abrigadora en capas, ya que la temperatura desciende rápidamente en Cusco a partir de las 17:30 PM.",
+    "Usar calzado cómodo de caminata con suela antideslizante para desplazarse sobre empedrados y superficies irregulares.",
+    "Llevar sombrero para el sol, bloqueador solar con alto factor UV y gafas protectoras.",
+    "Llevar un poncho de lluvia impermeable ligero (especialmente en la temporada de lluvias de noviembre a abril).",
+    "Mantenerse bien hidratado con agua mineral y tomar té o mate de coca en la mañana para prevenir el mal de altura (soroche)."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "Qorikancha (Templo del Sol)",
+      "tipo": "Templo Inca y Convento Colonial",
+      "descripcion": "El centro espiritual y astronómico más emblemático del Imperio Inca, sobre cuyos cimientos de pulida piedra se erigió el Convento de Santo Domingo.",
+      "altitud": "3,399 m.s.n.m."
+    },
+    {
+      "nombre": "Sacsayhuamán",
+      "tipo": "Fortaleza y Templo Ceremonial",
+      "descripcion": "Obra maestra de la arquitectura incaica constituida por gigantescos bloques de piedra encajados milimétricamente sin mortero.",
+      "altitud": "3,700 m.s.n.m."
+    },
+    {
+      "nombre": "Q'enqo",
+      "tipo": "Santuario y Anfiteatro Inca",
+      "descripcion": "Complejo arqueológico labrado en roca caliza donde se realizaban rituales astronómicos, sacrificios y embalsamamiento de soberanos incas.",
+      "altitud": "3,580 m.s.n.m."
+    },
+    {
+      "nombre": "Puka Pukara",
+      "tipo": "Complejo Militar y Fortín",
+      "descripcion": "Estructura defensiva de tonos rojizos compuesta por acueductos, torres de vigilancia y recintos que servían de control para el ejército del Inca.",
+      "altitud": "3,680 m.s.n.m."
+    },
+    {
+      "nombre": "Tambomachay",
+      "tipo": "Templo del Agua y Baños del Inca",
+      "descripcion": "Sitio arqueológico dedicado a la purificación y al culto del agua con un impresionante conjunto de fuentes, acueductos y caídas de agua continuas.",
+      "altitud": "3,700 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Cuánto tiempo dura el City Tour Cusco?",
+      "respuesta": "El tour tiene una duración aproximada de 5 horas. Comienza a las 13:00 PM con el recojo en tu hotel y culmina a las 18:30 PM en el centro de Cusco."
+    },
+    {
+      "pregunta": "¿Qué boletos o tickets necesito comprar para este tour?",
+      "respuesta": "Necesitas el Boleto Turístico del Cusco (BTC Parcial Circuito 1 de 70 soles para peruanos o extranjeros que incluye Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay) y la entrada individual al Qorikancha (15 soles). Tu guía te asistirá en la compra directa si no los tienes previamente."
+    },
+    {
+      "pregunta": "¿Es recomendable hacer el City Tour el primer día de llegada a Cusco?",
+      "respuesta": "Sí, es el tour perfecto para tu primer día. Al ser una excursión de medio día sin caminatas físicas exigentes, te permite explorar la riqueza cultural de la ciudad mientras te aclimatas paulatinamente a la altitud de 3,400 metros."
+    },
+    {
+      "pregunta": "¿El tour incluye el recojo en mi hotel?",
+      "respuesta": "Sí, incluimos el recojo sin costo adicional para hoteles ubicados dentro del centro histórico de Cusco. Si te hospedas fuera del casco urbano, coordinaremos el punto de encuentro en la Plaza de Armas o Plaza Regocijo."
+    },
+    {
+      "pregunta": "¿El recorrido es apto para niños y adultos mayores?",
+      "respuesta": "Totalmente. Es una ruta apta para todas las edades. Las caminatas son a paso moderado y sobre senderos habilitados con áreas de descanso en cada parque arqueológico."
+    },
+    {
+      "pregunta": "¿En qué idioma se realiza el guiado?",
+      "respuesta": "Ofrecemos grupos con guiado en español e inglés. Al realizar tu reserva puedes especificar tu preferencia de idioma."
+    },
+    {
+      "pregunta": "¿Qué ropa y equipaje debo llevar al recorrido?",
+      "respuesta": "Te recomendamos llevar una pequeña mochila de mano, chaqueta abrigadora o cortavientos para el atardecer, zapatillas cómodas para caminar sobre piedras, cámara de fotos, bloqueador solar y agua mineral."
+    },
+    {
+      "pregunta": "¿Puedo cancelar o reprogramar mi reserva?",
+      "respuesta": "Sí, puedes reprogramar o cancelar con hasta 48 horas de anticipación sin penalidad. Consulta nuestras políticas flexibles de reserva al contactarnos por WhatsApp."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "City Tour Cusco",
+    "meta_title": "City Tour Cusco Half Day | Operador Directo Chullos Tours",
+    "meta_description": "Reserva el City Tour Cusco Half Day. Visita Qorikancha, Sacsayhuamán, Q’enqo, Puka Pukara y Tambomachay con guía bilingüe y transporte turístico. ¡Garantiza tu cupo!",
+    "canonical": "https://chullostours.com/tours/city-tour-cusco/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "City Tour Cusco Half Day | Chullos Tours",
+      "og_description": "Explora la Capital Imperial de los Incas en medio día. Visita Qorikancha y las 4 ruinas de Cusco con guías locales expertos.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/city-tour-cusco/",
+      "og_image": "/tours/city-tour-cusco/05.avif",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "City Tour Cusco Half Day | Chullos Tours",
+      "description": "Explora Qorikancha y las ruinas incas con el tradicional City Tour Cusco. Aclimatación ideal y cultura inigualable.",
+      "image": "/tours/city-tour-cusco/05.avif"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "City Tour Cusco Half Day",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Cusco",
+      "region": "Cusco",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El City Tour Cusco organizado por Chullos Tours es una excursión guiada de 5 horas que recorre el Templo del Sol Qorikancha y los 4 sitios arqueológicos periféricos: Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay. Incluye transporte turístico y guía bilingüe.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Duración total",
+        "value": "5 horas (13:00 PM a 18:30 PM)"
+      },
+      {
+        "fact": "Atractivos principales",
+        "value": "Qorikancha, Sacsayhuamán, Q'enqo, Puka Pukara, Tambomachay"
+      },
+      {
+        "fact": "Altitud máxima alcanzada",
+        "value": "3,700 m.s.n.m. en Tambomachay y Sacsayhuamán"
+      },
+      {
+        "fact": "Nivel de dificultad física",
+        "value": "Baja / Fácil"
+      },
+      {
+        "fact": "Boleto turístico requerido",
+        "value": "Boleto Turístico del Cusco (BTC Parcial o General) + Ingreso a Qorikancha"
+      },
+      {
+        "fact": "Lugar de inicio y fin",
+        "value": "Recojo en hotel en centro de Cusco y retorno al centro histórico"
+      },
+      {
+        "fact": "Operador acreditado",
+        "value": "Chullos Tours Cusco"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/city-tour-cusco/#product",
+        "name": "City Tour Cusco Half Day",
+        "description": "Excursión guiada de medio día por el Templo del Qorikancha y los parques arqueológicos de Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay.",
+        "url": "https://chullostours.com/tours/city-tour-cusco/",
+        "image": [
+          "/tours/city-tour-cusco/05.avif",
+          "/tours/city-tour-cusco/06.jpg",
+          "/tours/city-tour-cusco/07.jpg",
+          "/tours/city-tour-cusco/08.jpg",
+          "/tours/city-tour-cusco/10.avif"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "20.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/city-tour-cusco/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://chullostours.com/tours/city-tour-cusco/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo dura el City Tour Cusco?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El tour tiene una duración aproximada de 5 horas. Comienza a las 13:00 PM con el recojo en tu hotel y culmina a las 18:30 PM en el centro de Cusco."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué boletos o tickets necesito comprar para este tour?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Necesitas el Boleto Turístico del Cusco (BTC Parcial Circuito 1 de 70 soles para peruanos o extranjeros que incluye Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay) y la entrada individual al Qorikancha (15 soles)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Es recomendable hacer el City Tour el primer día de llegada a Cusco?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, es el tour perfecto para tu primer día. Al ser una excursión de medio día sin caminatas físicas exigentes, te permite explorar la riqueza cultural mientras te aclimatas a la altitud."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El tour incluye el recojo en mi hotel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, incluimos el recojo sin costo adicional para hoteles ubicados dentro del centro histórico de Cusco."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

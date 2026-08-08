@@ -1,0 +1,300 @@
+{
+  "titulo": "Camino Inca 2 Días / 1 Noche",
+  "slug": "camino-inca-2-dias",
+  "url": "https://chullostours.com/tours/camino-inca-2-dias/",
+  "metas": {
+    "description": "Recorre el legendario Camino Inca 2 Días hacia Machu Picchu. Disfruta de la caminata desde el KM 104, Wiñay Wayna, Inti Punku y la ciudadela inca. ¡Reserva con Chullos Tours!",
+    "og_title": "Camino Inca 2 Días / 1 Noche a Machu Picchu | Chullos Tours",
+    "og_url": "https://chullostours.com/tours/camino-inca-2-dias/"
+  },
+  "atributos": {
+    "duracion": "2 Días / 1 Noche",
+    "ubicacion": "Cusco - Valle Sagrado - Machu Picchu, Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Trekking / Arqueológico / Aventura",
+    "alojamiento_incluido": "Hotel en Aguas Calientes (Machupicchu Pueblo)",
+    "dificultad": "Moderada",
+    "altitud_maxima": "2,730 m.s.n.m. (Inti Punku)",
+    "distancia_km": "12 km aprox.",
+    "grupo_max": 12,
+    "nivel_fisico": "Moderado (Caminata andina activa)"
+  },
+  "resumen": "Vive la emoción del Camino Inca Corto en 2 días. Camina desde el KM 104 a través del exuberante bosque de nubes, explora el impresionante complejo inca de Wiñay Wayna, ingresa a Machu Picchu por la Puerta del Sol (Inti Punku) y disfruta de un tour guiado completo en la ciudadela sagrada.",
+  "descripcion_completa": "El Camino Inca de 2 Días / 1 Noche es la versión corta ideal para viajeros que desean experimentar la magia de la caminata ancestral inca sin la exigencia de acampar durante cuatro días. Esta impresionante ruta combina paisajes andinos y subtropicales, imponentes ruinas arqueológicas cubiertas por vegetación de bosque de nubes y el inigualable ingreso a la ciudadela de Machu Picchu a través del Inti Punku (Puerta del Sol).\n\nEl recorrido inicia con un viaje escénico en tren desde Ollantaytambo hasta el Kilómetro 104 (Chachabamba). Desde este punto, emprendemos un ascenso gradual hacia el espectacular sitio arqueológico de Wiñay Wayna ('Siempre Joven'), famoso por sus terrazas agrícolas superpuestas e ingeniería hidráulica ancestral. Tras un reconfortante almuerzo tipo box lunch, continuamos la caminata hacia el Inti Punku, desde donde obtendrás una vista panorámica imborrable y memorable de Machu Picchu al atardecer.\n\nEl primer día concluye descendiendo en autobús hacia el acogedor pueblo de Aguas Calientes (Machupicchu Pueblo) para descansar en un confortable hotel. El segundo día está dedicado a explorar a profundidad la Maravilla del Mundo en una visita guiada por sus principales templos, plazas y recintos ceremoniales. Esta experiencia única finaliza con el viaje de retorno en tren panorámico a Ollantaytambo y traslado de regreso a tu hotel en la ciudad de Cusco.",
+  "propuesta_de_valor": [
+    "Permisos oficiales del Camino Inca gestionados directamente como operador autorizado.",
+    "Guías profesionales bilingües de trekking certificados en primeros auxilios y rescate en montaña.",
+    "Grupos reducidos para garantizar un ritmo cómodo y una experiencia personalizada.",
+    "Incluye boletos de tren ida y vuelta, transporte en bus interurbano y noche de hotel en Aguas Calientes.",
+    "Combinación perfecta entre senderismo de nivel moderado e inmersión arqueológica profunda."
+  ],
+  "destacados_highlights": [
+    "Caminata por el Kilómetro 104: Recorrido del tramo final del ancestral Qhapaq Ñan.",
+    "Complejo Arqueológico de Chachabamba: Visita a la primera estación inca de control de paso.",
+    "Ciudadela Inca de Wiñay Wayna: Admira el complejo urbano y sus terrazas agrícolas colgadas de la montaña.",
+    "Vista Panorámica desde Inti Punku: Primera vista sublime de Machu Picchu al atardecer.",
+    "Tour Guiado en Machu Picchu: Exploración detallada del santuario histórico en el Día 2."
+  ],
+  "galeria": [
+    {
+      "src": "/tours/camino-inca-2-dias/01.jpg",
+      "alt": "Camino Inca 2 Días / 1 Noche - 01.jpg"
+    },
+    {
+      "src": "/tours/camino-inca-2-dias/02.jpg",
+      "alt": "Camino Inca 2 Días / 1 Noche - 02.jpg"
+    },
+    {
+      "src": "/tours/camino-inca-2-dias/03.jpg",
+      "alt": "Camino Inca 2 Días / 1 Noche - 03.jpg"
+    },
+    {
+      "src": "/tours/camino-inca-2-dias/04.avif",
+      "alt": "Camino Inca 2 Días / 1 Noche - 04.avif"
+    },
+    {
+      "src": "/tours/camino-inca-2-dias/05.jpg",
+      "alt": "Camino Inca 2 Días / 1 Noche - 05.jpg"
+    }
+  ],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "Cusco - KM 104 - Wiñay Wayna - Inti Punku - Aguas Calientes",
+      "descripcion": "Traslado matutino a la estación de tren, caminata de 12 km atravesando Chachabamba y Wiñay Wayna hasta llegar al Inti Punku con vista panorámica a Machu Picchu.",
+      "actividades": [
+        "04:00 AM | Recojo del hotel en Cusco y traslado privado en bus hasta la estación de Ollantaytambo.",
+        "06:10 AM | Abordaje del tren turístico hacia el Kilómetro 104 (Chachabamba).",
+        "07:30 AM | Inicio de la caminata tras el control de boletos e identificación del Camino Inca.",
+        "08:00 AM | Exploración del sitio arqueológico de Chachabamba a orillas del río Urubamba.",
+        "12:00 PM | Llegada a Wiñay Wayna para la visita guiada y tiempo para el almuerzo tipo box lunch.",
+        "14:00 PM | Continuación del trayecto en ascenso gradual hacia el Inti Punku (Puerta del Sol).",
+        "15:30 PM | Llegada al Inti Punku y contemplación de la majestuosa vista panorámica de Machu Picchu.",
+        "16:30 PM | Descenso en autobús ecológico desde la ciudadela hacia Aguas Calientes.",
+        "18:00 PM | Check-in en el hotel seleccionado en Aguas Calientes y noche libre."
+      ],
+      "alojamiento": "Hotel 3 estrellas en Aguas Calientes",
+      "comidas_incluidas": [
+        "Almuerzo (Box Lunch)",
+        "Cena"
+      ]
+    },
+    {
+      "dia": 2,
+      "titulo": "Aguas Calientes - Tour Guiado en Machu Picchu - Retorno a Cusco",
+      "descripcion": "Visita guiada matutina por el circuito oficial en Machu Picchu y retorno en tren hacia Ollantaytambo y Cusco.",
+      "actividades": [
+        "05:30 AM | Desayuno reconfortante en el hotel de Aguas Calientes.",
+        "06:30 AM | Abordaje del autobús turístico hacia la puerta de ingreso a Machu Picchu.",
+        "07:30 AM | Tour guiado de 2.5 a 3 horas por los sectores agrícola, urbano y sagrado de Machu Picchu.",
+        "11:00 AM | Descenso en autobús de retorno a Machupicchu Pueblo (Aguas Calientes).",
+        "13:00 PM | Tiempo libre para almorzar y pasear por las artesanías del pueblo.",
+        "14:30 PM | Abordaje del tren de retorno con destino a Ollantaytambo.",
+        "16:30 PM | Traslado terrestre privado desde Ollantaytambo hasta la ciudad de Cusco.",
+        "18:30 PM | Arribo a la ciudad de Cusco y desembarque cerca a tu hotel."
+      ],
+      "alojamiento": "No incluido",
+      "comidas_incluidas": [
+        "Desayuno"
+      ]
+    }
+  ],
+  "incluye": [
+    "Traslado terrestre en transporte privado Cusco - Ollantaytambo - Cusco.",
+    "Tickets de tren ida y vuelta (Ollantaytambo - KM 104 / Aguas Calientes - Ollantaytambo).",
+    "Permisos oficiales de ingreso al Camino Inca y Boleto de Entrada a Machu Picchu.",
+    "Guía profesional bilingüe especializado en senderismo e historia incaica.",
+    "Tickets de autobús turístico de bajada el Día 1 y de subida y bajada el Día 2.",
+    "1 noche de hospedaje en hotel en Aguas Calientes con desayuno incluido.",
+    "Alimentación completa según programa: 1 Box Lunch, 1 Cena y 1 Desayuno.",
+    "Botiquín de primeros auxilios y balón de oxígeno de emergencia."
+  ],
+  "no_incluye": [
+    "Desayuno del primer día y almuerzo del segundo día en Aguas Calientes.",
+    "Ingresos opcionales a las montañas Huayna Picchu o Machu Picchu Montaña.",
+    "Bastones de trekking con punta de goma (disponibles para alquiler).",
+    "Propinas para el equipo de guías y personal de servicio.",
+    "Gastos personales o compras de souvenirs."
+  ],
+  "recomendaciones": [
+    "Reservar con 3 a 5 meses de anticipación debido a la altísima demanda y límite estricto de cupos diarios.",
+    "Llevar el pasaporte original vigente utilizado al momento de realizar la reserva.",
+    "Llevar una mochila pequeña de trekking (20 a 30 litros) para el equipo personal de dos días.",
+    "Usar zapatillas o botas de montaña impermeables con buen agarre y suela antideslizante.",
+    "Llevar ropa por capas: camiseta transpirable, casaca polar cortavientos y chubasquero impermeable.",
+    "Incluir repelente de insectos biodegradable, bloqueador solar y sombrero para el sol."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "KM 104 (Chachabamba)",
+      "tipo": "Punto de Inicio de Caminata",
+      "descripcion": "Estación de control donde inicia el tramo del Camino Inca Corto a orillas del río Urubamba.",
+      "altitud": "2,100 m.s.n.m."
+    },
+    {
+      "nombre": "Wiñay Wayna",
+      "tipo": "Sitio Arqueológico Inca",
+      "descripcion": "Impresionante complejo incaico con andenes agrícolas y recintos de fina piedra incrustados en la ladera.",
+      "altitud": "2,650 m.s.n.m."
+    },
+    {
+      "nombre": "Inti Punku (Puerta del Sol)",
+      "tipo": "Punto de Acceso Inca",
+      "descripcion": "Antiguo portal de ingreso a Machu Picchu desde donde se contempla la vista icónica del santuario sagrado.",
+      "altitud": "2,730 m.s.n.m."
+    },
+    {
+      "nombre": "Machu Picchu",
+      "tipo": "Santuario Histórico y Maravilla del Mundo",
+      "descripcion": "La deslumbrante ciudadela inca construida en el siglo XV por el Inca Pachacútec.",
+      "altitud": "2,430 m.s.n.m."
+    },
+    {
+      "nombre": "Aguas Calientes (Machupicchu Pueblo)",
+      "tipo": "Pueblo Turístico",
+      "descripcion": "Poblado rodeado de montañas y aguas termales, base de servicios turísticos de la zona.",
+      "altitud": "2,040 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar el Camino Inca 2 Días?",
+      "respuesta": "Se recomienda reservar con un mínimo de 3 a 4 meses de anticipación, ya que los permisos oficiales otorgados por el gobierno peruano son limitados a 500 personas por día (incluyendo guías y personal)."
+    },
+    {
+      "pregunta": "¿Qué tan difícil es la caminata del primer día?",
+      "respuesta": "La dificultad es moderada. Es una caminata de 12 kilómetros con un ascenso continuo durante las primeras 3 a 4 horas hasta Wiñay Wayna, apta para personas con condición física aceptable."
+    },
+    {
+      "pregunta": "¿Qué debo empacar para los 2 días?",
+      "respuesta": "Solamente debes llevar una mochila ligera de 25 a 30 litros con tu ropa de recambio, artículos de aseo personal, documentos, cámara, ponchos de lluvia y repelente. No es necesario llevar sacos de dormir ni carpas."
+    },
+    {
+      "pregunta": "¿Se puede ingresar con pasaporte vencido o renovado?",
+      "respuesta": "Es indispensable presentar el mismo pasaporte original utilizado en la reserva. Si renovaste tu pasaporte, debes informar al equipo de Chullos Tours con anticipación para actualizar los datos."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "Camino Inca 2 Días",
+    "meta_title": "Camino Inca 2 Días a Machu Picchu | Tour Guiado Chullos Tours",
+    "meta_description": "Reserva el tour Camino Inca 2 Días / 1 Noche a Machu Picchu. Caminata desde KM 104, Wiñay Wayna e Inti Punku con tren, hotel e ingresos incluidos. ¡Grupos pequeños!",
+    "canonical": "https://chullostours.com/tours/camino-inca-2-dias/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "Camino Inca 2 Días / 1 Noche | Chullos Tours",
+      "og_description": "Vive la experiencia del Camino Inca Corto hacia Machu Picchu atravesando el Inti Punku y Wiñay Wayna.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/camino-inca-2-dias/",
+      "og_image": "/tours/camino-inca-2-dias/01.jpg",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Camino Inca 2 Días a Machu Picchu | Chullos Tours",
+      "description": "Explora la ruta milenaria del Camino Inca Corto de 2 días. Incluye tren, ingresos, guía bilingüe y hotel.",
+      "image": "/tours/camino-inca-2-dias/01.jpg"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "Camino Inca 2 Días / 1 Noche",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Machu Picchu",
+      "region": "Cusco",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El tour Camino Inca de 2 Días / 1 Noche de Chullos Tours es un trek oficial de 12 km que inicia en el KM 104 de la vía férrea, visita Wiñay Wayna, ingresa a Machu Picchu por el Inti Punku, duerme en Aguas Calientes y realiza el tour guiado completo en la ciudadela el segundo día.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Distancia total de caminata",
+        "value": "12 km (Día 1)"
+      },
+      {
+        "fact": "Duración total",
+        "value": "2 Días / 1 Noche"
+      },
+      {
+        "fact": "Atractivos principales",
+        "value": "KM 104, Chachabamba, Wiñay Wayna, Inti Punku, Machu Picchu"
+      },
+      {
+        "fact": "Altitud máxima",
+        "value": "2,730 m.s.n.m. en el Inti Punku"
+      },
+      {
+        "fact": "Dificultad física",
+        "value": "Moderada"
+      },
+      {
+        "fact": "Operador acreditado",
+        "value": "Chullos Tours Cusco"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/camino-inca-2-dias/#product",
+        "name": "Camino Inca 2 Días / 1 Noche",
+        "description": "Caminata oficial del Camino Inca Corto desde el KM 104 hasta Machu Picchu vía Wiñay Wayna e Inti Punku con guía bilingüe y hotel en Aguas Calientes.",
+        "url": "https://chullostours.com/tours/camino-inca-2-dias/",
+        "image": [
+          "/tours/camino-inca-2-dias/01.jpg",
+          "/tours/camino-inca-2-dias/02.jpg",
+          "/tours/camino-inca-2-dias/03.jpg",
+          "/tours/camino-inca-2-dias/04.avif",
+          "/tours/camino-inca-2-dias/05.jpg"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "450.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/camino-inca-2-dias/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://chullostours.com/tours/camino-inca-2-dias/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Con cuánta anticipación debo reservar el Camino Inca 2 Días?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se recomienda reservar con un mínimo de 3 a 4 meses de anticipación debido al límite estricto de 500 permisos diarios."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué tan difícil es la caminata del primer día?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La dificultad es moderada, abarcando 12 km de ascenso gradual aptos para personas con condición física básica a intermedia."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

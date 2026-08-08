@@ -1,0 +1,339 @@
+{
+  "titulo": "Paquete Cusco Mágico 5 Días / 4 Noches",
+  "slug": "cusco-magico-5-dias",
+  "url": "https://chullostours.com/tours/cusco-magico-5-dias/",
+  "metas": {
+    "description": "Descubre la magia del Imperio Inca con el Paquete Cusco Mágico 5 Días. Incluye City Tour, Valle Sagrado VIP, Machu Picchu con noche en Aguas Calientes y la espectacular Montaña de 7 Colores. ¡Reserva con Chullos Tours!",
+    "og_title": "Paquete Cusco Mágico 5 Días / 4 Noches | Chullos Tours",
+    "og_url": "https://chullostours.com/tours/cusco-magico-5-dias/"
+  },
+  "atributos": {
+    "duracion": "5 Días / 4 Noches",
+    "ubicacion": "Cusco, Valle Sagrado, Machu Picchu y Montaña de Colores, Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Cultural / Historia / Aventura / Naturaleza",
+    "dificultad": "Moderada - Exigente",
+    "altitud_maxima": "5,020 m.s.n.m.",
+    "grupo_max": 15,
+    "nivel_fisico": "Moderado a Exigente (Requiere caminata en altitud)"
+  },
+  "resumen": "El Paquete Cusco Mágico 5 Días y 4 Noches es la combinación perfecta entre arqueología imperial, paisajes andinos impresionantes y aventuras de alta montaña. Conoce la ciudad colonial de Cusco, el legendario Valle Sagrado de los Incas, la Maravilla del Mundo Machu Picchu y la famosa Montaña de 7 Colores (Vinicunca) o la Laguna Humantay.",
+  "descripcion_completa": "Vive una de las experiencias más completas de Sudamérica con nuestro itinerario de 5 Días / 4 Noches 'Cusco Mágico'. Diseñado minuciosamente para combinar cultura, historia e impacto natural, este paquete te llevará desde los valles templados habitados por los antiguos soberanos incas hasta las impresionantes alturas de los Andes.\n\nDurante el primer día te recibiremos en el aeropuerto de Cusco para dar paso al City Tour, recorriendo el Templo del Qorikancha y la majestuosa fortaleza de Sacsayhuamán. El segundo día realizarás el circuito VIP del Valle Sagrado, explorando los talleres textiles de Chinchero, los más de 3,000 pozos salineros de Maras, los laboratorios agrícolas circulares de Moray y el imponente complejo ceremonial de Ollantaytambo, desde donde abordaremos el tren rumbo al poblado de Aguas Calientes.\n\nEn la mañana del tercer día ingresarás al Santuario Histórico de Machu Picchu para una visita guiada en la que descubrirás la fina cantería andina y la mística de sus templos. Tras retornar a Cusco, en el cuarto día vivirás una expedición inolvidable hacia la Montaña de 7 Colores (Vinicunca), contemplando minerales de matices multicolores y la imponente vista de la cordillera del Ausangate a más de 5,000 metros de altitud. Finalmente, el quinto día tendrás tiempo libre en Cusco para comprar recuerdos artesanales antes de tu traslado de salida al aeropuerto.",
+  "propuesta_de_valor": [
+    "Itinerario integral que combina cultura ancestral, naturaleza andina y alta montaña en 5 días.",
+    "Incluye noche de pernocte en Aguas Calientes para ingresar temprano a Machu Picchu.",
+    "Excursión completa a la Montaña de 7 Colores Vinicunca con desayunos y almuerzos buffet incluidos.",
+    "Circuito VIP por el Valle Sagrado visitando Chinchero, Salineras de Maras, Moray y Ollantaytambo.",
+    "Guías profesionales especializados en geología, historia andina y primeros auxilios en altitud."
+  ],
+  "destacados_highlights": [
+    "Recepción privada y traslados aeropuerto - hotel - aeropuerto sin complicaciones.",
+    "City Tour Cusco guiado por Qorikancha, Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay.",
+    "Visita a las Salineras de Maras y las terrazas de experimentación agrícola de Moray.",
+    "Viaje en tren turístico por el Valle Sagrado y pernocte en el poblado de Aguas Calientes.",
+    "Recorrido oficial guiado por la Maravilla del Mundo Machu Picchu.",
+    "Caminata andina hacia el mirador de la Montaña de 7 Colores (Vinicunca) a 5,020 m.s.n.m."
+  ],
+  "galeria": [
+    {
+      "src": "/tours/cusco-magico-5-dias/05.avif",
+      "alt": "Paquete Cusco Mágico 5 Días / 4 Noches - 05.avif"
+    },
+    {
+      "src": "/tours/cusco-magico-5-dias/06.avif",
+      "alt": "Paquete Cusco Mágico 5 Días / 4 Noches - 06.avif"
+    },
+    {
+      "src": "/tours/cusco-magico-5-dias/07.avif",
+      "alt": "Paquete Cusco Mágico 5 Días / 4 Noches - 07.avif"
+    },
+    {
+      "src": "/tours/cusco-magico-5-dias/08.avif",
+      "alt": "Paquete Cusco Mágico 5 Días / 4 Noches - 08.avif"
+    },
+    {
+      "src": "/tours/cusco-magico-5-dias/09.jpg",
+      "alt": "Paquete Cusco Mágico 5 Días / 4 Noches - 09.jpg"
+    },
+    {
+      "src": "/tours/cusco-magico-5-dias/11.jpg",
+      "alt": "Paquete Cusco Mágico 5 Días / 4 Noches - 11.jpg"
+    }
+  ],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "Recepción en Cusco y City Tour Arqueológico",
+      "descripcion": "Llegada a Cusco, traslado al hotel y recorrido vespertino guiado por el Qorikancha y los recintos arqueológicos periféricos.",
+      "actividades": [
+        "Recepción en el Aeropuerto Internacional Alejandro Velasco Astete y traslado privado a tu hotel en Cusco.",
+        "Mañana libre para aclimatación gradual a la altitud.",
+        "13:00 PM | Recojo del hotel para el City Tour Cusco.",
+        "13:30 PM | Visita guiada por el Templo del Sol Qorikancha y Convento de Santo Domingo.",
+        "14:45 PM | Recorrido por el Parque Arqueológico de Sacsayhuamán.",
+        "15:50 PM | Exploración del centro ceremonial de Q'enqo.",
+        "16:35 PM | Visita a la fortín militar de Puka Pukara.",
+        "17:15 PM | Recorrido por las fuentes ceremoniales de agua en Tambomachay.",
+        "18:30 PM | Retorno a Cusco. Noche de hotel en Cusco."
+      ],
+      "alojamiento": "Hotel en Cusco",
+      "comidas_incluidas": []
+    },
+    {
+      "dia": 2,
+      "titulo": "Tour Valle Sagrado VIP con Maras, Moray y Tren a Aguas Calientes",
+      "descripcion": "Recorrido por Chinchero, Salineras de Maras, Moray, almuerzo buffet en Urubamba, Ollantaytambo y viaje en tren a Aguas Calientes.",
+      "actividades": [
+        "06:40 AM | Recojo del hotel en Cusco y traslado en transporte privado turístico.",
+        "07:30 AM | Visita al centro textil artesanal y templo colonial de Chinchero.",
+        "09:15 AM | Recorrido por las terrazas concéntricas de Moray.",
+        "10:45 AM | Visita guiada a las minas de sal natural de Maras.",
+        "12:30 PM | Almuerzo buffet andino en restaurante turístico en Urubamba.",
+        "14:30 PM | Visita a las terrazas e imponente fortaleza de Ollantaytambo.",
+        "16:36 PM o 19:04 PM | Abordaje del tren turístico con destino a Aguas Calientes.",
+        "Llegada a Aguas Calientes, recepción por el personal y traslado al hotel. Noche de hotel en Aguas Calientes."
+      ],
+      "alojamiento": "Hotel en Aguas Calientes",
+      "comidas_incluidas": [
+        "Almuerzo buffet"
+      ]
+    },
+    {
+      "dia": 3,
+      "titulo": "Visita Guiada a Machu Picchu y Retorno a Cusco",
+      "descripcion": "Ascenso en bus a la ciudadela inca, tour guiado oficial por Machu Picchu, retorno en tren a Ollantaytambo y bus a Cusco.",
+      "actividades": [
+        "06:00 AM | Desayuno en el hotel de Aguas Calientes.",
+        "06:30 AM | Abordaje del bus Consettur hacia la puerta de ingreso a Machu Picchu.",
+        "07:15 AM | Visita guiada de 2.5 horas por los circuitos turísticos de Machu Picchu.",
+        "10:30 AM | Descenso en bus hacia Aguas Calientes.",
+        "Tiempo libre para almorzar (no incluido) y explorar el mercado de artesanías.",
+        "14:30 PM o 16:12 PM | Abordaje del tren de retorno a la estación de Ollantaytambo.",
+        "Traslado privado en bus de Ollantaytambo a la ciudad de Cusco.",
+        "20:00 PM | Llegada al hotel en Cusco. Noche de hotel en Cusco."
+      ],
+      "alojamiento": "Hotel en Cusco",
+      "comidas_incluidas": [
+        "Desayuno en el hotel"
+      ]
+    },
+    {
+      "dia": 4,
+      "titulo": "Excursión a la Montaña de 7 Colores (Vinicunca)",
+      "descripcion": "Caminata andina de alta montaña hacia la cumbre de Vinicunca a 5,020 m.s.n.m., contemplando los colores minerales y el nevado Ausangate.",
+      "actividades": [
+        "04:00 AM | Recojo temprano de tu hotel en Cusco y viaje en transporte turístico hacia el sur de la región.",
+        "06:30 AM | Desayuno nutritivo en el poblado de Cusipata.",
+        "08:00 AM | Llegada al punto de inicio de la caminata en Phulawasipata (4,600 m.s.n.m.).",
+        "Inicio de la caminata de ascenso de aprox. 1.5 a 2 horas rodeados de camélidos andinos (llamas y alpacas).",
+        "10:00 AM | Llegada al mirador principal de la Montaña de 7 Colores (5,020 m.s.n.m.). Tiempo libre para fotos e información geológica por el guía.",
+        "11:30 AM | Caminata de descenso de retorno al punto de inicio.",
+        "13:30 PM | Almuerzo buffet andino reparador en Cusipata.",
+        "16:30 PM | Llegada a la ciudad de Cusco. Noche de hotel en Cusco."
+      ],
+      "alojamiento": "Hotel in Cusco",
+      "comidas_incluidas": [
+        "Desayuno",
+        "Almuerzo buffet"
+      ]
+    },
+    {
+      "dia": 5,
+      "titulo": "Mañana Libre en Cusco y Traslado de Salida al Aeropuerto",
+      "descripcion": "Tiempo libre para pasear por San Blas o San Pedro, comprar regalos y traslado privado de salida al aeropuerto de Cusco.",
+      "actividades": [
+        "08:30 AM | Desayuno en el hotel de Cusco.",
+        "Tiempo libre para recorrer las calles incas, museos o el Mercado Central de San Pedro.",
+        "3 horas antes de tu vuelo | Recojo de tu hotel y traslado privado al Aeropuerto Internacional Alejandro Velasco Astete.",
+        "Asistencia en el embarque y final de los servicios."
+      ],
+      "alojamiento": "No incluye (Fin del tour)",
+      "comidas_incluidas": [
+        "Desayuno en el hotel"
+      ]
+    }
+  ],
+  "incluye": [
+    "Traslados aeropuerto - hotel - aeropuerto en vehículo privado.",
+    "Transporte turístico climatizado para todas las excursiones del programa.",
+    "Guía profesional de turismo bilingüe oficial en todos los destinos.",
+    "Boletos de tren turístico ida y vuelta Ollantaytambo - Aguas Calientes.",
+    "1 Noche de alojamiento en hotel de Aguas Calientes.",
+    "Boletos de bus Consettur subida y bajada a Machu Picchu.",
+    "Boleto de entrada oficial al Santuario Histórico de Machu Picchu.",
+    "Excursión completa a la Montaña de 7 Colores Vinicunca con ingresos incluidos.",
+    "1 Almuerzo buffet andino en Valle Sagrado y 1 Almuerzo buffet en Vinicunca.",
+    "1 Desayuno nutritivo el día de la excursión a Vinicunca.",
+    "Kit de primeros auxilios y balón de oxígeno medicinal para la caminata en altitud.",
+    "Asistencia turística permanente 24/7."
+  ],
+  "no_incluye": [
+    "Boleto Turístico del Cusco (BTC) e ingresos a Salineras de Maras (20 PEN) y Qorikancha (15 PEN).",
+    "Noches de hotel en la ciudad de Cusco (opcionales bajo solicitud).",
+    "Boletos aéreos de llegada o salida de Cusco.",
+    "Alquiler opcional de caballo para la caminata en la Montaña de Colores (aprox. 80-100 PEN).",
+    "Alimentación no detallada en el programa.",
+    "Propinas para el equipo de guiado y choferes."
+  ],
+  "recomendaciones": [
+    "Se requiere un buen nivel de aclimatación previo en Cusco antes de realizar la caminata a la Montaña de 7 Colores el cuarto día.",
+    "Llevar ropa de abrigo técnica: casaca cortavientos, chullo, guantes térmicos, bufanda y pantalón de trekking para el frío en la montaña.",
+    "Llevar bastones de trekking con punta de goma para facilitar el ascenso a Vinicunca.",
+    "Llevar pasaporte o documento de identidad original para los controles en trenes y Machu Picchu.",
+    "Mantenerse hidratado constantemente con agua o infusiones de coca y muña durante todo el viaje."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "Montaña de 7 Colores (Vinicunca)",
+      "tipo": "Formación Geológica Natural",
+      "descripcion": "Famosa montaña teñida de franjas multicolores debido a la oxidación de minerales marinos acumulados durante millones de años.",
+      "altitud": "5,020 m.s.n.m."
+    },
+    {
+      "nombre": "Santuario Histórico de Machu Picchu",
+      "tipo": "Maravilla del Mundo Arqueológica",
+      "descripcion": "Ciudadela sagrada construida por los incas en la ceja de selva andina.",
+      "altitud": "2,430 m.s.n.m."
+    },
+    {
+      "nombre": "Salineras de Maras y Moray",
+      "tipo": "Patrimonio Agrícola y Tecnológico",
+      "descripcion": "Complejo arqueológico compuesto por pozas de sal natural y terrazas circulares de cultivo.",
+      "altitud": "3,500 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Qué tan difícil es la caminata a la Montaña de 7 Colores?",
+      "respuesta": "La caminata es de nivel moderado a exigente debido a la altitud (5,020 m.s.n.m.). Tiene una duración aproximada de 1.5 a 2 horas de ascenso continuo. Si te sientes cansado, puedes alquilar un caballo a los comuneros locales en el punto de inicio."
+    },
+    {
+      "pregunta": "¿Puedo cambiar la Montaña de Colores por la Laguna Humantay?",
+      "respuesta": "Sí, al momento de realizar la reserva puedes solicitar el cambio de la excursión del Día 4 a la Laguna Humantay sin ningún costo adicional."
+    },
+    {
+      "pregunta": "¿Incluyen oxígeno durante la caminata de alta montaña?",
+      "respuesta": "Sí, nuestros guías llevan consigo un tanque de oxígeno medicinal y botiquín de primeros auxilios para atender de inmediato cualquier malestar por soroche o altitud."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "Paquete Cusco Magico 5 Dias",
+    "meta_title": "Paquete Cusco Mágico 5 Días / 4 Noches | Chullos Tours",
+    "meta_description": "Reserva el Paquete Cusco Mágico 5 Días. Explora el City Tour Cusco, Valle Sagrado VIP, noche en Aguas Calientes, Machu Picchu y la Montaña de 7 Colores. ¡Agencia local Chullos Tours!",
+    "canonical": "https://chullostours.com/tours/cusco-magico-5-dias/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "Paquete Cusco Mágico 5 Días / 4 Noches | Chullos Tours",
+      "og_description": "Circuito de 5 días por Cusco, Valle Sagrado VIP, pernocte en Aguas Calientes, Machu Picchu y la Montaña de 7 Colores Vinicunca.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/cusco-magico-5-dias/",
+      "og_image": "/tours/cusco-magico-5-dias/05.avif",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Paquete Cusco Mágico 5 Días / 4 Noches",
+      "description": "Explora Machu Picchu, el Valle Sagrado y Vinicunca en un paquete integral de 5 días.",
+      "image": "/tours/cusco-magico-5-dias/05.avif"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "Paquete Cusco Mágico 5 Días",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Cusco, Machu Picchu y Montaña de 7 Colores",
+      "region": "Cusco",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El Paquete Cusco Mágico 5 Días / 4 Noches de Chullos Tours incluye traslados de llegada y salida, City Tour por Cusco, recorrido VIP por el Valle Sagrado (Maras, Moray, Ollantaytambo), una noche de hotel en Aguas Calientes, visita guiada por la ciudadela de Machu Picchu y caminata de alta montaña a la Montaña de 7 Colores Vinicunca.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Duración total",
+        "value": "5 Días / 4 Noches"
+      },
+      {
+        "fact": "Atractivos principales",
+        "value": "City Tour Cusco, Salineras de Maras, Moray, Ollantaytambo, Aguas Calientes, Machu Picchu, Montaña de 7 Colores Vinicunca"
+      },
+      {
+        "fact": "Altitud máxima",
+        "value": "5,020 m.s.n.m. en la Montaña Vinicunca"
+      },
+      {
+        "fact": "Comidas incluidas",
+        "value": "1 Almuerzo buffet en Valle Sagrado, 1 Desayuno y 1 Almuerzo buffet en Vinicunca"
+      },
+      {
+        "fact": "Operador acreditado",
+        "value": "Chullos Tours Cusco"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/cusco-magico-5-dias/#product",
+        "name": "Paquete Cusco Mágico 5 Días / 4 Noches",
+        "description": "Itinerario de 5 días recorriendo Cusco, Valle Sagrado VIP con Maras y Moray, pernocte en Aguas Calientes, Machu Picchu y trekking a la Montaña de 7 Colores Vinicunca.",
+        "url": "https://chullostours.com/tours/cusco-magico-5-dias/",
+        "image": [
+          "/tours/cusco-magico-5-dias/05.avif",
+          "/tours/cusco-magico-5-dias/06.avif",
+          "/tours/cusco-magico-5-dias/07.avif",
+          "/tours/cusco-magico-5-dias/08.avif",
+          "/tours/cusco-magico-5-dias/09.jpg",
+          "/tours/cusco-magico-5-dias/11.jpg"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "460.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/cusco-magico-5-dias/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://chullostours.com/tours/cusco-magico-5-dias/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué tan difícil es la caminata a la Montaña de 7 Colores?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La caminata es de nivel moderado a exigente por la altitud (5,020 m.s.n.m.) con 1.5 a 2 horas de ascenso. Es posible alquilar caballos con los comuneros locales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo cambiar la Montaña de Colores por la Laguna Humantay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, puedes solicitar el cambio de la excursión del Día 4 a la Laguna Humantay sin ningún costo adicional."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

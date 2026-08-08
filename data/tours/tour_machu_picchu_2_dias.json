@@ -1,0 +1,304 @@
+{
+  "titulo": "Tour Machu Picchu 2 Días / 1 Noche en Tren",
+  "slug": "tour-machu-picchu-2-dias",
+  "url": "https://chullostours.com/tours/tour-machu-picchu-2-dias/",
+  "metas": {
+    "description": "Disfruta del Tour a Machu Picchu 2 Días / 1 Noche con viaje tranquilo en tren a Aguas Calientes. Incluye ingresos, hotel y guía profesional. ¡Reserva con Chullos Tours!",
+    "og_title": "Tour Machu Picchu 2 Días / 1 Noche en Tren | Chullos Tours",
+    "og_url": "https://chullostours.com/tours/tour-machu-picchu-2-dias/"
+  },
+  "atributos": {
+    "duracion": "2 Días / 1 Noche",
+    "ubicacion": "Cusco - Valle Sagrado - Machu Picchu, Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Cultural / Historia / Naturaleza",
+    "alojamiento_incluido": "Hotel 3 estrellas en Aguas Calientes",
+    "dificultad": "Baja",
+    "altitud_maxima": "2,430 m.s.n.m. (Machu Picchu)",
+    "grupo_max": 15,
+    "nivel_fisico": "Fácil (Apto para todas las edades)"
+  },
+  "resumen": "Descubre Machu Picchu a un ritmo relajado y sin prisas con nuestro Tour de 2 Días y 1 Noche. Viaja a través del hermoso Valle Sagrado de los Incas en un tren panorámico, pasa una agradable noche en Aguas Calientes y contempla el amanecer en la mítica ciudadela inca con la compañía de un guía oficial experto.",
+  "descripcion_completa": "El Tour Machu Picchu de 2 Días y 1 Noche es la opción preferida para viajeros que buscan vivir una experiencia cómoda, pausada e inolvidable en la Maravilla del Mundo sin los apuros de un viaje de un solo día. Este paquete turístico combina el transporte en trenes de clase turística o panorámicos a través de los cambiantes paisajes del Valle Sagrado con una estancia relajante a orillas del río Urubamba en Aguas Calientes.\n\nEn el primer día, realizaremos el traslado terrestre desde Cusco hacia la estación de trenes en Ollantaytambo, disfrutando de los imponentes paisajes andinos antes de abordar el tren con dirección a Machupicchu Pueblo (Aguas Calientes). Tendrás la tarde libre para descansar, visitar los baños termales del pueblo o pasear por su colorido mercado artesanal.\n\nEn el segundo día, abordaremos temprano el autobús que asciende por la sinuosa carretera Hiram Bingham hasta la puerta del Santuario Histórico de Machu Picchu. Realizarás un tour guiado privado o en grupo reducido de 2.5 a 3 horas por los sectores principales de la ciudadela, aprendiendo sobre la arquitectura, historia y cosmología incaica. Tras tiempo para fotografiar las postales más emblemáticas, retornaremos en tren y bus privado a la ciudad de Cusco.",
+  "propuesta_de_valor": [
+    "Itinerario descansado ideal para familias, adultos mayores o viajeros que prefieren evitar horarios apretados.",
+    "Garantía de entradas oficiales a Machu Picchu en los horarios con mejor iluminación matutina.",
+    "Boletos de tren ida y vuelta en servicio Expedition o Vistadome según tu elección.",
+    "Alojamiento confortable seleccionado con desayuno incluido en Aguas Calientes.",
+    "Atención y asistencia personalizada desde el momento de tu llegada a Cusco hasta el retorno."
+  ],
+  "destacados_highlights": [
+    "Viaje en Tren Panorámico: Disfruta de las vistas de los picos andinos y ceja de selva a través de grandes ventanales.",
+    "Noche en Aguas Calientes: Descansa en Machupicchu Pueblo con opción de visitar sus fuentes termales.",
+    "Tour Guiado en Machu Picchu: Descubre el Intihuatana, el Templo del Sol, la Plaza Principal y el Templo de las Tres Ventanas.",
+    "Flexibilidad de Horarios: Tiempo suficiente para tomar fotografías icónicas y disfrutar del entorno natural.",
+    "Traslados Puerta a Puerta: Coordinación completa de traslados desde tu hotel en Cusco."
+  ],
+  "galeria": [
+    {
+      "src": "/tours/tour-machu-picchu-2-dias/01.jpg",
+      "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 01.jpg"
+    },
+    {
+      "src": "/tours/tour-machu-picchu-2-dias/02.jpg",
+      "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 02.jpg"
+    },
+    {
+      "src": "/tours/tour-machu-picchu-2-dias/03.jpg",
+      "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 03.jpg"
+    },
+    {
+      "src": "/tours/tour-machu-picchu-2-dias/04.jpg",
+      "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 04.jpg"
+    },
+    {
+      "src": "/tours/tour-machu-picchu-2-dias/05.jpg",
+      "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 05.jpg"
+    },
+    {
+      "src": "/tours/tour-machu-picchu-2-dias/06.avif",
+      "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 06.avif"
+    },
+    {
+      "src": "/tours/tour-machu-picchu-2-dias/07.avif",
+      "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 07.avif"
+    },
+    {
+      "src": "/tours/tour-machu-picchu-2-dias/09.jpg",
+      "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 09.jpg"
+    },
+    {
+      "src": "/tours/tour-machu-picchu-2-dias/10.jpg",
+      "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 10.jpg"
+    }
+  ],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "Cusco - Valle Sagrado - Viaje en Tren a Aguas Calientes",
+      "descripcion": "Traslado desde el hotel en Cusco a la estación de Ollantaytambo, viaje panorámico en tren a Aguas Calientes e instalación en el hotel.",
+      "actividades": [
+        "08:00 AM | Recojo de tu hotel en el centro de la ciudad de Cusco.",
+        "08:30 AM | Viaje en transporte turístico hacia el Valle Sagrado atravesando fértiles valles andinos.",
+        "11:00 AM | Llegada a la estación de trenes de Ollantaytambo.",
+        "11:30 AM | Abordaje del tren turístico (Expedition o Vistadome) hacia Aguas Calientes.",
+        "13:00 PM | Llegada a Machupicchu Pueblo (Aguas Calientes) y asistencia de recepción por nuestro personal.",
+        "13:30 PM | Check-in en el hotel seleccionado y almuerzo libre.",
+        "15:30 PM | Tiempo libre recomendado para visitar los baños termales curativos o el mercado artesanal.",
+        "19:00 PM | Reunión informativa breve con el guía para coordinar detalles de la visita del Día 2."
+      ],
+      "alojamiento": "Hotel 3 estrellas en Aguas Calientes",
+      "comidas_incluidas": []
+    },
+    {
+      "dia": 2,
+      "titulo": "Tour Guiado en Machu Picchu - Retorno en Tren a Cusco",
+      "descripcion": "Ascenso matutino en bus a la ciudadela inca de Machu Picchu, tour guiado oficial y retorno en tren a Ollantaytambo y Cusco.",
+      "actividades": [
+        "06:00 AM | Desayuno completo en el hotel de Aguas Calientes.",
+        "06:45 AM | Abordaje del autobús de subida a través de la carretera Hiram Bingham.",
+        "07:30 AM | Ingreso oficial a la Maravilla del Mundo Machu Picchu.",
+        "08:00 AM | Tour guiado de 2.5 a 3 horas visitando el Templo del Sol, Plaza Sagrada, Intihuatana y recintos reales.",
+        "11:00 AM | Tiempo para fotos de despedida y abordaje del bus de retorno a Aguas Calientes.",
+        "12:30 PM | Almuerzo libre en los variados restaurantes de Aguas Calientes.",
+        "14:30 PM | Presentación en la estación de trenes de Aguas Calientes.",
+        "15:20 PM | Salida del tren de retorno con destino a Ollantaytambo.",
+        "17:10 PM | Traslado en bus turístico privado desde la estación de Ollantaytambo hasta Cusco.",
+        "19:00 PM | Llegada a la ciudad de Cusco y traslado a tu hotel."
+      ],
+      "alojamiento": "No incluido",
+      "comidas_incluidas": [
+        "Desayuno"
+      ]
+    }
+  ],
+  "incluye": [
+    "Traslados turísticos privados hotel Cusco - Estación Ollantaytambo - hotel Cusco.",
+    "Boletos de tren ida y vuelta (Ollantaytambo - Aguas Calientes - Ollantaytambo) en servicio Expedition o Vistadome.",
+    "Boleto oficial de ingreso a la Ciudadela de Machu Picchu (Circuito oficial garantizado).",
+    "Tickets de bus ecológico ida y vuelta Aguas Calientes - Machu Picchu - Aguas Calientes.",
+    "Guía profesional de turismo bilingüe (Español / Inglés).",
+    "1 noche de hospedaje en hotel 3 estrellas en Aguas Calientes con desayuno incluido.",
+    "Asistencia personalizada 24/7 durante todo tu viaje."
+  ],
+  "no_incluye": [
+    "Almuerzo y cena el primer día; almuerzo el segundo día.",
+    "Entradas a montañas adicionales como Huayna Picchu o Machu Picchu Montaña (sujeto a disponibilidad al reservar).",
+    "Ingreso a los baños termales de Aguas Calientes (15 PEN aprox. entrada local).",
+    "Propinas para el guía y el conductor."
+  ],
+  "recomendaciones": [
+    "Reservar con al menos 1 a 2 meses de anticipación para asegurar los mejores horarios de entrada y tren.",
+    "Llevar pasaporte original o documento de identidad usado en la reserva.",
+    "Usar calzado cómodo con suela antideslizante para caminar sobre empedrados incas.",
+    "Llevar un poncho de lluvia ligero, gorra para el sol, repelente de mosquitos y bloqueador solar.",
+    "Llevar una botella reutilizable de agua para mantener la hidratación en el circuito."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "Ollantaytambo",
+      "tipo": "Pueblo e Yacimiento Arqueológico",
+      "descripcion": "Pueblo inca viviente del Valle Sagrado desde donde parten los trenes hacia Machu Picchu.",
+      "altitud": "2,792 m.s.n.m."
+    },
+    {
+      "nombre": "Aguas Calientes (Machupicchu Pueblo)",
+      "tipo": "Poblado Turístico",
+      "descripcion": "Encantadora villa enclavada en el cañón del Urubamba equipada con hoteles, restaurantes y termas.",
+      "altitud": "2,040 m.s.n.m."
+    },
+    {
+      "nombre": "Ciudadela Inca de Machu Picchu",
+      "tipo": "Patrimonio Cultural de la Humanidad",
+      "descripcion": "El santuario incaico más deslumbrante del mundo, famoso por su arquitectura de piedra ensamblada y armonía natural.",
+      "altitud": "2,430 m.s.n.m."
+    },
+    {
+      "nombre": "Templo del Sol en Machu Picchu",
+      "tipo": "Recinto Sagrado",
+      "descripcion": "Estructura semicircular inca dedicada a la observación astronómica y al culto del astro rey.",
+      "altitud": "2,430 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Cuál es la diferencia entre el tour de 1 día y el de 2 días a Machu Picchu?",
+      "respuesta": "El tour de 2 días te permite viajar descansado el primer día, dormir en Aguas Calientes y subir a Machu Picchu muy temprano por la mañana con menos multitud y mejor clima, a diferencia del tour full day que realiza todo en una jornada extensa."
+    },
+    {
+      "pregunta": "¿Qué tipo de tren incluye el paquete?",
+      "respuesta": "Incluye el tren Expedition o Voyage de PerúRail/IncaRail por defecto. Puedes solicitar la mejora a servicio Vistadome (tren panorámico con show folclórico y snacks) por un costo adicional."
+    },
+    {
+      "pregunta": "¿El tour es adecuado para niños o adultos mayores?",
+      "respuesta": "Sí, es el tour más recomendado para familias con niños pequeños y personas de la tercera edad, ya que no requiere caminatas prolongadas y permite un descanso adecuado en hotel."
+    },
+    {
+      "pregunta": "¿Puedo añadir la visita a la montaña Huayna Picchu?",
+      "respuesta": "Sí, se puede agregar el boleto para Huayna Picchu previa solicitud al momento de reservar, siempre que existan cupos disponibles en el sistema oficial del Ministerio de Cultura."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "Tour Machu Picchu 2 Días",
+    "meta_title": "Tour Machu Picchu 2 Días / 1 Noche en Tren | Chullos Tours",
+    "meta_description": "Viaja a Machu Picchu en 2 Días y 1 Noche con tren panorámico, hotel en Aguas Calientes, traslados y guía profesional. ¡Reserva online con Chullos Tours!",
+    "canonical": "https://chullostours.com/tours/tour-machu-picchu-2-dias/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "Tour Machu Picchu 2 Días / 1 Noche en Tren | Chullos Tours",
+      "og_description": "Descubre la magia de Machu Picchu sin prisas. Incluye pasajes de tren, ingresos, guía bilingüe y noche de hotel.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/tour-machu-picchu-2-dias/",
+      "og_image": "/tours/tour-machu-picchu-2-dias/01.jpg",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Tour Machu Picchu 2 Días / 1 Noche en Tren | Chullos Tours",
+      "description": "Recorre Machu Picchu de forma tranquila e inolvidable con nuestro tour de 2 días. Tren, hotel y traslados incluidos.",
+      "image": "/tours/tour-machu-picchu-2-dias/01.jpg"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "Tour Machu Picchu 2 Días / 1 Noche en Tren",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Machu Picchu",
+      "region": "Cusco",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El Tour Machu Picchu 2 Días / 1 Noche de Chullos Tours es una excursión turística en tren hacia Machupicchu Pueblo con pernocte en hotel 3 estrellas y tour guiado en la ciudadela inca en el segundo día. Incluye traslados terrestres, boletos de tren, buses y entrada oficial.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Duración total",
+        "value": "2 Días / 1 Noche"
+      },
+      {
+        "fact": "Medio de transporte",
+        "value": "Tren turístico (Expedition o Vistadome) + Autobús ecológico Hiram Bingham"
+      },
+      {
+        "fact": "Pernocte",
+        "value": "Hotel en Aguas Calientes (Machupicchu Pueblo)"
+      },
+      {
+        "fact": "Exigencia física",
+        "value": "Baja / Fácil"
+      },
+      {
+        "fact": "Operador acreditado",
+        "value": "Chullos Tours Cusco"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/tour-machu-picchu-2-dias/#product",
+        "name": "Tour Machu Picchu 2 Días / 1 Noche en Tren",
+        "description": "Viaje descansado de 2 días a Machu Picchu con traslado desde Cusco, trenes turísticos, hotel en Aguas Calientes y recorrido guiado por la ciudadela inca.",
+        "url": "https://chullostours.com/tours/tour-machu-picchu-2-dias/",
+        "image": [
+          "/tours/tour-machu-picchu-2-dias/01.jpg",
+          "/tours/tour-machu-picchu-2-dias/02.jpg",
+          "/tours/tour-machu-picchu-2-dias/03.jpg",
+          "/tours/tour-machu-picchu-2-dias/04.jpg",
+          "/tours/tour-machu-picchu-2-dias/05.jpg",
+          "/tours/tour-machu-picchu-2-dias/06.avif",
+          "/tours/tour-machu-picchu-2-dias/07.avif",
+          "/tours/tour-machu-picchu-2-dias/09.jpg",
+          "/tours/tour-machu-picchu-2-dias/10.jpg"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "310.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/tour-machu-picchu-2-dias/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://chullostours.com/tours/tour-machu-picchu-2-dias/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuál es la diferencia entre el tour de 1 día y el de 2 días a Machu Picchu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El tour de 2 días te permite viajar de forma descansada, pernoctar en Aguas Calientes e ingresar a Machu Picchu muy temprano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué tipo de tren incluye el paquete?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Incluye tren Expedition por defecto, con opción de actualización a servicio Vistadome."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
