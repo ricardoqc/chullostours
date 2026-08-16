@@ -10,6 +10,7 @@ import {
   SocialTripadvisor,
   SocialWhatsapp,
 } from "@/components/ui/icons";
+import { companyInfo } from "@/lib/company-info";
 
 export const Footer: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -62,23 +63,23 @@ export const Footer: React.FC = () => {
             </Link>
 
             <p className="text-xs md:text-sm text-slate-400 leading-relaxed">
-              Somos una agencia de viajes autorizada en Cusco, brindando experiencias personalizadas, seguras e inolvidables en Perú.
+              {companyInfo.description}
             </p>
 
             <div className="text-xs text-slate-400 leading-snug space-y-1 pt-1">
               <p>
-                <span className="font-bold text-[#ffc000]">RUC:</span> 20611401648
+                <span className="font-bold text-[#ffc000]">RUC:</span> {companyInfo.ruc}
               </p>
-              <p className="font-bold text-white tracking-wide">VIAJANDO CON CHULLOS S.A.C.</p>
+              <p className="font-bold text-white tracking-wide">{companyInfo.legalName}</p>
               <p>
-                <span className="font-bold text-[#ffc000]">Dirección:</span> Centro Comercial San Andrés 218, Of. 14, Cusco, Perú.
+                <span className="font-bold text-[#ffc000]">Dirección:</span> {companyInfo.address.full}
               </p>
             </div>
 
             {/* Social Icons */}
             <div className="flex items-center gap-2.5 mt-2">
               <a
-                href="https://facebook.com/chullostours"
+                href={companyInfo.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -87,7 +88,7 @@ export const Footer: React.FC = () => {
                 <SocialFacebook className="w-4.5 h-4.5" />
               </a>
               <a
-                href="https://instagram.com/chullostours"
+                href={companyInfo.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -96,7 +97,7 @@ export const Footer: React.FC = () => {
                 <SocialInstagram className="w-4.5 h-4.5" />
               </a>
               <a
-                href="https://tiktok.com/@chullostours"
+                href={companyInfo.social.tiktok}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
@@ -105,7 +106,7 @@ export const Footer: React.FC = () => {
                 <SocialTiktok className="w-4.5 h-4.5" />
               </a>
               <a
-                href="https://tripadvisor.com"
+                href={companyInfo.social.tripadvisor}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TripAdvisor"
@@ -210,7 +211,7 @@ export const Footer: React.FC = () => {
       <div className="bg-[#6b0014] text-white py-4 px-4 text-xs relative z-10 border-t border-white/10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-center sm:text-left text-slate-200 font-medium">
-            Copyright © 2026 Viajando con Chullos S.A.C. Todos los derechos reservados.
+            {companyInfo.copyright}
           </p>
           <div className="flex items-center gap-4 text-slate-200">
             <Link href="/politicas-de-privacidad" className="hover:text-[#ffc000] transition-colors">
@@ -230,7 +231,7 @@ export const Footer: React.FC = () => {
           <span>¿Dudas sobre tu viaje? ¡Escríbenos!</span>
         </div>
         <a
-          href="https://wa.me/51992558512"
+          href={companyInfo.phones.primary.whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat en WhatsApp"

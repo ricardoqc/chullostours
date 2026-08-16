@@ -1,0 +1,209 @@
+[
+  {
+    "id": "tour-01",
+    "nombre": "City Tour Cusco",
+    "recomendaciones": [
+      "Llevar documento de identidad / pasaporte original",
+      "Llevar ropa abrigadora y cortaviento",
+      "Llevar sombrero / gorra y bloqueador solar",
+      "Llevar zapatillas cómodas para caminata corta",
+      "Llevar efectivo en Soles para las entradas (BTC)"
+    ]
+  },
+  {
+    "id": "tour-02",
+    "nombre": "Valle Sagrado de los Incas VIP / Tradicional",
+    "recomendaciones": [
+      "Llevar Boleto Turístico",
+      "Llevar ropa ligera para el día y abrigadora para la tarde",
+      "Llevar agua y snacks",
+      "Llevar cámara fotográfica y lentes de sol"
+    ]
+  },
+  {
+    "id": "tour-03",
+    "nombre": "Machu Picchu Full Day en Tren",
+    "recomendaciones": [
+      "Llevar pasaporte u documento de identidad original OBLIGATORIO",
+      "Reservar con anticipación (cupos de ingreso a Machu Picchu limitados)",
+      "Llevar repelente de insectos y bloqueador solar",
+      "Llevar ropa cómoda, zapatillas de trekking y poncho de lluvia"
+    ]
+  },
+  {
+    "id": "tour-04",
+    "nombre": "Montaña de 7 Colores (Vinicunca)",
+    "recomendaciones": [
+      "Estar aclimatado al menos 2 días en Cusco previo a este tour",
+      "Llevar ropa abrigadora en capas (casaca térmica, gorro, guantes)",
+      "Llevar zapatillas de trekking con buen agarre",
+      "Llevar poncho de lluvia, lentes de sol y bloqueador solar",
+      "Llevar caramelos de coca o muña"
+    ]
+  },
+  {
+    "id": "tour-05",
+    "nombre": "Cuatrimotos Montaña de 7 Colores",
+    "recomendaciones": [
+      "Llevar ropa resistente al viento y al frío",
+      "Llevar guantes abrigadores y gafas de sol",
+      "Llevar calzado adecuado y bloqueador solar"
+    ]
+  },
+  {
+    "id": "tour-06",
+    "nombre": "Laguna Humantay",
+    "recomendaciones": [
+      "Estar aclimatado en Cusco al menos 1-2 días antes",
+      "Llevar calzado de caminata, ropa abrigadora y cortaviento",
+      "Llevar poncho de agua, bloqueador solar y agua mineral"
+    ]
+  },
+  {
+    "id": "tour-07",
+    "nombre": "Glaciar Quelccaya",
+    "recomendaciones": [
+      "Llevar ropa de alta montaña (térmica, casaca gruesa, guantes, chullo)",
+      "Excelente aclimatación previa (altitud sobre los 5,000 m.s.n.m.)",
+      "Llevar gafas de sol con protección UV alta"
+    ]
+  },
+  {
+    "id": "tour-08",
+    "nombre": "ATV Maras Moray (Cuatrimotos)",
+    "recomendaciones": [
+      "Llevar ropa que se pueda ensuciar (polvo o barro según clima)",
+      "Llevar lentes de sol, pañolón / bandana y bloqueador solar",
+      "Llevar cámara o GoPro"
+    ]
+  },
+  {
+    "id": "tour-09",
+    "nombre": "Cusco Místico (Morada de los Dioses Apukunyana)",
+    "recomendaciones": [
+      "Llevar calzado cómodo para caminatas cortas",
+      "Llevar cámara fotográfica con suficiente batería",
+      "Llevar casaca abrigadora para la tarde",
+      "Llevar protector solar y sombrero"
+    ]
+  },
+  {
+    "id": "tour-10",
+    "nombre": "Cusco Escénico (City Tour Nocturno)",
+    "recomendaciones": [
+      "Llevar ropa bastante abrigadora (noche fría en Cusco)",
+      "Llevar cámara para fotografía nocturna",
+      "Calzado cómodo"
+    ]
+  },
+  {
+    "id": "tour-11",
+    "nombre": "Puente Qeswachaka y Circuitos de las 4 Lagunas",
+    "recomendaciones": [
+      "Llevar zapatillas con buena tracción",
+      "Llevar cortaviento y ropa abrigadora",
+      "Llevar sombrero y protector solar"
+    ]
+  },
+  {
+    "id": "tour-12",
+    "nombre": "Waqrapukara Trekking",
+    "recomendaciones": [
+      "Buena condición física y aclimatación previa",
+      "Llevar cortaviento, ropa térmica y calzado de trekking",
+      "Llevar abundante agua o bebidas rehidratantes"
+    ]
+  },
+  {
+    "id": "tour-13",
+    "nombre": "7 Lagunas de Ausangate (Pacchanta)",
+    "recomendaciones": [
+      "Llevar traje de baño y toalla si desea ingresar a las termas",
+      "Llevar gorro de lana, guantes y casaca impermeable",
+      "Llevar protector solar y gafas de sol"
+    ]
+  },
+  {
+    "id": "tour-14",
+    "nombre": "Valle Sur Cusco (Tipón, Pikillacta y Andahuaylillas)",
+    "recomendaciones": [
+      "Llevar Boleto Turístico del Cusco",
+      "Llevar dinero en efectivo para souvenirs y comida en Saylla",
+      "Llevar sombrero, lentes de sol y bloqueador"
+    ]
+  },
+  {
+    "id": "tour-15",
+    "nombre": "Cataratas de Poc Poc (Chinchero Trekking)",
+    "recomendaciones": [
+      "Zapatillas con buena tracción",
+      "Casaca impermeable o poncho de lluvia",
+      "Agua mineral y snacks"
+    ]
+  },
+  {
+    "id": "tour-16",
+    "nombre": "Machu Picchu By Car 2 Días / 1 Noche",
+    "recomendaciones": [
+      "Llevar mochila pequeña (máx 5-8 kg) para la caminata",
+      "Documento de identidad o Pasaporte Original OBLIGATORIO",
+      "Repelente de mosquitos fuerte y bloqueador solar",
+      "Ropa ligera para la caminata y abrigadora para la noche",
+      "Linterna pequeña"
+    ]
+  },
+  {
+    "id": "tour-17",
+    "nombre": "Camino Inca Corto 2 Días / 1 Noche",
+    "recomendaciones": [
+      "Reservar con varios meses de anticipación (cupos gubernamentales estrictamente limitados)",
+      "Pasaporte original obligatorio utilizado en la reserva",
+      "Mochila cómoda de 30L",
+      "Zapatillas de trekking usadas previo al viaje"
+    ]
+  },
+  {
+    "id": "tour-18",
+    "nombre": "Camino Inca Clásico 4 Días / 3 Noches",
+    "recomendaciones": [
+      "Reserva con 4 a 6 meses de anticipación requerida",
+      "Excelente condición física y aclimatación de 3 días en Cusco",
+      "Llevar ropa térmica, impermeable y buenas botas de trekking"
+    ]
+  },
+  {
+    "id": "tour-19",
+    "nombre": "Tour Puno Full Day (Islas Uros y Taquile)",
+    "recomendaciones": [
+      "Llevar casaca muy abrigadora (noche en Puno es extremadamente fría)",
+      "Llevar lentes de sol y gorro para la alta radiación en el lago",
+      "Llevar efectivo en Soles"
+    ]
+  },
+  {
+    "id": "tour-20",
+    "nombre": "Tour Puno 2 Días / 1 Noche (Uros, Amantaní y Taquile - Turismo Vivencial)",
+    "recomendaciones": [
+      "Llevar pequeños presentes o útiles para los niños de la familia anfitriona (opcional pero muy apreciado)",
+      "Llevar ropa abrigadora y de cambio cómodo",
+      "Batería portátil (Powerbank)"
+    ]
+  },
+  {
+    "id": "tour-21",
+    "nombre": "Lima City Tour",
+    "recomendaciones": [
+      "Llevar casaca corta o abrigo ligero para la brisa marina y noche",
+      "Llevar cámara con flash o buen modo nocturno"
+    ]
+  },
+  {
+    "id": "tour-22",
+    "nombre": "Oasis Huacachina + Islas Ballestas (Ica y Paracas desde Lima)",
+    "recomendaciones": [
+      "Llevar ropa ligera para el calor del desierto y casaca para el viento marino",
+      "Llevar lentes de sol ajustados (para la arena) y pañuelo/bandana",
+      "Bloqueador solar abundante y gorra"
+    ]
+  }
+]

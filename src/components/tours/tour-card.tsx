@@ -109,7 +109,7 @@ export const TourCard: React.FC<{ tour: TourProps }> = ({ tour }) => {
             href={`/tours/${tour.slug}`}
             className="px-4 py-2.5 bg-[#6b0014] text-white text-xs font-bold rounded-xl hover:bg-[#850019] transition-all shadow-sm flex items-center gap-1 shrink-0 font-title"
           >
-            <span>Ver Tour</span>
+            <span>Explorar</span>
             <span className="text-sm">→</span>
           </Link>
         </div>

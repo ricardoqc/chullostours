@@ -1,0 +1,40 @@
+{
+  "id": "tour-08",
+  "nombre": "ATV Maras Moray (Cuatrimotos)",
+  "categoria": "Cusco / Aventura",
+  "duracion": "Medio Día (Mañana o Tarde)",
+  "precio_usd": 60,
+  "horarios_disponibles": [
+    "07:00 am - 07:30 am",
+    "13:00 pm - 13:30 pm"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo del hotel y traslado en bus a Cruzpata (Base de cuatrimotos)",
+    "Práctica de 10-15 minutos en las cuatrimotos con instrucción del guía",
+    "Ruta en cuatrimoto hacia el Centro Arqueológico de Moray (terrazas de experimentación agrícola)",
+    "Visita y recorrido guiado en Moray",
+    "Continuación del recorrido hacia las Salineras de Maras (pozas de sal ancestrales)",
+    "Visita guiada en Salineras de Maras",
+    "Retorno en cuatrimoto a la base de Cruzpata",
+    "Traslado en bus de retorno a Cusco (llegada al centro)"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico de ida y retorno",
+    "Cuatrimotos individuales / dobles + casco y guantes",
+    "Asistencia técnica permanente"
+  ],
+  "no_incluye": [
+    "Boleto Turístico del Cusco (para Moray)",
+    "Ingreso a Salineras de Maras",
+    "Alimentación",
+    "Gastos personales"
+  ],
+  "recomendaciones": [
+    "Llevar ropa que se pueda ensuciar (polvo o barro según clima)",
+    "Llevar lentes de sol, pañolón / bandana y bloqueador solar",
+    "Llevar cámara o GoPro"
+  ],
+  "pagina_catalogo": 11
+}

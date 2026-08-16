@@ -1,0 +1,39 @@
+{
+  "id": "tour-01",
+  "nombre": "City Tour Cusco",
+  "categoria": "Cusco / Tradicional",
+  "duracion": "Medio Día (Aprox 4-5 horas)",
+  "precio_usd": 40,
+  "horarios_disponibles": [
+    "09:00 hrs",
+    "13:00 hrs / 14:00 hrs"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco o Calle Plateros (según turno)",
+  "itinerario": [
+    "Qoricancha (Templo del Sol)",
+    "Sacsayhuamán",
+    "Q'enqo",
+    "Puka Pukara",
+    "Tambomachay",
+    "Retorno a Cusco (14:00 hrs o 18:00 hrs aprox., Calle Plateros)"
+  ],
+  "incluye": [
+    "Guía Profesional (Español / Inglés)",
+    "Transporte Turístico",
+    "Asistencia durante el recorrido"
+  ],
+  "no_incluye": [
+    "Boleto Turístico del Cusco (BTC)",
+    "Entrada a Qoricancha",
+    "Gastos personales",
+    "Alimentación"
+  ],
+  "recomendaciones": [
+    "Llevar documento de identidad / pasaporte original",
+    "Llevar ropa abrigadora y cortaviento",
+    "Llevar sombrero / gorra y bloqueador solar",
+    "Llevar zapatillas cómodas para caminata corta",
+    "Llevar efectivo en Soles para las entradas (BTC)"
+  ],
+  "pagina_catalogo": 4
+}

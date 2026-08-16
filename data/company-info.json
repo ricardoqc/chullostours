@@ -1,0 +1,45 @@
+{
+  "name": "Chullos Tours",
+  "legalName": "VIAJANDO CON CHULLOS S.A.C.",
+  "ruc": "20611401648",
+  "tagline": "Experiencias inolvidables en Cusco y Perú",
+  "description": "Somos una agencia de viajes autorizada en Cusco, brindando experiencias personalizadas, seguras e inolvidables en Perú.",
+  "phones": {
+    "primary": {
+      "number": "+51 992 558 512",
+      "raw": "51992558512",
+      "agent": "Lucía",
+      "whatsappUrl": "https://wa.me/51992558512"
+    },
+    "secondary": {
+      "number": "+51 973 781 330",
+      "raw": "51973781330",
+      "agent": "Alexandra",
+      "whatsappUrl": "https://wa.me/51973781330"
+    }
+  },
+  "emails": {
+    "info": "info@chullostours.com",
+    "reservas": "reservas@chullostours.com",
+    "soporte": "soporte@chullostours.com"
+  },
+  "address": {
+    "street": "Centro Comercial San Andrés 218",
+    "office": "Oficina 14",
+    "city": "Cusco",
+    "country": "Perú",
+    "full": "Centro Comercial San Andrés 218, oficina 14, Cusco, Perú",
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.3399200000003!2d-71.98175!3d-13.52264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91682ef53e4fa4e7%3A0x7a42e4a1c10f56d0!2sCentro%20Comercial%20San%20Andres%2C%20Cusco!5e0!3m2!1ses!2spe!4v1690000000000!5m2!1ses!2spe"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/ChullosTours",
+    "instagram": "https://www.instagram.com/chullostoursoficial/",
+    "tiktok": "https://www.tiktok.com/@chullostoursoficial",
+    "tripadvisor": "https://www.tripadvisor.com.pe/Attraction_Review-g294314-d26719669-Reviews-Chullos_Tours-Cusco_Cusco_Region.html"
+  },
+  "hours": {
+    "weekdays": "Lunes – Viernes: 9:00 – 20:00",
+    "weekends": "Sábado & Domingo: 9:00 – 14:00"
+  },
+  "copyright": "Copyright © 2026 Viajando con Chullos S.A.C. Todos los derechos reservados."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "tour-19",
+  "nombre": "Tour Puno Full Day (Islas Uros y Taquile)",
+  "categoria": "Puno",
+  "duracion": "Full Day (con viajes nocturnos en bus)",
+  "precio_usd": 120,
+  "horarios_disponibles": [
+    "21:30 pm (Noche anterior recojo en hotel hacia terminal Cusco)"
+  ],
+  "punto_inicio": "Hotel en Cusco",
+  "itinerario": [
+    "Noche Anterior: Recojo del hotel a las 21:30 pm y viaje en bus cama Cusco - Puno.",
+    "Día del Tour: Llegada a Puno a las 05:00 am. Desayuno en casa Jumbo. 07:00 am traslado al puerto lacustre. Embarque en lancha rápida hacia las Islas Flotantes de los Uros (visita guiada y convivencia). Continuación en lancha hacia la Isla de Taquile. Caminata de 1 hora hacia el pueblo principal de Taquile. Demostración de arte textil declarada Patrimonio de la Humanidad por UNESCO. Almuerzo tradicional en Taquile. Descenso al puerto y navegación de regreso a Puno (16:30 pm aprox.). Noche: 21:30 pm Bus Puno - Cusco (llegada a Cusco 05:00 am del día siguiente)."
+  ],
+  "incluye": [
+    "Ticket de Bus Cama Cusco - Puno - Cusco",
+    "Transporte terrestre en Puno",
+    "Navegación en embarcación turística rápida en el Lago Titicaca",
+    "Guía profesional (Español / Inglés)",
+    "Desayuno y Almuerzo tradicional",
+    "Boleto de entrada a las Islas Uros y Taquile"
+  ],
+  "no_incluye": [
+    "Paseo en balsa tradicional de totora en Uros (Opcional pago directo a comuneros)",
+    "Cena",
+    "Gastos personales"
+  ],
+  "recomendaciones": [
+    "Llevar casaca muy abrigadora (noche en Puno es extremadamente fría)",
+    "Llevar lentes de sol y gorro para la alta radiación en el lago",
+    "Llevar efectivo en Soles"
+  ],
+  "pagina_catalogo": 31
+}

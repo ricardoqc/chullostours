@@ -1,0 +1,43 @@
+{
+  "id": "tour-04",
+  "nombre": "Montaña de 7 Colores (Vinicunca)",
+  "categoria": "Cusco / Trekking",
+  "duracion": "Full Day (04:00 am - 17:30 pm)",
+  "precio_usd": 40,
+  "horarios_disponibles": [
+    "04:00 am - 04:50 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo del hotel y viaje hacia Cusipata",
+    "Desayuno Buffet en Cusipata",
+    "Traslado al punto de inicio de caminata (Phulawasipata)",
+    "Caminata de ascenso de 1h 45min aprox. hasta la Montaña de 7 Colores (5,200 m.s.n.m.)",
+    "Tiempo libre para contemplación y fotografías en la cima",
+    "Caminata de descenso y retorno en transporte a Cusipata",
+    "Almuerzo Buffet en Cusipata",
+    "Retorno a Cusco (17:30 hrs aprox., finaliza en Plaza Regocijo)"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico",
+    "Desayuno Buffet",
+    "Almuerzo Buffet",
+    "Boleto de Ingreso a la Montaña de 7 Colores",
+    "Bastones de trekking",
+    "Botiquín de primeros auxilios y balón de oxígeno"
+  ],
+  "no_incluye": [
+    "Alquiler de caballos",
+    "Gastos personales",
+    "Propina para el guía / chofer"
+  ],
+  "recomendaciones": [
+    "Estar aclimatado al menos 2 días en Cusco previo a este tour",
+    "Llevar ropa abrigadora en capas (casaca térmica, gorro, guantes)",
+    "Llevar zapatillas de trekking con buen agarre",
+    "Llevar poncho de lluvia, lentes de sol y bloqueador solar",
+    "Llevar caramelos de coca o muña"
+  ],
+  "pagina_catalogo": 7
+}

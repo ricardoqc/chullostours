@@ -1,0 +1,39 @@
+{
+  "id": "tour-12",
+  "nombre": "Waqrapukara Trekking",
+  "categoria": "Cusco / Trekking",
+  "duracion": "Full Day (05:00 am - 19:00 pm)",
+  "precio_usd": 50,
+  "horarios_disponibles": [
+    "05:00 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo del hotel y viaje hacia Chuquicahuana (Laguna de Pomacanchi)",
+    "Segunda parada en Sangarará para el Desayuno",
+    "Traslado a Rinconada, punto de inicio de la caminata",
+    "Caminata hacia la fortaleza prehispánica de Waqrapukara (4,300 m.s.n.m.)",
+    "Llegada a Waqrapukara y visita guiada detallada por los cuernos de piedra y plaza principal",
+    "Tiempo para almorzar (Box lunch / almuerzo)",
+    "Caminata de retorno hacia el transporte",
+    "Retorno a la ciudad de Cusco (19:00 hrs aprox.)"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico",
+    "Desayuno y Almuerzo",
+    "Boleto de Ingreso a Waqrapukara",
+    "Bastones de caminata",
+    "Botiquín y oxígeno"
+  ],
+  "no_incluye": [
+    "Gastos personales",
+    "Caballos"
+  ],
+  "recomendaciones": [
+    "Buena condición física y aclimatación previa",
+    "Llevar cortaviento, ropa térmica y calzado de trekking",
+    "Llevar abundante agua o bebidas rehidratantes"
+  ],
+  "pagina_catalogo": 15
+}

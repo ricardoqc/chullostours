@@ -1,0 +1,37 @@
+{
+  "id": "tour-16",
+  "nombre": "Machu Picchu By Car 2 Días / 1 Noche",
+  "categoria": "Machu Picchu / Aventura",
+  "duracion": "2 Días / 1 Noche",
+  "precio_usd": 180,
+  "horarios_disponibles": [
+    "06:00 am (salida Día 1)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Día 1: Recojo del hotel a las 06:00 am. Viaje en bus pasando por Ollantaytambo y el abra Málaga hasta Santa María y Santa Teresa. Almuerzo en Hidroeléctrica (13:00 hrs aprox.). Caminata bordeando la vía del tren desde Hidroeléctrica hasta Aguas Calientes (3 horas aprox.). Llegada a Aguas Calientes e acomodación en Hotel. 20:00 hrs Cena y charla informativa con el guía.",
+    "Día 2: Desayuno a las 05:00 am. Ascenso a Machu Picchu (caminando o opcional en bus Consettur). Visita guiada por Machu Picchu a las 06:00 am (2 horas aprox.). Tiempo libre hasta 11:30 am. Retorno caminando hacia Hidroeléctrica para abordar el bus de regreso (14:30 a 15:00 pm). Llegada a la ciudad de Cusco entre 21:30 y 22:30 pm."
+  ],
+  "incluye": [
+    "Transporte turístico Cusco - Hidroeléctrica - Cusco",
+    "1 Almuerzo (Día 1) y 1 Cena (Día 1)",
+    "1 Noche de Hospedaje en Aguas Calientes (con baño privado y agua caliente)",
+    "1 Desayuno (Día 2)",
+    "Boleto de Ingreso a Machu Picchu",
+    "Guía profesional en Machu Picchu"
+  ],
+  "no_incluye": [
+    "Bus Consettur Aguas Calientes - Machu Picchu - Aguas Calientes (Opcional $24 USD)",
+    "Tren Hidroeléctrica - Aguas Calientes (Opcional)",
+    "Alimentación del Día 2 (Almuerzo)",
+    "Gastos personales"
+  ],
+  "recomendaciones": [
+    "Llevar mochila pequeña (máx 5-8 kg) para la caminata",
+    "Documento de identidad o Pasaporte Original OBLIGATORIO",
+    "Repelente de mosquitos fuerte y bloqueador solar",
+    "Ropa ligera para la caminata y abrigadora para la noche",
+    "Linterna pequeña"
+  ],
+  "pagina_catalogo": 19
+}

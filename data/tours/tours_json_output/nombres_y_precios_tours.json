@@ -1,0 +1,156 @@
+[
+  {
+    "id": "tour-01",
+    "nombre": "City Tour Cusco",
+    "categoria": "Cusco / Tradicional",
+    "precio_usd": 40,
+    "pagina": 4
+  },
+  {
+    "id": "tour-02",
+    "nombre": "Valle Sagrado de los Incas VIP / Tradicional",
+    "categoria": "Cusco / Tradicional",
+    "precio_usd": 45,
+    "pagina": 5
+  },
+  {
+    "id": "tour-03",
+    "nombre": "Machu Picchu Full Day en Tren",
+    "categoria": "Machu Picchu",
+    "precio_usd": 300,
+    "pagina": 6
+  },
+  {
+    "id": "tour-04",
+    "nombre": "Montaña de 7 Colores (Vinicunca)",
+    "categoria": "Cusco / Trekking",
+    "precio_usd": 40,
+    "pagina": 7
+  },
+  {
+    "id": "tour-05",
+    "nombre": "Cuatrimotos Montaña de 7 Colores",
+    "categoria": "Cusco / Aventura",
+    "precio_usd": 80,
+    "pagina": 8
+  },
+  {
+    "id": "tour-06",
+    "nombre": "Laguna Humantay",
+    "categoria": "Cusco / Trekking",
+    "precio_usd": 40,
+    "pagina": 9
+  },
+  {
+    "id": "tour-07",
+    "nombre": "Glaciar Quelccaya",
+    "categoria": "Cusco / Trekking & Aventura",
+    "precio_usd": 70,
+    "pagina": 10
+  },
+  {
+    "id": "tour-08",
+    "nombre": "ATV Maras Moray (Cuatrimotos)",
+    "categoria": "Cusco / Aventura",
+    "precio_usd": 60,
+    "pagina": 11
+  },
+  {
+    "id": "tour-09",
+    "nombre": "Cusco Místico (Morada de los Dioses Apukunyana)",
+    "categoria": "Cusco / Místico & Experiencial",
+    "precio_usd": 50,
+    "pagina": 12
+  },
+  {
+    "id": "tour-10",
+    "nombre": "Cusco Escénico (City Tour Nocturno)",
+    "categoria": "Cusco / Escénico & Cultural",
+    "precio_usd": 30,
+    "pagina": 13
+  },
+  {
+    "id": "tour-11",
+    "nombre": "Puente Qeswachaka y Circuitos de las 4 Lagunas",
+    "categoria": "Cusco / Cultural",
+    "precio_usd": 50,
+    "pagina": 14
+  },
+  {
+    "id": "tour-12",
+    "nombre": "Waqrapukara Trekking",
+    "categoria": "Cusco / Trekking",
+    "precio_usd": 50,
+    "pagina": 15
+  },
+  {
+    "id": "tour-13",
+    "nombre": "7 Lagunas de Ausangate (Pacchanta)",
+    "categoria": "Cusco / Trekking",
+    "precio_usd": 45,
+    "pagina": 16
+  },
+  {
+    "id": "tour-14",
+    "nombre": "Valle Sur Cusco (Tipón, Pikillacta y Andahuaylillas)",
+    "categoria": "Cusco / Cultural",
+    "precio_usd": 45,
+    "pagina": 17
+  },
+  {
+    "id": "tour-15",
+    "nombre": "Cataratas de Poc Poc (Chinchero Trekking)",
+    "categoria": "Cusco / Trekking",
+    "precio_usd": 45,
+    "pagina": 18
+  },
+  {
+    "id": "tour-16",
+    "nombre": "Machu Picchu By Car 2 Días / 1 Noche",
+    "categoria": "Machu Picchu / Aventura",
+    "precio_usd": 180,
+    "pagina": 19
+  },
+  {
+    "id": "tour-17",
+    "nombre": "Camino Inca Corto 2 Días / 1 Noche",
+    "categoria": "Camino Inca",
+    "precio_usd": 570,
+    "pagina": 24
+  },
+  {
+    "id": "tour-18",
+    "nombre": "Camino Inca Clásico 4 Días / 3 Noches",
+    "categoria": "Camino Inca",
+    "precio_usd": 795,
+    "pagina": 30
+  },
+  {
+    "id": "tour-19",
+    "nombre": "Tour Puno Full Day (Islas Uros y Taquile)",
+    "categoria": "Puno",
+    "precio_usd": 120,
+    "pagina": 31
+  },
+  {
+    "id": "tour-20",
+    "nombre": "Tour Puno 2 Días / 1 Noche (Uros, Amantaní y Taquile - Turismo Vivencial)",
+    "categoria": "Puno",
+    "precio_usd": 200,
+    "pagina": 33
+  },
+  {
+    "id": "tour-21",
+    "nombre": "Lima City Tour",
+    "categoria": "Lima",
+    "precio_usd": 70,
+    "pagina": 34
+  },
+  {
+    "id": "tour-22",
+    "nombre": "Oasis Huacachina + Islas Ballestas (Ica y Paracas desde Lima)",
+    "categoria": "Lima / Ica",
+    "precio_usd": 120,
+    "pagina": 35
+  }
+]

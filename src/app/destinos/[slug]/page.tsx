@@ -9,6 +9,16 @@ interface DestinationPageProps {
   }>;
 }
 
+export async function generateStaticParams() {
+  return [
+    { slug: "cusco" },
+    { slug: "machu-picchu" },
+    { slug: "valle-sagrado" },
+    { slug: "puno" },
+    { slug: "arequipa" },
+  ];
+}
+
 export default async function DestinationPage({ params }: DestinationPageProps) {
   const { slug } = await params;
   const titleFormatted = slug.replace(/-/g, " ").toUpperCase();

@@ -1,0 +1,40 @@
+{
+  "id": "tour-21",
+  "nombre": "Lima City Tour",
+  "categoria": "Lima",
+  "duracion": "Medio Día / Tarde - Noche (14:00 pm - 22:00 pm)",
+  "precio_usd": 70,
+  "horarios_disponibles": [
+    "14:00 pm (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Lima (Miraflores / San Isidro)",
+  "itinerario": [
+    "Recojo del hotel a las 14:00 hrs",
+    "Visita al Parque del Amor en Miraflores (vista al Océano Pacífico)",
+    "Vista panorámica a la Huaca Pucllana (centro ceremonial pre-inca)",
+    "Visita al Parque El Olivar de San Isidro",
+    "Recorrido por el Centro Histórico de Lima:",
+    " - Plaza San Martín",
+    " - Plaza de Armas / Plaza Mayor",
+    " - Iglesia y Convento de San Francisco y sus Catacumbas subterráneas",
+    "Visita al Circuito Mágico del Agua (espectáculo de luces y fuentes de agua en Parque de la Reserva)",
+    "Retorno al hotel y fin del tour (22:00 hrs aprox.)"
+  ],
+  "incluye": [
+    "Guía Profesional",
+    "Transporte Turístico con aire acondicionado",
+    "Entrada al Convento de San Francisco y Catacumbas",
+    "Entrada al Circuito Mágico del Agua",
+    "Asistencia durante el tour"
+  ],
+  "no_incluye": [
+    "Alimentos y bebidas",
+    "Gastos personales",
+    "Propinas"
+  ],
+  "recomendaciones": [
+    "Llevar casaca corta o abrigo ligero para la brisa marina y noche",
+    "Llevar cámara con flash o buen modo nocturno"
+  ],
+  "pagina_catalogo": 34
+}

@@ -265,5 +265,37 @@
         ]
       }
     ]
-  }
+  },
+  "tour_highlights": [
+    {
+      "icono": "FaTrain",
+      "titulo": "Tren Turístico",
+      "detalle": "Boleto ida y vuelta PeruRail Expedition / Inca Rail Voyager panorámico"
+    },
+    {
+      "icono": "FaMapMarkerAlt",
+      "titulo": "Entrada Machu Picchu",
+      "detalle": "Boleto de ingreso oficial a la Llaqta Inca de Machu Picchu 100% garantizado"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Bus Consettur",
+      "detalle": "Boleto de bus ecológico ida y vuelta entre Aguas Calientes y Machu Picchu"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Transporte Turístico",
+      "detalle": "Traslados en unidad climatizada con chofer profesional (14 Horas (Full Day))"
+    },
+    {
+      "icono": "FaUserTie",
+      "titulo": "Guía Especializado",
+      "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
+    },
+    {
+      "icono": "FaUsers",
+      "titulo": "Grupo Reducido",
+      "detalle": "Grupos de máximo 10 personas para una experiencia más cómoda y fluida"
+    }
+  ]
 }

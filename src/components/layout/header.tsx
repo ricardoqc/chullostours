@@ -12,19 +12,23 @@ import {
   SocialTripadvisor,
   SocialWhatsapp,
 } from "@/components/ui/icons";
+import { companyInfo } from "@/lib/company-info";
+import { useTranslation } from "@/i18n/I18nContext";
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   const navLinks = [
-    { name: "Machu Picchu 2026", href: "/machu-picchu-2026", hasDropdown: false },
-    { name: "Viaje personalizado", href: "/viaje-personalizado", hasDropdown: false },
-    { name: "Catálogo", href: "/tours", hasDropdown: false },
-    { name: "Sobre Chullos", href: "/acerca-de-chullos-tours", hasDropdown: false },
-    { name: "Contacto", href: "/contacto-chullos", hasDropdown: false },
+    { name: t("header.nav.machuPicchu"), href: "/machu-picchu-2026", hasDropdown: false },
+    { name: t("header.nav.customTrip"), href: "/viaje-personalizado", hasDropdown: false },
+    { name: t("header.nav.catalog"), href: "/tours", hasDropdown: false },
+    { name: "Blog y Guías", href: "/blog", hasDropdown: false },
+    { name: t("header.nav.aboutUs"), href: "/acerca-de-chullos-tours", hasDropdown: false },
+    { name: t("header.nav.contact"), href: "/contacto-chullos", hasDropdown: false },
   ];
 
   return (
@@ -36,16 +40,16 @@ export const Header: React.FC = () => {
           <div className="flex items-center gap-4 md:gap-8 text-white font-medium overflow-x-auto no-scrollbar py-0.5">
             {/* Email */}
             <a
-              href="mailto:info@chullostours.com"
+              href={`mailto:${companyInfo.emails.info}`}
               className="hidden sm:flex items-center gap-2 hover:text-[#ffc000] transition-colors shrink-0"
             >
               <Mail className="w-4 h-4 text-white shrink-0 stroke-[2]" />
-              <span className="text-xs md:text-sm tracking-wide">info@chullostours.com</span>
+              <span className="text-xs md:text-sm tracking-wide">{companyInfo.emails.info}</span>
             </a>
 
             {/* WhatsApp 1 */}
             <a
-              href="https://wa.me/51992558512"
+              href={companyInfo.phones.primary.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-[#ffc000] transition-colors shrink-0 group"
@@ -53,12 +57,12 @@ export const Header: React.FC = () => {
               <div className="w-6 h-6 rounded-md bg-white flex items-center justify-center text-[#6b0014] shrink-0 shadow-sm group-hover:scale-105 transition-transform">
                 <SocialWhatsapp className="w-3.5 h-3.5 text-[#6b0014]" />
               </div>
-              <span className="text-xs md:text-sm font-bold tracking-wide">+51 992 558 512</span>
+              <span className="text-xs md:text-sm font-bold tracking-wide">{companyInfo.phones.primary.number}</span>
             </a>
 
             {/* WhatsApp 2 - Desktop/Tablet only */}
             <a
-              href="https://wa.me/51973781330"
+              href={companyInfo.phones.secondary.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden lg:flex items-center gap-2 hover:text-[#ffc000] transition-colors shrink-0 group"
@@ -66,14 +70,14 @@ export const Header: React.FC = () => {
               <div className="w-6 h-6 rounded-md bg-white flex items-center justify-center text-[#6b0014] shrink-0 shadow-sm group-hover:scale-105 transition-transform">
                 <SocialWhatsapp className="w-3.5 h-3.5 text-[#6b0014]" />
               </div>
-              <span className="text-xs md:text-sm font-bold tracking-wide">+51 973 781 330</span>
+              <span className="text-xs md:text-sm font-bold tracking-wide">{companyInfo.phones.secondary.number}</span>
             </a>
           </div>
 
           {/* Right Social Circular Icons */}
           <div className="flex items-center gap-2 shrink-0">
             <a
-              href="https://facebook.com/chullostours"
+              href={companyInfo.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -82,7 +86,7 @@ export const Header: React.FC = () => {
               <SocialFacebook className="w-4 h-4" />
             </a>
             <a
-              href="https://instagram.com/chullostours"
+              href={companyInfo.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -91,7 +95,7 @@ export const Header: React.FC = () => {
               <SocialInstagram className="w-4 h-4" />
             </a>
             <a
-              href="https://tiktok.com/@chullostours"
+              href={companyInfo.social.tiktok}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
@@ -100,7 +104,7 @@ export const Header: React.FC = () => {
               <SocialTiktok className="w-4 h-4" />
             </a>
             <a
-              href="https://tripadvisor.com"
+              href={companyInfo.social.tripadvisor}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TripAdvisor"
@@ -148,13 +152,13 @@ export const Header: React.FC = () => {
           <div className="flex items-center gap-2">
             {/* Direct WhatsApp Desktop Button */}
             <a
-              href="https://wa.me/51992558512"
+              href={companyInfo.phones.primary.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:flex items-center gap-1.5 bg-[#25D366] text-white font-bold text-xs px-3.5 py-2 rounded-xl hover:bg-[#20bd5a] transition-all shadow-sm active:scale-95"
             >
               <SocialWhatsapp className="w-4 h-4 text-white" />
-              <span>Cotizar</span>
+              <span>Hablar con Experto</span>
             </a>
 
             {/* Search Button */}
@@ -227,7 +231,7 @@ export const Header: React.FC = () => {
             </nav>
             <div className="pt-2 border-t border-slate-100 flex flex-col gap-2">
               <a
-                href="https://wa.me/51992558512"
+                href={companyInfo.phones.primary.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 rounded-xl hover:bg-[#20bd5a] transition-all shadow-md text-sm"

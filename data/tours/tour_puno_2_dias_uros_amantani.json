@@ -1,0 +1,265 @@
+{
+  "titulo": "Tour Puno 2 Días / 1 Noche – Uros, Amantaní y Taquile (Turismo Vivencial)",
+  "slug": "tour-puno-2-dias-uros-amantani",
+  "url": "https://chullostours.com/tours/tour-puno-2-dias-uros-amantani/",
+  "metas": {
+    "description": "Tour vivencial al Lago Titicaca en 2 días / 1 noche desde Cusco: Islas Uros, hospedaje en familia en Amantaní y Isla de Taquile. Experiencia cultural única en el Perú.",
+    "og_title": "Tour Puno 2 Días Uros Amantaní Taquile – Turismo Vivencial | Chullos Tours",
+    "og_url": "https://chullostours.com/tours/tour-puno-2-dias-uros-amantani/"
+  },
+  "atributos": {
+    "duracion": "2 Días / 1 Noche (Vivencial)",
+    "ubicacion": "Lago Titicaca – Uros, Amantaní, Taquile – Puno, Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Puno / Vivencial / Cultural / Lago Titicaca",
+    "dificultad": "Fácil - Moderada",
+    "altitud_maxima": "4,150 m.s.n.m.",
+    "grupo_max": 16,
+    "nivel_fisico": "Moderado (Caminatas en islas)"
+  },
+  "horarios_disponibles": [
+    "21:30 pm (Noche anterior – viaje en bus Cusco - Puno)"
+  ],
+  "punto_inicio": "Hotel en Cusco",
+  "resumen": "Vive la experiencia más auténtica e inmersiva del Lago Titicaca: 2 días visitando las Islas Flotantes de los Uros, pernoctando en casa de familia local en la Isla Amantaní y culminando con un emotivo farewell en la Isla de Taquile. El turismo vivencial más genuino del Perú.",
+  "descripcion_completa": "El Tour Puno 2 Días / 1 Noche es la experiencia de turismo vivencial más completa e inmersiva del Lago Titicaca. No solo visitas las islas, sino que vives en ellas durante una noche, compartes la mesa con una familia local, aprendes sus costumbres milenarias y participas en sus tradiciones culturales vivas.\n\n**Noche anterior:** Te recogeremos en tu hotel en Cusco a las 21:30 pm para el viaje nocturno en bus cama hasta Puno.\n\n**Día 1:** Llegaremos a Puno a las 05:00 am. Desayuno en Casa Jumbo. A las 07:45 am embarcamos hacia las Islas Flotantes de los Uros para una visita guiada. Luego navegamos hacia la Isla de Amantaní (2 horas de navegación desde Uros), donde seremos recibidos calurosamente por nuestras familias anfitrionas. El almuerzo es con la familia, en un entorno doméstico auténtico.\n\nPor la tarde, subiremos al Santuario de Pacha Tata, en la cima de Amantaní, para contemplar una de las puestas de sol más hermosas sobre el Titicaca. Por la noche, cenaremos con la familia y participaremos en una peña cultural donde los islenos comparten su música, danza y trajes típicos. Dormiremos en la casa familiar, cubiertos con mantas andinas de alpaca.\n\n**Día 2:** Después de un desayuno y la despedida de la familia, navegaremos hacia la Isla de Taquile para visitar su plaza principal y la exposición de textiles. El almuerzo es en Taquile. A las 13:00 pm emprendemos el retorno en bote a Puno. Por la noche, bus nocturno de regreso a Cusco.",
+  "propuesta_de_valor": [
+    "Turismo vivencial auténtico: Noche en casa de familia local en la Isla Amantaní.",
+    "Peña cultural nocturna: Música, danza y vestimenta típica de las comunidades del Titicaca.",
+    "Tres islas en dos días: Uros (flotantes), Amantaní (vivencial) y Taquile (textiles UNESCO).",
+    "Bus cama Cusco-Puno-Cusco incluido (viaje cómodo nocturno).",
+    "Alimentación completa incluida: 2 desayunos, 2 almuerzos y 1 cena."
+  ],
+  "destacados_highlights": [
+    "Amantaní: Pernoctada única en casa de familia quechua en la isla más grande del Titicaca.",
+    "Santuario Pacha Tata: Puesta de sol sobre el Lago Titicaca desde la cima sagrada de Amantaní.",
+    "Peña Cultural: Música, danza y trajes típicos de las comunidades del Lago Titicaca.",
+    "Tres islas: Uros, Amantaní y Taquile en una sola experiencia de 2 días."
+  ],
+  "galeria": [],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "Noche Anterior: Cusco – Puno / Día 1: Uros – Amantaní",
+      "descripcion": "Viaje nocturno a Puno y primer día en el Lago Titicaca.",
+      "actividades": [
+        "21:30 PM | Recojo en hotel Cusco y traslado al terminal.",
+        "22:00 PM | Salida en Bus Cama Cusco – Puno.",
+        "05:00 AM | Llegada a Puno y recojo en terminal.",
+        "06:00 AM | Desayuno en Casa Jumbo.",
+        "07:45 AM | Embarque en muelle hacia Islas Flotantes de los Uros.",
+        "09:00 AM | Navegación hacia la Isla de Amantaní (2 horas).",
+        "11:30 AM | Llegada a Amantaní y bienvenida por familias locales.",
+        "12:30 PM | Almuerzo con familia anfitriona.",
+        "16:00 PM | Ascenso al Santuario Pacha Tata para la puesta de sol.",
+        "18:00 PM | Retorno a la casa familiar y cena tradicional.",
+        "19:30 PM | Peña cultural con música, danza y vestuario típico.",
+        "Noche | Pernocte en casa de familia local en Amantaní."
+      ],
+      "alojamiento": "Casa de familia local en Isla Amantaní (incluido)",
+      "comidas_incluidas": [
+        "Desayuno",
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "dia": 2,
+      "titulo": "Amantaní – Taquile – Puno – Cusco (Bus Nocturno)",
+      "descripcion": "Despedida en Amantaní, visita a Taquile y retorno a Cusco.",
+      "actividades": [
+        "07:00 AM | Desayuno y despedida de la familia anfitriona.",
+        "08:00 AM | Navegación hacia Isla de Taquile (1.5 horas).",
+        "09:30 AM | Caminata a la plaza principal de Taquile y exposición de textiles UNESCO.",
+        "11:30 AM | Almuerzo campestre en Taquile.",
+        "13:00 PM | Retorno en bote a Puno (3 horas de navegación aprox.).",
+        "16:30 PM | Llegada a Puno – Tiempo libre.",
+        "21:30 PM | Salida en Bus Puno – Cusco.",
+        "05:00 AM (D+1) | Llegada a Cusco."
+      ],
+      "alojamiento": "Bus Cama (incluido)",
+      "comidas_incluidas": [
+        "Desayuno",
+        "Almuerzo"
+      ]
+    }
+  ],
+  "incluye": [
+    "Ticket de Bus Cama Cusco – Puno – Cusco (ida y retorno).",
+    "Navegación completa en bote turístico por el Lago Titicaca.",
+    "Guía Profesional bilingüe.",
+    "1 Noche de hospedaje en casa de familia en Isla Amantaní.",
+    "2 Desayunos, 2 Almuerzos y 1 Cena.",
+    "Show de peña y préstamo de traje típico.",
+    "Boleto de ingreso a Uros, Amantaní y Taquile."
+  ],
+  "no_incluye": [
+    "Paseo en balsa de totora en Uros (opcional).",
+    "Gastos personales.",
+    "Propinas."
+  ],
+  "recomendaciones": [
+    "Llevar pequeños presentes o útiles para los niños de la familia anfitriona (muy apreciado).",
+    "Llevar ropa abrigadora y de cambio cómodo para los 2 días.",
+    "Batería portátil (Powerbank): la electricidad en Amantaní es limitada.",
+    "Llevar efectivo en Soles.",
+    "Llevar bloqueador solar, gorra y lentes de sol (radiación muy alta en el lago)."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "Islas Flotantes de los Uros",
+      "tipo": "Islas Artificiales de Totora",
+      "descripcion": "Las únicas islas artificiales del mundo construidas con totora. Visitadas en el trayecto de ida.",
+      "altitud": "3,820 m.s.n.m."
+    },
+    {
+      "nombre": "Isla Amantaní",
+      "tipo": "Isla Vivencial / Turismo Comunitario",
+      "descripcion": "La isla más grande del Titicaca, con turismo vivencial auténtico en casas de familia quechua.",
+      "altitud": "3,820 m.s.n.m."
+    },
+    {
+      "nombre": "Santuario Pacha Tata",
+      "tipo": "Sitio Sagrado Andino",
+      "descripcion": "Antigua edificación inca en la cima de Amantaní con vistas panorámicas del Titicaca al atardecer.",
+      "altitud": "4,150 m.s.n.m."
+    },
+    {
+      "nombre": "Isla de Taquile",
+      "tipo": "Isla Andina / Patrimonio UNESCO",
+      "descripcion": "Arte textil Patrimonio Inmaterial de la Humanidad. Visitada el Día 2 de retorno.",
+      "altitud": "3,820 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Cómo son las condiciones de hospedaje en Amantaní?",
+      "respuesta": "Las familias de Amantaní ofrecen habitaciones limpias y acogedoras con camas con mantas andinas de alpaca. No hay agua caliente ni electricidad constante, por lo que se recomienda llevar linterna y ropa de cama extra si se tiene frío."
+    },
+    {
+      "pregunta": "¿Qué tipo de comida sirven las familias?",
+      "respuesta": "La comida es casera tradicional de las islas: quinua, papas, arroz, trucha y verduras. Es sencilla, natural y nutritiva. Si tienes restricciones alimentarias (vegetariano, celíaco), comunícalo al momento de reservar."
+    },
+    {
+      "pregunta": "¿El bus cama es cómodo para dormir?",
+      "respuesta": "Sí, los buses cama tienen asientos semi-cama de amplio reclinamiento, con mantas y almohadas. El viaje Cusco-Puno dura aproximadamente 6-7 horas."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "Tour Puno vivencial Uros Amantaní Taquile",
+    "meta_title": "Tour Puno 2 Días Uros, Amantaní y Taquile – Vivencial | Chullos Tours",
+    "meta_description": "Tour vivencial al Lago Titicaca: 2 días visitando Uros, pernoctando en familia en Amantaní y culminando en Taquile. Bus cama y alimentación completa incluidos.",
+    "canonical": "https://chullostours.com/tours/tour-puno-2-dias-uros-amantani/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "Tour Puno 2 Días Vivencial – Uros, Amantaní y Taquile | Chullos Tours",
+      "og_description": "La experiencia vivencial más auténtica del Lago Titicaca: noche en familia en Amantaní, Uros y Taquile en 2 días.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/tour-puno-2-dias-uros-amantani/",
+      "og_image": "/tours/tour-puno-2-dias-uros-amantani/01.jpg",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Tour Puno 2 Días Vivencial | Chullos Tours",
+      "description": "Turismo vivencial en el Lago Titicaca: Uros, noche en Amantaní y Taquile.",
+      "image": "/tours/tour-puno-2-dias-uros-amantani/01.jpg"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "Tour Puno 2 Días / 1 Noche – Turismo Vivencial",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Isla Amantaní – Lago Titicaca",
+      "region": "Puno",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El Tour Puno Vivencial 2 Días de Chullos Tours es la experiencia más inmersiva del Lago Titicaca: Islas Uros, noche en familia en Amantaní con peña cultural y visita a Taquile. Incluye bus cama Cusco-Puno-Cusco y alimentación completa.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Duración total",
+        "value": "2 Días / 1 Noche + 2 noches de bus"
+      },
+      {
+        "fact": "Altitud máxima",
+        "value": "4,150 m.s.n.m. (Santuario Pacha Tata)"
+      },
+      {
+        "fact": "Dificultad física",
+        "value": "Fácil - Moderada"
+      },
+      {
+        "fact": "Comidas incluidas",
+        "value": "2 Desayunos, 2 Almuerzos, 1 Cena"
+      },
+      {
+        "fact": "Operador responsable",
+        "value": "Chullos Tours Cusco"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/tour-puno-2-dias-uros-amantani/#product",
+        "name": "Tour Puno 2 Días / 1 Noche – Uros, Amantaní y Taquile (Vivencial)",
+        "description": "Tour vivencial al Lago Titicaca: 2 días visitando Uros, noche en familia en Amantaní y visita a Taquile.",
+        "url": "https://chullostours.com/tours/tour-puno-2-dias-uros-amantani/",
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "200.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/tour-puno-2-dias-uros-amantani/"
+        }
+      }
+    ]
+  },
+  "tour_highlights": [
+    {
+      "icono": "FaUtensils",
+      "titulo": "Alimentación",
+      "detalle": "Almuerzo tradicional en la Isla de Taquile y cena en Amantaní"
+    },
+    {
+      "icono": "FaMapMarkerAlt",
+      "titulo": "Entradas Incluidas",
+      "detalle": "Ingresos oficiales a los atractivos turísticos programados en la ruta"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Transporte Turístico",
+      "detalle": "Traslados en unidad climatizada con chofer profesional (2 Días / 1 Noche (Vivencial))"
+    },
+    {
+      "icono": "FaUserTie",
+      "titulo": "Guía Especializado",
+      "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
+    },
+    {
+      "icono": "FaUsers",
+      "titulo": "Grupo Reducido",
+      "detalle": "Grupos de máximo 16 personas para una experiencia más cómoda y fluida"
+    }
+  ]
+}

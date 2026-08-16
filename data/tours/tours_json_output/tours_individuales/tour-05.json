@@ -1,0 +1,40 @@
+{
+  "id": "tour-05",
+  "nombre": "Cuatrimotos Montaña de 7 Colores",
+  "categoria": "Cusco / Aventura",
+  "duracion": "Full Day (04:00 am - 17:30 pm)",
+  "precio_usd": 80,
+  "horarios_disponibles": [
+    "04:00 am - 04:50 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo del hotel y traslado en bus hacia Cusipata",
+    "Desayuno Buffet en Cusipata",
+    "Traslado a Kayrahuire Alto e instrucción técnica y de seguridad de manejo de cuatrimoto",
+    "Recorrido en cuatrimoto por paisajes andinos (30 - 40 minutos aprox.)",
+    "Caminata corta de 35 a 45 minutos hasta el mirador de la Montaña de Colores",
+    "Tiempo libre para fotos y explicación del guía",
+    "Retorno en cuatrimoto y transporte hacia Cusipata",
+    "Almuerzo Buffet en Cusipata",
+    "Finalización del tour en Cusco (17:30 hrs aprox., Plaza Regocijo)"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico",
+    "Cuatrimoto equipada + casco y equipo de seguridad",
+    "Desayuno Buffet y Almuerzo Buffet",
+    "Ticket de ingreso a la Montaña",
+    "Asistencia permanente"
+  ],
+  "no_incluye": [
+    "Gastos personales",
+    "Servicios o consumos no mencionados"
+  ],
+  "recomendaciones": [
+    "Llevar ropa resistente al viento y al frío",
+    "Llevar guantes abrigadores y gafas de sol",
+    "Llevar calzado adecuado y bloqueador solar"
+  ],
+  "pagina_catalogo": 8
+}

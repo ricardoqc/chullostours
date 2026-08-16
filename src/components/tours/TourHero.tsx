@@ -21,6 +21,7 @@ import {
   FaCompass,
 } from "react-icons/fa";
 import { Tour } from "@/types/tour";
+import { TourMetaDataBadges } from "./TourMetaDataBadges";
 
 interface TourHeroProps {
   tour: Tour;
@@ -164,27 +165,32 @@ export const TourHero: React.FC<TourHeroProps> = ({
             </span>
             <span className="flex items-center gap-1.5 bg-slate-100 px-3.5 py-1.5 rounded-full border border-slate-200/80">
               <FaGlobe className="w-3.5 h-3.5 text-[#6b0014]" />
-              {tour.atributos?.idiomas?.join(", ") || "Español, Inglés"}
+              {tour.atributos?.idiomas ? tour.atributos.idiomas.join(" / ") : "Español / Inglés"}
             </span>
-            {tour.atributos?.altitud_maxima && (
-              <span className="flex items-center gap-1.5 bg-amber-50 text-slate-800 px-3.5 py-1.5 rounded-full border border-amber-200/80 font-bold">
-                <FaMountain className="w-3.5 h-3.5 text-amber-600" />
-                <span>Altitud: {tour.atributos.altitud_maxima}</span>
-              </span>
-            )}
             {tour.atributos?.dificultad && (
-              <span className="flex items-center gap-1.5 bg-blue-50 text-blue-900 px-3.5 py-1.5 rounded-full border border-blue-200/80 font-bold">
-                <FaChartLine className="w-3.5 h-3.5 text-blue-600" />
-                <span>Dificultad: {tour.atributos.dificultad}</span>
+              <span className="flex items-center gap-1.5 bg-slate-100 px-3.5 py-1.5 rounded-full border border-slate-200/80">
+                <FaChartLine className="w-3.5 h-3.5 text-[#6b0014]" />
+                Dificultad: {tour.atributos.dificultad}
               </span>
             )}
-            {tour.atributos?.grupo_max && (
-              <span className="flex items-center gap-1.5 bg-emerald-50 text-emerald-900 px-3.5 py-1.5 rounded-full border border-emerald-200/80 font-bold">
-                <FaUsers className="w-3.5 h-3.5 text-emerald-600" />
-                <span>Máx: {tour.atributos.grupo_max} personas</span>
+            {tour.atributos?.altitud_maxima && (
+              <span className="flex items-center gap-1.5 bg-slate-100 px-3.5 py-1.5 rounded-full border border-slate-200/80">
+                <FaMountain className="w-3.5 h-3.5 text-[#6b0014]" />
+                {tour.atributos.altitud_maxima}
               </span>
             )}
           </div>
+
+          {/* Conditional Horarios & Punto de Inicio Badges */}
+          {(tour.horarios_disponibles || tour.punto_inicio || tour.categoria) && (
+            <div className="pt-2">
+              <TourMetaDataBadges
+                horarios={tour.horarios_disponibles}
+                puntoInicio={tour.punto_inicio}
+                categoria={tour.categoria}
+              />
+            </div>
+          )}
         </div>
 
         {/* Bento Grid Gallery Container (Contained & Crisp) */}

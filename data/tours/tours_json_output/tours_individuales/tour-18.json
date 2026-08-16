@@ -1,0 +1,39 @@
+{
+  "id": "tour-18",
+  "nombre": "Camino Inca Clásico 4 Días / 3 Noches",
+  "categoria": "Camino Inca",
+  "duracion": "4 Días / 3 Noches",
+  "precio_usd": 795,
+  "horarios_disponibles": [
+    "05:00 am (Salida Día 1)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Día 1 (Cusco - Km 82 - Huayllabamba): Recojo a las 05:00 am. Viaje en bus al Km 82. Inicio del trekking bordeando el río Urubamba. Visita a Patallacta. Campamento en Huayllabamba (6-7 hrs caminata).",
+    "Día 2 (Huayllabamba - Warmiwañusca - Pacaymayo): Ascenso al paso más alto de Warmiwañusca (4,200 m.s.n.m.). Descenso al campamento de Pacaymayo (8-9 hrs caminata).",
+    "Día 3 (Pacaymayo - Phuyupatamarca - Wiñayhuayna): Visita a los sitios arqueológicos de Runkurakay, Sayacmarca y Phuyupatamarca. Campamento en Wiñayhuayna (5-6 hrs caminata).",
+    "Día 4 (Wiñayhuayna - Inti Punku - Machu Picchu - Cusco): Caminata temprana hacia Inti Punku (Puerta del Sol) para el amanecer sobre Machu Picchu. Guiado en la ciudadela. Bus a Aguas Calientes, tren a Ollantaytambo y bus de retorno a Cusco."
+  ],
+  "incluye": [
+    "Recojo del hotel y traslados completos",
+    "Permisos y Pases oficiales del Camino Inca y Machu Picchu",
+    "Guía profesional de turismo + Asistente de guía (para grupos grandes)",
+    "Equipo de campamento completo (carpas térmicas, carpa comedor, carpa cocina, sillas, mesas)",
+    "Equipo de porteadores para cargar carpas, comida y utensilios de cocina",
+    "Alimentación completa en ruta (3 Desayunos, 3 Almuerzos, 3 Cenas)",
+    "Ticket de Tren Turístico de retorno (Aguas Calientes - Ollantaytambo)",
+    "Bus Consettur bajada de Machu Picchu a Aguas Calientes"
+  ],
+  "no_incluye": [
+    "Bolsa de dormir (Sleeping bag - se puede alquilar)",
+    "Porteador personal para equipaje privado (opcional contratado aparte)",
+    "Primer desayuno (Día 1) y último almuerzo (Día 4)",
+    "Propinas para porteadores y guía"
+  ],
+  "recomendaciones": [
+    "Reserva con 4 a 6 meses de anticipación requerida",
+    "Excelente condición física y aclimatación de 3 días en Cusco",
+    "Llevar ropa térmica, impermeable y buenas botas de trekking"
+  ],
+  "pagina_catalogo": 30
+}

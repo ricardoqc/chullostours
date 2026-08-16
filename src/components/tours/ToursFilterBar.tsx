@@ -1,8 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
-import { Search, SlidersHorizontal, Sparkles, X, ChevronDown } from "lucide-react";
-import { TRAVELER_PROFILES } from "@/lib/tour-filters";
+import { 
+  Search, 
+  SlidersHorizontal, 
+  Sparkles, 
+  X, 
+  ChevronDown, 
+  MapPin,
+  Globe,
+  Mountain,
+  Waves,
+  Sun,
+} from "lucide-react";
+import { TRAVELER_PROFILES, DESTINATION_FILTERS } from "@/lib/tour-filters";
 import { TravelerProfilePill } from "./TravelerProfilePill";
 import { DayRangeSlider } from "./DayRangeSlider";
 import { BudgetSelector, BudgetLevel } from "./BudgetSelector";
@@ -11,6 +22,8 @@ import { ActiveFilterTags } from "./ActiveFilterTags";
 interface ToursFilterBarProps {
   searchQuery: string;
   onSearchChange: (q: string) => void;
+  selectedDestination: string;
+  onDestinationChange: (dest: string) => void;
   selectedProfiles: string[];
   onToggleProfile: (id: string) => void;
   dayRange: [number, number];
@@ -21,9 +34,18 @@ interface ToursFilterBarProps {
   totalResultsCount: number;
 }
 
+const DEST_ICON_MAP: Record<string, React.ElementType> = {
+  Globe,
+  Mountain,
+  Waves,
+  Sun,
+};
+
 export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
   searchQuery,
   onSearchChange,
+  selectedDestination,
+  onDestinationChange,
   selectedProfiles,
   onToggleProfile,
   dayRange,
@@ -37,8 +59,9 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
   const [advancedOpen, setAdvancedOpen] = useState(false);
 
   const activeFiltersCount =
+    (selectedDestination !== "all" ? 1 : 0) +
     selectedProfiles.length +
-    (dayRange[0] > 1 || dayRange[1] < 6 ? 1 : 0) +
+    (dayRange[0] > 1 || dayRange[1] < 30 ? 1 : 0) +
     (budgetLevel !== "all" ? 1 : 0) +
     (searchQuery.trim().length > 0 ? 1 : 0);
 
@@ -46,16 +69,16 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
     <div className="w-full flex flex-col gap-4 bg-white rounded-2xl md:rounded-3xl shadow-lg border border-slate-100 p-4 md:p-6 transition-all">
       {/* Top Header Row inside Filter Container */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-3 border-b border-slate-100">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-[#6b0014]/10 flex items-center justify-center text-[#6b0014]">
-            <Sparkles className="w-4 h-4" />
+        <div className="flex items-center gap-2.5">
+          <div className="w-9 h-9 rounded-xl bg-[#6b0014]/10 flex items-center justify-center text-[#6b0014]">
+            <Sparkles className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="font-extrabold text-base md:text-lg text-slate-900 font-title">
-              ¿Qué experiencia estás buscando?
+            <h3 className="font-extrabold text-base md:text-lg text-slate-900 font-title tracking-tight">
+              Encuentra tu Experiencia Ideal
             </h3>
             <p className="text-xs text-slate-500">
-              Selecciona tu estilo de viaje para personalizar los resultados
+              Filtra rápidamente por destino, categoría, días de viaje o presupuesto
             </p>
           </div>
         </div>
@@ -67,7 +90,7 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             placeholder="Buscar destino o tour..."
-            className="w-full bg-slate-50 border border-slate-200 rounded-full px-4 py-2 pl-9 text-xs md:text-sm focus:outline-none focus:border-[#6b0014] text-slate-900 placeholder:text-slate-400"
+            className="w-full bg-slate-50 border border-slate-200 rounded-full px-4 py-2 pl-9 text-xs md:text-sm focus:outline-none focus:border-[#6b0014] text-slate-900 placeholder:text-slate-400 transition-colors"
           />
           <Search className="w-4 h-4 text-slate-400 absolute left-3 top-2.5" />
           {searchQuery && (
@@ -81,8 +104,44 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
         </div>
       </div>
 
-      {/* Primary Archetype Pills Row */}
+      {/* Destination Pills Row */}
       <div className="flex flex-wrap items-center gap-2 py-1">
+        <span className="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5 mr-2">
+          <MapPin className="w-3.5 h-3.5 text-[#6b0014]" />
+          <span>Destino:</span>
+        </span>
+        <div className="flex flex-wrap items-center gap-2">
+          {DESTINATION_FILTERS.map((dest) => {
+            const isSelected = selectedDestination === dest.id;
+            const DestIcon = DEST_ICON_MAP[dest.iconName] || MapPin;
+            return (
+              <button
+                key={dest.id}
+                type="button"
+                onClick={() => onDestinationChange(dest.id)}
+                className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs md:text-sm font-semibold transition-all cursor-pointer border ${
+                  isSelected
+                    ? "bg-[#6b0014] text-white border-[#6b0014] shadow-sm font-bold"
+                    : "bg-slate-50/80 text-slate-700 border-slate-200 hover:bg-slate-100 hover:border-slate-300"
+                }`}
+              >
+                <DestIcon
+                  className={`w-3.5 h-3.5 ${
+                    isSelected ? "text-amber-400" : "text-[#6b0014]"
+                  }`}
+                />
+                <span>{dest.label}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Primary Archetype Pills Row */}
+      <div className="flex flex-wrap items-center gap-2 py-1 border-t border-slate-100 pt-3">
+        <span className="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5 mr-2 w-full md:w-auto">
+          <span>Estilo:</span>
+        </span>
         {TRAVELER_PROFILES.map((profile) => (
           <TravelerProfilePill
             key={profile.id}
@@ -135,7 +194,7 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
         <div className="hidden md:grid grid-cols-2 gap-8 pt-4 border-t border-slate-100 bg-slate-50/70 p-4 rounded-2xl animate-slideDown">
           <DayRangeSlider
             minDays={1}
-            maxDays={6}
+            maxDays={30}
             value={dayRange}
             onChange={onDayRangeChange}
           />
@@ -148,10 +207,12 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
 
       {/* Active Filter Chips */}
       <ActiveFilterTags
+        selectedDestination={selectedDestination}
+        onResetDestination={() => onDestinationChange("all")}
         selectedProfiles={selectedProfiles}
         onRemoveProfile={onToggleProfile}
         dayRange={dayRange}
-        onResetDayRange={() => onDayRangeChange([1, 6])}
+        onResetDayRange={() => onDayRangeChange([1, 30])}
         budgetLevel={budgetLevel}
         onResetBudget={() => onBudgetChange("all")}
         searchQuery={searchQuery}
@@ -176,9 +237,37 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
               </button>
             </div>
 
+            {/* Destination in Mobile Drawer */}
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-bold uppercase text-slate-400 tracking-wider">
+                Destino / Región
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {DESTINATION_FILTERS.map((dest) => {
+                  const isSelected = selectedDestination === dest.id;
+                  const DestIcon = DEST_ICON_MAP[dest.iconName] || MapPin;
+                  return (
+                    <button
+                      key={dest.id}
+                      type="button"
+                      onClick={() => onDestinationChange(dest.id)}
+                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+                        isSelected
+                          ? "bg-[#6b0014] text-white border-[#6b0014] font-bold"
+                          : "bg-slate-50 text-slate-700 border-slate-200"
+                      }`}
+                    >
+                      <DestIcon className={`w-3.5 h-3.5 ${isSelected ? "text-amber-400" : "text-[#6b0014]"}`} />
+                      <span>{dest.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
             {/* Traveler Profiles in Mobile Drawer */}
             <div className="flex flex-col gap-2">
-              <label className="text-xs font-bold uppercase text-slate-400">
+              <label className="text-xs font-bold uppercase text-slate-400 tracking-wider">
                 Estilo de Viaje
               </label>
               <div className="flex flex-wrap gap-2">
@@ -196,7 +285,7 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
             {/* Duration Slider in Mobile Drawer */}
             <DayRangeSlider
               minDays={1}
-              maxDays={6}
+              maxDays={30}
               value={dayRange}
               onChange={onDayRangeChange}
             />

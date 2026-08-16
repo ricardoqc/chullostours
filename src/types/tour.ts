@@ -96,7 +96,19 @@ export interface GEOOptimization {
   key_facts_for_ai: { fact: string; value: string }[];
 }
 
+export interface TourHighlightItem {
+  icono: string;
+  titulo: string;
+  detalle: string;
+}
+
 export interface Tour {
+  id?: string;
+  precio_usd?: number;
+  precio?: number;
+  horarios_disponibles?: string[];
+  punto_inicio?: string;
+  categoria?: string;
   titulo: string;
   slug: string;
   url: string;
@@ -105,6 +117,7 @@ export interface Tour {
   resumen: string;
   descripcion_completa?: string;
   propuesta_de_valor?: string[];
+  tour_highlights?: TourHighlightItem[];
   destacados_highlights: string[];
   galeria: TourImagen[];
   itinerario: DiaItinerario[];

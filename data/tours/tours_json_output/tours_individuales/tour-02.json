@@ -1,0 +1,38 @@
+{
+  "id": "tour-02",
+  "nombre": "Valle Sagrado de los Incas VIP / Tradicional",
+  "categoria": "Cusco / Tradicional",
+  "duracion": "Full Day (06:00 hrs - 19:00 hrs aprox.)",
+  "precio_usd": 45,
+  "horarios_disponibles": [
+    "06:00 am - 06:50 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Chinchero y Centro Textil artesanal",
+    "Terrazas Agrícolas de Moray",
+    "Salineras de Maras",
+    "Urubamba (Almuerzo Buffet)",
+    "Parque Arqueológico de Ollantaytambo",
+    "Parque Arqueológico de Pisac",
+    "Retorno a la ciudad de Cusco (19:00 hrs aprox.)"
+  ],
+  "incluye": [
+    "Guía Profesional",
+    "Transporte Turístico",
+    "Almuerzo Buffet en Urubamba",
+    "Asistencia permanente"
+  ],
+  "no_incluye": [
+    "Boleto Turístico del Cusco (BTC)",
+    "Entrada a las Salineras de Maras",
+    "Gastos personales"
+  ],
+  "recomendaciones": [
+    "Llevar Boleto Turístico",
+    "Llevar ropa ligera para el día y abrigadora para la tarde",
+    "Llevar agua y snacks",
+    "Llevar cámara fotográfica y lentes de sol"
+  ],
+  "pagina_catalogo": 5
+}

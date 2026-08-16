@@ -1,0 +1,39 @@
+{
+  "id": "tour-13",
+  "nombre": "7 Lagunas de Ausangate (Pacchanta)",
+  "categoria": "Cusco / Trekking",
+  "duracion": "Full Day (04:30 am - 19:00 pm)",
+  "precio_usd": 45,
+  "horarios_disponibles": [
+    "04:30 am - 05:00 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo de hoteles en Cusco y viaje hacia la comunidad de Pacchanta (faldas del nevado Ausangate)",
+    "Desayuno en la comunidad de Pacchanta",
+    "Inicio del circuito de caminata para visitar las 7 Lagunas: Pucacocha, Patacocha, Alqacocha, Qomercocha, Orco Otorongo, China Otorongo y Azulcocha",
+    "Tiempo para fotografías y explicación guiada junto a los glaciares",
+    "Retorno a Pacchanta y Almuerzo",
+    "Tiempo libre opcional para disfrutar de las aguas termales medicinales de Pacchanta",
+    "Retorno a la ciudad de Cusco (19:00 hrs aprox.)"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico",
+    "Desayuno y Almuerzo",
+    "Ticket de ingreso a la comunidad y lagunas",
+    "Bastones de trekking",
+    "Asistencia y oxígeno"
+  ],
+  "no_incluye": [
+    "Ingreso a los baños termales de Pacchanta (pago voluntario local aprox S/. 5 - 10)",
+    "Gastos personales",
+    "Alquiler de caballos"
+  ],
+  "recomendaciones": [
+    "Llevar traje de baño y toalla si desea ingresar a las termas",
+    "Llevar gorro de lana, guantes y casaca impermeable",
+    "Llevar protector solar y gafas de sol"
+  ],
+  "pagina_catalogo": 16
+}

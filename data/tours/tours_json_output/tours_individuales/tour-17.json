@@ -1,0 +1,38 @@
+{
+  "id": "tour-17",
+  "nombre": "Camino Inca Corto 2 Días / 1 Noche",
+  "categoria": "Camino Inca",
+  "duracion": "2 Días / 1 Noche",
+  "precio_usd": 570,
+  "horarios_disponibles": [
+    "Hora a coordinar según ticket de tren"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Día 1: Recojo del hotel y traslado a la estación de Ollantaytambo. Viaje en tren hasta el Km 104 (inicio del trekking). Caminata y visita a los sitios arqueológicos de Chachabamba y Wiñaywayna (4-5 hrs caminata). Almuerzo tipo picnic. Continuación hacia Inti Punku (Puerta del Sol) con vista panorámica de Machu Picchu. Descenso a Aguas Calientes. Alojamiento en hotel y cena.",
+    "Día 2: Desayuno en el hotel. Bus Consettur de subida a Machu Picchu. Visita guiada profesional por Machu Picchu (2.5 hrs aprox.). Bus de bajada a Aguas Calientes. Tren de retorno a Ollantaytambo y transporte final a Cusco."
+  ],
+  "incluye": [
+    "Traslado Cusco - Estación Ollantaytambo - Cusco",
+    "Ticket de Tren Turístico (Ollantaytambo - Km 104 y Aguas Calientes - Ollantaytambo)",
+    "Permisos y Pases del Camino Inca + Entrada a Machu Picchu",
+    "Guía Profesional (Español / Inglés)",
+    "Bus Consettur subida y bajada (Día 2)",
+    "Alimentación: 1 Almuerzo picnic, 1 Cena, 1 Desayuno hotel",
+    "1 Noche de Hotel en Aguas Calientes",
+    "Botiquín de primeros auxilios y balón de oxígeno"
+  ],
+  "no_incluye": [
+    "Primer Desayuno (Día 1)",
+    "Último Almuerzo en Aguas Calientes (Día 2)",
+    "Bastones de trekking (se pueden alquilar)",
+    "Gastos personales y propinas"
+  ],
+  "recomendaciones": [
+    "Reservar con varios meses de anticipación (cupos gubernamentales estrictamente limitados)",
+    "Pasaporte original obligatorio utilizado en la reserva",
+    "Mochila cómoda de 30L",
+    "Zapatillas de trekking usadas previo al viaje"
+  ],
+  "pagina_catalogo": 24
+}

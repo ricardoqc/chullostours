@@ -1,0 +1,360 @@
+[
+  {
+    "id": "tour-01",
+    "nombre": "City Tour Cusco",
+    "incluye": [
+      "Guía Profesional (Español / Inglés)",
+      "Transporte Turístico",
+      "Asistencia durante el recorrido"
+    ],
+    "no_incluye": [
+      "Boleto Turístico del Cusco (BTC)",
+      "Entrada a Qoricancha",
+      "Gastos personales",
+      "Alimentación"
+    ]
+  },
+  {
+    "id": "tour-02",
+    "nombre": "Valle Sagrado de los Incas VIP / Tradicional",
+    "incluye": [
+      "Guía Profesional",
+      "Transporte Turístico",
+      "Almuerzo Buffet en Urubamba",
+      "Asistencia permanente"
+    ],
+    "no_incluye": [
+      "Boleto Turístico del Cusco (BTC)",
+      "Entrada a las Salineras de Maras",
+      "Gastos personales"
+    ]
+  },
+  {
+    "id": "tour-03",
+    "nombre": "Machu Picchu Full Day en Tren",
+    "incluye": [
+      "Guía Profesional (Español / Inglés)",
+      "Tren Turístico ida y retorno",
+      "Bus Consettur subida y bajada",
+      "Ingreso a la Ciudadela de Machu Picchu",
+      "Traslados en bus Cusco - Ollantaytambo - Cusco"
+    ],
+    "no_incluye": [
+      "Alimentación (Almuerzo no incluido)",
+      "Gastos personales",
+      "Propinas"
+    ]
+  },
+  {
+    "id": "tour-04",
+    "nombre": "Montaña de 7 Colores (Vinicunca)",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico",
+      "Desayuno Buffet",
+      "Almuerzo Buffet",
+      "Boleto de Ingreso a la Montaña de 7 Colores",
+      "Bastones de trekking",
+      "Botiquín de primeros auxilios y balón de oxígeno"
+    ],
+    "no_incluye": [
+      "Alquiler de caballos",
+      "Gastos personales",
+      "Propina para el guía / chofer"
+    ]
+  },
+  {
+    "id": "tour-05",
+    "nombre": "Cuatrimotos Montaña de 7 Colores",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico",
+      "Cuatrimoto equipada + casco y equipo de seguridad",
+      "Desayuno Buffet y Almuerzo Buffet",
+      "Ticket de ingreso a la Montaña",
+      "Asistencia permanente"
+    ],
+    "no_incluye": [
+      "Gastos personales",
+      "Servicios o consumos no mencionados"
+    ]
+  },
+  {
+    "id": "tour-06",
+    "nombre": "Laguna Humantay",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico ida y vuelta",
+      "Desayuno y Almuerzo",
+      "Boleto de Ingreso a la Laguna Humantay",
+      "Bastones de trekking",
+      "Balón de oxígeno y botiquín"
+    ],
+    "no_incluye": [
+      "Alquiler de caballos de subida",
+      "Gastos personales"
+    ]
+  },
+  {
+    "id": "tour-07",
+    "nombre": "Glaciar Quelccaya",
+    "incluye": [
+      "Guía profesional especializado",
+      "Transporte turístico",
+      "Desayuno y Almuerzo",
+      "Bastones de trekking",
+      "Boleto de ingreso"
+    ],
+    "no_incluye": [
+      "Gastos personales",
+      "Servicios no mencionados"
+    ]
+  },
+  {
+    "id": "tour-08",
+    "nombre": "ATV Maras Moray (Cuatrimotos)",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico de ida y retorno",
+      "Cuatrimotos individuales / dobles + casco y guantes",
+      "Asistencia técnica permanente"
+    ],
+    "no_incluye": [
+      "Boleto Turístico del Cusco (para Moray)",
+      "Ingreso a Salineras de Maras",
+      "Alimentación",
+      "Gastos personales"
+    ]
+  },
+  {
+    "id": "tour-09",
+    "nombre": "Cusco Místico (Morada de los Dioses Apukunyana)",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico",
+      "Asistencia permanente",
+      "Boleto de Ingresos incluidos a los atractivos"
+    ],
+    "no_incluye": [
+      "Gastos personales",
+      "Alimentos y bebidas"
+    ]
+  },
+  {
+    "id": "tour-10",
+    "nombre": "Cusco Escénico (City Tour Nocturno)",
+    "incluye": [
+      "Guía Profesional (Español / Inglés)",
+      "Transporte Turístico",
+      "Asistencia durante el recorrido",
+      "Boleto de Ingresos requeridos"
+    ],
+    "no_incluye": [
+      "Gastos personales",
+      "Alimentos y bebidas"
+    ]
+  },
+  {
+    "id": "tour-11",
+    "nombre": "Puente Qeswachaka y Circuitos de las 4 Lagunas",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico",
+      "Desayuno y Almuerzo",
+      "Ticket de Ingreso al Puente Q'eswachaka",
+      "Asistencia"
+    ],
+    "no_incluye": [
+      "Gastos personales",
+      "Propinas"
+    ]
+  },
+  {
+    "id": "tour-12",
+    "nombre": "Waqrapukara Trekking",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico",
+      "Desayuno y Almuerzo",
+      "Boleto de Ingreso a Waqrapukara",
+      "Bastones de caminata",
+      "Botiquín y oxígeno"
+    ],
+    "no_incluye": [
+      "Gastos personales",
+      "Caballos"
+    ]
+  },
+  {
+    "id": "tour-13",
+    "nombre": "7 Lagunas de Ausangate (Pacchanta)",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico",
+      "Desayuno y Almuerzo",
+      "Ticket de ingreso a la comunidad y lagunas",
+      "Bastones de trekking",
+      "Asistencia y oxígeno"
+    ],
+    "no_incluye": [
+      "Ingreso a los baños termales de Pacchanta (pago voluntario local aprox S/. 5 - 10)",
+      "Gastos personales",
+      "Alquiler de caballos"
+    ]
+  },
+  {
+    "id": "tour-14",
+    "nombre": "Valle Sur Cusco (Tipón, Pikillacta y Andahuaylillas)",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico",
+      "Asistencia durante la ruta"
+    ],
+    "no_incluye": [
+      "Boleto Turístico del Cusco (BTC)",
+      "Entrada a la Capilla de Andahuaylillas",
+      "Alimentación en Saylla",
+      "Gastos personales"
+    ]
+  },
+  {
+    "id": "tour-15",
+    "nombre": "Cataratas de Poc Poc (Chinchero Trekking)",
+    "incluye": [
+      "Guía profesional",
+      "Transporte turístico",
+      "Almuerzo campestre",
+      "Asistencia"
+    ],
+    "no_incluye": [
+      "Boleto Turístico (si se ingresa a ruinas de Chinchero)",
+      "Gastos personales"
+    ]
+  },
+  {
+    "id": "tour-16",
+    "nombre": "Machu Picchu By Car 2 Días / 1 Noche",
+    "incluye": [
+      "Transporte turístico Cusco - Hidroeléctrica - Cusco",
+      "1 Almuerzo (Día 1) y 1 Cena (Día 1)",
+      "1 Noche de Hospedaje en Aguas Calientes (con baño privado y agua caliente)",
+      "1 Desayuno (Día 2)",
+      "Boleto de Ingreso a Machu Picchu",
+      "Guía profesional en Machu Picchu"
+    ],
+    "no_incluye": [
+      "Bus Consettur Aguas Calientes - Machu Picchu - Aguas Calientes (Opcional $24 USD)",
+      "Tren Hidroeléctrica - Aguas Calientes (Opcional)",
+      "Alimentación del Día 2 (Almuerzo)",
+      "Gastos personales"
+    ]
+  },
+  {
+    "id": "tour-17",
+    "nombre": "Camino Inca Corto 2 Días / 1 Noche",
+    "incluye": [
+      "Traslado Cusco - Estación Ollantaytambo - Cusco",
+      "Ticket de Tren Turístico (Ollantaytambo - Km 104 y Aguas Calientes - Ollantaytambo)",
+      "Permisos y Pases del Camino Inca + Entrada a Machu Picchu",
+      "Guía Profesional (Español / Inglés)",
+      "Bus Consettur subida y bajada (Día 2)",
+      "Alimentación: 1 Almuerzo picnic, 1 Cena, 1 Desayuno hotel",
+      "1 Noche de Hotel en Aguas Calientes",
+      "Botiquín de primeros auxilios y balón de oxígeno"
+    ],
+    "no_incluye": [
+      "Primer Desayuno (Día 1)",
+      "Último Almuerzo en Aguas Calientes (Día 2)",
+      "Bastones de trekking (se pueden alquilar)",
+      "Gastos personales y propinas"
+    ]
+  },
+  {
+    "id": "tour-18",
+    "nombre": "Camino Inca Clásico 4 Días / 3 Noches",
+    "incluye": [
+      "Recojo del hotel y traslados completos",
+      "Permisos y Pases oficiales del Camino Inca y Machu Picchu",
+      "Guía profesional de turismo + Asistente de guía (para grupos grandes)",
+      "Equipo de campamento completo (carpas térmicas, carpa comedor, carpa cocina, sillas, mesas)",
+      "Equipo de porteadores para cargar carpas, comida y utensilios de cocina",
+      "Alimentación completa en ruta (3 Desayunos, 3 Almuerzos, 3 Cenas)",
+      "Ticket de Tren Turístico de retorno (Aguas Calientes - Ollantaytambo)",
+      "Bus Consettur bajada de Machu Picchu a Aguas Calientes"
+    ],
+    "no_incluye": [
+      "Bolsa de dormir (Sleeping bag - se puede alquilar)",
+      "Porteador personal para equipaje privado (opcional contratado aparte)",
+      "Primer desayuno (Día 1) y último almuerzo (Día 4)",
+      "Propinas para porteadores y guía"
+    ]
+  },
+  {
+    "id": "tour-19",
+    "nombre": "Tour Puno Full Day (Islas Uros y Taquile)",
+    "incluye": [
+      "Ticket de Bus Cama Cusco - Puno - Cusco",
+      "Transporte terrestre en Puno",
+      "Navegación en embarcación turística rápida en el Lago Titicaca",
+      "Guía profesional (Español / Inglés)",
+      "Desayuno y Almuerzo tradicional",
+      "Boleto de entrada a las Islas Uros y Taquile"
+    ],
+    "no_incluye": [
+      "Paseo en balsa tradicional de totora en Uros (Opcional pago directo a comuneros)",
+      "Cena",
+      "Gastos personales"
+    ]
+  },
+  {
+    "id": "tour-20",
+    "nombre": "Tour Puno 2 Días / 1 Noche (Uros, Amantaní y Taquile - Turismo Vivencial)",
+    "incluye": [
+      "Ticket de Bus Cama Cusco - Puno - Cusco",
+      "Navegación completa en bote turístico por el Lago Titicaca",
+      "Guía Profesional",
+      "1 Noche de Hospedaje en casa de familia en Isla Amantaní",
+      "Alimentación: 2 Desayunos, 2 Almuerzos tradicionales, 1 Cena",
+      "Show de peña y préstamo de traje típico",
+      "Boleto de Ingreso a Uros, Amantaní y Taquile"
+    ],
+    "no_incluye": [
+      "Gastos personales",
+      "Paseo en balsa de totora en Uros",
+      "Alimentos no mencionados"
+    ]
+  },
+  {
+    "id": "tour-21",
+    "nombre": "Lima City Tour",
+    "incluye": [
+      "Guía Profesional",
+      "Transporte Turístico con aire acondicionado",
+      "Entrada al Convento de San Francisco y Catacumbas",
+      "Entrada al Circuito Mágico del Agua",
+      "Asistencia durante el tour"
+    ],
+    "no_incluye": [
+      "Alimentos y bebidas",
+      "Gastos personales",
+      "Propinas"
+    ]
+  },
+  {
+    "id": "tour-22",
+    "nombre": "Oasis Huacachina + Islas Ballestas (Ica y Paracas desde Lima)",
+    "incluye": [
+      "Guía Profesional",
+      "Transporte Turístico ida y vuelta desde Lima",
+      "Tours en Paracas: Deslizador turistico a Islas Ballestas",
+      "Tours en Ica: Carros Areneros (Buggies) + Tablas de Sandboarding en Huacachina",
+      "Visita a Bodega Vitivinícola + Degustación de Pisco/Vino",
+      "Almuerzo",
+      "Impuestos turísticos y tickets de ingreso"
+    ],
+    "no_incluye": [
+      "Desayuno (parada técnica en ruta)",
+      "Gastos personales no mencionados"
+    ]
+  }
+]

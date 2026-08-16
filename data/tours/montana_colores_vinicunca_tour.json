@@ -249,5 +249,32 @@
         ]
       }
     ]
-  }
+  },
+  "tour_highlights": [
+    {
+      "icono": "FaUtensils",
+      "titulo": "Alimentación",
+      "detalle": "Desayuno buffet y almuerzo andino reconstituyente en Cusipata"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Transporte Turístico",
+      "detalle": "Traslados en unidad climatizada con chofer profesional (12 Horas (Full Day))"
+    },
+    {
+      "icono": "FaUserTie",
+      "titulo": "Guía Especializado",
+      "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
+    },
+    {
+      "icono": "FaUsers",
+      "titulo": "Grupo Reducido",
+      "detalle": "Grupos de máximo 15 personas para una experiencia más cómoda y fluida"
+    },
+    {
+      "icono": "FaMountain",
+      "titulo": "Desafío de Montaña",
+      "detalle": "Caminata en altitud (5,036 m.s.n.m.) — Se incluye botiquín y balón de oxígeno"
+    }
+  ]
 }

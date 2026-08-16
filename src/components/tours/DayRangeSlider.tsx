@@ -77,9 +77,9 @@ export const DayRangeSlider: React.FC<DayRangeSliderProps> = ({
       <div className="flex items-center gap-1.5 pt-1">
         <button
           type="button"
-          onClick={() => onChange([1, 6])}
+          onClick={() => onChange([1, 30])}
           className={`flex-1 py-1 px-2 rounded-lg text-[11px] font-bold transition-colors ${
-            currentMin === 1 && currentMax === 6
+            currentMin === 1 && currentMax === 30
               ? "bg-[#6b0014] text-white"
               : "bg-slate-100 text-slate-600 hover:bg-slate-200"
           }`}
@@ -99,9 +99,9 @@ export const DayRangeSlider: React.FC<DayRangeSliderProps> = ({
         </button>
         <button
           type="button"
-          onClick={() => onChange([2, 6])}
+          onClick={() => onChange([2, 30])}
           className={`flex-1 py-1 px-2 rounded-lg text-[11px] font-bold transition-colors ${
-            currentMin === 2 && currentMax === 6
+            currentMin === 2 && currentMax === 30
               ? "bg-[#6b0014] text-white"
               : "bg-slate-100 text-slate-600 hover:bg-slate-200"
           }`}

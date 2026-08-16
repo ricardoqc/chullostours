@@ -1,265 +1,296 @@
 {
-  "titulo": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches",
+  "id": "lo-mejor-de-cusco-6-dias",
+  "precio_usd": 590,
+  "precio": 590,
+  "horarios_disponibles": [
+    "Coordinación de llegada según itinerario de vuelo",
+    "City Tour: 09:00 AM o 13:00 PM",
+    "Valle Sagrado: 06:30 AM - 06:50 AM",
+    "Laguna Humantay: 04:30 AM",
+    "Montaña 7 Colores: 04:30 AM - 04:50 AM",
+    "Morada de los Dioses en Cuatrimotos: 09:00 AM - 11:00 AM"
+  ],
+  "punto_inicio": "Recepción en el Aeropuerto Internacional Alejandro Velasco Astete (Cusco) y recojo en hotel",
+  "categoria": "Paquetes Turísticos",
+  "titulo": "Paquete Cusco de Ensueño / Lo Mejor de Cusco 6 Días / 5 Noches",
   "slug": "lo-mejor-de-cusco-6-dias",
   "url": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/",
   "metas": {
-    "description": "Experimenta la aventura definitiva con el Paquete Lo Mejor de Cusco 6 Días. Incluye City Tour, Valle Sagrado VIP, Machu Picchu, Laguna Humantay y Montaña de 7 Colores. ¡Reserva tu viaje con Chullos Tours!",
-    "og_title": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches | Chullos Tours",
+    "description": "Reserva el Paquete Cusco de Ensueño 6 Días / 5 Noches con Chullos Tours. Incluye City Tour, Valle Sagrado VIP, Machu Picchu, Laguna Humantay, Montaña de 7 Colores y Morada de los Dioses en Cuatrimotos.",
+    "og_title": "Paquete Cusco de Ensueño 6 Días / 5 Noches | Chullos Tours",
     "og_url": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/"
   },
   "atributos": {
     "duracion": "6 Días / 5 Noches",
-    "ubicacion": "Cusco, Valle Sagrado, Machu Picchu, Laguna Humantay y Vinicunca, Perú",
+    "ubicacion": "Cusco, Valle Sagrado, Machu Picchu, Laguna Humantay, Vinicunca y Morada de los Dioses, Perú",
     "idiomas": [
       "Español",
       "Inglés"
     ],
-    "tipo_tour": "Cultural / Arqueológico / Naturaleza / Trekking",
+    "tipo_tour": "Paquete Turístico Completo / Arqueología / Aventura en Cuatrimoto / Trekking",
+    "alojamiento_incluido": "4 Noches en Cusco + 1 Noche en Aguas Calientes (Machu Picchu Pueblo)",
     "dificultad": "Moderada - Alta",
     "altitud_maxima": "5,020 m.s.n.m.",
     "grupo_max": 15,
     "nivel_fisico": "Moderado a Exigente"
   },
-  "resumen": "El Paquete Lo Mejor de Cusco 6 Días y 5 Noches es el programa estrella diseñado para viajeros apasionados por la historia, la cultura andina y los paisajes de alta montaña. Reúne en un solo viaje los cinco destinos más famosos de la región: el City Tour Cusco, el Valle Sagrado VIP (Maras, Moray y Ollantaytambo), la Maravilla de Machu Picchu con noche en Aguas Calientes, la espectacular Laguna Humantay y la icónica Montaña de 7 Colores (Vinicunca).",
-  "descripcion_completa": "Descubre Cusco en su máxima expresión con nuestra expedición completa de 6 Días / 5 Noches 'Lo Mejor de Cusco'. Este paquete integral ha sido minuciosamente estructurado por nuestros expertos en logística de viajes para brindarte la mejor aclimatación posible, un ritmo fluido de visitas y la experiencia más rica en atractivos naturales y culturales.\n\nIniciaremos recibiéndote en el aeropuerto de Cusco para trasladarte a tu hotel y comenzar por la tarde el City Tour Arqueológico por Qorikancha, Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay. Al día siguiente explorarás el Valle Sagrado en servicio VIP, conociendo Chinchero, las Salineras de Maras, el laboratorio agrícola de Moray y la fortaleza viva de Ollantaytambo, desde donde tomarás el tren hacia el pintoresco poblado de Aguas Calientes.\n\nTras pernoctar a los pies del santuario inca, el tercer día ascenderás a la Maravilla del Mundo Machu Picchu para un tour guiado inolvidable antes de regresar a Cusco. Los días cuatro y cinco estarán dedicados a dos espectaculares caminatas de alta montaña: primero ascenderás hacia las turquesas aguas glaciares de la Laguna Humantay (4,200 m.s.n.m.) a los pies del imponente nevado Salkantay; al día siguiente emprenderás la marcha hacia la cumbre de la Montaña de 7 Colores (Vinicunca, 5,020 m.s.n.m.) rodeado de alpacas y la cordillera del Ausangate. Finalmente, el sexto día tendrás la mañana libre para adquirir recuerdos en los mercados tradicionales antes de tu traslado privado de salida.",
+  "resumen": "El Paquete Cusco de Ensueño 6 Días y 5 Noches es el programa estrella diseñado para viajeros apasionados por la historia, la cultura andina y los paisajes de alta montaña. Reúne en un solo viaje los seis destinos más icónicos de Cusco: el City Tour Arqueológico, el Valle Sagrado VIP (Maras, Moray y Ollantaytambo), la Maravilla de Machu Picchu con noche en Aguas Calientes, la deslumbrante Laguna Humantay, la famosa Montaña de 7 Colores (Vinicunca) y una emocionante aventura en cuatrimotos hacia la Morada de los Dioses (Apukunaq Tianan).",
+  "descripcion_completa": "Descubre la magia de la Capital Imperial con nuestro paquete insignia de 6 Días / 5 Noches 'Cusco de Ensueño'. Diseñado detalladamente por nuestros especialistas para brindarte una aclimatación óptima, un ritmo fluido de visitas y la mayor diversidad de experiencias culturales, de naturaleza y aventura de todo el sur peruano.\n\nIniciaremos recibiéndote en el aeropuerto de Cusco para trasladarte a tu hotel y dar paso por la tarde al City Tour por el Qorikancha y los complejos arqueológicos de Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay. El segundo día realizarás el circuito VIP del Valle Sagrado, explorando Chinchero, Moray, las Salineras de Maras y la gran fortaleza inca de Ollantaytambo, lugar donde abordaremos el tren hacia Aguas Calientes.\n\nEl tercer día ascenderás a la majestuosa ciudadela de Machu Picchu para una visita guiada inolvidable antes de retornar a Cusco. Los días cuarto y quinto estarán dedicados a dos espectaculares trekkings de alta montaña: la turquesa Laguna Humantay (4,200 m.s.n.m.) a los pies del Salkantay, y la icónica Montaña de 7 Colores (Vinicunca, 5,020 m.s.n.m.). Finalmente, el sexto día vivirás una emocionante ruta en cuatrimotos hacia la Morada de los Dioses (Apukunaq Tianan), contemplando esculturas gigantes talladas en roca viva antes de tu traslado de retorno al aeropuerto.",
   "propuesta_de_valor": [
-    "El paquete más completo de Cusco cubriendo los 5 destinos principales de la región en un único itinerario.",
+    "El paquete más variado de Cusco reuniendo 6 imperdibles: Machu Picchu, Valle Sagrado, Vinicunca, Humantay, City Tour y Cuatrimotos.",
     "Aclimatación progresiva planificada estratégicamente para disfrutar las caminatas de alta montaña sin soroche.",
-    "Pernocte incluido en Aguas Calientes para ingresar a Machu Picchu en los turnos preferenciales.",
+    "Incluye aventura de cuatrimotos dobles o individuales hacia la gigantesca Morada de los Dioses en Sencca.",
     "Servicio alimenticio incluido con 1 almuerzo buffet en Valle Sagrado, 2 desayunos y 2 almuerzos buffet en las caminatas andinas.",
-    "Guías profesionales de montaña y cultura bilingües equipados con tanques de oxígeno medicinal y primeros auxilios."
+    "Opciones de hospedaje flexible: Opción 1 Básico (USD $590), Opción 2 Boutique (USD $670) y Opción 3 3 Estrellas (USD $720)."
   ],
   "destacados_highlights": [
     "Recepción y traslados privados in/out en el aeropuerto de Cusco.",
-    "City Tour por los principales templos incaicos y recintos megalíticos de la capital imperial.",
+    "City Tour Arqueológico por los templos y recintos megalíticos de Cusco.",
     "Recorrido VIP por el Valle Sagrado visitando Chinchero, Salineras de Maras, Moray y Ollantaytambo.",
-    "Viaje panorámico en tren bordando el río Urubamba y noche de pernocte en Aguas Calientes.",
-    "Visita guiada oficial por los circuitos sagrados de Machu Picchu.",
-    "Trekking hacia la joya turquesa glaciar de la Laguna Humantay a 4,200 m.s.n.m.",
-    "Trekking a la cumbre de la Montaña de 7 Colores Vinicunca a 5,020 m.s.n.m."
+    "Viaje en tren turístico y 1 noche de pernocte en Aguas Calientes.",
+    "Visita guiada oficial por la Ciudadela Inca de Machu Picchu.",
+    "Trekking hacia las aguas turquesas de la Laguna Humantay a 4,200 m.s.n.m.",
+    "Trekking a la cima de la Montaña de 7 Colores Vinicunca a 5,020 m.s.n.m.",
+    "Circuito de aventura en cuatrimotos hacia las esculturas de la Morada de los Dioses (Apukunaq Tianan)."
+  ],
+  "tour_highlights": [
+    {
+      "icono": "FaUtensils",
+      "titulo": "Alimentación Incluida",
+      "detalle": "Desayunos diarios en hotel + 1 Almuerzo buffet en Valle Sagrado + Desayunos y Almuerzos en caminatas"
+    },
+    {
+      "icono": "FaHotel",
+      "titulo": "Alojamiento 5 Noches",
+      "detalle": "4 noches de hospedaje en Cusco + 1 noche en Aguas Calientes (Habitaciones Matrimoniales / Dobles)"
+    },
+    {
+      "icono": "FaMotorcycle",
+      "titulo": "Cuatrimotos Incluidas",
+      "detalle": "Aventura en cuatrimoto en Sencca para visitar la Morada de los Dioses (equipo y cascos incluidos)"
+    },
+    {
+      "icono": "FaTicketAlt",
+      "titulo": "Entradas e Ingresos",
+      "detalle": "Boleto Turístico General, Qorikancha, Maras, Machu Picchu, Humantay, Vinicunca y Morada de los Dioses"
+    },
+    {
+      "icono": "FaTrain",
+      "titulo": "Trenes y Buses Turísticos",
+      "detalle": "Boletos de tren turístico ida y vuelta (Expedition/Voyager) + Buses Consettur subida y bajada"
+    }
   ],
   "galeria": [
     {
       "src": "/tours/lo-mejor-de-cusco-6-dias/05.jpg",
-      "alt": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches - 05.jpg"
+      "alt": "Paquete Cusco de Ensueño 6 Días / 5 Noches - Machu Picchu"
     },
     {
       "src": "/tours/lo-mejor-de-cusco-6-dias/06.jpg",
-      "alt": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches - 06.jpg"
+      "alt": "Paquete Cusco de Ensueño 6 Días / 5 Noches - Valle Sagrado"
     },
     {
       "src": "/tours/lo-mejor-de-cusco-6-dias/07.jpg",
-      "alt": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches - 07.jpg"
+      "alt": "Paquete Cusco de Ensueño 6 Días / 5 Noches - Vinicunca"
     },
     {
       "src": "/tours/lo-mejor-de-cusco-6-dias/08.jpg",
-      "alt": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches - 08.jpg"
-    },
-    {
-      "src": "/tours/lo-mejor-de-cusco-6-dias/09.avif",
-      "alt": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches - 09.avif"
-    },
-    {
-      "src": "/tours/lo-mejor-de-cusco-6-dias/10.jpg",
-      "alt": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches - 10.jpg"
-    },
-    {
-      "src": "/tours/lo-mejor-de-cusco-6-dias/11.jpg",
-      "alt": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches - 11.jpg"
+      "alt": "Paquete Cusco de Ensueño 6 Días / 5 Noches - Morada de los Dioses"
     }
   ],
   "itinerario": [
     {
       "dia": 1,
-      "titulo": "Bienvenida a Cusco y City Tour Arqueológico",
-      "descripcion": "Recepción en el aeropuerto de Cusco, traslado al hotel y recorrido por Qorikancha y los 4 complejos arqueológicos periféricos.",
+      "titulo": "Recepción en Cusco, Traslado al Hotel y City Tour Arqueológico",
+      "descripcion": "Recepción en el aeropuerto de Cusco, traslado a tu hotel y recorrido guiado vespertino por Qorikancha y complejos arqueológicos.",
       "actividades": [
-        "Recepción en el Aeropuerto Internacional Alejandro Velasco Astete y traslado privado a tu hotel.",
-        "Descanso matutino y consumo de mate de coca para adaptarse a la altitud.",
-        "13:00 PM | Recojo de tu hotel para iniciar el City Tour Cusco.",
-        "13:30 PM | Visita guiada por el Templo del Qorikancha y Convento de Santo Domingo.",
-        "14:45 PM | Recorrido por Sacsayhuamán y sus muros monolíticos.",
-        "15:50 PM | Visita al anfiteatro y laberinto de piedra en Q'enqo.",
-        "16:35 PM | Recorrido por el fortín de Puka Pukara.",
-        "17:15 PM | Visita al complejo acuático ceremonial de Tambomachay.",
-        "18:30 PM | Retorno al centro de Cusco. Noche de hotel en Cusco."
+        "Recepción en el Aeropuerto Internacional Alejandro Velasco Astete con letrero personalizado 'ViajandoConChullosTours' y traslado a tu hotel en Cusco.",
+        "Mañana libre para aclimatación gradual a la altitud.",
+        "09:00 AM o 13:00 PM | Recojo del hotel para el City Tour Cusco.",
+        "Visita guiada al Templo del Sol Qorikancha y Convento de Santo Domingo.",
+        "Recorrido por las imponentes murallas de Sacsayhuamán.",
+        "Exploración del templo ceremonial de Q'enqo.",
+        "Visita a la fortaleza militar inca de Puka Pukara.",
+        "Recorrido por las fuentes litúrgicas de Tambomachay.",
+        "Finalización del tour a una cuadra de la Plaza de Armas de Cusco. Noche de hotel en Cusco."
       ],
-      "alojamiento": "Hotel en Cusco",
+      "alojamiento": "Hotel en Cusco (Auri Boutique / Intiwatana / Rojas Inn)",
       "comidas_incluidas": []
     },
     {
       "dia": 2,
-      "titulo": "Tour Valle Sagrado VIP con Maras, Moray y Tren a Aguas Calientes",
-      "descripcion": "Visita a Chinchero, Salineras de Maras, Moray, almuerzo buffet en Urubamba, Ollantaytambo y viaje en tren a Aguas Calientes.",
+      "titulo": "Valle Sagrado VIP con Maras, Moray y Tren a Aguas Calientes",
+      "descripcion": "Recorrido por Chinchero, Salineras de Maras, Moray, almuerzo buffet en Urubamba, Ollantaytambo y tren a Aguas Calientes.",
       "actividades": [
-        "06:40 AM | Recojo del hotel en Cusco en transporte turístico privado.",
-        "07:30 AM | Visita al pueblo tradicional de Chinchero y demostración de arte textil andino.",
-        "09:15 AM | Exploración de las terrazas agrícolas circulares de Moray.",
-        "10:45 AM | Recorrido por las más de 3,000 pozas salineras de Maras.",
-        "12:30 PM | Almuerzo buffet andino en restaurante turístico en Urubamba.",
-        "14:30 PM | Visita guiada por la imponente fortaleza de Ollantaytambo.",
-        "16:36 PM o 19:04 PM | Abordaje del tren turístico rumbo al poblado de Aguas Calientes.",
-        "Recepción en la estación de tren de Aguas Calientes y traslado al hotel. Noche de hotel en Aguas Calientes."
+        "06:30 AM - 06:50 AM | Recojo de su hotel en Cusco en transporte turístico.",
+        "Visita a Chinchero y centro textil artesanal de tejido en lana de alpaca.",
+        "Recorrido por las terrazas circulares de experimentación agrícola de Moray.",
+        "Visita a las minas de sal natural de Maras.",
+        "Almuerzo buffet andino en restaurante turístico en Urubamba.",
+        "Visita guiada a la fortaleza arqueológica de Ollantaytambo.",
+        "Abordaje del tren turístico con destino al poblado de Aguas Calientes (Machu Picchu Pueblo).",
+        "Recepción por el personal del hotel en Aguas Calientes y traslado al hospedaje. Noche de hotel en Aguas Calientes."
       ],
-      "alojamiento": "Hotel en Aguas Calientes",
+      "alojamiento": "Hotel en Aguas Calientes (Machupicchu Inn / Intiwatana / Rojas Inn)",
       "comidas_incluidas": [
-        "Almuerzo buffet"
+        "Desayuno",
+        "Almuerzo Buffet"
       ]
     },
     {
       "dia": 3,
-      "titulo": "Santuario Histórico de Machu Picchu y Retorno a Cusco",
-      "descripcion": "Ascenso en bus Consettur a la ciudadela inca, tour guiado oficial por Machu Picchu, retorno en tren a Ollantaytambo y traslado a Cusco.",
+      "titulo": "Visita Guiada a Machu Picchu Full Day y Retorno a Cusco",
+      "descripcion": "Ascenso en bus Consettur a Machu Picchu, tour guiado profesional de 2 a 3 horas y retorno en tren hacia la ciudad de Cusco.",
       "actividades": [
-        "06:00 AM | Desayuno en el hotel de Aguas Calientes.",
-        "06:30 AM | Abordaje del bus de ascenso a la puerta principal de Machu Picchu.",
-        "07:15 AM | Recorrido guiado de 2.5 horas por los templos, plazas y terrazas de Machu Picchu.",
-        "10:30 AM | Descenso en bus Consettur hacia el poblado de Aguas Calientes.",
-        "Tiempo libre para almorzar (no incluido) y pasear por la feria artesanal.",
-        "14:30 PM o 16:12 PM | Abordaje del tren turístico de retorno hacia Ollantaytambo.",
-        "Llegada a Ollantaytambo y trasbordo al bus turístico privado de regreso a Cusco.",
-        "20:00 PM | Llegada al hotel en Cusco. Noche de hotel en Cusco."
+        "Desayuno en el hotel en Aguas Calientes.",
+        "Encuentro con el guía profesional y bus de subida Consettur hacia Machu Picchu.",
+        "Visita guiada oficial por el Santuario Histórico de Machu Picchu recorriendo sus recintos principales y miradores para la toma de fotos inolvidables.",
+        "Retorno en bus Consettur a Aguas Calientes.",
+        "Tiempo libre para almorzar en Aguas Calientes.",
+        "Abordaje del tren turístico de retorno desde Aguas Calientes hasta la estación de Ollantaytambo.",
+        "Traslado en bus turístico de Ollantaytambo a la ciudad de Cusco. Noche de hotel en Cusco."
       ],
       "alojamiento": "Hotel en Cusco",
       "comidas_incluidas": [
-        "Desayuno en el hotel"
+        "Desayuno"
       ]
     },
     {
       "dia": 4,
-      "titulo": "Excursión a la Laguna Humantay",
-      "descripcion": "Viaje hacia Soraypampa y caminata andina hacia la laguna turquesa de origen glaciar a 4,200 m.s.n.m. a los pies del nevado Salkantay.",
+      "titulo": "Excursión a la Laguna Humantay Full Day",
+      "descripcion": "Viaje a Mollepata, desayuno, caminata desde Soraypampa hacia la turquesa Laguna Humantay (4,200 m.s.n.m.) y almuerzo buffet.",
       "actividades": [
-        "04:00 AM | Recojo de tu hotel en Cusco y viaje en transporte turístico hacia el oeste de la región.",
-        "06:30 AM | Desayuno reconfortante en el poblado de Mollepata.",
-        "08:30 AM | Llegada al campamento base de Soraypampa (3,900 m.s.n.m.).",
-        "Inicio del ascenso trekking de aprox. 1.5 horas hacia la Laguna Humantay.",
-        "10:30 AM | Llegada a la Laguna Humantay (4,200 m.s.n.m.). Explicación mística por el guía, fotos y contemplación del nevado Salkantay.",
-        "12:00 PM | Caminata de descenso de regreso al punto de inicio en Soraypampa.",
-        "13:30 PM | Almuerzo buffet andino en Mollepata.",
-        "17:00 PM | Arribo a la ciudad de Cusco. Noche de hotel en Cusco."
+        "04:30 AM | Recojo del hotel en Cusco.",
+        "Viaje en transporte turístico hacia el poblado de Mollepata.",
+        "Desayuno nutritivo en Mollepata.",
+        "Traslado a Soraypampa (3,900 m.s.n.m.) e inicio del trekking de ascenso.",
+        "Llegada a la impresionante Laguna Humantay (4,200 m.s.n.m.), explicación guiada y tiempo libre para admirar el agua turquesa frente al nevado Humantay.",
+        "Descenso caminando a Soraypampa y traslado en bus a Mollepata.",
+        "Almuerzo buffet en Mollepata.",
+        "Retorno a Cusco (llegada aprox. 18:00 PM en Plaza Regocijo). Noche de hotel en Cusco."
       ],
       "alojamiento": "Hotel en Cusco",
       "comidas_incluidas": [
         "Desayuno",
-        "Almuerzo buffet"
+        "Almuerzo Buffet"
       ]
     },
     {
       "dia": 5,
-      "titulo": "Excursión a la Montaña de 7 Colores (Vinicunca)",
-      "descripcion": "Caminata andina de alta montaña a la cumbre de Vinicunca a 5,020 m.s.n.m. contemplando la franja mineral y el Ausangate.",
+      "titulo": "Trekking a la Montaña de 7 Colores (Vinicunca) Full Day",
+      "descripcion": "Viaje a Cusipata, desayuno buffet, caminata a la cumbre de Vinicunca (5,020 m.s.n.m.), tiempo para fotos y almuerzo buffet.",
       "actividades": [
-        "04:00 AM | Recojo temprano de tu hotel en Cusco.",
-        "06:30 AM | Desayuno buffet en Cusipata.",
-        "08:00 AM | Arribo al punto de inicio de caminata en Phulawasipata (4,600 m.s.n.m.).",
-        "Caminata de ascenso de aprox. 1.5 a 2 horas rodeados de llamas, alpacas y paisajes altoandinos.",
-        "10:00 AM | Llegada al mirador principal de la Montaña de 7 Colores (5,020 m.s.n.m.). Tiempo libre para fotografías.",
-        "11:30 AM | Caminata de descenso hacia la estación de transporte.",
-        "13:30 PM | Almuerzo buffet reparador en Cusipata.",
-        "16:30 PM | Retorno a Cusco. Noche de hotel en Cusco."
+        "04:30 AM - 04:50 AM | Recojo de su hotel en Cusco.",
+        "Viaje en transporte turístico hacia Cusipata.",
+        "Desayuno buffet en Cusipata.",
+        "Caminata de ascenso de 1h 30min a 1h 45min hacia la cima de la Montaña de 7 Colores.",
+        "Llegada a Vinicunca (5,020 m.s.n.m.), explicación geológica por el guía profesional y sesión de fotos con fondo de la cordillera del Ausangate.",
+        "Descenso y retorno en bus a Cusipata.",
+        "Almuerzo buffet en Cusipata.",
+        "Retorno a Cusco (llegada 18:00 PM en Plaza Regocijo). Noche de hotel en Cusco."
       ],
       "alojamiento": "Hotel en Cusco",
       "comidas_incluidas": [
         "Desayuno",
-        "Almuerzo buffet"
+        "Almuerzo Buffet"
       ]
     },
     {
       "dia": 6,
-      "titulo": "Mañana Libre en Cusco y Traslado de Salida al Aeropuerto",
-      "descripcion": "Mañana libre para compras de souvenirs en el Mercado de San Pedro o San Blas y traslado privado al aeropuerto de Cusco.",
+      "titulo": "Tour en Cuatrimotos Morada de los Dioses y Traslado al Aeropuerto",
+      "descripcion": "Aventura en cuatrimoto hacia la Morada de los Dioses (Apukunaq Tianan) en Sencca y traslado final al aeropuerto de Cusco.",
       "actividades": [
-        "08:30 AM | Desayuno en el hotel en Cusco.",
-        "Tiempo libre para recorrer la Plaza de Armas, galerías artesanales o el Mercado de San Pedro.",
-        "3 horas antes de tu vuelo | Recojo de tu hotel y traslado privado al Aeropuerto Internacional Alejandro Velasco Astete.",
-        "Asistencia en el embalaje y check-in. Fin de los servicios de Chullos Tours."
+        "Desayuno en el hotel en Cusco.",
+        "09:00 AM | Recojo de su hotel para trasladarlos hacia la localidad de Sencca.",
+        "Breve inducción y práctica de 10 minutos para aprender a conducir la cuatrimoto.",
+        "Recorrido en cuatrimoto de 30 a 45 minutos por paisajes andinos llegando a la Morada de los Dioses (Apukunaq Tianan).",
+        "Visita guiada por las imponentes esculturas de roca viva que representan el Puma, la Puerta Tridimensional, el Apu Protector y la Pachamama.",
+        "Tiempo libre para tomar fotos desde los miradores panorámicos.",
+        "Retorno en cuatrimoto y traslado al centro de Cusco.",
+        "En coordinación con su vuelo de salida, traslado privado al Aeropuerto Internacional de Cusco. ¡Hasta una próxima aventura!"
       ],
-      "alojamiento": "No incluye (Fin del tour)",
+      "alojamiento": "Fin del programa (No incluye noche adicional)",
       "comidas_incluidas": [
-        "Desayuno en el hotel"
+        "Desayuno"
       ]
     }
   ],
   "incluye": [
-    "Traslados privados aeropuerto - hotel - aeropuerto en Cusco.",
-    "Transporte turístico privado y climatizado para todas las excursiones.",
-    "Guía profesional oficial de turismo bilingüe en todos los circuitos.",
-    "Boletos de tren turístico ida y vuelta (Ollantaytambo - Aguas Calientes - Ollantaytambo).",
-    "1 Noche de pernocte en hotel de Aguas Calientes.",
-    "Boletos de bus Consettur subida y bajada a Machu Picchu.",
-    "Boleto de ingreso oficial al Santuario Histórico de Machu Picchu.",
-    "Excursión completa a la Laguna Humantay con desayunos y almuerzos buffet.",
-    "Excursión completa a la Montaña de 7 Colores Vinicunca con desayunos y almuerzos buffet.",
-    "Almuerzo buffet andino durante el tour Valle Sagrado VIP.",
-    "Balón de oxígeno medicinal y kit de primeros auxilios en las caminatas.",
-    "Asistencia turística personalizada 24/7."
+    "Recepción en el Aeropuerto de Cusco y traslados privados in/out",
+    "4 Noches de Alojamiento en Cusco (Auri Boutique / Intiwatana / Rojas Inn)",
+    "1 Noche de Alojamiento en Aguas Calientes (Machupicchu Inn / Intiwatana / Rojas Inn)",
+    "Desayunos diarios en los hoteles",
+    "City Tour Cusco: Guía profesional, transporte turístico e ingresos a Qorikancha y Boleto Turístico",
+    "Tour Valle Sagrado VIP: Guía profesional, transporte, almuerzo buffet en Urubamba e ingresos",
+    "Boleto de Tren Turístico ida y retorno (Expedition / Voyager)",
+    "Ticket de ingreso oficial a la Ciudadela Inca de Machu Picchu",
+    "Bus Consettur subida y bajada Aguas Calientes - Machu Picchu - Aguas Calientes",
+    "Guía profesional bilingüe en Machu Picchu",
+    "Tour Laguna Humantay: Transporte, guía, desayuno, almuerzo buffet, bastones e ingreso",
+    "Tour Montaña de 7 Colores Vinicunca: Transporte, guía, desayuno, almuerzo buffet, bastones e ingreso",
+    "Tour Morada de los Dioses: Transporte, inducción, cuatrimoto equipada, cascos y entrada",
+    "Asistencia permanente durante los 6 días de viaje"
   ],
   "no_incluye": [
-    "Boleto Turístico del Cusco (BTC) e ingresos a Salineras de Maras (20 PEN) y Qorikancha (15 PEN).",
-    "Noches de hotel en la ciudad de Cusco (opcionales bajo reserva).",
-    "Boletos aéreos de llegada o salida de Cusco.",
-    "Alquiler opcional de caballo para las caminatas a Humantay o Vinicunca.",
-    "Alimentación no mencionada en el itinerario.",
-    "Propinas para guías y conductores."
+    "Vuelos nacionales e internacionales",
+    "Alquiler de caballos en Humantay o Vinicunca",
+    "Alimentos y bebidas no especificados",
+    "Seguro de viaje y gastos personales"
   ],
   "recomendaciones": [
-    "Recomendamos contar con un buen calzado para caminata (zapatillas de trekking) ya que el programa incluye dos caminatas andinas.",
-    "Empacar ropa térmica y en capas: abrigo para las mañanas frías en la montaña y prendas respirables durante el día.",
-    "Traer dinero en efectivo en Soles (PEN) para compras artesanales y alquiler voluntario de caballos en las caminatas.",
-    "Llevar siempre consigo el pasaporte o DNI original.",
-    "Usar bloqueador solar de alta protección, lentes con filtro UV y sombrero de ala ancha."
+    "Traer pasaporte original obligatorio para abordar trenes e ingresar a Machu Picchu.",
+    "Aclimatar el primer día descansando y consumiendo alimentos ligeros.",
+    "Llevar ropa abrigadora en capas, guantes de lana, gorro térmico y chaqueta cortaviento.",
+    "Llevar calzado de trekking con buen agarre.",
+    "Usar lentes de sol, bloqueador solar y poncho de agua.",
+    "Llevar mochila liviana de 20L a 30L para las caminatas diarias."
   ],
   "puntos_de_interes": [
     {
-      "nombre": "Laguna Humantay",
-      "tipo": "Laguna Glaciar Andina",
-      "descripcion": "Espectacular cuerpo de agua de turquesa intenso ubicado a 4,200 m.s.n.m. alimentado por el deshielo del nevado Salkantay.",
-      "altitud": "4,200 m.s.n.m."
+      "nombre": "Morada de los Dioses (Apukunaq Tianan)",
+      "tipo": "Esculturas Contemporáneas / Cultura Andina",
+      "descripcion": "Gigantescas esculturas talladas en roca viva rindiendo homenaje a las deidades incaicas y la Pachamama.",
+      "altitud": "3,850 m.s.n.m."
     },
     {
-      "nombre": "Montaña de 7 Colores (Vinicunca)",
-      "tipo": "Maravilla Natural Geológica",
-      "descripcion": "Famosa montaña teñida de variadas tonalidades minerales en la cordillera del Ausangate.",
-      "altitud": "5,020 m.s.n.m."
-    },
-    {
-      "nombre": "Machu Picchu",
-      "tipo": "Maravilla del Mundo Arqueológica",
-      "descripcion": "La máxima joya de la arquitectura e ingeniería del Imperio Inca.",
+      "nombre": "Santuario Histórico de Machu Picchu",
+      "tipo": "Maravilla del Mundo / Patrimonio Cultural",
+      "descripcion": "Ciudadela incaica sagrada oculta en la ceja de selva de los Andes.",
       "altitud": "2,430 m.s.n.m."
     },
     {
-      "nombre": "Salineras de Maras y Moray",
-      "tipo": "Patrimonio Agrícola e Histórico",
-      "descripcion": "Pozos salineros ancestrales y anfiteatros de terrazas circulares de cultivo.",
-      "altitud": "3,500 m.s.n.m."
+      "nombre": "Montaña de 7 Colores (Vinicunca)",
+      "tipo": "Atractivo Natural",
+      "descripcion": "Montaña multicolor a más de 5,000 metros de altitud sobre el nivel del mar.",
+      "altitud": "5,020 m.s.n.m."
+    },
+    {
+      "nombre": "Laguna Humantay",
+      "tipo": "Laguna Glaciar",
+      "descripcion": "Espectacular cuerpo de agua turquesa al pie del nevado Humantay.",
+      "altitud": "4,200 m.s.n.m."
     }
   ],
   "faqs": [
     {
-      "pregunta": "¿Es posible realizar las dos caminatas (Humantay y Vinicunca) en días consecutivos?",
-      "respuesta": "Sí, el itinerario está diseñado para que el Día 4 realices Humantay (4,200 m.s.n.m.) como aclimatación intermedia antes de ascender el Día 5 a la Montaña Vinicunca (5,020 m.s.n.m.), garantizando un excelente desempeño físico."
+      "pregunta": "¿Qué hoteles incluye según la opción elegida?",
+      "respuesta": "Opción 1 Básico: Hotel Auri Boutique en Cusco y Machupicchu Inn en Aguas Calientes (USD $590). Opción 2 Boutique: Hotel Intiwatana en Cusco y Aguas Calientes (USD $670). Opción 3 3 Estrellas: Hotel Rojas Inn en Cusco y Aguas Calientes (USD $720)."
     },
     {
-      "pregunta": "¿Qué ocurre si no puedo completar la caminata a pie?",
-      "respuesta": "Tanto en la Laguna Humantay como en la Montaña de 7 Colores, los comuneros locales ofrecen el servicio de transporte en caballo por un costo aproximado de 80 a 100 PEN por tramo."
-    },
-    {
-      "pregunta": "¿El paquete incluye la entrada a la montaña Huayna Picchu?",
-      "respuesta": "La entrada estándar a la ciudadela de Machu Picchu está incluida. Si deseas añadir el ascenso opcional a Huayna Picchu o Machu Picchu Montaña, debes solicitarlo con 2 o 3 meses de anticipación debido a los cupos estrictos."
+      "pregunta": "¿Se requiere experiencia previa para conducir las cuatrimotos el Día 6?",
+      "respuesta": "No se requiere experiencia previa. Antes de iniciar la ruta a la Morada de los Dioses, nuestro equipo realiza una clase práctica de 10 minutos para enseñar el manejo seguro de la cuatrimoto."
     }
   ],
   "seo": {
     "focus_keyword": "Paquete Lo Mejor de Cusco 6 Dias",
-    "meta_title": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches | Chullos Tours",
-    "meta_description": "Reserva el Paquete Lo Mejor de Cusco 6 Días. Incluye City Tour, Valle Sagrado VIP, Machu Picchu, Laguna Humantay y Montaña de 7 Colores. ¡El tour más completo con Chullos Tours!",
+    "meta_title": "Paquete Cusco de Ensueño / Lo Mejor de Cusco 6 Días / 5 Noches | Chullos Tours",
+    "meta_description": "Reserva el Paquete Cusco de Ensueño 6 Días / 5 Noches con Chullos Tours. Incluye City Tour, Valle Sagrado VIP, Machu Picchu, Laguna Humantay, Vinicunca y Morada de los Dioses en Cuatrimotos.",
     "canonical": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/",
     "robots": "index, follow, max-snippet:-1, max-image-preview:large",
     "language": "es-PE",
     "open_graph": {
-      "og_title": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches | Chullos Tours",
-      "og_description": "El paquete definitivo de 6 días recorriendo Cusco, Valle Sagrado VIP, Machu Picchu, Laguna Humantay y la Montaña de 7 Colores.",
+      "og_title": "Paquete Cusco de Ensueño / Lo Mejor de Cusco 6 Días / 5 Noches | Chullos Tours",
+      "og_description": "El paquete más completo de 6 días recorriendo Machu Picchu, Valle Sagrado VIP, Laguna Humantay, Vinicunca y Morada de los Dioses en Cuatrimotos.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/",
       "og_image": "/tours/lo-mejor-de-cusco-6-dias/05.jpg",
@@ -268,39 +299,39 @@
     },
     "twitter_card": {
       "card": "summary_large_image",
-      "title": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches",
-      "description": "Explora Machu Picchu, Humantay, Vinicunca y el Valle Sagrado en una aventura inolvidable de 6 días.",
+      "title": "Paquete Cusco de Ensueño 6 Días / 5 Noches",
+      "description": "Recorre Machu Picchu, Valle Sagrado, Vinicunca, Humantay y Cuatrimotos en 6 días.",
       "image": "/tours/lo-mejor-de-cusco-6-dias/05.jpg"
     }
   },
   "geo_ai_optimization": {
-    "entity_name": "Paquete Lo Mejor de Cusco 6 Días",
+    "entity_name": "Paquete Cusco de Ensueño 6 Días",
     "entity_type": "TouristTrip",
     "primary_destination": {
-      "name": "Cusco, Machu Picchu, Laguna Humantay y Montaña Vinicunca",
+      "name": "Cusco, Machu Picchu, Laguna Humantay, Vinicunca y Morada de los Dioses",
       "region": "Cusco",
       "country": "Perú"
     },
-    "ai_direct_answer_summary": "El Paquete Lo Mejor de Cusco 6 Días / 5 Noches operado por Chullos Tours es el circuito turístico más completo de la región de Cusco. Incluye traslados privados, City Tour arqueológico, tour Valle Sagrado VIP con Salineras de Maras y Moray, pernocte en Aguas Calientes, visita guiada por Machu Picchu, trekking a la Laguna Humantay y trekking a la Montaña de 7 Colores Vinicunca.",
+    "ai_direct_answer_summary": "El Paquete Cusco de Ensueño / Lo Mejor de Cusco 6 Días / 5 Noches de Chullos Tours comprende recepción en aeropuerto, City Tour Cusco, Valle Sagrado VIP (Maras, Moray, Ollantaytambo), 1 noche en Aguas Calientes, visita a Machu Picchu, trekking a Laguna Humantay, caminata a Montaña de 7 Colores Vinicunca y tour de cuatrimotos a la Morada de los Dioses.",
     "key_facts_for_ai": [
       {
-        "fact": "Duración total del programa",
+        "fact": "Duración del circuito",
         "value": "6 Días / 5 Noches"
       },
       {
-        "fact": "Los 5 atractivos emblemáticos incluidos",
-        "value": "City Tour Cusco, Valle Sagrado VIP (Maras-Moray), Machu Picchu, Laguna Humantay, Montaña de 7 Colores Vinicunca"
+        "fact": "Destinos incluidos",
+        "value": "City Tour Cusco, Valle Sagrado VIP, Machu Picchu, Laguna Humantay, Montaña de 7 Colores, Morada de los Dioses en Cuatrimoto"
       },
       {
-        "fact": "Altitud máxima del circuito",
-        "value": "5,020 m.s.n.m. en la Montaña Vinicunca"
+        "fact": "Hoteles incluidos",
+        "value": "4 Noches en Cusco + 1 Noche en Aguas Calientes (Opciones Básico, Boutique y 3 Estrellas)"
       },
       {
-        "fact": "Alimentación incluida",
-        "value": "1 Almuerzo buffet en Valle Sagrado, 2 Desayunos y 2 Almuerzos buffet en excursiones de alta montaña"
+        "fact": "Precios por persona",
+        "value": "USD $590 (Básico), USD $670 (Boutique), USD $720 (3 Estrellas)"
       },
       {
-        "fact": "Operador acreditado",
+        "fact": "Operador oficial",
         "value": "Chullos Tours Cusco"
       }
     ]
@@ -319,17 +350,14 @@
       {
         "@type": "Product",
         "@id": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/#product",
-        "name": "Paquete Lo Mejor de Cusco 6 Días / 5 Noches",
-        "description": "El paquete de 6 días más completo visitando Cusco, Valle Sagrado VIP, pernocte en Aguas Calientes, Machu Picchu, Laguna Humantay y la Montaña de 7 Colores.",
+        "name": "Paquete Cusco de Ensueño / Lo Mejor de Cusco 6 Días / 5 Noches",
+        "description": "Itinerario completo de 6 días recorriendo Cusco, Valle Sagrado VIP, pernocte en Aguas Calientes, Machu Picchu, Laguna Humantay, Vinicunca y Morada de los Dioses en Cuatrimotos.",
         "url": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/",
         "image": [
           "/tours/lo-mejor-de-cusco-6-dias/05.jpg",
           "/tours/lo-mejor-de-cusco-6-dias/06.jpg",
           "/tours/lo-mejor-de-cusco-6-dias/07.jpg",
-          "/tours/lo-mejor-de-cusco-6-dias/08.jpg",
-          "/tours/lo-mejor-de-cusco-6-dias/09.avif",
-          "/tours/lo-mejor-de-cusco-6-dias/10.jpg",
-          "/tours/lo-mejor-de-cusco-6-dias/11.jpg"
+          "/tours/lo-mejor-de-cusco-6-dias/08.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -338,33 +366,11 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "550.00",
+          "price": "590.00",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/"
         }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿Es posible realizar las dos caminatas (Humantay y Vinicunca) en días consecutivos?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí, el itinerario está diseñado para que el Día 4 realices Humantay (4,200 m) como aclimatación intermedia antes de ascender el Día 5 a la Montaña Vinicunca (5,020 m)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Qué ocurre si no puedo completar la caminata a pie?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Tanto en Humantay como en Vinicunca se ofrece servicio opcional de transporte a caballo por 80 a 100 PEN por tramo."
-            }
-          }
-        ]
       }
     ]
   }

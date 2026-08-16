@@ -1,0 +1,38 @@
+{
+  "id": "tour-11",
+  "nombre": "Puente Qeswachaka y Circuitos de las 4 Lagunas",
+  "categoria": "Cusco / Cultural",
+  "duracion": "Full Day (04:00 am - 19:00 pm)",
+  "precio_usd": 50,
+  "horarios_disponibles": [
+    "04:00 am - 04:50 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo del hotel y partida hacia el sur de Cusco",
+    "Primera Parada: Pueblo histórico de Rumi Punku",
+    "Segunda Parada: Combapata",
+    "Tercera Parada: Yanaoca",
+    "Cuarta Parada: Distrito de Q'ewe y cruce del Puente Inca de Q'eswachaka (último puente inca trenzado de ichu)",
+    "Regreso a Yanaoca para el Almuerzo",
+    "Recorrido por el Circuito de las 4 Lagunas (Pomacanchi, Acopia, Asnaqocha y Pampamarca o Tungasuca)",
+    "Retorno a la ciudad de Cusco (19:00 hrs aprox.)"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico",
+    "Desayuno y Almuerzo",
+    "Ticket de Ingreso al Puente Q'eswachaka",
+    "Asistencia"
+  ],
+  "no_incluye": [
+    "Gastos personales",
+    "Propinas"
+  ],
+  "recomendaciones": [
+    "Llevar zapatillas con buena tracción",
+    "Llevar cortaviento y ropa abrigadora",
+    "Llevar sombrero y protector solar"
+  ],
+  "pagina_catalogo": 14
+}

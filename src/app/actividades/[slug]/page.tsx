@@ -9,6 +9,15 @@ interface ActivityPageProps {
   }>;
 }
 
+export async function generateStaticParams() {
+  return [
+    { slug: "caminata" },
+    { slug: "aventura" },
+    { slug: "cultural" },
+    { slug: "treks" },
+  ];
+}
+
 export default async function ActivityPage({ params }: ActivityPageProps) {
   const { slug } = await params;
   const titleFormatted = slug.replace(/-/g, " ").toUpperCase();

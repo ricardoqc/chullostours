@@ -1,0 +1,36 @@
+{
+  "id": "tour-14",
+  "nombre": "Valle Sur Cusco (Tipón, Pikillacta y Andahuaylillas)",
+  "categoria": "Cusco / Cultural",
+  "duracion": "Medio Día (08:00 am - 15:00 pm)",
+  "precio_usd": 45,
+  "horarios_disponibles": [
+    "08:00 am - 08:30 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo del hotel en Cusco",
+    "Visita al Complejo Arqueológico de Tipón (obras maestras de ingeniería hidráulica inca)",
+    "Visita a la Ciudad Pre-Inca de Pikillacta (cultura Wari)",
+    "Visita al poblado de Andahuaylillas y su famosa Capilla Sixtina de América (Iglesia San Pedro Apóstol)",
+    "Parada tradicional en Saylla para degustar la gastronomía típica (chicharrón de cerdo / chiriuchu opcional)",
+    "Retorno y fin del tour en Cusco (15:00 hrs aprox.)"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico",
+    "Asistencia durante la ruta"
+  ],
+  "no_incluye": [
+    "Boleto Turístico del Cusco (BTC)",
+    "Entrada a la Capilla de Andahuaylillas",
+    "Alimentación en Saylla",
+    "Gastos personales"
+  ],
+  "recomendaciones": [
+    "Llevar Boleto Turístico del Cusco",
+    "Llevar dinero en efectivo para souvenirs y comida en Saylla",
+    "Llevar sombrero, lentes de sol y bloqueador"
+  ],
+  "pagina_catalogo": 17
+}

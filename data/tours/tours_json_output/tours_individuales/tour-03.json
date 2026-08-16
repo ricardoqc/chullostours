@@ -1,0 +1,41 @@
+{
+  "id": "tour-03",
+  "nombre": "Machu Picchu Full Day en Tren",
+  "categoria": "Machu Picchu",
+  "duracion": "Full Day",
+  "precio_usd": 300,
+  "horarios_disponibles": [
+    "Según horario del ticket de tren asignado"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco y traslado a la estación de Ollantaytambo",
+  "itinerario": [
+    "Recojo del hotel en Cusco y traslado en bus a la estación de Ollantaytambo",
+    "Viaje en Tren Turístico (Ida) de Ollantaytambo a Aguas Calientes (Machu Picchu Pueblo)",
+    "Encuentro con el guía profesional en la estación de Aguas Calientes",
+    "Abordaje del bus Consettur de subida hacia la Ciudadela de Machu Picchu",
+    "Visita guiada profesional por Machu Picchu (circuito asignado)",
+    "Bus Consettur de bajada a Aguas Calientes",
+    "Tiempo libre en Aguas Calientes para almorzar o recorrer el pueblo",
+    "Viaje en Tren Turístico (Retorno) de Aguas Calientes a Ollantaytambo",
+    "Traslado en bus de Ollantaytambo de retorno a la ciudad de Cusco"
+  ],
+  "incluye": [
+    "Guía Profesional (Español / Inglés)",
+    "Tren Turístico ida y retorno",
+    "Bus Consettur subida y bajada",
+    "Ingreso a la Ciudadela de Machu Picchu",
+    "Traslados en bus Cusco - Ollantaytambo - Cusco"
+  ],
+  "no_incluye": [
+    "Alimentación (Almuerzo no incluido)",
+    "Gastos personales",
+    "Propinas"
+  ],
+  "recomendaciones": [
+    "Llevar pasaporte u documento de identidad original OBLIGATORIO",
+    "Reservar con anticipación (cupos de ingreso a Machu Picchu limitados)",
+    "Llevar repelente de insectos y bloqueador solar",
+    "Llevar ropa cómoda, zapatillas de trekking y poncho de lluvia"
+  ],
+  "pagina_catalogo": 6
+}

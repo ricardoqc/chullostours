@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Phone, Mail, MapPin, Send, CheckCircle2, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import type { Metadata } from "next";
+import { companyInfo, getPrimaryWhatsappUrl } from "@/lib/company-info";
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
@@ -12,6 +12,10 @@ export default function ContactPage() {
     e.preventDefault();
     setSent(true);
   };
+
+  const mainWhatsappMsgUrl = getPrimaryWhatsappUrl(
+    "Hola Chullos Tours, necesito información sobre un tour."
+  );
 
   return (
     <div className="flex flex-col gap-12 pb-16 bg-white">
@@ -26,7 +30,7 @@ export default function ContactPage() {
             Estamos para ayudarte
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold text-white font-title">
-            Contacto Chullos Tours
+            Contacto {companyInfo.name}
           </h1>
           <p className="text-white/80 text-sm md:text-base max-w-xl font-light">
             ¿Tienes dudas sobre tu viaje? Escríbenos y un asesor te atenderá de inmediato.
@@ -47,7 +51,7 @@ export default function ContactPage() {
               <div className="flex flex-col">
                 <span className="font-bold text-sm text-[#1c1c1c]">Dirección</span>
                 <span className="text-xs text-gray-500 leading-relaxed">
-                  Centro Comercial San Andrés 218, oficina 14<br />Cusco, Perú
+                  {companyInfo.address.street}, {companyInfo.address.office}<br />{companyInfo.address.city}, {companyInfo.address.country}
                 </span>
               </div>
             </div>
@@ -59,20 +63,20 @@ export default function ContactPage() {
               <div className="flex flex-col gap-1">
                 <span className="font-bold text-sm text-[#1c1c1c]">WhatsApp & Teléfono</span>
                 <a
-                  href="https://wa.me/51992558512"
+                  href={companyInfo.phones.primary.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-[#6b0014] font-semibold hover:underline"
                 >
-                  +51 992 558 512 (Lucía)
+                  {companyInfo.phones.primary.number} ({companyInfo.phones.primary.agent})
                 </a>
                 <a
-                  href="https://wa.me/51973781330"
+                  href={companyInfo.phones.secondary.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-[#6b0014] font-semibold hover:underline"
                 >
-                  +51 973 781 330 (Alexandra)
+                  {companyInfo.phones.secondary.number} ({companyInfo.phones.secondary.agent})
                 </a>
               </div>
             </div>
@@ -83,7 +87,7 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-sm text-[#1c1c1c]">Correo Electrónico</span>
-                <span className="text-xs text-gray-500">reservas@chullostours.com</span>
+                <span className="text-xs text-gray-500">{companyInfo.emails.reservas}</span>
               </div>
             </div>
 
@@ -93,8 +97,8 @@ export default function ContactPage() {
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-sm text-[#1c1c1c]">Horario de Atención</span>
-                <span className="text-xs text-gray-500">Lunes – Viernes: 9:00 – 20:00</span>
-                <span className="text-xs text-gray-500">Sábado & Domingo: 9:00 – 14:00</span>
+                <span className="text-xs text-gray-500">{companyInfo.hours.weekdays}</span>
+                <span className="text-xs text-gray-500">{companyInfo.hours.weekends}</span>
               </div>
             </div>
           </div>
@@ -106,7 +110,7 @@ export default function ContactPage() {
               Chatea directamente con nuestras asesoras de viaje. Respuesta inmediata.
             </p>
             <a
-              href="https://wa.me/51992558512?text=Hola%20Chullos%20Tours%2C%20necesito%20informaci%C3%B3n%20sobre%20un%20tour."
+              href={mainWhatsappMsgUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#ffc000] text-[#1c1c1c] font-bold text-sm px-5 py-3 rounded-full hover:bg-yellow-300 transition-colors"

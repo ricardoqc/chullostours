@@ -278,5 +278,32 @@
         ]
       }
     ]
-  }
+  },
+  "tour_highlights": [
+    {
+      "icono": "FaUtensils",
+      "titulo": "Alimentación",
+      "detalle": "Almuerzo tradicional en la Isla de Taquile y cena en Amantaní"
+    },
+    {
+      "icono": "FaMapMarkerAlt",
+      "titulo": "Entradas Incluidas",
+      "detalle": "Ingresos oficiales a los atractivos turísticos programados en la ruta"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Transporte Turístico",
+      "detalle": "Traslados en unidad climatizada con chofer profesional (2 Días / 1 Noche)"
+    },
+    {
+      "icono": "FaUserTie",
+      "titulo": "Guía Especializado",
+      "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
+    },
+    {
+      "icono": "FaUsers",
+      "titulo": "Grupo Reducido",
+      "detalle": "Grupos de máximo 15 personas para una experiencia más cómoda y fluida"
+    }
+  ]
 }

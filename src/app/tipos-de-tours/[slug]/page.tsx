@@ -7,6 +7,15 @@ interface TiposDeToursPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateStaticParams() {
+  return [
+    { slug: "paquetes" },
+    { slug: "aventura" },
+    { slug: "caminatas" },
+    { slug: "tours-diarios" },
+  ];
+}
+
 export async function generateMetadata({ params }: TiposDeToursPageProps): Promise<Metadata> {
   const { slug } = await params;
   const formattedType = slug.replace(/-/g, " ");

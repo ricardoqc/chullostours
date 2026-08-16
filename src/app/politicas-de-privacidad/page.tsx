@@ -1,11 +1,12 @@
 import React from "react";
 import type { Metadata } from "next";
 import { ShieldCheck, Eye, Lock, UserCheck, Cookie, Mail } from "lucide-react";
+import { companyInfo } from "@/lib/company-info";
 
 export const metadata: Metadata = {
-  title: "Políticas de Privacidad | Chullos Tours - Agencia de Viajes en Cusco",
+  title: `Políticas de Privacidad | ${companyInfo.name} - Agencia de Viajes en Cusco`,
   description:
-    "Políticas de privacidad y protección de datos personales de Chullos Tours (Viajando con Chullo S.A.C.). Conoce cómo utilizamos tu información.",
+    `Políticas de privacidad y protección de datos personales de ${companyInfo.name} (${companyInfo.legalName}). Conoce cómo utilizamos tu información.`,
 };
 
 const sections = [
@@ -13,7 +14,7 @@ const sections = [
     title: "Protección de Datos Personales",
     icon: <ShieldCheck className="w-5 h-5 text-[#6b0014]" />,
     content:
-      "En Chullos Tours (Viajando con Chullo S.A.C.) nos comprometemos a proteger la privacidad y seguridad de los datos personales suministrados por nuestros usuarios durante el proceso de reserva y consulta de nuestros servicios turísticos. La información recolectada es tratada con estricta confidencialidad.",
+      `En ${companyInfo.name} (${companyInfo.legalName}) nos comprometemos a proteger la privacidad y seguridad de los datos personales suministrados por nuestros usuarios durante el proceso de reserva y consulta de nuestros servicios turísticos. La información recolectada es tratada con estricta confidencialidad.`,
   },
   {
     title: "Datos que Recolectamos",
@@ -31,7 +32,7 @@ const sections = [
     title: "Seguridad de Pagos",
     icon: <Lock className="w-5 h-5 text-[#6b0014]" />,
     content:
-      "Todas las transacciones electrónicas son procesadas bajo protocolos de encriptación SSL de 256 bits. Chullos Tours no almacena datos de tarjetas de crédito o débito. Los pagos se procesan a través de plataformas seguras: PayPal, BCP, INTERBANK, YAPE, OPLIN e IZIPAY. Cada transacción genera un comprobante o voucher digital.",
+      `Todas las transacciones electrónicas son procesadas bajo protocolos de encriptación SSL de 256 bits. ${companyInfo.name} no almacena datos de tarjetas de crédito o débito. Los pagos se procesan a través de plataformas seguras: PayPal, BCP, INTERBANK, YAPE, OPLIN e IZIPAY. Cada transacción genera un comprobante o voucher digital.`,
   },
   {
     title: "Cookies y Tecnologías de Rastreo",
@@ -43,13 +44,13 @@ const sections = [
     title: "Tus Derechos",
     icon: <UserCheck className="w-5 h-5 text-[#6b0014]" />,
     content:
-      "De acuerdo con la legislación peruana de protección de datos personales (Ley N° 29733), tienes derecho a: acceder a tus datos personales, solicitar la rectificación de información incorrecta, solicitar la cancelación o supresión de tus datos, y oponerte al tratamiento de tu información. Para ejercer estos derechos, contáctanos a través de reservas@chullostours.com.",
+      `De acuerdo con la legislación peruana de protección de datos personales (Ley N° 29733), tienes derecho a: acceder a tus datos personales, solicitar la rectificación de información incorrecta, solicitar la cancelación o supresión de tus datos, y oponerte al tratamiento de tu información. Para ejercer estos derechos, contáctanos a través de ${companyInfo.emails.reservas}.`,
   },
   {
     title: "Contacto para Privacidad",
     icon: <Mail className="w-5 h-5 text-[#6b0014]" />,
     content:
-      "Si tienes preguntas sobre esta política de privacidad o el manejo de tus datos personales, puedes contactarnos en: reservas@chullostours.com | WhatsApp: +51 992 558 512 | Dirección: Centro Comercial San Andrés 218, oficina 14, Cusco, Perú.",
+      `Si tienes preguntas sobre esta política de privacidad o el manejo de tus datos personales, puedes contactarnos en: ${companyInfo.emails.reservas} | WhatsApp: ${companyInfo.phones.primary.number} | Dirección: ${companyInfo.address.full}.`,
   },
 ];
 

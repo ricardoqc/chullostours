@@ -1,0 +1,38 @@
+{
+  "id": "tour-07",
+  "nombre": "Glaciar Quelccaya",
+  "categoria": "Cusco / Trekking & Aventura",
+  "duracion": "Full Day (03:00 am - 19:30 pm)",
+  "precio_usd": 70,
+  "horarios_disponibles": [
+    "03:00 am (recojo aprox.)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo de madrugada del hotel en Cusco y viaje en transporte hacia el sur",
+    "Desayuno en el pueblo de Phinaya",
+    "Traslado hacia el punto de inicio cerca del glaciar",
+    "Caminata de 30 minutos aprox. hasta el majestuoso Glaciar de Quelccaya",
+    "Tiempo libre para recorrer y fotografiar la pared glaciar",
+    "Retorno al pueblo de Phinaya para el Almuerzo",
+    "Breve parada panorámica en la Laguna de Sibinacocha",
+    "Retorno y finalización en el centro de Cusco (19:30 hrs aprox.)"
+  ],
+  "incluye": [
+    "Guía profesional especializado",
+    "Transporte turístico",
+    "Desayuno y Almuerzo",
+    "Bastones de trekking",
+    "Boleto de ingreso"
+  ],
+  "no_incluye": [
+    "Gastos personales",
+    "Servicios no mencionados"
+  ],
+  "recomendaciones": [
+    "Llevar ropa de alta montaña (térmica, casaca gruesa, guantes, chullo)",
+    "Excelente aclimatación previa (altitud sobre los 5,000 m.s.n.m.)",
+    "Llevar gafas de sol con protección UV alta"
+  ],
+  "pagina_catalogo": 10
+}

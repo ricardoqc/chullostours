@@ -1,0 +1,35 @@
+{
+  "id": "tour-15",
+  "nombre": "Cataratas de Poc Poc (Chinchero Trekking)",
+  "categoria": "Cusco / Trekking",
+  "duracion": "Full Day (07:00 am - 17:00 pm)",
+  "precio_usd": 45,
+  "horarios_disponibles": [
+    "07:00 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo del hotel en Cusco y viaje en bus hasta Chinchero",
+    "Inicio de la caminata por el camino inca tradicional rumbo a las Cataratas de Poc Poc",
+    "Llegada a las cataratas y tiempo libre para fotos y disfrutar de la naturaleza",
+    "Retorno a la casa campestre en Chinchero para el Almuerzo",
+    "Visita opcional al pueblo artesanal de Chinchero",
+    "Retorno a Cusco y fin del tour (17:00 hrs aprox.)"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico",
+    "Almuerzo campestre",
+    "Asistencia"
+  ],
+  "no_incluye": [
+    "Boleto Turístico (si se ingresa a ruinas de Chinchero)",
+    "Gastos personales"
+  ],
+  "recomendaciones": [
+    "Zapatillas con buena tracción",
+    "Casaca impermeable o poncho de lluvia",
+    "Agua mineral y snacks"
+  ],
+  "pagina_catalogo": 18
+}

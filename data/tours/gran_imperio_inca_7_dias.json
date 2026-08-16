@@ -1,0 +1,377 @@
+{
+  "id": "gran-imperio-inca-7-dias",
+  "precio_usd": 475,
+  "precio": 1750,
+  "horarios_disponibles": [
+    "Coordinación de llegada según itinerario de vuelo",
+    "City Tour: 09:00 AM o 13:00 PM",
+    "Valle Sagrado: 06:30 AM - 06:50 AM",
+    "Montaña 7 Colores: 04:00 AM - 04:50 AM",
+    "Laguna Humantay: 04:00 AM - 04:50 AM",
+    "Morada de los Dioses en Cuatrimotos: 07:00 AM - 15:30 PM"
+  ],
+  "punto_inicio": "Recepción en el Aeropuerto Internacional Alejandro Velasco Astete (Cusco) y recojo en hotel",
+  "categoria": "Paquetes Turísticos",
+  "titulo": "Paquete Gran Imperio Inca 7 Días / 6 Noches",
+  "slug": "gran-imperio-inca-7-dias",
+  "url": "https://chullostours.com/tours/gran-imperio-inca-7-dias/",
+  "metas": {
+    "description": "Reserva el Paquete Gran Imperio Inca 7 Días / 6 Noches en Cusco con Chullos Tours. Incluye City Tour, Valle Sagrado VIP, Machu Picchu, Montaña de 7 Colores, Laguna Humantay y Cuatrimotos en Morada de los Dioses.",
+    "og_title": "Paquete Gran Imperio Inca 7 Días / 6 Noches | Chullos Tours",
+    "og_url": "https://chullostours.com/tours/gran-imperio-inca-7-dias/"
+  },
+  "atributos": {
+    "duracion": "7 Días / 6 Noches",
+    "ubicacion": "Cusco, Valle Sagrado, Machu Picchu, Montaña de Colores, Laguna Humantay y Morada de los Dioses, Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Paquete Turístico Completo / Historia / Aventura / Trekking / Naturaleza",
+    "alojamiento_incluido": "5 Noches en Cusco + 1 Noche en Aguas Calientes (Machu Picchu Pueblo)",
+    "dificultad": "Moderada - Alta",
+    "altitud_maxima": "5,020 m.s.n.m.",
+    "grupo_max": 15,
+    "nivel_fisico": "Moderado a Exigente"
+  },
+  "resumen": "El Paquete Gran Imperio Inca 7 Días y 6 Noches es el programa definitivo para sumergirse en la magnificencia del mundo andino. Recorre la capital incaica de Cusco, las deslumbrantes terrazas y salineras del Valle Sagrado VIP, la Maravilla del Mundo Machu Picchu con pernocte en Aguas Calientes, la desafiante Montaña de 7 Colores (Vinicunca), las turquesas aguas de la Laguna Humantay y una ruta llena de adrenalina en cuatrimotos hacia la Morada de los Dioses.",
+  "descripcion_completa": "Embárcate en la travesía más fascinante de 7 Días / 6 Noches 'Gran Imperio Inca' diseñada por Chullos Tours para explorar cada rincón emblemático del Cusco prehispánico y colonial.\n\nIniciaremos recibiéndote en el aeropuerto de Cusco para trasladarte a tu hotel y realizar por la tarde el City Tour por Qorikancha, Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay. El segundo día viajarás por el Valle Sagrado VIP conociendo los telares de Chinchero, el laboratorio agrícola de Moray, las milenarias Salineras de Maras y la fortaleza de Ollantaytambo, abordando luego el tren turístico a Aguas Calientes.\n\nEn la mañana del tercer día ingresarás al Santuario Histórico de Machu Picchu para una visita guiada inolvidable. El cuarto día emprenderás el trekking hacia la cima de la Montaña de 7 Colores (Vinicunca, 5,020 m.s.n.m.), mientras que el quinto día ascenderás a la mágica Laguna Humantay (4,200 m.s.n.m.) al pie del nevado Salkantay. El sexto día vivirás la aventura en cuatrimotos por la Morada de los Dioses (Apukunaq Tianan) en Sencca. Finalmente, el séptimo día dispondrás de la mañana libre en la ciudad imperial antes de tu traslado de salida al aeropuerto.",
+  "propuesta_de_valor": [
+    "Circuito de 7 días integrando la totalidad de atractivos estrellas de Cusco sin prisas ni estrés.",
+    "Variedad de alternativas de alojamiento desde Solo Tours (S/ 1,450) hasta hoteles 3 estrellas como Hotel Rojas Inn o San Pedro Plaza.",
+    "Descuentos familiares especiales para niños (S/. 100 de descuento entre 3 y 11 años) y jóvenes (S/. 50 de descuento entre 12 y 17 años).",
+    "Servicio de alimentación completo en las excursiones con desayunos y almuerzos buffet regionales.",
+    "Guías profesionales certificados con tanque de oxígeno medicinal y asistencia 24/7."
+  ],
+  "destacados_highlights": [
+    "Recepción privada y traslados aeropuerto - hotel - aeropuerto.",
+    "City Tour Cusco guiado por Qorikancha y los 4 recintos arqueológicos periféricos.",
+    "Tour Valle Sagrado VIP con Maras, Moray y pernocte en Aguas Calientes.",
+    "Recorrido guiado oficial por la Maravilla del Mundo Machu Picchu con buses Consettur incluidos.",
+    "Trekking a la famosa Montaña de 7 Colores Vinicunca a 5,020 m.s.n.m.",
+    "Trekking a la impresionante Laguna Humantay a 4,200 m.s.n.m.",
+    "Aventura en cuatrimotos dobles/individuales hacia la Morada de los Dioses."
+  ],
+  "tour_highlights": [
+    {
+      "icono": "FaUtensils",
+      "titulo": "Alimentación Incluida",
+      "detalle": "Desayunos diarios en hotel + 1 Almuerzo buffet en Valle Sagrado + Desayunos y Almuerzos en Vinicunca y Humantay"
+    },
+    {
+      "icono": "FaHotel",
+      "titulo": "Alojamiento 6 Noches",
+      "detalle": "5 noches de hospedaje en Cusco + 1 noche en Aguas Calientes (Aury / Panaka / Intiwatana / Rojas Inn)"
+    },
+    {
+      "icono": "FaMotorcycle",
+      "titulo": "Cuatrimotos Incluidas",
+      "detalle": "Recorrido en cuatrimoto en Sencca para visitar las esculturas de la Morada de los Dioses"
+    },
+    {
+      "icono": "FaTicketAlt",
+      "titulo": "Entradas e Ingresos",
+      "detalle": "Machu Picchu, Boleto Turístico General, Qorikancha, Maras, Humantay, Vinicunca y Morada de los Dioses"
+    },
+    {
+      "icono": "FaTrain",
+      "titulo": "Trenes Turísticos",
+      "detalle": "Boletos de tren turístico ida y vuelta (Expedition/Voyager) + Buses Consettur subida y bajada"
+    }
+  ],
+  "galeria": [
+    {
+      "src": "/tours/cusco-magico-5-dias/05.avif",
+      "alt": "Paquete Gran Imperio Inca 7 Días / 6 Noches - Machu Picchu"
+    },
+    {
+      "src": "/tours/cusco-magico-5-dias/06.avif",
+      "alt": "Paquete Gran Imperio Inca 7 Días / 6 Noches - Valle Sagrado"
+    },
+    {
+      "src": "/tours/cusco-magico-5-dias/07.avif",
+      "alt": "Paquete Gran Imperio Inca 7 Días / 6 Noches - Vinicunca"
+    },
+    {
+      "src": "/tours/cusco-magico-5-dias/08.avif",
+      "alt": "Paquete Gran Imperio Inca 7 Días / 6 Noches - Humantay"
+    }
+  ],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "Recepción en Cusco, Traslado al Hotel y City Tour Arqueológico",
+      "descripcion": "Recepción en el aeropuerto de Cusco, traslado a tu hotel y recorrido guiado por el Qorikancha y monumentos incas.",
+      "actividades": [
+        "Recepción en el Aeropuerto Internacional Alejandro Velasco Astete con letrero 'ViajandoConChullosTours' y traslado a tu hotel.",
+        "Mañana libre para aclimatarse a la altitud.",
+        "09:00 AM o 13:00 PM | Recojo del hotel para el City Tour Cusco.",
+        "Visita guiada al Templo del Sol Qorikancha.",
+        "Recorrido por el Parque Arqueológico de Sacsayhuamán.",
+        "Visita a los recintos incas de Q'enqo, Puka Pukara y Tambomachay.",
+        "Finalización del tour a una cuadra de la Plaza de Armas. Noche de hotel en Cusco."
+      ],
+      "alojamiento": "Hotel en Cusco (Aury / Panaka / Intiwatana / Rojas Inn / San Pedro Plaza)",
+      "comidas_incluidas": []
+    },
+    {
+      "dia": 2,
+      "titulo": "Valle Sagrado VIP con Maras, Moray y Tren a Aguas Calientes",
+      "descripcion": "Visita a Chinchero, Salineras de Maras, Moray, almuerzo buffet en Urubamba, Ollantaytambo y tren a Aguas Calientes.",
+      "actividades": [
+        "06:30 AM - 06:50 AM | Recojo del hotel en Cusco.",
+        "Visita a Chinchero y demostración textil artesanal.",
+        "Recorrido por las terrazas circulares de Moray y las Salineras de Maras.",
+        "Almuerzo buffet en restaurante turístico en Urubamba.",
+        "Visita guiada a la fortaleza inca de Ollantaytambo.",
+        "Abordaje del tren turístico rumbo al poblado de Aguas Calientes.",
+        "Recepción y traslado al hospedaje en Aguas Calientes. Noche de hotel."
+      ],
+      "alojamiento": "Hotel en Aguas Calientes",
+      "comidas_incluidas": [
+        "Desayuno",
+        "Almuerzo Buffet"
+      ]
+    },
+    {
+      "dia": 3,
+      "titulo": "Visita Guiada a Machu Picchu Full Day y Retorno a Cusco",
+      "descripcion": "Bus Consettur a Machu Picchu, tour guiado profesional por la ciudadela y tren de retorno a Cusco.",
+      "actividades": [
+        "Desayuno en el hotel en Aguas Calientes.",
+        "Bus de subida Consettur hacia la Ciudadela de Machu Picchu.",
+        "Tour guiado profesional de 2 a 3 horas descubriendo los templos y miradores de Machu Picchu.",
+        "Bus de bajada a Aguas Calientes y tiempo libre para almorzar.",
+        "Tren de retorno a la estación de Ollantaytambo y traslado en bus a Cusco. Noche de hotel en Cusco."
+      ],
+      "alojamiento": "Hotel en Cusco",
+      "comidas_incluidas": [
+        "Desayuno"
+      ]
+    },
+    {
+      "dia": 4,
+      "titulo": "Trekking a la Montaña de 7 Colores (Vinicunca) Full Day",
+      "descripcion": "Viaje a Cusipata, desayuno buffet, caminata a la cumbre de Vinicunca (5,020 m.s.n.m.) y almuerzo buffet.",
+      "actividades": [
+        "04:00 AM - 04:50 AM | Recojo del hotel en Cusco.",
+        "Desayuno buffet en Cusipata.",
+        "Caminata de ascenso de 1h 45min hacia la Montaña de 7 Colores (Vinicunca).",
+        "Tiempo libre en la cumbre para tomar fotos de las franjas multicolores y la Cordillera del Ausangate.",
+        "Descenso y almuerzo buffet en Cusipata.",
+        "Retorno a Cusco (llegada 17:30 PM en Plaza Regocijo). Noche de hotel en Cusco."
+      ],
+      "alojamiento": "Hotel en Cusco",
+      "comidas_incluidas": [
+        "Desayuno",
+        "Almuerzo Buffet"
+      ]
+    },
+    {
+      "dia": 5,
+      "titulo": "Excursión a la Laguna Humantay Full Day",
+      "descripcion": "Viaje a Mollepata, desayuno, trekking de Soraypampa a la Laguna Humantay (4,200 m.s.n.m.) y almuerzo buffet.",
+      "actividades": [
+        "04:00 AM - 04:50 AM | Recojo del hotel en Cusco.",
+        "Desayuno en Mollepata y traslado a Soraypampa.",
+        "Caminata de ascenso hacia las aguas turquesas de la Laguna Humantay al pie del nevado Salkantay.",
+        "Tiempo libre para fotos y contemplación del paisaje sagrado.",
+        "Descenso a Soraypampa y almuerzo buffet en Mollepata.",
+        "Retorno a Cusco (llegada 17:30 PM en Plaza Regocijo). Noche de hotel en Cusco."
+      ],
+      "alojamiento": "Hotel en Cusco",
+      "comidas_incluidas": [
+        "Desayuno",
+        "Almuerzo Buffet"
+      ]
+    },
+    {
+      "dia": 6,
+      "titulo": "Aventura en Cuatrimotos a la Morada de los Dioses",
+      "descripcion": "Recorrido en cuatrimoto en Sencca para admirar las esculturas gigantes de la Morada de los Dioses.",
+      "actividades": [
+        "Desayuno en el hotel en Cusco.",
+        "Recojo en hotel para trasladarlos a Sencca.",
+        "Práctica de 10 minutos de conducción de cuatrimotos.",
+        "Recorrido de 45 minutos en cuatrimoto doble o individual hacia la Morada de los Dioses (Apukunaq Tianan).",
+        "Visita guiada por las esculturas de la Pachamama, el Puma y los Apus protectores.",
+        "Retorno a la ciudad de Cusco a un punto céntrico. Tarde libre para compras o descanso. Noche de hotel en Cusco."
+      ],
+      "alojamiento": "Hotel en Cusco",
+      "comidas_incluidas": [
+        "Desayuno"
+      ]
+    },
+    {
+      "dia": 7,
+      "titulo": "Mañana Libre en Cusco y Traslado de Salida al Aeropuerto",
+      "descripcion": "Tiempo libre para recorrer los mercados tradicionales de Cusco y traslado privado al aeropuerto para su vuelo de retorno.",
+      "actividades": [
+        "Desayuno en el hotel en Cusco.",
+        "Mañana libre para pasear por el barrio artesanal de San Blas o el Mercado Central de San Pedro.",
+        "A la hora programada, traslado privado desde su hotel hacia el Aeropuerto Internacional de Cusco. ¡Fin de nuestros servicios!"
+      ],
+      "alojamiento": "Fin del programa (No incluye noche adicional)",
+      "comidas_incluidas": [
+        "Desayuno"
+      ]
+    }
+  ],
+  "incluye": [
+    "Recepción en el Aeropuerto de Cusco y traslados in/out",
+    "5 Noches de Alojamiento en Cusco (Hotel Aury / Panaka / Intiwatana / Rojas Inn / San Pedro Plaza)",
+    "1 Noche de Alojamiento en Aguas Calientes",
+    "Desayunos diarios en el hotel",
+    "City Tour Cusco: Guía profesional, transporte turístico e ingresos a Qorikancha y Boleto Turístico",
+    "Tour Valle Sagrado VIP: Guía profesional, transporte, almuerzo buffet e ingresos",
+    "Boleto de Tren Turístico ida y retorno (Expedition / Voyager)",
+    "Ticket de ingreso oficial a la Ciudadela Inca de Machu Picchu",
+    "Buses Consettur subida y bajada Aguas Calientes - Machu Picchu - Aguas Calientes",
+    "Guía profesional certificado en Machu Picchu",
+    "Tour Montaña 7 Colores: Transporte, guía, desayuno, almuerzo buffet, bastones e ingreso",
+    "Tour Laguna Humantay: Transporte, guía, desayuno, almuerzo buffet, bastones e ingreso",
+    "Tour Cuatrimotos Morada de los Dioses: Transporte, cuatrimoto equipada, cascos y entrada",
+    "Asistencia permanente durante los 7 días de viaje"
+  ],
+  "no_incluye": [
+    "Boletos aéreos nacionales o internacionales",
+    "Alquiler de caballos en Humantay o Vinicunca",
+    "Alimentos y bebidas no especificados en el programa",
+    "Gastos personales"
+  ],
+  "recomendaciones": [
+    "Traer pasaporte original obligatorio para abordar trenes e ingresar a Machu Picchu.",
+    "Aclimatar el primer día descansando y tomando mate de coca.",
+    "Llevar ropa abrigadora en capas, casaca térmica, guantes y gorro de lana.",
+    "Usar calzado con suela antideslizante para los trekkings.",
+    "Llevar bloqueador solar, sombrero y poncho de agua.",
+    "Aprovechar las tarifas con descuento para niños (3-11 años) y jóvenes (12-17 años)."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "Santuario Histórico de Machu Picchu",
+      "tipo": "Maravilla del Mundo / Patrimonio Cultural",
+      "descripcion": "Ciudadela incaica del siglo XV declarada Maravilla del Mundo Moderno.",
+      "altitud": "2,430 m.s.n.m."
+    },
+    {
+      "nombre": "Montaña de 7 Colores (Vinicunca)",
+      "tipo": "Atractivo Natural",
+      "descripcion": "Icono natural andino formado por franjas minerales sedimentarias.",
+      "altitud": "5,020 m.s.n.m."
+    },
+    {
+      "nombre": "Laguna Humantay",
+      "tipo": "Laguna Glaciar",
+      "descripcion": "Hermosa laguna de aguas turquesas al pie del nevado Humantay.",
+      "altitud": "4,200 m.s.n.m."
+    },
+    {
+      "nombre": "Morada de los Dioses (Apukunaq Tianan)",
+      "tipo": "Esculturas en Roca Viva",
+      "descripcion": "Parque tallado en piedra rindiendo culto a las deidades andinas.",
+      "altitud": "3,850 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Cuáles son los precios según las opciones de hotel?",
+      "respuesta": "Solo Tours sin Estadía: S/ 1,450; Tours + Hotel Aury: S/ 1,750; Tours + Hotel Panaka: S/ 1,870; Tours + Hotel Intiwatana: S/ 2,050; Tours + Hotel Rojas Inn: S/ 2,240; Tours + Hotel San Pedro Plaza: S/ 2,350."
+    },
+    {
+      "pregunta": "¿Aplican descuentos para menores de edad?",
+      "respuesta": "Sí, niños de 3 a 11 años tienen un descuento de S/. 100.00 y jóvenes de 12 a 17 años tienen un descuento de S/. 50.00. Los niños menores de 3 años viajan gratis."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "Paquete Gran Imperio Inca 7 Dias",
+    "meta_title": "Paquete Gran Imperio Inca 7 Días / 6 Noches | Chullos Tours",
+    "meta_description": "Reserva el Paquete Gran Imperio Inca 7 Días / 6 Noches con Chullos Tours. Incluye City Tour, Valle Sagrado VIP, Machu Picchu, Vinicunca, Laguna Humantay y Cuatrimotos en Morada de los Dioses.",
+    "canonical": "https://chullostours.com/tours/gran-imperio-inca-7-dias/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "Paquete Gran Imperio Inca 7 Días / 6 Noches | Chullos Tours",
+      "og_description": "Circuito completo de 7 días por Cusco, Valle Sagrado VIP, pernocte en Aguas Calientes, Machu Picchu, Vinicunca, Humantay y Cuatrimotos.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/gran-imperio-inca-7-dias/",
+      "og_image": "/tours/cusco-magico-5-dias/05.avif",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Paquete Gran Imperio Inca 7 Días / 6 Noches",
+      "description": "Explora Machu Picchu, Valle Sagrado, Vinicunca, Humantay y Cuatrimotos en 7 días.",
+      "image": "/tours/cusco-magico-5-dias/05.avif"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "Paquete Gran Imperio Inca 7 Días",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Cusco, Machu Picchu, Vinicunca, Laguna Humantay y Morada de los Dioses",
+      "region": "Cusco",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El Paquete Gran Imperio Inca 7 Días / 6 Noches de Chullos Tours comprende recepción en el aeropuerto de Cusco, City Tour, circuito VIP por el Valle Sagrado (Maras, Moray, Ollantaytambo), 1 noche en Aguas Calientes, visita guiada por Machu Picchu, trekking a Vinicunca, caminata a Laguna Humantay y aventura en cuatrimotos hacia la Morada de los Dioses.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Duración total",
+        "value": "7 Días / 6 Noches"
+      },
+      {
+        "fact": "Atractivos incluidos",
+        "value": "City Tour Cusco, Valle Sagrado VIP, Machu Picchu, Montaña de 7 Colores, Laguna Humantay, Morada de los Dioses en Cuatrimotos"
+      },
+      {
+        "fact": "Alojamientos",
+        "value": "5 Noches en Cusco + 1 Noche en Aguas Calientes"
+      },
+      {
+        "fact": "Precios desde",
+        "value": "S/ 1,450 (Solo Tours) a S/ 2,350 (Con Hotel San Pedro Plaza)"
+      },
+      {
+        "fact": "Agencia operadora",
+        "value": "Chullos Tours Cusco (RUC 20611401648)"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/gran-imperio-inca-7-dias/#product",
+        "name": "Paquete Gran Imperio Inca 7 Días / 6 Noches",
+        "description": "Itinerario integral de 7 días recorriendo Cusco, Valle Sagrado VIP, Machu Picchu, Montaña de 7 Colores, Laguna Humantay y Morada de los Dioses en Cuatrimotos.",
+        "url": "https://chullostours.com/tours/gran-imperio-inca-7-dias/",
+        "image": [
+          "/tours/cusco-magico-5-dias/05.avif",
+          "/tours/cusco-magico-5-dias/06.avif"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "475.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/gran-imperio-inca-7-dias/"
+        }
+      }
+    ]
+  }
+}

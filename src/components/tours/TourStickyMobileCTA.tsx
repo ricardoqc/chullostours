@@ -2,6 +2,7 @@
 
 import React from "react";
 import { FaWhatsapp, FaShieldAlt } from "react-icons/fa";
+import { getPrimaryWhatsappUrl } from "@/lib/company-info";
 
 interface TourStickyMobileCTAProps {
   tourTitle: string;
@@ -12,11 +13,9 @@ export const TourStickyMobileCTA: React.FC<TourStickyMobileCTAProps> = ({
   tourTitle,
   basePrice,
 }) => {
-  const whatsappMessage = encodeURIComponent(
+  const whatsappUrl = getPrimaryWhatsappUrl(
     `¡Hola Chullos Tours! 👋 Quisiera solicitar información para reservar el tour: *${tourTitle}*`
   );
-
-  const whatsappUrl = `https://wa.me/51992558512?text=${whatsappMessage}`;
 
   return (
     <div className="block lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 px-4 shadow-2xl flex items-center justify-between gap-3">

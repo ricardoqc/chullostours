@@ -1,0 +1,366 @@
+[
+  {
+    "id": "tour-01",
+    "nombre": "City Tour Cusco",
+    "duracion": "Medio Día (Aprox 4-5 horas)",
+    "horarios": [
+      "09:00 hrs",
+      "13:00 hrs / 14:00 hrs"
+    ],
+    "itinerario": [
+      "Qoricancha (Templo del Sol)",
+      "Sacsayhuamán",
+      "Q'enqo",
+      "Puka Pukara",
+      "Tambomachay",
+      "Retorno a Cusco (14:00 hrs o 18:00 hrs aprox., Calle Plateros)"
+    ]
+  },
+  {
+    "id": "tour-02",
+    "nombre": "Valle Sagrado de los Incas VIP / Tradicional",
+    "duracion": "Full Day (06:00 hrs - 19:00 hrs aprox.)",
+    "horarios": [
+      "06:00 am - 06:50 am (recojo)"
+    ],
+    "itinerario": [
+      "Chinchero y Centro Textil artesanal",
+      "Terrazas Agrícolas de Moray",
+      "Salineras de Maras",
+      "Urubamba (Almuerzo Buffet)",
+      "Parque Arqueológico de Ollantaytambo",
+      "Parque Arqueológico de Pisac",
+      "Retorno a la ciudad de Cusco (19:00 hrs aprox.)"
+    ]
+  },
+  {
+    "id": "tour-03",
+    "nombre": "Machu Picchu Full Day en Tren",
+    "duracion": "Full Day",
+    "horarios": [
+      "Según horario del ticket de tren asignado"
+    ],
+    "itinerario": [
+      "Recojo del hotel en Cusco y traslado en bus a la estación de Ollantaytambo",
+      "Viaje en Tren Turístico (Ida) de Ollantaytambo a Aguas Calientes (Machu Picchu Pueblo)",
+      "Encuentro con el guía profesional en la estación de Aguas Calientes",
+      "Abordaje del bus Consettur de subida hacia la Ciudadela de Machu Picchu",
+      "Visita guiada profesional por Machu Picchu (circuito asignado)",
+      "Bus Consettur de bajada a Aguas Calientes",
+      "Tiempo libre en Aguas Calientes para almorzar o recorrer el pueblo",
+      "Viaje en Tren Turístico (Retorno) de Aguas Calientes a Ollantaytambo",
+      "Traslado en bus de Ollantaytambo de retorno a la ciudad de Cusco"
+    ]
+  },
+  {
+    "id": "tour-04",
+    "nombre": "Montaña de 7 Colores (Vinicunca)",
+    "duracion": "Full Day (04:00 am - 17:30 pm)",
+    "horarios": [
+      "04:00 am - 04:50 am (recojo)"
+    ],
+    "itinerario": [
+      "Recojo del hotel y viaje hacia Cusipata",
+      "Desayuno Buffet en Cusipata",
+      "Traslado al punto de inicio de caminata (Phulawasipata)",
+      "Caminata de ascenso de 1h 45min aprox. hasta la Montaña de 7 Colores (5,200 m.s.n.m.)",
+      "Tiempo libre para contemplación y fotografías en la cima",
+      "Caminata de descenso y retorno en transporte a Cusipata",
+      "Almuerzo Buffet en Cusipata",
+      "Retorno a Cusco (17:30 hrs aprox., finaliza en Plaza Regocijo)"
+    ]
+  },
+  {
+    "id": "tour-05",
+    "nombre": "Cuatrimotos Montaña de 7 Colores",
+    "duracion": "Full Day (04:00 am - 17:30 pm)",
+    "horarios": [
+      "04:00 am - 04:50 am (recojo)"
+    ],
+    "itinerario": [
+      "Recojo del hotel y traslado en bus hacia Cusipata",
+      "Desayuno Buffet en Cusipata",
+      "Traslado a Kayrahuire Alto e instrucción técnica y de seguridad de manejo de cuatrimoto",
+      "Recorrido en cuatrimoto por paisajes andinos (30 - 40 minutos aprox.)",
+      "Caminata corta de 35 a 45 minutos hasta el mirador de la Montaña de Colores",
+      "Tiempo libre para fotos y explicación del guía",
+      "Retorno en cuatrimoto y transporte hacia Cusipata",
+      "Almuerzo Buffet en Cusipata",
+      "Finalización del tour en Cusco (17:30 hrs aprox., Plaza Regocijo)"
+    ]
+  },
+  {
+    "id": "tour-06",
+    "nombre": "Laguna Humantay",
+    "duracion": "Full Day (04:00 am - 17:00 pm)",
+    "horarios": [
+      "04:00 am - 04:50 am (recojo)"
+    ],
+    "itinerario": [
+      "Recojo del hotel y viaje hacia el poblado de Mollepata",
+      "Desayuno en Mollepata",
+      "Traslado en bus hasta Soraypampa (punto de inicio de caminata)",
+      "Inicio de la caminata de ascenso (1.5 a 2 horas aprox.) hacia la Laguna Humantay (4,200 m.s.n.m.)",
+      "Visita guiada, tiempo libre para fotos y paisajes del nevado Salkantay",
+      "Descenso caminando de retorno a Soraypampa",
+      "Traslado a Mollepata y Almuerzo Buffet",
+      "Retorno a Cusco (17:00 hrs aprox., finaliza en Plaza Regocijo)"
+    ]
+  },
+  {
+    "id": "tour-07",
+    "nombre": "Glaciar Quelccaya",
+    "duracion": "Full Day (03:00 am - 19:30 pm)",
+    "horarios": [
+      "03:00 am (recojo aprox.)"
+    ],
+    "itinerario": [
+      "Recojo de madrugada del hotel en Cusco y viaje en transporte hacia el sur",
+      "Desayuno en el pueblo de Phinaya",
+      "Traslado hacia el punto de inicio cerca del glaciar",
+      "Caminata de 30 minutos aprox. hasta el majestuoso Glaciar de Quelccaya",
+      "Tiempo libre para recorrer y fotografiar la pared glaciar",
+      "Retorno al pueblo de Phinaya para el Almuerzo",
+      "Breve parada panorámica en la Laguna de Sibinacocha",
+      "Retorno y finalización en el centro de Cusco (19:30 hrs aprox.)"
+    ]
+  },
+  {
+    "id": "tour-08",
+    "nombre": "ATV Maras Moray (Cuatrimotos)",
+    "duracion": "Medio Día (Mañana o Tarde)",
+    "horarios": [
+      "07:00 am - 07:30 am",
+      "13:00 pm - 13:30 pm"
+    ],
+    "itinerario": [
+      "Recojo del hotel y traslado en bus a Cruzpata (Base de cuatrimotos)",
+      "Práctica de 10-15 minutos en las cuatrimotos con instrucción del guía",
+      "Ruta en cuatrimoto hacia el Centro Arqueológico de Moray (terrazas de experimentación agrícola)",
+      "Visita y recorrido guiado en Moray",
+      "Continuación del recorrido hacia las Salineras de Maras (pozas de sal ancestrales)",
+      "Visita guiada en Salineras de Maras",
+      "Retorno en cuatrimoto a la base de Cruzpata",
+      "Traslado en bus de retorno a Cusco (llegada al centro)"
+    ]
+  },
+  {
+    "id": "tour-09",
+    "nombre": "Cusco Místico (Morada de los Dioses Apukunyana)",
+    "duracion": "Full Day (08:30 am - 19:00 pm)",
+    "horarios": [
+      "08:30 am - 09:00 am (recojo en hotel)"
+    ],
+    "itinerario": [
+      "Recojo del hotel en Cusco entre 08:30 am y 09:00 am",
+      "Visita a la Morada de los Dioses (Apukunyana - esculturas gigantes talladas en piedra)",
+      "Visita al Humedal y Parque Temático Pokémon",
+      "Recorrido por el Bosque de los Ents",
+      "Visita al Valle de los Duendes",
+      "Retorno a Cusco y fin del tour a las 19:00 pm aprox. en la Plaza Regocijo"
+    ]
+  },
+  {
+    "id": "tour-10",
+    "nombre": "Cusco Escénico (City Tour Nocturno)",
+    "duracion": "Nocturno / Medio Día",
+    "horarios": [
+      "En la Plaza de Armas (previa coordinación)"
+    ],
+    "itinerario": [
+      "Inicio del tour en la Plaza de Armas de Cusco",
+      "Visita e iluminación del Templo de Qoricancha",
+      "Apreciación guiada del Gran Mural Histórico del Cusco",
+      "Ascenso al mirador del Cristo Blanco para vista panorámica de la ciudad",
+      "Visita a la Laguna de Huayllarccocha",
+      "Escenificación teatral del Rapto de Kukuli",
+      "Retorno y finalización del tour en la Plaza de Armas de Cusco"
+    ]
+  },
+  {
+    "id": "tour-11",
+    "nombre": "Puente Qeswachaka y Circuitos de las 4 Lagunas",
+    "duracion": "Full Day (04:00 am - 19:00 pm)",
+    "horarios": [
+      "04:00 am - 04:50 am (recojo)"
+    ],
+    "itinerario": [
+      "Recojo del hotel y partida hacia el sur de Cusco",
+      "Primera Parada: Pueblo histórico de Rumi Punku",
+      "Segunda Parada: Combapata",
+      "Tercera Parada: Yanaoca",
+      "Cuarta Parada: Distrito de Q'ewe y cruce del Puente Inca de Q'eswachaka (último puente inca trenzado de ichu)",
+      "Regreso a Yanaoca para el Almuerzo",
+      "Recorrido por el Circuito de las 4 Lagunas (Pomacanchi, Acopia, Asnaqocha y Pampamarca o Tungasuca)",
+      "Retorno a la ciudad de Cusco (19:00 hrs aprox.)"
+    ]
+  },
+  {
+    "id": "tour-12",
+    "nombre": "Waqrapukara Trekking",
+    "duracion": "Full Day (05:00 am - 19:00 pm)",
+    "horarios": [
+      "05:00 am (recojo)"
+    ],
+    "itinerario": [
+      "Recojo del hotel y viaje hacia Chuquicahuana (Laguna de Pomacanchi)",
+      "Segunda parada en Sangarará para el Desayuno",
+      "Traslado a Rinconada, punto de inicio de la caminata",
+      "Caminata hacia la fortaleza prehispánica de Waqrapukara (4,300 m.s.n.m.)",
+      "Llegada a Waqrapukara y visita guiada detallada por los cuernos de piedra y plaza principal",
+      "Tiempo para almorzar (Box lunch / almuerzo)",
+      "Caminata de retorno hacia el transporte",
+      "Retorno a la ciudad de Cusco (19:00 hrs aprox.)"
+    ]
+  },
+  {
+    "id": "tour-13",
+    "nombre": "7 Lagunas de Ausangate (Pacchanta)",
+    "duracion": "Full Day (04:30 am - 19:00 pm)",
+    "horarios": [
+      "04:30 am - 05:00 am (recojo)"
+    ],
+    "itinerario": [
+      "Recojo de hoteles en Cusco y viaje hacia la comunidad de Pacchanta (faldas del nevado Ausangate)",
+      "Desayuno en la comunidad de Pacchanta",
+      "Inicio del circuito de caminata para visitar las 7 Lagunas: Pucacocha, Patacocha, Alqacocha, Qomercocha, Orco Otorongo, China Otorongo y Azulcocha",
+      "Tiempo para fotografías y explicación guiada junto a los glaciares",
+      "Retorno a Pacchanta y Almuerzo",
+      "Tiempo libre opcional para disfrutar de las aguas termales medicinales de Pacchanta",
+      "Retorno a la ciudad de Cusco (19:00 hrs aprox.)"
+    ]
+  },
+  {
+    "id": "tour-14",
+    "nombre": "Valle Sur Cusco (Tipón, Pikillacta y Andahuaylillas)",
+    "duracion": "Medio Día (08:00 am - 15:00 pm)",
+    "horarios": [
+      "08:00 am - 08:30 am (recojo)"
+    ],
+    "itinerario": [
+      "Recojo del hotel en Cusco",
+      "Visita al Complejo Arqueológico de Tipón (obras maestras de ingeniería hidráulica inca)",
+      "Visita a la Ciudad Pre-Inca de Pikillacta (cultura Wari)",
+      "Visita al poblado de Andahuaylillas y su famosa Capilla Sixtina de América (Iglesia San Pedro Apóstol)",
+      "Parada tradicional en Saylla para degustar la gastronomía típica (chicharrón de cerdo / chiriuchu opcional)",
+      "Retorno y fin del tour en Cusco (15:00 hrs aprox.)"
+    ]
+  },
+  {
+    "id": "tour-15",
+    "nombre": "Cataratas de Poc Poc (Chinchero Trekking)",
+    "duracion": "Full Day (07:00 am - 17:00 pm)",
+    "horarios": [
+      "07:00 am (recojo)"
+    ],
+    "itinerario": [
+      "Recojo del hotel en Cusco y viaje en bus hasta Chinchero",
+      "Inicio de la caminata por el camino inca tradicional rumbo a las Cataratas de Poc Poc",
+      "Llegada a las cataratas y tiempo libre para fotos y disfrutar de la naturaleza",
+      "Retorno a la casa campestre en Chinchero para el Almuerzo",
+      "Visita opcional al pueblo artesanal de Chinchero",
+      "Retorno a Cusco y fin del tour (17:00 hrs aprox.)"
+    ]
+  },
+  {
+    "id": "tour-16",
+    "nombre": "Machu Picchu By Car 2 Días / 1 Noche",
+    "duracion": "2 Días / 1 Noche",
+    "horarios": [
+      "06:00 am (salida Día 1)"
+    ],
+    "itinerario": [
+      "Día 1: Recojo del hotel a las 06:00 am. Viaje en bus pasando por Ollantaytambo y el abra Málaga hasta Santa María y Santa Teresa. Almuerzo en Hidroeléctrica (13:00 hrs aprox.). Caminata bordeando la vía del tren desde Hidroeléctrica hasta Aguas Calientes (3 horas aprox.). Llegada a Aguas Calientes e acomodación en Hotel. 20:00 hrs Cena y charla informativa con el guía.",
+      "Día 2: Desayuno a las 05:00 am. Ascenso a Machu Picchu (caminando o opcional en bus Consettur). Visita guiada por Machu Picchu a las 06:00 am (2 horas aprox.). Tiempo libre hasta 11:30 am. Retorno caminando hacia Hidroeléctrica para abordar el bus de regreso (14:30 a 15:00 pm). Llegada a la ciudad de Cusco entre 21:30 y 22:30 pm."
+    ]
+  },
+  {
+    "id": "tour-17",
+    "nombre": "Camino Inca Corto 2 Días / 1 Noche",
+    "duracion": "2 Días / 1 Noche",
+    "horarios": [
+      "Hora a coordinar según ticket de tren"
+    ],
+    "itinerario": [
+      "Día 1: Recojo del hotel y traslado a la estación de Ollantaytambo. Viaje en tren hasta el Km 104 (inicio del trekking). Caminata y visita a los sitios arqueológicos de Chachabamba y Wiñaywayna (4-5 hrs caminata). Almuerzo tipo picnic. Continuación hacia Inti Punku (Puerta del Sol) con vista panorámica de Machu Picchu. Descenso a Aguas Calientes. Alojamiento en hotel y cena.",
+      "Día 2: Desayuno en el hotel. Bus Consettur de subida a Machu Picchu. Visita guiada profesional por Machu Picchu (2.5 hrs aprox.). Bus de bajada a Aguas Calientes. Tren de retorno a Ollantaytambo y transporte final a Cusco."
+    ]
+  },
+  {
+    "id": "tour-18",
+    "nombre": "Camino Inca Clásico 4 Días / 3 Noches",
+    "duracion": "4 Días / 3 Noches",
+    "horarios": [
+      "05:00 am (Salida Día 1)"
+    ],
+    "itinerario": [
+      "Día 1 (Cusco - Km 82 - Huayllabamba): Recojo a las 05:00 am. Viaje en bus al Km 82. Inicio del trekking bordeando el río Urubamba. Visita a Patallacta. Campamento en Huayllabamba (6-7 hrs caminata).",
+      "Día 2 (Huayllabamba - Warmiwañusca - Pacaymayo): Ascenso al paso más alto de Warmiwañusca (4,200 m.s.n.m.). Descenso al campamento de Pacaymayo (8-9 hrs caminata).",
+      "Día 3 (Pacaymayo - Phuyupatamarca - Wiñayhuayna): Visita a los sitios arqueológicos de Runkurakay, Sayacmarca y Phuyupatamarca. Campamento en Wiñayhuayna (5-6 hrs caminata).",
+      "Día 4 (Wiñayhuayna - Inti Punku - Machu Picchu - Cusco): Caminata temprana hacia Inti Punku (Puerta del Sol) para el amanecer sobre Machu Picchu. Guiado en la ciudadela. Bus a Aguas Calientes, tren a Ollantaytambo y bus de retorno a Cusco."
+    ]
+  },
+  {
+    "id": "tour-19",
+    "nombre": "Tour Puno Full Day (Islas Uros y Taquile)",
+    "duracion": "Full Day (con viajes nocturnos en bus)",
+    "horarios": [
+      "21:30 pm (Noche anterior recojo en hotel hacia terminal Cusco)"
+    ],
+    "itinerario": [
+      "Noche Anterior: Recojo del hotel a las 21:30 pm y viaje en bus cama Cusco - Puno.",
+      "Día del Tour: Llegada a Puno a las 05:00 am. Desayuno en casa Jumbo. 07:00 am traslado al puerto lacustre. Embarque en lancha rápida hacia las Islas Flotantes de los Uros (visita guiada y convivencia). Continuación en lancha hacia la Isla de Taquile. Caminata de 1 hora hacia el pueblo principal de Taquile. Demostración de arte textil declarada Patrimonio de la Humanidad por UNESCO. Almuerzo tradicional en Taquile. Descenso al puerto y navegación de regreso a Puno (16:30 pm aprox.). Noche: 21:30 pm Bus Puno - Cusco (llegada a Cusco 05:00 am del día siguiente)."
+    ]
+  },
+  {
+    "id": "tour-20",
+    "nombre": "Tour Puno 2 Días / 1 Noche (Uros, Amantaní y Taquile - Turismo Vivencial)",
+    "duracion": "2 Días / 1 Noche (Vivencial)",
+    "horarios": [
+      "21:30 pm (Noche anterior viaje en bus Cusco - Puno)"
+    ],
+    "itinerario": [
+      "Día 1: 05:00 am llegada a Puno y recojo en terminal. Desayuno en Casa Jumbo (06:00 am). 07:45 am embarque en muelle hacia Islas Flotantes de los Uros. Navegación hacia la Isla de Amantaní (11:30 am). Recepción y bienvenida por familias locales. Almuerzo campestre con la familia anfitriona. 16:00 hrs Ascenso al santuario Pacha Tata para la puesta de sol en el Titicaca. 18:00 hrs Cena tradicional. 19:00 hrs Fiesta con vestimenta típica y peña cultural. Pernocte en casa de familia local en Amantaní.",
+      "Día 2: 07:00 am Desayuno y despedida en Amantaní. 08:00 am Navegación a la Isla de Taquile. 09:30 am Caminata a la plaza principal de Taquile y exposición de textiles. 11:30 am Almuerzo campestre. 13:00 pm Retorno en bote a Puno (llegada 16:30 pm aprox.). 21:30 pm Bus Puno - Cusco (Llegada a Cusco 05:00 am)."
+    ]
+  },
+  {
+    "id": "tour-21",
+    "nombre": "Lima City Tour",
+    "duracion": "Medio Día / Tarde - Noche (14:00 pm - 22:00 pm)",
+    "horarios": [
+      "14:00 pm (recojo)"
+    ],
+    "itinerario": [
+      "Recojo del hotel a las 14:00 hrs",
+      "Visita al Parque del Amor en Miraflores (vista al Océano Pacífico)",
+      "Vista panorámica a la Huaca Pucllana (centro ceremonial pre-inca)",
+      "Visita al Parque El Olivar de San Isidro",
+      "Recorrido por el Centro Histórico de Lima:",
+      " - Plaza San Martín",
+      " - Plaza de Armas / Plaza Mayor",
+      " - Iglesia y Convento de San Francisco y sus Catacumbas subterráneas",
+      "Visita al Circuito Mágico del Agua (espectáculo de luces y fuentes de agua en Parque de la Reserva)",
+      "Retorno al hotel y fin del tour (22:00 hrs aprox.)"
+    ]
+  },
+  {
+    "id": "tour-22",
+    "nombre": "Oasis Huacachina + Islas Ballestas (Ica y Paracas desde Lima)",
+    "duracion": "Full Day (04:30 am - 22:00 pm)",
+    "horarios": [
+      "04:30 am (recojo)"
+    ],
+    "itinerario": [
+      "04:30 am Recojo del hotel en Lima y viaje por la Carretera Panamericana Sur hacia Paracas",
+      "Llegada a Paracas y excursión en deslizador acuático hacia las Islas Ballestas (avistamiento de lobos marinos, pingüinos de Humboldt y aves guaneras, vista al Candelabro)",
+      "Degustación de dulces artesanales en la Bahía de Paracas",
+      "Traslado a la ciudad de Ica para el Almuerzo",
+      "Visita a una Bodega Vitivinícola tradicional con degustación de Vinos y Piscos peruanos",
+      "Visita al Oasis de la Huacachina",
+      "Paseo de adrenalina en Carros Areneros (Tubulares / Buggies) y práctica de Sandboarding sobre las dunas del desierto",
+      "Parada en Chincha para descanso",
+      "Retorno a la ciudad de Lima (llegada 22:00 pm aprox.)"
+    ]
+  }
+]

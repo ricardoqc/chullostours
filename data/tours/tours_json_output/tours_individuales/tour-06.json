@@ -1,0 +1,39 @@
+{
+  "id": "tour-06",
+  "nombre": "Laguna Humantay",
+  "categoria": "Cusco / Trekking",
+  "duracion": "Full Day (04:00 am - 17:00 pm)",
+  "precio_usd": 40,
+  "horarios_disponibles": [
+    "04:00 am - 04:50 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo del hotel y viaje hacia el poblado de Mollepata",
+    "Desayuno en Mollepata",
+    "Traslado en bus hasta Soraypampa (punto de inicio de caminata)",
+    "Inicio de la caminata de ascenso (1.5 a 2 horas aprox.) hacia la Laguna Humantay (4,200 m.s.n.m.)",
+    "Visita guiada, tiempo libre para fotos y paisajes del nevado Salkantay",
+    "Descenso caminando de retorno a Soraypampa",
+    "Traslado a Mollepata y Almuerzo Buffet",
+    "Retorno a Cusco (17:00 hrs aprox., finaliza en Plaza Regocijo)"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico ida y vuelta",
+    "Desayuno y Almuerzo",
+    "Boleto de Ingreso a la Laguna Humantay",
+    "Bastones de trekking",
+    "Balón de oxígeno y botiquín"
+  ],
+  "no_incluye": [
+    "Alquiler de caballos de subida",
+    "Gastos personales"
+  ],
+  "recomendaciones": [
+    "Estar aclimatado en Cusco al menos 1-2 días antes",
+    "Llevar calzado de caminata, ropa abrigadora y cortaviento",
+    "Llevar poncho de agua, bloqueador solar y agua mineral"
+  ],
+  "pagina_catalogo": 9
+}

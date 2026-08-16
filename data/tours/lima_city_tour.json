@@ -1,0 +1,229 @@
+{
+  "titulo": "Lima City Tour – Centro Histórico y Circuito Mágico del Agua",
+  "slug": "lima-city-tour",
+  "url": "https://chullostours.com/tours/lima-city-tour/",
+  "metas": {
+    "description": "City Tour nocturno por Lima: Miraflores, Centro Histórico, Convento de San Francisco con Catacumbas y Circuito Mágico del Agua. Guía bilingüe y transporte con A/C incluidos.",
+    "og_title": "Lima City Tour Nocturno – Centro Histórico y Miraflores | Chullos Tours",
+    "og_url": "https://chullostours.com/tours/lima-city-tour/"
+  },
+  "atributos": {
+    "duracion": "Medio Día / Tarde-Noche (14:00 pm - 22:00 pm)",
+    "ubicacion": "Lima (Miraflores, San Isidro, Centro Histórico), Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Cultural / City Tour / Nocturno",
+    "dificultad": "Fácil",
+    "altitud_maxima": "154 m.s.n.m.",
+    "grupo_max": 20,
+    "nivel_fisico": "Fácil (Caminatas cortas)"
+  },
+  "horarios_disponibles": [
+    "14:00 pm (recojo en hotel)"
+  ],
+  "punto_inicio": "Recojo del hotel en Lima (Miraflores / San Isidro)",
+  "resumen": "Descubre Lima, la 'Ciudad de los Reyes', en un tour vespertino-nocturno que combina la modernidad de Miraflores con el esplendor colonial del Centro Histórico Patrimonio UNESCO, las misteriosas catacumbas del Convento de San Francisco y el espectacular Circuito Mágico del Agua.",
+  "descripcion_completa": "Lima es una ciudad de contrastes fascinantes: la bruma costeña sobre el Océano Pacífico, los acantilados de Miraflores, las plazas barrocas del Centro Histórico y las luces del Circuito Mágico del Agua se combinan para crear una experiencia urbana que pocos olvidan. Nuestro Lima City Tour nocturno está diseñado para capturar lo mejor de Lima en unas pocas horas intensas e inolvidables.\n\nRecogeremos a los pasajeros en sus hoteles en Miraflores o San Isidro a las 14:00 hrs. Primera parada en el romántico **Parque del Amor**, donde la escultura del abrazo apasionado de Víctor Delfín preside los acantilados con vista al Océano Pacífico. La bruma marina y la tarde limeña crean una atmósfera especial.\n\nContinuamos hacia el **Parque El Olivar de San Isidro**, un oasis de olivos centenarios traídos de España en el siglo XVI, rodeado de arquitectura elegante y la calma del exclusivo barrio de San Isidro.\n\nDe camino al Centro Histórico, haremos una parada para apreciar la **Huaca Pucllana**, el centro ceremonial de la Cultura Lima (siglos IV-VIII d.C.) que emerge sorprendentemente entre las calles modernas de Miraflores.\n\nEn el **Centro Histórico de Lima (Patrimonio de la Humanidad UNESCO)**, recorreremos la Plaza San Martín y la majestuosa **Plaza Mayor** (también llamada Plaza de Armas), con el Palacio de Gobierno y la Catedral de Lima iluminados. El punto culminante es la visita a la **Iglesia y Convento de San Francisco**, con sus fascinantes **Catacumbas subterráneas** que contienen miles de huesos humanos ordenados artísticamente, una experiencia macabramente hermosa.\n\nCerramos el tour en el **Circuito Mágico del Agua del Parque de la Reserva**, el conjunto de fuentes interactivas más grande del mundo con espectáculo de luces láser, música y agua que alcanza los 80 metros de altura. Un final de película para tu noche en Lima.",
+  "propuesta_de_valor": [
+    "Tour vespertino-nocturno: Aprovecha al máximo las horas en Lima sin perder la mañana.",
+    "Cuatro zonas de Lima en un tour: Miraflores, San Isidro, Centro Histórico y Parque de la Reserva.",
+    "Catacumbas de San Francisco: Una de las experiencias más únicas e inesperadas de Lima.",
+    "Circuito Mágico del Agua: El espectáculo de fuentes más grande del mundo como cierre perfecto.",
+    "Transporte con aire acondicionado y guía bilingüe profesional incluidos."
+  ],
+  "destacados_highlights": [
+    "Centro Histórico de Lima: Patrimonio de la Humanidad UNESCO con Catedral e Iglesia de San Francisco.",
+    "Catacumbas de San Francisco: Osarios subterráneos del siglo XVII con hasta 25,000 restos humanos.",
+    "Circuito Mágico del Agua: El conjunto de fuentes interactivas más grande del mundo con espectáculo nocturno.",
+    "Parque del Amor en Miraflores: Vistas panorámicas del Océano Pacífico desde los acantilados."
+  ],
+  "galeria": [],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "Lima City Tour Vespertino-Nocturno",
+      "descripcion": "Recorrido por los principales atractivos de Lima de tarde y noche.",
+      "actividades": [
+        "14:00 PM | Recojo del hotel en Lima (Miraflores / San Isidro).",
+        "14:30 PM | Parque del Amor, Miraflores – Vista al Océano Pacífico.",
+        "15:00 PM | Vista panorámica a la Huaca Pucllana.",
+        "15:30 PM | Parque El Olivar de San Isidro.",
+        "16:15 PM | Llegada al Centro Histórico de Lima.",
+        "16:30 PM | Plaza San Martín.",
+        "17:00 PM | Plaza de Armas / Plaza Mayor de Lima.",
+        "17:30 PM | Visita Iglesia y Convento de San Francisco + Catacumbas subterráneas.",
+        "19:00 PM | Traslado al Parque de la Reserva.",
+        "19:30 PM | Circuito Mágico del Agua – Espectáculo de luces y fuentes.",
+        "22:00 PM | Retorno al hotel y finalización del tour."
+      ],
+      "alojamiento": "No incluido",
+      "comidas_incluidas": []
+    }
+  ],
+  "incluye": [
+    "Recojo del hotel en Lima (Miraflores / San Isidro).",
+    "Transporte turístico con aire acondicionado.",
+    "Guía Profesional bilingüe (Español / Inglés).",
+    "Entrada al Convento de San Francisco y Catacumbas.",
+    "Entrada al Circuito Mágico del Agua.",
+    "Asistencia durante todo el tour."
+  ],
+  "no_incluye": [
+    "Alimentos y bebidas.",
+    "Gastos personales.",
+    "Propinas."
+  ],
+  "recomendaciones": [
+    "Llevar casaca ligera o abrigo suave para la brisa marina y la noche limeña.",
+    "Llevar cámara con buen modo nocturno o capacidad de flash.",
+    "Calzado cómodo para caminatas cortas.",
+    "El Circuito Mágico del Agua puede estar cerrado los lunes: confirmar al reservar."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "Centro Histórico de Lima",
+      "tipo": "Patrimonio de la Humanidad UNESCO",
+      "descripcion": "Plaza Mayor, Palacio de Gobierno, Catedral de Lima y arquitectura colonial barroca del siglo XVI-XVIII.",
+      "altitud": "154 m.s.n.m."
+    },
+    {
+      "nombre": "Convento de San Francisco y Catacumbas",
+      "tipo": "Monumento Histórico / Osario",
+      "descripcion": "Magnífico convento barroco del siglo XVII con catacumbas subterráneas que contienen hasta 25,000 restos humanos artísticamente organizados.",
+      "altitud": "154 m.s.n.m."
+    },
+    {
+      "nombre": "Circuito Mágico del Agua",
+      "tipo": "Parque Temático de Fuentes",
+      "descripcion": "El conjunto de fuentes interactivas más grande del mundo (Récord Guinness) con espectáculo nocturno de luces y música.",
+      "altitud": "154 m.s.n.m."
+    },
+    {
+      "nombre": "Parque del Amor – Miraflores",
+      "tipo": "Parque Panorámico",
+      "descripcion": "Parque sobre los acantilados de Miraflores con vistas al Océano Pacífico y la icónica escultura del Abrazo de Víctor Delfín.",
+      "altitud": "70 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿El tour opera en la tarde-noche todos los días?",
+      "respuesta": "El tour opera de lunes a domingo. Sin embargo, el Circuito Mágico del Agua puede estar cerrado los lunes. Se confirma disponibilidad al momento de reservar."
+    },
+    {
+      "pregunta": "¿Es peligroso el Centro Histórico de Lima de noche?",
+      "respuesta": "La visita al Centro Histórico se realiza en horas de la tarde (antes del anochecer total) en transporte turístico con guía, lo que garantiza la seguridad del grupo en todo momento."
+    },
+    {
+      "pregunta": "¿Las catacumbas del Convento de San Francisco son para todo público?",
+      "respuesta": "Las catacumbas pueden impresionar a los más sensibles, pero son completamente seguras y accesibles. No se recomienda para personas con claustrofobia severa."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "Lima city tour nocturno Miraflores Centro Histórico",
+    "meta_title": "Lima City Tour – Centro Histórico, Catacumbas y Circuito del Agua | Chullos Tours",
+    "meta_description": "City tour por Lima: Miraflores, Centro Histórico UNESCO, Catacumbas de San Francisco y Circuito Mágico del Agua. Guía bilingüe, transporte A/C y entradas incluidas.",
+    "canonical": "https://chullostours.com/tours/lima-city-tour/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "Lima City Tour Nocturno | Chullos Tours",
+      "og_description": "Descubre Lima de noche: Centro Histórico UNESCO, Catacumbas y el espectáculo del Circuito Mágico del Agua.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/lima-city-tour/",
+      "og_image": "/tours/lima-city-tour/01.jpg",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Lima City Tour Nocturno | Chullos Tours",
+      "description": "Lima de noche: Miraflores, Centro Histórico, Catacumbas y Circuito Mágico del Agua.",
+      "image": "/tours/lima-city-tour/01.jpg"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "Lima City Tour Nocturno",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Lima",
+      "region": "Lima",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El Lima City Tour de Chullos Tours es un recorrido vespertino-nocturno por Miraflores, San Isidro, el Centro Histórico UNESCO, las Catacumbas de San Francisco y el Circuito Mágico del Agua. Incluye transporte A/C, guía bilingüe y entradas.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Duración total",
+        "value": "~8 horas (14:00 PM a 22:00 PM)"
+      },
+      {
+        "fact": "Dificultad física",
+        "value": "Fácil"
+      },
+      {
+        "fact": "Comidas incluidas",
+        "value": "No incluye"
+      },
+      {
+        "fact": "Operador responsable",
+        "value": "Chullos Tours"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/lima-city-tour/#product",
+        "name": "Lima City Tour – Centro Histórico y Circuito Mágico del Agua",
+        "description": "City tour vespertino-nocturno por Lima: Miraflores, Centro Histórico UNESCO, Catacumbas de San Francisco y Circuito Mágico del Agua.",
+        "url": "https://chullostours.com/tours/lima-city-tour/",
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "70.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/lima-city-tour/"
+        }
+      }
+    ]
+  },
+  "tour_highlights": [
+    {
+      "icono": "FaMapMarkerAlt",
+      "titulo": "Entradas Incluidas",
+      "detalle": "Ingresos oficiales a los atractivos turísticos programados en la ruta"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Transporte Turístico",
+      "detalle": "Traslados en unidad climatizada con chofer profesional (Medio Día / Tarde-Noche (14:00 pm - 22:00 pm))"
+    },
+    {
+      "icono": "FaUserTie",
+      "titulo": "Guía Especializado",
+      "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
+    },
+    {
+      "icono": "FaUsers",
+      "titulo": "Grupo Reducido",
+      "detalle": "Grupos de máximo 20 personas para una experiencia más cómoda y fluida"
+    }
+  ]
+}

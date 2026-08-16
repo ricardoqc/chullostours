@@ -1,0 +1,36 @@
+{
+  "id": "tour-10",
+  "nombre": "Cusco Escénico (City Tour Nocturno)",
+  "categoria": "Cusco / Escénico & Cultural",
+  "duracion": "Nocturno / Medio Día",
+  "precio_usd": 30,
+  "horarios_disponibles": [
+    "En la Plaza de Armas (previa coordinación)"
+  ],
+  "punto_inicio": "Plaza de Armas de Cusco",
+  "itinerario": [
+    "Inicio del tour en la Plaza de Armas de Cusco",
+    "Visita e iluminación del Templo de Qoricancha",
+    "Apreciación guiada del Gran Mural Histórico del Cusco",
+    "Ascenso al mirador del Cristo Blanco para vista panorámica de la ciudad",
+    "Visita a la Laguna de Huayllarccocha",
+    "Escenificación teatral del Rapto de Kukuli",
+    "Retorno y finalización del tour en la Plaza de Armas de Cusco"
+  ],
+  "incluye": [
+    "Guía Profesional (Español / Inglés)",
+    "Transporte Turístico",
+    "Asistencia durante el recorrido",
+    "Boleto de Ingresos requeridos"
+  ],
+  "no_incluye": [
+    "Gastos personales",
+    "Alimentos y bebidas"
+  ],
+  "recomendaciones": [
+    "Llevar ropa bastante abrigadora (noche fría en Cusco)",
+    "Llevar cámara para fotografía nocturna",
+    "Calzado cómodo"
+  ],
+  "pagina_catalogo": 13
+}

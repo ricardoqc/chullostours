@@ -1,0 +1,269 @@
+{
+  "titulo": "Machu Picchu By Car 2 Días / 1 Noche (Vía Hidroeléctrica)",
+  "slug": "machu-picchu-by-car-2-dias",
+  "url": "https://chullostours.com/tours/machu-picchu-by-car-2-dias/",
+  "metas": {
+    "description": "Visita Machu Picchu en 2 días / 1 noche por la ruta de Hidroeléctrica. Incluye transporte, hospedaje en Aguas Calientes, cena, desayuno, almuerzo, boleto de ingreso y guía. Desde Cusco.",
+    "og_title": "Machu Picchu By Car 2 Días 1 Noche – Vía Hidroeléctrica | Chullos Tours",
+    "og_url": "https://chullostours.com/tours/machu-picchu-by-car-2-dias/"
+  },
+  "atributos": {
+    "duracion": "2 Días / 1 Noche",
+    "ubicacion": "Cusco – Hidroeléctrica – Aguas Calientes – Machu Picchu, Perú",
+    "idiomas": [
+      "Español",
+      "Inglés"
+    ],
+    "tipo_tour": "Machu Picchu / Aventura / Multi-día",
+    "dificultad": "Moderada",
+    "altitud_maxima": "2,430 m.s.n.m.",
+    "grupo_max": 15,
+    "nivel_fisico": "Moderado (Caminata de 3 horas por vía del tren)"
+  },
+  "horarios_disponibles": [
+    "06:00 am (salida Día 1)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "resumen": "Descubre Machu Picchu de forma económica y aventurera en 2 días y 1 noche por la espectacular ruta de Hidroeléctrica. Viaja en bus por el paso de Málaga, camina 3 horas bordeando la vía del tren hasta Aguas Calientes y visita la ciudadela al amanecer del segundo día con guía profesional.",
+  "descripcion_completa": "El tour Machu Picchu By Car 2 Días / 1 Noche es la alternativa más aventurera y económica para llegar a la ciudadela inca más famosa del mundo. En lugar del tren turístico convencional, recorremos la impresionante ruta que atraviesa el paso de Málaga y desciende hacia la selva alta hasta llegar a la Central Hidroeléctrica, desde donde caminaremos por la vía del ferrocarril hasta Aguas Calientes.\n\n**Día 1:** Partiremos desde Cusco a las 06:00 am en nuestro cómodo transporte turístico. El viaje atraviesa paisajes increíblemente variados: el altiplano de Anta, el Valle Sagrado, los campos de Ollantaytambo, el dramático paso de la Abra Málaga (4,316 m.s.n.m.) con sus yungas y vegetación de ceja de selva, y finalmente descenderemos hacia Santa María y Santa Teresa. A las 13:00 hrs aproximadamente llegaremos a la Central Hidroeléctrica, donde almorzaremos.\n\nDespués del almuerzo, iniciaremos la famosa caminata de 3 horas bordeando la vía del ferrocarril entre Hidroeléctrica y Aguas Calientes, un sendero plano y de tierra que discurre entre la selva baja con el río Urubamba de compañero. Este camino es una experiencia única que muy pocos viajeros conocen y que tiene su propio encanto.\n\nLlegaremos a Aguas Calientes en la tarde para instalarnos en el hotel. A las 20:00 hrs cenaremos y el guía dará una charla informativa sobre Machu Picchu para aprovechar al máximo la visita del día siguiente.\n\n**Día 2:** Madrugaremos para desayunar a las 05:00 am. Subiremos a Machu Picchu en bus Consettur o caminando por el camino Inca de Aguas Calientes (45 min). La visita guiada comenzará a las 06:00 am, aprovechando el amanecer sobre la ciudadela, uno de los espectáculos más impresionantes del mundo. Tendremos hasta las 11:30 am de tiempo libre.\n\nRetornaremos caminando hasta Hidroeléctrica para abordar el bus de regreso. Llegaremos a Cusco entre las 21:30 y 22:30 pm.",
+  "propuesta_de_valor": [
+    "La ruta alternativa y más aventurera a Machu Picchu: por carro y caminata, no solo en tren.",
+    "Caminata de 3 horas por la vía del tren con vistas de la selva y el río Urubamba.",
+    "Visita al amanecer de Machu Picchu (06:00 am) con guía profesional bilingüe.",
+    "Paquete completo: transporte, hospedaje, 3 comidas, boleto y guía.",
+    "La opción más económica para visitar Machu Picchu con pernocte en Aguas Calientes."
+  ],
+  "destacados_highlights": [
+    "Ruta Hidroeléctrica: Paso de Málaga y ceja de selva, una experiencia completamente diferente al tren.",
+    "Caminata a Aguas Calientes: 3 horas por la vía del tren bordeando el río Urubamba.",
+    "Amanecer en Machu Picchu: Visita guiada a las 06:00 am cuando la luz del día toca la ciudadela.",
+    "Charla nocturna: El guía prepara al grupo la noche anterior con historia e información de Machu Picchu."
+  ],
+  "galeria": [],
+  "itinerario": [
+    {
+      "dia": 1,
+      "titulo": "Cusco – Hidroeléctrica – Caminata – Aguas Calientes",
+      "descripcion": "Viaje por la ruta de Hidroeléctrica y caminata de 3 horas hasta Aguas Calientes.",
+      "actividades": [
+        "06:00 AM | Recojo del hotel en Cusco.",
+        "Viaje en bus pasando por Ollantaytambo, Abra Málaga, Santa María y Santa Teresa.",
+        "13:00 PM | Llegada a Hidroeléctrica – Almuerzo.",
+        "14:00 PM | Inicio de la caminata bordeando la vía del tren hasta Aguas Calientes (3 horas aprox.).",
+        "17:00 PM | Llegada a Aguas Calientes – Check-in en el hotel.",
+        "20:00 PM | Cena y charla informativa del guía sobre Machu Picchu."
+      ],
+      "alojamiento": "Hotel en Aguas Calientes (baño privado y agua caliente)",
+      "comidas_incluidas": [
+        "Almuerzo",
+        "Cena"
+      ]
+    },
+    {
+      "dia": 2,
+      "titulo": "Aguas Calientes – Machu Picchu – Hidroeléctrica – Cusco",
+      "descripcion": "Visita guiada al amanecer en Machu Picchu y retorno a Cusco.",
+      "actividades": [
+        "05:00 AM | Desayuno en el hotel.",
+        "05:30 AM | Ascenso a Machu Picchu en Bus Consettur (opcional) o caminata (45 min).",
+        "06:00 AM | Inicio de la visita guiada profesional en Machu Picchu.",
+        "08:30 AM | Fin del tour guiado – Tiempo libre hasta las 11:30 am.",
+        "11:30 AM | Descenso en bus o caminata a Aguas Calientes.",
+        "12:30 PM | Caminata de retorno desde Aguas Calientes a Hidroeléctrica (3 horas).",
+        "14:30 PM - 15:00 PM | Abordaje del bus de retorno en Hidroeléctrica.",
+        "21:30 PM - 22:30 PM | Llegada a la ciudad de Cusco."
+      ],
+      "alojamiento": "No incluido",
+      "comidas_incluidas": [
+        "Desayuno"
+      ]
+    }
+  ],
+  "incluye": [
+    "Transporte turístico Cusco – Hidroeléctrica – Cusco.",
+    "1 Almuerzo en Hidroeléctrica (Día 1).",
+    "1 Cena en Aguas Calientes (Día 1).",
+    "1 Noche de hospedaje en Aguas Calientes (habitación con baño privado y agua caliente).",
+    "1 Desayuno en Aguas Calientes (Día 2).",
+    "Boleto de ingreso a Machu Picchu.",
+    "Guía profesional bilingüe en Machu Picchu."
+  ],
+  "no_incluye": [
+    "Bus Consettur Aguas Calientes – Machu Picchu – Aguas Calientes (Opcional $24 USD redondo).",
+    "Tren Hidroeléctrica – Aguas Calientes (opcional si no quiere caminar).",
+    "Alimentación del Día 2 (Almuerzo libre en Aguas Calientes).",
+    "Gastos personales.",
+    "Propinas."
+  ],
+  "recomendaciones": [
+    "Llevar mochila pequeña de máx. 5-8 kg para la caminata bordeando la vía del tren.",
+    "Pasaporte o documento de identidad original OBLIGATORIO (requisito de ingreso a Machu Picchu).",
+    "Llevar repelente de mosquitos potente y bloqueador solar.",
+    "Llevar ropa ligera para la caminata y abrigadora para la noche en Aguas Calientes.",
+    "Llevar linterna pequeña para la madrugada del Día 2.",
+    "Usar calzado de trekking cómodo y resistente para la caminata."
+  ],
+  "puntos_de_interes": [
+    {
+      "nombre": "Machu Picchu",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "descripcion": "La ciudadela inca más famosa del mundo, construida alrededor del siglo XV, Patrimonio de la Humanidad y Maravilla del Mundo.",
+      "altitud": "2,430 m.s.n.m."
+    },
+    {
+      "nombre": "Abra Málaga",
+      "tipo": "Paso de Montaña",
+      "descripcion": "Espectacular paso de montaña a 4,316 m.s.n.m. entre el altiplano y la ceja de selva.",
+      "altitud": "4,316 m.s.n.m."
+    },
+    {
+      "nombre": "Central Hidroeléctrica",
+      "tipo": "Punto de Partida del Trek",
+      "descripcion": "Punto de inicio de la caminata de 3 horas por la vía del tren hasta Aguas Calientes.",
+      "altitud": "2,100 m.s.n.m."
+    },
+    {
+      "nombre": "Aguas Calientes (Machu Picchu Pueblo)",
+      "tipo": "Pueblo Base",
+      "descripcion": "Pueblo al pie de Machu Picchu, punto de pernocte y de abordaje de buses hacia la ciudadela.",
+      "altitud": "2,040 m.s.n.m."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Qué diferencia hay entre este tour y el tour en tren?",
+      "respuesta": "La diferencia principal es el medio de llegada: este tour usa transporte terrestre hasta Hidroeléctrica y luego una caminata de 3 horas por la vía del tren. Es más económico y aventurero que el tren turístico convencional."
+    },
+    {
+      "pregunta": "¿El bus de subida a Machu Picchu está incluido?",
+      "respuesta": "No, el bus Consettur de Aguas Calientes a Machu Picchu (ida y vuelta) no está incluido y tiene un costo adicional de aprox. $24 USD. También se puede subir caminando en 45-60 min."
+    },
+    {
+      "pregunta": "¿Es obligatorio llevar pasaporte?",
+      "respuesta": "Sí, el pasaporte o DNI original es OBLIGATORIO para el ingreso a Machu Picchu. No se permite el ingreso con copias."
+    },
+    {
+      "pregunta": "¿Pueden no hacer la caminata de Hidroeléctrica a Aguas Calientes?",
+      "respuesta": "Hay opción de tomar el tren desde Hidroeléctrica hasta Aguas Calientes (costo adicional no incluido) para quienes no deseen caminar."
+    }
+  ],
+  "seo": {
+    "focus_keyword": "Machu Picchu by car tour Hidroeléctrica",
+    "meta_title": "Machu Picchu By Car 2 Días 1 Noche – Vía Hidroeléctrica | Chullos Tours",
+    "meta_description": "Tour Machu Picchu 2 días vía Hidroeléctrica desde Cusco. Incluye transporte, caminata, hospedaje, 3 comidas, boleto de ingreso y guía profesional.",
+    "canonical": "https://chullostours.com/tours/machu-picchu-by-car-2-dias/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large",
+    "language": "es-PE",
+    "open_graph": {
+      "og_title": "Machu Picchu By Car 2 Días 1 Noche | Chullos Tours",
+      "og_description": "Visita Machu Picchu en 2 días vía Hidroeléctrica y caminata por la vía del tren. La ruta más aventurera y económica.",
+      "og_type": "product",
+      "og_url": "https://chullostours.com/tours/machu-picchu-by-car-2-dias/",
+      "og_image": "/tours/machu-picchu-by-car-2-dias/01.jpg",
+      "og_site_name": "Chullos Tours Cusco",
+      "og_locale": "es_PE"
+    },
+    "twitter_card": {
+      "card": "summary_large_image",
+      "title": "Machu Picchu By Car 2 Días | Chullos Tours",
+      "description": "Machu Picchu vía Hidroeléctrica en 2 días. La ruta más aventurera desde Cusco.",
+      "image": "/tours/machu-picchu-by-car-2-dias/01.jpg"
+    }
+  },
+  "geo_ai_optimization": {
+    "entity_name": "Machu Picchu By Car 2 Días / 1 Noche",
+    "entity_type": "TouristTrip",
+    "primary_destination": {
+      "name": "Machu Picchu",
+      "region": "Cusco",
+      "country": "Perú"
+    },
+    "ai_direct_answer_summary": "El tour Machu Picchu By Car 2 Días de Chullos Tours es la alternativa económica y aventurera al tren: viaje en bus vía Hidroeléctrica + caminata de 3 horas por la vía del tren. Incluye transporte, hospedaje en Aguas Calientes, 3 comidas, boleto de ingreso y guía.",
+    "key_facts_for_ai": [
+      {
+        "fact": "Duración total",
+        "value": "2 Días / 1 Noche"
+      },
+      {
+        "fact": "Ruta",
+        "value": "Cusco – Hidroeléctrica – Caminata – Aguas Calientes – Machu Picchu"
+      },
+      {
+        "fact": "Dificultad física",
+        "value": "Moderada"
+      },
+      {
+        "fact": "Comidas incluidas",
+        "value": "Almuerzo D1, Cena D1, Desayuno D2"
+      },
+      {
+        "fact": "Operador responsable",
+        "value": "Chullos Tours Cusco"
+      }
+    ]
+  },
+  "seo_schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://chullostours.com/#organization",
+        "name": "Chullos Tours",
+        "url": "https://chullostours.com",
+        "telephone": "+51992558512",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://chullostours.com/tours/machu-picchu-by-car-2-dias/#product",
+        "name": "Machu Picchu By Car 2 Días / 1 Noche",
+        "description": "Tour de 2 días a Machu Picchu vía Hidroeléctrica con caminata, hospedaje, 3 comidas, boleto y guía desde Cusco.",
+        "url": "https://chullostours.com/tours/machu-picchu-by-car-2-dias/",
+        "brand": {
+          "@type": "Brand",
+          "name": "Chullos Tours"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "180.00",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "url": "https://chullostours.com/tours/machu-picchu-by-car-2-dias/"
+        }
+      }
+    ]
+  },
+  "tour_highlights": [
+    {
+      "icono": "FaUtensils",
+      "titulo": "Alimentación",
+      "detalle": "Desayuno y almuerzo buffet regional incluidos en el recorrido"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Ruta Alternativa",
+      "detalle": "Viaje en miniván turística por Santa María e Hidroeléctrica hasta Aguas Calientes"
+    },
+    {
+      "icono": "FaMapMarkerAlt",
+      "titulo": "Entrada Machu Picchu",
+      "detalle": "Boleto de ingreso oficial a la Llaqta Inca de Machu Picchu 100% garantizado"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Bus Consettur",
+      "detalle": "Boleto de bus ecológico ida y vuelta entre Aguas Calientes y Machu Picchu"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Transporte Turístico",
+      "detalle": "Traslados en unidad climatizada con chofer profesional (2 Días / 1 Noche)"
+    },
+    {
+      "icono": "FaUserTie",
+      "titulo": "Guía Especializado",
+      "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
+    }
+  ]
+}

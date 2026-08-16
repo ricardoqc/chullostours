@@ -11,6 +11,7 @@ import { Tour } from "@/types/tour";
 import { getAllReviews } from "@/lib/reviews";
 import { ReviewCard } from "@/components/tours/review-card";
 import { ReviewsSlider } from "@/components/tours/reviews-slider";
+import { BlogSection } from "@/components/blog/BlogSection";
 
 function adaptTourToCard(tour: Tour, badge?: string): TourProps {
   const firstImage =
@@ -34,6 +35,46 @@ function adaptTourToCard(tour: Tour, badge?: string): TourProps {
 }
 
 
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Chullos Tours | Tours a Machu Picchu, Camino Inca y Cusco 2026",
+  description: "Descubre el Alma de los Andes con Chullos Tours. Tours a Machu Picchu, Camino Inca 4 Días, Laguna Humantay y Valle Sagrado con guías locales expertos y precios sin cargos ocultos.",
+  alternates: {
+    canonical: "https://chullostours.com/",
+  },
+  openGraph: {
+    title: "Chullos Tours | Tours y Experiencias Auténticas en Cusco y Perú",
+    description: "Explora Machu Picchu y los Andes con guías locales andinos. Itinerarios todo incluido, grupos reducidos y atención personalizada.",
+    url: "https://chullostours.com/",
+    siteName: "Chullos Tours",
+    type: "website",
+  },
+};
+
+const travelAgencySchema = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "@id": "https://chullostours.com/#organization",
+  "name": "Chullos Tours",
+  "url": "https://chullostours.com",
+  "telephone": "+51992558512",
+  "email": "info@chullostours.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Centro Histórico de Cusco",
+    "addressLocality": "Cusco",
+    "addressRegion": "Cusco",
+    "addressCountry": "PE"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "48"
+  }
+};
 
 export default function Home() {
   const allTours = getAllTours();
@@ -94,7 +135,12 @@ export default function Home() {
   const promoBgImage = promoTour?.galeria?.[0]?.src || "/tours/cusco-magico-5-dias/01.jpg";
 
   return (
-    <div className="flex flex-col gap-10 md:gap-16 pb-16">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(travelAgencySchema) }}
+      />
+      <div className="flex flex-col gap-10 md:gap-16 pb-16">
       {/* Hero Section with Interactive Tour Search Engine */}
       <section className="max-w-7xl mx-auto px-4 pt-3 md:pt-6 w-full">
         <div className="relative rounded-2xl md:rounded-[32px] overflow-hidden min-h-[520px] md:min-h-[580px] lg:min-h-[620px] flex flex-col justify-between shadow-2xl bg-slate-900 border border-slate-800 p-6 md:p-12 lg:p-14">
@@ -114,17 +160,17 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 bg-white/15 backdrop-blur-md border border-white/25 px-3 sm:px-4 py-1.5 rounded-full text-[11px] sm:text-xs font-semibold text-white shadow-sm max-w-full">
               <span className="text-[#ffc000] font-extrabold shrink-0">★ 5.0 TripAdvisor</span>
               <span className="text-white/40 hidden sm:inline">|</span>
-              <span className="truncate">Agencia Oficial Autorizada Cusco 2026</span>
+              <span className="truncate">Agencia Oficial Autorizada por MINCETUR 2026</span>
             </div>
 
-            {/* H1 Copywriting with Andean Emotion */}
+            {/* H1 Copywriting with Andean Emotion & Primary Target Keywords */}
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-black tracking-tight leading-tight font-title text-white">
-              Vive <span className="text-[#ffc000]">Cusco</span> con Guías Locales. <span className="block text-slate-100">No solo lo veas — siéntelo.</span>
+              Tours a <span className="text-[#ffc000]">Machu Picchu</span> y Cusco con Guías Locales.
             </h1>
 
             <p className="text-slate-200 text-xs sm:text-sm md:text-base leading-relaxed font-normal max-w-xl">
-              Explora Machu Picchu, la Montaña de 7 Colores y ciudadelas sagradas con{" "}
-              <strong className="font-bold text-white">itinerarios todo incluido</strong> diseñados por expertos andinos.
+              Descubre la magia de los Andes sin estrés.{" "}
+              <strong className="font-bold text-white">Itinerarios todo incluido</strong>, ingresos 100% garantizados a Machu Picchu y tarifas transparentes sin cargos ocultos.
             </p>
           </div>
 
@@ -141,8 +187,8 @@ export default function Home() {
               <ShieldCheck className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="font-bold text-slate-900 text-base font-title">Reserva 100% Garantizada</h4>
-              <p className="text-xs text-slate-500 mt-0.5">Agencia oficial autorizada. Boletos garantizados.</p>
+              <h4 className="font-bold text-slate-900 text-base font-title">Ingresos 100% Asegurados</h4>
+              <p className="text-xs text-slate-500 mt-0.5">Agencia autorizada por MINCETUR. Boletos a Machu Picchu y trenes garantizados.</p>
             </div>
           </div>
 
@@ -151,8 +197,8 @@ export default function Home() {
               <Award className="w-6 h-6 text-[#6b0014]" />
             </div>
             <div>
-              <h4 className="font-bold text-slate-900 text-base font-title">Guías Oficiales Cusqueños</h4>
-              <p className="text-xs text-slate-500 mt-0.5">Expertos bilingües nativos apasionados por el Imperio Inca.</p>
+              <h4 className="font-bold text-slate-900 text-base font-title">Guías Locales Cusqueños</h4>
+              <p className="text-xs text-slate-500 mt-0.5">Expertos nativos con licencia oficial y pasión por transmitir la historia incaica.</p>
             </div>
           </div>
 
@@ -161,8 +207,8 @@ export default function Home() {
               <Headphones className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="font-bold text-slate-900 text-base font-title">Asistencia WhatsApp 24/7</h4>
-              <p className="text-xs text-slate-500 mt-0.5">Acompañamiento continuo antes, durante y después de tu viaje.</p>
+              <h4 className="font-bold text-slate-900 text-base font-title">Transparencia & Soporte 24/7</h4>
+              <p className="text-xs text-slate-500 mt-0.5">Precios finales sin sorpresas. Acompañamiento continuo antes y durante tu viaje.</p>
             </div>
           </div>
         </div>
@@ -173,10 +219,10 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <span className="text-[#6b0014] text-xs font-extrabold uppercase tracking-wider">
-              Experiencias Destacadas 2026
+              Rutas Imperdibles 2026
             </span>
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-1 font-title">
-              Nuestros Tours Más Aclamados en Cusco
+              Los Tours a Machu Picchu y Cusco Más Recomendados
             </h2>
           </div>
           <Link href="/tours">
@@ -215,7 +261,7 @@ export default function Home() {
             Destinos Sagrados
           </span>
           <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-1 font-title">
-            Explora las Maravillas Imperiales del Perú
+            Elige Tu Próximo Destino en el Perú Imperial
           </h2>
         </div>
 
@@ -269,6 +315,9 @@ export default function Home() {
         <ReviewsSlider reviews={featuredReviews} />
       </section>
 
+      {/* Blog & Travel Guides Section */}
+      <BlogSection />
+
       {/* Call To Action Banner: Custom Itinerary with 3-Step Workflow */}
       <section className="max-w-7xl mx-auto px-4 w-full">
         <div className="relative rounded-2xl md:rounded-3xl bg-[#6b0014] text-white p-6 md:p-12 overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
@@ -282,10 +331,10 @@ export default function Home() {
               ¿Viaje a la Medida?
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white font-title">
-              ¿Deseas un Itinerario Personalizado para tu Viaje?
+              ¿Quieres un Itinerario a Tu Medida en Cusco?
             </h2>
             <p className="text-slate-200 text-xs sm:text-sm leading-relaxed">
-              Diseñamos paquetes a la medida de tu presupuesto, días y preferencias con guías locales dedicados.
+              Diseñamos tu viaje 100% personalizado según tus días, presupuesto y ritmo de caminata. Atención directa de un especialista cusqueño.
             </p>
 
             {/* 3 Steps Mini Grid */}
@@ -325,5 +374,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

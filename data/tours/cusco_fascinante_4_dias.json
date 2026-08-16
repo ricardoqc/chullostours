@@ -323,5 +323,32 @@
         ]
       }
     ]
-  }
+  },
+  "tour_highlights": [
+    {
+      "icono": "FaUtensils",
+      "titulo": "Alimentación",
+      "detalle": "Desayuno y almuerzo buffet regional incluidos en el recorrido"
+    },
+    {
+      "icono": "FaTicketAlt",
+      "titulo": "Boleto Turístico (BTC)",
+      "detalle": "No incluido — Adquisición directa en taquilla (S/ 70 parcial o S/ 130 general)"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Transporte Turístico",
+      "detalle": "Traslados en unidad climatizada con chofer profesional (4 Días / 3 Noches)"
+    },
+    {
+      "icono": "FaUserTie",
+      "titulo": "Guía Especializado",
+      "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
+    },
+    {
+      "icono": "FaUsers",
+      "titulo": "Grupo Reducido",
+      "detalle": "Grupos de máximo 15 personas para una experiencia más cómoda y fluida"
+    }
+  ]
 }

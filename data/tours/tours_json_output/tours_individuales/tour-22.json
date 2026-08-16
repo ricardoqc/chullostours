@@ -1,0 +1,41 @@
+{
+  "id": "tour-22",
+  "nombre": "Oasis Huacachina + Islas Ballestas (Ica y Paracas desde Lima)",
+  "categoria": "Lima / Ica",
+  "duracion": "Full Day (04:30 am - 22:00 pm)",
+  "precio_usd": 120,
+  "horarios_disponibles": [
+    "04:30 am (recojo)"
+  ],
+  "punto_inicio": "Recojo del hotel en Lima (Miraflores, San Isidro, Barranco)",
+  "itinerario": [
+    "04:30 am Recojo del hotel en Lima y viaje por la Carretera Panamericana Sur hacia Paracas",
+    "Llegada a Paracas y excursión en deslizador acuático hacia las Islas Ballestas (avistamiento de lobos marinos, pingüinos de Humboldt y aves guaneras, vista al Candelabro)",
+    "Degustación de dulces artesanales en la Bahía de Paracas",
+    "Traslado a la ciudad de Ica para el Almuerzo",
+    "Visita a una Bodega Vitivinícola tradicional con degustación de Vinos y Piscos peruanos",
+    "Visita al Oasis de la Huacachina",
+    "Paseo de adrenalina en Carros Areneros (Tubulares / Buggies) y práctica de Sandboarding sobre las dunas del desierto",
+    "Parada en Chincha para descanso",
+    "Retorno a la ciudad de Lima (llegada 22:00 pm aprox.)"
+  ],
+  "incluye": [
+    "Guía Profesional",
+    "Transporte Turístico ida y vuelta desde Lima",
+    "Tours en Paracas: Deslizador turistico a Islas Ballestas",
+    "Tours en Ica: Carros Areneros (Buggies) + Tablas de Sandboarding en Huacachina",
+    "Visita a Bodega Vitivinícola + Degustación de Pisco/Vino",
+    "Almuerzo",
+    "Impuestos turísticos y tickets de ingreso"
+  ],
+  "no_incluye": [
+    "Desayuno (parada técnica en ruta)",
+    "Gastos personales no mencionados"
+  ],
+  "recomendaciones": [
+    "Llevar ropa ligera para el calor del desierto y casaca para el viento marino",
+    "Llevar lentes de sol ajustados (para la arena) y pañuelo/bandana",
+    "Bloqueador solar abundante y gorra"
+  ],
+  "pagina_catalogo": 35
+}

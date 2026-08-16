@@ -300,5 +300,37 @@
         ]
       }
     ]
-  }
+  },
+  "tour_highlights": [
+    {
+      "icono": "FaUtensils",
+      "titulo": "Alimentación",
+      "detalle": "Desayuno y almuerzo buffet regional incluidos en el recorrido"
+    },
+    {
+      "icono": "FaTrain",
+      "titulo": "Tren Turístico",
+      "detalle": "Boleto ida y vuelta PeruRail Expedition / Inca Rail Voyager panorámico"
+    },
+    {
+      "icono": "FaMapMarkerAlt",
+      "titulo": "Entrada Machu Picchu",
+      "detalle": "Boleto de ingreso oficial a la Llaqta Inca de Machu Picchu 100% garantizado"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Bus Consettur",
+      "detalle": "Boleto de bus ecológico ida y vuelta entre Aguas Calientes y Machu Picchu"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Transporte Turístico",
+      "detalle": "Traslados en unidad climatizada con chofer profesional (2 Días / 1 Noche)"
+    },
+    {
+      "icono": "FaUserTie",
+      "titulo": "Guía Especializado",
+      "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
+    }
+  ]
 }

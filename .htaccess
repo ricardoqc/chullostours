@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Redirecciones SEO permanentes
+  Redirect 301 /destino /destinos
+  Redirect 301 /machu-picchu-2025 /machu-picchu-2026
+  Redirect 301 /my-account /mi-cuenta
+  Redirect 301 /wishlist-3 /wishlist
+  Redirect 301 /shop /tours
+  Redirect 301 /destinos-disponibles /destinos
+  Redirect 301 /resultado-de-busqueda-viajes /resultados-de-busqueda
+
+  # Manejo de rutas estaticas / URLs limpias en Apache (cPanel/Hostinger)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+</IfModule>

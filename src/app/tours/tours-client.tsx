@@ -8,6 +8,7 @@ import {
   deriveExperienceTags,
   parseDurationDays,
   estimateTourPrice,
+  getTourDestination,
 } from "@/lib/tour-filters";
 import { ToursFilterBar } from "@/components/tours/ToursFilterBar";
 import { BudgetLevel } from "@/components/tours/BudgetSelector";
@@ -18,9 +19,24 @@ interface ToursClientProps {
 
 export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedDestination, setSelectedDestination] = useState("all");
   const [selectedProfiles, setSelectedProfiles] = useState<string[]>([]);
-  const [dayRange, setDayRange] = useState<[number, number]>([1, 6]);
+  const [dayRange, setDayRange] = useState<[number, number]>([1, 30]);
   const [budgetLevel, setBudgetLevel] = useState<BudgetLevel>("all");
+
+  // Read URL query parameters from HeroSearch if present
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const destParam = params.get("destino");
+      const tipoParam = params.get("tipo");
+      const qParam = params.get("q");
+
+      if (destParam) setSelectedDestination(destParam);
+      if (tipoParam) setSelectedProfiles([tipoParam]);
+      if (qParam) setSearchQuery(qParam);
+    }
+  }, []);
 
   const handleToggleProfile = (id: string) => {
     setSelectedProfiles((prev) =>
@@ -30,27 +46,37 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
 
   const handleResetAll = () => {
     setSearchQuery("");
+    setSelectedDestination("all");
     setSelectedProfiles([]);
-    setDayRange([1, 6]);
+    setDayRange([1, 30]);
     setBudgetLevel("all");
   };
 
   // Filter tours dynamically with multi-dimensional criteria
   const filteredTours = useMemo(() => {
     return initialTours.filter((tour) => {
-      // 1. Search Query
+      // 1. Destination Filter
+      if (selectedDestination !== "all") {
+        const dest = getTourDestination(tour);
+        if (dest !== selectedDestination) {
+          return false;
+        }
+      }
+
+      // 2. Search Query
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchesTitle = tour.titulo.toLowerCase().includes(q);
         const matchesLocation = tour.atributos?.ubicacion?.toLowerCase().includes(q);
         const matchesResumen = tour.resumen?.toLowerCase().includes(q);
         const matchesSlug = tour.slug.toLowerCase().includes(q);
-        if (!matchesTitle && !matchesLocation && !matchesResumen && !matchesSlug) {
+        const matchesCat = tour.categoria?.toLowerCase().includes(q);
+        if (!matchesTitle && !matchesLocation && !matchesResumen && !matchesSlug && !matchesCat) {
           return false;
         }
       }
 
-      // 2. Traveler Profiles (OR logic among selected tags)
+      // 3. Traveler Profiles (OR logic among selected tags)
       if (selectedProfiles.length > 0) {
         const tourTags = deriveExperienceTags(tour);
         const hasMatchingProfile = selectedProfiles.some((profileId) =>
@@ -59,13 +85,13 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
         if (!hasMatchingProfile) return false;
       }
 
-      // 3. Duration Days Range
+      // 4. Duration Days Range
       const tourDays = parseDurationDays(tour.atributos?.duracion);
       if (tourDays < dayRange[0] || tourDays > dayRange[1]) {
         return false;
       }
 
-      // 4. Budget Level
+      // 5. Budget Level
       if (budgetLevel !== "all") {
         const estimatedPrice = estimateTourPrice(tour);
         if (budgetLevel === "budget" && estimatedPrice >= 100) return false;
@@ -76,7 +102,7 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
 
       return true;
     });
-  }, [initialTours, searchQuery, selectedProfiles, dayRange, budgetLevel]);
+  }, [initialTours, searchQuery, selectedDestination, selectedProfiles, dayRange, budgetLevel]);
 
   // Adapt Tour model to TourCard props
   const adaptTourToCardProps = (tour: Tour): TourProps => {
@@ -114,13 +140,13 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
         />
         <div className="relative max-w-4xl mx-auto flex flex-col items-center gap-3 z-10">
           <span className="text-[#ffc000] text-xs font-extrabold uppercase tracking-widest bg-white/10 backdrop-blur-md px-3.5 py-1 rounded-full border border-white/20">
-            Catálogo 2026
+            Catálogo Perú 2026
           </span>
           <h1 className="text-3xl md:text-5xl font-black text-white font-title tracking-tight">
-            Descubre Cusco a Tu Medida
+            Descubre Perú a Tu Medida
           </h1>
           <p className="text-slate-200 text-sm md:text-base max-w-xl font-normal leading-relaxed">
-            Filtra por tu estilo de viaje, duración o presupuesto y encuentra la aventura perfecta en el corazón del Imperio Inca.
+            Filtra por destino (Cusco, Puno, Lima), estilo de viaje, duración o presupuesto y encuentra la aventura perfecta.
           </p>
         </div>
       </div>
@@ -131,6 +157,8 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
         <ToursFilterBar
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
+          selectedDestination={selectedDestination}
+          onDestinationChange={setSelectedDestination}
           selectedProfiles={selectedProfiles}
           onToggleProfile={handleToggleProfile}
           dayRange={dayRange}
@@ -172,3 +200,4 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
     </div>
   );
 };
+

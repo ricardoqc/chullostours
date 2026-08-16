@@ -1,0 +1,35 @@
+{
+  "id": "tour-20",
+  "nombre": "Tour Puno 2 Días / 1 Noche (Uros, Amantaní y Taquile - Turismo Vivencial)",
+  "categoria": "Puno",
+  "duracion": "2 Días / 1 Noche (Vivencial)",
+  "precio_usd": 200,
+  "horarios_disponibles": [
+    "21:30 pm (Noche anterior viaje en bus Cusco - Puno)"
+  ],
+  "punto_inicio": "Hotel en Cusco",
+  "itinerario": [
+    "Día 1: 05:00 am llegada a Puno y recojo en terminal. Desayuno en Casa Jumbo (06:00 am). 07:45 am embarque en muelle hacia Islas Flotantes de los Uros. Navegación hacia la Isla de Amantaní (11:30 am). Recepción y bienvenida por familias locales. Almuerzo campestre con la familia anfitriona. 16:00 hrs Ascenso al santuario Pacha Tata para la puesta de sol en el Titicaca. 18:00 hrs Cena tradicional. 19:00 hrs Fiesta con vestimenta típica y peña cultural. Pernocte en casa de familia local en Amantaní.",
+    "Día 2: 07:00 am Desayuno y despedida en Amantaní. 08:00 am Navegación a la Isla de Taquile. 09:30 am Caminata a la plaza principal de Taquile y exposición de textiles. 11:30 am Almuerzo campestre. 13:00 pm Retorno en bote a Puno (llegada 16:30 pm aprox.). 21:30 pm Bus Puno - Cusco (Llegada a Cusco 05:00 am)."
+  ],
+  "incluye": [
+    "Ticket de Bus Cama Cusco - Puno - Cusco",
+    "Navegación completa en bote turístico por el Lago Titicaca",
+    "Guía Profesional",
+    "1 Noche de Hospedaje en casa de familia en Isla Amantaní",
+    "Alimentación: 2 Desayunos, 2 Almuerzos tradicionales, 1 Cena",
+    "Show de peña y préstamo de traje típico",
+    "Boleto de Ingreso a Uros, Amantaní y Taquile"
+  ],
+  "no_incluye": [
+    "Gastos personales",
+    "Paseo en balsa de totora en Uros",
+    "Alimentos no mencionados"
+  ],
+  "recomendaciones": [
+    "Llevar pequeños presentes o útiles para los niños de la familia anfitriona (opcional pero muy apreciado)",
+    "Llevar ropa abrigadora y de cambio cómodo",
+    "Batería portátil (Powerbank)"
+  ],
+  "pagina_catalogo": 33
+}

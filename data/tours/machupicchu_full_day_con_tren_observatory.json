@@ -256,5 +256,32 @@
         }
       }
     ]
-  }
+  },
+  "tour_highlights": [
+    {
+      "icono": "FaTrain",
+      "titulo": "Tren Observatory",
+      "detalle": "Boleto ida y vuelta Inca Rail 360° / Observatory con música andina en vivo"
+    },
+    {
+      "icono": "FaMapMarkerAlt",
+      "titulo": "Entradas Incluidas",
+      "detalle": "Ingresos oficiales a los atractivos turísticos programados en la ruta"
+    },
+    {
+      "icono": "FaBus",
+      "titulo": "Transporte Turístico",
+      "detalle": "Traslados en unidad climatizada con chofer profesional (14 Horas (Full Day))"
+    },
+    {
+      "icono": "FaUserTie",
+      "titulo": "Guía Especializado",
+      "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
+    },
+    {
+      "icono": "FaUsers",
+      "titulo": "Grupo Reducido",
+      "detalle": "Grupos de máximo 10 personas para una experiencia más cómoda y fluida"
+    }
+  ]
 }

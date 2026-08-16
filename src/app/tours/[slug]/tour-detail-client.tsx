@@ -35,6 +35,8 @@ import { TourVariantsSwitcher } from "@/components/tours/TourVariantsSwitcher";
 import { TourPricingDetails } from "@/components/tours/TourPricingDetails";
 import { TourComparisonTable } from "@/components/tours/TourComparisonTable";
 import { TourPuntosDeInteres } from "@/components/tours/TourPuntosDeInteres";
+import { TourQuickFacts } from "@/components/tours/TourQuickFacts";
+import { TourValueProposition } from "@/components/tours/TourValueProposition";
 
 interface TourDetailClientProps {
   tour: Tour;
@@ -94,25 +96,13 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
                 )}
               </div>
 
-              {/* Propuesta de Valor (Por qué elegir este tour) */}
-              {tour.propuesta_de_valor && tour.propuesta_de_valor.length > 0 && (
-                <div className="bg-gradient-to-r from-[#6b0014]/5 via-amber-500/5 to-transparent p-5 md:p-6 rounded-3xl border border-[#6b0014]/15 flex flex-col gap-4">
-                  <h3 className="text-base md:text-lg font-black text-[#6b0014] flex items-center gap-2 font-title">
-                    <FaLightbulb className="w-4 h-4 text-[#6b0014]" />
-                    <span>¿Por qué elegir esta experiencia con Chullos Tours?</span>
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {tour.propuesta_de_valor.map((pv, idx) => (
-                      <div key={idx} className="flex items-start gap-2.5 text-xs md:text-sm font-semibold text-slate-800 bg-white/70 p-3 rounded-2xl border border-[#6b0014]/10">
-                        <FaCheck className="w-3.5 h-3.5 text-[#6b0014] mt-0.5 shrink-0" />
-                        <span>{pv}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+              {/* Propuesta de Valor (Por qué elegir esta experiencia con nosotros) */}
+              <TourValueProposition
+                highlights={tour.tour_highlights}
+                items={tour.propuesta_de_valor}
+              />
 
-              {/* Highlights Cards */}
+              {/* Lo más destacado del recorrido */}
               {cleanedHighlights.length > 0 && (
                 <div className="flex flex-col gap-4">
                   <h3 className="text-lg font-extrabold text-slate-900 flex items-center gap-2 font-title">
@@ -141,6 +131,9 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
               )}
             </section>
 
+            {/* GEO AI Optimization Quick Facts Box */}
+            <TourQuickFacts geoData={tour.geo_ai_optimization} />
+
             {/* Puntos de Interés / Atractivos Visitados */}
             {tour.puntos_de_interes && tour.puntos_de_interes.length > 0 && (
               <TourPuntosDeInteres puntos={tour.puntos_de_interes} />
@@ -163,6 +156,7 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
               basePrice={basePrice}
               duration={tour.atributos?.duracion || "Full Day"}
               isMultiDay={!isFullDay}
+              tourTitle={tour.titulo}
             />
 
             {/* Section 3: Incluye & No Incluye */}
@@ -289,6 +283,9 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
               tourTitle={tour.titulo}
               basePrice={basePrice}
               duration={tour.atributos?.duracion || "Full Day"}
+              horarios={tour.horarios_disponibles}
+              puntoInicio={tour.punto_inicio}
+              categoria={tour.categoria}
             />
           </aside>
         </div>

@@ -1,0 +1,36 @@
+{
+  "id": "tour-09",
+  "nombre": "Cusco Místico (Morada de los Dioses Apukunyana)",
+  "categoria": "Cusco / Místico & Experiencial",
+  "duracion": "Full Day (08:30 am - 19:00 pm)",
+  "precio_usd": 50,
+  "horarios_disponibles": [
+    "08:30 am - 09:00 am (recojo en hotel)"
+  ],
+  "punto_inicio": "Recojo del hotel en Cusco",
+  "itinerario": [
+    "Recojo del hotel en Cusco entre 08:30 am y 09:00 am",
+    "Visita a la Morada de los Dioses (Apukunyana - esculturas gigantes talladas en piedra)",
+    "Visita al Humedal y Parque Temático Pokémon",
+    "Recorrido por el Bosque de los Ents",
+    "Visita al Valle de los Duendes",
+    "Retorno a Cusco y fin del tour a las 19:00 pm aprox. en la Plaza Regocijo"
+  ],
+  "incluye": [
+    "Guía profesional",
+    "Transporte turístico",
+    "Asistencia permanente",
+    "Boleto de Ingresos incluidos a los atractivos"
+  ],
+  "no_incluye": [
+    "Gastos personales",
+    "Alimentos y bebidas"
+  ],
+  "recomendaciones": [
+    "Llevar calzado cómodo para caminatas cortas",
+    "Llevar cámara fotográfica con suficiente batería",
+    "Llevar casaca abrigadora para la tarde",
+    "Llevar protector solar y sombrero"
+  ],
+  "pagina_catalogo": 12
+}

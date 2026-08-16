@@ -7,6 +7,15 @@ interface CategoryPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateStaticParams() {
+  return [
+    { slug: "guias" },
+    { slug: "consejos" },
+    { slug: "destinos" },
+    { slug: "tours" },
+  ];
+}
+
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { slug } = await params;
   const formattedCategory = slug.replace(/-/g, " ");

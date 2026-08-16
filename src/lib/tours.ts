@@ -9,10 +9,12 @@ export function getAllTours(): Tour[] {
   const tours: Tour[] = [];
 
   for (const fileName of fileNames) {
-    if (fileName.endsWith('.json') && fileName !== 'rutas_migracion.json') {
-      const filePath = path.join(dataDirectory, fileName);
-      const fileContents = fs.readFileSync(filePath, 'utf-8');
+    const filePath = path.join(dataDirectory, fileName);
+    const stat = fs.statSync(filePath);
+
+    if (stat.isFile() && fileName.endsWith('.json') && fileName !== 'rutas_migracion.json') {
       try {
+        const fileContents = fs.readFileSync(filePath, 'utf-8');
         const tourData: Tour = JSON.parse(fileContents);
         tours.push(tourData);
       } catch (err) {
@@ -27,10 +29,12 @@ export function getAllTours(): Tour[] {
 export function getTourBySlug(slug: string): Tour | null {
   const fileNames = fs.readdirSync(dataDirectory);
   for (const fileName of fileNames) {
-    if (fileName.endsWith('.json') && fileName !== 'rutas_migracion.json') {
-      const filePath = path.join(dataDirectory, fileName);
-      const fileContents = fs.readFileSync(filePath, 'utf-8');
+    const filePath = path.join(dataDirectory, fileName);
+    const stat = fs.statSync(filePath);
+
+    if (stat.isFile() && fileName.endsWith('.json') && fileName !== 'rutas_migracion.json') {
       try {
+        const fileContents = fs.readFileSync(filePath, 'utf-8');
         const tourData: Tour = JSON.parse(fileContents);
         if (tourData.slug === slug || fileName === `${slug.replace(/-/g, '_')}.json`) {
           return tourData;
