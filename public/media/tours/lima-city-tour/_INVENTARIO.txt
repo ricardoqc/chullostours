@@ -1,0 +1,10 @@
+TOUR: Lima City Tour – Centro Histórico y Circuito Mágico del Agua
+Slug JSON: lima-city-tour
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/lima-city-tour/01.jpg

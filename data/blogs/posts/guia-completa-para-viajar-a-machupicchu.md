@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-08-57.jpg"
+featured_image_alt: "Ciudadela inca de Machu Picchu con terrazas agrícolas andinas y cielo despejado"
+featured_image_caption: "Guía definitiva con circuitos, horarios, trenes y recomendaciones de aclimatación."
+featured_image_credito: "Chullos Tours"
 id: 1152
 title: "Machupicchu Guía Completa y Detallada para Viajar en 2026"
 slug: "guia-completa-para-viajar-a-machupicchu"

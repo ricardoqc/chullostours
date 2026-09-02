@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-08-57-1.jpg"
+featured_image_alt: "Plaza Sagrada, Templo de las Tres Ventanas e Intihuatana en Machu Picchu"
+featured_image_caption: "Los 7 atractivos más importantes que debes conocer durante tu visita a la ciudadela."
+featured_image_credito: "Chullos Tours"
 id: 1160
 title: "¿Qué Ver en Machu Picchu? Lugares Imperdibles para Visita"
 slug: "que-ver-en-machu-picchu-lugares-imperdibles-para-visita"

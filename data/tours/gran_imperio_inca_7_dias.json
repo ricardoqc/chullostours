@@ -1,7 +1,7 @@
 {
   "id": "gran-imperio-inca-7-dias",
   "precio_usd": 475,
-  "precio": 1750,
+  "precio": 475,
   "horarios_disponibles": [
     "Coordinación de llegada según itinerario de vuelo",
     "City Tour: 09:00 AM o 13:00 PM",
@@ -81,20 +81,28 @@
   ],
   "galeria": [
     {
-      "src": "/tours/cusco-magico-5-dias/05.avif",
-      "alt": "Paquete Gran Imperio Inca 7 Días / 6 Noches - Machu Picchu"
+      "src": "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg",
+      "alt": "Santuario Histórico de Machu Picchu visto desde la terraza ceremonial alta",
+      "caption": "El clímax del paquete de 7 días: amanecer inolvidable en la maravilla inca.",
+      "credito": "Chullos Tours / Archivo Oficial"
     },
     {
-      "src": "/tours/cusco-magico-5-dias/06.avif",
-      "alt": "Paquete Gran Imperio Inca 7 Días / 6 Noches - Valle Sagrado"
+      "src": "/media/tours/city-tour-cusco/05.avif",
+      "alt": "Templo del Qorikancha en el centro histórico de Cusco",
+      "caption": "Día 1: Recorrido cultural por los templos y fortalezas de la capital incaica.",
+      "credito": "Chullos Tours"
     },
     {
-      "src": "/tours/cusco-magico-5-dias/07.avif",
-      "alt": "Paquete Gran Imperio Inca 7 Días / 6 Noches - Vinicunca"
+      "src": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif",
+      "alt": "Fortaleza militar y andenes monumentales de Ollantaytambo en el Valle Sagrado",
+      "caption": "Día 2: Inmersión arqueológica en el Valle Sagrado de los Incas.",
+      "credito": "Chullos Tours"
     },
     {
-      "src": "/tours/cusco-magico-5-dias/08.avif",
-      "alt": "Paquete Gran Imperio Inca 7 Días / 6 Noches - Humantay"
+      "src": "/media/tours/tour-lago-titicaca-2-dias/05.avif",
+      "alt": "Islas flotantes de totora de los Uros en el Lago Titicaca Puno",
+      "caption": "Día 5: Navegación por el lago navegable más alto del mundo.",
+      "credito": "Chullos Tours"
     }
   ],
   "itinerario": [
@@ -281,6 +289,30 @@
     {
       "pregunta": "¿Aplican descuentos para menores de edad?",
       "respuesta": "Sí, niños de 3 a 11 años tienen un descuento de S/. 100.00 y jóvenes de 12 a 17 años tienen un descuento de S/. 50.00. Los niños menores de 3 años viajan gratis."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Paquete Gran Imperio Inca 7 Días / 6 Noches?",
+      "respuesta": "El precio desde USD $475 por persona contempla: Recepción en el Aeropuerto de Cusco y traslados in/out; 5 Noches de Alojamiento en Cusco (Hotel Aury / Panaka / Intiwatana / Rojas Inn / San Pedro Plaza); 1 Noche de Alojamiento en Aguas Calientes. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Moderada - Alta). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 5,020 m.s.n.m.. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
+    },
+    {
+      "pregunta": "¿Puedo cancelar o cambiar la fecha?",
+      "respuesta": "Sí, sujeto a políticas del servicio (trenes, entradas y hoteles). Avísanos lo antes posible por WhatsApp o correo; te orientaremos según la fecha y el tipo de experiencia."
     }
   ],
   "seo": {
@@ -295,7 +327,7 @@
       "og_description": "Circuito completo de 7 días por Cusco, Valle Sagrado VIP, pernocte en Aguas Calientes, Machu Picchu, Vinicunca, Humantay y Cuatrimotos.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/gran-imperio-inca-7-dias/",
-      "og_image": "/tours/cusco-magico-5-dias/05.avif",
+      "og_image": "/media/tours/cusco-magico-5-dias/05.avif",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -303,7 +335,7 @@
       "card": "summary_large_image",
       "title": "Paquete Gran Imperio Inca 7 Días / 6 Noches",
       "description": "Explora Machu Picchu, Valle Sagrado, Vinicunca, Humantay y Cuatrimotos en 7 días.",
-      "image": "/tours/cusco-magico-5-dias/05.avif"
+      "image": "/media/tours/cusco-magico-5-dias/05.avif"
     }
   },
   "geo_ai_optimization": {
@@ -356,8 +388,8 @@
         "description": "Itinerario integral de 7 días recorriendo Cusco, Valle Sagrado VIP, Machu Picchu, Montaña de 7 Colores, Laguna Humantay y Morada de los Dioses en Cuatrimotos.",
         "url": "https://chullostours.com/tours/gran-imperio-inca-7-dias/",
         "image": [
-          "/tours/cusco-magico-5-dias/05.avif",
-          "/tours/cusco-magico-5-dias/06.avif"
+          "/media/tours/cusco-magico-5-dias/05.avif",
+          "/media/tours/cusco-magico-5-dias/06.avif"
         ],
         "brand": {
           "@type": "Brand",
@@ -366,12 +398,247 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "475.00",
+          "price": "475",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/gran-imperio-inca-7-dias/"
         }
       }
     ]
-  }
+  },
+  "opciones_hotel": [
+    {
+      "id": "solo_tours",
+      "nombre": "Solo Tours (Sin Estadía)",
+      "categoria": "Sin Alojamiento",
+      "precio_usd": 395,
+      "precio_soles": 1481,
+      "precio_etiqueta": "S/ 1,450.00 / persona",
+      "descripcion": "Todos los tours y actividades del itinerario sin incluir noches de alojamiento. Ideal si ya cuentas con hospedaje propio en Cusco.",
+      "hoteles": [],
+      "precio_pen": 1481
+    },
+    {
+      "id": "hotel_aury",
+      "nombre": "Tours + 6 Noches Hotel Aury",
+      "categoria": "Básico",
+      "precio_usd": 475,
+      "precio_soles": 1781,
+      "precio_etiqueta": "S/ 1,750.00 / persona",
+      "descripcion": "Paquete completo con 6 noches de alojamiento en el Hotel Aury en Cusco. Categoría básica con todos los servicios esenciales.",
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Aury",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "https://images.unsplash.com/photo-1555854877-bab0ef45b691?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "imagenes_referenciales": true
+        }
+      ],
+      "precio_pen": 1781
+    },
+    {
+      "id": "hotel_panaka",
+      "nombre": "Tours + 6 Noches Hotel Panaka",
+      "categoria": "Intermedio",
+      "precio_usd": 510,
+      "precio_soles": 1913,
+      "precio_etiqueta": "S/ 1,870.00 / persona",
+      "descripcion": "Paquete completo con 6 noches en el Hotel Panaka. Categoría intermedia con excelente relación calidad-precio.",
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Panaka",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "imagenes_referenciales": true
+        }
+      ],
+      "precio_pen": 1913
+    },
+    {
+      "id": "hotel_intiwatana",
+      "nombre": "Tours + 6 Noches Hotel Intiwatana",
+      "categoria": "Boutique",
+      "precio_usd": 560,
+      "precio_soles": 2100,
+      "precio_etiqueta": "S/ 2,050.00 / persona",
+      "descripcion": "Paquete completo con 6 noches en el Hotel Intiwatana, uno de los hoteles boutique más populares de Cusco.",
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Intiwatana",
+          "direccion": "Calle Afligidos, Cusco",
+          "sitio_web": "https://www.intiwatana.pe/#/home",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/cusco-fascinante-4-dias/02.jpg",
+            "/media/tours/cusco-fascinante-4-dias/03.jpg",
+            "/media/tours/cusco-magico-5-dias/04.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 2100
+    },
+    {
+      "id": "hotel_rojas_inn",
+      "nombre": "Tours + 6 Noches Hotel Rojas Inn",
+      "categoria": "3 Estrellas",
+      "precio_usd": 610,
+      "precio_soles": 2288,
+      "precio_etiqueta": "S/ 2,240.00 / persona",
+      "descripcion": "Paquete completo con 6 noches en el Hotel Rojas Inn, una de las opciones de mayor confort y calidad en Cusco.",
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Rojas Inn",
+          "direccion": "Calle Tigre o Santa, Cusco",
+          "sitio_web": "https://hotelrojasinn.com/room/standard-double-room/",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/lo-mejor-de-cusco-6-dias/02.jpg",
+            "/media/tours/lo-mejor-de-cusco-6-dias/03.jpg",
+            "/media/tours/descubre-cusco-3-dias/02.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 2288
+    },
+    {
+      "id": "hotel_san_pedro_plaza",
+      "nombre": "Tours + 6 Noches Hotel San Pedro Plaza",
+      "categoria": "Premium",
+      "precio_usd": 640,
+      "precio_soles": 2400,
+      "precio_etiqueta": "S/ 2,350.00 / persona",
+      "descripcion": "La opción más completa del paquete, con 6 noches en el Hotel San Pedro Plaza, ubicación privilegiada y servicios premium en Cusco.",
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel San Pedro Plaza",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "https://images.unsplash.com/photo-1618773928125-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "imagenes_referenciales": true
+        }
+      ],
+      "precio_pen": 2400
+    }
+  ],
+  "descuentos": {
+    "nota": "Precio por persona en habitación doble o matrimonial. Mínimo 2 personas.",
+    "menores": [
+      {
+        "rango_edad": "Menores de 3 años",
+        "descuento_soles": 0,
+        "nota": "No pagan"
+      },
+      {
+        "rango_edad": "3 a 11 años",
+        "descuento_soles": 100,
+        "nota": "S/ 100.00 de descuento"
+      },
+      {
+        "rango_edad": "12 a 17 años",
+        "descuento_soles": 50,
+        "nota": "S/ 50.00 de descuento"
+      }
+    ]
+  },
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad",
+    "machu-picchu",
+    "valle-sagrado"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 580,
+    "online_usd": 532,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [
+    {
+      "id": "huayna-picchu",
+      "label": "Entrada Huayna Picchu",
+      "precio_usd": 20,
+      "precio_soles": 75,
+      "enabled": true,
+      "descripcion": "Ascenso opcional a la montaña Huayna Picchu (cupos limitados)."
+    }
+  ],
+  "tarifas_personas": [
+    {
+      "id": "menor-1",
+      "label": "Menores de 3 años",
+      "rango_edad": "Menores de 3 años",
+      "descuento_soles": 0,
+      "nota": "No pagan",
+      "tipo": "free"
+    },
+    {
+      "id": "menor-2",
+      "label": "3 a 11 años",
+      "rango_edad": "3 a 11 años",
+      "descuento_soles": 100,
+      "nota": "S/ 100.00 de descuento",
+      "tipo": "discount"
+    },
+    {
+      "id": "menor-3",
+      "label": "12 a 17 años",
+      "rango_edad": "12 a 17 años",
+      "descuento_soles": 50,
+      "nota": "S/ 50.00 de descuento",
+      "tipo": "discount"
+    }
+  ],
+  "precio_pen": 1781
 }

@@ -1,0 +1,5 @@
+FOTOS DE TOURS — una carpeta por slug
+Total tours: 33
+
+Cada subcarpeta = slug del JSON en data/tours/
+Ver _INVENTARIO.txt dentro de cada tour.

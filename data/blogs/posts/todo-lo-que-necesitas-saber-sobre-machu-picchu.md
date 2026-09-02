@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-09-33-1-1.jpg"
+featured_image_alt: "Vista panorámica del complejo arqueológico de Machu Picchu y cañón del Urubamba"
+featured_image_caption: "Consejos esenciales, regulaciones de equipaje y normativas de conservación en el parque."
+featured_image_credito: "Chullos Tours"
 id: 1148
 title: "Todo lo que Necesitas Saber sobre Machu Picchu"
 slug: "todo-lo-que-necesitas-saber-sobre-machu-picchu"

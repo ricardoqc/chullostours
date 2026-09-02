@@ -1,0 +1,9 @@
+HOTEL: Auri Boutique Hotel
+Ciudad: Cusco
+Convención:
+  01-fachada.jpg
+  02-habitacion.jpg
+  03-lobby.jpg      (opcional)
+JSON tour → opciones_hotel[].hoteles[].imagenes:
+  ["/hoteles/auri-boutique-hotel/01-fachada.jpg", "/hoteles/auri-boutique-hotel/02-habitacion.jpg"]
+  imagenes_referenciales: false

@@ -1,23 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaCheckCircle,
   FaTimesCircle,
   FaChevronDown,
   FaChevronUp,
   FaInfoCircle,
-  FaCompass,
-  FaMapMarkerAlt,
-  FaCamera,
   FaCheck,
-  FaLightbulb,
-  FaHandshake,
   FaQuestionCircle,
 } from "react-icons/fa";
+import { useSearchParams } from "next/navigation";
 import { Tour } from "@/types/tour";
 import {
-  getValidGalleryImages,
+  getGalleryItems,
   parseDurationDays,
   estimateTourPrice,
   parseMultiDayItinerary,
@@ -35,18 +31,40 @@ import { TourVariantsSwitcher } from "@/components/tours/TourVariantsSwitcher";
 import { TourPricingDetails } from "@/components/tours/TourPricingDetails";
 import { TourComparisonTable } from "@/components/tours/TourComparisonTable";
 import { TourPuntosDeInteres } from "@/components/tours/TourPuntosDeInteres";
-import { TourQuickFacts } from "@/components/tours/TourQuickFacts";
 import { TourValueProposition } from "@/components/tours/TourValueProposition";
+import { HotelSelector } from "@/components/tours/HotelSelector";
+import { EntradasIncluidasBanner } from "@/components/tours/EntradasIncluidasBanner";
+import { TourItineraryMap } from "@/components/tours/map/TourItineraryMap";
+import { TourReservationProvider } from "@/components/tours/TourReservationProvider";
+import { useDisplayCurrency } from "@/components/layout/MarketProvider";
+import { resolveTourMapStops } from "@/lib/places";
+import type { TourImagen } from "@/types/tour";
 
 interface TourDetailClientProps {
   tour: Tour;
   allTours?: Tour[];
+  galleryItems?: TourImagen[];
 }
 
-export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTours = [] }) => {
+export const TourDetailClient: React.FC<TourDetailClientProps> = ({
+  tour,
+  allTours = [],
+  galleryItems: galleryItemsProp,
+}) => {
+  const { currency } = useDisplayCurrency();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [showReservedBanner, setShowReservedBanner] = useState(false);
+  const searchParams = useSearchParams();
 
-  const galleryImages = getValidGalleryImages(tour);
+  useEffect(() => {
+    const fromQuery = searchParams.get("reservado") === "1";
+    const fromSession =
+      typeof window !== "undefined" &&
+      sessionStorage.getItem(`chullos_reserved_${tour.slug}`) === "1";
+    setShowReservedBanner(fromQuery || fromSession);
+  }, [searchParams, tour.slug]);
+
+  const galleryItems = galleryItemsProp ?? getGalleryItems(tour);
   const durationDays = parseDurationDays(tour.atributos?.duracion);
   const basePrice = estimateTourPrice(tour);
   const cleanedHighlights = cleanHighlights(tour.destacados_highlights);
@@ -56,29 +74,41 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
   const isFullDay = durationDays === 1;
   const hasFaqs = !!(tour.faqs && tour.faqs.length > 0);
   const hasRecom = cleanedRecs.length > 0;
-
-  const highlightIcons = [FaCompass, FaMapMarkerAlt, FaCamera, FaHandshake, FaLightbulb, FaCheckCircle];
+  const hasHotels = !!(tour.opciones_hotel && tour.opciones_hotel.length > 0);
+  const hasMapData =
+    !!tour.mapa?.destinos?.length || !!tour.destino_ids?.length;
+  const hasMap = hasMapData && resolveTourMapStops(tour).length > 0;
 
   return (
-    <div className="flex flex-col gap-0 pb-20 bg-white">
+    <TourReservationProvider tour={tour} defaultSelection={{ currency }}>
+    <div className="flex flex-col gap-0 pb-28 sm:pb-24 bg-white">
+      {showReservedBanner && (
+        <div className="bg-emerald-600 text-white text-center text-xs sm:text-sm font-bold py-2.5 px-4">
+          Ya reservaste esta experiencia — un asesor te contactará pronto.
+        </div>
+      )}
       {/* 1. Contained Bento Grid Hero Header (Crisp & High Resolution) */}
       <TourHero
         tour={tour}
-        galleryImages={galleryImages}
+        galleryItems={galleryItems}
         rating={4.9}
         reviewCount={48}
       />
 
+      <div className="max-w-7xl mx-auto px-4 w-full -mt-2 mb-2">
+        <EntradasIncluidasBanner tour={tour} />
+      </div>
+
       {/* 2. Sticky Tab Navigation Bar */}
-      <TourTabNav hasFaqs={hasFaqs} hasRecom={hasRecom} />
+      <TourTabNav hasFaqs={hasFaqs} hasRecom={hasRecom} hasHotels={hasHotels} hasMap={hasMap} />
 
       {/* 3. Main Content Area */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 w-full pt-6 md:pt-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-8 w-full pt-6 md:pt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
           {/* Main Left Column (70%) */}
-          <main className="lg:col-span-2 flex flex-col gap-12">
-            {/* Section 1: Descripción & Highlights */}
-            <section id="descripcion" className="flex flex-col gap-6 scroll-mt-28">
+          <main className="lg:col-span-2 flex flex-col gap-10 sm:gap-12">
+            {/* Section 1: Descripción & Propuesta de Valor */}
+            <section id="descripcion" className="flex flex-col gap-6 scroll-mt-20 md:scroll-mt-24">
               <div className="flex flex-col gap-4">
                 <h2 className="text-2xl md:text-3xl font-black text-slate-900 font-title tracking-tight">
                   La Experiencia
@@ -86,64 +116,25 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
                 
                 {/* Parágrafo de resumen o descripción completa */}
                 {tour.descripcion_completa ? (
-                  <div className="text-slate-700 text-base md:text-lg leading-relaxed font-normal space-y-4 whitespace-pre-line">
+                  <div className="text-slate-700 text-base md:text-lg leading-relaxed font-normal space-y-4 whitespace-pre-line break-words">
                     {tour.descripcion_completa}
                   </div>
                 ) : (
-                  <p className="text-slate-700 text-base md:text-lg leading-relaxed font-normal">
+                  <p className="text-slate-700 text-base md:text-lg leading-relaxed font-normal break-words">
                     {tour.resumen}
                   </p>
                 )}
               </div>
 
-              {/* Propuesta de Valor (Por qué elegir esta experiencia con nosotros) */}
+              {/* Propuesta de Valor y Garantías de Operador Directo */}
               <TourValueProposition
                 highlights={tour.tour_highlights}
                 items={tour.propuesta_de_valor}
               />
-
-              {/* Lo más destacado del recorrido */}
-              {cleanedHighlights.length > 0 && (
-                <div className="flex flex-col gap-4">
-                  <h3 className="text-lg font-extrabold text-slate-900 flex items-center gap-2 font-title">
-                    <FaCompass className="w-4 h-4 text-[#6b0014]" />
-                    <span>Lo más destacado del recorrido</span>
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                    {cleanedHighlights.slice(0, 6).map((h, i) => {
-                      const IconComp = highlightIcons[i % highlightIcons.length];
-                      return (
-                        <div
-                          key={i}
-                          className="flex items-start gap-3 bg-gradient-to-br from-slate-50 to-white p-4 rounded-2xl border-l-4 border-[#6b0014] border-slate-200/80 shadow-2xs hover:shadow-xs transition-shadow"
-                        >
-                          <div className="w-8 h-8 rounded-xl bg-[#6b0014]/10 text-[#6b0014] flex items-center justify-center shrink-0 mt-0.5">
-                            <IconComp className="w-3.5 h-3.5" />
-                          </div>
-                          <span className="text-xs md:text-sm text-slate-800 font-semibold leading-relaxed">
-                            {h}
-                          </span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
             </section>
 
-            {/* GEO AI Optimization Quick Facts Box */}
-            <TourQuickFacts geoData={tour.geo_ai_optimization} />
-
-            {/* Puntos de Interés / Atractivos Visitados */}
-            {tour.puntos_de_interes && tour.puntos_de_interes.length > 0 && (
-              <TourPuntosDeInteres puntos={tour.puntos_de_interes} />
-            )}
-
-            {/* Train Variants Interactive Switcher */}
-            <TourVariantsSwitcher currentSlug={tour.slug} />
-
-            {/* Section 2: Itinerario Detallado */}
-            <section id="itinerario" className="scroll-mt-28">
+            {/* Section 2: Itinerario Detallado (Prioridad Alta en UX) */}
+            <section id="itinerario" className="scroll-mt-20 md:scroll-mt-24">
               {isFullDay ? (
                 <TourDayTimeline highlights={cleanedHighlights} />
               ) : (
@@ -151,26 +142,37 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
               )}
             </section>
 
-            {/* Detailed Pricing Breakdown by Traveler & Hotel Category */}
-            <TourPricingDetails
-              basePrice={basePrice}
-              duration={tour.atributos?.duracion || "Full Day"}
-              isMultiDay={!isFullDay}
-              tourTitle={tour.titulo}
-            />
+            {hasMap && <TourItineraryMap tour={tour} />}
 
-            {/* Section 3: Incluye & No Incluye */}
-            <section id="incluye" className="grid grid-cols-1 sm:grid-cols-2 gap-6 scroll-mt-28">
+            {/* Section 3: Hoteles & Estadía (Paquetes) O Desglose de Tarifas (Tours Diarios) */}
+            {hasHotels ? (
+              <HotelSelector
+                opcionesHotel={tour.opciones_hotel!}
+                descuentos={tour.descuentos}
+                tourTitle={tour.titulo}
+              />
+            ) : (
+              <TourPricingDetails
+                basePrice={basePrice}
+                duration={tour.atributos?.duracion || "Full Day"}
+                isMultiDay={!isFullDay}
+                tourTitle={tour.titulo}
+                descuentos={tour.descuentos}
+              />
+            )}
+
+            {/* Section 4: Incluye & No Incluye */}
+            <section id="incluye" className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 scroll-mt-20 md:scroll-mt-24">
               {/* Incluye */}
               {tour.incluye && tour.incluye.length > 0 && (
-                <div className="bg-emerald-50/70 p-6 rounded-3xl border border-emerald-200/80 flex flex-col gap-4">
-                  <h3 className="font-extrabold text-emerald-950 text-lg flex items-center gap-2 font-title">
-                    <FaCheckCircle className="w-5 h-5 text-emerald-600" />
+                <div className="bg-emerald-50/70 p-4 sm:p-6 rounded-3xl border border-emerald-200/80 flex flex-col gap-3.5 sm:gap-4">
+                  <h3 className="font-extrabold text-emerald-950 text-base sm:text-lg flex items-center gap-2 font-title">
+                    <FaCheckCircle className="w-5 h-5 text-emerald-600 shrink-0" />
                     <span>¿Qué Incluye este Tour?</span>
                   </h3>
-                  <ul className="flex flex-col gap-3 text-xs md:text-sm text-emerald-950">
+                  <ul className="flex flex-col gap-2.5 text-xs sm:text-sm text-emerald-950">
                     {tour.incluye.map((inc, i) => (
-                      <li key={i} className="flex items-start gap-2.5 bg-white/60 p-2.5 rounded-xl border border-emerald-200/50">
+                      <li key={i} className="flex items-start gap-2.5 bg-white/70 p-2.5 sm:p-3 rounded-xl border border-emerald-200/50 shadow-2xs">
                         <FaCheck className="w-3.5 h-3.5 text-emerald-600 mt-0.5 shrink-0" />
                         <span className="font-medium leading-relaxed">{inc}</span>
                       </li>
@@ -181,14 +183,14 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
 
               {/* No Incluye */}
               {tour.no_incluye && tour.no_incluye.length > 0 && (
-                <div className="bg-rose-50/70 p-6 rounded-3xl border border-rose-200/80 flex flex-col gap-4">
-                  <h3 className="font-extrabold text-rose-950 text-lg flex items-center gap-2 font-title">
-                    <FaTimesCircle className="w-5 h-5 text-rose-600" />
+                <div className="bg-rose-50/70 p-4 sm:p-6 rounded-3xl border border-rose-200/80 flex flex-col gap-3.5 sm:gap-4">
+                  <h3 className="font-extrabold text-rose-950 text-base sm:text-lg flex items-center gap-2 font-title">
+                    <FaTimesCircle className="w-5 h-5 text-rose-600 shrink-0" />
                     <span>No Incluye</span>
                   </h3>
-                  <ul className="flex flex-col gap-3 text-xs md:text-sm text-rose-950">
+                  <ul className="flex flex-col gap-2.5 text-xs sm:text-sm text-rose-950">
                     {tour.no_incluye.map((noInc, i) => (
-                      <li key={i} className="flex items-start gap-2.5 bg-white/60 p-2.5 rounded-xl border border-rose-200/50">
+                      <li key={i} className="flex items-start gap-2.5 bg-white/70 p-2.5 sm:p-3 rounded-xl border border-rose-200/50 shadow-2xs">
                         <FaTimesCircle className="w-3.5 h-3.5 text-rose-600 mt-0.5 shrink-0" />
                         <span className="font-medium leading-relaxed">{noInc}</span>
                       </li>
@@ -198,21 +200,26 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
               )}
             </section>
 
-            {/* Interactive Side-by-Side Comparison Matrix */}
-            <TourComparisonTable currentTour={tour} allTours={allTours} />
+            {/* Puntos de Interés / Atractivos Visitados */}
+            {tour.puntos_de_interes && tour.puntos_de_interes.length > 0 && (
+              <TourPuntosDeInteres puntos={tour.puntos_de_interes} />
+            )}
+
+            {/* Train Variants Interactive Switcher */}
+            <TourVariantsSwitcher currentSlug={tour.slug} />
 
             {/* Section 4: Recomendaciones */}
             {hasRecom && (
-              <section id="recomendaciones" className="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-200 flex flex-col gap-4 scroll-mt-28">
-                <h3 className="font-extrabold text-slate-900 text-xl flex items-center gap-2 font-title">
-                  <FaInfoCircle className="w-5 h-5 text-[#ffc000]" />
+              <section id="recomendaciones" className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-3xl border border-slate-200 flex flex-col gap-4 scroll-mt-20 md:scroll-mt-24">
+                <h3 className="font-extrabold text-slate-900 text-lg sm:text-xl flex items-center gap-2 font-title">
+                  <FaInfoCircle className="w-5 h-5 text-[#ffc000] shrink-0" />
                   <span>Recomendaciones Importantes</span>
                 </h3>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs md:text-sm text-slate-700">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 text-xs sm:text-sm text-slate-700">
                   {cleanedRecs.map((rec, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-2.5 bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-2xs"
+                      className="flex items-start gap-2.5 bg-white p-3 sm:p-3.5 rounded-2xl border border-slate-200/80 shadow-2xs"
                     >
                       <FaCheck className="w-3.5 h-3.5 text-[#6b0014] mt-0.5 shrink-0" />
                       <span className="leading-relaxed">{rec}</span>
@@ -224,7 +231,7 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
 
             {/* Section 5: FAQs Accordion */}
             {hasFaqs && (
-              <section id="faqs" className="flex flex-col gap-5 scroll-mt-28">
+              <section id="faqs" className="flex flex-col gap-4 sm:gap-5 scroll-mt-20 md:scroll-mt-24">
                 <div className="flex flex-col gap-1">
                   <div className="flex items-center gap-2 text-[#6b0014] text-xs font-black uppercase tracking-wider">
                     <FaQuestionCircle className="w-3.5 h-3.5" />
@@ -275,25 +282,23 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({ tour, allTou
                 </div>
               </section>
             )}
+
+            {/* Section 6: Comparativa de Experiencias */}
+            {allTours && allTours.length > 0 && (
+              <TourComparisonTable currentTour={tour} allTours={allTours} />
+            )}
           </main>
 
           {/* Right Sticky Sidebar (30%) */}
-          <aside className="lg:col-span-1 hidden lg:block">
-            <TourBookingWidget
-              tourTitle={tour.titulo}
-              basePrice={basePrice}
-              duration={tour.atributos?.duracion || "Full Day"}
-              horarios={tour.horarios_disponibles}
-              puntoInicio={tour.punto_inicio}
-              categoria={tour.categoria}
-            />
+          <aside id="reservar" className="lg:col-span-1 hidden lg:block scroll-mt-24">
+            <TourBookingWidget tour={tour} />
           </aside>
         </div>
       </div>
 
-      {/* Mobile Floating Sticky CTA */}
-      <TourStickyMobileCTA tourTitle={tour.titulo} basePrice={basePrice} />
+      <TourStickyMobileCTA tour={tour} />
     </div>
+    </TourReservationProvider>
   );
 };
 

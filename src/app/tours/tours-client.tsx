@@ -1,48 +1,75 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect, useCallback } from "react";
 import { Compass, RotateCcw } from "lucide-react";
 import { Tour } from "@/types/tour";
 import { TourCard, TourProps } from "@/components/tours/tour-card";
+import { toTourCardProps } from "@/lib/tour-card-mapper";
+import { useDisplayCurrency } from "@/components/layout/MarketProvider";
 import {
   deriveExperienceTags,
   parseDurationDays,
   estimateTourPrice,
-  getTourDestination,
+  tourMatchesDestination,
 } from "@/lib/tour-filters";
-import { ToursFilterBar } from "@/components/tours/ToursFilterBar";
+import {
+  ToursFilterSidebar,
+  ToursFilterMobileTrigger,
+} from "@/components/tours/ToursFilterBar";
 import { BudgetLevel } from "@/components/tours/BudgetSelector";
 
 interface ToursClientProps {
   initialTours: Tour[];
 }
 
+function syncUrl(params: {
+  destino: string;
+  tipo: string[];
+  q: string;
+}) {
+  if (typeof window === "undefined") return;
+  const sp = new URLSearchParams();
+  if (params.destino && params.destino !== "all") sp.set("destino", params.destino);
+  if (params.tipo.length === 1) sp.set("tipo", params.tipo[0]);
+  if (params.q.trim()) sp.set("q", params.q.trim());
+  const qs = sp.toString();
+  const next = `${window.location.pathname}${qs ? `?${qs}` : ""}`;
+  window.history.replaceState(null, "", next);
+}
+
 export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
+  const { currency } = useDisplayCurrency();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDestination, setSelectedDestination] = useState("all");
   const [selectedProfiles, setSelectedProfiles] = useState<string[]>([]);
   const [dayRange, setDayRange] = useState<[number, number]>([1, 30]);
   const [budgetLevel, setBudgetLevel] = useState<BudgetLevel>("all");
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Read URL query parameters from HeroSearch if present
-  React.useEffect(() => {
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      const destParam = params.get("destino");
-      const tipoParam = params.get("tipo");
-      const qParam = params.get("q");
-
-      if (destParam) setSelectedDestination(destParam);
-      if (tipoParam) setSelectedProfiles([tipoParam]);
-      if (qParam) setSearchQuery(qParam);
-    }
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const destParam = params.get("destino");
+    const tipoParam = params.get("tipo");
+    const qParam = params.get("q");
+    if (destParam) setSelectedDestination(destParam);
+    if (tipoParam) setSelectedProfiles([tipoParam]);
+    if (qParam) setSearchQuery(qParam);
   }, []);
 
-  const handleToggleProfile = (id: string) => {
+  useEffect(() => {
+    syncUrl({
+      destino: selectedDestination,
+      tipo: selectedProfiles,
+      q: searchQuery,
+    });
+  }, [selectedDestination, selectedProfiles, searchQuery]);
+
+  const handleToggleProfile = useCallback((id: string) => {
     setSelectedProfiles((prev) =>
       prev.includes(id) ? prev.filter((p) => p !== id) : [...prev, id]
     );
-  };
+  }, []);
 
   const handleResetAll = () => {
     setSearchQuery("");
@@ -52,18 +79,10 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
     setBudgetLevel("all");
   };
 
-  // Filter tours dynamically with multi-dimensional criteria
   const filteredTours = useMemo(() => {
     return initialTours.filter((tour) => {
-      // 1. Destination Filter
-      if (selectedDestination !== "all") {
-        const dest = getTourDestination(tour);
-        if (dest !== selectedDestination) {
-          return false;
-        }
-      }
+      if (!tourMatchesDestination(tour, selectedDestination)) return false;
 
-      // 2. Search Query
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchesTitle = tour.titulo.toLowerCase().includes(q);
@@ -76,7 +95,6 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
         }
       }
 
-      // 3. Traveler Profiles (OR logic among selected tags)
       if (selectedProfiles.length > 0) {
         const tourTags = deriveExperienceTags(tour);
         const hasMatchingProfile = selectedProfiles.some((profileId) =>
@@ -85,13 +103,9 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
         if (!hasMatchingProfile) return false;
       }
 
-      // 4. Duration Days Range
       const tourDays = parseDurationDays(tour.atributos?.duracion);
-      if (tourDays < dayRange[0] || tourDays > dayRange[1]) {
-        return false;
-      }
+      if (tourDays < dayRange[0] || tourDays > dayRange[1]) return false;
 
-      // 5. Budget Level
       if (budgetLevel !== "all") {
         const estimatedPrice = estimateTourPrice(tour);
         if (budgetLevel === "budget" && estimatedPrice >= 100) return false;
@@ -104,32 +118,26 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
     });
   }, [initialTours, searchQuery, selectedDestination, selectedProfiles, dayRange, budgetLevel]);
 
-  // Adapt Tour model to TourCard props
-  const adaptTourToCardProps = (tour: Tour): TourProps => {
-    const firstImage =
-      tour.galeria && tour.galeria.length > 0
-        ? tour.galeria[0].src
-        : "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&q=80";
+  const adaptTourToCardProps = (tour: Tour): TourProps =>
+    toTourCardProps(tour, { currency });
 
-    const estimatedPrice = estimateTourPrice(tour);
-
-    return {
-      id: tour.slug,
-      slug: tour.slug,
-      title: tour.titulo,
-      location: tour.atributos?.ubicacion || "Cusco, Perú",
-      duration: tour.atributos?.duracion || "Full Day",
-      price: estimatedPrice,
-      rating: 4.9,
-      reviewCount: 48,
-      imageUrl: firstImage,
-      badge: tour.atributos?.duracion || "Popular",
-    };
+  const filterProps = {
+    searchQuery,
+    onSearchChange: setSearchQuery,
+    selectedDestination,
+    onDestinationChange: setSelectedDestination,
+    selectedProfiles,
+    onToggleProfile: handleToggleProfile,
+    dayRange,
+    onDayRangeChange: setDayRange,
+    budgetLevel,
+    onBudgetChange: setBudgetLevel,
+    onResetAll: handleResetAll,
+    totalResultsCount: filteredTours.length,
   };
 
   return (
     <div className="flex flex-col gap-8 md:gap-12 pb-16">
-      {/* Page Header Banner */}
       <div className="relative bg-[#6b0014] py-16 md:py-20 px-4 text-center text-white overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -146,58 +154,60 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
             Descubre Perú a Tu Medida
           </h1>
           <p className="text-slate-200 text-sm md:text-base max-w-xl font-normal leading-relaxed">
-            Filtra por destino (Cusco, Puno, Lima), estilo de viaje, duración o presupuesto y encuentra la aventura perfecta.
+            Filtra por destino, estilo de viaje, duración o presupuesto y encuentra tu próxima experiencia.
           </p>
         </div>
       </div>
 
-      {/* Main Content Layout */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 w-full flex flex-col gap-8">
-        {/* Interactive Client-Centric Smart Filter Bar */}
-        <ToursFilterBar
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
-          selectedDestination={selectedDestination}
-          onDestinationChange={setSelectedDestination}
-          selectedProfiles={selectedProfiles}
-          onToggleProfile={handleToggleProfile}
-          dayRange={dayRange}
-          onDayRangeChange={setDayRange}
-          budgetLevel={budgetLevel}
-          onBudgetChange={setBudgetLevel}
-          onResetAll={handleResetAll}
-          totalResultsCount={filteredTours.length}
-        />
+      <div className="max-w-7xl mx-auto px-4 md:px-8 w-full">
+        <div className="flex items-center justify-between gap-3 mb-6 lg:hidden">
+          <p className="text-sm font-bold text-slate-700">
+            {filteredTours.length} experiencias
+          </p>
+          <ToursFilterMobileTrigger
+            {...filterProps}
+            open={mobileOpen}
+            setOpen={setMobileOpen}
+          />
+        </div>
 
-        {/* Results Grid */}
-        {filteredTours.length === 0 ? (
-          <div className="bg-slate-50 rounded-3xl p-12 text-center flex flex-col items-center gap-4 border border-slate-200 shadow-sm my-4">
-            <div className="w-16 h-16 rounded-full bg-[#6b0014]/10 text-[#6b0014] flex items-center justify-center">
-              <Compass className="w-8 h-8" />
-            </div>
-            <h3 className="text-xl md:text-2xl font-extrabold text-slate-900 font-title">
-              No encontramos tours con este filtro
-            </h3>
-            <p className="text-xs md:text-sm text-slate-500 max-w-md leading-relaxed">
-              Intenta combinar diferentes opciones de experiencia o restablece los filtros para ver la lista completa de tours disponibles.
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="hidden lg:block lg:col-span-3">
+            <ToursFilterSidebar {...filterProps} />
+          </div>
+
+          <div className="lg:col-span-9 flex flex-col gap-6">
+            <p className="hidden lg:block text-sm text-slate-600">
+              Mostrando <strong className="text-[#6b0014]">{filteredTours.length}</strong> de{" "}
+              {initialTours.length} experiencias
             </p>
-            <button
-              onClick={handleResetAll}
-              className="mt-2 bg-[#6b0014] text-white text-xs font-bold px-5 py-2.5 rounded-xl hover:bg-[#850019] transition-all flex items-center gap-2 shadow-md cursor-pointer"
-            >
-              <RotateCcw className="w-3.5 h-3.5" />
-              <span>Ver todos los tours ({initialTours.length})</span>
-            </button>
+
+            {filteredTours.length === 0 ? (
+              <div className="bg-slate-50 rounded-3xl p-12 text-center flex flex-col items-center gap-4 border border-slate-200">
+                <div className="w-16 h-16 rounded-full bg-[#6b0014]/10 text-[#6b0014] flex items-center justify-center">
+                  <Compass className="w-8 h-8" />
+                </div>
+                <h3 className="text-xl font-extrabold text-slate-900 font-title">
+                  No encontramos tours con este filtro
+                </h3>
+                <button
+                  onClick={handleResetAll}
+                  className="mt-2 bg-[#6b0014] text-white text-xs font-bold px-5 py-2.5 rounded-xl flex items-center gap-2"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  Ver todos los tours
+                </button>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                {filteredTours.map((tour) => (
+                  <TourCard key={tour.slug} tour={adaptTourToCardProps(tour)} />
+                ))}
+              </div>
+            )}
           </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {filteredTours.map((tour) => (
-              <TourCard key={tour.slug} tour={adaptTourToCardProps(tour)} />
-            ))}
-          </div>
-        )}
+        </div>
       </div>
     </div>
   );
 };
-

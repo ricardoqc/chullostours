@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Award, Leaf, HeartHandshake, Map, CheckCircle2 } from 'lucide-react';
+import { Award, Leaf, HeartHandshake, Map, CheckCircle2, MapPin, Phone } from 'lucide-react';
+import { companyInfo } from '@/lib/company-info';
+import { TourImage } from '@/components/ui/TourImage';
 
 export const metadata: Metadata = {
   title: 'Acerca de Chullos Tours | Agencia de Viajes en Cusco, Perú',
@@ -35,12 +37,12 @@ const PILLARS = [
 ];
 
 const TIMELINE = [
-  { year: '2020', title: 'Fundación', desc: 'Nace Chullos Tours con la misión de ofrecer experiencias auténticas en Perú, destacando su rica cultura, historia y paisajes. Desde el inicio, la empresa se enfocó en brindar servicios personalizados y de alta calidad.', image: '/tours/city-tour-cusco/01.jpg' },
-  { year: '2020', title: 'Adaptación', desc: 'La pandemia global trajo grandes retos. Implementamos estrictos protocolos de bioseguridad y mantuvimos la conexión con nuestros viajeros promoviendo la planificación de futuros viajes a través de contenido virtual.', image: '/tours/laguna-humantay-tour-cusco/01.jpg' },
-  { year: '2021', title: 'Reactivación', desc: 'Con el retorno del turismo, priorizamos el mercado nacional y reforzamos nuestro compromiso con el turismo sostenible, estableciendo nuevas estrategias para apoyar a las comunidades locales.', image: '/tours/machupicchu-full-day-con-tren-vistadome/01.jpg' },
-  { year: '2023', title: 'Innovación', desc: 'Un año de innovación tecnológica. Lanzamos una nueva plataforma web para facilitar reservas y adoptamos herramientas digitales para mejorar la gestión y comunicación con nuestros clientes.', image: '/tours/montana-colores-vinicunca-tour/01.jpg' },
-  { year: '2023', title: 'Crecimiento', desc: 'Expandimos nuestros servicios hacia destinos como Puno y Arequipa. Formamos alianzas estratégicas locales y diversificamos nuestros paquetes para familias, grupos y aventureros.', image: '/tours/tour-lago-titicaca-2-dias/01.jpg' },
-  { year: '2024', title: 'Reconocimiento', desc: 'Atrajimos a más viajeros internacionales mediante una sólida estrategia digital y presencia en ferias de turismo, consolidando nuestra reputación como una agencia altamente confiable.', image: '/tours/valle-sagrado-vip-tour-cusco/01.jpg' },
+  { year: '2020', title: 'Fundación', desc: 'Nace Chullos Tours con la misión de ofrecer experiencias auténticas en Perú, destacando su rica cultura, historia y paisajes. Desde el inicio, la empresa se enfocó en brindar servicios personalizados y de alta calidad.', image: '/media/tours/city-tour-cusco/01.jpg' },
+  { year: '2020', title: 'Adaptación', desc: 'La pandemia global trajo grandes retos. Implementamos estrictos protocolos de bioseguridad y mantuvimos la conexión con nuestros viajeros promoviendo la planificación de futuros viajes a través de contenido virtual.', image: '/media/tours/laguna-humantay-tour-cusco/01.jpg' },
+  { year: '2021', title: 'Reactivación', desc: 'Con el retorno del turismo, priorizamos el mercado nacional y reforzamos nuestro compromiso con el turismo sostenible, estableciendo nuevas estrategias para apoyar a las comunidades locales.', image: '/media/tours/tour-machu-picchu-2-dias/01.jpg' },
+  { year: '2023', title: 'Innovación', desc: 'Un año de innovación tecnológica. Lanzamos una nueva plataforma web para facilitar reservas y adoptamos herramientas digitales para mejorar la gestión y comunicación con nuestros clientes.', image: '/media/tours/montana-colores-vinicunca-tour/01.jpg' },
+  { year: '2023', title: 'Crecimiento', desc: 'Expandimos nuestros servicios hacia destinos como Puno y Arequipa. Formamos alianzas estratégicas locales y diversificamos nuestros paquetes para familias, grupos y aventureros.', image: '/media/tours/tour-puno-2-dias-uros-amantani/01.jpg' },
+  { year: '2024', title: 'Reconocimiento', desc: 'Atrajimos a más viajeros internacionales mediante una sólida estrategia digital y presencia en ferias de turismo, consolidando nuestra reputación como una agencia altamente confiable.', image: '/media/tours/valle-sagrado-vip-tour-cusco/01.jpg' },
   { year: '2025', title: 'Proyección', desc: 'Trabajamos en el diseño de nuevos paquetes exclusivos y personalizados. Buscamos consolidarnos como líderes en Perú, fortaleciendo nuestra presencia digital con prácticas sostenibles.', image: '/img/familia-background_v4.png' },
 ];
 
@@ -61,7 +63,7 @@ export default function AcercaDePage() {
       <section className="max-w-7xl mx-auto px-4 mt-6 mb-12">
         <div className="relative w-full min-h-[400px] md:min-h-[500px] flex items-center justify-center overflow-hidden rounded-[2rem] shadow-xl">
           {/* Background Base */}
-          <div className="absolute inset-0 bg-[url('/tours/camino-inca-2-dias/01.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('/media/tours/camino-inca-2-dias/01.jpg')] bg-cover bg-center" />
           
           {/* Decorational Elements */}
           <div className="absolute inset-0 bg-gradient-to-tr from-slate-900/90 via-[#6b0014]/60 to-transparent z-10" />
@@ -80,17 +82,52 @@ export default function AcercaDePage() {
         </div>
       </section>
 
+      <section className="max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { icon: MapPin, label: 'Oficina en Cusco', value: companyInfo.address.full },
+            { icon: Phone, label: 'WhatsApp directo', value: companyInfo.phones.primary.number },
+            { icon: Award, label: 'Empresa', value: `${companyInfo.legalName} · RUC ${companyInfo.ruc}` },
+          ].map((item) => (
+            <div
+              key={item.label}
+              className="bg-white border border-slate-200 rounded-2xl p-5 flex items-start gap-3"
+            >
+              <item.icon className="w-5 h-5 text-[#6b0014] shrink-0 mt-0.5" />
+              <div>
+                <p className="text-[10px] font-extrabold uppercase text-slate-500 tracking-wider">
+                  {item.label}
+                </p>
+                <p className="text-sm font-semibold text-slate-800 mt-1 leading-snug">{item.value}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Intro & Stats Section */}
       <section className="max-w-7xl mx-auto px-4 py-16 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="order-2 lg:order-1 relative">
             {/* Abstract images composition placeholder */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="h-64 rounded-3xl bg-slate-200 overflow-hidden shadow-lg transform translate-y-8">
-                <img src="/tours/tour-machu-picchu-2-dias/01.jpg" alt="Machu Picchu" className="w-full h-full object-cover" />
+              <div className="h-64 rounded-3xl bg-slate-200 overflow-hidden shadow-lg transform translate-y-8 relative">
+                <TourImage
+                  src="/media/tours/tour-machu-picchu-2-dias/01.jpg"
+                  alt="Machu Picchu"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover"
+                />
               </div>
-              <div className="h-64 rounded-3xl bg-slate-200 overflow-hidden shadow-lg">
-                <img src="/tours/city-tour-cusco/06.jpg" alt="Cultura viva" className="w-full h-full object-cover" />
+              <div className="h-64 rounded-3xl bg-slate-200 overflow-hidden shadow-lg relative">
+                <TourImage
+                  src="/media/tours/city-tour-cusco/06.jpg"
+                  alt="Cultura viva"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover"
+                />
               </div>
             </div>
             
@@ -208,9 +245,14 @@ export default function AcercaDePage() {
           <h2 className="text-2xl md:text-4xl font-black text-slate-900 mb-6 font-title relative z-10">
             ¿Listo para escribir la historia de tu próximo viaje?
           </h2>
-          <Link href="/tours" className="inline-block bg-slate-900 text-white font-bold px-8 py-4 rounded-xl hover:bg-slate-800 transition-colors relative z-10 shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-200">
-            Explorar Nuestros Tours
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 relative z-10">
+            <Link href="/tours/" className="inline-block bg-slate-900 text-white font-bold px-8 py-4 rounded-xl hover:bg-slate-800 transition-colors shadow-lg">
+              Explorar tours
+            </Link>
+            <Link href="/viaje-personalizado/" className="inline-block bg-white text-[#6b0014] font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors shadow-lg border border-white/80">
+              Viaje personalizado
+            </Link>
+          </div>
         </div>
       </section>
     </main>

@@ -1,0 +1,10 @@
+TOUR: Machu Picchu By Car 2 Días / 1 Noche (Vía Hidroeléctrica)
+Slug JSON: machu-picchu-by-car-2-dias
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/machu-picchu-by-car-2-dias/01.jpg

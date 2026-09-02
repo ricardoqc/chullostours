@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-09-26-2.jpg"
+featured_image_alt: "Itinerario de 6 días recorriendo Cusco, Valle Sagrado de los Incas y Machu Picchu"
+featured_image_caption: "Plan de viaje óptimo día a día para aclimatarse y disfrutar sin prisas ni estrés."
+featured_image_credito: "Chullos Tours"
 id: 1158
 title: "Viajar a Perú y Machu Picchu: Itinerario Ideal para 6 Días"
 slug: "viajar-a-peru-y-machu-picchu-itinerario-ideal-para-6-dias"

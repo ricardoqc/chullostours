@@ -1,0 +1,59 @@
+{
+  "_nota": "Rutas bajo public/hoteles/{slug}/. Coloca archivos y ejecuta npm run data:hotel-imagenes para sincronizar JSON de tours.",
+  "auri boutique hotel": [
+    "/hoteles/auri-boutique-hotel/01-fachada.jpg",
+    "/hoteles/auri-boutique-hotel/02-habitacion.jpg",
+    "/hoteles/auri-boutique-hotel/03-lobby.jpg"
+  ],
+  "machupicchu inn": [
+    "/hoteles/machupicchu-inn/01-fachada.jpg",
+    "/hoteles/machupicchu-inn/02-habitacion.jpg"
+  ],
+  "hotel intiwatana": [
+    "/hoteles/hotel-intiwatana/01-fachada.jpg",
+    "/hoteles/hotel-intiwatana/02-habitacion.jpg",
+    "/hoteles/hotel-intiwatana/03-lobby.jpg"
+  ],
+  "hotel intiwatana aguas calientes": [
+    "/hoteles/hotel-intiwatana-aguas-calientes/01-fachada.jpg",
+    "/hoteles/hotel-intiwatana-aguas-calientes/02-habitacion.jpg"
+  ],
+  "hotel rojas inn": [
+    "/hoteles/hotel-rojas-inn/01-fachada.jpg",
+    "/hoteles/hotel-rojas-inn/02-habitacion.jpg",
+    "/hoteles/hotel-rojas-inn/03-lobby.jpg"
+  ],
+  "rojas inn aguas calientes": [
+    "/hoteles/rojas-inn-aguas-calientes/01-fachada.jpg",
+    "/hoteles/rojas-inn-aguas-calientes/02-habitacion.jpg"
+  ],
+  "hotel aury": [
+    "/hoteles/hotel-aury/01-fachada.jpg",
+    "/hoteles/hotel-aury/02-habitacion.jpg"
+  ],
+  "hotel panaka": [
+    "/hoteles/hotel-panaka/01-fachada.jpg",
+    "/hoteles/hotel-panaka/02-habitacion.jpg"
+  ],
+  "hotel san pedro plaza": [
+    "/hoteles/hotel-san-pedro-plaza/01-fachada.jpg",
+    "/hoteles/hotel-san-pedro-plaza/02-habitacion.jpg",
+    "/hoteles/hotel-san-pedro-plaza/03-lobby.jpg"
+  ],
+  "hotel intiwatana lima": [
+    "/hoteles/hotel-intiwatana-lima/01-fachada.jpg",
+    "/hoteles/hotel-intiwatana-lima/02-habitacion.jpg"
+  ],
+  "hotel intiwatana cusco": [
+    "/hoteles/hotel-intiwatana-cusco/01-fachada.jpg",
+    "/hoteles/hotel-intiwatana-cusco/02-habitacion.jpg"
+  ],
+  "hotel rojas inn lima": [
+    "/hoteles/hotel-rojas-inn-lima/01-fachada.jpg",
+    "/hoteles/hotel-rojas-inn-lima/02-habitacion.jpg"
+  ],
+  "hotel rojas inn cusco": [
+    "/hoteles/hotel-rojas-inn-cusco/01-fachada.jpg",
+    "/hoteles/hotel-rojas-inn-cusco/02-habitacion.jpg"
+  ]
+}

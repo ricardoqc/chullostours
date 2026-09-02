@@ -1,0 +1,6 @@
+DESTINO: humantay
+  hero.jpg   Imagen principal (mapa + landings)
+  thumb.jpg  Miniatura (opcional)
+
+URL: /destinos/humantay/hero.jpg
+JSON: data/places.json → imagen

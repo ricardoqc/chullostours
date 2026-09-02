@@ -39,47 +39,47 @@
   ],
   "galeria": [
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/01.jpg",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/01.jpg",
       "alt": "Machu Picchu Full Day con Tren Observatory - 01.jpg"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/02.jpg",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/02.jpg",
       "alt": "Machu Picchu Full Day con Tren Observatory - 02.jpg"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/03.jpg",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/03.jpg",
       "alt": "Machu Picchu Full Day con Tren Observatory - 03.jpg"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/04.jpg",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/04.jpg",
       "alt": "Machu Picchu Full Day con Tren Observatory - 04.jpg"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/05.avif",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/05.avif",
       "alt": "Machu Picchu Full Day con Tren Observatory - 05.avif"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/06.jpg",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/06.jpg",
       "alt": "Machu Picchu Full Day con Tren Observatory - 06.jpg"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/07.avif",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/07.avif",
       "alt": "Machu Picchu Full Day con Tren Observatory - 07.avif"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/08.jpg",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/08.jpg",
       "alt": "Machu Picchu Full Day con Tren Observatory - 08.jpg"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/09.jpg",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/09.jpg",
       "alt": "Machu Picchu Full Day con Tren Observatory - 09.jpg"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/10.jpg",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/10.jpg",
       "alt": "Machu Picchu Full Day con Tren Observatory - 10.jpg"
     },
     {
-      "src": "/tours/machupicchu-full-day-con-tren-observatory/11.jpg",
+      "src": "/media/tours/machupicchu-full-day-con-tren-observatory/11.jpg",
       "alt": "Machu Picchu Full Day con Tren Observatory - 11.jpg"
     }
   ],
@@ -155,6 +155,26 @@
     {
       "pregunta": "¿Puedo reservar este tour con almuerzo incluido?",
       "respuesta": "Sí, disponemos de paquetes opcionales que incluyen almuerzo buffet gourmet en el restaurante Sanctuary Lodge o en Aguas Calientes."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Machu Picchu Full Day con Tren Observatory?",
+      "respuesta": "El precio desde USD $380 por persona contempla: Recojo de su hotel en Cusco y traslados ida y vuelta a la estación de Ollantaytambo.; Boleto de tren ida y vuelta en servicio Tren Observatory / 360°.; Acceso al vagón observatorio al aire libre y show de música a bordo.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Baja - Moderada). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 3,400 m.s.n.m. (Cusco) / 2,430 m.s.n.m. (Machu Picchu). Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
     }
   ],
   "seo": {
@@ -169,7 +189,7 @@
       "og_description": "Viaja a Machu Picchu en el Tren Observatory con vistas panorámicas 360° y show en vivo. Incluye guiado y traslados completos.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/machupicchu-full-day-con-tren-observatory/",
-      "og_image": "/tours/machupicchu-full-day-con-tren-observatory/01.jpg",
+      "og_image": "/media/tours/machupicchu-full-day-con-tren-observatory/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -177,7 +197,7 @@
       "card": "summary_large_image",
       "title": "Machu Picchu Full Day con Tren Observatory | Chullos Tours",
       "description": "Experiencia premium a Machu Picchu con Tren Observatory 360°. Entradas oficiales y servicio personalizado.",
-      "image": "/tours/machupicchu-full-day-con-tren-observatory/01.jpg"
+      "image": "/media/tours/machupicchu-full-day-con-tren-observatory/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -230,17 +250,17 @@
         "description": "Tour de lujo a Machu Picchu con Tren Observatory 360°, show musical a bordo, buses Consettur y guiado bilingüe.",
         "url": "https://chullostours.com/tours/machupicchu-full-day-con-tren-observatory/",
         "image": [
-          "/tours/machupicchu-full-day-con-tren-observatory/01.jpg",
-          "/tours/machupicchu-full-day-con-tren-observatory/02.jpg",
-          "/tours/machupicchu-full-day-con-tren-observatory/03.jpg",
-          "/tours/machupicchu-full-day-con-tren-observatory/04.jpg",
-          "/tours/machupicchu-full-day-con-tren-observatory/05.avif",
-          "/tours/machupicchu-full-day-con-tren-observatory/06.jpg",
-          "/tours/machupicchu-full-day-con-tren-observatory/07.avif",
-          "/tours/machupicchu-full-day-con-tren-observatory/08.jpg",
-          "/tours/machupicchu-full-day-con-tren-observatory/09.jpg",
-          "/tours/machupicchu-full-day-con-tren-observatory/10.jpg",
-          "/tours/machupicchu-full-day-con-tren-observatory/11.jpg"
+          "/media/tours/machupicchu-full-day-con-tren-observatory/01.jpg",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/02.jpg",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/03.jpg",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/04.jpg",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/05.avif",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/06.jpg",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/07.avif",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/08.jpg",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/09.jpg",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/10.jpg",
+          "/media/tours/machupicchu-full-day-con-tren-observatory/11.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -249,7 +269,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "310.00",
+          "price": "460",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/machupicchu-full-day-con-tren-observatory/"
@@ -283,5 +303,73 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 10 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 460,
+  "precio": 460,
+  "destino_ids": [
+    "machu-picchu",
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 464,
+    "online_usd": 426,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [
+    {
+      "id": "huayna-picchu",
+      "label": "Entrada Huayna Picchu",
+      "precio_usd": 20,
+      "precio_soles": 75,
+      "enabled": true,
+      "descripcion": "Ascenso opcional a la montaña Huayna Picchu (cupos limitados)."
+    }
+  ],
+  "entradas_incluidas": {
+    "destacado": true,
+    "titulo": "Entradas incluidas",
+    "detalle": "Ingreso oficial a Machu Picchu, bus Consettur y tren turístico según itinerario.",
+    "variant": "gold"
+  },
+  "aplica_descuentos_edad": true,
+  "tarifas_personas": [
+    {
+      "id": "adulto",
+      "label": "Adulto (18–100 años)",
+      "rango_edad": "18-100",
+      "edad_min": 18,
+      "edad_max": 100,
+      "tipo": "fixed",
+      "descuento_usd": 0
+    },
+    {
+      "id": "joven",
+      "label": "Joven (12–17 años)",
+      "rango_edad": "12-17",
+      "edad_min": 12,
+      "edad_max": 17,
+      "tipo": "discount",
+      "descuento_usd": 20
+    },
+    {
+      "id": "nino",
+      "label": "Niño (3–11 años)",
+      "rango_edad": "3-11",
+      "edad_min": 3,
+      "edad_max": 11,
+      "tipo": "discount",
+      "descuento_usd": 30
+    },
+    {
+      "id": "infante",
+      "label": "Infante (0–2 años)",
+      "rango_edad": "0-2",
+      "edad_min": 0,
+      "edad_max": 2,
+      "tipo": "free",
+      "descuento_usd": 0
+    }
+  ],
+  "precio_pen": 1725
 }

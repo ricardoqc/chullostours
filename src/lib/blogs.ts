@@ -163,9 +163,10 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
 
   try {
     const raw = fs.readFileSync(filePath, 'utf-8');
+    const normalized = raw.replace(/^\uFEFF/, '').replace(/\r\n/g, '\n');
 
     // Parse YAML frontmatter
-    const parts = raw.split(/^---$/m);
+    const parts = normalized.split(/^---$/m);
     if (parts.length < 3) {
       return null;
     }
@@ -177,12 +178,12 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
     const getVal = (key: string): string => {
       const match = frontmatterRaw.match(new RegExp(`${key}:\\s*"([^"]*)"`, 'i'));
       if (match) return match[1];
-      const matchNoQuotes = frontmatterRaw.match(new RegExp(`${key}:\\s*([^\\r\\n]+)`, 'i'));
+      const matchNoQuotes = frontmatterRaw.match(new RegExp(`${key}:\\s*([^\\n]+)`, 'i'));
       return matchNoQuotes ? matchNoQuotes[1].trim() : '';
     };
 
     const getList = (key: string): string[] => {
-      const regex = new RegExp(`${key}:\\s*\\r?\\n((?:\\s*-\\s*"[^"]*"\\r?\\n?)+)`, 'i');
+      const regex = new RegExp(`${key}:\\s*\\n((?:\\s*-\\s*"[^"]*"\\n?)+)`, 'i');
       const match = frontmatterRaw.match(regex);
       if (!match) return [];
       const items = match[1].match(/"([^"]+)"/g);
@@ -212,7 +213,11 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
       video_url: getVal('video_url'),
       reading_time_minutes: parseInt(getVal('reading_time_minutes') || item?.reading_time || '5', 10),
       page_views: parseInt(getVal('page_views') || item?.page_views || '0', 10),
-      original_url: getVal('original_url')
+      original_url: getVal('original_url'),
+      featured_image: getVal('featured_image') || item?.featured_image || '',
+      featured_image_alt: getVal('featured_image_alt') || item?.featured_image_alt || '',
+      featured_image_caption: getVal('featured_image_caption') || '',
+      featured_image_credito: getVal('featured_image_credito') || '',
     };
 
     const contentHtml = markdownToHtml(markdownBody);

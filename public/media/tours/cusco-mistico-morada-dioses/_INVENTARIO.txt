@@ -1,0 +1,10 @@
+TOUR: Cusco Místico – Morada de los Dioses Apukunyana Full Day
+Slug JSON: cusco-mistico-morada-dioses
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/cusco-mistico-morada-dioses/01.jpg

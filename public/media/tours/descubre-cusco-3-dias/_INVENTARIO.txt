@@ -1,0 +1,10 @@
+TOUR: Paquete Descubre Cusco 3 Días / 2 Noches
+Slug JSON: descubre-cusco-3-dias
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/descubre-cusco-3-dias/01.jpg

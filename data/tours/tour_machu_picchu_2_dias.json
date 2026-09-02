@@ -21,6 +21,35 @@
     "grupo_max": 15,
     "nivel_fisico": "Fácil (Apto para todas las edades)"
   },
+  "mapa": {
+    "zoom_inicial": 9,
+    "destinos": [
+      {
+        "place_id": "cusco",
+        "order": 1,
+        "marker": "city",
+        "dia": 1
+      },
+      {
+        "place_id": "ollantaytambo",
+        "order": 2,
+        "marker": "landmark",
+        "dia": 1
+      },
+      {
+        "place_id": "aguas-calientes",
+        "order": 3,
+        "marker": "city",
+        "dia": 1
+      },
+      {
+        "place_id": "machu-picchu",
+        "order": 4,
+        "marker": "landmark",
+        "dia": 2
+      }
+    ]
+  },
   "resumen": "Descubre Machu Picchu a un ritmo relajado y sin prisas con nuestro Tour de 2 Días y 1 Noche. Viaja a través del hermoso Valle Sagrado de los Incas en un tren panorámico, pasa una agradable noche en Aguas Calientes y contempla el amanecer en la mítica ciudadela inca con la compañía de un guía oficial experto.",
   "descripcion_completa": "El Tour Machu Picchu de 2 Días y 1 Noche es la opción preferida para viajeros que buscan vivir una experiencia cómoda, pausada e inolvidable en la Maravilla del Mundo sin los apuros de un viaje de un solo día. Este paquete turístico combina el transporte en trenes de clase turística o panorámicos a través de los cambiantes paisajes del Valle Sagrado con una estancia relajante a orillas del río Urubamba en Aguas Calientes.\n\nEn el primer día, realizaremos el traslado terrestre desde Cusco hacia la estación de trenes en Ollantaytambo, disfrutando de los imponentes paisajes andinos antes de abordar el tren con dirección a Machupicchu Pueblo (Aguas Calientes). Tendrás la tarde libre para descansar, visitar los baños termales del pueblo o pasear por su colorido mercado artesanal.\n\nEn el segundo día, abordaremos temprano el autobús que asciende por la sinuosa carretera Hiram Bingham hasta la puerta del Santuario Histórico de Machu Picchu. Realizarás un tour guiado privado o en grupo reducido de 2.5 a 3 horas por los sectores principales de la ciudadela, aprendiendo sobre la arquitectura, historia y cosmología incaica. Tras tiempo para fotografiar las postales más emblemáticas, retornaremos en tren y bus privado a la ciudad de Cusco.",
   "propuesta_de_valor": [
@@ -39,39 +68,39 @@
   ],
   "galeria": [
     {
-      "src": "/tours/tour-machu-picchu-2-dias/01.jpg",
+      "src": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
       "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 01.jpg"
     },
     {
-      "src": "/tours/tour-machu-picchu-2-dias/02.jpg",
+      "src": "/media/tours/tour-machu-picchu-2-dias/02.jpg",
       "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 02.jpg"
     },
     {
-      "src": "/tours/tour-machu-picchu-2-dias/03.jpg",
+      "src": "/media/tours/tour-machu-picchu-2-dias/03.jpg",
       "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 03.jpg"
     },
     {
-      "src": "/tours/tour-machu-picchu-2-dias/04.jpg",
+      "src": "/media/tours/tour-machu-picchu-2-dias/04.jpg",
       "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 04.jpg"
     },
     {
-      "src": "/tours/tour-machu-picchu-2-dias/05.jpg",
+      "src": "/media/tours/tour-machu-picchu-2-dias/05.jpg",
       "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 05.jpg"
     },
     {
-      "src": "/tours/tour-machu-picchu-2-dias/06.avif",
+      "src": "/media/tours/tour-machu-picchu-2-dias/06.avif",
       "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 06.avif"
     },
     {
-      "src": "/tours/tour-machu-picchu-2-dias/07.avif",
+      "src": "/media/tours/tour-machu-picchu-2-dias/07.avif",
       "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 07.avif"
     },
     {
-      "src": "/tours/tour-machu-picchu-2-dias/09.jpg",
+      "src": "/media/tours/tour-machu-picchu-2-dias/09.jpg",
       "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 09.jpg"
     },
     {
-      "src": "/tours/tour-machu-picchu-2-dias/10.jpg",
+      "src": "/media/tours/tour-machu-picchu-2-dias/10.jpg",
       "alt": "Tour Machu Picchu 2 Días / 1 Noche en Tren - 10.jpg"
     }
   ],
@@ -179,6 +208,22 @@
     {
       "pregunta": "¿Puedo añadir la visita a la montaña Huayna Picchu?",
       "respuesta": "Sí, se puede agregar el boleto para Huayna Picchu previa solicitud al momento de reservar, siempre que existan cupos disponibles en el sistema oficial del Ministerio de Cultura."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Tour Machu Picchu 2 Días / 1 Noche en Tren?",
+      "respuesta": "El precio desde USD $280 por persona contempla: Traslados turísticos privados hotel Cusco - Estación Ollantaytambo - hotel Cusco.; Boletos de tren ida y vuelta (Ollantaytambo - Aguas Calientes - Ollantaytambo) en servicio Expedition o Vistadome.; Boleto oficial de ingreso a la Ciudadela de Machu Picchu (Circuito oficial garantizado).. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Baja). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -193,7 +238,7 @@
       "og_description": "Descubre la magia de Machu Picchu sin prisas. Incluye pasajes de tren, ingresos, guía bilingüe y noche de hotel.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/tour-machu-picchu-2-dias/",
-      "og_image": "/tours/tour-machu-picchu-2-dias/01.jpg",
+      "og_image": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -201,7 +246,7 @@
       "card": "summary_large_image",
       "title": "Tour Machu Picchu 2 Días / 1 Noche en Tren | Chullos Tours",
       "description": "Recorre Machu Picchu de forma tranquila e inolvidable con nuestro tour de 2 días. Tren, hotel y traslados incluidos.",
-      "image": "/tours/tour-machu-picchu-2-dias/01.jpg"
+      "image": "/media/tours/tour-machu-picchu-2-dias/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -254,15 +299,15 @@
         "description": "Viaje descansado de 2 días a Machu Picchu con traslado desde Cusco, trenes turísticos, hotel en Aguas Calientes y recorrido guiado por la ciudadela inca.",
         "url": "https://chullostours.com/tours/tour-machu-picchu-2-dias/",
         "image": [
-          "/tours/tour-machu-picchu-2-dias/01.jpg",
-          "/tours/tour-machu-picchu-2-dias/02.jpg",
-          "/tours/tour-machu-picchu-2-dias/03.jpg",
-          "/tours/tour-machu-picchu-2-dias/04.jpg",
-          "/tours/tour-machu-picchu-2-dias/05.jpg",
-          "/tours/tour-machu-picchu-2-dias/06.avif",
-          "/tours/tour-machu-picchu-2-dias/07.avif",
-          "/tours/tour-machu-picchu-2-dias/09.jpg",
-          "/tours/tour-machu-picchu-2-dias/10.jpg"
+          "/media/tours/tour-machu-picchu-2-dias/01.jpg",
+          "/media/tours/tour-machu-picchu-2-dias/02.jpg",
+          "/media/tours/tour-machu-picchu-2-dias/03.jpg",
+          "/media/tours/tour-machu-picchu-2-dias/04.jpg",
+          "/media/tours/tour-machu-picchu-2-dias/05.jpg",
+          "/media/tours/tour-machu-picchu-2-dias/06.avif",
+          "/media/tours/tour-machu-picchu-2-dias/07.avif",
+          "/media/tours/tour-machu-picchu-2-dias/09.jpg",
+          "/media/tours/tour-machu-picchu-2-dias/10.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -271,7 +316,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "310.00",
+          "price": "410",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/tour-machu-picchu-2-dias/"
@@ -332,5 +377,73 @@
       "titulo": "Guía Especializado",
       "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
     }
-  ]
+  ],
+  "precio_usd": 410,
+  "precio": 410,
+  "destino_ids": [
+    "machu-picchu",
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 342,
+    "online_usd": 314,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [
+    {
+      "id": "huayna-picchu",
+      "label": "Entrada Huayna Picchu",
+      "precio_usd": 20,
+      "precio_soles": 75,
+      "enabled": true,
+      "descripcion": "Ascenso opcional a la montaña Huayna Picchu (cupos limitados)."
+    }
+  ],
+  "entradas_incluidas": {
+    "destacado": true,
+    "titulo": "Entradas incluidas",
+    "detalle": "Ingreso oficial a Machu Picchu, bus Consettur y tren turístico según itinerario.",
+    "variant": "gold"
+  },
+  "aplica_descuentos_edad": true,
+  "tarifas_personas": [
+    {
+      "id": "adulto",
+      "label": "Adulto (18–100 años)",
+      "rango_edad": "18-100",
+      "edad_min": 18,
+      "edad_max": 100,
+      "tipo": "fixed",
+      "descuento_usd": 0
+    },
+    {
+      "id": "joven",
+      "label": "Joven (12–17 años)",
+      "rango_edad": "12-17",
+      "edad_min": 12,
+      "edad_max": 17,
+      "tipo": "discount",
+      "descuento_usd": 20
+    },
+    {
+      "id": "nino",
+      "label": "Niño (3–11 años)",
+      "rango_edad": "3-11",
+      "edad_min": 3,
+      "edad_max": 11,
+      "tipo": "discount",
+      "descuento_usd": 30
+    },
+    {
+      "id": "infante",
+      "label": "Infante (0–2 años)",
+      "rango_edad": "0-2",
+      "edad_min": 0,
+      "edad_max": 2,
+      "tipo": "free",
+      "descuento_usd": 0
+    }
+  ],
+  "precio_pen": 1538
 }

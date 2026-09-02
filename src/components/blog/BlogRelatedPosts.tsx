@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blogs";
+import { getBlogCoverImage } from "@/lib/blog-images";
+import { TourImage } from "@/components/ui/TourImage";
 
 interface BlogRelatedPostsProps {
   currentSlug: string;
@@ -38,11 +40,12 @@ export function BlogRelatedPosts({ currentSlug }: BlogRelatedPostsProps) {
             <Link href={`/blog/${post.slug}`} key={post.slug} className="group flex flex-col h-full">
               <article className="bg-white rounded-2xl overflow-hidden border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full">
                 <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
-                  <img
-                    src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=600&q=80"
+                  <TourImage
+                    src={getBlogCoverImage(post)}
                     alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-2.5 left-2.5">
                     <Badge variant="primary" className="bg-[#6b0014] text-white text-[10px] border-none">

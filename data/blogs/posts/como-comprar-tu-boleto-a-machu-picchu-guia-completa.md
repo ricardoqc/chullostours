@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/el-ombligo-del-mundo_t20_3wr8eR-1.jpg"
+featured_image_alt: "Ingreso principal y control oficial de boletos en la ciudadela inca de Machu Picchu"
+featured_image_caption: "Punto de acceso a los circuitos oficiales de visita en el Santuario de Machu Picchu."
+featured_image_credito: "Chullos Tours / TuBoleto Cultura"
 id: 1154
 title: "Cómo Comprar Tu Boleto a Machu Picchu: Guía Completa"
 slug: "como-comprar-tu-boleto-a-machu-picchu-guia-completa"

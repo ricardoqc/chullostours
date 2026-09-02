@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
 
 :root {
   /* Color Palette Variables */
@@ -153,4 +154,105 @@ h1, h2, h3, h4, h5, h6 {
 :focus-visible {
   outline: 2px solid var(--secondary-color);
   outline-offset: 2px;
+}
+
+/* Leaflet — Tailwind preflight aplica max-width:100% y height:auto a img */
+.leaflet-container img.leaflet-tile,
+.leaflet-container .leaflet-tile {
+  width: 256px !important;
+  height: 256px !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.leaflet-container img {
+  max-width: none !important;
+}
+
+.leaflet-container {
+  background: #e2e8f0;
+  font-family: inherit;
+}
+
+.leaflet-tour-map.leaflet-container,
+.leaflet-tour-map {
+  height: 100% !important;
+  width: 100% !important;
+  min-height: 320px;
+  z-index: 0;
+}
+
+.leaflet-tour-map--expanded.leaflet-container {
+  min-height: 360px;
+}
+
+.leaflet-chullos-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-chullos-pin-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  pointer-events: auto;
+}
+
+.leaflet-chullos-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: #6b0014;
+  color: #ffc000;
+  font-size: 12px;
+  font-weight: 900;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  border: 2px solid #fff;
+}
+
+.leaflet-chullos-pin-text {
+  display: block;
+  transform: rotate(45deg);
+  line-height: 1;
+}
+
+.leaflet-chullos-label {
+  display: block;
+  max-width: 120px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #1e293b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow:
+    0 0 4px #fff,
+    0 0 4px #fff,
+    1px 1px 0 #fff;
+}
+
+.leaflet-tour-map .leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.leaflet-tour-map .leaflet-control-zoom a {
+  color: #6b0014 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

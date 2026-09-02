@@ -1,0 +1,10 @@
+TOUR: 7 Lagunas de Ausangate (Pacchanta) Full Day
+Slug JSON: 7-lagunas-ausangate-pacchanta
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/7-lagunas-ausangate-pacchanta/01.jpg

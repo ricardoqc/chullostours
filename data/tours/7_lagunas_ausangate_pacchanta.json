@@ -39,7 +39,32 @@
     "Termas de Pacchanta: Aguas termales medicinales andinas para relajarse al final del trek.",
     "Fauna andina: Posibilidad de avistamiento de vicuñas, alpacas, flamencos y cóndores andinos."
   ],
-  "galeria": [],
+  "galeria": [
+    {
+      "src": "https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Laguna turquesa del circuito de 7 Lagunas con el nevado Ausangate de fondo",
+      "caption": "Lagunas glaciares de colores turquesa, esmeralda y azul profundo en Pacchanta.",
+      "credito": "Unsplash / Licencia Libre"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Valle altoandino en la cordillera del Vilcanota durante la caminata al Apu Ausangate",
+      "caption": "Caminata de altura en el circuito sagrado del Apu Ausangate a más de 4,300 msnm.",
+      "credito": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Llamas y alpacas pastando en los bofedales andinos de Pacchanta Ocongate",
+      "caption": "Comunidades andinas que conservan la crianza tradicional de camélidos sudamericanos.",
+      "credito": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1589802829985-817e51171b92?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Pozas de aguas termales medicinales de Pacchanta con vista panorámica al glaciar",
+      "caption": "Relajantes baños termales naturales al aire libre al concluir el trekking.",
+      "credito": "Unsplash"
+    }
+  ],
   "itinerario": [
     {
       "dia": 1,
@@ -134,6 +159,22 @@
     {
       "pregunta": "¿Por qué las lagunas tienen diferentes colores?",
       "respuesta": "Los diferentes colores se deben a la composición mineral del agua glacial, la profundidad de cada laguna, el ángulo del sol y los sedimentos que aportan el deshielo del Ausangate."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour 7 Lagunas de Ausangate (Pacchanta) Full Day?",
+      "respuesta": "El precio desde USD $50 por persona contempla: Recojo del hotel en Cusco.; Transporte turístico de ida y retorno.; Guía profesional bilingüe especializado.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Alta). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -148,7 +189,7 @@
       "og_description": "Circuito de las 7 lagunas multicolores al pie del Ausangate con termas al final. Trekking único desde Cusco.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/7-lagunas-ausangate-pacchanta/",
-      "og_image": "/tours/7-lagunas-ausangate-pacchanta/01.jpg",
+      "og_image": "/media/tours/7-lagunas-ausangate-pacchanta/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -156,7 +197,7 @@
       "card": "summary_large_image",
       "title": "7 Lagunas de Ausangate Pacchanta | Chullos Tours",
       "description": "Circuito de las 7 lagunas al pie del nevado Ausangate y termas de Pacchanta.",
-      "image": "/tours/7-lagunas-ausangate-pacchanta/01.jpg"
+      "image": "/media/tours/7-lagunas-ausangate-pacchanta/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -215,7 +256,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "45.00",
+          "price": "50",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/7-lagunas-ausangate-pacchanta/"
@@ -254,5 +295,19 @@
       "titulo": "Desafío de Montaña",
       "detalle": "Caminata en altitud (4,900 m.s.n.m.) — Se incluye botiquín y balón de oxígeno"
     }
-  ]
+  ],
+  "precio_usd": 50,
+  "precio": 50,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 61,
+    "online_usd": 56,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 188,
+  "visible": true
 }

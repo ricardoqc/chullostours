@@ -1,0 +1,9 @@
+HOTEL: Machupicchu Inn
+Ciudad: Aguas Calientes
+Convención:
+  01-fachada.jpg
+  02-habitacion.jpg
+  03-lobby.jpg      (opcional)
+JSON tour → opciones_hotel[].hoteles[].imagenes:
+  ["/hoteles/machupicchu-inn/01-fachada.jpg", "/hoteles/machupicchu-inn/02-habitacion.jpg"]
+  imagenes_referenciales: false

@@ -1,0 +1,9 @@
+HOTEL: Hotel Rojas Inn Cusco
+Ciudad: Cusco
+Convención:
+  01-fachada.jpg
+  02-habitacion.jpg
+  03-lobby.jpg      (opcional)
+JSON tour → opciones_hotel[].hoteles[].imagenes:
+  ["/hoteles/hotel-rojas-inn-cusco/01-fachada.jpg", "/hoteles/hotel-rojas-inn-cusco/02-habitacion.jpg"]
+  imagenes_referenciales: false

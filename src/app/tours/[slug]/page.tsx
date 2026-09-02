@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { getTourBySlug, getAllTours } from "@/lib/tours";
+import { resolveGalleryItems } from "@/lib/gallery-media";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { TourDetailClient } from "./tour-detail-client";
@@ -10,7 +11,7 @@ interface TourPageProps {
   }>;
 }
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const tours = getAllTours();
@@ -63,29 +64,31 @@ export default async function TourPage({ params }: TourPageProps) {
     notFound();
   }
 
+  const galleryItems = resolveGalleryItems(tour);
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [
+    itemListElement: [
       {
         "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://chullostours.com/"
+        position: 1,
+        name: "Inicio",
+        item: "https://chullostours.com/",
       },
       {
         "@type": "ListItem",
-        "position": 2,
-        "name": "Tours",
-        "item": "https://chullostours.com/tienda/"
+        position: 2,
+        name: "Tours",
+        item: "https://chullostours.com/tours/",
       },
       {
         "@type": "ListItem",
-        "position": 3,
-        "name": tour.titulo,
-        "item": `https://chullostours.com/tours/${tour.slug}/`
-      }
-    ]
+        position: 3,
+        name: tour.titulo,
+        item: `https://chullostours.com/tours/${tour.slug}/`,
+      },
+    ],
   };
 
   return (
@@ -100,7 +103,9 @@ export default async function TourPage({ params }: TourPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <TourDetailClient tour={tour} allTours={allTours} />
+      <Suspense fallback={<div className="p-12 text-center text-slate-500 font-bold">Cargando experiencia...</div>}>
+        <TourDetailClient tour={tour} allTours={allTours} galleryItems={galleryItems} />
+      </Suspense>
     </>
   );
 }

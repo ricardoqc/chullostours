@@ -1,0 +1,10 @@
+TOUR: Machu Picchu Full Day con Tren Observatory
+Slug JSON: machupicchu-full-day-con-tren-observatory
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/machupicchu-full-day-con-tren-observatory/01.jpg

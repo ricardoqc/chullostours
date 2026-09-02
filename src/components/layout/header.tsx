@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Mail, Search, Menu, X, ChevronDown } from "lucide-react";
@@ -14,11 +14,14 @@ import {
 } from "@/components/ui/icons";
 import { companyInfo } from "@/lib/company-info";
 import { useTranslation } from "@/i18n/I18nContext";
+import { PeruCurrencySelector } from "@/components/layout/PeruCurrencySelector";
+import { TourImage } from "@/components/ui/TourImage";
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [isScrolledPastHero, setIsScrolledPastHero] = useState(false);
   const pathname = usePathname();
   const { t } = useTranslation();
 
@@ -26,13 +29,38 @@ export const Header: React.FC = () => {
     { name: t("header.nav.machuPicchu"), href: "/machu-picchu-2026", hasDropdown: false },
     { name: t("header.nav.customTrip"), href: "/viaje-personalizado", hasDropdown: false },
     { name: t("header.nav.catalog"), href: "/tours", hasDropdown: false },
-    { name: "Blog y Guías", href: "/blog", hasDropdown: false },
+    { name: "Blog", href: "/blog", hasDropdown: false },
     { name: t("header.nav.aboutUs"), href: "/acerca-de-chullos-tours", hasDropdown: false },
     { name: t("header.nav.contact"), href: "/contacto-chullos", hasDropdown: false },
   ];
 
+  const isTourDetailPage = pathname?.startsWith("/tours/") && pathname !== "/tours";
+
+  useEffect(() => {
+    if (!isTourDetailPage) {
+      setIsScrolledPastHero(false);
+      return;
+    }
+
+    const handleScroll = () => {
+      // Once scrolled past hero where TourTabNav kicks in, hide web header
+      setIsScrolledPastHero(window.scrollY > 480);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isTourDetailPage]);
+
   return (
-    <header className="w-full sticky -top-11 md:-top-12 z-50">
+    <header
+      className={`w-full transition-all duration-300 z-50 ${
+        isTourDetailPage
+          ? isScrolledPastHero
+            ? "sticky -top-11 md:-top-12 -translate-y-full opacity-0 pointer-events-none"
+            : "sticky -top-11 md:-top-12 opacity-100"
+          : "sticky -top-11 md:-top-12"
+      }`}
+    >
       {/* Top Maroon Banner - Optimized Mobile Display */}
       <div className="bg-[#6b0014] text-white pt-2.5 pb-10 px-4 md:px-12 text-xs md:text-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
@@ -74,8 +102,9 @@ export const Header: React.FC = () => {
             </a>
           </div>
 
-          {/* Right Social Circular Icons */}
+          {/* Right Social Icons + currency (Perú) */}
           <div className="flex items-center gap-2 shrink-0">
+            <PeruCurrencySelector />
             <a
               href={companyInfo.social.facebook}
               target="_blank"
@@ -117,13 +146,16 @@ export const Header: React.FC = () => {
       </div>
 
       {/* Main Floating Sticky Nav Card Container */}
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-8 -mt-8 sticky top-3 z-50 transition-all">
+      <div className={`max-w-7xl mx-auto px-3 sm:px-4 md:px-8 -mt-8 ${isTourDetailPage ? "relative z-30" : "sticky top-3 z-50"} transition-all`}>
         <div className="bg-white/95 backdrop-blur-md rounded-2xl md:rounded-[20px] shadow-xl border border-gray-100 px-3 sm:px-4 md:px-6 py-2 md:py-3 flex items-center justify-between transition-all">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink">
-            <img
+            <TourImage
               src="/img/Chullos-Tourslogo.png"
               alt="Viajando con Chullos Tours Logo"
+              width={200}
+              height={48}
+              priority
               className="h-8 sm:h-10 md:h-12 w-auto max-w-[160px] sm:max-w-none object-contain"
             />
           </Link>
@@ -187,23 +219,60 @@ export const Header: React.FC = () => {
 
         {/* Search Drawer / Input Bar */}
         {searchOpen && (
-          <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-4 mt-2 max-w-xl mx-auto flex items-center gap-2 z-40 relative animate-slideDown">
-            <Search className="w-5 h-5 text-[#6b0014] shrink-0" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="¿Qué tour o destino buscas en Cusco?"
-              className="w-full text-sm font-medium text-[#1C1C1C] focus:outline-none placeholder:text-gray-400"
-              autoFocus
-            />
-            <Link
-              href={searchQuery ? `/resultados-de-busqueda?q=${encodeURIComponent(searchQuery)}` : "/tours"}
-              onClick={() => setSearchOpen(false)}
-              className="bg-[#6b0014] text-white text-xs font-bold px-4 py-2 rounded-lg hover:bg-[#850019] transition-colors shrink-0"
+          <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 p-5 mt-2 max-w-2xl mx-auto flex flex-col gap-3 z-40 relative animate-slideDown">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                if (searchQuery.trim()) {
+                  window.location.href = `/resultados-de-busqueda?q=${encodeURIComponent(searchQuery.trim())}`;
+                  setSearchOpen(false);
+                } else {
+                  window.location.href = "/tours";
+                  setSearchOpen(false);
+                }
+              }}
+              className="flex items-center gap-2 bg-slate-50 p-1.5 pl-4 rounded-2xl border-2 border-slate-200 focus-within:border-[#6b0014] focus-within:ring-4 focus-within:ring-[#6b0014]/10 transition-all"
             >
-              Buscar
-            </Link>
+              <Search className="w-5 h-5 text-[#6b0014] shrink-0" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="¿Qué tour o destino buscas? (ej. Machu Picchu, Humantay...)"
+                className="w-full text-sm font-semibold text-slate-900 focus:outline-none placeholder:text-slate-400 bg-transparent py-2"
+                autoFocus
+              />
+              <button
+                type="submit"
+                className="bg-[#6b0014] hover:bg-[#850019] text-white text-xs font-extrabold px-5 py-2.5 rounded-xl transition-all shrink-0 cursor-pointer shadow-md active:scale-95 font-title"
+              >
+                Buscar
+              </button>
+            </form>
+
+            {/* Quick Suggestions / Popular Searches */}
+            <div className="flex flex-wrap items-center gap-1.5 pt-1">
+              <span className="text-[11px] font-extrabold text-slate-400 uppercase tracking-wider mr-1">
+                Búsquedas populares:
+              </span>
+              {[
+                "Machu Picchu",
+                "Camino Inca",
+                "Laguna Humantay",
+                "Montaña de 7 Colores",
+                "Valle Sagrado",
+                "Titicaca",
+              ].map((term) => (
+                <Link
+                  key={term}
+                  href={`/resultados-de-busqueda?q=${encodeURIComponent(term)}`}
+                  onClick={() => setSearchOpen(false)}
+                  className="text-xs bg-slate-100 hover:bg-[#ffc000]/20 hover:text-[#6b0014] text-slate-700 font-semibold px-2.5 py-1 rounded-lg transition-colors border border-slate-200/60"
+                >
+                  {term}
+                </Link>
+              ))}
+            </div>
           </div>
         )}
 

@@ -1,0 +1,7 @@
+CARPETAS DE MARCA Y UI
+brand/          Logos (Chullos-Tourslogo.png, favicon)
+marketing/      Fondos home, footer, perfiles
+legal-brands/   TripAdvisor, MINCETUR, ESSNA, etc.
+placeholders/   placeholder.jpg genérico
+
+Rutas en código: /img/brand/... o /img/... (legacy en raíz img/)

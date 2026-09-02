@@ -20,6 +20,21 @@
     "grupo_max": 15,
     "nivel_fisico": "Exigente (Caminata en pendiente a gran altitud)"
   },
+  "mapa": {
+    "zoom_inicial": 10,
+    "destinos": [
+      {
+        "place_id": "cusco",
+        "order": 1,
+        "marker": "city"
+      },
+      {
+        "place_id": "humantay",
+        "order": 2,
+        "marker": "nature"
+      }
+    ]
+  },
   "resumen": "Descubre una de las joyas naturales más espectaculares de los Andes peruanos. Camina hacia las aguas turquesas de la Laguna Humantay a los pies del imponente nevado Salkantay, disfrutando de paisajes deslumbrantes, desayuno andino y almuerzo buffet en Mollepata.",
   "descripcion_completa": "El Tour Laguna Humantay Full Day es una de las caminatas de un día más fascinantes y fotogénicas de Cusco. Situada a 4,200 metros sobre el nivel del mar y alimentada por el deshielo del majestuoso nevado Humantay y la cordillera del Vilcabamba, esta laguna destaca por su impactante color turquesa, el cual varía de tonalidad según la posición del sol y la estación del año.\n\nNuestra aventura inicia muy temprano por la mañana con el recojo en tu hotel en Cusco. Viajaremos en nuestro cómodo transporte turístico por el pintoresco Valle Anta hasta el poblado de Mollepata, donde disfrutaremos de un nutritivo desayuno andino buffet para cargar energías. Luego, continuaremos el trayecto hasta Challacancha y Soraypampa (3,900 m.s.n.m.), el punto de inicio de la caminata.\n\nDesde Soraypampa, emprenderemos una caminata en ascensión de aproximadamente 1.5 a 2 horas rodeados de imponentes montañas e glaciares. Al alcanzar la cumbre, serás recompensado con la majestuosa vista de la Laguna Humantay y los imponentes glaciares Salkantay y Humantay. Tendrás tiempo libre suficiente para contemplar el paisaje, tomar fotografías espectaculares y participar en un pequeño ritual andino de pago a la Pachamama con hojas de coca.\n\nPosteriormente, descenderemos de regreso a Soraypampa para abordar el transporte con destino a Mollepata, donde saborearemos un gratificante almuerzo buffet con platos típicos andinos antes de retornar cómodamente a la ciudad de Cusco.",
   "propuesta_de_valor": [
@@ -37,19 +52,19 @@
   ],
   "galeria": [
     {
-      "src": "/tours/laguna-humantay-tour-cusco/05.avif",
+      "src": "/media/tours/laguna-humantay-tour-cusco/05.avif",
       "alt": "Laguna Humantay de aguas turquesas rodeada de glaciares"
     },
     {
-      "src": "/tours/laguna-humantay-tour-cusco/06.avif",
+      "src": "/media/tours/laguna-humantay-tour-cusco/06.avif",
       "alt": "Trekker contemplando el nevado Salkantay y Humantay"
     },
     {
-      "src": "/tours/laguna-humantay-tour-cusco/07.jpg",
+      "src": "/media/tours/laguna-humantay-tour-cusco/07.jpg",
       "alt": "Vista panorámica de la caminata hacia Soraypampa"
     },
     {
-      "src": "/tours/laguna-humantay-tour-cusco/08.jpg",
+      "src": "/media/tours/laguna-humantay-tour-cusco/08.jpg",
       "alt": "Grupo de viajeros disfrutando del paisaje en la Laguna Humantay"
     }
   ],
@@ -145,6 +160,18 @@
     {
       "pregunta": "¿Llevan oxígeno médico durante la excursión?",
       "respuesta": "Sí, todos nuestros grupos cuentan con botiquín de primeros auxilios y balón de oxígeno médico para prevenir inconvenientes por mal de altitud."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Tour Laguna Humantay Full Day?",
+      "respuesta": "El precio desde USD $40 por persona contempla: Recojo de su hotel en el centro histórico de Cusco.; Transporte turístico de ida y retorno.; Guía profesional oficial de turismo bilingüe (Español / Inglés).. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Moderada - Alta). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
     }
   ],
   "seo": {
@@ -159,7 +186,7 @@
       "og_description": "Descubre la mística laguna turquesa a los pies del nevado Salkantay con guía bilingüe y transporte turístico.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/laguna-humantay-tour-cusco/",
-      "og_image": "/tours/laguna-humantay-tour-cusco/05.avif",
+      "og_image": "/media/tours/laguna-humantay-tour-cusco/05.avif",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -167,7 +194,7 @@
       "card": "summary_large_image",
       "title": "Tour Laguna Humantay Full Day | Chullos Tours",
       "description": "Caminata espectacular hacia la Laguna Humantay en Cusco. Incluye desayuno, almuerzo buffet y transporte.",
-      "image": "/tours/laguna-humantay-tour-cusco/05.avif"
+      "image": "/media/tours/laguna-humantay-tour-cusco/05.avif"
     }
   },
   "geo_ai_optimization": {
@@ -220,10 +247,10 @@
         "description": "Excursión guiada de día completo hacia la majestuosa Laguna Humantay con desayuno y almuerzo buffet incluidos.",
         "url": "https://chullostours.com/tours/laguna-humantay-tour-cusco/",
         "image": [
-          "/tours/laguna-humantay-tour-cusco/05.avif",
-          "/tours/laguna-humantay-tour-cusco/06.avif",
-          "/tours/laguna-humantay-tour-cusco/07.jpg",
-          "/tours/laguna-humantay-tour-cusco/08.jpg"
+          "/media/tours/laguna-humantay-tour-cusco/05.avif",
+          "/media/tours/laguna-humantay-tour-cusco/06.avif",
+          "/media/tours/laguna-humantay-tour-cusco/07.jpg",
+          "/media/tours/laguna-humantay-tour-cusco/08.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -232,7 +259,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "25.00",
+          "price": "40",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/laguna-humantay-tour-cusco/"
@@ -304,5 +331,18 @@
       "titulo": "Desafío de Montaña",
       "detalle": "Caminata en altitud (4,200 m.s.n.m.) — Se incluye botiquín y balón de oxígeno"
     }
-  ]
+  ],
+  "precio_usd": 40,
+  "precio": 40,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 49,
+    "online_usd": 45,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 150
 }

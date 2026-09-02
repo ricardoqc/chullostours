@@ -39,7 +39,32 @@
     "Lago Titicaca: El lago navegable más alto del mundo a 3,820 m.s.n.m., sagrado para las culturas andinas.",
     "Bus Cama nocturno: Transporte cómodo incluido, sin perder días de viaje."
   ],
-  "galeria": [],
+  "galeria": [
+    {
+      "src": "/media/tours/tour-lago-titicaca-2-dias/05.avif",
+      "alt": "Islas flotantes de los Uros y barcos de totora en el Lago Titicaca Puno",
+      "caption": "Primer punto del recorrido: explicación comunitaria del tejido de las islas flotantes.",
+      "credito": "Chullos Tours / Archivo Oficial"
+    },
+    {
+      "src": "/media/tours/tour-lago-titicaca-2-dias/08.avif",
+      "alt": "Habitantes de Taquile mostrando las técnicas ancestrales de tejido en lana de oveja",
+      "caption": "Almuerzo típico con trucha fresca y exhibición del arte textil en Taquile.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/tour-lago-titicaca-2-dias/06.jpg",
+      "alt": "Aguas azul zafiro del Lago Titicaca vistas desde las colinas de Taquile",
+      "caption": "El lago navegable más alto del mundo bajo el cielo despejado del altiplano.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/tour-lago-titicaca-2-dias/07.jpg",
+      "alt": "Arco de piedra colonial y andenes de Taquile frente al horizonte del lago",
+      "caption": "Descenso por las escalinatas de piedra hacia el puerto principal de la isla.",
+      "credito": "Chullos Tours"
+    }
+  ],
   "itinerario": [
     {
       "dia": 1,
@@ -134,6 +159,22 @@
     {
       "pregunta": "¿Cuántos días de aclimatación se necesitan?",
       "respuesta": "Para Puno y el Lago Titicaca se recomienda al menos 2-3 días de aclimatación en Cusco antes del tour, ya que Puno tiene mayor altitud que Cusco."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Tour Puno Full Day – Islas Uros y Taquile (Lago Titicaca)?",
+      "respuesta": "El precio desde USD $120 por persona contempla: Ticket de Bus Cama Cusco – Puno – Cusco (ida y retorno).; Transporte terrestre en Puno.; Navegación en embarcación turística rápida en el Lago Titicaca.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Fácil). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -148,7 +189,7 @@
       "og_description": "Visita el Lago Titicaca: Islas Flotantes de los Uros y Taquile en un tour de día completo desde Cusco.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/tour-puno-full-day-uros-taquile/",
-      "og_image": "/tours/tour-puno-full-day-uros-taquile/01.jpg",
+      "og_image": "/media/tours/tour-puno-full-day-uros-taquile/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -156,7 +197,7 @@
       "card": "summary_large_image",
       "title": "Tour Puno Full Day – Uros y Taquile | Chullos Tours",
       "description": "Lago Titicaca: Islas Uros y Taquile. Bus cama, navegación y almuerzo incluidos.",
-      "image": "/tours/tour-puno-full-day-uros-taquile/01.jpg"
+      "image": "/media/tours/tour-puno-full-day-uros-taquile/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -215,7 +256,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "120.00",
+          "price": "120",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/tour-puno-full-day-uros-taquile/"
@@ -249,5 +290,18 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 20 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 120,
+  "precio": 120,
+  "destino_ids": [
+    "puno",
+    "lago-titicaca"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 146,
+    "online_usd": 134,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 450
 }

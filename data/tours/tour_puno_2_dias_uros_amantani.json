@@ -39,7 +39,32 @@
     "Peña Cultural: Música, danza y trajes típicos de las comunidades del Lago Titicaca.",
     "Tres islas: Uros, Amantaní y Taquile en una sola experiencia de 2 días."
   ],
-  "galeria": [],
+  "galeria": [
+    {
+      "src": "/media/tours/tour-lago-titicaca-2-dias/05.avif",
+      "alt": "Familia uros en balsa tradicional de totora en las islas flotantes del Lago Titicaca",
+      "caption": "Cultura viva milenaria habitando sobre plataformas tejidas con totora en Puno.",
+      "credito": "Chullos Tours / Archivo Oficial"
+    },
+    {
+      "src": "/media/tours/tour-lago-titicaca-2-dias/06.jpg",
+      "alt": "Isla de Amantaní y vista panorámica del Lago Titicaca al atardecer",
+      "caption": "Alojamiento vivencial en casa de familias locales en la isla de Amantaní.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/tour-lago-titicaca-2-dias/07.jpg",
+      "alt": "Santuario ceremonial preincaico de Pachatata en la cima de Amantaní",
+      "caption": "Atardecer místico y ritual de pago a la Pachamama a 4,100 msnm.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/tour-lago-titicaca-2-dias/08.avif",
+      "alt": "Tejedor tradicional de la Isla de Taquile con vestimenta típica andina",
+      "caption": "El arte textil de Taquile, reconocido como patrimonio inmaterial por la UNESCO.",
+      "credito": "Chullos Tours"
+    }
+  ],
   "itinerario": [
     {
       "dia": 1,
@@ -146,6 +171,26 @@
     {
       "pregunta": "¿El bus cama es cómodo para dormir?",
       "respuesta": "Sí, los buses cama tienen asientos semi-cama de amplio reclinamiento, con mantas y almohadas. El viaje Cusco-Puno dura aproximadamente 6-7 horas."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Tour Puno 2 Días / 1 Noche – Uros, Amantaní y Taquile (Turismo Vivencial)?",
+      "respuesta": "El precio desde USD $200 por persona contempla: Ticket de Bus Cama Cusco – Puno – Cusco (ida y retorno).; Navegación completa en bote turístico por el Lago Titicaca.; Guía Profesional bilingüe.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Fácil - Moderada). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 4,150 m.s.n.m.. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
     }
   ],
   "seo": {
@@ -160,7 +205,7 @@
       "og_description": "La experiencia vivencial más auténtica del Lago Titicaca: noche en familia en Amantaní, Uros y Taquile en 2 días.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/tour-puno-2-dias-uros-amantani/",
-      "og_image": "/tours/tour-puno-2-dias-uros-amantani/01.jpg",
+      "og_image": "/media/tours/tour-puno-2-dias-uros-amantani/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -168,7 +213,7 @@
       "card": "summary_large_image",
       "title": "Tour Puno 2 Días Vivencial | Chullos Tours",
       "description": "Turismo vivencial en el Lago Titicaca: Uros, noche en Amantaní y Taquile.",
-      "image": "/tours/tour-puno-2-dias-uros-amantani/01.jpg"
+      "image": "/media/tours/tour-puno-2-dias-uros-amantani/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -227,7 +272,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "200.00",
+          "price": "200",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/tour-puno-2-dias-uros-amantani/"
@@ -261,5 +306,18 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 16 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 200,
+  "precio": 200,
+  "destino_ids": [
+    "puno",
+    "lago-titicaca"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 244,
+    "online_usd": 224,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 750
 }

@@ -20,6 +20,31 @@
     "grupo_max": 10,
     "nivel_fisico": "Fácil (Apto para todo público)"
   },
+  "mapa": {
+    "zoom_inicial": 9,
+    "destinos": [
+      {
+        "place_id": "cusco",
+        "order": 1,
+        "marker": "city"
+      },
+      {
+        "place_id": "ollantaytambo",
+        "order": 2,
+        "marker": "landmark"
+      },
+      {
+        "place_id": "aguas-calientes",
+        "order": 3,
+        "marker": "city"
+      },
+      {
+        "place_id": "machu-picchu",
+        "order": 4,
+        "marker": "landmark"
+      }
+    ]
+  },
   "resumen": "Descubre la enigmática Maravilla del Mundo en un tour de un día con la comodidad del Tren PeruRail Expedition o Inca Rail Voyager. Incluye recojo de tu hotel en Cusco, transporte turístico a Ollantaytambo, viaje en tren panorámico, bus a la ciudadela inca, entrada garantizada y guiado profesional.",
   "descripcion_completa": "El tour Machu Picchu Full Day en Tren Expedition está diseñado para viajeros que desean explorar la Maravilla del Mundo Inca de forma eficiente, cómoda y accesible en un solo día. Este servicio ofrece asientos confortables, amplias ventanas para apreciar la transición geográfica entre los Andes y la ceja de selva, y un servicio a bordo caracterizado por la amabilidad andina.\n\nTu aventura inicia muy temprano con el traslado desde tu hotel en Cusco hasta la estación de trenes en Ollantaytambo. Desde allí abordarás el Tren Expedition, recorriendo el pintoresco cañón del río Urubamba en un trayecto de casi dos horas hacia la villa de Aguas Calientes (Machu Picchu Pueblo). A tu llegada, nuestro guía bilingüe te acompañará a tomar el bus turístico Consettur que asciende por la sinuosa carretera Hiram Bingham hasta la puerta de ingreso de la ciudadela sagrada.\n\nDentro de Machu Picchu realizarás un recorrido guiado inolvidable de 2.5 a 3 horas descubriendo sus principales sectores como el Templo del Sol, la Plaza Principal, la Intihuatana, las terrazas agrícolas y los recintos reales. Tu guía oficial de turismo te explicará en detalle la arquitectura, la cosmovisión y el significado astronómico de este santuario incaico. Al finalizar la visita guiada, retornarás en bus a Aguas Calientes con tiempo libre para almorzar antes de abordar el tren de regreso a Ollantaytambo y el traslado final hasta tu hotel en Cusco.",
   "propuesta_de_valor": [
@@ -39,23 +64,23 @@
   ],
   "galeria": [
     {
-      "src": "/tours/machu-picchu-full-day-tren-expedition/05.jpg",
+      "src": "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg",
       "alt": "Vista panorámica de la Llaqta Inca de Machu Picchu"
     },
     {
-      "src": "/tours/machu-picchu-full-day-tren-expedition/06.jpg",
+      "src": "/media/tours/machu-picchu-full-day-tren-expedition/06.jpg",
       "alt": "Vagón del Tren Expedition atravesando el Valle Sagrado"
     },
     {
-      "src": "/tours/machu-picchu-full-day-tren-expedition/07.avif",
+      "src": "/media/tours/machu-picchu-full-day-tren-expedition/07.avif",
       "alt": "Templo del Sol en la ciudadela de Machu Picchu"
     },
     {
-      "src": "/tours/machu-picchu-full-day-tren-expedition/08.jpg",
+      "src": "/media/tours/machu-picchu-full-day-tren-expedition/08.jpg",
       "alt": "Recorrido guiado por las terrazas agrícolas incas"
     },
     {
-      "src": "/tours/machu-picchu-full-day-tren-expedition/11.avif",
+      "src": "/media/tours/machu-picchu-full-day-tren-expedition/11.avif",
       "alt": "Montaña Huayna Picchu y ruinas de Machu Picchu"
     }
   ],
@@ -148,6 +173,18 @@
     {
       "pregunta": "¿El recorrido guiado dentro de Machu Picchu es exigente físicamente?",
       "respuesta": "No, el recorrido sigue circuitos turísticos establecidos con escalinatas de piedra a paso moderado. Es apto para la mayoría de personas con un nivel de condición física normal."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Machu Picchu Full Day en Tren Expedition?",
+      "respuesta": "El precio desde USD $300 por persona contempla: Recojo de su hotel en el centro de Cusco y traslado en transporte privado/compartido a la estación de Ollantaytambo.; Boleto de tren ida y vuelta en servicio PeruRail Expedition o Inca Rail Voyager.; Boleto de bus Consettur ida y vuelta entre Aguas Calientes y la ciudadela de Machu Picchu.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Baja - Moderada). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
     }
   ],
   "seo": {
@@ -162,7 +199,7 @@
       "og_description": "Conoce la ciudadela inca de Machu Picchu en un solo día con el confort del Tren Expedition. Incluye guía, boletos y traslados completos.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/machu-picchu-full-day-tren-expedition/",
-      "og_image": "/tours/machu-picchu-full-day-tren-expedition/05.jpg",
+      "og_image": "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -170,7 +207,7 @@
       "card": "summary_large_image",
       "title": "Machu Picchu Full Day en Tren Expedition | Chullos Tours",
       "description": "Viaje completo a Machu Picchu en 1 día con Tren Expedition. Boletos garantizados y servicio VIP.",
-      "image": "/tours/machu-picchu-full-day-tren-expedition/05.jpg"
+      "image": "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -223,11 +260,11 @@
         "description": "Tour de 1 día a la Maravilla del Mundo Machu Picchu con servicio de Tren Expedition, buses Consettur, entradas oficiales y guía bilingüe.",
         "url": "https://chullostours.com/tours/machu-picchu-full-day-tren-expedition/",
         "image": [
-          "/tours/machu-picchu-full-day-tren-expedition/05.jpg",
-          "/tours/machu-picchu-full-day-tren-expedition/06.jpg",
-          "/tours/machu-picchu-full-day-tren-expedition/07.avif",
-          "/tours/machu-picchu-full-day-tren-expedition/08.jpg",
-          "/tours/machu-picchu-full-day-tren-expedition/11.avif"
+          "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg",
+          "/media/tours/machu-picchu-full-day-tren-expedition/06.jpg",
+          "/media/tours/machu-picchu-full-day-tren-expedition/07.avif",
+          "/media/tours/machu-picchu-full-day-tren-expedition/08.jpg",
+          "/media/tours/machu-picchu-full-day-tren-expedition/11.avif"
         ],
         "brand": {
           "@type": "Brand",
@@ -236,7 +273,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "280.00",
+          "price": "300",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/machu-picchu-full-day-tren-expedition/"
@@ -297,5 +334,73 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 10 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 300,
+  "precio": 300,
+  "destino_ids": [
+    "machu-picchu",
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 366,
+    "online_usd": 336,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [
+    {
+      "id": "huayna-picchu",
+      "label": "Entrada Huayna Picchu",
+      "precio_usd": 20,
+      "precio_soles": 75,
+      "enabled": true,
+      "descripcion": "Ascenso opcional a la montaña Huayna Picchu (cupos limitados)."
+    }
+  ],
+  "entradas_incluidas": {
+    "destacado": true,
+    "titulo": "Entradas incluidas",
+    "detalle": "Ingreso oficial a Machu Picchu, bus Consettur y tren turístico según itinerario.",
+    "variant": "gold"
+  },
+  "aplica_descuentos_edad": true,
+  "tarifas_personas": [
+    {
+      "id": "adulto",
+      "label": "Adulto (18–100 años)",
+      "rango_edad": "18-100",
+      "edad_min": 18,
+      "edad_max": 100,
+      "tipo": "fixed",
+      "descuento_usd": 0
+    },
+    {
+      "id": "joven",
+      "label": "Joven (12–17 años)",
+      "rango_edad": "12-17",
+      "edad_min": 12,
+      "edad_max": 17,
+      "tipo": "discount",
+      "descuento_usd": 20
+    },
+    {
+      "id": "nino",
+      "label": "Niño (3–11 años)",
+      "rango_edad": "3-11",
+      "edad_min": 3,
+      "edad_max": 11,
+      "tipo": "discount",
+      "descuento_usd": 30
+    },
+    {
+      "id": "infante",
+      "label": "Infante (0–2 años)",
+      "rango_edad": "0-2",
+      "edad_min": 0,
+      "edad_max": 2,
+      "tipo": "free",
+      "descuento_usd": 0
+    }
+  ],
+  "precio_pen": 1125
 }

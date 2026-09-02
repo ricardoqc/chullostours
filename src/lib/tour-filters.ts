@@ -15,9 +15,11 @@ export interface DestinationFilter {
 
 export const DESTINATION_FILTERS: DestinationFilter[] = [
   { id: 'all', label: 'Todos los Destinos', iconName: 'Globe' },
-  { id: 'cusco', label: 'Cusco & Machu Picchu', iconName: 'Mountain' },
+  { id: 'cusco', label: 'Cusco & Alrededores', iconName: 'Mountain' },
+  { id: 'machu-picchu', label: 'Machu Picchu', iconName: 'Landmark' },
+  { id: 'valle-sagrado', label: 'Valle Sagrado', iconName: 'Trees' },
   { id: 'puno', label: 'Puno & Titicaca', iconName: 'Waves' },
-  { id: 'lima', label: 'Lima & Ica (Costa)', iconName: 'Sun' },
+  { id: 'lima', label: 'Lima & Costa', iconName: 'Sun' },
 ];
 
 export const TRAVELER_PROFILES: TravelerProfile[] = [
@@ -75,6 +77,12 @@ export function parseDurationDays(duracion: string | undefined): number {
 }
 
 export function getTourDestination(tour: Tour): string {
+  if (tour.destino_ids && tour.destino_ids.length > 0) {
+    if (tour.destino_ids.includes('puno') || tour.destino_ids.includes('lago-titicaca')) return 'puno';
+    if (tour.destino_ids.includes('lima')) return 'lima';
+    return 'cusco';
+  }
+
   const slug = tour.slug.toLowerCase();
   const location = (tour.atributos?.ubicacion || '').toLowerCase();
   const categoria = (tour.categoria || '').toLowerCase();
@@ -109,7 +117,36 @@ export function getTourDestination(tour: Tour): string {
   return 'cusco';
 }
 
+/** True if tour matches a destination filter id (supports fine-grained ids). */
+export function tourMatchesDestination(tour: Tour, destinationId: string): boolean {
+  if (!destinationId || destinationId === 'all') return true;
+  const ids = tour.destino_ids || [];
+  if (ids.includes(destinationId)) return true;
+
+  // Alias map for home / legacy links
+  const aliases: Record<string, string[]> = {
+    'cusco-ciudad': ['cusco', 'cusco-ciudad'],
+    cusco: ['cusco', 'cusco-ciudad', 'machu-picchu', 'valle-sagrado'],
+    'machu-picchu': ['machu-picchu'],
+    'valle-sagrado': ['valle-sagrado'],
+    'lago-titicaca': ['lago-titicaca', 'puno'],
+    puno: ['puno', 'lago-titicaca'],
+    lima: ['lima'],
+  };
+
+  const expanded = aliases[destinationId] || [destinationId];
+  if (ids.some((id) => expanded.includes(id))) return true;
+
+  // Fallback for tours without destino_ids
+  return getTourDestination(tour) === destinationId ||
+    (destinationId === 'cusco-ciudad' && getTourDestination(tour) === 'cusco') ||
+    (destinationId === 'machu-picchu' && tour.slug.toLowerCase().includes('machu')) ||
+    (destinationId === 'valle-sagrado' && tour.slug.toLowerCase().includes('valle-sagrado')) ||
+    (destinationId === 'lago-titicaca' && getTourDestination(tour) === 'puno');
+}
+
 export function estimateTourPrice(tour: Tour): number {
+  // Prefer explicit JSON pricing via shared pricing module pattern
   if (typeof tour.precio_usd === 'number' && tour.precio_usd > 0) {
     return tour.precio_usd;
   }
@@ -117,36 +154,24 @@ export function estimateTourPrice(tour: Tour): number {
     return tour.precio;
   }
 
+  if (tour.opciones_hotel && tour.opciones_hotel.length > 0) {
+    const minHotel = Math.min(...tour.opciones_hotel.map((h) => h.precio_usd).filter((n) => n > 0));
+    if (minHotel > 0 && Number.isFinite(minHotel)) return minHotel;
+  }
+
   if (tour.seo_schema && Array.isArray(tour.seo_schema['@graph'])) {
-    const prod = tour.seo_schema['@graph'].find((g: any) => g && g['@type'] === 'Product');
-    if (prod && prod.offers && prod.offers.price) {
-      const parsed = parseFloat(prod.offers.price);
+    const prod = tour.seo_schema['@graph'].find((g: { '@type'?: string }) => g && g['@type'] === 'Product') as
+      | { offers?: { price?: string | number } }
+      | undefined;
+    if (prod?.offers?.price != null) {
+      const parsed = parseFloat(String(prod.offers.price));
       if (!isNaN(parsed) && parsed > 0) {
         return parsed;
       }
     }
   }
 
-  const days = parseDurationDays(tour.atributos?.duracion);
-  if (days >= 5) return 450;
-  if (days >= 4) return 380;
-  if (days >= 3) return 290;
-  if (days >= 2) return 180;
-
-  const slug = tour.slug.toLowerCase();
-  if (slug.includes('machu-picchu') || slug.includes('machupicchu')) {
-    return 299;
-  }
-  if (slug.includes('vinicunca') || slug.includes('humantay')) {
-    return 45;
-  }
-  if (slug.includes('cuatrimoto') || slug.includes('atv')) {
-    return 55;
-  }
-  if (slug.includes('city-tour')) {
-    return 35;
-  }
-  return 65;
+  return 0;
 }
 
 export function deriveExperienceTags(tour: Tour): string[] {
@@ -257,6 +282,36 @@ export function deriveExperienceTags(tour: Tour): string[] {
     title.includes('vivencial')
   ) {
     tags.push('mystic');
+  }
+
+  // Familiar (Family friendly routes)
+  if (
+    slug.includes('city-tour') ||
+    slug.includes('valle-sagrado') ||
+    slug.includes('valle-sur') ||
+    slug.includes('machu-picchu') ||
+    slug.includes('magico') ||
+    slug.includes('titicaca') ||
+    slug.includes('tren') ||
+    days >= 2 ||
+    categoria.includes('cultural') ||
+    categoria.includes('tradicional')
+  ) {
+    tags.push('familiar');
+  }
+
+  // Parejas / Romance (Magical couples experiences)
+  if (
+    slug.includes('magico') ||
+    slug.includes('machu-picchu') ||
+    slug.includes('valle-sagrado') ||
+    slug.includes('tren') ||
+    slug.includes('vistadome') ||
+    slug.includes('titicaca') ||
+    slug.includes('humantay') ||
+    days >= 3
+  ) {
+    tags.push('pareja');
   }
 
   return tags;

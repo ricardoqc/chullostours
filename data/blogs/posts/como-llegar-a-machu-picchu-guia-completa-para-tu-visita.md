@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-09-18.jpg"
+featured_image_alt: "Tren turístico panorámico recorriendo la vía férrea del Valle Sagrado hacia Aguas Calientes"
+featured_image_caption: "Ruta ferroviaria por el cañón del río Urubamba rumbo a Machu Picchu Pueblo."
+featured_image_credito: "Chullos Tours / Archivo Oficial"
 id: 1146
 title: "Cómo Llegar a Machu Picchu: Guía Completa para tu Visita"
 slug: "como-llegar-a-machu-picchu-guia-completa-para-tu-visita"

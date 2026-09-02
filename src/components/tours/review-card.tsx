@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { FaCircle } from "react-icons/fa";
 import { TripAdvisorReview } from "@/lib/reviews";
 import { SocialTripadvisor } from "@/components/ui/icons";
+import { TourImage } from "@/components/ui/TourImage";
 
 export function ReviewCard({ review }: { review: TripAdvisorReview }) {
   const [expanded, setExpanded] = useState(false);
@@ -43,7 +44,13 @@ export function ReviewCard({ review }: { review: TripAdvisorReview }) {
 
       <div className="pt-3 border-t border-slate-100 flex items-center gap-3 text-xs">
         {review.user?.avatar?.image ? (
-          <img src={review.user.avatar.image} alt={review.user.name} className="w-8 h-8 rounded-full object-cover" />
+          <TourImage
+            src={review.user.avatar.image}
+            alt={review.user.name}
+            width={32}
+            height={32}
+            className="w-8 h-8 rounded-full object-cover"
+          />
         ) : (
           <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold uppercase">
             {review.user?.name ? review.user.name.charAt(0) : "U"}

@@ -20,6 +20,26 @@
     "grupo_max": 15,
     "nivel_fisico": "Fácil a Moderado (Apto para todo público)"
   },
+  "mapa": {
+    "zoom_inicial": 10,
+    "destinos": [
+      {
+        "place_id": "cusco",
+        "order": 1,
+        "marker": "city"
+      },
+      {
+        "place_id": "valle-sagrado",
+        "order": 2,
+        "marker": "nature"
+      },
+      {
+        "place_id": "ollantaytambo",
+        "order": 3,
+        "marker": "landmark"
+      }
+    ]
+  },
   "resumen": "El circuito más completo para explorar el Valle Sagrado de los Incas en un solo día. Visita los telares tradicionales de Chinchero, las terrazas circulares de Moray, las salineras de Maras, la fortaleza de Ollantaytambo, el almuerzo buffet en Urubamba y el mercado y ruinas de Pisac.",
   "descripcion_completa": "El Tour Valle Sagrado VIP es la versión ampliada y definitiva para conocer todos los grandes tesoros del legendario Valle Sagrado en un solo día. A diferencia de las rutas tradicionales, este itinerario exclusivo combina los atractivos clásicos de Ollantaytambo y Pisac con las maravillas arqueológicas de Chinchero, las misteriosas terrazas agrícolas de Moray y las impresionantes Salineras de Maras.\n\nComenzaremos la excursión a las 06:30 AM trasladándonos hacia el pueblo tradicional de Chinchero, célebre por su iglesia colonial construida sobre palacios incas y por sus talleres artesanales donde presenciaremos el proceso ancestral de teñido y tejido en lana de alpaca. Luego continuaremos hacia las terrazas concéntricas de Moray, un avanzado laboratorio de experimentación agrícola incaico.\n\nA corta distancia visitaremos las Salineras de Maras, compuestas por más de 3,000 pozas de sal natural alimentadas por un manantial subterráneo desde tiempos preincas. A mediodía descendemos al corazón del Valle Sagrado en Urubamba para disfrutar de un exquisito almuerzo buffet con lo mejor de la gastronomía peruana e internacional.\n\nPor la tarde exploraremos la majestuosa Fortaleza de Ollantaytambo, una impresionante villa inca viviente con sus imponentes muros y templos de piedra. Finalmente nos dirigiremos hacia Pisac para recorrer su monumental complejo arqueológico sobre el cañón del río Vilcanota y su pintoresco mercado artesanal antes de retornar a la ciudad de Cusco.",
   "propuesta_de_valor": [
@@ -39,27 +59,27 @@
   ],
   "galeria": [
     {
-      "src": "/tours/valle-sagrado-vip-tour-cusco/05.avif",
+      "src": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif",
       "alt": "Terrazas agrícolas circulares de Moray en el Valle Sagrado"
     },
     {
-      "src": "/tours/valle-sagrado-vip-tour-cusco/06.avif",
+      "src": "/media/tours/valle-sagrado-vip-tour-cusco/06.avif",
       "alt": "Pozas de extracción de sal en las Salineras de Maras"
     },
     {
-      "src": "/tours/valle-sagrado-vip-tour-cusco/07.avif",
+      "src": "/media/tours/valle-sagrado-vip-tour-cusco/07.avif",
       "alt": "Fortaleza militar y monolitos de piedra en Ollantaytambo"
     },
     {
-      "src": "/tours/valle-sagrado-vip-tour-cusco/08.avif",
+      "src": "/media/tours/valle-sagrado-vip-tour-cusco/08.avif",
       "alt": "Andenes y ruinas incas en lo alto de Pisac"
     },
     {
-      "src": "/tours/valle-sagrado-vip-tour-cusco/09.avif",
+      "src": "/media/tours/valle-sagrado-vip-tour-cusco/09.avif",
       "alt": "Demostración textil tradicional en Chinchero Cusco"
     },
     {
-      "src": "/tours/valle-sagrado-vip-tour-cusco/10.jpg",
+      "src": "/media/tours/valle-sagrado-vip-tour-cusco/10.jpg",
       "alt": "Vista panorámica del hermoso Valle Sagrado de los Incas"
     }
   ],
@@ -69,7 +89,7 @@
       "titulo": "Valle Sagrado VIP Full Day: Chinchero - Maras - Moray - Urubamba - Ollantaytambo - Pisac",
       "descripcion": "Recorrido de 12 horas abarcando lo mejor del Valle Sagrado con almuerzo buffet.",
       "actividades": [
-        "06:30 AM - 07:00 AM | Recojo de su hotel en el centro histórico de Cusco.",
+        "06:00 AM - 06:50 AM | Recojo de su hotel en el centro histórico de Cusco.",
         "07:45 AM | Visita a Chinchero: Iglesia colonial, ruinas incas y taller de tejido artesanal.",
         "09:30 AM | Complejo Arqueológico de Moray: Recorrido guiado por las terrazas circulares.",
         "10:45 AM | Salineras de Maras: Vista del mirador de las pozas de sal rosada.",
@@ -90,11 +110,11 @@
     "Transporte turístico cómodo durante todo el circuito.",
     "Guía profesional de turismo en español e inglés.",
     "Almuerzo buffet en restaurante turístico en Urubamba.",
+    "Boleto Turístico del Cusco (BTC Parcial 70 PEN).",
+    "Boleto de ingreso a las Salineras de Maras (20 PEN por persona).",
     "Asistencia permanente por parte del equipo de Chullos Tours."
   ],
   "no_incluye": [
-    "Boleto Turístico del Cusco (BTC General 130 PEN o Parcial 70 PEN).",
-    "Boleto de ingreso a las Salineras de Maras (20 PEN por persona).",
     "Bebidas extra durante el almuerzo.",
     "Propinas para el personal."
   ],
@@ -149,6 +169,26 @@
     {
       "pregunta": "¿Qué boleto de ingreso se requiere?",
       "respuesta": "Se necesita el Boleto Turístico del Cusco (BTC General de 130 PEN o Parcial Circuito 3 de 70 PEN) más la entrada a Maras (20 PEN en efectivo)."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Tour Valle Sagrado VIP Full Day (Chinchero, Maras, Moray, Urubamba, Ollantaytambo y Pisac)?",
+      "respuesta": "El precio desde USD $60 por persona contempla: Recojo de su hotel en Cusco.; Transporte turístico cómodo durante todo el circuito.; Guía profesional de turismo en español e inglés.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Baja - Moderada). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 3,762 m.s.n.m. en Chinchero. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
     }
   ],
   "seo": {
@@ -163,7 +203,7 @@
       "og_description": "Conoce los 6 mejores atractivos del Valle Sagrado en un día con almuerzo buffet y transporte VIP.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/valle-sagrado-vip-tour-cusco/",
-      "og_image": "/tours/valle-sagrado-vip-tour-cusco/05.avif",
+      "og_image": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -171,7 +211,7 @@
       "card": "summary_large_image",
       "title": "Tour Valle Sagrado VIP Full Day | Chullos Tours",
       "description": "El tour más completo al Valle Sagrado: Maras, Moray, Chinchero, Ollantaytambo y Pisac.",
-      "image": "/tours/valle-sagrado-vip-tour-cusco/05.avif"
+      "image": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif"
     }
   },
   "geo_ai_optimization": {
@@ -220,12 +260,12 @@
         "description": "Excursión VIP de día completo por Chinchero, Moray, Salineras de Maras, Urubamba, Ollantaytambo y Pisac con almuerzo buffet.",
         "url": "https://chullostours.com/tours/valle-sagrado-vip-tour-cusco/",
         "image": [
-          "/tours/valle-sagrado-vip-tour-cusco/05.avif",
-          "/tours/valle-sagrado-vip-tour-cusco/06.avif",
-          "/tours/valle-sagrado-vip-tour-cusco/07.avif",
-          "/tours/valle-sagrado-vip-tour-cusco/08.avif",
-          "/tours/valle-sagrado-vip-tour-cusco/09.avif",
-          "/tours/valle-sagrado-vip-tour-cusco/10.jpg"
+          "/media/tours/valle-sagrado-vip-tour-cusco/05.avif",
+          "/media/tours/valle-sagrado-vip-tour-cusco/06.avif",
+          "/media/tours/valle-sagrado-vip-tour-cusco/07.avif",
+          "/media/tours/valle-sagrado-vip-tour-cusco/08.avif",
+          "/media/tours/valle-sagrado-vip-tour-cusco/09.avif",
+          "/media/tours/valle-sagrado-vip-tour-cusco/10.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -234,7 +274,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "35.00",
+          "price": "60",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/valle-sagrado-vip-tour-cusco/"
@@ -298,5 +338,19 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 15 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 60,
+  "precio": 60,
+  "destino_ids": [
+    "valle-sagrado",
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 73,
+    "online_usd": 67,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 225
 }

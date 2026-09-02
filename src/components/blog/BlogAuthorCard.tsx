@@ -1,5 +1,6 @@
 import React from "react";
 import { Award, MapPin, CheckCircle2 } from "lucide-react";
+import { TourImage } from "@/components/ui/TourImage";
 
 interface BlogAuthorCardProps {
   authorName?: string;
@@ -10,9 +11,11 @@ export function BlogAuthorCard({ authorName = "Alexandra Gamboa" }: BlogAuthorCa
     <div className="bg-amber-50/50 border border-amber-200/60 rounded-3xl p-6 md:p-8 my-8 flex flex-col md:flex-row items-center md:items-start gap-6 shadow-sm">
       <div className="relative shrink-0">
         <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-[#6b0014] text-[#ffc000] flex items-center justify-center font-extrabold text-2xl border-4 border-white shadow-md overflow-hidden">
-          <img
+          <TourImage
             src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80"
             alt={authorName}
+            width={96}
+            height={96}
             className="w-full h-full object-cover"
           />
         </div>

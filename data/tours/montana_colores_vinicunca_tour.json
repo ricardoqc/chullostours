@@ -20,6 +20,21 @@
     "grupo_max": 15,
     "nivel_fisico": "Exigente (Caminata a gran altitud)"
   },
+  "mapa": {
+    "zoom_inicial": 10,
+    "destinos": [
+      {
+        "place_id": "cusco",
+        "order": 1,
+        "marker": "city"
+      },
+      {
+        "place_id": "vinicunca",
+        "order": 2,
+        "marker": "trek"
+      }
+    ]
+  },
   "resumen": "Visita la icónica Montaña Rainbow o Vinicunca, uno de los destinos naturales más asombrosos del planeta. Maravíllate con sus estratos multicolor naturales a más de 5,000 metros de altitud con la máxima seguridad y servicio de Chullos Tours.",
   "descripcion_completa": "El Tour Montaña de 7 Colores Vinicunca Full Day es una experiencia imprescindible para todo viajero que llega a Cusco. La montaña Vinicunca, reconocida internacionalmente como Rainbow Mountain, debe sus impactantes franjas de colores turquesa, dorado, fucsia y lavanda a una compleja acumulación de minerales marinos, lacustres y fluviales formados durante millones de años.\n\nIniciamos la jornada muy temprano entre las 04:00 AM y 04:30 AM con el recojo en tu hotel. Viajaremos hacia el sur de Cusco atravesando pintorescos valles andinos hasta llegar al poblado de Cusipata, donde disfrutaremos de un nutritivo desayuno buffet con bebidas calientes andinas.\n\nPosteriormente continuaremos el viaje hasta Phulawasipata (4,600 m.s.n.m.), punto de partida de la caminata. Desde aquí iniciaremos una caminata gradual de aproximadamente 1.5 a 2 horas ascendiendo entre valles habitados por alpacas y llamas con vistas impresionantes del majestuoso nevado Ausangate. Al alcanzar el mirador principal a 5,036 metros de altitud, tendrás tiempo para tomar fotografías inolvidables y apreciar una de las maravillas geológicas más famosas del mundo.\n\nTras disfrutar de esta maravilla natural, descenderemos hacia Phulawasipata para abordar nuestro transporte de retorno a Cusipata, donde nos aguarda un apetitoso almuerzo buffet. Finalmente, retornaremos a la ciudad de Cusco culminando un día memorable.",
   "propuesta_de_valor": [
@@ -37,15 +52,15 @@
   ],
   "galeria": [
     {
-      "src": "/tours/montana-colores-vinicunca-tour/06.avif",
+      "src": "/media/tours/montana-colores-vinicunca-tour/06.avif",
       "alt": "Vista icónica de la Montaña de 7 Colores Vinicunca"
     },
     {
-      "src": "/tours/montana-colores-vinicunca-tour/07.avif",
+      "src": "/media/tours/montana-colores-vinicunca-tour/07.avif",
       "alt": "Turista posando frente a la cima de Vinicunca"
     },
     {
-      "src": "/tours/montana-colores-vinicunca-tour/08.jpg",
+      "src": "/media/tours/montana-colores-vinicunca-tour/08.jpg",
       "alt": "Camino de trekking rodeado de alpacas con vista al nevado Ausangate"
     }
   ],
@@ -130,6 +145,22 @@
     {
       "pregunta": "¿El tour incluye el ingreso?",
       "respuesta": "No, el boleto de ingreso de 25 PEN se paga directamente en la garita de control de la comunidad comunal en efectivo."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Tour Montaña de 7 Colores Vinicunca Full Day?",
+      "respuesta": "El precio desde USD $40 por persona contempla: Recojo de su hotel en el centro histórico de Cusco.; Transporte turístico de ida y retorno.; Guía profesional oficial de turismo bilingüe (Español / Inglés).. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Moderada - Alta). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -144,7 +175,7 @@
       "og_description": "Camina hacia Vinicunca con transporte turístico, guía profesional, oxígeno médico y almuerzo buffet.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/montana-colores-vinicunca-tour/",
-      "og_image": "/tours/montana-colores-vinicunca-tour/06.avif",
+      "og_image": "/media/tours/montana-colores-vinicunca-tour/06.avif",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -152,7 +183,7 @@
       "card": "summary_large_image",
       "title": "Tour Montaña de 7 Colores Vinicunca | Chullos Tours",
       "description": "Descubre Rainbow Mountain Vinicunca en un tour Full Day inolvidable en Cusco.",
-      "image": "/tours/montana-colores-vinicunca-tour/06.avif"
+      "image": "/media/tours/montana-colores-vinicunca-tour/06.avif"
     }
   },
   "geo_ai_optimization": {
@@ -201,9 +232,9 @@
         "description": "Excursión a la célebre Montaña Rainbow Vinicunca a más de 5,000 m.s.n.m. con transporte turístico, guía bilingüe, desayuno y almuerzo buffet.",
         "url": "https://chullostours.com/tours/montana-colores-vinicunca-tour/",
         "image": [
-          "/tours/montana-colores-vinicunca-tour/06.avif",
-          "/tours/montana-colores-vinicunca-tour/07.avif",
-          "/tours/montana-colores-vinicunca-tour/08.jpg"
+          "/media/tours/montana-colores-vinicunca-tour/06.avif",
+          "/media/tours/montana-colores-vinicunca-tour/07.avif",
+          "/media/tours/montana-colores-vinicunca-tour/08.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -212,7 +243,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "25.00",
+          "price": "40",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/montana-colores-vinicunca-tour/"
@@ -276,5 +307,18 @@
       "titulo": "Desafío de Montaña",
       "detalle": "Caminata en altitud (5,036 m.s.n.m.) — Se incluye botiquín y balón de oxígeno"
     }
-  ]
+  ],
+  "precio_usd": 40,
+  "precio": 40,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 49,
+    "online_usd": 45,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 150
 }

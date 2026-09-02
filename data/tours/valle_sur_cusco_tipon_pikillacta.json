@@ -39,7 +39,32 @@
     "Andahuaylillas: La Sixtina de América, considerada la iglesia rural más bella de Latinoamérica.",
     "Saylla: Parada gastronómica para degustar el legendario chicharrón de cerdo tradicional de Cusco."
   ],
-  "galeria": [],
+  "galeria": [
+    {
+      "src": "/media/tours/city-tour-cusco/05.avif",
+      "alt": "Andenes agrícolas y fuentes de agua ceremoniales en el complejo arqueológico de Tipón",
+      "caption": "Tipón: joya de la ingeniería hidráulica inca donde el agua fluye ininterrumpidamente.",
+      "credito": "Chullos Tours / Archivo Oficial"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Murallas de piedra y arquitectura ortogonal de la ciudad preinca Wari de Pikillacta",
+      "caption": "Pikillacta: metrópoli administrativa de la cultura Wari anterior al Imperio Inca.",
+      "credito": "Unsplash"
+    },
+    {
+      "src": "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-05-26.jpg",
+      "alt": "Iglesia de San Pedro Apóstol de Andahuaylillas, la Capilla Sixtina de América",
+      "caption": "Templo barroco andino célebre por sus murales de pan de oro y techos mudéjares.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/city-tour-cusco/08.jpg",
+      "alt": "Valle del río Vilcanota y pueblos tradicionales de Oropesa y Saylla en el Valle Sur",
+      "caption": "Ruta gastronómica andina famosa por los panes chuta y el chicharrón tradicional.",
+      "credito": "Chullos Tours"
+    }
+  ],
   "itinerario": [
     {
       "dia": 1,
@@ -115,6 +140,26 @@
     {
       "pregunta": "¿Es posible combinarlo con otro tour en la tarde?",
       "respuesta": "Sí, al ser un tour de medio día que termina aproximadamente a las 15:00 hrs, es perfectamente posible combinarlo con el City Tour Nocturno u otro tour vespertino de Cusco."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Valle Sur Cusco – Tipón, Pikillacta y Andahuaylillas (Medio Día)?",
+      "respuesta": "El precio desde USD $55 por persona contempla: Recojo del hotel en Cusco.; Transporte turístico de ida y retorno.; Guía profesional bilingüe (Español / Inglés).. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Fácil). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 3,600 m.s.n.m.. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
     }
   ],
   "seo": {
@@ -129,7 +174,7 @@
       "og_description": "Tour de medio día por las joyas del sur de Cusco: ingeniería inca, ciudad Wari y la Sixtina de América.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/valle-sur-cusco-tipon-pikillacta/",
-      "og_image": "/tours/valle-sur-cusco-tipon-pikillacta/01.jpg",
+      "og_image": "/media/tours/valle-sur-cusco-tipon-pikillacta/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -137,7 +182,7 @@
       "card": "summary_large_image",
       "title": "Valle Sur Cusco | Chullos Tours",
       "description": "Tipón, Pikillacta y Andahuaylillas en un tour de medio día desde Cusco.",
-      "image": "/tours/valle-sur-cusco-tipon-pikillacta/01.jpg"
+      "image": "/media/tours/valle-sur-cusco-tipon-pikillacta/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -196,7 +241,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "45.00",
+          "price": "55",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/valle-sur-cusco-tipon-pikillacta/"
@@ -225,5 +270,18 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 20 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 55,
+  "precio": 55,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 67,
+    "online_usd": 62,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 206
 }

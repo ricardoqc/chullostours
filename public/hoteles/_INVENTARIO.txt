@@ -1,0 +1,16 @@
+FOTOS DE HOTELES — una carpeta por establecimiento
+Editar rutas en data/tours/*.json → hoteles[].imagenes
+
+  auri-boutique-hotel/  Auri Boutique Hotel
+  machupicchu-inn/  Machupicchu Inn
+  hotel-intiwatana/  Hotel Intiwatana
+  hotel-intiwatana-aguas-calientes/  Hotel Intiwatana Aguas Calientes
+  hotel-rojas-inn/  Hotel Rojas Inn
+  rojas-inn-aguas-calientes/  Rojas Inn Aguas Calientes
+  hotel-aury/  Hotel Aury
+  hotel-panaka/  Hotel Panaka
+  hotel-san-pedro-plaza/  Hotel San Pedro Plaza
+  hotel-intiwatana-lima/  Hotel Intiwatana Lima
+  hotel-intiwatana-cusco/  Hotel Intiwatana Cusco
+  hotel-rojas-inn-lima/  Hotel Rojas Inn Lima
+  hotel-rojas-inn-cusco/  Hotel Rojas Inn Cusco

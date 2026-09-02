@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/jumpstory-download20231026-152703-1.jpg"
+featured_image_alt: "Vista clásica de la Casa del Guardián y Huayna Picchu en el Santuario Histórico de Machu Picchu"
+featured_image_caption: "Vacaciones inolvidables explorando la obra cumbre de la arquitectura incaica."
+featured_image_credito: "Chullos Tours"
 id: 798
 title: "Explora las Maravillas de Machu Picchu: Vacaciones Inolvidables en el Corazón de los Andes"
 slug: "explora-las-maravillas-de-machu-picchu-vacaciones-inolvidables-en-el-corazon-de-los-andes"

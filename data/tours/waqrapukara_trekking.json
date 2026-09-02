@@ -39,7 +39,32 @@
     "Trekking exclusivo: Uno de los destinos menos masificados y más auténticos del Cusco profundo.",
     "Paisajes de puna andina: Bofedales, montañas y fauna silvestre (vicuñas, cóndores) en el camino."
   ],
-  "galeria": [],
+  "galeria": [
+    {
+      "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Fortaleza sagrada de Waqrapukara erigida sobre un espolón rocoso en forma de cuernos",
+      "caption": "Waqrapukara (4,140 msnm): imponente santuario y fortaleza ceremonial Qanchi e Inca.",
+      "credito": "Unsplash / Licencia Libre"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Cañón del río Apurímac visto desde las terrazas superiores de Waqrapukara",
+      "caption": "Vistas vertiginosas sobre el cañón del Apurímac en una de las rutas menos concurridas.",
+      "credito": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Pinturas rupestres prehispánicas y formaciones de piedra en el camino a Waqrapukara",
+      "caption": "Restos arqueológicos y arte rupestre milenario a lo largo del sendero.",
+      "credito": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Caminantes descansando en la plaza ceremonial de Waqrapukara frente al abismo",
+      "caption": "Trek de aventura y misticismo para amantes de la naturaleza y arqueología virgen.",
+      "credito": "Unsplash"
+    }
+  ],
   "itinerario": [
     {
       "dia": 1,
@@ -119,6 +144,26 @@
     {
       "pregunta": "¿Qué es exactamente Waqrapukara?",
       "respuesta": "Waqrapukara (Fortaleza Cornuda en quechua) es un sitio arqueológico prehispánico del Cusco caracterizado por dos imponentes torres de roca caliza en forma de cuernos que se elevan dramáticamente a 4,300 m.s.n.m. Es uno de los sitios más singulares y menos masificados del Perú."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Waqrapukara Trekking Full Day?",
+      "respuesta": "El precio desde USD $50 por persona contempla: Recojo del hotel en Cusco.; Transporte turístico de ida y retorno.; Guía profesional especializado en arqueología andina.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Alta). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 4,300 m.s.n.m.. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
     }
   ],
   "seo": {
@@ -133,7 +178,7 @@
       "og_description": "Trek a la fortaleza cornuda de Waqrapukara, uno de los sitios arqueológicos más singulares del sur de Cusco.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/waqrapukara-trekking/",
-      "og_image": "/tours/waqrapukara-trekking/01.jpg",
+      "og_image": "/media/tours/waqrapukara-trekking/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -141,7 +186,7 @@
       "card": "summary_large_image",
       "title": "Waqrapukara Trekking Full Day | Chullos Tours",
       "description": "Trek a la fortaleza de los cuernos de piedra a 4,300 m.s.n.m. Cusco profundo.",
-      "image": "/tours/waqrapukara-trekking/01.jpg"
+      "image": "/media/tours/waqrapukara-trekking/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -200,7 +245,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "50.00",
+          "price": "50",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/waqrapukara-trekking/"
@@ -239,5 +284,18 @@
       "titulo": "Desafío de Montaña",
       "detalle": "Caminata en altitud (4,300 m.s.n.m.) — Se incluye botiquín y balón de oxígeno"
     }
-  ]
+  ],
+  "precio_usd": 50,
+  "precio": 50,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 61,
+    "online_usd": 56,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 188
 }

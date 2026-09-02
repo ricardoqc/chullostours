@@ -1,0 +1,6 @@
+DESTINO: machu-picchu
+  hero.jpg   Imagen principal (mapa + landings)
+  thumb.jpg  Miniatura (opcional)
+
+URL: /destinos/machu-picchu/hero.jpg
+JSON: data/places.json → imagen

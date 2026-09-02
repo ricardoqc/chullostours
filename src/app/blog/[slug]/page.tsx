@@ -7,6 +7,7 @@ import { BlogAuthorCard } from "@/components/blog/BlogAuthorCard";
 import { BlogShareBar } from "@/components/blog/BlogShareBar";
 import { BlogRelatedPosts } from "@/components/blog/BlogRelatedPosts";
 import { notFound, redirect } from "next/navigation";
+import { TourImage } from "@/components/ui/TourImage";
 import {
   getAllBlogPosts,
   getBlogPostBySlug,
@@ -173,6 +174,32 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
               </div>
               <p>{post.excerpt}</p>
             </div>
+          )}
+
+          {/* Featured Image with SEO Alt & Attribution Legend */}
+          {post.featured_image && (
+            <figure className="relative w-full rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-50">
+              <div className="relative aspect-[16/9] w-full bg-slate-100">
+                <TourImage
+                  src={post.featured_image}
+                  alt={post.featured_image_alt || post.title}
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 896px) 100vw, 896px"
+                />
+              </div>
+              {(post.featured_image_caption || post.featured_image_credito) && (
+                <figcaption className="px-4 py-2.5 bg-slate-50 border-t border-slate-200/80 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+                  {post.featured_image_caption && <span>{post.featured_image_caption}</span>}
+                  {post.featured_image_credito && (
+                    <span className="text-[#6b0014] font-semibold text-[11px]">
+                      Fuente / Crédito: {post.featured_image_credito}
+                    </span>
+                  )}
+                </figcaption>
+              )}
+            </figure>
           )}
 
           {/* HTML Markdown Content */}

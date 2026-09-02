@@ -40,23 +40,23 @@
   ],
   "galeria": [
     {
-      "src": "/tours/camino-inca-2-dias/01.jpg",
+      "src": "/media/tours/camino-inca-2-dias/01.jpg",
       "alt": "Camino Inca 2 Días / 1 Noche - 01.jpg"
     },
     {
-      "src": "/tours/camino-inca-2-dias/02.jpg",
+      "src": "/media/tours/camino-inca-2-dias/02.jpg",
       "alt": "Camino Inca 2 Días / 1 Noche - 02.jpg"
     },
     {
-      "src": "/tours/camino-inca-2-dias/03.jpg",
+      "src": "/media/tours/camino-inca-2-dias/03.jpg",
       "alt": "Camino Inca 2 Días / 1 Noche - 03.jpg"
     },
     {
-      "src": "/tours/camino-inca-2-dias/04.avif",
+      "src": "/media/tours/camino-inca-2-dias/04.avif",
       "alt": "Camino Inca 2 Días / 1 Noche - 04.avif"
     },
     {
-      "src": "/tours/camino-inca-2-dias/05.jpg",
+      "src": "/media/tours/camino-inca-2-dias/05.jpg",
       "alt": "Camino Inca 2 Días / 1 Noche - 05.jpg"
     }
   ],
@@ -175,6 +175,22 @@
     {
       "pregunta": "¿Se puede ingresar con pasaporte vencido o renovado?",
       "respuesta": "Es indispensable presentar el mismo pasaporte original utilizado en la reserva. Si renovaste tu pasaporte, debes informar al equipo de Chullos Tours con anticipación para actualizar los datos."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Camino Inca 2 Días / 1 Noche?",
+      "respuesta": "El precio desde USD $570 por persona contempla: Traslado terrestre en transporte privado Cusco - Ollantaytambo - Cusco.; Tickets de tren ida y vuelta (Ollantaytambo - KM 104 / Aguas Calientes - Ollantaytambo).; Permisos oficiales de ingreso al Camino Inca y Boleto de Entrada a Machu Picchu.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Moderada). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -189,7 +205,7 @@
       "og_description": "Vive la experiencia del Camino Inca Corto hacia Machu Picchu atravesando el Inti Punku y Wiñay Wayna.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/camino-inca-2-dias/",
-      "og_image": "/tours/camino-inca-2-dias/01.jpg",
+      "og_image": "/media/tours/camino-inca-2-dias/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -197,7 +213,7 @@
       "card": "summary_large_image",
       "title": "Camino Inca 2 Días a Machu Picchu | Chullos Tours",
       "description": "Explora la ruta milenaria del Camino Inca Corto de 2 días. Incluye tren, ingresos, guía bilingüe y hotel.",
-      "image": "/tours/camino-inca-2-dias/01.jpg"
+      "image": "/media/tours/camino-inca-2-dias/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -254,11 +270,11 @@
         "description": "Caminata oficial del Camino Inca Corto desde el KM 104 hasta Machu Picchu vía Wiñay Wayna e Inti Punku con guía bilingüe y hotel en Aguas Calientes.",
         "url": "https://chullostours.com/tours/camino-inca-2-dias/",
         "image": [
-          "/tours/camino-inca-2-dias/01.jpg",
-          "/tours/camino-inca-2-dias/02.jpg",
-          "/tours/camino-inca-2-dias/03.jpg",
-          "/tours/camino-inca-2-dias/04.avif",
-          "/tours/camino-inca-2-dias/05.jpg"
+          "/media/tours/camino-inca-2-dias/01.jpg",
+          "/media/tours/camino-inca-2-dias/02.jpg",
+          "/media/tours/camino-inca-2-dias/03.jpg",
+          "/media/tours/camino-inca-2-dias/04.avif",
+          "/media/tours/camino-inca-2-dias/05.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -267,7 +283,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "450.00",
+          "price": "570",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/camino-inca-2-dias/"
@@ -328,5 +344,49 @@
       "titulo": "Guía Especializado",
       "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
     }
-  ]
+  ],
+  "precio_usd": 570,
+  "precio": 570,
+  "destino_ids": [
+    "machu-picchu",
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 695,
+    "online_usd": 638,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "aplica_descuentos_edad": true,
+  "tarifas_personas": [
+    {
+      "id": "adulto",
+      "label": "Adulto (18–100 años)",
+      "rango_edad": "18-100",
+      "edad_min": 18,
+      "edad_max": 100,
+      "tipo": "fixed",
+      "descuento_usd": 0
+    },
+    {
+      "id": "joven",
+      "label": "Joven (12–17 años)",
+      "rango_edad": "12-17",
+      "edad_min": 12,
+      "edad_max": 17,
+      "tipo": "discount",
+      "descuento_usd": 20
+    },
+    {
+      "id": "infante",
+      "label": "Infante (0–2 años)",
+      "rango_edad": "0-2",
+      "edad_min": 0,
+      "edad_max": 2,
+      "tipo": "free",
+      "descuento_usd": 0
+    }
+  ],
+  "precio_pen": 2138
 }

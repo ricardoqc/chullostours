@@ -1,25 +1,25 @@
 "use client";
 
 import React, { useState } from "react";
-import { 
-  Search, 
-  SlidersHorizontal, 
-  Sparkles, 
-  X, 
-  ChevronDown, 
+import {
+  Search,
+  SlidersHorizontal,
+  X,
   MapPin,
   Globe,
   Mountain,
   Waves,
   Sun,
+  Landmark,
+  Trees,
+  RotateCcw,
 } from "lucide-react";
 import { TRAVELER_PROFILES, DESTINATION_FILTERS } from "@/lib/tour-filters";
 import { TravelerProfilePill } from "./TravelerProfilePill";
 import { DayRangeSlider } from "./DayRangeSlider";
 import { BudgetSelector, BudgetLevel } from "./BudgetSelector";
-import { ActiveFilterTags } from "./ActiveFilterTags";
 
-interface ToursFilterBarProps {
+interface ToursFilterSidebarProps {
   searchQuery: string;
   onSearchChange: (q: string) => void;
   selectedDestination: string;
@@ -32,6 +32,9 @@ interface ToursFilterBarProps {
   onBudgetChange: (level: BudgetLevel) => void;
   onResetAll: () => void;
   totalResultsCount: number;
+  /** When true, render as mobile drawer content only */
+  variant?: "sidebar" | "drawer";
+  onCloseDrawer?: () => void;
 }
 
 const DEST_ICON_MAP: Record<string, React.ElementType> = {
@@ -39,9 +42,11 @@ const DEST_ICON_MAP: Record<string, React.ElementType> = {
   Mountain,
   Waves,
   Sun,
+  Landmark,
+  Trees,
 };
 
-export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
+export const ToursFilterSidebar: React.FC<ToursFilterSidebarProps> = ({
   searchQuery,
   onSearchChange,
   selectedDestination,
@@ -54,63 +59,51 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
   onBudgetChange,
   onResetAll,
   totalResultsCount,
+  variant = "sidebar",
+  onCloseDrawer,
 }) => {
-  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
-  const [advancedOpen, setAdvancedOpen] = useState(false);
-
-  const activeFiltersCount =
-    (selectedDestination !== "all" ? 1 : 0) +
-    selectedProfiles.length +
-    (dayRange[0] > 1 || dayRange[1] < 30 ? 1 : 0) +
-    (budgetLevel !== "all" ? 1 : 0) +
-    (searchQuery.trim().length > 0 ? 1 : 0);
-
-  return (
-    <div className="w-full flex flex-col gap-4 bg-white rounded-2xl md:rounded-3xl shadow-lg border border-slate-100 p-4 md:p-6 transition-all">
-      {/* Top Header Row inside Filter Container */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-3 border-b border-slate-100">
-        <div className="flex items-center gap-2.5">
-          <div className="w-9 h-9 rounded-xl bg-[#6b0014]/10 flex items-center justify-center text-[#6b0014]">
-            <Sparkles className="w-5 h-5" />
-          </div>
-          <div>
-            <h3 className="font-extrabold text-base md:text-lg text-slate-900 font-title tracking-tight">
-              Encuentra tu Experiencia Ideal
-            </h3>
-            <p className="text-xs text-slate-500">
-              Filtra rápidamente por destino, categoría, días de viaje o presupuesto
-            </p>
-          </div>
-        </div>
-
-        {/* Search Input Bar */}
-        <div className="relative w-full md:w-72">
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="Buscar destino o tour..."
-            className="w-full bg-slate-50 border border-slate-200 rounded-full px-4 py-2 pl-9 text-xs md:text-sm focus:outline-none focus:border-[#6b0014] text-slate-900 placeholder:text-slate-400 transition-colors"
-          />
-          <Search className="w-4 h-4 text-slate-400 absolute left-3 top-2.5" />
-          {searchQuery && (
-            <button
-              onClick={() => onSearchChange("")}
-              className="absolute right-3 top-2.5 text-slate-400 hover:text-slate-600 cursor-pointer"
-            >
-              <X className="w-3.5 h-3.5" />
-            </button>
-          )}
-        </div>
+  const content = (
+    <div className="flex flex-col gap-6">
+      <div className="flex items-center justify-between gap-2">
+        <h3 className="font-extrabold text-base text-slate-900 font-title flex items-center gap-2">
+          <SlidersHorizontal className="w-4 h-4 text-[#6b0014]" />
+          Filtros
+        </h3>
+        <button
+          type="button"
+          onClick={onResetAll}
+          className="text-[11px] font-bold text-slate-500 hover:text-[#6b0014] inline-flex items-center gap-1"
+        >
+          <RotateCcw className="w-3 h-3" />
+          Limpiar
+        </button>
       </div>
 
-      {/* Destination Pills Row */}
-      <div className="flex flex-wrap items-center gap-2 py-1">
-        <span className="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5 mr-2">
-          <MapPin className="w-3.5 h-3.5 text-[#6b0014]" />
-          <span>Destino:</span>
+      <div className="relative">
+        <input
+          type="text"
+          value={searchQuery}
+          onChange={(e) => onSearchChange(e.target.value)}
+          placeholder="Buscar tour..."
+          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 pl-9 text-xs focus:outline-none focus:border-[#6b0014]"
+        />
+        <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-3" />
+        {searchQuery && (
+          <button
+            type="button"
+            onClick={() => onSearchChange("")}
+            className="absolute right-3 top-3 text-slate-400"
+          >
+            <X className="w-3.5 h-3.5" />
+          </button>
+        )}
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 flex items-center gap-1">
+          <MapPin className="w-3 h-3" /> Destino
         </span>
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-col gap-1.5">
           {DESTINATION_FILTERS.map((dest) => {
             const isSelected = selectedDestination === dest.id;
             const DestIcon = DEST_ICON_MAP[dest.iconName] || MapPin;
@@ -119,202 +112,108 @@ export const ToursFilterBar: React.FC<ToursFilterBarProps> = ({
                 key={dest.id}
                 type="button"
                 onClick={() => onDestinationChange(dest.id)}
-                className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs md:text-sm font-semibold transition-all cursor-pointer border ${
+                className={`flex items-center gap-2 px-3 py-2.5 rounded-xl text-xs font-bold border transition-all text-left ${
                   isSelected
-                    ? "bg-[#6b0014] text-white border-[#6b0014] shadow-sm font-bold"
-                    : "bg-slate-50/80 text-slate-700 border-slate-200 hover:bg-slate-100 hover:border-slate-300"
+                    ? "bg-[#6b0014] text-white border-[#6b0014]"
+                    : "bg-white text-slate-700 border-slate-200 hover:border-[#6b0014]/40"
                 }`}
               >
-                <DestIcon
-                  className={`w-3.5 h-3.5 ${
-                    isSelected ? "text-amber-400" : "text-[#6b0014]"
-                  }`}
+                <DestIcon className={`w-3.5 h-3.5 shrink-0 ${isSelected ? "text-amber-300" : "text-[#6b0014]"}`} />
+                <span className="flex-1">{dest.label}</span>
+                <span
+                  className={`w-2 h-2 rounded-full ${isSelected ? "bg-amber-300" : "bg-slate-200"}`}
                 />
-                <span>{dest.label}</span>
               </button>
             );
           })}
         </div>
       </div>
 
-      {/* Primary Archetype Pills Row */}
-      <div className="flex flex-wrap items-center gap-2 py-1 border-t border-slate-100 pt-3">
-        <span className="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5 mr-2 w-full md:w-auto">
-          <span>Estilo:</span>
+      <div className="flex flex-col gap-2">
+        <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400">
+          Estilo de viaje
         </span>
-        {TRAVELER_PROFILES.map((profile) => (
-          <TravelerProfilePill
-            key={profile.id}
-            profile={profile}
-            isSelected={selectedProfiles.includes(profile.id)}
-            onToggle={() => onToggleProfile(profile.id)}
-          />
-        ))}
-      </div>
-
-      {/* Advanced Filters Toggle Button (Desktop & Mobile trigger) */}
-      <div className="flex items-center justify-between pt-2 border-t border-slate-100">
-        {/* Mobile Filter Drawer Button */}
-        <button
-          type="button"
-          onClick={() => setMobileDrawerOpen(true)}
-          className="md:hidden flex items-center gap-2 text-xs font-bold bg-[#6b0014] text-white px-4 py-2 rounded-xl shadow-sm"
-        >
-          <SlidersHorizontal className="w-4 h-4" />
-          <span>Filtros Avanzados</span>
-          {activeFiltersCount > 0 && (
-            <span className="bg-[#ffc000] text-slate-900 w-5 h-5 rounded-full text-[10px] font-extrabold flex items-center justify-center">
-              {activeFiltersCount}
-            </span>
-          )}
-        </button>
-
-        {/* Desktop Collapsible Toggle */}
-        <button
-          type="button"
-          onClick={() => setAdvancedOpen(!advancedOpen)}
-          className="hidden md:flex items-center gap-2 text-xs font-bold text-slate-600 hover:text-[#6b0014] cursor-pointer transition-colors"
-        >
-          <SlidersHorizontal className="w-3.5 h-3.5 text-[#6b0014]" />
-          <span>Filtros por Duración y Presupuesto</span>
-          <ChevronDown
-            className={`w-3.5 h-3.5 transition-transform duration-200 ${
-              advancedOpen ? "rotate-180" : ""
-            }`}
-          />
-        </button>
-
-        <span className="text-xs font-bold text-slate-500">
-          Encontrados: <strong className="text-[#6b0014]">{totalResultsCount}</strong> tours
-        </span>
-      </div>
-
-      {/* Collapsible Advanced Filters Row (Desktop) */}
-      {advancedOpen && (
-        <div className="hidden md:grid grid-cols-2 gap-8 pt-4 border-t border-slate-100 bg-slate-50/70 p-4 rounded-2xl animate-slideDown">
-          <DayRangeSlider
-            minDays={1}
-            maxDays={30}
-            value={dayRange}
-            onChange={onDayRangeChange}
-          />
-          <BudgetSelector
-            selectedLevel={budgetLevel}
-            onChange={onBudgetChange}
-          />
+        <div className="flex flex-wrap gap-2">
+          {TRAVELER_PROFILES.map((profile) => (
+            <TravelerProfilePill
+              key={profile.id}
+              profile={profile}
+              isSelected={selectedProfiles.includes(profile.id)}
+              onToggle={() => onToggleProfile(profile.id)}
+            />
+          ))}
         </div>
-      )}
+      </div>
 
-      {/* Active Filter Chips */}
-      <ActiveFilterTags
-        selectedDestination={selectedDestination}
-        onResetDestination={() => onDestinationChange("all")}
-        selectedProfiles={selectedProfiles}
-        onRemoveProfile={onToggleProfile}
-        dayRange={dayRange}
-        onResetDayRange={() => onDayRangeChange([1, 30])}
-        budgetLevel={budgetLevel}
-        onResetBudget={() => onBudgetChange("all")}
-        searchQuery={searchQuery}
-        onResetSearch={() => onSearchChange("")}
-        onResetAll={onResetAll}
+      <DayRangeSlider
+        minDays={1}
+        maxDays={30}
+        value={dayRange}
+        onChange={onDayRangeChange}
       />
 
-      {/* Mobile Drawer (Modal) */}
-      {mobileDrawerOpen && (
-        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60 backdrop-blur-sm p-0 sm:p-4 animate-fadeInUp">
-          <div className="w-full max-w-lg bg-white rounded-t-3xl sm:rounded-3xl p-6 flex flex-col gap-6 max-h-[85vh] overflow-y-auto shadow-2xl border border-slate-100">
-            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-              <h4 className="font-extrabold text-lg text-slate-900 flex items-center gap-2 font-title">
-                <SlidersHorizontal className="w-5 h-5 text-[#6b0014]" />
-                <span>Filtros de Búsqueda</span>
-              </h4>
-              <button
-                onClick={() => setMobileDrawerOpen(false)}
-                className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-900"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
+      <BudgetSelector selectedLevel={budgetLevel} onChange={onBudgetChange} />
 
-            {/* Destination in Mobile Drawer */}
-            <div className="flex flex-col gap-2">
-              <label className="text-xs font-bold uppercase text-slate-400 tracking-wider">
-                Destino / Región
-              </label>
-              <div className="flex flex-wrap gap-2">
-                {DESTINATION_FILTERS.map((dest) => {
-                  const isSelected = selectedDestination === dest.id;
-                  const DestIcon = DEST_ICON_MAP[dest.iconName] || MapPin;
-                  return (
-                    <button
-                      key={dest.id}
-                      type="button"
-                      onClick={() => onDestinationChange(dest.id)}
-                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border ${
-                        isSelected
-                          ? "bg-[#6b0014] text-white border-[#6b0014] font-bold"
-                          : "bg-slate-50 text-slate-700 border-slate-200"
-                      }`}
-                    >
-                      <DestIcon className={`w-3.5 h-3.5 ${isSelected ? "text-amber-400" : "text-[#6b0014]"}`} />
-                      <span>{dest.label}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Traveler Profiles in Mobile Drawer */}
-            <div className="flex flex-col gap-2">
-              <label className="text-xs font-bold uppercase text-slate-400 tracking-wider">
-                Estilo de Viaje
-              </label>
-              <div className="flex flex-wrap gap-2">
-                {TRAVELER_PROFILES.map((profile) => (
-                  <TravelerProfilePill
-                    key={profile.id}
-                    profile={profile}
-                    isSelected={selectedProfiles.includes(profile.id)}
-                    onToggle={() => onToggleProfile(profile.id)}
-                  />
-                ))}
-              </div>
-            </div>
-
-            {/* Duration Slider in Mobile Drawer */}
-            <DayRangeSlider
-              minDays={1}
-              maxDays={30}
-              value={dayRange}
-              onChange={onDayRangeChange}
-            />
-
-            {/* Budget Selector in Mobile Drawer */}
-            <BudgetSelector
-              selectedLevel={budgetLevel}
-              onChange={onBudgetChange}
-            />
-
-            <div className="pt-2 flex items-center gap-3 border-t border-slate-100">
-              <button
-                type="button"
-                onClick={onResetAll}
-                className="flex-1 py-3 text-xs font-bold text-red-600 bg-red-50 rounded-xl hover:bg-red-100 transition-colors"
-              >
-                Limpiar todo
-              </button>
-              <button
-                type="button"
-                onClick={() => setMobileDrawerOpen(false)}
-                className="flex-1 py-3 text-xs font-bold text-white bg-[#6b0014] rounded-xl hover:bg-[#850019] transition-colors shadow-md"
-              >
-                Aplicar Filtros ({totalResultsCount})
-              </button>
-            </div>
-          </div>
-        </div>
+      {variant === "drawer" && (
+        <button
+          type="button"
+          onClick={onCloseDrawer}
+          className="w-full py-3 rounded-xl bg-[#6b0014] text-white text-xs font-bold"
+        >
+          Ver {totalResultsCount} experiencias
+        </button>
       )}
     </div>
   );
+
+  if (variant === "drawer") return content;
+
+  return (
+    <aside className="w-full lg:sticky lg:top-24 bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+      {content}
+    </aside>
+  );
 };
+
+/** Mobile filter trigger + drawer */
+export const ToursFilterMobileTrigger: React.FC<
+  ToursFilterSidebarProps & { open: boolean; setOpen: (v: boolean) => void }
+> = (props) => {
+  const { open, setOpen, totalResultsCount, ...filterProps } = props;
+  return (
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="lg:hidden inline-flex items-center gap-2 bg-[#6b0014] text-white text-xs font-bold px-4 py-2.5 rounded-xl"
+      >
+        <SlidersHorizontal className="w-4 h-4" />
+        Filtros
+        <span className="bg-[#ffc000] text-slate-900 text-[10px] px-1.5 py-0.5 rounded-full">
+          {totalResultsCount}
+        </span>
+      </button>
+      {open && (
+        <div className="fixed inset-0 z-50 flex items-end bg-black/50 lg:hidden">
+          <div className="w-full max-h-[88vh] overflow-y-auto bg-white rounded-t-3xl p-5">
+            <div className="flex justify-between items-center mb-4">
+              <span className="font-extrabold font-title">Filtros</span>
+              <button type="button" onClick={() => setOpen(false)} aria-label="Cerrar">
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <ToursFilterSidebar
+              {...filterProps}
+              totalResultsCount={totalResultsCount}
+              variant="drawer"
+              onCloseDrawer={() => setOpen(false)}
+            />
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+/** @deprecated use ToursFilterSidebar — kept for imports */
+export const ToursFilterBar = ToursFilterSidebar;

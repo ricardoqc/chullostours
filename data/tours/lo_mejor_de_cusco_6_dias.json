@@ -1,7 +1,7 @@
 {
   "id": "lo-mejor-de-cusco-6-dias",
-  "precio_usd": 590,
-  "precio": 590,
+  "precio_usd": 550,
+  "precio": 550,
   "horarios_disponibles": [
     "Coordinación de llegada según itinerario de vuelo",
     "City Tour: 09:00 AM o 13:00 PM",
@@ -82,19 +82,19 @@
   ],
   "galeria": [
     {
-      "src": "/tours/lo-mejor-de-cusco-6-dias/05.jpg",
+      "src": "/media/tours/lo-mejor-de-cusco-6-dias/05.jpg",
       "alt": "Paquete Cusco de Ensueño 6 Días / 5 Noches - Machu Picchu"
     },
     {
-      "src": "/tours/lo-mejor-de-cusco-6-dias/06.jpg",
+      "src": "/media/tours/lo-mejor-de-cusco-6-dias/06.jpg",
       "alt": "Paquete Cusco de Ensueño 6 Días / 5 Noches - Valle Sagrado"
     },
     {
-      "src": "/tours/lo-mejor-de-cusco-6-dias/07.jpg",
+      "src": "/media/tours/lo-mejor-de-cusco-6-dias/07.jpg",
       "alt": "Paquete Cusco de Ensueño 6 Días / 5 Noches - Vinicunca"
     },
     {
-      "src": "/tours/lo-mejor-de-cusco-6-dias/08.jpg",
+      "src": "/media/tours/lo-mejor-de-cusco-6-dias/08.jpg",
       "alt": "Paquete Cusco de Ensueño 6 Días / 5 Noches - Morada de los Dioses"
     }
   ],
@@ -279,6 +279,30 @@
     {
       "pregunta": "¿Se requiere experiencia previa para conducir las cuatrimotos el Día 6?",
       "respuesta": "No se requiere experiencia previa. Antes de iniciar la ruta a la Morada de los Dioses, nuestro equipo realiza una clase práctica de 10 minutos para enseñar el manejo seguro de la cuatrimoto."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Paquete Cusco de Ensueño / Lo Mejor de Cusco 6 Días / 5 Noches?",
+      "respuesta": "El precio desde USD $590 por persona contempla: Recepción en el Aeropuerto de Cusco y traslados privados in/out; 4 Noches de Alojamiento en Cusco (Auri Boutique / Intiwatana / Rojas Inn); 1 Noche de Alojamiento en Aguas Calientes (Machupicchu Inn / Intiwatana / Rojas Inn). Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Moderada - Alta). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 5,020 m.s.n.m.. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
+    },
+    {
+      "pregunta": "¿Puedo cancelar o cambiar la fecha?",
+      "respuesta": "Sí, sujeto a políticas del servicio (trenes, entradas y hoteles). Avísanos lo antes posible por WhatsApp o correo; te orientaremos según la fecha y el tipo de experiencia."
     }
   ],
   "seo": {
@@ -293,7 +317,7 @@
       "og_description": "El paquete más completo de 6 días recorriendo Machu Picchu, Valle Sagrado VIP, Laguna Humantay, Vinicunca y Morada de los Dioses en Cuatrimotos.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/",
-      "og_image": "/tours/lo-mejor-de-cusco-6-dias/05.jpg",
+      "og_image": "/media/tours/lo-mejor-de-cusco-6-dias/05.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -301,7 +325,7 @@
       "card": "summary_large_image",
       "title": "Paquete Cusco de Ensueño 6 Días / 5 Noches",
       "description": "Recorre Machu Picchu, Valle Sagrado, Vinicunca, Humantay y Cuatrimotos en 6 días.",
-      "image": "/tours/lo-mejor-de-cusco-6-dias/05.jpg"
+      "image": "/media/tours/lo-mejor-de-cusco-6-dias/05.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -354,10 +378,10 @@
         "description": "Itinerario completo de 6 días recorriendo Cusco, Valle Sagrado VIP, pernocte en Aguas Calientes, Machu Picchu, Laguna Humantay, Vinicunca y Morada de los Dioses en Cuatrimotos.",
         "url": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/",
         "image": [
-          "/tours/lo-mejor-de-cusco-6-dias/05.jpg",
-          "/tours/lo-mejor-de-cusco-6-dias/06.jpg",
-          "/tours/lo-mejor-de-cusco-6-dias/07.jpg",
-          "/tours/lo-mejor-de-cusco-6-dias/08.jpg"
+          "/media/tours/lo-mejor-de-cusco-6-dias/05.jpg",
+          "/media/tours/lo-mejor-de-cusco-6-dias/06.jpg",
+          "/media/tours/lo-mejor-de-cusco-6-dias/07.jpg",
+          "/media/tours/lo-mejor-de-cusco-6-dias/08.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -366,12 +390,256 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "590.00",
+          "price": "550",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/lo-mejor-de-cusco-6-dias/"
         }
       }
     ]
-  }
+  },
+  "opciones_hotel": [
+    {
+      "id": "solo_tour",
+      "nombre": "Solo tour (sin alojamiento)",
+      "categoria": "Sin alojamiento",
+      "precio_usd": 550,
+      "precio_etiqueta": "USD $550.00 / persona",
+      "descripcion": "Incluye traslados, entradas, trenes y guía según itinerario. Sin estadía incluida: coordinas tu propio alojamiento.",
+      "incluye_alojamiento": false,
+      "hoteles": [],
+      "precio_pen": 2063,
+      "precio_soles": 2063
+    },
+    {
+      "id": "auri_basico",
+      "nombre": "Tour + Hotel Auri Básico",
+      "categoria": "Básico",
+      "precio_usd": 620,
+      "precio_etiqueta": "USD $620.00 / persona",
+      "descripcion": "Comodidad esencial con Auri Boutique Hotel en Cusco y noche en Aguas Calientes incluida.",
+      "estrellas": 3,
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Auri Boutique Hotel",
+          "direccion": "Calle Pardo, Cusco",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/cusco-magico-5-dias/02.jpg",
+            "/media/tours/cusco-magico-5-dias/03.jpg",
+            "/media/tours/descubre-cusco-3-dias/01.jpg"
+          ],
+          "imagenes_referenciales": false
+        },
+        {
+          "ciudad": "Aguas Calientes (Machu Picchu Pueblo)",
+          "hotel": "Machupicchu Inn",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/tour-machu-picchu-2-dias/02.jpg",
+            "/media/tours/tour-machu-picchu-2-dias/03.jpg",
+            "/media/tours/machu-picchu-full-day-tren-expedition/04.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 2325,
+      "precio_soles": 2325
+    },
+    {
+      "id": "intiwatana",
+      "nombre": "Tour + Hotel Intiwatana",
+      "categoria": "Boutique",
+      "precio_usd": 700,
+      "precio_etiqueta": "USD $700.00 / persona",
+      "descripcion": "Experiencia boutique con Hotel Intiwatana en Cusco y Aguas Calientes.",
+      "estrellas": 4,
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Intiwatana",
+          "direccion": "Calle Afligidos, Cusco",
+          "sitio_web": "https://www.intiwatana.pe/#/home",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/cusco-fascinante-4-dias/02.jpg",
+            "/media/tours/cusco-fascinante-4-dias/03.jpg",
+            "/media/tours/cusco-magico-5-dias/04.jpg"
+          ],
+          "imagenes_referenciales": false
+        },
+        {
+          "ciudad": "Aguas Calientes (Machu Picchu Pueblo)",
+          "hotel": "Hotel Intiwatana Aguas Calientes",
+          "sitio_web": "https://www.intiwatana.pe/#/home",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/tour-machu-picchu-2-dias/04.jpg",
+            "/media/tours/machu-picchu-full-day-tren-expedition/03.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 2625,
+      "precio_soles": 2625
+    },
+    {
+      "id": "rojas_inn",
+      "nombre": "Tour + Hotel Rojas Inn",
+      "categoria": "3 Estrellas",
+      "precio_usd": 740,
+      "precio_etiqueta": "USD $740.00 / persona",
+      "descripcion": "Mayor confort con Hotel Rojas Inn en Cusco y Aguas Calientes.",
+      "estrellas": 3,
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Rojas Inn",
+          "direccion": "Calle Tigre o Santa, Cusco",
+          "sitio_web": "https://hotelrojasinn.com/room/standard-double-room/",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/lo-mejor-de-cusco-6-dias/02.jpg",
+            "/media/tours/lo-mejor-de-cusco-6-dias/03.jpg",
+            "/media/tours/descubre-cusco-3-dias/02.jpg"
+          ],
+          "imagenes_referenciales": false
+        },
+        {
+          "ciudad": "Aguas Calientes (Machu Picchu Pueblo)",
+          "hotel": "Rojas Inn Aguas Calientes",
+          "sitio_web": "https://hotelrojasinn.com/room/standard-double-room/",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/tour-machu-picchu-2-dias/05.jpg",
+            "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 2775,
+      "precio_soles": 2775
+    }
+  ],
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad",
+    "machu-picchu",
+    "valle-sagrado"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 720,
+    "online_usd": 661,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [
+    {
+      "id": "huayna-picchu",
+      "label": "Entrada Huayna Picchu",
+      "precio_usd": 20,
+      "precio_soles": 75,
+      "enabled": true,
+      "descripcion": "Ascenso opcional a la montaña Huayna Picchu (cupos limitados)."
+    }
+  ],
+  "boleto_turistico": {
+    "tipo": "BTC_GENERAL",
+    "incluido": true,
+    "precio_pen": 130
+  },
+  "entradas_incluidas": {
+    "destacado": true,
+    "titulo": "Entradas incluidas",
+    "detalle": "Ingreso a Machu Picchu + Boleto Turístico General del Cusco (BTC).",
+    "variant": "gold"
+  },
+  "aplica_descuentos_edad": true,
+  "tarifas_personas": [
+    {
+      "id": "adulto",
+      "label": "Adulto (18–100 años)",
+      "rango_edad": "18-100",
+      "edad_min": 18,
+      "edad_max": 100,
+      "tipo": "fixed",
+      "descuento_usd": 0
+    },
+    {
+      "id": "joven",
+      "label": "Joven (12–17 años)",
+      "rango_edad": "12-17",
+      "edad_min": 12,
+      "edad_max": 17,
+      "tipo": "discount",
+      "descuento_usd": 20
+    },
+    {
+      "id": "nino",
+      "label": "Niño (3–11 años)",
+      "rango_edad": "3-11",
+      "edad_min": 3,
+      "edad_max": 11,
+      "tipo": "discount",
+      "descuento_usd": 30
+    },
+    {
+      "id": "infante",
+      "label": "Infante (0–2 años)",
+      "rango_edad": "0-2",
+      "edad_min": 0,
+      "edad_max": 2,
+      "tipo": "free",
+      "descuento_usd": 0
+    }
+  ],
+  "precio_pen": 2063
 }

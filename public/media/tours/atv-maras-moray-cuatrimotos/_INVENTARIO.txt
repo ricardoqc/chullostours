@@ -1,0 +1,10 @@
+TOUR: ATV Maras Moray (Cuatrimotos) Medio Día
+Slug JSON: atv-maras-moray-cuatrimotos
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/atv-maras-moray-cuatrimotos/01.jpg

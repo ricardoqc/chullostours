@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-06-18.jpg"
+featured_image_alt: "Vista panorámica de la ciudadela de Machu Picchu bajo el sol matutino"
+featured_image_caption: "Presupuesto detallado para entradas, trenes y alojamiento en Machu Picchu 2026."
+featured_image_credito: "Chullos Tours"
 id: 8833
 title: "¿Cuánto Cuesta Viajar a Machu Picchu en 2026?"
 slug: "cuanto-cuesta-viajar-a-machu-picchu-2026"

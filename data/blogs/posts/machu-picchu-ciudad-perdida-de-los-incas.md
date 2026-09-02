@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-09-04.jpg"
+featured_image_alt: "Muros ciclópeos y cantería inca pulida en el sector urbano de Machu Picchu"
+featured_image_caption: "El Templo del Sol y la arquitectura megalítica de la Ciudad Sagrada de los Incas."
+featured_image_credito: "Chullos Tours"
 id: 969
 title: "Machu Picchu: Ciudad de Los Incas"
 slug: "machu-picchu-ciudad-perdida-de-los-incas"

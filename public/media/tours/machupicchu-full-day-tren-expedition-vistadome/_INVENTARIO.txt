@@ -1,0 +1,10 @@
+TOUR: Machu Picchu Full Day Tren Expedition & Vistadome
+Slug JSON: machupicchu-full-day-tren-expedition-vistadome
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/machupicchu-full-day-tren-expedition-vistadome/01.jpg

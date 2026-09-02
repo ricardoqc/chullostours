@@ -38,23 +38,23 @@
   ],
   "galeria": [
     {
-      "src": "/tours/city-tour-cusco/05.avif",
+      "src": "/media/tours/city-tour-cusco/05.avif",
       "alt": "Templo del Qorikancha en Cusco"
     },
     {
-      "src": "/tours/city-tour-cusco/06.jpg",
+      "src": "/media/tours/city-tour-cusco/06.jpg",
       "alt": "Muros megalíticos de la Fortaleza de Sacsayhuamán"
     },
     {
-      "src": "/tours/city-tour-cusco/07.jpg",
+      "src": "/media/tours/city-tour-cusco/07.jpg",
       "alt": "Laberinto de roca en el centro ceremonial de Q'enqo"
     },
     {
-      "src": "/tours/city-tour-cusco/08.jpg",
+      "src": "/media/tours/city-tour-cusco/08.jpg",
       "alt": "Fortaleza inca de Puka Pukara"
     },
     {
-      "src": "/tours/city-tour-cusco/10.avif",
+      "src": "/media/tours/city-tour-cusco/10.avif",
       "alt": "Fuentes ceremoniales de agua en Tambomachay"
     }
   ],
@@ -80,11 +80,11 @@
     "Recojo de su hotel en el centro histórico de Cusco.",
     "Transporte turístico cómodo y climatizado durante todo el recorrido.",
     "Guía profesional oficial de turismo bilingüe (Español / Inglés).",
-    "Asistencia turística permanente antes y durante la excursión."
+    "Asistencia turística permanente antes y durante la excursión.",
+    "Boleto Turístico del Cusco (BTC Parcial 70 PEN).",
+    "Boleto de entrada al Qorikancha (15 PEN por persona en efectivo)."
   ],
   "no_incluye": [
-    "Boleto Turístico del Cusco (BTC) - Parcial (70 PEN) o General (130 PEN).",
-    "Boleto de entrada al Qorikancha (15 PEN por persona en efectivo).",
     "Alimentación, snacks y bebidas durante la excursión.",
     "Propinas para el guía y el conductor (voluntarias)."
   ],
@@ -174,7 +174,7 @@
       "og_description": "Explora la Capital Imperial de los Incas en medio día. Visita Qorikancha y las 4 ruinas de Cusco con guías locales expertos.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/city-tour-cusco/",
-      "og_image": "/tours/city-tour-cusco/05.avif",
+      "og_image": "/media/tours/city-tour-cusco/05.avif",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -182,7 +182,7 @@
       "card": "summary_large_image",
       "title": "City Tour Cusco Half Day | Chullos Tours",
       "description": "Explora Qorikancha y las ruinas incas con el tradicional City Tour Cusco. Aclimatación ideal y cultura inigualable.",
-      "image": "/tours/city-tour-cusco/05.avif"
+      "image": "/media/tours/city-tour-cusco/05.avif"
     }
   },
   "geo_ai_optimization": {
@@ -243,11 +243,11 @@
         "description": "Excursión guiada de medio día por el Templo del Qorikancha y los parques arqueológicos de Sacsayhuamán, Q'enqo, Puka Pukara y Tambomachay.",
         "url": "https://chullostours.com/tours/city-tour-cusco/",
         "image": [
-          "/tours/city-tour-cusco/05.avif",
-          "/tours/city-tour-cusco/06.jpg",
-          "/tours/city-tour-cusco/07.jpg",
-          "/tours/city-tour-cusco/08.jpg",
-          "/tours/city-tour-cusco/10.avif"
+          "/media/tours/city-tour-cusco/05.avif",
+          "/media/tours/city-tour-cusco/06.jpg",
+          "/media/tours/city-tour-cusco/07.jpg",
+          "/media/tours/city-tour-cusco/08.jpg",
+          "/media/tours/city-tour-cusco/10.avif"
         ],
         "brand": {
           "@type": "Brand",
@@ -256,7 +256,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "20.00",
+          "price": "40",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/city-tour-cusco/"
@@ -323,5 +323,18 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 15 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 40,
+  "precio": 40,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 49,
+    "online_usd": 45,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 150
 }

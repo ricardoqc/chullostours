@@ -1,17 +1,32 @@
 "use client";
 
-import React, { useState } from "react";
-import { Images, X, ChevronLeft, ChevronRight, Camera } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { X, ChevronLeft, ChevronRight, Camera } from "lucide-react";
+import { TourImage } from "@/components/ui/TourImage";
+
+export interface GalleryImageItem {
+  src: string;
+  alt?: string;
+}
 
 interface TourGalleryGridProps {
-  images: string[];
+  images: string[] | GalleryImageItem[];
   tourTitle: string;
 }
 
+function normalize(images: string[] | GalleryImageItem[]): GalleryImageItem[] {
+  return images.map((img, i) =>
+    typeof img === "string"
+      ? { src: img, alt: undefined }
+      : { src: img.src, alt: img.alt }
+  );
+}
+
 export const TourGalleryGrid: React.FC<TourGalleryGridProps> = ({
-  images,
+  images: rawImages,
   tourTitle,
 }) => {
+  const images = normalize(rawImages);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const mainImage = images[0];
@@ -30,24 +45,47 @@ export const TourGalleryGrid: React.FC<TourGalleryGridProps> = ({
     setLightboxIndex((lightboxIndex + 1) % images.length);
   };
 
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "ArrowRight") nextImage();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [lightboxIndex, images.length]);
+
+  const altFor = (item: GalleryImageItem | undefined, index: number) =>
+    item?.alt || `${tourTitle} — foto ${index + 1}`;
+
   return (
     <div className="flex flex-col gap-3">
-      {/* Gallery Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-3 rounded-2xl md:rounded-3xl overflow-hidden aspect-[4/3] md:aspect-[21/9] shadow-xs relative">
-        {/* Main large image */}
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-3 rounded-2xl md:rounded-3xl overflow-hidden aspect-[4/3] sm:aspect-[16/10] md:aspect-[21/9] relative bg-slate-900">
         <div
           onClick={() => openLightbox(0)}
-          className="md:col-span-2 h-full bg-slate-100 relative group overflow-hidden cursor-pointer rounded-2xl"
+          className="md:col-span-2 h-full relative group overflow-hidden cursor-pointer rounded-2xl"
         >
-          <img
-            src={mainImage}
-            alt={tourTitle}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            loading="lazy"
+          <TourImage
+            src={mainImage?.src || "/img/placeholder.jpg"}
+            alt={altFor(mainImage, 0)}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
+            className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.04]"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80" />
+          <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between">
+            <p className="text-white text-xs font-semibold line-clamp-1 drop-shadow">
+              {altFor(mainImage, 0)}
+            </p>
+            <span className="inline-flex items-center gap-1 bg-white/15 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-full border border-white/20">
+              <Camera className="w-3 h-3" />
+              {images.length}
+            </span>
+          </div>
         </div>
 
-        {/* 4 Thumbnails Grid */}
         <div className="hidden md:grid md:col-span-2 grid-cols-2 gap-3 h-full">
           {sideImages.map((img, idx) => {
             const realIndex = idx + 1;
@@ -56,70 +94,80 @@ export const TourGalleryGrid: React.FC<TourGalleryGridProps> = ({
               <div
                 key={idx}
                 onClick={() => openLightbox(realIndex)}
-                className="bg-slate-100 overflow-hidden relative group cursor-pointer h-full rounded-2xl border border-slate-100"
+                className="overflow-hidden relative group cursor-pointer h-full rounded-2xl border border-white/10"
               >
-                <img
-                  src={img}
-                  alt={`${tourTitle} - ${realIndex + 1}`}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
+                <TourImage
+                  src={img.src}
+                  alt={altFor(img, realIndex)}
+                  fill
+                  sizes="25vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors" />
                 {isLast && (
-                  <div className="absolute inset-0 bg-slate-950/70 backdrop-blur-xs flex flex-col items-center justify-center text-white font-extrabold text-sm group-hover:bg-slate-950/80 transition-colors">
-                    <Camera className="w-5 h-5 mb-1 text-[#ffc000]" />
-                    <span>Ver las {images.length} fotos</span>
+                  <div className="absolute inset-0 bg-black/45 flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">
+                      +{images.length - 5} fotos
+                    </span>
                   </div>
                 )}
               </div>
             );
           })}
         </div>
-
-        {/* View all photos button (Mobile overlay) */}
-        <button
-          onClick={() => openLightbox(0)}
-          className="md:hidden absolute bottom-3 right-3 bg-black/75 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-md"
-        >
-          <Camera className="w-3.5 h-3.5 text-[#ffc000]" />
-          <span>Ver {images.length} fotos</span>
-        </button>
       </div>
 
-      {/* Lightbox Modal */}
       {lightboxIndex !== null && (
-        <div className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex items-center justify-center p-4">
-          {/* Close button */}
+        <div
+          className="fixed inset-0 z-[9999] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={closeLightbox}
+        >
           <button
+            type="button"
+            className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center"
             onClick={closeLightbox}
-            className="absolute top-4 right-4 text-white hover:text-[#ffc000] p-2 rounded-full bg-white/10 backdrop-blur-md transition-colors cursor-pointer"
+            aria-label="Cerrar"
           >
-            <X className="w-6 h-6" />
+            <X className="w-5 h-5" />
           </button>
-
-          {/* Prev button */}
           <button
-            onClick={prevImage}
-            className="absolute left-4 text-white hover:text-[#ffc000] p-3 rounded-full bg-white/10 backdrop-blur-md transition-colors cursor-pointer"
+            type="button"
+            className="absolute left-4 w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center"
+            onClick={(e) => {
+              e.stopPropagation();
+              prevImage();
+            }}
+            aria-label="Anterior"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
-
-          {/* Image display */}
-          <div className="max-w-4xl max-h-[85vh] flex flex-col items-center gap-3">
-            <img
-              src={images[lightboxIndex]}
-              alt={`${tourTitle} - ${lightboxIndex + 1}`}
-              className="max-h-[75vh] w-auto object-contain rounded-2xl shadow-2xl"
+          <div
+            className="max-w-5xl w-full flex flex-col items-center gap-3"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <TourImage
+              src={images[lightboxIndex].src}
+              alt={altFor(images[lightboxIndex], lightboxIndex)}
+              width={1600}
+              height={1067}
+              sizes="(max-width: 768px) 100vw, 896px"
+              className="max-h-[78vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
             />
-            <span className="text-xs font-bold text-slate-300 font-mono bg-black/50 px-3 py-1 rounded-full">
-              Foto {lightboxIndex + 1} de {images.length}
-            </span>
+            <p className="text-white/90 text-sm text-center px-4">
+              {altFor(images[lightboxIndex], lightboxIndex)}
+            </p>
+            <p className="text-white/50 text-xs">
+              {lightboxIndex + 1} / {images.length}
+            </p>
           </div>
-
-          {/* Next button */}
           <button
-            onClick={nextImage}
-            className="absolute right-4 text-white hover:text-[#ffc000] p-3 rounded-full bg-white/10 backdrop-blur-md transition-colors cursor-pointer"
+            type="button"
+            className="absolute right-4 w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center"
+            onClick={(e) => {
+              e.stopPropagation();
+              nextImage();
+            }}
+            aria-label="Siguiente"
           >
             <ChevronRight className="w-6 h-6" />
           </button>

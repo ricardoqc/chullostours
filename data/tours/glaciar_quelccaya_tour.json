@@ -39,7 +39,32 @@
     "Pueblo de Phinaya: Comunidad altoandina auténtica, desayuno y almuerzo tradicionales incluidos.",
     "Altiplano del sur: Paisajes de puna, bofedales y avistamiento de vicuñas y flamencos en el camino."
   ],
-  "galeria": [],
+  "galeria": [
+    {
+      "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Casquete de hielo tropical del Glaciar Quelccaya, el más extenso del mundo tropical",
+      "caption": "El imponente Glaciar Quelccaya a más de 5,100 m.s.n.m. en la cordillera del Vilcanota.",
+      "credito": "Unsplash / Licencia Libre"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Laguna proglaciar y témpanos de hielo desprendidos del casquete Quelccaya",
+      "caption": "Laguna de origen glaciar con aguas prístinas formadas por el deshielo milenario.",
+      "credito": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Manada de vicuñas silvestres corriendo por la puna altoandina rumbo a Quelccaya",
+      "caption": "Vida silvestre andina en los parajes más remotos y prístinos de la región Cusco.",
+      "credito": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1531968455001-5c5272a41129?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Pared vertical de hielo azul del glaciar Quelccaya de más de 30 metros de altura",
+      "caption": "Estructuras glaciares milenarias objeto de estudio del cambio climático mundial.",
+      "credito": "Unsplash"
+    }
+  ],
   "itinerario": [
     {
       "dia": 1,
@@ -122,6 +147,22 @@
     {
       "pregunta": "¿El tour sale todos los días?",
       "respuesta": "El tour opera con un mínimo de 2 pasajeros y está sujeto a condiciones climáticas. Se recomienda reservar con anticipación."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Glaciar Quelccaya Full Day?",
+      "respuesta": "El precio desde USD $70 por persona contempla: Recojo del hotel en Cusco.; Transporte turístico ida y retorno.; Guía profesional especializado en alta montaña.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Moderada - Alta). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -136,7 +177,7 @@
       "og_description": "Descubre la capa de hielo tropical más grande del mundo en un tour único desde Cusco.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/glaciar-quelccaya-tour/",
-      "og_image": "/tours/glaciar-quelccaya-tour/01.jpg",
+      "og_image": "/media/tours/glaciar-quelccaya-tour/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -144,7 +185,7 @@
       "card": "summary_large_image",
       "title": "Glaciar Quelccaya Full Day | Chullos Tours",
       "description": "Visita el Glaciar Quelccaya desde Cusco. Guía especializado, desayuno y almuerzo incluidos.",
-      "image": "/tours/glaciar-quelccaya-tour/01.jpg"
+      "image": "/media/tours/glaciar-quelccaya-tour/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -203,7 +244,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "70.00",
+          "price": "70",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/glaciar-quelccaya-tour/"
@@ -242,5 +283,18 @@
       "titulo": "Desafío de Montaña",
       "detalle": "Caminata en altitud (5,100 m.s.n.m.) — Se incluye botiquín y balón de oxígeno"
     }
-  ]
+  ],
+  "precio_usd": 70,
+  "precio": 70,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 85,
+    "online_usd": 78,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 263
 }

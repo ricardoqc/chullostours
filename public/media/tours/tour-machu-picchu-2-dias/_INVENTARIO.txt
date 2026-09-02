@@ -1,0 +1,10 @@
+TOUR: Tour Machu Picchu 2 Días / 1 Noche en Tren
+Slug JSON: tour-machu-picchu-2-dias
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/tour-machu-picchu-2-dias/01.jpg

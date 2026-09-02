@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { FileText, AlertCircle, Info, ShieldCheck } from "lucide-react";
+import { PAYMENT_METHODS_LEGAL_TEXT } from "@/lib/payment-copy";
 
 export const metadata: Metadata = {
   title: "Términos y Condiciones | Chullos Tours - Agencia de Viajes en Cusco",
@@ -19,7 +20,7 @@ const sections = [
     title: "Reservaciones",
     icon: <FileText className="w-5 h-5 text-[#6b0014]" />,
     content:
-      "Para confirmar la reserva de nuestros servicios, deberá efectuar un pago inicial del 30% del precio total. Para los tours a Machu Picchu es necesario hacer la reserva con el 50% del precio del servicio. Los pagos pueden realizarse mediante PAYPAL, depósitos, transferencias bancarias o aplicativos de BCP, INTERBANK, YAPE, OPLIN, IZIPAY. Algunas modalidades de pago generan comisiones, las cuales serán asumidas por el cliente. El pago del saldo pendiente deberá efectuarse de forma presencial y antes del inicio de las actividades programadas en Cusco.",
+      `Para confirmar la reserva de nuestros servicios, deberá efectuar un pago inicial del 30% del precio total. Para los tours a Machu Picchu es necesario hacer la reserva con el 50% del precio del servicio. Los pagos pueden realizarse mediante ${PAYMENT_METHODS_LEGAL_TEXT}. Algunas modalidades de pago generan comisiones, las cuales serán asumidas por el cliente. El pago del saldo pendiente deberá efectuarse de forma presencial y antes del inicio de las actividades programadas en Cusco.`,
   },
   {
     title: "Tarifas",

@@ -1,0 +1,10 @@
+TOUR: Tour Puente Inca Q'eswachaka y 4 Lagunas Full Day
+Slug JSON: puente-qeswachaka-tour-full-day
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/puente-qeswachaka-tour-full-day/01.jpg

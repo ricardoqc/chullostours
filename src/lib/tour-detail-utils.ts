@@ -1,38 +1,59 @@
-import { Tour } from '@/types/tour';
+import { Tour, TourImagen } from '@/types/tour';
 import { parseDurationDays, estimateTourPrice } from './tour-filters';
 
 export { parseDurationDays, estimateTourPrice };
 
 /**
  * Filter out tracking pixels and tiny logo badges from tour gallery images.
+ * Returns src URLs (legacy) — prefer getGalleryItems for alt text.
  */
 export function getValidGalleryImages(tour: Tour): string[] {
+  return getGalleryItems(tour).map((g) => g.src);
+}
+
+export function getGalleryItems(tour: Tour): TourImagen[] {
   if (!tour.galeria || tour.galeria.length === 0) {
     return [
-      "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1589802829985-817e51171b92?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1531968455001-5c5272a41129?auto=format&fit=crop&w=800&q=80",
+      {
+        src: "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
+        alt: `${tour.titulo} - vista principal`,
+      },
+      {
+        src: "https://images.unsplash.com/photo-1589802829985-817e51171b92?auto=format&fit=crop&w=800&q=80",
+        alt: `${tour.titulo} - paisaje`,
+      },
+      {
+        src: "https://images.unsplash.com/photo-1531968455001-5c5272a41129?auto=format&fit=crop&w=800&q=80",
+        alt: `${tour.titulo} - experiencia`,
+      },
     ];
   }
 
   const valid = tour.galeria
-    .map((g) => g.src)
-    .filter((src) => {
-      if (!src) return false;
-      const lower = src.toLowerCase();
-      if (lower.includes('facebook.com/tr')) return false;
-      if (lower.includes('elementor/thumbs/sunat')) return false;
-      if (lower.includes('elementor/thumbs/mincetur')) return false;
-      if (lower.includes('elementor/thumbs/esnna')) return false;
-      if (lower.includes('elementor/thumbs/gercetur')) return false;
-      if (lower.includes('90x80')) return false;
+    .filter((g) => {
+      if (!g?.src) return false;
+      const lower = g.src.toLowerCase();
+      if (lower.includes("facebook.com/tr")) return false;
+      if (lower.includes("elementor/thumbs/sunat")) return false;
+      if (lower.includes("elementor/thumbs/mincetur")) return false;
+      if (lower.includes("elementor/thumbs/esnna")) return false;
+      if (lower.includes("elementor/thumbs/gercetur")) return false;
+      if (lower.includes("90x80")) return false;
       return true;
-    });
+    })
+    .map((g, i) => ({
+      src: g.src,
+      alt: g.alt?.trim() || `${tour.titulo} - foto ${i + 1}`,
+      caption: g.caption,
+      credito: g.credito,
+    }));
 
   if (valid.length === 0) {
     return [
-      "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1589802829985-817e51171b92?auto=format&fit=crop&w=800&q=80",
+      {
+        src: "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80",
+        alt: `${tour.titulo} - vista principal`,
+      },
     ];
   }
 
@@ -173,3 +194,44 @@ export function cleanHighlights(highlights: string[] | undefined): string[] {
 
   return cleaned.slice(0, 6);
 }
+
+export function checkTourUpgrades(tourTitle: string, hasHotelOptions: boolean = false) {
+  const titleLower = tourTitle.toLowerCase();
+
+  const isTrekOrCamping =
+    titleLower.includes("camino inca") ||
+    titleLower.includes("ausangate") ||
+    titleLower.includes("salkantay") ||
+    titleLower.includes("humantay") ||
+    titleLower.includes("vinicunca") ||
+    titleLower.includes("colores") ||
+    titleLower.includes("waqrapukara") ||
+    titleLower.includes("quelccaya") ||
+    titleLower.includes("choquequirao");
+
+  const isByCar = titleLower.includes("by car");
+
+  const isNonMachu =
+    titleLower.includes("city tour") ||
+    (titleLower.includes("valle sagrado") && !titleLower.includes("machu")) ||
+    titleLower.includes("valle sur") ||
+    titleLower.includes("morada de los dioses") ||
+    titleLower.includes("maras moray") ||
+    titleLower.includes("cuatrimoto") ||
+    titleLower.includes("titicaca") ||
+    titleLower.includes("puno") ||
+    titleLower.includes("lima") ||
+    titleLower.includes("huacachina") ||
+    titleLower.includes("qeswachaka") ||
+    titleLower.includes("poc poc");
+
+  // Huayna Picchu add-on applies only to tours visiting Machu Picchu citadel
+  const includesMachuPicchu =
+    !isTrekOrCamping &&
+    !isByCar &&
+    !isNonMachu &&
+    (titleLower.includes("machu") || hasHotelOptions);
+
+  return { includesMachuPicchu };
+}
+

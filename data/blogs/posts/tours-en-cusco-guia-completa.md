@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-05-26.jpg"
+featured_image_alt: "Plaza de Armas de Cusco iluminada al atardecer con vista a la Catedral e Iglesia de la Compañía"
+featured_image_caption: "Cusco, ombligo del mundo y punto de inicio para los mejores tours en Perú."
+featured_image_credito: "Chullos Tours"
 id: 976
 title: "Tours en Cusco: Guía completa de Chullos Tours para una Aventura Inolvidable"
 slug: "tours-en-cusco-guia-completa"

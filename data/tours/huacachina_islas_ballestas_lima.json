@@ -39,7 +39,32 @@
     "Oasis Huacachina: La única laguna natural en medio de un desierto de dunas en toda Sudamérica.",
     "Sandboarding en Buggies: Adrenalina pura bajando dunas de 100 metros en tabla o buggy."
   ],
-  "galeria": [],
+  "galeria": [
+    {
+      "src": "https://chullostours.com/wp-content/uploads/2023/10/sun-setting-on-huacachina-an-oasis-near-the-city-of-ica-peru_t20_vR9bEp.jpg",
+      "alt": "Laguna oasis de Huacachina rodeada de palmeras y altas dunas de arena en Ica",
+      "caption": "El único oasis natural de Sudamérica en el desierto costero de Ica.",
+      "credito": "Chullos Tours / Archivo Oficial"
+    },
+    {
+      "src": "https://chullostours.com/wp-content/uploads/2023/10/tourist-peru-paracas-boat-tour-boat-ride-natural-reserve-ballestas-island-the-chandelier_t20_3wj7J2.jpg",
+      "alt": "Geoglifo El Candelabro y lancha rápida navegando hacia las Islas Ballestas",
+      "caption": "El enigmático geoglifo de Paracas visible únicamente desde el mar.",
+      "credito": "Chullos Tours / Archivo Oficial"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Carro tubular arenero buggy y sandboarding en las dunas doradas de Huacachina",
+      "caption": "Deportes de adrenalina en las pendientes de arena del desierto iqueño.",
+      "credito": "Unsplash"
+    },
+    {
+      "src": "https://chullostours.com/wp-content/uploads/2023/10/lima-cathedral-in-the-plaza-de-armes-in-central-lima-in-peru-south-america_t20_pxn3Y1.jpg",
+      "alt": "Basílica Catedral de Lima y Palacio de Gobierno en la Plaza Mayor",
+      "caption": "Inicio y fin del recorrido en la capital gastronómica y virreinal del Perú.",
+      "credito": "Chullos Tours"
+    }
+  ],
   "itinerario": [
     {
       "dia": 1,
@@ -72,12 +97,12 @@
     "Deslizador turístico a Islas Ballestas en Paracas.",
     "Carros Areneros (Buggies) + Tablas de Sandboarding en Huacachina.",
     "Visita a Bodega Vitivinícola + Degustación de Pisco/Vino.",
+    "Desayuno (parada técnica en la carretera durante el viaje de ida).",
     "Almuerzo en Ica.",
     "Guía Profesional bilingüe.",
     "Impuestos turísticos y tickets de ingreso."
   ],
   "no_incluye": [
-    "Desayuno (parada técnica en la carretera durante el viaje de ida).",
     "Gastos personales no mencionados.",
     "Propinas."
   ],
@@ -131,6 +156,22 @@
     {
       "pregunta": "¿Se puede hacer este tour desde Cusco?",
       "respuesta": "Este tour opera desde Lima. Si estás en Cusco, deberás volar o trasladarte a Lima primero. El tour es ideal para hacerlo durante una escala en Lima antes o después de visitar Cusco."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Oasis Huacachina + Islas Ballestas – Ica y Paracas desde Lima Full Day?",
+      "respuesta": "El precio desde USD $120 por persona contempla: Recojo del hotel en Lima (Miraflores, San Isidro, Barranco).; Transporte turístico ida y vuelta desde Lima.; Deslizador turístico a Islas Ballestas en Paracas.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Fácil). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -145,7 +186,7 @@
       "og_description": "El tour más completo desde Lima: Ballestas, Pisco, Huacachina y sandboarding en las dunas de Ica.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/huacachina-islas-ballestas-lima/",
-      "og_image": "/tours/huacachina-islas-ballestas-lima/01.jpg",
+      "og_image": "/media/tours/huacachina-islas-ballestas-lima/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -153,7 +194,7 @@
       "card": "summary_large_image",
       "title": "Huacachina + Islas Ballestas Lima | Chullos Tours",
       "description": "Islas Ballestas, Pisco, Oasis Huacachina y sandboarding en un Full Day desde Lima.",
-      "image": "/tours/huacachina-islas-ballestas-lima/01.jpg"
+      "image": "/media/tours/huacachina-islas-ballestas-lima/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -208,7 +249,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "120.00",
+          "price": "120",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/huacachina-islas-ballestas-lima/"
@@ -242,5 +283,17 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 20 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 120,
+  "precio": 120,
+  "destino_ids": [
+    "lima"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 146,
+    "online_usd": 134,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 450
 }

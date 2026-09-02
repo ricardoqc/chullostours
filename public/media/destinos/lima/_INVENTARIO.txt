@@ -1,0 +1,6 @@
+DESTINO: lima
+  hero.jpg   Imagen principal (mapa + landings)
+  thumb.jpg  Miniatura (opcional)
+
+URL: /destinos/lima/hero.jpg
+JSON: data/places.json → imagen

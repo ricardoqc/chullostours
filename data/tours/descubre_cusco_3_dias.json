@@ -38,27 +38,27 @@
   ],
   "galeria": [
     {
-      "src": "/tours/descubre-cusco-3-dias/05.jpg",
+      "src": "/media/tours/descubre-cusco-3-dias/05.jpg",
       "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 05.jpg"
     },
     {
-      "src": "/tours/descubre-cusco-3-dias/06.avif",
+      "src": "/media/tours/descubre-cusco-3-dias/06.avif",
       "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 06.avif"
     },
     {
-      "src": "/tours/descubre-cusco-3-dias/07.avif",
+      "src": "/media/tours/descubre-cusco-3-dias/07.avif",
       "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 07.avif"
     },
     {
-      "src": "/tours/descubre-cusco-3-dias/08.jpg",
+      "src": "/media/tours/descubre-cusco-3-dias/08.jpg",
       "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 08.jpg"
     },
     {
-      "src": "/tours/descubre-cusco-3-dias/09.jpg",
+      "src": "/media/tours/descubre-cusco-3-dias/09.jpg",
       "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 09.jpg"
     },
     {
-      "src": "/tours/descubre-cusco-3-dias/11.jpg",
+      "src": "/media/tours/descubre-cusco-3-dias/11.jpg",
       "alt": "Paquete Descubre Cusco 3 Días / 2 Noches - 11.jpg"
     }
   ],
@@ -122,10 +122,10 @@
     "Boletos de tren turístico ida y vuelta Ollantaytambo - Aguas Calientes - Ollantaytambo.",
     "Boletos de bus Consettur de subida y bajada a la ciudadela de Machu Picchu.",
     "Boleto de entrada oficial al Santuario Histórico de Machu Picchu.",
-    "Asistencia turística permanente 24/7 por el equipo de Chullos Tours."
+    "Asistencia turística permanente 24/7 por el equipo de Chullos Tours.",
+    "Boleto Turístico General del Cusco (BTC)."
   ],
   "no_incluye": [
-    "Boleto Turístico del Cusco BTC (70 PEN parcial o 130 PEN general) e ingreso a Qorikancha (15 PEN).",
     "Boletos aéreos nacionales o internacionales.",
     "Noches de hotel en Cusco (disponibles como adicional opcional).",
     "Alimentación no especificada en el itinerario (almuerzos y cenas).",
@@ -174,6 +174,22 @@
     {
       "pregunta": "¿El tour incluye los hoteles de estancia en Cusco?",
       "respuesta": "La tarifa base cubre todos los traslados, guiados y boletos de excursión. Ofrecemos paquetes completos con hotel de 3, 4 o 5 estrellas según tu presupuesto."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Paquete Descubre Cusco 3 Días / 2 Noches?",
+      "respuesta": "El precio desde USD $290 por persona contempla: Traslados privados aeropuerto - hotel - aeropuerto en Cusco.; Transporte turístico climatizado para el City Tour y traslados a la estación de tren.; Guía profesional oficial de turismo bilingüe (Español / Inglés) en todas las excursiones.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Baja - Moderada). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -188,7 +204,7 @@
       "og_description": "Conoce Cusco y Machu Picchu en un viaje express de 3 días con traslados, ingresos y trenes incluidos.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/descubre-cusco-3-dias/",
-      "og_image": "/tours/descubre-cusco-3-dias/05.jpg",
+      "og_image": "/media/tours/descubre-cusco-3-dias/05.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -196,7 +212,7 @@
       "card": "summary_large_image",
       "title": "Paquete Descubre Cusco 3 Días / 2 Noches",
       "description": "Itinerario express de 3 días visitando Sacsayhuamán, Qorikancha y Machu Picchu.",
-      "image": "/tours/descubre-cusco-3-dias/05.jpg"
+      "image": "/media/tours/descubre-cusco-3-dias/05.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -249,12 +265,12 @@
         "description": "Itinerario express de 3 días visitando la ciudad imperial de Cusco y la maravilla de Machu Picchu con servicios de tren e ingresos incluidos.",
         "url": "https://chullostours.com/tours/descubre-cusco-3-dias/",
         "image": [
-          "/tours/descubre-cusco-3-dias/05.jpg",
-          "/tours/descubre-cusco-3-dias/06.avif",
-          "/tours/descubre-cusco-3-dias/07.avif",
-          "/tours/descubre-cusco-3-dias/08.jpg",
-          "/tours/descubre-cusco-3-dias/09.jpg",
-          "/tours/descubre-cusco-3-dias/11.jpg"
+          "/media/tours/descubre-cusco-3-dias/05.jpg",
+          "/media/tours/descubre-cusco-3-dias/06.avif",
+          "/media/tours/descubre-cusco-3-dias/07.avif",
+          "/media/tours/descubre-cusco-3-dias/08.jpg",
+          "/media/tours/descubre-cusco-3-dias/09.jpg",
+          "/media/tours/descubre-cusco-3-dias/11.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -263,7 +279,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "290.00",
+          "price": "460",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/descubre-cusco-3-dias/"
@@ -314,5 +330,241 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 15 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 460,
+  "precio": 460,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad",
+    "machu-picchu"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 354,
+    "online_usd": 325,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "opciones_hotel": [
+    {
+      "id": "solo_tour",
+      "nombre": "Solo tour (sin alojamiento)",
+      "categoria": "Sin alojamiento",
+      "precio_usd": 460,
+      "precio_etiqueta": "USD $460.00 / persona",
+      "descripcion": "Incluye traslados, entradas, trenes y guía según itinerario. Sin estadía incluida: coordinas tu propio alojamiento.",
+      "incluye_alojamiento": false,
+      "hoteles": [],
+      "precio_pen": 1725,
+      "precio_soles": 1725
+    },
+    {
+      "id": "auri_basico",
+      "nombre": "Tour + Hotel Auri Básico",
+      "categoria": "Básico",
+      "precio_usd": 490,
+      "precio_etiqueta": "USD $490.00 / persona",
+      "descripcion": "Comodidad esencial con Auri Boutique Hotel en Cusco y noche en Aguas Calientes incluida.",
+      "estrellas": 3,
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Auri Boutique Hotel",
+          "direccion": "Calle Pardo, Cusco",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/cusco-magico-5-dias/02.jpg",
+            "/media/tours/cusco-magico-5-dias/03.jpg",
+            "/media/tours/descubre-cusco-3-dias/01.jpg"
+          ],
+          "imagenes_referenciales": false
+        },
+        {
+          "ciudad": "Aguas Calientes (Machu Picchu Pueblo)",
+          "hotel": "Machupicchu Inn",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/tour-machu-picchu-2-dias/02.jpg",
+            "/media/tours/tour-machu-picchu-2-dias/03.jpg",
+            "/media/tours/machu-picchu-full-day-tren-expedition/04.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 1838,
+      "precio_soles": 1838
+    },
+    {
+      "id": "intiwatana",
+      "nombre": "Tour + Hotel Intiwatana",
+      "categoria": "Boutique",
+      "precio_usd": 520,
+      "precio_etiqueta": "USD $520.00 / persona",
+      "descripcion": "Experiencia boutique con Hotel Intiwatana en Cusco y Aguas Calientes.",
+      "estrellas": 4,
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Intiwatana",
+          "direccion": "Calle Afligidos, Cusco",
+          "sitio_web": "https://www.intiwatana.pe/#/home",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/cusco-fascinante-4-dias/02.jpg",
+            "/media/tours/cusco-fascinante-4-dias/03.jpg",
+            "/media/tours/cusco-magico-5-dias/04.jpg"
+          ],
+          "imagenes_referenciales": false
+        },
+        {
+          "ciudad": "Aguas Calientes (Machu Picchu Pueblo)",
+          "hotel": "Hotel Intiwatana Aguas Calientes",
+          "sitio_web": "https://www.intiwatana.pe/#/home",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/tour-machu-picchu-2-dias/04.jpg",
+            "/media/tours/machu-picchu-full-day-tren-expedition/03.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 1950,
+      "precio_soles": 1950
+    },
+    {
+      "id": "rojas_inn",
+      "nombre": "Tour + Hotel Rojas Inn",
+      "categoria": "3 Estrellas",
+      "precio_usd": 535,
+      "precio_etiqueta": "USD $535.00 / persona",
+      "descripcion": "Mayor confort con Hotel Rojas Inn en Cusco y Aguas Calientes.",
+      "estrellas": 3,
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Rojas Inn",
+          "direccion": "Calle Tigre o Santa, Cusco",
+          "sitio_web": "https://hotelrojasinn.com/room/standard-double-room/",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/lo-mejor-de-cusco-6-dias/02.jpg",
+            "/media/tours/lo-mejor-de-cusco-6-dias/03.jpg",
+            "/media/tours/descubre-cusco-3-dias/02.jpg"
+          ],
+          "imagenes_referenciales": false
+        },
+        {
+          "ciudad": "Aguas Calientes (Machu Picchu Pueblo)",
+          "hotel": "Rojas Inn Aguas Calientes",
+          "sitio_web": "https://hotelrojasinn.com/room/standard-double-room/",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/tour-machu-picchu-2-dias/05.jpg",
+            "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 2006,
+      "precio_soles": 2006
+    }
+  ],
+  "boleto_turistico": {
+    "tipo": "BTC_GENERAL",
+    "incluido": true,
+    "precio_pen": 130
+  },
+  "entradas_incluidas": {
+    "destacado": true,
+    "titulo": "Entradas incluidas",
+    "detalle": "Ingreso a Machu Picchu + Boleto Turístico General del Cusco (BTC).",
+    "variant": "gold"
+  },
+  "aplica_descuentos_edad": true,
+  "tarifas_personas": [
+    {
+      "id": "adulto",
+      "label": "Adulto (18–100 años)",
+      "rango_edad": "18-100",
+      "edad_min": 18,
+      "edad_max": 100,
+      "tipo": "fixed",
+      "descuento_usd": 0
+    },
+    {
+      "id": "joven",
+      "label": "Joven (12–17 años)",
+      "rango_edad": "12-17",
+      "edad_min": 12,
+      "edad_max": 17,
+      "tipo": "discount",
+      "descuento_usd": 20
+    },
+    {
+      "id": "nino",
+      "label": "Niño (3–11 años)",
+      "rango_edad": "3-11",
+      "edad_min": 3,
+      "edad_max": 11,
+      "tipo": "discount",
+      "descuento_usd": 30
+    },
+    {
+      "id": "infante",
+      "label": "Infante (0–2 años)",
+      "rango_edad": "0-2",
+      "edad_min": 0,
+      "edad_max": 2,
+      "tipo": "free",
+      "descuento_usd": 0
+    }
+  ],
+  "precio_pen": 1725
 }

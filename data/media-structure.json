@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "basePath": "/public",
+  "conventions": {
+    "tours": {
+      "root": "media/tours/{slug}",
+      "naming": {
+        "01.jpg": "Hero principal (card + detalle)",
+        "02.jpg": "Galería",
+        "03.jpg": "Galería",
+        "04.jpg": "Galería",
+        "05.jpg": "Galería (también OG frecuente)",
+        "og/og.jpg": "Open Graph / redes (opcional, alternativa a 05.jpg)",
+        "gallery/": "Extras sin renumerar hero (opcional)"
+      },
+      "formats": ["jpg", "jpeg", "webp", "avif"],
+      "urlPrefix": "/media/tours/{slug}/"
+    },
+    "hoteles": {
+      "root": "hoteles/{hotelSlug}",
+      "naming": {
+        "01-fachada.jpg": "Exterior / fachada",
+        "02-habitacion.jpg": "Habitación doble o matrimonial",
+        "03-lobby.jpg": "Lobby o áreas comunes (opcional)",
+        "04-banio.jpg": "Baño (opcional)"
+      },
+      "urlPrefix": "/hoteles/{hotelSlug}/"
+    },
+    "destinos": {
+      "root": "media/destinos/{placeId}",
+      "naming": {
+        "hero.jpg": "Imagen principal del destino (mapa + landings)",
+        "thumb.jpg": "Miniatura (opcional)"
+      },
+      "urlPrefix": "/media/destinos/{placeId}/"
+    },
+    "img": {
+      "brand": "Logos, favicon, identidad",
+      "marketing": "Banners home, fondos, CTAs",
+      "legal-brands": "Certificaciones MINCETUR, TripAdvisor, ESSNA, etc.",
+      "placeholders": "Imagen genérica cuando falte asset"
+    },
+    "blog": {
+      "root": "media/blog/{slug}",
+      "naming": {
+        "hero.jpg": "Imagen destacada del artículo",
+        "01.jpg": "Imágenes inline adicionales"
+      },
+      "urlPrefix": "/media/blog/{slug}/"
+    }
+  },
+  "hoteles": [
+    { "slug": "auri-boutique-hotel", "nombre": "Auri Boutique Hotel", "ciudad": "Cusco" },
+    { "slug": "machupicchu-inn", "nombre": "Machupicchu Inn", "ciudad": "Aguas Calientes" },
+    { "slug": "hotel-intiwatana", "nombre": "Hotel Intiwatana", "ciudad": "Cusco" },
+    { "slug": "hotel-intiwatana-aguas-calientes", "nombre": "Hotel Intiwatana Aguas Calientes", "ciudad": "Aguas Calientes" },
+    { "slug": "hotel-rojas-inn", "nombre": "Hotel Rojas Inn", "ciudad": "Cusco" },
+    { "slug": "rojas-inn-aguas-calientes", "nombre": "Rojas Inn Aguas Calientes", "ciudad": "Aguas Calientes" },
+    { "slug": "hotel-aury", "nombre": "Hotel Aury", "ciudad": "Cusco", "nota": "Gran Imperio Inca 7d — reemplazar Unsplash" },
+    { "slug": "hotel-panaka", "nombre": "Hotel Panaka", "ciudad": "Cusco", "nota": "Gran Imperio Inca 7d — reemplazar Unsplash" },
+    { "slug": "hotel-san-pedro-plaza", "nombre": "Hotel San Pedro Plaza", "ciudad": "Cusco", "nota": "Gran Imperio Inca 7d — reemplazar Unsplash" },
+    { "slug": "hotel-intiwatana-lima", "nombre": "Hotel Intiwatana Lima", "ciudad": "Lima" },
+    { "slug": "hotel-intiwatana-cusco", "nombre": "Hotel Intiwatana Cusco", "ciudad": "Cusco" },
+    { "slug": "hotel-rojas-inn-lima", "nombre": "Hotel Rojas Inn Lima", "ciudad": "Lima" },
+    { "slug": "hotel-rojas-inn-cusco", "nombre": "Hotel Rojas Inn Cusco", "ciudad": "Cusco" }
+  ],
+  "destinos": [
+    "cusco",
+    "machu-picchu",
+    "aguas-calientes",
+    "ollantaytambo",
+    "sacsayhuaman",
+    "valle-sagrado",
+    "humantay",
+    "vinicunca",
+    "puno",
+    "lima"
+  ],
+  "imgBrandFiles": [
+    "Chullos-Tourslogo.png",
+    "llamita-chullos-tours-v1.png",
+    "favicon.ico"
+  ],
+  "imgMarketingFiles": [
+    "familia-background_v4.png",
+    "background-footer-.png"
+  ],
+  "imgPlaceholderFiles": [
+    "placeholder.jpg"
+  ]
+}

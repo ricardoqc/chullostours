@@ -21,6 +21,10 @@ export interface BlogPostFrontmatter {
   reading_time_minutes?: number;
   page_views?: number;
   original_url?: string;
+  featured_image?: string;
+  featured_image_alt?: string;
+  featured_image_caption?: string;
+  featured_image_credito?: string;
 }
 
 export interface BlogPost extends BlogPostFrontmatter {
@@ -40,6 +44,8 @@ export interface BlogIndexItem {
   seo_title: string;
   seo_desc: string;
   original_url: string;
+  featured_image?: string;
+  featured_image_alt?: string;
 }
 
 export interface BlogRedirect {

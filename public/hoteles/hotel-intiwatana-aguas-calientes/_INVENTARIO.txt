@@ -1,0 +1,9 @@
+HOTEL: Hotel Intiwatana Aguas Calientes
+Ciudad: Aguas Calientes
+Convención:
+  01-fachada.jpg
+  02-habitacion.jpg
+  03-lobby.jpg      (opcional)
+JSON tour → opciones_hotel[].hoteles[].imagenes:
+  ["/hoteles/hotel-intiwatana-aguas-calientes/01-fachada.jpg", "/hoteles/hotel-intiwatana-aguas-calientes/02-habitacion.jpg"]
+  imagenes_referenciales: false

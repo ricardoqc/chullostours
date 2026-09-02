@@ -1,0 +1,10 @@
+TOUR: Tour Montaña de 7 Colores Vinicunca Full Day
+Slug JSON: montana-colores-vinicunca-tour
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/montana-colores-vinicunca-tour/01.jpg

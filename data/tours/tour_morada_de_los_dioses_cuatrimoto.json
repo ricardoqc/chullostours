@@ -8,7 +8,7 @@
     "og_url": "https://chullostours.com/tours/tour-morada-de-los-dioses-cuatrimoto/"
   },
   "atributos": {
-    "duracion": "5 Horas (Medio Día)",
+    "duracion": "2 Horas aprox. (Medio Día)",
     "ubicacion": "Tica Tica / Senqa, Cusco, Perú",
     "idiomas": [
       "Español",
@@ -20,14 +20,18 @@
     "grupo_max": 12,
     "nivel_fisico": "Fácil (No requiere experiencia previa)"
   },
-  "resumen": "Disfruta de una vibrante aventura en cuatrimotos todoterreno hacia Apukunyana (La Morada de los Dioses), un impactante complejo lítico contemporáneo con esculturas gigantes de deidades incaicas talladas directamente en la roca caliza de la montaña Senqa.",
-  "descripcion_completa": "El Tour Morada de los Dioses en Cuatrimotos es una de las actividades de aventura más emocionantes y novedosas a pocos minutos del centro de Cusco. Apukunyana, conocida mundialmente como 'La Morada de los Dioses', es una majestuosa obra de arte lítico realizada por el escultor cusqueño Michael de Titín en homenaje a la cosmovisión andina y a los Apus protectores.\n\nComenzaremos con el recojo en tu hotel en Cusco para trasladarnos hacia nuestra base de cuatrimotos en Tica Tica (sector Senqa). Allí recibiremos una completa instrucción de seguridad y realizaremos prácticas de manejo en un circuito de entrenamiento para familiarizarnos con los vehículos ATV automáticos y semiautomáticos.\n\nUna vez listos, iniciaremos el recorrido conduciendo las cuatrimotos a través de hermosos senderos de tierra con vistas panorámicas de las montañas y la meseta cusqueña. Al llegar a la Morada de los Dioses, quedaremos fascinados ante las monumentales esculturas talladas en la roca viva que superan los 4 a 8 metros de altura, representando al Dios Wiracocha, la Pachamama, el Puma, el Inti y la puerta tridimensional del espacio andino.\n\nTendrás tiempo libre suficiente para caminar entre los gigantes monolitos, tomar fotografías artísticas impresionantes y escuchar de boca de nuestro guía las leyendas andinas que inspiraron cada estatua. Finalmente retornaremos en cuatrimoto a la base y abordaremos nuestro transporte de regreso al centro de Cusco.",
+  "horarios_disponibles": [
+    "9:00 am - 11:00 am"
+  ],
+  "punto_inicio": "Recojo en Plaza Regocijo u hoteles cercanos",
+  "resumen": "Tour exclusivo en cuatrimotos hacia Apukunyana (La Morada de los Dioses): esculturas gigantes de deidades incaicas en la roca de Sencca. Incluye práctica de manejo, ruta en ATV de 30 a 45 minutos y visita guiada al complejo escultórico.",
+  "descripcion_completa": "El Tour Morada de los Dioses en Cuatrimotos es una actividad de aventura corta e intensa a pocos minutos del centro de Cusco, dedicada exclusivamente a Apukunyana (La Morada de los Dioses). Es un producto distinto al Cusco Místico, que visita la Morada a pie junto con otros sitios.\n\nTras el recojo en Plaza Regocijo o hoteles cercanos, nos trasladamos a Sencca (sector Tica Tica), donde realizamos una práctica de 10 minutos con la cuatrimoto antes de iniciar la ruta todoterreno de 30 a 45 minutos hacia el complejo escultórico.\n\nEn la Morada de los Dioses conocerás las monumentales esculturas talladas en roca viva — Wiracocha, Pachamama, el Puma, el Inti y más — con tiempo libre para fotografías. Finalmente retornamos en cuatrimoto a la base y abordamos el transporte de regreso al centro de Cusco. Horario disponible: 9:00 am a 11:00 am.",
   "propuesta_de_valor": [
-    "Cuatrimotos modernas de fácil manejo (automáticas y semiautomáticas) en excelente estado mecánico.",
-    "Equipo de seguridad completo de alta calidad: casco cerrado, guantes y pechera protectora.",
-    "Instrucción y práctica de manejo garantizada antes de salir a la ruta.",
-    "Guía profesional bilingüe e instructor capacitado en seguridad vial y primeros auxilios.",
-    "Salidas diarias en dos turnos a elegir: Mañana (08:00 AM) o Tarde (13:00 PM)."
+    "Tour dedicado solo a la Morada de los Dioses en cuatrimoto (distinto al Cusco Místico a pie).",
+    "Práctica de manejo de 10 minutos en Sencca antes de la ruta.",
+    "Ruta en cuatrimoto de 30 a 45 minutos con guía profesional bilingüe.",
+    "Ingreso y casco incluidos en el precio.",
+    "Salida matutina entre 9:00 am y 11:00 am."
   ],
   "destacados_highlights": [
     "Morada de los Dioses (Apukunyana): Esculturas gigantescas de hasta 8 metros talladas en piedra caliza.",
@@ -37,19 +41,19 @@
   ],
   "galeria": [
     {
-      "src": "/tours/tour-morada-de-los-dioses-cuatrimoto/05.jpg",
+      "src": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/05.jpg",
       "alt": "Esculturas gigantes talladas en piedra en la Morada de los Dioses"
     },
     {
-      "src": "/tours/tour-morada-de-los-dioses-cuatrimoto/06.jpg",
+      "src": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/06.jpg",
       "alt": "Pasajeros manejando cuatrimotos todoterreno en Cusco"
     },
     {
-      "src": "/tours/tour-morada-de-los-dioses-cuatrimoto/07.jpg",
+      "src": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/07.jpg",
       "alt": "Detalle de la figura del Dios Wiracocha tallada en roca"
     },
     {
-      "src": "/tours/tour-morada-de-los-dioses-cuatrimoto/08.jpg",
+      "src": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/08.jpg",
       "alt": "Grupo de cuatrimotos posando frente a Apukunyana"
     }
   ],
@@ -59,36 +63,33 @@
       "titulo": "Half Day Cuatrimotos Morada de los Dioses: Cusco - Tica Tica - Apukunyana - Cusco",
       "descripcion": "Excursión de medio día de aventura y arte contemporáneo andino.",
       "actividades": [
-        "08:00 AM (o 13:00 PM) | Recojo de su hotel en el centro histórico de Cusco.",
-        "08:30 AM (o 13:30 PM) | Arribo a la base en Tica Tica: Charla de seguridad y práctica en cuatrimotos.",
-        "09:00 AM (o 14:00 PM) | Inicio del recorrido en cuatrimoto por caminos de trocha hacia Senqa.",
-        "09:40 AM (o 14:40 PM) | Visita guiada a La Morada de los Dioses (Apukunyana): Tiempo libre para fotos.",
-        "11:00 AM (o 16:00 PM) | Retorno en cuatrimoto hacia la base de Tica Tica.",
-        "11:45 AM (o 16:45 PM) | Abordaje del transporte turístico de regreso.",
-        "12:30 PM (o 17:30 PM) | Llegada al centro histórico de Cusco."
+        "Recojo en Plaza Regocijo u hoteles cercanos.",
+        "Traslado a Sencca (Tica Tica): práctica de manejo de 10 minutos con la cuatrimoto.",
+        "Ruta en cuatrimoto de 30 a 45 minutos hacia la Morada de los Dioses (Apukunyana).",
+        "Visita guiada y tiempo libre para fotografías en el complejo escultórico.",
+        "Retorno en cuatrimoto a la base y traslado de regreso a Cusco."
       ],
       "alojamiento": "No incluido",
       "comidas_incluidas": []
     }
   ],
   "incluye": [
-    "Recojo del hotel en el centro histórico de Cusco.",
+    "Recojo en Plaza Regocijo u hoteles cercanos.",
     "Transporte turístico ida y retorno.",
-    "Cuatrimoto individual o doble (según elección).",
-    "Equipo de seguridad (casco, guantes, protector).",
-    "Guía instructor profesional bilingüe.",
-    "Práctica previa de manejo."
+    "Cuatrimoto con práctica previa de manejo en Sencca.",
+    "Casco de seguridad.",
+    "Ingreso a la Morada de los Dioses.",
+    "Guía profesional bilingüe y asistencia permanente."
   ],
   "no_incluye": [
-    "Boleto de entrada a la Morada de los Dioses (15 PEN peruanos / 15 PEN extranjeros).",
     "Alimentación o snacks.",
-    "Seguro contra daños a la cuatrimoto por choque negligente.",
+    "Seguro contra daños a la cuatrimoto.",
+    "Gastos personales.",
     "Propinas."
   ],
   "recomendaciones": [
     "Llevar ropa cómoda que no temas ensuciar con polvo o barro.",
     "Traer casaca cortaviento, gafas de sol y pañoleta o buff para cubrir el rostro.",
-    "Llevar dinero en efectivo en soles para la entrada al complejo (15 PEN).",
     "No se requiere experiencia previa en manejo de cuatrimotos."
   ],
   "puntos_de_interes": [
@@ -116,7 +117,27 @@
     },
     {
       "pregunta": "¿Cuánto se paga de entrada en la Morada de los Dioses?",
-      "respuesta": "La entrada cuesta 15 PEN por persona y se paga directamente en la boletería del sitio."
+      "respuesta": "El ingreso a la Morada de los Dioses está incluido en el precio del tour."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Tour Morada de los Dioses en Cuatrimotos Half Day?",
+      "respuesta": "El precio desde USD $35 por persona contempla: Recojo en Plaza Regocijo u hoteles cercanos.; Transporte turístico ida y retorno.; Cuatrimoto con práctica previa de manejo en Sencca.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Fácil - Moderada). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 3,850 m.s.n.m.. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
     }
   ],
   "seo": {
@@ -131,7 +152,7 @@
       "og_description": "Aventura en ATV cuatrimotos hacia Apukunyana. Guía, equipo y transporte incluidos.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/tour-morada-de-los-dioses-cuatrimoto/",
-      "og_image": "/tours/tour-morada-de-los-dioses-cuatrimoto/05.jpg",
+      "og_image": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/05.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -139,7 +160,7 @@
       "card": "summary_large_image",
       "title": "Tour Morada de los Dioses en Cuatrimotos | Chullos Tours",
       "description": "Explora la Morada de los Dioses en cuatrimoto desde Cusco. Aventura inolvidable.",
-      "image": "/tours/tour-morada-de-los-dioses-cuatrimoto/05.jpg"
+      "image": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/05.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -184,10 +205,10 @@
         "description": "Excursión en cuatrimotos todoterreno por la meseta de Senqa visitando el parque escultórico Apukunyana La Morada de los Dioses.",
         "url": "https://chullostours.com/tours/tour-morada-de-los-dioses-cuatrimoto/",
         "image": [
-          "/tours/tour-morada-de-los-dioses-cuatrimoto/05.jpg",
-          "/tours/tour-morada-de-los-dioses-cuatrimoto/06.jpg",
-          "/tours/tour-morada-de-los-dioses-cuatrimoto/07.jpg",
-          "/tours/tour-morada-de-los-dioses-cuatrimoto/08.jpg"
+          "/media/tours/tour-morada-de-los-dioses-cuatrimoto/05.jpg",
+          "/media/tours/tour-morada-de-los-dioses-cuatrimoto/06.jpg",
+          "/media/tours/tour-morada-de-los-dioses-cuatrimoto/07.jpg",
+          "/media/tours/tour-morada-de-los-dioses-cuatrimoto/08.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -196,7 +217,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "30.00",
+          "price": "35",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/tour-morada-de-los-dioses-cuatrimoto/"
@@ -227,7 +248,7 @@
             "name": "¿Cuánto se paga de entrada en la Morada de los Dioses?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La entrada cuesta 15 PEN por persona y se paga directamente en la boletería del sitio."
+              "text": "El ingreso a la Morada de los Dioses está incluido en el precio del tour."
             }
           }
         ]
@@ -250,5 +271,17 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 12 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 35,
+  "precio": 35,
+  "destino_ids": [
+    "cusco"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 43,
+    "online_usd": 39,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 131
 }

@@ -39,31 +39,31 @@
   ],
   "galeria": [
     {
-      "src": "/tours/cusco-fascinante-4-dias/05.avif",
+      "src": "/media/tours/cusco-fascinante-4-dias/05.avif",
       "alt": "Paquete Cusco Fascinante 4 Días / 3 Noches - 05.avif"
     },
     {
-      "src": "/tours/cusco-fascinante-4-dias/06.avif",
+      "src": "/media/tours/cusco-fascinante-4-dias/06.avif",
       "alt": "Paquete Cusco Fascinante 4 Días / 3 Noches - 06.avif"
     },
     {
-      "src": "/tours/cusco-fascinante-4-dias/07.avif",
+      "src": "/media/tours/cusco-fascinante-4-dias/07.avif",
       "alt": "Paquete Cusco Fascinante 4 Días / 3 Noches - 07.avif"
     },
     {
-      "src": "/tours/cusco-fascinante-4-dias/08.avif",
+      "src": "/media/tours/cusco-fascinante-4-dias/08.avif",
       "alt": "Paquete Cusco Fascinante 4 Días / 3 Noches - 08.avif"
     },
     {
-      "src": "/tours/cusco-fascinante-4-dias/09.jpg",
+      "src": "/media/tours/cusco-fascinante-4-dias/09.jpg",
       "alt": "Paquete Cusco Fascinante 4 Días / 3 Noches - 09.jpg"
     },
     {
-      "src": "/tours/cusco-fascinante-4-dias/10.avif",
+      "src": "/media/tours/cusco-fascinante-4-dias/10.avif",
       "alt": "Paquete Cusco Fascinante 4 Días / 3 Noches - 10.avif"
     },
     {
-      "src": "/tours/cusco-fascinante-4-dias/11.jpg",
+      "src": "/media/tours/cusco-fascinante-4-dias/11.jpg",
       "alt": "Paquete Cusco Fascinante 4 Días / 3 Noches - 11.jpg"
     }
   ],
@@ -150,10 +150,10 @@
     "Boletos de bus Consettur ida y vuelta Aguas Calientes - Machu Picchu.",
     "Boleto de ingreso oficial al Santuario Histórico de Machu Picchu.",
     "Almuerzo buffet andino el día del tour Valle Sagrado VIP.",
-    "Asistencia permanente 24/7."
+    "Asistencia permanente 24/7.",
+    "Boleto Turístico General del Cusco (BTC)."
   ],
   "no_incluye": [
-    "Boleto Turístico del Cusco (BTC) ni entradas a Maras (20 PEN) y Qorikancha (15 PEN).",
     "Noches de hotel en la ciudad de Cusco (disponibles a solicitud).",
     "Boletos aéreos nacionales o internacionales.",
     "Alimentación no descrita en el itinerario.",
@@ -204,6 +204,26 @@
     {
       "pregunta": "¿El almuerzo buffet del Valle Sagrado incluye opciones vegetarianas o veganas?",
       "respuesta": "Sí, el restaurante turístico en Urubamba ofrece una amplia variedad de ensaladas, verduras salteadas, sopas, guarniciones andinas y platos aptos para vegetarianos y veganos."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Paquete Cusco Fascinante 4 Días / 3 Noches?",
+      "respuesta": "El precio desde USD $380 por persona contempla: Traslados aeropuerto - hotel - aeropuerto en transporte privado.; Transporte turístico climatizado para todas las excursiones programadas.; Guía profesional de turismo bilingüe (Español / Inglés) en cada tour.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Baja - Moderada). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 3,700 m.s.n.m.. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
     }
   ],
   "seo": {
@@ -218,7 +238,7 @@
       "og_description": "Viaja a Cusco en un paquete de 4 días explorando Qorikancha, Valle Sagrado VIP, Noche en Aguas Calientes y Machu Picchu.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/cusco-fascinante-4-dias/",
-      "og_image": "/tours/cusco-fascinante-4-dias/05.avif",
+      "og_image": "/media/tours/cusco-fascinante-4-dias/05.avif",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -226,7 +246,7 @@
       "card": "summary_large_image",
       "title": "Paquete Cusco Fascinante 4 Días / 3 Noches",
       "description": "Itinerario inolvidable por el City Tour Cusco, Maras, Moray, Ollantaytambo y Machu Picchu.",
-      "image": "/tours/cusco-fascinante-4-dias/05.avif"
+      "image": "/media/tours/cusco-fascinante-4-dias/05.avif"
     }
   },
   "geo_ai_optimization": {
@@ -279,13 +299,13 @@
         "description": "Itinerario de 4 días recorriendo Cusco, City Tour, Valle Sagrado VIP con Maras y Moray, pernoche en Aguas Calientes y Machu Picchu.",
         "url": "https://chullostours.com/tours/cusco-fascinante-4-dias/",
         "image": [
-          "/tours/cusco-fascinante-4-dias/05.avif",
-          "/tours/cusco-fascinante-4-dias/06.avif",
-          "/tours/cusco-fascinante-4-dias/07.avif",
-          "/tours/cusco-fascinante-4-dias/08.avif",
-          "/tours/cusco-fascinante-4-dias/09.jpg",
-          "/tours/cusco-fascinante-4-dias/10.avif",
-          "/tours/cusco-fascinante-4-dias/11.jpg"
+          "/media/tours/cusco-fascinante-4-dias/05.avif",
+          "/media/tours/cusco-fascinante-4-dias/06.avif",
+          "/media/tours/cusco-fascinante-4-dias/07.avif",
+          "/media/tours/cusco-fascinante-4-dias/08.avif",
+          "/media/tours/cusco-fascinante-4-dias/09.jpg",
+          "/media/tours/cusco-fascinante-4-dias/10.avif",
+          "/media/tours/cusco-fascinante-4-dias/11.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -294,7 +314,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "380.00",
+          "price": "490",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/cusco-fascinante-4-dias/"
@@ -350,5 +370,242 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 15 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 490,
+  "precio": 490,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad",
+    "machu-picchu",
+    "valle-sagrado"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 464,
+    "online_usd": 426,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "opciones_hotel": [
+    {
+      "id": "solo_tour",
+      "nombre": "Solo tour (sin alojamiento)",
+      "categoria": "Sin alojamiento",
+      "precio_usd": 490,
+      "precio_etiqueta": "USD $490.00 / persona",
+      "descripcion": "Incluye traslados, entradas, trenes y guía según itinerario. Sin estadía incluida: coordinas tu propio alojamiento.",
+      "incluye_alojamiento": false,
+      "hoteles": [],
+      "precio_pen": 1838,
+      "precio_soles": 1838
+    },
+    {
+      "id": "auri_basico",
+      "nombre": "Tour + Hotel Auri Básico",
+      "categoria": "Básico",
+      "precio_usd": 530,
+      "precio_etiqueta": "USD $530.00 / persona",
+      "descripcion": "Comodidad esencial con Auri Boutique Hotel en Cusco y noche en Aguas Calientes incluida.",
+      "estrellas": 3,
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Auri Boutique Hotel",
+          "direccion": "Calle Pardo, Cusco",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/cusco-magico-5-dias/02.jpg",
+            "/media/tours/cusco-magico-5-dias/03.jpg",
+            "/media/tours/descubre-cusco-3-dias/01.jpg"
+          ],
+          "imagenes_referenciales": false
+        },
+        {
+          "ciudad": "Aguas Calientes (Machu Picchu Pueblo)",
+          "hotel": "Machupicchu Inn",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/tour-machu-picchu-2-dias/02.jpg",
+            "/media/tours/tour-machu-picchu-2-dias/03.jpg",
+            "/media/tours/machu-picchu-full-day-tren-expedition/04.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 1988,
+      "precio_soles": 1988
+    },
+    {
+      "id": "intiwatana",
+      "nombre": "Tour + Hotel Intiwatana",
+      "categoria": "Boutique",
+      "precio_usd": 580,
+      "precio_etiqueta": "USD $580.00 / persona",
+      "descripcion": "Experiencia boutique con Hotel Intiwatana en Cusco y Aguas Calientes.",
+      "estrellas": 4,
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Intiwatana",
+          "direccion": "Calle Afligidos, Cusco",
+          "sitio_web": "https://www.intiwatana.pe/#/home",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/cusco-fascinante-4-dias/02.jpg",
+            "/media/tours/cusco-fascinante-4-dias/03.jpg",
+            "/media/tours/cusco-magico-5-dias/04.jpg"
+          ],
+          "imagenes_referenciales": false
+        },
+        {
+          "ciudad": "Aguas Calientes (Machu Picchu Pueblo)",
+          "hotel": "Hotel Intiwatana Aguas Calientes",
+          "sitio_web": "https://www.intiwatana.pe/#/home",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/tour-machu-picchu-2-dias/04.jpg",
+            "/media/tours/machu-picchu-full-day-tren-expedition/03.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 2175,
+      "precio_soles": 2175
+    },
+    {
+      "id": "rojas_inn",
+      "nombre": "Tour + Hotel Rojas Inn",
+      "categoria": "3 Estrellas",
+      "precio_usd": 600,
+      "precio_etiqueta": "USD $600.00 / persona",
+      "descripcion": "Mayor confort con Hotel Rojas Inn en Cusco y Aguas Calientes.",
+      "estrellas": 3,
+      "hoteles": [
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Rojas Inn",
+          "direccion": "Calle Tigre o Santa, Cusco",
+          "sitio_web": "https://hotelrojasinn.com/room/standard-double-room/",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/lo-mejor-de-cusco-6-dias/02.jpg",
+            "/media/tours/lo-mejor-de-cusco-6-dias/03.jpg",
+            "/media/tours/descubre-cusco-3-dias/02.jpg"
+          ],
+          "imagenes_referenciales": false
+        },
+        {
+          "ciudad": "Aguas Calientes (Machu Picchu Pueblo)",
+          "hotel": "Rojas Inn Aguas Calientes",
+          "sitio_web": "https://hotelrojasinn.com/room/standard-double-room/",
+          "tipo_habitacion": "Doble o Matrimonial",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "/media/tours/tour-machu-picchu-2-dias/05.jpg",
+            "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg"
+          ],
+          "imagenes_referenciales": false
+        }
+      ],
+      "precio_pen": 2250,
+      "precio_soles": 2250
+    }
+  ],
+  "boleto_turistico": {
+    "tipo": "BTC_GENERAL",
+    "incluido": true,
+    "precio_pen": 130
+  },
+  "entradas_incluidas": {
+    "destacado": true,
+    "titulo": "Entradas incluidas",
+    "detalle": "Ingreso a Machu Picchu + Boleto Turístico General del Cusco (BTC).",
+    "variant": "gold"
+  },
+  "aplica_descuentos_edad": true,
+  "tarifas_personas": [
+    {
+      "id": "adulto",
+      "label": "Adulto (18–100 años)",
+      "rango_edad": "18-100",
+      "edad_min": 18,
+      "edad_max": 100,
+      "tipo": "fixed",
+      "descuento_usd": 0
+    },
+    {
+      "id": "joven",
+      "label": "Joven (12–17 años)",
+      "rango_edad": "12-17",
+      "edad_min": 12,
+      "edad_max": 17,
+      "tipo": "discount",
+      "descuento_usd": 20
+    },
+    {
+      "id": "nino",
+      "label": "Niño (3–11 años)",
+      "rango_edad": "3-11",
+      "edad_min": 3,
+      "edad_max": 11,
+      "tipo": "discount",
+      "descuento_usd": 30
+    },
+    {
+      "id": "infante",
+      "label": "Infante (0–2 años)",
+      "rango_edad": "0-2",
+      "edad_min": 0,
+      "edad_max": 2,
+      "tipo": "free",
+      "descuento_usd": 0
+    }
+  ],
+  "precio_pen": 1838
 }

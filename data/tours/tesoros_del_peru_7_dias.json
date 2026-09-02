@@ -84,20 +84,28 @@
   ],
   "galeria": [
     {
-      "src": "/tours/huacachina-islas-ballestas-lima/05.jpg",
-      "alt": "Paquete Tesoros del Perú 7 Días / 6 Noches - Huacachina Ica"
+      "src": "https://chullostours.com/wp-content/uploads/2023/10/lima-cathedral-in-the-plaza-de-armes-in-central-lima-in-peru-south-america_t20_pxn3Y1.jpg",
+      "alt": "Plaza Mayor de Lima y Palacio de Gobierno en el tour inicial",
+      "caption": "Día 1: Bienvenida en la capital gastronómica de América del Sur.",
+      "credito": "Chullos Tours"
     },
     {
-      "src": "/tours/cusco-magico-5-dias/05.avif",
-      "alt": "Paquete Tesoros del Perú 7 Días / 6 Noches - Machu Picchu"
+      "src": "https://chullostours.com/wp-content/uploads/2023/10/sun-setting-on-huacachina-an-oasis-near-the-city-of-ica-peru_t20_vR9bEp.jpg",
+      "alt": "Oasis de Huacachina en el atardecer del desierto de Ica",
+      "caption": "Día 2: Reserva de Paracas, Islas Ballestas y atardecer en Huacachina.",
+      "credito": "Chullos Tours"
     },
     {
-      "src": "/tours/cusco-magico-5-dias/06.avif",
-      "alt": "Paquete Tesoros del Perú 7 Días / 6 Noches - Valle Sagrado"
+      "src": "/media/tours/city-tour-cusco/05.avif",
+      "alt": "Qorikancha y templos coloniales en el centro histórico del Cusco",
+      "caption": "Día 3: Llegada a Cusco y recorrido por los sitios arqueológicos incaicos.",
+      "credito": "Chullos Tours"
     },
     {
-      "src": "/tours/cusco-magico-5-dias/07.avif",
-      "alt": "Paquete Tesoros del Perú 7 Días / 6 Noches - Montaña 7 Colores"
+      "src": "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg",
+      "alt": "Santuario Histórico de Machu Picchu en un día despejado",
+      "caption": "Día 5: Visita guiada completa a la maravilla del mundo moderno.",
+      "credito": "Chullos Tours / Archivo Oficial"
     }
   ],
   "itinerario": [
@@ -291,6 +299,30 @@
     {
       "pregunta": "¿Cuáles son las opciones de hospedaje y precios?",
       "respuesta": "Ofrecemos: Solo Tours sin Estadía por USD $778; Opción Intermedia con Hotel Intiwatana (Lima, Cusco y Aguas Calientes) por USD $995; y Opción Superior con Hotel Rojas Inn por USD $1,032."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Paquete Tesoros del Perú 7 Días / 6 Noches (Lima y Cusco)?",
+      "respuesta": "El precio desde USD $778 por persona contempla: Recepción y traslados de aeropuerto en Lima y Cusco; 2 Noches de Alojamiento en Lima; 3 Noches de Alojamiento en Cusco (Intiwatana / Rojas Inn). Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Moderada - Exigente). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 5,020 m.s.n.m.. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
+    },
+    {
+      "pregunta": "¿Puedo cancelar o cambiar la fecha?",
+      "respuesta": "Sí, sujeto a políticas del servicio (trenes, entradas y hoteles). Avísanos lo antes posible por WhatsApp o correo; te orientaremos según la fecha y el tipo de experiencia."
     }
   ],
   "seo": {
@@ -305,7 +337,7 @@
       "og_description": "El mejor itinerario multidestino de 7 días recorriendo Lima, Paracas, Huacachina, Cusco, Valle Sagrado VIP, Machu Picchu, Laguna Humantay y Vinicunca.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/tesoros-del-peru-7-dias/",
-      "og_image": "/tours/huacachina-islas-ballestas-lima/05.jpg",
+      "og_image": "/media/tours/huacachina-islas-ballestas-lima/05.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -313,7 +345,7 @@
       "card": "summary_large_image",
       "title": "Paquete Tesoros del Perú 7 Días / 6 Noches (Lima - Cusco)",
       "description": "Explora Lima, Paracas, Huacachina, Machu Picchu, Humantay y Vinicunca en 7 días con Chullos Tours.",
-      "image": "/tours/huacachina-islas-ballestas-lima/05.jpg"
+      "image": "/media/tours/huacachina-islas-ballestas-lima/05.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -370,8 +402,8 @@
         "description": "Itinerario multidestino de 7 días recorriendo Lima, Islas Ballestas, Huacachina, Cusco, Valle Sagrado VIP, pernocte en Aguas Calientes, Machu Picchu, Laguna Humantay y Montaña de 7 Colores Vinicunca.",
         "url": "https://chullostours.com/tours/tesoros-del-peru-7-dias/",
         "image": [
-          "/tours/huacachina-islas-ballestas-lima/05.jpg",
-          "/tours/cusco-magico-5-dias/05.avif"
+          "/media/tours/huacachina-islas-ballestas-lima/05.jpg",
+          "/media/tours/cusco-magico-5-dias/05.avif"
         ],
         "brand": {
           "@type": "Brand",
@@ -380,12 +412,142 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "778.00",
+          "price": "778",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/tesoros-del-peru-7-dias/"
         }
       }
     ]
-  }
+  },
+  "opciones_hotel": [
+    {
+      "id": "solo_tours",
+      "nombre": "Solo Tours (Sin Estadía)",
+      "categoria": "Sin Alojamiento",
+      "precio_usd": 778,
+      "precio_etiqueta": "USD $778.00 / persona",
+      "descripcion": "Todos los tours del itinerario en Lima y Cusco sin incluir noches de alojamiento. Ideal si ya cuentas con hospedaje propio.",
+      "hoteles": [],
+      "precio_pen": 2918,
+      "precio_soles": 2918
+    },
+    {
+      "id": "hotel_intiwatana",
+      "nombre": "Tours + 6 Noches Hotel Intiwatana",
+      "categoria": "Intermedio",
+      "precio_usd": 995,
+      "precio_etiqueta": "USD $995.00 / persona",
+      "descripcion": "Paquete completo con 6 noches de alojamiento en el Hotel Intiwatana. Habitación individual con todos los servicios incluidos en Lima y Cusco.",
+      "hoteles": [
+        {
+          "ciudad": "Lima",
+          "hotel": "Hotel Intiwatana Lima",
+          "tipo_habitacion": "Individual (Single)",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "https://images.unsplash.com/photo-1520250497590-56605d83a0db?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "imagenes_referenciales": true
+        },
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Intiwatana Cusco",
+          "direccion": "Calle Afligidos, Cusco",
+          "sitio_web": "https://www.intiwatana.pe/#/home",
+          "tipo_habitacion": "Individual (Single)",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "imagenes_referenciales": true
+        }
+      ],
+      "precio_pen": 3731,
+      "precio_soles": 3731
+    },
+    {
+      "id": "hotel_rojas_inn",
+      "nombre": "Tours + 6 Noches Hotel Rojas Inn",
+      "categoria": "Superior",
+      "precio_usd": 1032,
+      "precio_etiqueta": "USD $1,032.00 / persona",
+      "descripcion": "La opción superior del paquete con 6 noches en el Hotel Rojas Inn. Mayor confort, baño privado y desayuno en Lima y Cusco.",
+      "hoteles": [
+        {
+          "ciudad": "Lima",
+          "hotel": "Hotel Rojas Inn Lima",
+          "tipo_habitacion": "Individual (Single)",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "https://images.unsplash.com/photo-1611892440507-42a784e246fa?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "imagenes_referenciales": true
+        },
+        {
+          "ciudad": "Cusco",
+          "hotel": "Hotel Rojas Inn Cusco",
+          "direccion": "Calle Tigre o Santa, Cusco",
+          "sitio_web": "https://hotelrojasinn.com/room/standard-double-room/",
+          "tipo_habitacion": "Individual (Single)",
+          "servicios": [
+            "Desayuno incluido",
+            "Baño privado",
+            "Ducha caliente",
+            "Artículos de baño",
+            "Wifi",
+            "Cable TV"
+          ],
+          "imagenes": [
+            "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "imagenes_referenciales": true
+        }
+      ],
+      "precio_pen": 3870,
+      "precio_soles": 3870
+    }
+  ],
+  "destino_ids": [
+    "cusco",
+    "machu-picchu",
+    "valle-sagrado",
+    "lima"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 949,
+    "online_usd": 871,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [
+    {
+      "id": "huayna-picchu",
+      "label": "Entrada Huayna Picchu",
+      "precio_usd": 20,
+      "precio_soles": 75,
+      "enabled": true,
+      "descripcion": "Ascenso opcional a la montaña Huayna Picchu (cupos limitados)."
+    }
+  ],
+  "visible": false,
+  "precio_pen": 2918
 }

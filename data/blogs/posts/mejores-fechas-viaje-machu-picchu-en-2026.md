@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-09-04.jpg"
+featured_image_alt: "Cielo azul andino sobre la montaña Huayna Picchu durante la temporada seca"
+featured_image_caption: "Temporada seca (mayo a octubre) ofrece las condiciones climáticas más favorables."
+featured_image_credito: "Chullos Tours"
 id: 8827
 title: "Mejores Fechas para Viajar a Machu Picchu en 2026"
 slug: "mejores-fechas-viaje-machu-picchu-en-2026"

@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { ShieldCheck, Eye, Lock, UserCheck, Cookie, Mail } from "lucide-react";
 import { companyInfo } from "@/lib/company-info";
+import { PAYMENT_METHODS_LEGAL_TEXT } from "@/lib/payment-copy";
 
 export const metadata: Metadata = {
   title: `Políticas de Privacidad | ${companyInfo.name} - Agencia de Viajes en Cusco`,
@@ -32,7 +33,7 @@ const sections = [
     title: "Seguridad de Pagos",
     icon: <Lock className="w-5 h-5 text-[#6b0014]" />,
     content:
-      `Todas las transacciones electrónicas son procesadas bajo protocolos de encriptación SSL de 256 bits. ${companyInfo.name} no almacena datos de tarjetas de crédito o débito. Los pagos se procesan a través de plataformas seguras: PayPal, BCP, INTERBANK, YAPE, OPLIN e IZIPAY. Cada transacción genera un comprobante o voucher digital.`,
+      `Todas las transacciones electrónicas son procesadas bajo protocolos de encriptación SSL de 256 bits. ${companyInfo.name} no almacena datos de tarjetas de crédito o débito. Los pagos se procesan a través de plataformas seguras: ${PAYMENT_METHODS_LEGAL_TEXT}. Cada transacción genera un comprobante o voucher digital.`,
   },
   {
     title: "Cookies y Tecnologías de Rastreo",

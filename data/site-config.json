@@ -1,0 +1,195 @@
+{
+  "metrics": {
+    "yearsExperience": 10,
+    "travelersServed": "2,500+",
+    "tripadvisorRating": 5.0,
+    "tripadvisorReviewsCount": 48,
+    "activeToursCount": 34,
+    "satisfactionRate": "99.4%"
+  },
+  "trustBar": {
+    "enabled": true,
+    "items": [
+      {
+        "id": "mincetur",
+        "icon": "ShieldCheck",
+        "text": "Agencia Oficial Autorizada por MINCETUR 2026",
+        "highlight": true
+      },
+      {
+        "id": "tripadvisor",
+        "icon": "Star",
+        "text": "5.0 TripAdvisor · Reseñas Verificadas",
+        "highlight": false
+      },
+      {
+        "id": "tickets",
+        "icon": "CheckCircle2",
+        "text": "Ingresos 100% Asegurados a Machu Picchu",
+        "highlight": false
+      },
+      {
+        "id": "support",
+        "icon": "Headphones",
+        "text": "Soporte Local 24/7 en Cusco",
+        "highlight": false
+      },
+      {
+        "id": "pricing",
+        "icon": "CreditCard",
+        "text": "Tarifas Transparentes sin Cargos Ocultos",
+        "highlight": false
+      }
+    ]
+  },
+  "certifications": [
+    {
+      "id": "tripadvisor-choice",
+      "name": "Tripadvisor Travelers' Choice 2026",
+      "logo": "/img/legal-brands/tripadvisor.png",
+      "alt": "Tripadvisor Travelers' Choice 2026",
+      "href": "https://www.tripadvisor.com.pe/Attraction_Review-g294314-d26719669-Reviews-Chullos_Tours-Cusco_Cusco_Region.html",
+      "isModal": false
+    },
+    {
+      "id": "mincetur",
+      "name": "Agencia Autorizada MINCETUR",
+      "logo": "/img/legal-brands/logo_agencia_autorizada.png",
+      "alt": "Agencia de Viajes y Turismo Autorizada por MINCETUR",
+      "href": null,
+      "isModal": false
+    },
+    {
+      "id": "gercetur",
+      "name": "GERCETUR Cusco",
+      "logo": "/img/legal-brands/gercetur-logo.png",
+      "alt": "Gerencia Regional de Comercio Exterior y Turismo Cusco",
+      "href": null,
+      "isModal": false
+    },
+    {
+      "id": "promperu",
+      "name": "PromPerú Aliado",
+      "logo": "/img/legal-brands/promperu.png",
+      "alt": "PromPerú - Marca País",
+      "href": null,
+      "isModal": false
+    },
+    {
+      "id": "essna",
+      "name": "Código de Conducta ESSNA",
+      "logo": "/img/legal-brands/protegemelogo.png",
+      "alt": "Certificación ESSNA - Turismo Responsable y Protegido",
+      "href": null,
+      "isModal": true,
+      "modalImage": "/img/legal-brands/Certificado-ESSNA.jpeg"
+    }
+  ],
+  "paymentMethods": [
+    { "id": "visa", "name": "Visa", "icon": "FaCcVisa" },
+    { "id": "mastercard", "name": "Mastercard", "icon": "FaCcMastercard" },
+    { "id": "amex", "name": "American Express", "icon": "FaCcAmex" },
+    { "id": "applepay", "name": "Apple Pay", "icon": "FaApplePay" },
+    { "id": "googlepay", "name": "Google Pay", "icon": "FaGooglePay" }
+  ],
+  "pricing": {
+    "monedaBase": "USD",
+    "exchangeRatePen": 3.75,
+    "tramosEdadPorDefecto": [
+      { "id": "adulto", "label": "Adulto", "rango_edad": "18-100", "edad_min": 18, "edad_max": 100, "tipo": "fixed", "descuento_usd": 0 },
+      { "id": "joven", "label": "Joven", "rango_edad": "12-17", "edad_min": 12, "edad_max": 17, "tipo": "discount", "descuento_usd": 20 },
+      { "id": "nino", "label": "Niño", "rango_edad": "3-11", "edad_min": 3, "edad_max": 11, "tipo": "discount", "descuento_usd": 30 },
+      { "id": "infante", "label": "Infante", "rango_edad": "0-2", "edad_min": 0, "edad_max": 2, "tipo": "free", "descuento_usd": 0 }
+    ]
+  },
+  "whatsappAgents": [
+    {
+      "id": "ventas",
+      "name": "Lucía",
+      "role": "Especialista en Itinerarios & Reservas",
+      "number": "+51 992 558 512",
+      "raw": "51992558512",
+      "status": "En línea",
+      "defaultMessage": "¡Hola Lucía! Deseo consultar sobre disponibilidad y paquetes para mi viaje a Cusco / Machu Picchu."
+    },
+    {
+      "id": "asistencia",
+      "name": "Alexandra",
+      "role": "Atención al Viajero & Operaciones",
+      "number": "+51 973 781 330",
+      "raw": "51973781330",
+      "status": "En línea",
+      "defaultMessage": "¡Hola Alexandra! Necesito asistencia y detalles sobre un tour en Chullos Tours."
+    }
+  ],
+  "whyChooseUs": {
+    "tagline": "Diferenciales Chullos Tours",
+    "title": "¿Por qué miles de viajeros eligen explorar Cusco con nosotros?",
+    "description": "No somos intermediarios lejanos: somos guías y operadores locales nacidos en el corazón de los Andes. Cuidamos cada minuto de tu viaje.",
+    "teamImage": "/media/tours/city-tour-cusco/01.jpg",
+    "items": [
+      {
+        "id": "guias",
+        "icon": "Award",
+        "title": "Guías Nativos & Certificados",
+        "description": "Expertos licenciados apasionados por transmitir la cosmovisión e historia viva de nuestros antepasados incas."
+      },
+      {
+        "id": "boletos",
+        "icon": "ShieldCheck",
+        "title": "Entradas & Trenes 100% Garantizados",
+        "description": "Aseguramos tus boletos oficiales de ingreso a la Llaqta de Machu Picchu y trenes antes de tu llegada."
+      },
+      {
+        "id": "grupos",
+        "icon": "Users",
+        "title": "Grupos Pequeños & Cercanía",
+        "description": "Evitamos las multitudes con salidas coordinadas y grupos reducidos para que vivas una experiencia personalizada."
+      },
+      {
+        "id": "asistencia",
+        "icon": "Headphones",
+        "title": "Acompañamiento 24/7 en Cusco",
+        "description": "Desde tu recojo en el aeropuerto hasta tu retorno, nuestro equipo local estará siempre a un mensaje de distancia."
+      }
+    ]
+  },
+  "travelerProfiles": [
+    {
+      "id": "familias",
+      "title": "Viajes en Familia",
+      "subtitle": "Ritmo cómodo, seguridad y diversión para todas las edades",
+      "icon": "Users",
+      "badge": "Familiar",
+      "image": "/img/familia-background_v4.png",
+      "href": "/tours?tipo=familiar"
+    },
+    {
+      "id": "parejas",
+      "title": "Parejas & Lunas de Miel",
+      "subtitle": "Experiencias mágicas, domos y atardeceres inolvidables",
+      "icon": "Heart",
+      "badge": "Romántico",
+      "image": "/media/tours/cusco-magico-5-dias/01.jpg",
+      "href": "/tours?tipo=pareja"
+    },
+    {
+      "id": "aventureros",
+      "title": "Trekking & Aventura",
+      "subtitle": "Camino Inca, Laguna Humantay y Montaña de 7 Colores",
+      "icon": "Compass",
+      "badge": "Adrenalina",
+      "image": "/media/tours/camino-inca-2-dias/01.jpg",
+      "href": "/tours?tipo=adventurer"
+    },
+    {
+      "id": "cultural",
+      "title": "Historia & Tradición",
+      "subtitle": "Valle Sagrado, templos milenarios y cultura viviente",
+      "icon": "Landmark",
+      "badge": "Cultura",
+      "image": "/media/tours/valle-sagrado-vip-tour-cusco/01.jpg",
+      "href": "/tours?tipo=history"
+    }
+  ]
+}

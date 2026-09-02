@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const tourUrls: MetadataRoute.Sitemap = tours
     .filter((tour) => tour && tour.slug)
     .map((tour) => ({
-      url: `${baseUrl}/tours/${tour.slug}`,
+      url: `${baseUrl}/tours/${tour.slug}/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
@@ -21,10 +21,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogUrls: MetadataRoute.Sitemap = blogPosts
     .filter((post) => post && post.slug)
     .map((post) => ({
-      url: `${baseUrl}/blog/${post.slug}`,
+      url: `${baseUrl}/blog/${post.slug}/`,
       lastModified: post.date ? new Date(post.date) : new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
+    }));
+
+  const tourUrlsPe: MetadataRoute.Sitemap = tours
+    .filter((tour) => tour && tour.slug)
+    .map((tour) => ({
+      url: `${baseUrl}/pe/tours/${tour.slug}/`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.85,
     }));
 
   const staticPages: MetadataRoute.Sitemap = [
@@ -35,54 +44,72 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/tienda`,
+      url: `${baseUrl}/pe/`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/pe/tours/`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/acerca-de-chullos-tours`,
+      url: `${baseUrl}/tienda/`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/acerca-de-chullos-tours/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/contacto-chullos`,
+      url: `${baseUrl}/contacto-chullos/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/viaje-personalizado`,
+      url: `${baseUrl}/mapa-del-sitio/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/blog`,
+      url: `${baseUrl}/viaje-personalizado/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/destinos`,
+      url: `${baseUrl}/blog/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/politicas-de-privacidad`,
+      url: `${baseUrl}/destinos/`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/politicas-de-privacidad/`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/terminos-y-condiciones`,
+      url: `${baseUrl}/terminos-y-condiciones/`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
   ];
 
-  return [...staticPages, ...tourUrls, ...blogUrls];
+  return [...staticPages, ...tourUrls, ...tourUrlsPe, ...blogUrls];
 }

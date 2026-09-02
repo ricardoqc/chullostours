@@ -19,18 +19,44 @@ export const TourComparisonTable: React.FC<TourComparisonTableProps> = ({
   const isCurrentFullDay = currentDays === 1;
   const currentTags = deriveExperienceTags(currentTour);
 
+  const getTourAccommodationType = (t: Tour) => {
+    const text = (t.atributos?.alojamiento_incluido || t.titulo).toLowerCase();
+    if (text.includes("campamento") || text.includes("camping") || text.includes("tiendas") || t.titulo.toLowerCase().includes("camino inca 4")) return "camping";
+    if (t.opciones_hotel && t.opciones_hotel.length > 0) return "hotel";
+    if (text.includes("hotel") || text.includes("noche en") || text.includes("noches en")) return "hotel";
+    return "none";
+  };
+
+  const currentAccType = getTourAccommodationType(currentTour);
+
   const matchingDurationTours = allTours.filter((t) => {
     if (t.slug === currentTour.slug) return false;
+    
+    // Evitar recomendar simples variantes de tren para Machu Picchu Full Day si ya estamos viendo uno
+    const isCurrentMP = currentTour.slug.includes("machupicchu-full-day") || currentTour.slug.includes("machu-picchu-full-day");
+    const isTMP = t.slug.includes("machupicchu-full-day") || t.slug.includes("machu-picchu-full-day");
+    if (isCurrentMP && isTMP) return false;
+
     const tourDays = parseDurationDays(t.atributos?.duracion);
     return (tourDays === 1) === isCurrentFullDay;
   });
 
   const sorted = [...matchingDurationTours].sort((a, b) => {
+    // 1. Coincidencia de tipo de alojamiento (hotel con hotel, camping con camping)
+    const aAcc = getTourAccommodationType(a);
+    const bAcc = getTourAccommodationType(b);
+    const aAccMatch = aAcc === currentAccType ? 1 : 0;
+    const bAccMatch = bAcc === currentAccType ? 1 : 0;
+    if (aAccMatch !== bAccMatch) return bAccMatch - aAccMatch;
+
+    // 2. Superposición de tags de experiencia (aventura con aventura, cultural con cultural)
     const aTags = deriveExperienceTags(a);
     const bTags = deriveExperienceTags(b);
     const aOverlap = aTags.filter((tag) => currentTags.includes(tag)).length;
     const bOverlap = bTags.filter((tag) => currentTags.includes(tag)).length;
     if (bOverlap !== aOverlap) return bOverlap - aOverlap;
+
+    // 3. Comparten palabras clave largas en el título
     const currentTitleLower = currentTour.titulo.toLowerCase();
     const aTitle = a.titulo.toLowerCase();
     const bTitle = b.titulo.toLowerCase();
@@ -38,6 +64,7 @@ export const TourComparisonTable: React.FC<TourComparisonTableProps> = ({
     const bSharesKeyword = currentTitleLower.split(" ").some((kw) => kw.length > 4 && bTitle.includes(kw));
     if (aSharesKeyword && !bSharesKeyword) return -1;
     if (!aSharesKeyword && bSharesKeyword) return 1;
+
     return 0;
   });
 
@@ -45,6 +72,31 @@ export const TourComparisonTable: React.FC<TourComparisonTableProps> = ({
   if (related.length === 0) return null;
 
   const compareTours = [currentTour, ...related];
+
+  const getTourAccommodation = (t: Tour) => {
+    if (t.atributos?.alojamiento_incluido) {
+      return t.atributos.alojamiento_incluido;
+    }
+    if (t.opciones_hotel && t.opciones_hotel.length > 0) {
+      return "Hoteles según categoría";
+    }
+    const tourDays = parseDurationDays(t.atributos?.duracion);
+    if (tourDays === 1) {
+      return "No Aplica (Tour 1 Día)";
+    }
+    const title = t.titulo.toLowerCase();
+    if (
+      title.includes("camino inca 4") ||
+      title.includes("camping") ||
+      title.includes("campamento") ||
+      title.includes("salkantay") ||
+      title.includes("ausangate") ||
+      title.includes("choquequirao")
+    ) {
+      return "Campamento en Montaña";
+    }
+    return "No Incluye Alojamiento";
+  };
 
   return (
     <div className="bg-slate-50 p-6 md:p-8 rounded-3xl border border-slate-200 flex flex-col gap-6">
@@ -67,11 +119,10 @@ export const TourComparisonTable: React.FC<TourComparisonTableProps> = ({
           const price = estimateTourPrice(t);
           const tags = deriveExperienceTags(t);
           const tagMeta = TRAVELER_PROFILES.find((p) => p.id === tags[0]) || TRAVELER_PROFILES[1];
-          const tourDays = parseDurationDays(t.atributos?.duracion);
-          const isMulti = tourDays > 1;
           const hasEntrance = t.incluye?.some((i) =>
             i.toLowerCase().includes("ingreso") || i.toLowerCase().includes("entrada") || i.toLowerCase().includes("machu")
           );
+          const accom = getTourAccommodation(t);
           return (
             <div
               key={t.slug}
@@ -104,9 +155,9 @@ export const TourComparisonTable: React.FC<TourComparisonTableProps> = ({
                     <span className="text-slate-400">Parcial</span>
                   )}
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500 flex items-center gap-1"><Hotel className="w-3 h-3 text-[#6b0014]" /> Alojam.</span>
-                  <span className="font-bold text-slate-800">{isMulti ? "Hotel 3★" : "No Aplica"}</span>
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-slate-500 flex items-center gap-1 shrink-0"><Hotel className="w-3 h-3 text-[#6b0014]" /> Alojam.</span>
+                  <span className="font-bold text-slate-800 text-right truncate text-[11px]" title={accom}>{accom}</span>
                 </div>
                 <div className="flex items-center justify-between border-t border-slate-100 pt-2">
                   <span className="text-slate-500">Precio Desde</span>
@@ -169,9 +220,16 @@ export const TourComparisonTable: React.FC<TourComparisonTableProps> = ({
             <tr>
               <td className="p-3 font-bold text-slate-700 bg-slate-100/50"><div className="flex items-center gap-1.5"><Hotel className="w-3.5 h-3.5 text-[#6b0014]" /><span>Alojamiento</span></div></td>
               {compareTours.map((t) => {
-                const tourDays = parseDurationDays(t.atributos?.duracion);
-                const isMulti = tourDays > 1;
-                return (<td key={t.slug} className={`p-3 ${t.slug === currentTour.slug ? "bg-[#6b0014]/5 border-x border-[#6b0014]/20" : ""}`}>{isMulti ? (<span className="text-amber-800 font-bold">Hotel 3★ Incluido</span>) : (<span className="text-slate-400 font-medium">No Aplica (1 Día)</span>)}</td>);
+                const accom = getTourAccommodation(t);
+                const isCamping = accom.toLowerCase().includes("campamento");
+                const isHotel = accom.toLowerCase().includes("hotel");
+                return (
+                  <td key={t.slug} className={`p-3 ${t.slug === currentTour.slug ? "bg-[#6b0014]/5 border-x border-[#6b0014]/20" : ""}`}>
+                    <span className={`font-bold text-xs ${isCamping ? "text-emerald-800" : isHotel ? "text-amber-900" : "text-slate-500"}`}>
+                      {accom}
+                    </span>
+                  </td>
+                );
               })}
             </tr>
             <tr>

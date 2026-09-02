@@ -1,0 +1,10 @@
+TOUR: Paquete Gran Imperio Inca 7 Días / 6 Noches
+Slug JSON: gran-imperio-inca-7-dias
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/gran-imperio-inca-7-dias/01.jpg

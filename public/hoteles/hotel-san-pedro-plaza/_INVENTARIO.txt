@@ -1,0 +1,10 @@
+HOTEL: Hotel San Pedro Plaza
+Ciudad: Cusco
+Nota: Gran Imperio Inca 7d — reemplazar Unsplash
+Convención:
+  01-fachada.jpg
+  02-habitacion.jpg
+  03-lobby.jpg      (opcional)
+JSON tour → opciones_hotel[].hoteles[].imagenes:
+  ["/hoteles/hotel-san-pedro-plaza/01-fachada.jpg", "/hoteles/hotel-san-pedro-plaza/02-habitacion.jpg"]
+  imagenes_referenciales: false

@@ -39,7 +39,32 @@
     "Bosque de los Ents: Paseo meditativo entre formaciones arbóreas de aspecto fantástico.",
     "Valle de los Duendes: Paraje místico lleno de leyendas y tradiciones andinas ancestrales."
   ],
-  "galeria": [],
+  "galeria": [
+    {
+      "src": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/05.jpg",
+      "alt": "Escultura gigante tallada en roca viva de Wiracocha en la Morada de los Dioses",
+      "caption": "Apukunaq Tianan (La Morada de los Dioses): complejo de arte lítico contemporáneo en Sencca.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/06.jpg",
+      "alt": "Escultura de la Pachamama (Madre Tierra) esculpida en la montaña rocosa",
+      "caption": "Tributo artístico andino a las deidades sagradas de la cosmovisión quechua.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/07.jpg",
+      "alt": "Portal tridimensional del Puma andino tallado en piedra caliza",
+      "caption": "El Puma, símbolo inca del mundo terrenal (Kay Pacha), esculpido a gran escala.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/tour-morada-de-los-dioses-cuatrimoto/08.jpg",
+      "alt": "Vista panorámica de la quebrada de Poroy y Cusco desde la cima de Apukunaq Tianan",
+      "caption": "Mirador natural privilegiado sobre los valles andinos occidentales de Cusco.",
+      "credito": "Chullos Tours"
+    }
+  ],
   "itinerario": [
     {
       "dia": 1,
@@ -120,6 +145,22 @@
     {
       "pregunta": "¿Es un tour físicamente exigente?",
       "respuesta": "No, este tour es de dificultad fácil. Todas las caminatas son cortas y en terrenos relativamente llanos, aptos para cualquier condición física."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Cusco Místico – Morada de los Dioses Apukunyana Full Day?",
+      "respuesta": "El precio desde USD $50 por persona contempla: Recojo del hotel en Cusco.; Transporte turístico de ida y retorno.; Guía profesional bilingüe (Español / Inglés).. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Fácil). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -134,7 +175,7 @@
       "og_description": "Descubre la cara más mágica de Cusco: esculturas monumentales, parque Pokémon, bosque de los Ents y Valle de los Duendes.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/cusco-mistico-morada-dioses/",
-      "og_image": "/tours/cusco-mistico-morada-dioses/01.jpg",
+      "og_image": "/media/tours/cusco-mistico-morada-dioses/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -142,7 +183,7 @@
       "card": "summary_large_image",
       "title": "Cusco Místico – Morada de los Dioses | Chullos Tours",
       "description": "Tour único por el Cusco mágico: Apukunyana, Parque Pokémon, Bosque Ents y Valle Duendes.",
-      "image": "/tours/cusco-mistico-morada-dioses/01.jpg"
+      "image": "/media/tours/cusco-mistico-morada-dioses/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -201,7 +242,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "50.00",
+          "price": "50",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/cusco-mistico-morada-dioses/"
@@ -230,5 +271,18 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 15 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 50,
+  "precio": 50,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 61,
+    "online_usd": 56,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 188
 }

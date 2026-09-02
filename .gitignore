@@ -32,6 +32,10 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# CMS export snapshots (regenerate with scripts/export-tours-for-cms.mjs)
+/data/exports/
 
 # vercel
 .vercel
@@ -45,3 +49,22 @@ next-env.d.ts
 
 # scratch
 /scratch
+
+# ai assistant & ide directories
+.omo
+.gemini
+.agents
+.vscode
+.idea
+.cursor
+
+# large files & media caches
+*.pdf
+*.mp4
+*.mov
+
+# auxiliary scripts & python utilities
+*.py
+extract.js
+PENDING_UPDATES.txt
+*.log

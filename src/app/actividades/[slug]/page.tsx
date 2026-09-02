@@ -1,6 +1,8 @@
 import React from "react";
 import { getAllTours } from "@/lib/tours";
 import { TourCard, TourProps } from "@/components/tours/tour-card";
+import { toTourCardProps } from "@/lib/tour-card-mapper";
+import { Tour } from "@/types/tour";
 import { Compass } from "lucide-react";
 
 interface ActivityPageProps {
@@ -23,25 +25,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
   const titleFormatted = slug.replace(/-/g, " ").toUpperCase();
   const tours = getAllTours();
 
-  const adaptTourToCardProps = (tour: any): TourProps => {
-    const firstImage =
-      tour.galeria && tour.galeria.length > 0
-        ? tour.galeria[0].src
-        : "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&q=80";
-
-    return {
-      id: tour.slug,
-      slug: tour.slug,
-      title: tour.titulo,
-      location: tour.atributos?.ubicacion || "Cusco, Perú",
-      duration: tour.atributos?.duracion || "Full Day",
-      price: tour.atributos?.duracion?.includes("Días") ? 350 : 65,
-      rating: 4.9,
-      reviewCount: 24,
-      imageUrl: firstImage,
-      badge: tour.atributos?.tipo_tour || "Actividad",
-    };
-  };
+  const adaptTourToCardProps = (tour: Tour): TourProps => toTourCardProps(tour);
 
   return (
     <div className="flex flex-col gap-12 pb-16 bg-white">

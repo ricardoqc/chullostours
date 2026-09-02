@@ -1,0 +1,82 @@
+{
+  "cusco": {
+    "nombre": "Cusco",
+    "lat": -13.5319,
+    "lng": -71.9675,
+    "tipo": "city",
+    "descripcion": "Capital histórica del Imperio Inca y punto de partida de la mayoría de tours.",
+    "imagen": "/media/tours/city-tour-cusco/05.avif"
+  },
+  "machu-picchu": {
+    "nombre": "Machu Picchu",
+    "lat": -13.1631,
+    "lng": -72.545,
+    "tipo": "landmark",
+    "descripcion": "Santuario Histórico de Machu Picchu, maravilla del mundo moderno.",
+    "imagen": "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg"
+  },
+  "aguas-calientes": {
+    "nombre": "Aguas Calientes",
+    "lat": -13.1547,
+    "lng": -72.5253,
+    "tipo": "city",
+    "descripcion": "Pueblo base en el valle del Urubamba, puerta de entrada a Machu Picchu.",
+    "imagen": "/media/tours/tour-machu-picchu-2-dias/01.jpg"
+  },
+  "ollantaytambo": {
+    "nombre": "Ollantaytambo",
+    "lat": -13.2592,
+    "lng": -72.2644,
+    "tipo": "landmark",
+    "descripcion": "Fortaleza inca y estación de tren hacia Aguas Calientes.",
+    "imagen": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif"
+  },
+  "sacsayhuaman": {
+    "nombre": "Sacsayhuamán",
+    "lat": -13.5097,
+    "lng": -71.9817,
+    "tipo": "landmark",
+    "descripcion": "Impresionante complejo arqueológico sobre la ciudad de Cusco.",
+    "imagen": "/media/tours/city-tour-cusco/06.jpg"
+  },
+  "valle-sagrado": {
+    "nombre": "Valle Sagrado",
+    "lat": -13.3328,
+    "lng": -72.0845,
+    "tipo": "nature",
+    "descripcion": "Valle del río Urubamba con pueblos, mercados y sitios arqueológicos.",
+    "imagen": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif"
+  },
+  "humantay": {
+    "nombre": "Laguna Humantay",
+    "lat": -13.4092,
+    "lng": -72.6497,
+    "tipo": "nature",
+    "descripcion": "Laguna turquesa a los pies del nevado Salkantay.",
+    "imagen": "/media/tours/laguna-humantay-tour-cusco/05.avif"
+  },
+  "vinicunca": {
+    "nombre": "Montaña de 7 Colores",
+    "lat": -13.8694,
+    "lng": -71.3025,
+    "tipo": "trek",
+    "descripcion": "Vinicunca, famosa montaña arcoíris de los Andes del sur.",
+    "imagen": "/media/tours/montana-colores-vinicunca-tour/06.avif"
+  },
+  "puno": {
+    "nombre": "Puno",
+    "lat": -15.8402,
+    "lng": -70.0219,
+    "tipo": "city",
+    "descripcion": "Ciudad a orillas del Lago Titicaca, capital folklórica del Perú.",
+    "imagen": "/media/tours/tour-lago-titicaca-2-dias/05.avif"
+  },
+  "lima": {
+    "nombre": "Lima",
+    "lat": -12.0464,
+    "lng": -77.0428,
+    "tipo": "city",
+    "descripcion": "Capital del Perú y centro histórico patrimonio de la humanidad.",
+    "imagen": "https://chullostours.com/wp-content/uploads/2023/10/lima-cathedral-in-the-plaza-de-armes-in-central-lima-in-peru-south-america_t20_pxn3Y1.jpg"
+  }
+}

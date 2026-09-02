@@ -1,4 +1,8 @@
 ---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/hiking-into-winaywayna-inca-ruins-on-inca-trail-tr-2022-03-09-17-15-42-utc.jpg"
+featured_image_alt: "Trekkers en el Camino Inca Clásico llegando a las terrazas de Wiñay Wayna hacia Machu Picchu"
+featured_image_caption: "Caminantes admirando el sitio inca de Wiñay Wayna en el tercer día del Camino Inca 4 Días."
+featured_image_credito: "Chullos Tours / Archivo Oficial de Trekking"
 id: 9001
 title: "Camino Inca 4 Días a Machu Picchu: Guía Definitiva 2026"
 slug: "camino-inca-4-dias-guia-definitiva"

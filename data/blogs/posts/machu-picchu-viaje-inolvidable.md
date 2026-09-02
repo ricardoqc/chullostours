@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/jumpstory-download20231026-153140.jpg"
+featured_image_alt: "Viajeros contemplando la maravilla del mundo Machu Picchu al amanecer"
+featured_image_caption: "Experiencia auténtica y vivencias inolvidables en los Andes peruanos."
+featured_image_credito: "Chullos Tours"
 id: 7990
 title: "Explorando la Magia de Perú: Un Viaje Inolvidable"
 slug: "machu-picchu-viaje-inolvidable"

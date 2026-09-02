@@ -1,0 +1,10 @@
+TOUR: Tour Valle Sagrado VIP Full Day (Chinchero, Maras, Moray, Urubamba, Ollantaytambo y Pisac)
+Slug JSON: valle-sagrado-vip-tour-cusco
+
+Convención (en esta carpeta):
+  01.jpg       Hero principal
+  02.jpg … 08.jpg   Galería detalle
+  og/og.jpg    Imagen redes (opcional)
+  gallery/     Extras sin renumerar
+
+URL web: /tours/valle-sagrado-vip-tour-cusco/01.jpg

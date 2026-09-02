@@ -1,4 +1,8 @@
 ---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/rainbow-mountain-2021-08-26-23-01-37-utc.jpg"
+featured_image_alt: "Cordillera del Vilcanota y la cresta multicolor de la Montaña de 7 Colores Vinicunca"
+featured_image_caption: "Vinicunca a 5,200 msnm: franjas minerales de origen geológico milenario en Cusco."
+featured_image_credito: "Chullos Tours / Archivo Oficial"
 id: 9002
 title: "Montaña de 7 Colores (Vinicunca): Guía Completa de Viaje 2026"
 slug: "montana-de-7-colores-vinicunca-guia-completa"

@@ -1,0 +1,39 @@
+{
+  "_nota": "URLs referenciales Unsplash. Sustituir por fotos reales en cada tour JSON (campo hoteles[].imagenes).",
+  "default_cusco": [
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "default_lima": [
+    "https://images.unsplash.com/photo-1520250497590-56605d83a0db?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1618773928125-c32242e63f39?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "default_aguas_calientes": [
+    "https://images.unsplash.com/photo-1587595431973-160a092f1892?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "hotel aury": [
+    "https://images.unsplash.com/photo-1555854877-bab0ef45b691?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "hotel panaka": [
+    "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "hotel san pedro plaza": [
+    "https://images.unsplash.com/photo-1618773928125-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "hotel intiwatana lima": [
+    "https://images.unsplash.com/photo-1520250497590-56605d83a0db?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "hotel intiwatana cusco": [
+    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "hotel rojas inn lima": [
+    "https://images.unsplash.com/photo-1611892440507-42a784e246fa?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "hotel rojas inn cusco": [
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+  ]
+}

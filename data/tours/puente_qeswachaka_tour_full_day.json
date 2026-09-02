@@ -37,19 +37,19 @@
   ],
   "galeria": [
     {
-      "src": "/tours/puente-qeswachaka-tour-full-day/05.jpg",
+      "src": "/media/tours/puente-qeswachaka-tour-full-day/05.jpg",
       "alt": "Puente inca colgante Qeswachaka sobre el río Apurímac"
     },
     {
-      "src": "/tours/puente-qeswachaka-tour-full-day/06.jpg",
+      "src": "/media/tours/puente-qeswachaka-tour-full-day/06.jpg",
       "alt": "Vista panorámica del puente tejido de paja ichu"
     },
     {
-      "src": "/tours/puente-qeswachaka-tour-full-day/07.jpg",
+      "src": "/media/tours/puente-qeswachaka-tour-full-day/07.jpg",
       "alt": "Laguna de Pomacanchi en el circuito de las 4 lagunas"
     },
     {
-      "src": "/tours/puente-qeswachaka-tour-full-day/08.jpg",
+      "src": "/media/tours/puente-qeswachaka-tour-full-day/08.jpg",
       "alt": "Turista cruzando el legendario puente inca Qeswachaka"
     }
   ],
@@ -120,6 +120,30 @@
     {
       "pregunta": "¿Cuál es la dificultad del tour?",
       "respuesta": "La dificultad es baja. No requiere largas caminatas, por lo que es apto para personas de todas las edades."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Tour Puente Inca Q'eswachaka y 4 Lagunas Full Day?",
+      "respuesta": "El precio desde USD $50 por persona contempla: Recojo del hotel en el centro histórico de Cusco.; Transporte turístico privado/compartido de ida y retorno.; Guía profesional oficial de turismo bilingüe.. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Baja). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
+    },
+    {
+      "pregunta": "¿Hay mal de altura? ¿Cómo prepararme?",
+      "respuesta": "La altitud máxima del recorrido es 3,700 m.s.n.m.. Te sugerimos llegar a Cusco 1 día antes, hidratarte, evitar alcohol el primer día y considerar mate de coca. Avisa a tu guía si presentas molestias."
+    },
+    {
+      "pregunta": "¿Puedo cancelar o cambiar la fecha?",
+      "respuesta": "Sí, sujeto a políticas del servicio (trenes, entradas y hoteles). Avísanos lo antes posible por WhatsApp o correo; te orientaremos según la fecha y el tipo de experiencia."
     }
   ],
   "seo": {
@@ -134,7 +158,7 @@
       "og_description": "Cruza el último puente inca de paja en el mundo con guía bilingüe y transporte turístico.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/puente-qeswachaka-tour-full-day/",
-      "og_image": "/tours/puente-qeswachaka-tour-full-day/05.jpg",
+      "og_image": "/media/tours/puente-qeswachaka-tour-full-day/05.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -142,7 +166,7 @@
       "card": "summary_large_image",
       "title": "Tour Puente Q'eswachaka y 4 Lagunas | Chullos Tours",
       "description": "Visita el puente inca Q'eswachaka y las 4 Lagunas en un tour inolvidable.",
-      "image": "/tours/puente-qeswachaka-tour-full-day/05.jpg"
+      "image": "/media/tours/puente-qeswachaka-tour-full-day/05.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -187,10 +211,10 @@
         "description": "Excursión cultural de día completo hacia el último puente inca activo Q'eswachaka y el circuito de las 4 lagunas.",
         "url": "https://chullostours.com/tours/puente-qeswachaka-tour-full-day/",
         "image": [
-          "/tours/puente-qeswachaka-tour-full-day/05.jpg",
-          "/tours/puente-qeswachaka-tour-full-day/06.jpg",
-          "/tours/puente-qeswachaka-tour-full-day/07.jpg",
-          "/tours/puente-qeswachaka-tour-full-day/08.jpg"
+          "/media/tours/puente-qeswachaka-tour-full-day/05.jpg",
+          "/media/tours/puente-qeswachaka-tour-full-day/06.jpg",
+          "/media/tours/puente-qeswachaka-tour-full-day/07.jpg",
+          "/media/tours/puente-qeswachaka-tour-full-day/08.jpg"
         ],
         "brand": {
           "@type": "Brand",
@@ -199,7 +223,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "30.00",
+          "price": "50",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/puente-qeswachaka-tour-full-day/"
@@ -250,5 +274,18 @@
       "titulo": "Grupo Reducido",
       "detalle": "Grupos de máximo 15 personas para una experiencia más cómoda y fluida"
     }
-  ]
+  ],
+  "precio_usd": 50,
+  "precio": 50,
+  "destino_ids": [
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 61,
+    "online_usd": 56,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "precio_pen": 188
 }

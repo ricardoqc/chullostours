@@ -1,4 +1,8 @@
 ﻿---
+featured_image: "https://chullostours.com/wp-content/uploads/2023/10/photo_2024-07-03_18-09-56.jpg"
+featured_image_alt: "Guías andinos oficiales y viajeros compartiendo una experiencia cultural en Cusco"
+featured_image_caption: "Viajes personalizados con guías nativos que transmiten la cosmovisión y calidez andina."
+featured_image_credito: "Chullos Tours"
 id: 979
 title: "Viajar a Perú con Chullos Tours: Tu Aventura Personalizada"
 slug: "viajar-a-peru-con-chullos-tours"

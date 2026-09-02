@@ -24,7 +24,7 @@
     "06:00 am (salida Día 1)"
   ],
   "punto_inicio": "Recojo del hotel en Cusco",
-  "resumen": "Descubre Machu Picchu de forma económica y aventurera en 2 días y 1 noche por la espectacular ruta de Hidroeléctrica. Viaja en bus por el paso de Málaga, camina 3 horas bordeando la vía del tren hasta Aguas Calientes y visita la ciudadela al amanecer del segundo día con guía profesional.",
+  "resumen": "Descubre Machu Picchu de forma económica y aventurera en un solo tour de 2 días y 1 noche por la ruta de Hidroeléctrica. El Día 1 (By Car 1) recorre Santa María, Santa Teresa e Hidroeléctrica hasta Aguas Calientes; el Día 2 (By Car 2) visita la ciudadela al amanecer y retorna a Cusco.",
   "descripcion_completa": "El tour Machu Picchu By Car 2 Días / 1 Noche es la alternativa más aventurera y económica para llegar a la ciudadela inca más famosa del mundo. En lugar del tren turístico convencional, recorremos la impresionante ruta que atraviesa el paso de Málaga y desciende hacia la selva alta hasta llegar a la Central Hidroeléctrica, desde donde caminaremos por la vía del ferrocarril hasta Aguas Calientes.\n\n**Día 1:** Partiremos desde Cusco a las 06:00 am en nuestro cómodo transporte turístico. El viaje atraviesa paisajes increíblemente variados: el altiplano de Anta, el Valle Sagrado, los campos de Ollantaytambo, el dramático paso de la Abra Málaga (4,316 m.s.n.m.) con sus yungas y vegetación de ceja de selva, y finalmente descenderemos hacia Santa María y Santa Teresa. A las 13:00 hrs aproximadamente llegaremos a la Central Hidroeléctrica, donde almorzaremos.\n\nDespués del almuerzo, iniciaremos la famosa caminata de 3 horas bordeando la vía del ferrocarril entre Hidroeléctrica y Aguas Calientes, un sendero plano y de tierra que discurre entre la selva baja con el río Urubamba de compañero. Este camino es una experiencia única que muy pocos viajeros conocen y que tiene su propio encanto.\n\nLlegaremos a Aguas Calientes en la tarde para instalarnos en el hotel. A las 20:00 hrs cenaremos y el guía dará una charla informativa sobre Machu Picchu para aprovechar al máximo la visita del día siguiente.\n\n**Día 2:** Madrugaremos para desayunar a las 05:00 am. Subiremos a Machu Picchu en bus Consettur o caminando por el camino Inca de Aguas Calientes (45 min). La visita guiada comenzará a las 06:00 am, aprovechando el amanecer sobre la ciudadela, uno de los espectáculos más impresionantes del mundo. Tendremos hasta las 11:30 am de tiempo libre.\n\nRetornaremos caminando hasta Hidroeléctrica para abordar el bus de regreso. Llegaremos a Cusco entre las 21:30 y 22:30 pm.",
   "propuesta_de_valor": [
     "La ruta alternativa y más aventurera a Machu Picchu: por carro y caminata, no solo en tren.",
@@ -39,11 +39,36 @@
     "Amanecer en Machu Picchu: Visita guiada a las 06:00 am cuando la luz del día toca la ciudadela.",
     "Charla nocturna: El guía prepara al grupo la noche anterior con historia e información de Machu Picchu."
   ],
-  "galeria": [],
+  "galeria": [
+    {
+      "src": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
+      "alt": "Sendero peatonal a lo largo de la vía del tren desde Hidroeléctrica a Aguas Calientes",
+      "caption": "Caminata ecológica de 10 km rodeada de ceja de selva y abundante vegetación.",
+      "credito": "Chullos Tours / Archivo Oficial"
+    },
+    {
+      "src": "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg",
+      "alt": "Ciudadela inca de Machu Picchu en la mañana del segundo día",
+      "caption": "Ingreso en el primer turno para disfrutar de la ciudadela con menor afluencia.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/tour-machu-picchu-2-dias/03.jpg",
+      "alt": "Pueblo de Aguas Calientes (Machu Picchu Pueblo) y río Aguas Calientes",
+      "caption": "Pueblo base con hoteles, restaurantes y mercado artesanal.",
+      "credito": "Chullos Tours"
+    },
+    {
+      "src": "/media/tours/tour-machu-picchu-2-dias/02.jpg",
+      "alt": "Abra Málaga y descenso paisajístico en transporte turístico hacia Santa Teresa",
+      "caption": "Paso de montaña a 4,300 msnm con descenso hacia los valles tropicales de ceja de selva.",
+      "credito": "Chullos Tours"
+    }
+  ],
   "itinerario": [
     {
       "dia": 1,
-      "titulo": "Cusco – Hidroeléctrica – Caminata – Aguas Calientes",
+      "titulo": "Machu Picchu By Car — Día 1 (By Car 1): Cusco – Hidroeléctrica – Caminata – Aguas Calientes",
       "descripcion": "Viaje por la ruta de Hidroeléctrica y caminata de 3 horas hasta Aguas Calientes.",
       "actividades": [
         "06:00 AM | Recojo del hotel en Cusco.",
@@ -61,7 +86,7 @@
     },
     {
       "dia": 2,
-      "titulo": "Aguas Calientes – Machu Picchu – Hidroeléctrica – Cusco",
+      "titulo": "Machu Picchu By Car — Día 2 (By Car 2): Aguas Calientes – Machu Picchu – Hidroeléctrica – Cusco",
       "descripcion": "Visita guiada al amanecer en Machu Picchu y retorno a Cusco.",
       "actividades": [
         "05:00 AM | Desayuno en el hotel.",
@@ -145,6 +170,22 @@
     {
       "pregunta": "¿Pueden no hacer la caminata de Hidroeléctrica a Aguas Calientes?",
       "respuesta": "Hay opción de tomar el tren desde Hidroeléctrica hasta Aguas Calientes (costo adicional no incluido) para quienes no deseen caminar."
+    },
+    {
+      "pregunta": "¿Qué incluye exactamente el tour Machu Picchu By Car 2 Días / 1 Noche (Vía Hidroeléctrica)?",
+      "respuesta": "El precio desde USD $170 por persona contempla: Transporte turístico Cusco – Hidroeléctrica – Cusco.; 1 Almuerzo en Hidroeléctrica (Día 1 / By Car 1).; 1 Cena en Aguas Calientes (Día 1).. Revisa la sección “Incluye” de esta página para el detalle completo."
+    },
+    {
+      "pregunta": "¿Con cuánta anticipación debo reservar?",
+      "respuesta": "Recomendamos reservar con al menos 7 a 15 días de anticipación para full days, y 30 a 60 días para paquetes con Machu Picchu o Camino Inca por la disponibilidad de cupos y trenes."
+    },
+    {
+      "pregunta": "¿El tour es apto para niños o adultos mayores?",
+      "respuesta": "Depende de la exigencia física (Moderada). Los full days culturales son más flexibles; trekkings de altura requieren buena condición. Contáctanos si viajas con niños o adultos mayores para ajustar el ritmo."
+    },
+    {
+      "pregunta": "¿Qué debo llevar el día del tour?",
+      "respuesta": "Documento de identidad o pasaporte, ropa en capas, protector solar, gorra, agua, snacks ligeros y dinero en efectivo para gastos personales. En trekkings añade calzado de agarre y chaqueta impermeable."
     }
   ],
   "seo": {
@@ -159,7 +200,7 @@
       "og_description": "Visita Machu Picchu en 2 días vía Hidroeléctrica y caminata por la vía del tren. La ruta más aventurera y económica.",
       "og_type": "product",
       "og_url": "https://chullostours.com/tours/machu-picchu-by-car-2-dias/",
-      "og_image": "/tours/machu-picchu-by-car-2-dias/01.jpg",
+      "og_image": "/media/tours/machu-picchu-by-car-2-dias/01.jpg",
       "og_site_name": "Chullos Tours Cusco",
       "og_locale": "es_PE"
     },
@@ -167,7 +208,7 @@
       "card": "summary_large_image",
       "title": "Machu Picchu By Car 2 Días | Chullos Tours",
       "description": "Machu Picchu vía Hidroeléctrica en 2 días. La ruta más aventurera desde Cusco.",
-      "image": "/tours/machu-picchu-by-car-2-dias/01.jpg"
+      "image": "/media/tours/machu-picchu-by-car-2-dias/01.jpg"
     }
   },
   "geo_ai_optimization": {
@@ -226,7 +267,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "USD",
-          "price": "180.00",
+          "price": "170",
           "availability": "https://schema.org/InStock",
           "validFrom": "2026-01-01",
           "url": "https://chullostours.com/tours/machu-picchu-by-car-2-dias/"
@@ -265,5 +306,20 @@
       "titulo": "Guía Especializado",
       "detalle": "Guía oficial de turismo bilingüe (Español / Inglés) certificado"
     }
-  ]
+  ],
+  "precio_usd": 170,
+  "precio": 170,
+  "destino_ids": [
+    "machu-picchu",
+    "cusco",
+    "cusco-ciudad"
+  ],
+  "precios_comparacion": {
+    "agencias_usd": 208,
+    "online_usd": 190,
+    "etiqueta": "Precio medio de referencia en el mercado"
+  },
+  "extras": [],
+  "visible": false,
+  "precio_pen": 638
 }

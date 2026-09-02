@@ -1,0 +1,16 @@
+Dockerfile*
+.dockerignore
+node_modules
+npm-debug.log
+README.md
+.next
+.git
+.cursor
+.omo
+scratch
+*.pdf
+debug_tripadvisor.py
+scrape_blog.py
+scrape_tripadvisor.py
+PENDING_UPDATES.txt
+.env*.local

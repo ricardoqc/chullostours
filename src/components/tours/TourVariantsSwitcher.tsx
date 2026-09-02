@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Train, Sparkles, ArrowRight, Check } from "lucide-react";
+import { Train, ArrowRight, Check } from "lucide-react";
 
 export interface TrainVariant {
   slug: string;
@@ -17,30 +17,39 @@ export interface TrainVariant {
 const TRAIN_VARIANTS: TrainVariant[] = [
   {
     slug: "machu-picchu-full-day-tren-expedition",
-    name: "Tren Expedition / Voyager",
+    name: "Tren Expedition",
     type: "expedition",
-    badge: "Más Popular",
-    price: 299,
-    description: "Vagones cómodos con asientos de cuero andino y ventanas panorámicas superiores.",
-    features: ["Asientos ejecutivos reclinables", "Música ambiental andina", "Espacio para equipaje de mano"],
+    badge: "Económico",
+    price: 300,
+    description: "Vagones cómodos con asientos reclinables y ventanas panorámicas.",
+    features: ["Tren Expedition ida y retorno", "Bus Consettur incluido", "Guía certificado en Machu Picchu"],
   },
   {
-    slug: "machupicchu-full-day-con-tren-vistadome",
-    name: "Tren Vistadome Panorámico",
-    type: "vistadome",
-    badge: "Experiencia 180°",
-    price: 344,
-    description: "Vagones rodeados de cristal de piso a techo, show de danza Saqra y snack de ingredientes locales.",
-    features: ["Ventanas panorámicas 180°", "Show cultural de danza a bordo", "Snack & bebida andina gourmet"],
+    slug: "machupicchu-full-day-tren-expedition-vistadome",
+    name: "Expedition & Vistadome",
+    type: "mixed",
+    badge: "Mixto",
+    price: 365,
+    description: "Ida en Expedition y retorno en Vistadome con ventanas panorámicas.",
+    features: ["Combinación Expedition + Vistadome", "Bus Consettur incluido", "Entrada Machu Picchu incluida"],
+  },
+  {
+    slug: "machupicchu-full-day-con-tren-observatory-expedition",
+    name: "Observatory & Expedition",
+    type: "mixed",
+    badge: "Recomendado",
+    price: 380,
+    description: "Experiencia Observatory con retorno en Expedition.",
+    features: ["Tren Observatory + Expedition", "Vistas panorámicas premium", "Entrada Machu Picchu incluida"],
   },
   {
     slug: "machupicchu-full-day-con-tren-observatory",
     name: "Tren Observatory 360°",
     type: "observatory",
-    badge: "Vagón Abierto",
-    price: 389,
-    description: "Vagón observatorio al aire libre con lounge bar, música en vivo y vistas panorámicas sin filtro.",
-    features: ["Vagón balcón al aire libre", "Música en vivo a bordo", "Lounge bar & coctelería peruana"],
+    badge: "Premium",
+    price: 460,
+    description: "Vagón observatorio con lounge bar, música en vivo y vistas sin filtro.",
+    features: ["Tren Observatory ida y retorno", "Vagón balcón al aire libre", "Entrada Machu Picchu incluida"],
   },
 ];
 
@@ -49,7 +58,6 @@ interface TourVariantsSwitcherProps {
 }
 
 export const TourVariantsSwitcher: React.FC<TourVariantsSwitcherProps> = ({ currentSlug }) => {
-  // Check if current tour is one of the Machu Picchu train tours
   const isTrainTour = TRAIN_VARIANTS.some((v) => v.slug === currentSlug);
 
   if (!isTrainTour) return null;
@@ -77,8 +85,7 @@ export const TourVariantsSwitcher: React.FC<TourVariantsSwitcherProps> = ({ curr
         </span>
       </div>
 
-      {/* Grid of Variants */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
         {TRAIN_VARIANTS.map((v) => {
           const isSelected = v.slug === currentSlug;
           const diff = v.price - currentVariant.price;

@@ -49,4 +49,6 @@ export interface CompanyInfo {
   social: SocialLinks;
   hours: BusinessHours;
   copyright: string;
+  /** Soles per 1 USD — editable for PE visitors currency toggle */
+  exchangeRatePen?: number;
 }
