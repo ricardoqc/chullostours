@@ -4,12 +4,17 @@ import React, { useState } from "react";
 import { Phone, Mail, MapPin, Send, CheckCircle2, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { companyInfo, getPrimaryWhatsappUrl } from "@/lib/company-info";
+import { trackGenerateLead, trackWhatsAppClick } from "@/lib/analytics";
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackGenerateLead({
+      formName: "contacto_general",
+      method: "web_contact_form",
+    });
     setSent(true);
   };
 
@@ -110,9 +115,16 @@ export default function ContactPage() {
               Chatea directamente con nuestras asesoras de viaje. Respuesta inmediata.
             </p>
             <a
+              id="gtm-contact-whatsapp-btn"
+              data-gtm-action="whatsapp_contact_page"
               href={mainWhatsappMsgUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackWhatsAppClick({
+                  location: "contact_page",
+                })
+              }
               className="inline-flex items-center justify-center gap-2 bg-[#ffc000] text-[#1c1c1c] font-bold text-sm px-5 py-3 rounded-full hover:bg-yellow-300 transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
@@ -137,7 +149,12 @@ export default function ContactPage() {
               </Button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="bg-[#f7f7f7] p-8 md:p-10 rounded-3xl border border-gray-100 flex flex-col gap-4">
+            <form
+              id="gtm-contact-form"
+              data-gtm-action="contact_form_submit"
+              onSubmit={handleSubmit}
+              className="bg-[#f7f7f7] p-8 md:p-10 rounded-3xl border border-gray-100 flex flex-col gap-4"
+            >
               <div>
                 <h2 className="text-xl font-bold text-[#1c1c1c] font-title">¿Tienes Preguntas?</h2>
                 <p className="text-xs text-gray-500 mt-1">
@@ -184,7 +201,14 @@ export default function ContactPage() {
                 className="bg-white border border-gray-200 rounded-2xl p-4 text-sm focus:outline-none focus:border-[#6b0014] focus:ring-1 focus:ring-[#6b0014]"
               />
 
-              <Button variant="primary" size="lg" type="submit" className="flex items-center justify-center gap-2 mt-2">
+              <Button
+                id="gtm-contact-submit-btn"
+                data-gtm-action="submit_contact_form"
+                variant="primary"
+                size="lg"
+                type="submit"
+                className="flex items-center justify-center gap-2 mt-2 cursor-pointer"
+              >
                 <Send className="w-4 h-4" />
                 <span>Enviar Consulta</span>
               </Button>

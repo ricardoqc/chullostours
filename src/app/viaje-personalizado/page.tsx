@@ -20,6 +20,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { DESTINATION_FILTERS } from "@/lib/tour-filters";
 import { getWhatsappAgents, buildAgentWhatsappUrl } from "@/lib/site-config";
+import { trackGenerateLead, trackWhatsAppClick } from "@/lib/analytics";
 
 const TRAVEL_STYLES = [
   "Cultural / Historia",
@@ -145,6 +146,13 @@ export default function CustomTripPage() {
         return;
       }
 
+      trackGenerateLead({
+        formName: "viaje_personalizado",
+        method: "custom_trip_wizard",
+        contactEmail: form.email,
+        contactPhone: form.phone,
+      });
+
       setSubmitted(true);
     } catch {
       setErrors({
@@ -213,6 +221,8 @@ export default function CustomTripPage() {
 
       <div className="max-w-6xl mx-auto px-4 -mt-8 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] gap-6 lg:gap-8 relative z-20">
         <form
+          id="gtm-custom-trip-form"
+          data-gtm-action="custom_trip_form_submit"
           onSubmit={handleSubmit}
           className="bg-white rounded-3xl border border-slate-200 shadow-xl p-5 md:p-8 flex flex-col gap-5"
         >
@@ -450,11 +460,13 @@ export default function CustomTripPage() {
           )}
 
           <Button
+            id="gtm-custom-trip-submit-btn"
+            data-gtm-action="submit_custom_trip_button"
             type="submit"
             variant="primary"
             size="lg"
             disabled={sending}
-            className="w-full flex items-center justify-center gap-2 bg-[#6b0014] hover:bg-[#850019] text-white font-title font-bold py-4 rounded-xl"
+            className="w-full flex items-center justify-center gap-2 bg-[#6b0014] hover:bg-[#850019] text-white font-title font-bold py-4 rounded-xl cursor-pointer"
           >
             <Send className="w-4 h-4" />
             {sending ? "Enviando..." : "Solicitar itinerario a medida"}

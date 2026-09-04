@@ -10,7 +10,8 @@
     "validate:data": "node scripts/validate-data.mjs",
     "data:precio-pen": "node scripts/apply-precio-pen.mjs",
     "data:hotel-imagenes": "node scripts/enrich-hotel-imagenes.mjs",
-    "media:scaffold": "node scripts/scaffold-media-folders.mjs"
+    "media:scaffold": "node scripts/scaffold-media-folders.mjs",
+    "export:seo-excel": "node scripts/generate-meta-excel.mjs"
   },
   "dependencies": {
     "embla-carousel": "^8.6.0",
@@ -35,6 +36,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.12",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "xlsx": "^0.18.5"
   }
 }

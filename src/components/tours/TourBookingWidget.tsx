@@ -21,6 +21,7 @@ import {
 import { getPrimaryWhatsappUrl } from "@/lib/company-info";
 import { useTourReservation } from "./TourReservationProvider";
 import { CustomDatePicker } from "@/components/ui/CustomDatePicker";
+import { trackBeginCheckout, trackWhatsAppClick } from "@/lib/analytics";
 import { Tour } from "@/types/tour";
 import {
   calculateTourTotal,
@@ -271,18 +272,44 @@ export const TourBookingWidget: React.FC<TourBookingWidgetProps> = ({ tour }) =>
 
         <button
           type="button"
-          onClick={() => openReservation(reservationSelection)}
-          className="w-full bg-[#6b0014] hover:bg-red-900 text-white font-black py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2.5 text-sm"
+          id="gtm-tour-booking-reserve-btn"
+          data-gtm-action="begin_checkout"
+          data-gtm-tour-slug={tour.slug}
+          data-gtm-tour-name={tour.titulo}
+          data-gtm-price={breakdown.total}
+          onClick={() => {
+            trackBeginCheckout({
+              id: tour.slug,
+              name: tour.titulo,
+              price: breakdown.total,
+              currency,
+              travelers: ESTIMATE_ADULTS,
+              date: travelDate,
+            });
+            openReservation(reservationSelection);
+          }}
+          className="w-full bg-[#6b0014] hover:bg-red-900 text-white font-black py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2.5 text-sm cursor-pointer active:scale-95 transition-all shadow-md"
         >
           <FaClipboardCheck className="w-4 h-4" />
           Reservar ahora
         </button>
 
         <a
+          id="gtm-tour-booking-whatsapp-btn"
+          data-gtm-action="whatsapp_tour_widget"
+          data-gtm-tour-slug={tour.slug}
+          data-gtm-tour-name={tour.titulo}
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full bg-[#25D366] hover:bg-[#20ba59] text-white font-black py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2.5 text-sm"
+          onClick={() => {
+            trackWhatsAppClick({
+              location: "tour_booking_widget",
+              tourSlug: tour.slug,
+              tourName: tour.titulo,
+            });
+          }}
+          className="w-full bg-[#25D366] hover:bg-[#20ba59] text-white font-black py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2.5 text-sm cursor-pointer active:scale-95 transition-all shadow-md"
         >
           <FaWhatsapp className="w-5 h-5" />
           Hablar por WhatsApp

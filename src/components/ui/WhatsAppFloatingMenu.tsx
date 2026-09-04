@@ -6,6 +6,7 @@ import { MessageSquare, X, Send, User, ChevronRight } from "lucide-react";
 import { SocialWhatsapp } from "@/components/ui/icons";
 import { getWhatsappAgents, buildAgentWhatsappUrl } from "@/lib/site-config";
 import type { WhatsAppAgent } from "@/types/site-config";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 interface WhatsAppFloatingMenuProps {
   customMessage?: string;
@@ -89,10 +90,21 @@ export const WhatsAppFloatingMenu: React.FC<WhatsAppFloatingMenuProps> = ({ cust
               return (
                 <a
                   key={agent.id}
+                  id={`gtm-whatsapp-agent-${agent.id}`}
+                  data-gtm-action="whatsapp_agent_click"
+                  data-gtm-agent={agent.name}
+                  data-gtm-phone={agent.number}
                   href={waUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    trackWhatsAppClick({
+                      location: "floating_menu",
+                      agentName: agent.name,
+                      phoneNumber: agent.number,
+                    });
+                    setIsOpen(false);
+                  }}
                   className="group flex items-center justify-between p-3 rounded-xl border border-slate-100 hover:border-[#25D366] hover:bg-[#25D366]/5 transition-all duration-200 shadow-sm hover:shadow-md"
                 >
                   <div className="flex items-center gap-3">
@@ -135,6 +147,8 @@ export const WhatsAppFloatingMenu: React.FC<WhatsAppFloatingMenuProps> = ({ cust
 
         <button
           type="button"
+          id="gtm-whatsapp-floating-trigger"
+          data-gtm-action="whatsapp_floating_toggle"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Abrir opciones de WhatsApp"
           className={`w-13 h-13 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 cursor-pointer active:scale-95 ${

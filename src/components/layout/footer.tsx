@@ -20,6 +20,7 @@ import { companyInfo } from "@/lib/company-info";
 import { getCertifications, getPaymentMethods } from "@/lib/site-config";
 import { WhatsAppFloatingMenu } from "@/components/ui/WhatsAppFloatingMenu";
 import { TourImage } from "@/components/ui/TourImage";
+import { trackNewsletterSubscribe } from "@/lib/analytics";
 
 const PAYMENT_ICON_MAP: Record<string, React.FC<{ className?: string; size?: number }>> = {
   FaCcVisa,
@@ -40,6 +41,7 @@ export const Footer: React.FC = () => {
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
+      trackNewsletterSubscribe({ location: "footer_newsletter" });
       setSubscribed(true);
       setEmail("");
     }
@@ -190,8 +192,14 @@ export const Footer: React.FC = () => {
                 Recibe promociones exclusivas e itinerarios recomendados en tu correo.
               </p>
 
-              <form onSubmit={handleSubscribe} className="flex flex-col gap-2.5">
+              <form
+                id="gtm-footer-newsletter-form"
+                data-gtm-action="newsletter_form_submit"
+                onSubmit={handleSubscribe}
+                className="flex flex-col gap-2.5"
+              >
                 <input
+                  id="gtm-footer-newsletter-input"
                   type="email"
                   required
                   value={email}
@@ -200,6 +208,8 @@ export const Footer: React.FC = () => {
                   className="w-full px-3.5 py-2.5 text-xs md:text-sm border border-slate-700 rounded-lg focus:outline-none focus:border-[#ffc000] text-white placeholder:text-slate-500 bg-black/40 backdrop-blur-sm"
                 />
                 <button
+                  id="gtm-footer-newsletter-submit-btn"
+                  data-gtm-action="newsletter_submit_button"
                   type="submit"
                   className="bg-[#6b0014] hover:bg-[#850019] text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-md font-title"
                 >

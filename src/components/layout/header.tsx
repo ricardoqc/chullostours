@@ -16,6 +16,7 @@ import { companyInfo } from "@/lib/company-info";
 import { useTranslation } from "@/i18n/I18nContext";
 import { PeruCurrencySelector } from "@/components/layout/PeruCurrencySelector";
 import { TourImage } from "@/components/ui/TourImage";
+import { trackWhatsAppClick, trackSearch, trackContactClick } from "@/lib/analytics";
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -68,7 +69,16 @@ export const Header: React.FC = () => {
           <div className="flex items-center gap-4 md:gap-8 text-white font-medium overflow-x-auto no-scrollbar py-0.5">
             {/* Email */}
             <a
+              id="gtm-header-email"
+              data-gtm-action="email_click"
               href={`mailto:${companyInfo.emails.info}`}
+              onClick={() =>
+                trackContactClick({
+                  type: "email",
+                  value: companyInfo.emails.info,
+                  location: "header_topbar",
+                })
+              }
               className="hidden sm:flex items-center gap-2 hover:text-[#ffc000] transition-colors shrink-0"
             >
               <Mail className="w-4 h-4 text-white shrink-0 stroke-[2]" />
@@ -77,9 +87,17 @@ export const Header: React.FC = () => {
 
             {/* WhatsApp 1 */}
             <a
+              id="gtm-header-whatsapp-primary"
+              data-gtm-action="whatsapp_header"
               href={companyInfo.phones.primary.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackWhatsAppClick({
+                  location: "header_topbar",
+                  phoneNumber: companyInfo.phones.primary.number,
+                })
+              }
               className="flex items-center gap-2 hover:text-[#ffc000] transition-colors shrink-0 group"
             >
               <div className="w-6 h-6 rounded-md bg-white flex items-center justify-center text-[#6b0014] shrink-0 shadow-sm group-hover:scale-105 transition-transform">
@@ -90,9 +108,17 @@ export const Header: React.FC = () => {
 
             {/* WhatsApp 2 - Desktop/Tablet only */}
             <a
+              id="gtm-header-whatsapp-secondary"
+              data-gtm-action="whatsapp_header"
               href={companyInfo.phones.secondary.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackWhatsAppClick({
+                  location: "header_topbar",
+                  phoneNumber: companyInfo.phones.secondary.number,
+                })
+              }
               className="hidden lg:flex items-center gap-2 hover:text-[#ffc000] transition-colors shrink-0 group"
             >
               <div className="w-6 h-6 rounded-md bg-white flex items-center justify-center text-[#6b0014] shrink-0 shadow-sm group-hover:scale-105 transition-transform">
@@ -184,9 +210,17 @@ export const Header: React.FC = () => {
           <div className="flex items-center gap-2">
             {/* Direct WhatsApp Desktop Button */}
             <a
+              id="gtm-header-whatsapp-expert-btn"
+              data-gtm-action="whatsapp_header_button"
               href={companyInfo.phones.primary.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                trackWhatsAppClick({
+                  location: "header_navbar_button",
+                  phoneNumber: companyInfo.phones.primary.number,
+                })
+              }
               className="hidden md:flex items-center gap-1.5 bg-[#25D366] text-white font-bold text-xs px-3.5 py-2 rounded-xl hover:bg-[#20bd5a] transition-all shadow-sm active:scale-95"
             >
               <SocialWhatsapp className="w-4 h-4 text-white" />
@@ -195,6 +229,8 @@ export const Header: React.FC = () => {
 
             {/* Search Button */}
             <button
+              id="gtm-header-search-toggle"
+              data-gtm-action="search_drawer_toggle"
               onClick={() => setSearchOpen(!searchOpen)}
               aria-label="Buscar tours"
               className="w-10 h-10 md:w-11 md:h-11 rounded-full bg-[#6b0014] text-white flex items-center justify-center hover:bg-[#850019] active:scale-95 transition-all shadow-md cursor-pointer shrink-0"
@@ -204,6 +240,7 @@ export const Header: React.FC = () => {
 
             {/* Mobile Menu Toggle (lg:hidden) */}
             <button
+              id="gtm-header-mobile-menu-toggle"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Menú principal"
               className="lg:hidden w-10 h-10 md:w-11 md:h-11 rounded-full bg-[#6b0014] text-white flex items-center justify-center hover:bg-[#850019] active:scale-95 transition-all shadow-md cursor-pointer shrink-0"
@@ -221,10 +258,13 @@ export const Header: React.FC = () => {
         {searchOpen && (
           <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 p-5 mt-2 max-w-2xl mx-auto flex flex-col gap-3 z-40 relative animate-slideDown">
             <form
+              id="gtm-header-search-form"
               onSubmit={(e) => {
                 e.preventDefault();
-                if (searchQuery.trim()) {
-                  window.location.href = `/resultados-de-busqueda?q=${encodeURIComponent(searchQuery.trim())}`;
+                const term = searchQuery.trim();
+                if (term) {
+                  trackSearch({ searchTerm: term });
+                  window.location.href = `/resultados-de-busqueda?q=${encodeURIComponent(term)}`;
                   setSearchOpen(false);
                 } else {
                   window.location.href = "/tours";
@@ -235,6 +275,7 @@ export const Header: React.FC = () => {
             >
               <Search className="w-5 h-5 text-[#6b0014] shrink-0" />
               <input
+                id="gtm-header-search-input"
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -243,6 +284,7 @@ export const Header: React.FC = () => {
                 autoFocus
               />
               <button
+                id="gtm-header-search-submit"
                 type="submit"
                 className="bg-[#6b0014] hover:bg-[#850019] text-white text-xs font-extrabold px-5 py-2.5 rounded-xl transition-all shrink-0 cursor-pointer shadow-md active:scale-95 font-title"
               >

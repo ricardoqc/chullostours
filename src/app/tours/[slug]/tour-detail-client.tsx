@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { useSearchParams } from "next/navigation";
 import { Tour } from "@/types/tour";
+import { trackViewItem } from "@/lib/analytics";
 import {
   getGalleryItems,
   parseDurationDays,
@@ -62,7 +63,18 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({
       typeof window !== "undefined" &&
       sessionStorage.getItem(`chullos_reserved_${tour.slug}`) === "1";
     setShowReservedBanner(fromQuery || fromSession);
-  }, [searchParams, tour.slug]);
+
+    // Track GA4/GTM view_item
+    if (tour && tour.slug) {
+      trackViewItem({
+        id: tour.slug,
+        name: tour.titulo,
+        price: tour.precio_usd || tour.precio || 0,
+        currency: "USD",
+        category: tour.atributos?.tipo_tour || "Tour",
+      });
+    }
+  }, [searchParams, tour.slug, tour]);
 
   const galleryItems = galleryItemsProp ?? getGalleryItems(tour);
   const durationDays = parseDurationDays(tour.atributos?.duracion);

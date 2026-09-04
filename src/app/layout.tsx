@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Manrope, Jost } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
@@ -91,11 +92,57 @@ export default function RootLayout({
       className={`${manrope.variable} ${jost.variable} h-full antialiased`}
     >
       <head>
+        {/* Google Tag Manager (GTM-TD75GXZM) */}
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TD75GXZM');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
+
+        {/* Google tag (gtag.js) GA4 (G-3F1NEC8RPK) */}
+        <Script
+          id="google-analytics-tag"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-3F1NEC8RPK"
+        />
+        <Script
+          id="google-analytics-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-3F1NEC8RPK', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+        {/* End Google tag (gtag.js) */}
+
         <link rel="icon" type="image/png" href="/cropped-chullos-icono.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/cropped-chullos-icono.png" />
       </head>
       <body className="min-h-full flex flex-col font-sans bg-body-bg text-body">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TD75GXZM"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <I18nProvider>
           <MarketProvider>
             <Header />

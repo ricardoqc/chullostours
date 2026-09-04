@@ -31,6 +31,7 @@ import {
   getTourBasePriceUsd,
 } from "@/lib/pricing";
 import { hotelOpcionIncludesLodging } from "@/lib/hotel-options";
+import { trackBookingSubmitted } from "@/lib/analytics";
 
 const STEPS = ["Tu viaje", "Tus datos", "Confirmar"];
 
@@ -246,6 +247,18 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
       if (typeof window !== "undefined" && slug) {
         sessionStorage.setItem(`chullos_reserved_${slug}`, "1");
       }
+
+      // Track conversion in GA4 / GTM
+      trackBookingSubmitted({
+        tourSlug: slug,
+        tourTitle: title,
+        totalPrice: breakdown.total,
+        currency: formData.currency || "USD",
+        travelersCount: totalTravelers,
+        travelDate: formData.travelDate,
+        customerEmail: formData.email,
+        customerPhone: formData.phone,
+      });
 
       onClose();
       router.push(

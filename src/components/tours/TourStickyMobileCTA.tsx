@@ -8,6 +8,7 @@ import { Tour } from "@/types/tour";
 import { formatMoney } from "@/lib/pricing";
 import { resolveTourDisplayPrice } from "@/lib/market";
 import { useDisplayCurrency } from "@/components/layout/MarketProvider";
+import { trackBeginCheckout, trackWhatsAppClick } from "@/lib/analytics";
 
 interface TourStickyMobileCTAProps {
   tour: Tour;
@@ -36,18 +37,41 @@ export const TourStickyMobileCTA: React.FC<TourStickyMobileCTAProps> = ({ tour }
       <div className="flex items-center gap-2 flex-1 justify-end">
         <button
           type="button"
-          onClick={() => openReservation()}
-          className="flex-1 max-w-[200px] bg-[#6b0014] text-white font-black text-xs py-3 px-3.5 rounded-xl flex items-center justify-center gap-1.5 min-h-[44px]"
+          id="gtm-mobile-cta-reserve-btn"
+          data-gtm-action="begin_checkout"
+          data-gtm-tour-slug={tour.slug}
+          data-gtm-tour-name={tour.titulo}
+          onClick={() => {
+            trackBeginCheckout({
+              id: tour.slug,
+              name: tour.titulo,
+              price: amount,
+              currency: resolvedCurrency,
+            });
+            openReservation();
+          }}
+          className="flex-1 max-w-[200px] bg-[#6b0014] text-white font-black text-xs py-3 px-3.5 rounded-xl flex items-center justify-center gap-1.5 min-h-[44px] cursor-pointer active:scale-95 transition-all shadow-md"
         >
           <FaClipboardCheck className="w-3.5 h-3.5" />
           Reservar
         </button>
         <a
+          id="gtm-mobile-cta-whatsapp-btn"
+          data-gtm-action="whatsapp_mobile_cta"
+          data-gtm-tour-slug={tour.slug}
+          data-gtm-tour-name={tour.titulo}
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => {
+            trackWhatsAppClick({
+              location: "mobile_sticky_cta",
+              tourSlug: tour.slug,
+              tourName: tour.titulo,
+            });
+          }}
           aria-label="WhatsApp"
-          className="w-11 h-11 bg-[#25D366] text-white rounded-xl flex items-center justify-center min-h-[44px]"
+          className="w-11 h-11 bg-[#25D366] text-white rounded-xl flex items-center justify-center min-h-[44px] cursor-pointer active:scale-95 transition-all shadow-md"
         >
           <FaWhatsapp className="w-5 h-5" />
         </a>
