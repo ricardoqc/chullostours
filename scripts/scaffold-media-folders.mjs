@@ -143,6 +143,11 @@ for (const placeId of structure.destinos) {
   track(`public/media/destinos/${placeId}/`);
 }
 
+writeKeep(path.join(PUBLIC, "media", "home"), "Video e imagen del hero de la HOME → /media/home/");
+track("public/media/home/");
+writeKeep(path.join(PUBLIC, "media", "site"), "Fotos generales de la web → /media/site/");
+track("public/media/site/");
+
 // --- blog/ ---
 writeKeep(path.join(PUBLIC, "media", "blog"), "Una subcarpeta por slug de artículo");
 track("public/media/blog/");
@@ -154,6 +159,8 @@ writeInventory(PUBLIC, [
   "",
   "public/",
   "├── img/                    Marca, marketing, legal, placeholders",
+  "├── media/home/             Video e imagen del hero de la HOME",
+  "├── media/site/             Fotos generales de la web",
   "├── media/tours/{slug}/     Fotos de cada tour (01.jpg, 02.jpg …)",
   "├── hoteles/{slug}/         Fotos de hoteles por paquete",
   "├── media/destinos/{id}/    Imágenes de mapa y landings",

@@ -47,6 +47,11 @@ export function readAllToursFromJson(): Tour[] {
   return tours;
 }
 
+/** Invalida el caché en memoria tras una edición del CMS. */
+export function clearToursJsonCache() {
+  cachedTours = null;
+}
+
 export function readTourBySlugFromJson(rawSlug: string): Tour | null {
   if (!rawSlug) return null;
 

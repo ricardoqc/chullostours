@@ -31,6 +31,18 @@ export function destinoImagePath(placeId: string, file = "hero.jpg"): string {
   return `/media/destinos/${placeId}/${file}`;
 }
 
+export function blogImagePath(slug: string, file = "hero.jpg"): string {
+  return `/media/blog/${slug}/${file}`;
+}
+
+export function homeMediaPath(file: string): string {
+  return `/media/home/${file}`;
+}
+
+export function siteMediaPath(file: string): string {
+  return `/media/site/${file}`;
+}
+
 export function brandImagePath(file: string): string {
   return `/img/brand/${file}`;
 }

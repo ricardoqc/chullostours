@@ -40,6 +40,22 @@
       "legal-brands": "Certificaciones MINCETUR, TripAdvisor, ESSNA, etc.",
       "placeholders": "Imagen genérica cuando falte asset"
     },
+    "home": {
+      "root": "media/home",
+      "naming": {
+        "hero.mp4": "Video de fondo del hero (HOME)",
+        "hero-poster.jpg": "Poster / fallback del video (LCP)"
+      },
+      "formats": ["mp4", "webm", "jpg", "jpeg", "webp", "avif"],
+      "urlPrefix": "/media/home/"
+    },
+    "site": {
+      "root": "media/site",
+      "naming": {
+        "banner.jpg": "Fotos generales de la web (no tours)"
+      },
+      "urlPrefix": "/media/site/"
+    },
     "blog": {
       "root": "media/blog/{slug}",
       "naming": {

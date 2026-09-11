@@ -8,7 +8,6 @@ import {
   Search,
   CheckCircle2,
   AlertCircle,
-  Lock,
   RefreshCw,
   ExternalLink,
   SlidersHorizontal,
@@ -16,8 +15,11 @@ import {
   DollarSign,
   Clock,
   ShieldAlert,
+  Pencil,
 } from "lucide-react";
 import { TourImage } from "@/components/ui/TourImage";
+import { AdminLoginForm } from "@/components/admin/AdminLoginForm";
+import { AdminShell } from "@/components/admin/AdminShell";
 
 interface AdminTourItem {
   file: string;
@@ -31,12 +33,10 @@ interface AdminTourItem {
 }
 
 export default function AdminToursPage() {
-  const [key, setKey] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [tours, setTours] = useState<AdminTourItem[]>([]);
   const [loading, setLoading] = useState(false);
   const [actionLoading, setActionLoading] = useState<string | null>(null);
-  const [errorMsg, setErrorMsg] = useState("");
   const [toastMsg, setToastMsg] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
   // Filters
@@ -44,11 +44,7 @@ export default function AdminToursPage() {
   const [statusFilter, setStatusFilter] = useState<"all" | "published" | "hidden">("all");
 
   useEffect(() => {
-    const savedKey = sessionStorage.getItem("chullos_admin_key");
-    if (savedKey) {
-      setKey(savedKey);
-      fetchTours(savedKey);
-    }
+    fetchTours();
   }, []);
 
   const showToast = (text: string, type: "success" | "error" = "success") => {
@@ -58,35 +54,23 @@ export default function AdminToursPage() {
     }, 4000);
   };
 
-  const fetchTours = async (adminKey: string) => {
+  const fetchTours = async () => {
     setLoading(true);
-    setErrorMsg("");
     try {
-      const res = await fetch(`/api/admin/tours?key=${encodeURIComponent(adminKey)}`, {
-        headers: { "x-admin-key": adminKey },
-      });
+      const res = await fetch("/api/admin/tours");
       const data = await res.json();
 
       if (!res.ok) {
         setIsAuthenticated(false);
-        setErrorMsg(data.error || "Clave administrativa incorrecta.");
-        sessionStorage.removeItem("chullos_admin_key");
       } else {
         setIsAuthenticated(true);
-        sessionStorage.setItem("chullos_admin_key", adminKey);
         setTours(data.tours || []);
       }
     } catch {
-      setErrorMsg("Error al conectar con el servidor.");
+      setIsAuthenticated(false);
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!key.trim()) return;
-    fetchTours(key.trim());
   };
 
   const handleToggleVisibility = async (slug: string, currentVisible: boolean) => {
@@ -98,9 +82,8 @@ export default function AdminToursPage() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-admin-key": key,
         },
-        body: JSON.stringify({ slug, visible: newVisible, key }),
+        body: JSON.stringify({ slug, visible: newVisible }),
       });
 
       const data = await res.json();
@@ -144,63 +127,20 @@ export default function AdminToursPage() {
   const hiddenCount = tours.filter((t) => !t.visible).length;
 
   if (!isAuthenticated) {
-    return (
-      <div className="min-h-[80vh] flex items-center justify-center p-4 bg-slate-50">
-        <div className="bg-white max-w-md w-full rounded-3xl p-8 shadow-xl border border-slate-200 flex flex-col gap-6">
-          <div className="flex flex-col items-center text-center gap-2">
-            <div className="w-16 h-16 rounded-2xl bg-[#6b0014]/10 text-[#6b0014] flex items-center justify-center shadow-inner">
-              <Lock className="w-8 h-8" />
-            </div>
-            <h1 className="text-2xl font-black text-slate-900 font-title">
-              Panel Mini-CMS de Tours
-            </h1>
-            <p className="text-xs text-slate-500 max-w-xs">
-              Ingresa la clave de administración para gestionar la visibilidad y publicación de tours.
-            </p>
-          </div>
-
-          <form onSubmit={handleLogin} className="flex flex-col gap-4">
-            <div>
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                Clave Administrativa
-              </label>
-              <input
-                type="password"
-                placeholder="Clave (por defecto: chullos2026)"
-                value={key}
-                onChange={(e) => setKey(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#6b0014] text-sm"
-                autoFocus
-              />
-            </div>
-
-            {errorMsg && (
-              <div className="flex items-center gap-2 p-3 bg-red-50 text-red-700 text-xs rounded-xl border border-red-200">
-                <AlertCircle className="w-4 h-4 shrink-0" />
-                <span>{errorMsg}</span>
-              </div>
-            )}
-
-            <button
-              type="submit"
-              disabled={loading}
-              className="w-full py-3 bg-[#6b0014] hover:bg-[#850019] text-white font-bold rounded-xl text-sm transition-colors flex items-center justify-center gap-2 shadow-md shadow-red-900/10"
-            >
-              {loading ? <RefreshCw className="w-4 h-4 animate-spin" /> : "Acceder al Panel"}
-            </button>
-          </form>
-
-          <p className="text-[11px] text-center text-slate-400">
-            Chullos Tours CMS • Control de Visibilidad en Producción
-          </p>
+    if (loading) {
+      return (
+        <div className="min-h-[50vh] grid place-items-center text-slate-500">
+          <RefreshCw className="w-5 h-5 animate-spin" aria-hidden="true" />
+          <span className="sr-only">Comprobando sesión</span>
         </div>
-      </div>
-    );
+      );
+    }
+    return <AdminLoginForm onSuccess={fetchTours} />;
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto flex flex-col gap-8">
+    <AdminShell wide>
+      <div className="flex flex-col gap-8">
         {/* Toast Notification */}
         {toastMsg && (
           <div
@@ -227,16 +167,16 @@ export default function AdminToursPage() {
               Gestión de Catálogo
             </div>
             <h1 className="text-2xl sm:text-3xl font-black text-slate-900 font-title">
-              Control de Publicación de Tours
+              CMS de Tours
             </h1>
             <p className="text-xs sm:text-sm text-slate-500 mt-1">
-              Activa o desactiva tours al instante. Los tours desactivados se ocultan de inmediato del catálogo, la portada, los destinos y el sitemap.
+              Edita contenido, precios, itinerario e imágenes. También puedes publicar u ocultar tours del catálogo y sitemap.
             </p>
           </div>
 
           <div className="flex items-center gap-3 self-stretch sm:self-auto">
             <button
-              onClick={() => fetchTours(key)}
+              onClick={() => fetchTours()}
               disabled={loading}
               className="p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-bold transition-colors flex items-center gap-1.5"
               title="Refrescar catálogo"
@@ -246,8 +186,8 @@ export default function AdminToursPage() {
             </button>
 
             <button
-              onClick={() => {
-                sessionStorage.removeItem("chullos_admin_key");
+              onClick={async () => {
+                await fetch("/api/admin/logout", { method: "POST" });
                 setIsAuthenticated(false);
               }}
               className="px-4 py-2.5 bg-slate-100 hover:bg-red-50 hover:text-red-700 text-slate-600 rounded-xl text-xs font-bold transition-colors"
@@ -421,6 +361,13 @@ export default function AdminToursPage() {
 
                     {/* Right: Actions & Switch */}
                     <div className="flex items-center gap-3 self-end sm:self-center shrink-0">
+                      <Link
+                        href={`/admin/tours/${tour.slug}/`}
+                        className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white hover:bg-slate-800"
+                      >
+                        <Pencil className="w-3.5 h-3.5" aria-hidden="true" />
+                        Editar
+                      </Link>
                       {tour.visible && (
                         <Link
                           href={`/tours/${tour.slug}/`}
@@ -464,6 +411,6 @@ export default function AdminToursPage() {
           )}
         </div>
       </div>
-    </div>
+    </AdminShell>
   );
 }

@@ -2,6 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: process.env.OUTPUT_STANDALONE === "true" ? "standalone" : undefined,
+  experimental: {
+    proxyClientMaxBodySize: "80mb",
+    serverActions: {
+      bodySizeLimit: "80mb",
+    },
+  },
   images: {
     unoptimized: false,
     remotePatterns: [

@@ -14,8 +14,10 @@ import { BlogSection } from "@/components/blog/BlogSection";
 import { StatsCounterSection } from "@/components/home/StatsCounterSection";
 import { WhyChooseUsSection } from "@/components/home/WhyChooseUsSection";
 import { TravelerProfilesSection } from "@/components/home/TravelerProfilesSection";
+import { HomeHeroMedia } from "@/components/home/HomeHeroMedia";
 import { Reveal } from "@/components/ui/Reveal";
 import { TourImage } from "@/components/ui/TourImage";
+import { getHomeHero } from "@/lib/home-hero";
 
 export const metadata: Metadata = {
   title: "Chullos Tours | Tours a Machu Picchu, Camino Inca y Cusco 2026",
@@ -106,8 +108,8 @@ export default function Home() {
     },
   ];
 
-  // Hero Background image
-  const heroBgImage =
+  const homeHero = getHomeHero();
+  const heroFallbackImage =
     getTour("camino-inca-2-dias")?.galeria?.[1]?.src ||
     getTour("camino-inca-2-dias")?.galeria?.[0]?.src ||
     "/media/tours/camino-inca-2-dias/01.jpg";
@@ -126,17 +128,7 @@ export default function Home() {
         {/* 1. Hero Section with Interactive Tour Search Engine */}
         <section className="max-w-7xl mx-auto px-4 pt-3 md:pt-6 w-full relative z-30">
           <div className="relative rounded-2xl md:rounded-[32px] min-h-[520px] md:min-h-[580px] lg:min-h-[620px] flex flex-col justify-between shadow-2xl bg-slate-900 border border-slate-800 p-6 md:p-12 lg:p-14">
-            {/* Background Image Container with isolated overflow-hidden */}
-            <div className="absolute inset-0 rounded-2xl md:rounded-[32px] overflow-hidden pointer-events-none">
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-1000"
-                style={{
-                  backgroundImage: `url('${heroBgImage}')`,
-                }}
-              />
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40" />
-            </div>
+            <HomeHeroMedia hero={homeHero} fallbackSrc={heroFallbackImage} />
 
             {/* Hero Left Main Content */}
             <div className="relative max-w-2xl flex flex-col items-start gap-4 md:gap-5 text-left z-10 my-auto w-full">

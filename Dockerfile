@@ -44,6 +44,10 @@ RUN chown nextjs:nodejs .next
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
+USER root
+RUN mkdir -p /app/public/media/home /app/public/media/site /app/public/media/tours /app/public/media/destinos /app/public/media/blog \
+  && chown -R nextjs:nodejs /app/public/media /app/data
+
 USER nextjs
 
 EXPOSE 3000
