@@ -1,72 +1,107 @@
 import React from "react";
-import { Users, Star, Compass, Award, HeartHandshake } from "lucide-react";
+import { Users, Star, ShieldCheck, Award, Headphones, Compass } from "lucide-react";
 import { getMetrics } from "@/lib/site-config";
 import { Reveal } from "@/components/ui/Reveal";
+
+type TrustItem = {
+  id: string;
+  value: string;
+  label: string;
+  icon: typeof Star;
+  tone: "brand" | "gold" | "light";
+};
 
 export const StatsCounterSection: React.FC = () => {
   const metrics = getMetrics();
 
-  const stats = [
-    {
-      id: "travelers",
-      value: metrics.travelersServed,
-      label: "Viajeros Felices",
-      sublabel: "Experiencias memorables en Perú",
-      icon: Users,
-    },
+  const items: TrustItem[] = [
     {
       id: "reviews",
       value: `${metrics.tripadvisorRating.toFixed(1)} ★`,
-      label: "Excelencia TripAdvisor",
-      sublabel: `${metrics.tripadvisorReviewsCount} opiniones verificadas`,
+      label: "TripAdvisor",
       icon: Star,
+      tone: "brand",
+    },
+    {
+      id: "tickets",
+      value: "100%",
+      label: "Ingresos asegurados",
+      icon: ShieldCheck,
+      tone: "light",
     },
     {
       id: "experience",
-      value: `${metrics.yearsExperience}+ Años`,
-      label: "Experiencia Local",
-      sublabel: "Operadores nativos en Cusco",
+      value: `${metrics.yearsExperience}+ años`,
+      label: "Experiencia local",
       icon: Award,
+      tone: "gold",
+    },
+    {
+      id: "guides",
+      value: "Guías",
+      label: "Cusqueños oficiales",
+      icon: Users,
+      tone: "light",
     },
     {
       id: "tours",
       value: `${metrics.activeToursCount}+`,
-      label: "Rutas & Aventuras",
-      sublabel: "Machu Picchu, treks y valles",
+      label: "Tours activos",
       icon: Compass,
+      tone: "brand",
+    },
+    {
+      id: "support",
+      value: "24/7",
+      label: "Soporte real",
+      icon: Headphones,
+      tone: "light",
     },
   ];
 
-  return (
-    <section className="max-w-7xl mx-auto px-4 w-full relative z-10" aria-label="Estadísticas de confianza">
-      <Reveal as="div" className="bg-gradient-to-r from-[#6b0014] via-[#7d0018] to-[#6b0014] rounded-2xl md:rounded-3xl p-6 md:p-10 shadow-2xl border border-[#ffc000]/20 text-white relative overflow-hidden">
-        {/* Subtle Andean motif overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none" />
+  const toneClass: Record<TrustItem["tone"], string> = {
+    brand: "bg-[#6b0014] text-white border-[#6b0014]",
+    gold: "bg-[#ffc000] text-slate-900 border-[#ffc000]",
+    light: "bg-white text-slate-900 border-slate-200",
+  };
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 relative z-10">
-          {stats.map((stat, index) => {
-            const Icon = stat.icon;
-            return (
+  const iconClass: Record<TrustItem["tone"], string> = {
+    brand: "bg-white/15 text-[#ffc000]",
+    gold: "bg-black/10 text-slate-900",
+    light: "bg-[#6b0014]/10 text-[#6b0014]",
+  };
+
+  return (
+    <section className="max-w-7xl mx-auto px-4 w-full relative z-10" aria-label="Confianza y cifras clave">
+      <Reveal
+        as="div"
+        className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2.5 md:gap-3"
+      >
+        {items.map((item) => {
+          const Icon = item.icon;
+          return (
+            <div
+              key={item.id}
+              className={`rounded-2xl border px-3.5 py-3.5 md:py-4 flex items-center gap-3 min-h-[76px] ${toneClass[item.tone]}`}
+            >
               <div
-                key={stat.id}
-                className={`flex flex-col items-center text-center px-2 sm:px-4 ${
-                  index !== stats.length - 1 ? "lg:border-r lg:border-white/15" : ""
-                }`}
+                className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${iconClass[item.tone]}`}
               >
-                <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-[#ffc000] mb-3 shadow-inner">
-                  <Icon className="w-6 h-6 stroke-[2.2]" />
-                </div>
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#ffc000] font-title tracking-tight">
-                  {stat.value}
-                </div>
-                <div className="text-sm font-bold text-white mt-1 font-title">{stat.label}</div>
-                <div className="text-xs text-slate-200/80 mt-0.5 hidden sm:block">
-                  {stat.sublabel}
-                </div>
+                <Icon className="w-5 h-5" aria-hidden="true" />
               </div>
-            );
-          })}
-        </div>
+              <div className="min-w-0">
+                <p className="text-sm md:text-base font-black font-title leading-tight truncate">{item.value}</p>
+                <p
+                  className={`text-[11px] md:text-xs font-semibold leading-snug ${
+                    item.tone === "brand" ? "text-white/80" : "text-slate-600"
+                  }`}
+                >
+                  {item.label}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </Reveal>
     </section>
   );

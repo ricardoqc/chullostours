@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
-import { ShieldCheck, Award, Headphones, ArrowRight, Star, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PromoBanner } from "@/components/ui/promo-banner";
 import { HeroSearch } from "@/components/tours/hero-search";
@@ -125,13 +125,13 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(travelAgencySchema) }}
       />
       <div className="flex flex-col gap-10 md:gap-16 pb-16">
-        {/* 1. Hero Section with Interactive Tour Search Engine */}
+        {/* 1. Hero Section */}
         <section className="max-w-7xl mx-auto px-4 pt-3 md:pt-6 w-full relative z-30">
-          <div className="relative rounded-2xl md:rounded-[32px] min-h-[520px] md:min-h-[580px] lg:min-h-[620px] flex flex-col justify-between shadow-2xl bg-slate-900 border border-slate-800 p-6 md:p-12 lg:p-14">
+          <div className="relative rounded-2xl md:rounded-[32px] min-h-[520px] md:min-h-[580px] lg:min-h-[620px] flex flex-col justify-center shadow-2xl bg-slate-900 border border-white/10 p-8 md:p-14 lg:p-16">
             <HomeHeroMedia hero={homeHero} fallbackSrc={heroFallbackImage} />
 
             {/* Hero Left Main Content */}
-            <div className="relative max-w-2xl flex flex-col items-start gap-4 md:gap-5 text-left z-10 my-auto w-full">
+            <div className="relative max-w-3xl lg:max-w-4xl flex flex-col items-start gap-5 md:gap-6 text-left z-10 w-full">
               {/* Trust Pill */}
               <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 bg-white/15 backdrop-blur-md border border-white/25 px-3 sm:px-4 py-1.5 rounded-full text-[11px] sm:text-xs font-semibold text-white shadow-sm max-w-full">
                 <span className="text-[#ffc000] font-extrabold shrink-0">★ 5.0 TripAdvisor</span>
@@ -140,62 +140,32 @@ export default function Home() {
               </div>
 
               {/* H1 Copywriting with Andean Emotion & Primary Target Keywords */}
-              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-black tracking-tight leading-tight font-title text-white">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight font-title text-white">
                 Tours a <span className="text-[#ffc000]">Machu Picchu</span> y Cusco con Guías Locales.
               </h1>
 
-              <p className="text-slate-200 text-xs sm:text-sm md:text-base leading-relaxed font-normal max-w-xl">
+              <p className="text-slate-200 text-sm sm:text-base md:text-lg leading-relaxed font-normal max-w-2xl">
                 Descubre la magia de los Andes sin estrés.{" "}
                 <strong className="font-bold text-white">Itinerarios todo incluido</strong>, ingresos 100% garantizados a Machu Picchu y tarifas transparentes sin cargos ocultos.
               </p>
             </div>
-
-            {/* Integrated Interactive Tour Search Engine Bar (Client Component) */}
-            <div className="relative z-30 w-full">
-              <HeroSearch totalTours={allTours.length} />
-            </div>
           </div>
         </section>
 
-        {/* 2. Trust Features Bar */}
-        <section className="max-w-7xl mx-auto px-4 w-full relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-slate-50 p-6 md:p-8 rounded-2xl md:rounded-3xl border border-slate-200">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#6b0014]/10 flex items-center justify-center text-[#6b0014] shrink-0">
-                <ShieldCheck className="w-6 h-6" />
-              </div>
-              <div>
-                <h4 className="font-bold text-slate-900 text-base font-title">Ingresos 100% Asegurados</h4>
-                <p className="text-xs text-slate-500 mt-0.5">Agencia autorizada por MINCETUR. Boletos a Machu Picchu y trenes garantizados.</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#ffc000]/20 flex items-center justify-center text-slate-900 shrink-0">
-                <Award className="w-6 h-6 text-[#6b0014]" />
-              </div>
-              <div>
-                <h4 className="font-bold text-slate-900 text-base font-title">Guías Locales Cusqueños</h4>
-                <p className="text-xs text-slate-500 mt-0.5">Expertos nativos con licencia oficial y pasión por transmitir la historia incaica.</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#6b0014]/10 flex items-center justify-center text-[#6b0014] shrink-0">
-                <Headphones className="w-6 h-6" />
-              </div>
-              <div>
-                <h4 className="font-bold text-slate-900 text-base font-title">Transparencia & Soporte 24/7</h4>
-                <p className="text-xs text-slate-500 mt-0.5">Precios finales sin sorpresas. Acompañamiento continuo antes y durante tu viaje.</p>
-              </div>
-            </div>
+        {/* Search bar between hero and trust features */}
+        <section className="max-w-7xl mx-auto px-4 w-full relative z-30 flex flex-col gap-4 md:gap-5">
+          <div className="text-center md:text-left">
+            <span className="text-[#6b0014] text-xs font-extrabold uppercase tracking-wider font-title">
+              Encuentra tu tour
+            </span>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mt-1 font-title">
+              ¿A dónde quieres viajar en Perú?
+            </h2>
           </div>
+          <HeroSearch totalTours={allTours.length} />
         </section>
 
-        {/* 3. Live Stats & Social Proof Section (Alimentado por JSON) */}
-        <StatsCounterSection />
-
-        {/* 4. Featured Tours Section */}
+        {/* Featured Tours Section */}
         <section className="max-w-7xl mx-auto px-4 w-full flex flex-col gap-6 md:gap-8">
           <Reveal as="div" className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
@@ -217,10 +187,10 @@ export default function Home() {
           <FeaturedToursGrid items={featuredItems} />
         </section>
 
-        {/* 5. Styles & Traveler Profiles Section (Alimentado por JSON) */}
+        {/* 4. Styles & Traveler Profiles Section (Alimentado por JSON) */}
         <TravelerProfilesSection />
 
-        {/* 6. Popular Destinations Grid */}
+        {/* 5. Popular Destinations Grid */}
         <section className="max-w-7xl mx-auto px-4 w-full flex flex-col gap-6 md:gap-8">
           <Reveal as="div" className="text-center max-w-xl mx-auto flex flex-col items-center">
             <span className="text-[#6b0014] text-xs font-extrabold uppercase tracking-wider font-title">
@@ -260,10 +230,13 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 7. Why Choose Us Section (Alimentado por JSON) */}
+        {/* Why Choose Us Section (Alimentado por JSON) */}
         <WhyChooseUsSection />
 
-        {/* 8. Testimonials Section */}
+        {/* Trust + stats unificados */}
+        <StatsCounterSection />
+
+        {/* Testimonials Section */}
         <section className="max-w-7xl mx-auto px-4 w-full flex flex-col gap-6 md:gap-8 overflow-hidden">
           <Reveal as="div" className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>

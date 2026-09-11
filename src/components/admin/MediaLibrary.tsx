@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   AlertCircle,
   CheckCircle2,
@@ -32,6 +32,7 @@ type HomeHero = {
   kind: "image" | "video";
   src: string;
   poster: string;
+  slides: Array<{ src: string; alt?: string }>;
 };
 
 const ROOT_FOLDERS = [
@@ -53,10 +54,12 @@ export function MediaLibrary() {
   const [folder, setFolder] = useState("home");
   const [folders, setFolders] = useState<MediaFolder[]>([]);
   const [files, setFiles] = useState<MediaFile[]>([]);
-  const [hero, setHero] = useState<HomeHero>({ kind: "image", src: "", poster: "" });
+  const [hero, setHero] = useState<HomeHero>({ kind: "image", src: "", poster: "", slides: [] });
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState("");
   const [toast, setToast] = useState<{ type: "success" | "error"; text: string } | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const showToast = (text: string, type: "success" | "error" = "success") => {
     setToast({ text, type });
@@ -86,7 +89,14 @@ export function MediaLibrary() {
 
       setFolders(mediaData.folders || []);
       setFiles(mediaData.files || []);
-      if (heroData.hero) setHero(heroData.hero);
+      if (heroData.hero) {
+        setHero({
+          kind: heroData.hero.kind === "video" ? "video" : "image",
+          src: heroData.hero.src || "",
+          poster: heroData.hero.poster || "",
+          slides: Array.isArray(heroData.hero.slides) ? heroData.hero.slides : [],
+        });
+      }
       setFolder(nextFolder);
       setAuth("ok");
     } catch {
@@ -102,35 +112,56 @@ export function MediaLibrary() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const handleUpload = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const input = form.elements.namedItem("file") as HTMLInputElement | null;
-    const file = input?.files?.[0];
-    if (!file) {
-      showToast("Elige un archivo primero.", "error");
-      return;
-    }
+  const uploadFiles = async (selected: FileList | File[]) => {
+    const list = Array.from(selected);
+    if (list.length === 0) return;
 
     setUploading(true);
+    setUploadProgress(`Subiendo 0/${list.length}…`);
+
+    let okCount = 0;
+    const errors: string[] = [];
+
     try {
-      const body = new FormData();
-      body.set("folder", folder);
-      body.set("file", file);
-      const res = await fetch(adminApi("/api/admin/media"), { method: "POST", body });
-      const data = await res.json();
-      if (!res.ok) {
-        showToast(data.error || "No se pudo subir el archivo.", "error");
-        return;
+      for (let i = 0; i < list.length; i += 1) {
+        const file = list[i];
+        setUploadProgress(`Subiendo ${i + 1}/${list.length}: ${file.name}`);
+        try {
+          const body = new FormData();
+          body.set("folder", folder);
+          body.set("file", file);
+          const res = await fetch(adminApi("/api/admin/media"), { method: "POST", body });
+          const data = await res.json();
+          if (!res.ok) {
+            errors.push(data.error || file.name);
+            continue;
+          }
+          okCount += 1;
+        } catch {
+          errors.push(file.name);
+        }
       }
-      form.reset();
-      showToast(`Guardado en ${data.file.src}`);
+
       await loadFolder(folder);
-    } catch {
-      showToast("Error de red al subir.", "error");
+
+      if (okCount > 0 && errors.length === 0) {
+        showToast(okCount === 1 ? "1 archivo subido." : `${okCount} archivos subidos.`);
+      } else if (okCount > 0) {
+        showToast(`${okCount} subidos. Fallaron: ${errors.slice(0, 3).join(", ")}`, "error");
+      } else {
+        showToast(errors[0] || "No se pudo subir ningún archivo.", "error");
+      }
     } finally {
       setUploading(false);
+      setUploadProgress("");
+      if (fileInputRef.current) fileInputRef.current.value = "";
     }
+  };
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const selected = event.target.files;
+    if (!selected || selected.length === 0) return;
+    void uploadFiles(selected);
   };
 
   const copySrc = async (src: string) => {
@@ -158,6 +189,60 @@ export function MediaLibrary() {
     }
     setHero(data.hero);
     showToast(asPoster ? "Poster del hero actualizado." : "Hero de la HOME actualizado.");
+  };
+
+  const saveSlides = async (slides: Array<{ src: string; alt?: string }>) => {
+    const res = await fetch(adminApi("/api/admin/home-hero"), {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ slides, kind: "image" }),
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      showToast(data.error || "No se pudo actualizar la galería del hero.", "error");
+      return false;
+    }
+    setHero(data.hero);
+    return true;
+  };
+
+  const addToHeroSlider = async (file: MediaFile) => {
+    if (file.kind !== "image") {
+      showToast("Solo las imágenes pueden entrar al slider del hero.", "error");
+      return;
+    }
+
+    const exists = hero.slides.some((item) => item.src === file.src);
+    if (exists) {
+      showToast("Esta imagen ya está en el slider.");
+      return;
+    }
+
+    const nextSlides = [...hero.slides, { src: file.src, alt: "Hero Chullos Tours" }];
+    const ok = await saveSlides(nextSlides);
+    if (ok) showToast("Imagen agregada al slider del hero.");
+  };
+
+  const removeFromHeroSlider = async (src: string) => {
+    const nextSlides = hero.slides.filter((item) => item.src !== src);
+    const ok = await saveSlides(nextSlides);
+    if (ok) showToast("Imagen quitada del slider del hero.");
+  };
+
+  const updateSlideAlt = (src: string, alt: string) => {
+    setHero((prev) => ({
+      ...prev,
+      slides: prev.slides.map((slide) => (slide.src === src ? { ...slide, alt } : slide)),
+    }));
+  };
+
+  const persistSlideAlt = async (src: string, alt: string) => {
+    const trimmed = alt.trim();
+    const nextSlides = hero.slides.map((slide) =>
+      slide.src === src ? { src: slide.src, alt: trimmed } : { src: slide.src, alt: slide.alt || "" }
+    );
+    const ok = await saveSlides(nextSlides);
+    if (ok) showToast("ALT actualizado.");
   };
 
   const clearHero = async () => {
@@ -239,6 +324,48 @@ export function MediaLibrary() {
           <p className="font-bold text-slate-800">Hero actual de la HOME</p>
           <p className="mt-1 font-mono text-xs break-all">{hero.src || "Fondo por defecto (galería de un tour)"}</p>
           {hero.poster ? <p className="mt-1 font-mono text-xs break-all">Poster: {hero.poster}</p> : null}
+          <p className="mt-3 font-bold text-slate-800">Slider de imágenes</p>
+          {hero.slides.length === 0 ? (
+            <p className="mt-1 text-xs text-slate-500">Sin imágenes configuradas. Agrega desde los archivos de abajo.</p>
+          ) : (
+            <ul className="mt-3 space-y-3">
+              {hero.slides.map((slide, index) => (
+                <li
+                  key={slide.src}
+                  className="rounded-xl border border-slate-200 bg-white p-3 grid gap-3 sm:grid-cols-[88px_1fr_auto] sm:items-start"
+                >
+                  <div className="relative aspect-video sm:aspect-square rounded-lg overflow-hidden bg-slate-100 border border-slate-200">
+                    <TourImage src={slide.src} alt={slide.alt || `Slide ${index + 1}`} fill className="object-cover" sizes="88px" />
+                  </div>
+                  <div className="min-w-0 space-y-2">
+                    <p className="text-[11px] font-mono text-slate-500 break-all">{slide.src}</p>
+                    <div className="admin-field">
+                      <label htmlFor={`hero-slide-alt-${index}`} className="admin-label">
+                        Texto ALT
+                      </label>
+                      <input
+                        id={`hero-slide-alt-${index}`}
+                        type="text"
+                        value={slide.alt || ""}
+                        onChange={(event) => updateSlideAlt(slide.src, event.target.value)}
+                        onBlur={(event) => void persistSlideAlt(slide.src, event.target.value)}
+                        onKeyDown={(event) => {
+                          if (event.key === "Enter") {
+                            event.currentTarget.blur();
+                          }
+                        }}
+                        placeholder="Describe la imagen para SEO y accesibilidad"
+                        className="admin-input"
+                      />
+                    </div>
+                  </div>
+                  <button type="button" onClick={() => removeFromHeroSlider(slide.src)} className="admin-ghost-btn justify-self-start">
+                    Quitar
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
           <button type="button" onClick={clearHero} className="admin-ghost-btn mt-3">
             Restablecer hero
           </button>
@@ -280,29 +407,52 @@ export function MediaLibrary() {
         })}
       </nav>
 
-      <form
-        onSubmit={handleUpload}
-        className="bg-white rounded-2xl border border-slate-200 p-5 grid gap-4 md:grid-cols-[1fr_auto] md:items-end"
-      >
-        <div className="admin-field">
-          <label htmlFor="media-file" className="admin-label">
-            Subir a /media/{folder}/
-          </label>
+      <div className="bg-white rounded-2xl border border-slate-200 p-5 space-y-3">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div>
+            <p className="text-sm font-bold text-slate-800">Subir a /media/{folder}/</p>
+            <p className="text-[11px] text-slate-500 mt-0.5">
+              Selección múltiple. La subida inicia automáticamente. Imágenes hasta 12 MB · Video hasta 80 MB.
+            </p>
+          </div>
+          {uploading ? (
+            <p className="text-xs font-semibold text-slate-600 inline-flex items-center gap-2">
+              <RefreshCw className="w-3.5 h-3.5 animate-spin" aria-hidden="true" />
+              {uploadProgress || "Subiendo…"}
+            </p>
+          ) : null}
+        </div>
+
+        <label
+          htmlFor="media-file"
+          className={`group relative flex flex-col items-center justify-center gap-3 rounded-2xl border-2 border-dashed px-4 py-8 text-center transition-colors cursor-pointer ${
+            uploading
+              ? "border-slate-200 bg-slate-50 pointer-events-none opacity-70"
+              : "border-slate-300 bg-slate-50 hover:border-[#6b0014] hover:bg-[#6b0014]/5"
+          }`}
+        >
+          <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white border border-slate-200 text-[#6b0014] shadow-sm group-hover:border-[#6b0014]">
+            <Upload className="w-5 h-5" aria-hidden="true" />
+          </span>
+          <span className="space-y-1">
+            <span className="block text-sm font-bold text-slate-800">
+              {uploading ? "Subiendo archivos…" : "Haz clic para elegir archivos"}
+            </span>
+            <span className="block text-xs text-slate-500">JPG, PNG, WebP, AVIF, GIF, MP4 o WebM · varios a la vez</span>
+          </span>
           <input
+            ref={fileInputRef}
             id="media-file"
             name="file"
             type="file"
-            required
+            multiple
+            disabled={uploading}
             accept="image/jpeg,image/png,image/webp,image/avif,image/gif,video/mp4,video/webm,.jpg,.jpeg,.png,.webp,.avif,.gif,.mp4,.webm"
-            className="admin-input"
+            onChange={handleFileChange}
+            className="sr-only"
           />
-          <p className="text-[11px] text-slate-500 mt-1">Imágenes hasta 12 MB. Video (mp4/webm) hasta 80 MB.</p>
-        </div>
-        <button type="submit" disabled={uploading} className="admin-ghost-btn min-h-12 px-5 bg-slate-900 text-white border-slate-900">
-          <Upload className="w-4 h-4" aria-hidden="true" />
-          {uploading ? "Subiendo…" : "Subir archivo"}
-        </button>
-      </form>
+        </label>
+      </div>
 
       {loading ? (
         <p className="text-sm text-slate-500 inline-flex items-center gap-2">
@@ -364,8 +514,13 @@ export function MediaLibrary() {
                     </button>
                     <button type="button" onClick={() => assignHero(file)} className="admin-ghost-btn">
                       {file.kind === "video" ? <Film className="w-3.5 h-3.5" aria-hidden="true" /> : <ImagePlus className="w-3.5 h-3.5" aria-hidden="true" />}
-                      Usar en hero
+                      {file.kind === "video" ? "Usar video hero" : "Usar portada hero"}
                     </button>
+                    {file.kind === "image" ? (
+                      <button type="button" onClick={() => addToHeroSlider(file)} className="admin-ghost-btn">
+                        Agregar al slider
+                      </button>
+                    ) : null}
                     {file.kind === "image" ? (
                       <button type="button" onClick={() => assignHero(file, true)} className="admin-ghost-btn">
                         Poster

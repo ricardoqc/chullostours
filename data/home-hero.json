@@ -1,5 +1,27 @@
 {
   "kind": "image",
   "src": "",
-  "poster": ""
+  "poster": "",
+  "slides": [
+    {
+      "src": "/media/home/stock-chullostours-1.webp",
+      "alt": "Hero Chullos Tours"
+    },
+    {
+      "src": "/media/home/stock-chullostours-2.webp",
+      "alt": "Hero Chullos Tours"
+    },
+    {
+      "src": "/media/home/stock-chullostours-3.webp",
+      "alt": "Hero Chullos Tours"
+    },
+    {
+      "src": "/media/home/stock-chullostours.webp",
+      "alt": "Hero Chullos Tours"
+    },
+    {
+      "src": "/media/home/stock-chullostours-4.webp",
+      "alt": "Hero Chullos Tours"
+    }
+  ]
 }

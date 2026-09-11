@@ -71,7 +71,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ totalTours }) => {
   const StyleIcon = currentStyle.icon;
 
   return (
-    <div className="relative z-30 w-full mt-6 md:mt-8">
+    <div className="relative z-30 w-full">
       <form
         onSubmit={handleHeroSearch}
         className="bg-white/95 backdrop-blur-2xl p-3 md:p-4 rounded-2xl md:rounded-3xl shadow-2xl border border-white/60 grid grid-cols-1 sm:grid-cols-12 gap-3 items-center relative z-40"
