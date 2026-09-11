@@ -16,6 +16,7 @@ import {
 import { AdminLoginForm } from "@/components/admin/AdminLoginForm";
 import { AdminShell } from "@/components/admin/AdminShell";
 import { TourImage } from "@/components/ui/TourImage";
+import { adminApi } from "@/lib/admin/api";
 
 type MediaFile = {
   src: string;
@@ -66,8 +67,8 @@ export function MediaLibrary() {
     setLoading(true);
     try {
       const [mediaRes, heroRes] = await Promise.all([
-        fetch(`/api/admin/media?folder=${encodeURIComponent(nextFolder)}`),
-        fetch("/api/admin/home-hero"),
+        fetch(adminApi(`/api/admin/media?folder=${encodeURIComponent(nextFolder)}`)),
+        fetch(adminApi("/api/admin/home-hero")),
       ]);
 
       if (mediaRes.status === 401 || heroRes.status === 401) {
@@ -116,7 +117,7 @@ export function MediaLibrary() {
       const body = new FormData();
       body.set("folder", folder);
       body.set("file", file);
-      const res = await fetch("/api/admin/media", { method: "POST", body });
+      const res = await fetch(adminApi("/api/admin/media"), { method: "POST", body });
       const data = await res.json();
       if (!res.ok) {
         showToast(data.error || "No se pudo subir el archivo.", "error");
@@ -145,7 +146,7 @@ export function MediaLibrary() {
     const payload = asPoster
       ? { poster: file.src }
       : { src: file.src, kind: file.kind === "video" ? "video" : "image" };
-    const res = await fetch("/api/admin/home-hero", {
+    const res = await fetch(adminApi("/api/admin/home-hero"), {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
@@ -160,7 +161,7 @@ export function MediaLibrary() {
   };
 
   const clearHero = async () => {
-    const res = await fetch("/api/admin/home-hero", {
+    const res = await fetch(adminApi("/api/admin/home-hero"), {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ clear: true }),
@@ -176,7 +177,7 @@ export function MediaLibrary() {
 
   const removeFile = async (src: string) => {
     if (!window.confirm(`¿Borrar ${src} del volumen? Esta acción no se puede deshacer.`)) return;
-    const res = await fetch(`/api/admin/media?src=${encodeURIComponent(src)}`, { method: "DELETE" });
+    const res = await fetch(adminApi(`/api/admin/media?src=${encodeURIComponent(src)}`), { method: "DELETE" });
     const data = await res.json();
     if (!res.ok) {
       showToast(data.error || "No se pudo borrar.", "error");

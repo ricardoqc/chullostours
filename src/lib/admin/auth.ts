@@ -43,21 +43,34 @@ export function isValidAdminSessionToken(token: string | undefined, secret: stri
   }
 }
 
-export function applyAdminCookie(response: NextResponse, token: string) {
+export function isHttpsRequest(request?: Request): boolean {
+  if (!request) return false;
+  const forwarded = request.headers.get("x-forwarded-proto");
+  if (forwarded) {
+    return forwarded.split(",")[0].trim().toLowerCase() === "https";
+  }
+  try {
+    return new URL(request.url).protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+export function applyAdminCookie(response: NextResponse, token: string, request?: Request) {
   response.cookies.set(ADMIN_COOKIE, token, {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    secure: isHttpsRequest(request),
     path: "/",
     maxAge: SESSION_TTL_MS / 1000,
   });
 }
 
-export function clearAdminCookie(response: NextResponse) {
+export function clearAdminCookie(response: NextResponse, request?: Request) {
   response.cookies.set(ADMIN_COOKIE, "", {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    secure: isHttpsRequest(request),
     path: "/",
     maxAge: 0,
   });

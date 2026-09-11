@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { AlertCircle, Lock, RefreshCw } from "lucide-react";
+import { adminApi } from "@/lib/admin/api";
 
 type AdminLoginFormProps = {
   onSuccess: () => void;
@@ -19,7 +20,7 @@ export function AdminLoginForm({ onSuccess }: AdminLoginFormProps) {
     setLoading(true);
     setErrorMsg("");
     try {
-      const res = await fetch("/api/admin/login", {
+      const res = await fetch(adminApi("/api/admin/login"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ key: key.trim() }),

@@ -6,6 +6,7 @@ import { ArrowLeft, RefreshCw } from "lucide-react";
 import { AdminLoginForm } from "@/components/admin/AdminLoginForm";
 import { AdminShell } from "@/components/admin/AdminShell";
 import { TourEditor } from "@/components/admin/TourEditor";
+import { adminApi } from "@/lib/admin/api";
 import type { TourDraft } from "@/lib/admin/tour-schema";
 
 type TourEditorPageProps = {
@@ -20,7 +21,7 @@ export function TourEditorPage({ slug }: TourEditorPageProps) {
 
   const loadTour = async () => {
     setErrorMsg("");
-    const res = await fetch(`/api/admin/tours/${encodeURIComponent(slug)}`);
+    const res = await fetch(adminApi(`/api/admin/tours/${encodeURIComponent(slug)}`));
     if (res.status === 401) {
       setAuth("login");
       return;

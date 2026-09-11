@@ -20,6 +20,7 @@ import {
 import { TourImage } from "@/components/ui/TourImage";
 import { AdminLoginForm } from "@/components/admin/AdminLoginForm";
 import { AdminShell } from "@/components/admin/AdminShell";
+import { adminApi } from "@/lib/admin/api";
 
 interface AdminTourItem {
   file: string;
@@ -57,7 +58,7 @@ export default function AdminToursPage() {
   const fetchTours = async () => {
     setLoading(true);
     try {
-      const res = await fetch("/api/admin/tours");
+      const res = await fetch(adminApi("/api/admin/tours"));
       const data = await res.json();
 
       if (!res.ok) {
@@ -78,7 +79,7 @@ export default function AdminToursPage() {
     setActionLoading(slug);
 
     try {
-      const res = await fetch("/api/admin/tours", {
+      const res = await fetch(adminApi("/api/admin/tours"), {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -187,7 +188,7 @@ export default function AdminToursPage() {
 
             <button
               onClick={async () => {
-                await fetch("/api/admin/logout", { method: "POST" });
+                await fetch(adminApi("/api/admin/logout"), { method: "POST" });
                 setIsAuthenticated(false);
               }}
               className="px-4 py-2.5 bg-slate-100 hover:bg-red-50 hover:text-red-700 text-slate-600 rounded-xl text-xs font-bold transition-colors"

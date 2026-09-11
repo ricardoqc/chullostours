@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowDown, ArrowUp, ImagePlus, Plus, Trash2 } from "lucide-react";
 import { TourImage } from "@/components/ui/TourImage";
 import type { TourDraft } from "@/lib/admin/tour-schema";
+import { adminApi } from "@/lib/admin/api";
 
 type GalleryItem = TourDraft["galeria"][number];
 
@@ -24,7 +25,7 @@ export function GalleryField({ slug, items, onChange }: GalleryFieldProps) {
   const [uploadError, setUploadError] = useState("");
 
   const refreshFiles = () => {
-    fetch(`/api/admin/media?slug=${encodeURIComponent(slug)}`)
+    fetch(adminApi(`/api/admin/media?slug=${encodeURIComponent(slug)}`))
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data.files)) setFiles(data.files);
@@ -41,7 +42,7 @@ export function GalleryField({ slug, items, onChange }: GalleryFieldProps) {
     const unique = [...new Set(items.map((item) => item.src).filter(Boolean))];
     Promise.all(
       unique.map(async (src) => {
-        const res = await fetch(`/api/admin/media?src=${encodeURIComponent(src)}`);
+        const res = await fetch(adminApi(`/api/admin/media?src=${encodeURIComponent(src)}`));
         const data = await res.json();
         return [src, Boolean(data.exists)] as const;
       })
@@ -207,7 +208,7 @@ export function GalleryField({ slug, items, onChange }: GalleryFieldProps) {
                   const body = new FormData();
                   body.set("folder", `tours/${slug}`);
                   body.set("file", file);
-                  const res = await fetch("/api/admin/media", { method: "POST", body });
+                  const res = await fetch(adminApi("/api/admin/media"), { method: "POST", body });
                   const data = await res.json();
                   if (!res.ok) {
                     setUploadError(data.error || "No se pudo subir.");

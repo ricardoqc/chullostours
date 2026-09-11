@@ -8,6 +8,7 @@ import { StringListField } from "@/components/admin/StringListField";
 import { GalleryField } from "@/components/admin/GalleryField";
 import { ItineraryField } from "@/components/admin/ItineraryField";
 import { FaqsField } from "@/components/admin/FaqsField";
+import { adminApi } from "@/lib/admin/api";
 
 const TABS = [
   { id: "general", label: "General" },
@@ -53,7 +54,7 @@ export function TourEditor({ slug, file, initialDraft }: TourEditorProps) {
     setSaving(true);
     setErrorSummary("");
     try {
-      const res = await fetch(`/api/admin/tours/${encodeURIComponent(slug)}`, {
+      const res = await fetch(adminApi(`/api/admin/tours/${encodeURIComponent(slug)}`), {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(draft),
@@ -81,7 +82,7 @@ export function TourEditor({ slug, file, initialDraft }: TourEditorProps) {
     event.preventDefault();
     setSaving(true);
     try {
-      const res = await fetch(`/api/admin/tours/${encodeURIComponent(slug)}/duplicate`, {
+      const res = await fetch(adminApi(`/api/admin/tours/${encodeURIComponent(slug)}/duplicate`), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ slug: duplicateSlug, titulo: duplicateTitle }),

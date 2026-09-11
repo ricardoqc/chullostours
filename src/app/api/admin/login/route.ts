@@ -31,6 +31,6 @@ export async function POST(request: Request) {
   }
 
   const response = NextResponse.json({ success: true });
-  applyAdminCookie(response, createAdminSessionToken(secret));
+  applyAdminCookie(response, createAdminSessionToken(secret), request);
   return response;
 }
