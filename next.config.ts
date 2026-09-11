@@ -26,6 +26,16 @@ const nextConfig: NextConfig = {
     ],
   },
   trailingSlash: true,
+  async rewrites() {
+    // Si el archivo no está en public/ (p. ej. subido al volumen MEDIA_ROOT),
+    // Next cae a este rewrite y lo sirve desde el filesystem del CMS.
+    return [
+      {
+        source: "/media/:path*",
+        destination: "/api/serve-media/:path*",
+      },
+    ];
+  },
   async redirects() {
     return [
       // 1. Tours modificados

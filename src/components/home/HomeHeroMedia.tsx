@@ -9,6 +9,8 @@ type HomeHeroMediaProps = {
   fallbackSrc: string;
 };
 
+type Slide = { src: string; alt: string };
+
 export function HomeHeroMedia({ hero, fallbackSrc }: HomeHeroMediaProps) {
   const isVideo = hero.kind === "video" && Boolean(hero.src);
   const imageSlides = useMemo(
@@ -16,8 +18,8 @@ export function HomeHeroMedia({ hero, fallbackSrc }: HomeHeroMediaProps) {
     [hero.slides]
   );
 
-  const sliderSources = useMemo(() => {
-    if (isVideo) return [] as Array<{ src: string; alt: string }>;
+  const configuredSlides = useMemo((): Slide[] => {
+    if (isVideo) return [];
     if (imageSlides.length > 0) {
       return imageSlides.map((slide) => ({
         src: slide.src,
@@ -27,6 +29,16 @@ export function HomeHeroMedia({ hero, fallbackSrc }: HomeHeroMediaProps) {
     const single = hero.src || fallbackSrc;
     return [{ src: single || fallbackSrc, alt: "Hero Chullos Tours" }];
   }, [isVideo, imageSlides, hero.src, fallbackSrc]);
+
+  const [broken, setBroken] = useState<Record<string, boolean>>({});
+  const sliderSources = useMemo(
+    () => {
+      const ok = configuredSlides.filter((slide) => !broken[slide.src]);
+      if (ok.length > 0) return ok;
+      return [{ src: fallbackSrc, alt: "Hero Chullos Tours" }];
+    },
+    [configuredSlides, broken, fallbackSrc]
+  );
 
   const posterSrc = isVideo ? hero.poster || fallbackSrc : "";
   const [activeIndex, setActiveIndex] = useState(0);
@@ -68,6 +80,9 @@ export function HomeHeroMedia({ hero, fallbackSrc }: HomeHeroMediaProps) {
               }`}
               onLoad={() => {
                 readyRef.current[slide.src] = true;
+              }}
+              onError={() => {
+                setBroken((prev) => (prev[slide.src] ? prev : { ...prev, [slide.src]: true }));
               }}
             />
           ))

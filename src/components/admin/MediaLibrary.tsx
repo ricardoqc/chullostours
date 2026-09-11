@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { AdminLoginForm } from "@/components/admin/AdminLoginForm";
 import { AdminShell } from "@/components/admin/AdminShell";
-import { TourImage } from "@/components/ui/TourImage";
+import { AdminMediaThumb } from "@/components/admin/AdminMediaThumb";
 import { adminApi } from "@/lib/admin/api";
 
 type MediaFile = {
@@ -335,7 +335,7 @@ export function MediaLibrary() {
                   className="rounded-xl border border-slate-200 bg-white p-3 grid gap-3 sm:grid-cols-[88px_1fr_auto] sm:items-start"
                 >
                   <div className="relative aspect-video sm:aspect-square rounded-lg overflow-hidden bg-slate-100 border border-slate-200">
-                    <TourImage src={slide.src} alt={slide.alt || `Slide ${index + 1}`} fill className="object-cover" sizes="88px" />
+                    <AdminMediaThumb src={slide.src} alt={slide.alt || `Slide ${index + 1}`} />
                   </div>
                   <div className="min-w-0 space-y-2">
                     <p className="text-[11px] font-mono text-slate-500 break-all">{slide.src}</p>
@@ -499,7 +499,7 @@ export function MediaLibrary() {
                   {file.kind === "video" ? (
                     <video src={file.src} muted preload="metadata" className="absolute inset-0 w-full h-full object-cover" />
                   ) : (
-                    <TourImage src={file.src} alt={file.name} fill className="object-cover" sizes="320px" />
+                    <AdminMediaThumb src={file.src} alt={file.name} />
                   )}
                 </div>
                 <div className="p-3 space-y-2">
