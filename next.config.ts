@@ -221,20 +221,10 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
 
-      // 5. Actividades WordPress -> Actividades Next.js
+      // 5. Actividades WordPress -> catálogo (taxonomía eliminada, sin reemplazo 1:1)
       {
-        source: "/actividades/caminata-hiking/",
-        destination: "/actividades/caminata/",
-        permanent: true,
-      },
-      {
-        source: "/actividades/outdoor/",
-        destination: "/actividades/aventura/",
-        permanent: true,
-      },
-      {
-        source: "/actividades/trekking/",
-        destination: "/actividades/treks/",
+        source: "/actividades/:slug*/",
+        destination: "/tours/",
         permanent: true,
       },
 
@@ -246,12 +236,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/my-account/",
-        destination: "/mi-cuenta/",
+        destination: "/contacto-chullos/",
         permanent: true,
       },
       {
         source: "/wishlist-3/",
-        destination: "/wishlist/",
+        destination: "/tours/",
         permanent: true,
       },
       {
@@ -279,6 +269,74 @@ const nextConfig: NextConfig = {
       {
         source: "/difficulty/:slug*",
         destination: "/tours/",
+        permanent: true,
+      },
+
+      // 8. Limpieza de arquitectura de información (auditoría 2026):
+      // duplicado exacto, taxonomías huérfanas y flujo de e-commerce sin usar
+      {
+        source: "/tienda/",
+        destination: "/tours/",
+        permanent: true,
+      },
+      {
+        source: "/machu-picchu-2025/",
+        destination: "/machu-picchu-2026/",
+        permanent: true,
+      },
+      {
+        source: "/pe/",
+        destination: "/tours/",
+        permanent: true,
+      },
+      {
+        source: "/pe/tours/",
+        destination: "/tours/",
+        permanent: true,
+      },
+      {
+        source: "/pe/tours/:slug/",
+        destination: "/tours/:slug/",
+        permanent: true,
+      },
+      {
+        source: "/category/:slug*/",
+        destination: "/blog/",
+        permanent: true,
+      },
+      {
+        source: "/tipo-de-actividades/",
+        destination: "/tours/",
+        permanent: true,
+      },
+      {
+        source: "/tipos-de-viajes/",
+        destination: "/tours/",
+        permanent: true,
+      },
+      {
+        source: "/tipos-de-tours/:slug*/",
+        destination: "/tours/",
+        permanent: true,
+      },
+      {
+        source: "/carrito/",
+        destination: "/tours/",
+        permanent: true,
+      },
+      {
+        source: "/finalizar-compra/",
+        destination: "/tours/",
+        permanent: true,
+      },
+      {
+        source: "/informacion-de-viajeros/",
+        destination: "/tours/",
+        permanent: true,
+      },
+      {
+        source: "/mis-viajes/",
+        destination: "/contacto-chullos/",
         permanent: true,
       },
     ];

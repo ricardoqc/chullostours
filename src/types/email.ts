@@ -11,6 +11,7 @@ export interface ReservationEmailData {
   email: string;
   phone: string;
   country?: string;
+  dni?: string;
 
   // Hotel & Extras
   hotelOption?: string;

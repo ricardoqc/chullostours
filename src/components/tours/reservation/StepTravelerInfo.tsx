@@ -207,6 +207,26 @@ export const StepTravelerInfo: React.FC<StepTravelerInfoProps> = ({
               />
             )}
           </div>
+
+          {formData.countryCode === "PE" && (
+            <div className="flex flex-col gap-1.5">
+              <label className="text-xs font-extrabold text-slate-800 uppercase flex items-center gap-1.5">
+                <FaUser className="w-3.5 h-3.5 text-[#6b0014]" />
+                <span>DNI (opcional)</span>
+              </label>
+              <input
+                type="text"
+                inputMode="numeric"
+                value={formData.dni}
+                onChange={(e) => updateFormData({ dni: e.target.value })}
+                placeholder="Ej: 70123456"
+                className="w-full bg-slate-50 border border-slate-200 rounded-xl px-3.5 py-3 sm:py-2.5 text-base sm:text-xs text-slate-900 font-medium placeholder:text-slate-400 focus:outline-none focus:border-[#6b0014] focus:ring-1 focus:ring-[#6b0014] transition-all"
+              />
+              <span className="text-[10px] text-slate-400 leading-snug">
+                Para tarifa nacional. Si reservas como peruano, lo pediremos para validar el descuento.
+              </span>
+            </div>
+          )}
         </div>
 
         <div className="flex flex-col gap-4">

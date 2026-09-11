@@ -7,9 +7,17 @@ import React, {
   useMemo,
   useState,
 } from "react";
+import dynamic from "next/dynamic";
 import type { Tour } from "@/types/tour";
 import type { ReservationInitialSelection } from "./reservation/types";
-import { ReservationModal } from "./ReservationModal";
+
+// El formulario de 3 pasos (países, cálculo de precios, selector de hotel, etc.)
+// solo hace falta cuando alguien realmente abre "Reservar" — no debe formar parte
+// del JS que cada ficha de tour tiene que descargar e hidratar para pintar su LCP.
+const ReservationModal = dynamic(
+  () => import("./ReservationModal").then((m) => m.ReservationModal),
+  { ssr: false }
+);
 
 interface TourReservationContextValue {
   isOpen: boolean;

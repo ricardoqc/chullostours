@@ -31,6 +31,7 @@ export interface ReservationFormData {
   countryCode: string;
   dialCode: string;
   otherCountry: string;
+  dni: string;
   website: string; // honeypot
 
   fillCompanions: boolean;

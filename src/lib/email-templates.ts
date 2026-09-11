@@ -117,6 +117,7 @@ export function getReservationStaffEmailHtml(data: ReservationEmailData): string
       <li><strong>WhatsApp / Tel:</strong> <a href="https://wa.me/${data.phone.replace(/[^0-9]/g, "")}">${data.phone}</a></li>
       <li><strong>Email:</strong> <a href="mailto:${data.email}">${data.email}</a></li>
       <li><strong>País:</strong> ${data.country || "No especificado"}</li>
+      ${data.dni ? `<li><strong>DNI:</strong> ${data.dni}</li>` : ""}
     </ul>
 
     <h3>🎯 Datos de la Experiencia</h3>

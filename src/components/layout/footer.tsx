@@ -167,6 +167,7 @@ export const Footer: React.FC = () => {
                 {[
                   { name: "Catálogo de Tours", href: "/tours" },
                   { name: "Machu Picchu 2026", href: "/machu-picchu-2026" },
+                  { name: "Destinos", href: "/destinos" },
                   { name: "Planea tu Viaje", href: "/viaje-personalizado" },
                   { name: "Sobre Chullos Tours", href: "/acerca-de-chullos-tours" },
                   { name: "Blog de Viajes", href: "/blog" },

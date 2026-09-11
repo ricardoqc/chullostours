@@ -39,8 +39,7 @@ export default function MapaDelSitioPage() {
   const mainPages = [
     { name: "Página de Inicio", href: "/" },
     { name: "Catálogo Completo de Tours", href: "/tours/" },
-    { name: "Tours para Peruanos (Tarifas Nacionales)", href: "/pe/tours/" },
-    { name: "Tienda de Experiencias", href: "/tienda/" },
+    { name: "Destinos Turísticos", href: "/destinos/" },
     { name: "Acerca de Chullos Tours", href: "/acerca-de-chullos-tours/" },
     { name: "Contacto y Ubicación", href: "/contacto-chullos/" },
     { name: "Diseña tu Viaje Personalizado", href: "/viaje-personalizado/" },

@@ -17,6 +17,7 @@ export function HomeHeroMedia({ hero, fallbackSrc }: HomeHeroMediaProps) {
         alt=""
         fill
         priority
+        fetchPriority="high"
         sizes="(max-width: 768px) 100vw, 1280px"
         className="object-cover"
       />

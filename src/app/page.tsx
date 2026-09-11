@@ -220,20 +220,7 @@ export default function Home() {
         {/* 5. Styles & Traveler Profiles Section (Alimentado por JSON) */}
         <TravelerProfilesSection />
 
-        {/* 6. Promotional Banner Section */}
-        <section className="max-w-7xl mx-auto px-4 w-full">
-          <PromoBanner
-            subtitle="Paquete Imperdible 2026"
-            duration={promoTour?.atributos?.duracion || "5 Días / 4 Noches"}
-            title={promoTour?.titulo || "Cusco Mágico 5 Días"}
-            price={estimateTourPrice(promoTour)}
-            buttonText="Ver Oferta Especial"
-            buttonLink={`/tours/${promoTour?.slug || "cusco-magico-5-dias"}`}
-            backgroundImage={promoBgImage}
-          />
-        </section>
-
-        {/* 7. Popular Destinations Grid */}
+        {/* 6. Popular Destinations Grid */}
         <section className="max-w-7xl mx-auto px-4 w-full flex flex-col gap-6 md:gap-8">
           <Reveal as="div" className="text-center max-w-xl mx-auto flex flex-col items-center">
             <span className="text-[#6b0014] text-xs font-extrabold uppercase tracking-wider font-title">
@@ -248,7 +235,7 @@ export default function Home() {
             {destinations.map((dest, idx) => (
               <Reveal key={dest.slug} delay={idx * 60} as="div">
                 <Link
-                  href={`/tours?destino=${dest.slug}`}
+                  href={`/destinos/${dest.slug}`}
                   className="group relative h-60 sm:h-64 lg:h-72 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block bg-slate-900"
                 >
                   <TourImage
@@ -273,10 +260,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 8. Why Choose Us Section (Alimentado por JSON) */}
+        {/* 7. Why Choose Us Section (Alimentado por JSON) */}
         <WhyChooseUsSection />
 
-        {/* 9. Testimonials Section */}
+        {/* 8. Testimonials Section */}
         <section className="max-w-7xl mx-auto px-4 w-full flex flex-col gap-6 md:gap-8 overflow-hidden">
           <Reveal as="div" className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
@@ -302,8 +289,21 @@ export default function Home() {
           <ReviewsSlider reviews={featuredReviews} />
         </section>
 
-        {/* 10. Blog & Travel Guides Section */}
+        {/* 9. Blog & Travel Guides Section */}
         <BlogSection />
+
+        {/* 10. Promotional Banner Section — última oferta antes del cierre */}
+        <section className="max-w-7xl mx-auto px-4 w-full">
+          <PromoBanner
+            subtitle="Paquete Imperdible 2026"
+            duration={promoTour?.atributos?.duracion || "5 Días / 4 Noches"}
+            title={promoTour?.titulo || "Cusco Mágico 5 Días"}
+            price={estimateTourPrice(promoTour)}
+            buttonText="Ver Oferta Especial"
+            buttonLink={`/tours/${promoTour?.slug || "cusco-magico-5-dias"}`}
+            backgroundImage={promoBgImage}
+          />
+        </section>
 
         {/* 11. Call To Action Banner: Custom Itinerary with 3-Step Workflow */}
         <section className="max-w-7xl mx-auto px-4 w-full">

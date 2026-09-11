@@ -11,6 +11,8 @@ interface TourImageProps {
   fill?: boolean;
   sizes?: string;
   priority?: boolean;
+  /** Next.js no infiere fetchpriority="high" a partir de `priority` en esta versión — hay que pedirlo explícito para imágenes candidatas a LCP. */
+  fetchPriority?: "high" | "low" | "auto";
   width?: number;
   height?: number;
   /** Lightbox: imagen contenida sin recortar */
@@ -31,6 +33,7 @@ export function TourImage({
   fill,
   sizes,
   priority,
+  fetchPriority,
   width = 1200,
   height = 800,
   contain = false,
@@ -58,6 +61,7 @@ export function TourImage({
         sizes={sizes || "100vw"}
         className={className}
         priority={priority}
+        fetchPriority={fetchPriority}
         onError={handleError}
         style={contain ? { objectFit: "contain" } : undefined}
       />
@@ -73,6 +77,7 @@ export function TourImage({
       sizes={sizes}
       className={className}
       priority={priority}
+      fetchPriority={fetchPriority}
       onError={handleError}
     />
   );

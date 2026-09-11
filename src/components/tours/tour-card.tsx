@@ -45,7 +45,7 @@ const chipToneClasses: Record<NonNullable<TourCardChip["tone"]>, string> = {
   warning: "bg-amber-50 text-amber-900 border-amber-200/70",
 };
 
-export const TourCard: React.FC<{ tour: TourProps }> = ({ tour }) => {
+export const TourCard: React.FC<{ tour: TourProps; priority?: boolean }> = ({ tour, priority = false }) => {
   const [isWishlisted, setIsWishlisted] = useState(false);
   const currency = tour.currency || "USD";
   const currencyLabel = currency === "PEN" ? "PEN" : "USD";
@@ -77,6 +77,8 @@ export const TourCard: React.FC<{ tour: TourProps }> = ({ tour }) => {
           src={tour.imageUrl || "/media/tours/city-tour-cusco/01.jpg"}
           alt={tour.title}
           fill
+          priority={priority}
+          fetchPriority={priority ? "high" : undefined}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
         />

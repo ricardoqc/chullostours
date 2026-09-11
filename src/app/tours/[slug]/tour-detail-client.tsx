@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import {
   FaCheckCircle,
   FaTimesCircle,
@@ -10,7 +10,6 @@ import {
   FaCheck,
   FaQuestionCircle,
 } from "react-icons/fa";
-import { useSearchParams } from "next/navigation";
 import { Tour } from "@/types/tour";
 import { trackViewItem } from "@/lib/analytics";
 import {
@@ -37,6 +36,7 @@ import { HotelSelector } from "@/components/tours/HotelSelector";
 import { EntradasIncluidasBanner } from "@/components/tours/EntradasIncluidasBanner";
 import { TourItineraryMap } from "@/components/tours/map/TourItineraryMap";
 import { TourReservationProvider } from "@/components/tours/TourReservationProvider";
+import { ReservedBanner } from "@/components/tours/ReservedBanner";
 import { useDisplayCurrency } from "@/components/layout/MarketProvider";
 import { resolveTourMapStops } from "@/lib/places";
 import type { TourImagen } from "@/types/tour";
@@ -54,16 +54,8 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({
 }) => {
   const { currency } = useDisplayCurrency();
   const [openFaq, setOpenFaq] = useState<number | null>(0);
-  const [showReservedBanner, setShowReservedBanner] = useState(false);
-  const searchParams = useSearchParams();
 
   useEffect(() => {
-    const fromQuery = searchParams.get("reservado") === "1";
-    const fromSession =
-      typeof window !== "undefined" &&
-      sessionStorage.getItem(`chullos_reserved_${tour.slug}`) === "1";
-    setShowReservedBanner(fromQuery || fromSession);
-
     // Track GA4/GTM view_item
     if (tour && tour.slug) {
       trackViewItem({
@@ -74,7 +66,7 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({
         category: tour.atributos?.tipo_tour || "Tour",
       });
     }
-  }, [searchParams, tour.slug, tour]);
+  }, [tour]);
 
   const galleryItems = galleryItemsProp ?? getGalleryItems(tour);
   const durationDays = parseDurationDays(tour.atributos?.duracion);
@@ -94,11 +86,9 @@ export const TourDetailClient: React.FC<TourDetailClientProps> = ({
   return (
     <TourReservationProvider tour={tour} defaultSelection={{ currency }}>
     <div className="flex flex-col gap-0 pb-28 sm:pb-24 bg-white">
-      {showReservedBanner && (
-        <div className="bg-emerald-600 text-white text-center text-xs sm:text-sm font-bold py-2.5 px-4">
-          Ya reservaste esta experiencia — un asesor te contactará pronto.
-        </div>
-      )}
+      <Suspense fallback={null}>
+        <ReservedBanner tourSlug={tour.slug} />
+      </Suspense>
       {/* 1. Contained Bento Grid Hero Header (Crisp & High Resolution) */}
       <TourHero
         tour={tour}

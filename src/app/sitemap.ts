@@ -27,39 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }));
 
-  const tourUrlsPe: MetadataRoute.Sitemap = tours
-    .filter((tour) => tour && tour.slug)
-    .map((tour) => ({
-      url: `${baseUrl}/pe/tours/${tour.slug}/`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    }));
-
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}/`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/pe/`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/pe/tours/`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/tienda/`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
-      priority: 0.9,
     },
     {
       url: `${baseUrl}/acerca-de-chullos-tours/`,
@@ -111,5 +84,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [...staticPages, ...tourUrls, ...tourUrlsPe, ...blogUrls];
+  return [...staticPages, ...tourUrls, ...blogUrls];
 }

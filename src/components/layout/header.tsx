@@ -30,6 +30,7 @@ export const Header: React.FC = () => {
     { name: t("header.nav.machuPicchu"), href: "/machu-picchu-2026", hasDropdown: false },
     { name: t("header.nav.customTrip"), href: "/viaje-personalizado", hasDropdown: false },
     { name: t("header.nav.catalog"), href: "/tours", hasDropdown: false },
+    { name: "Destinos", href: "/destinos", hasDropdown: false },
     { name: "Blog", href: "/blog", hasDropdown: false },
     { name: t("header.nav.aboutUs"), href: "/acerca-de-chullos-tours", hasDropdown: false },
     { name: t("header.nav.contact"), href: "/contacto-chullos", hasDropdown: false },

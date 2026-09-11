@@ -100,6 +100,7 @@ export async function POST(req: NextRequest) {
       email: body.email,
       phone: body.dialCode ? `${body.dialCode} ${body.phone}` : body.phone,
       country: body.country,
+      dni: body.dni,
       hotelOption: selectedHotel?.nombre || body.hotelOption,
       hotelName: body.hotelName,
       includeHuaynaPicchu: body.includeHuaynaPicchu,

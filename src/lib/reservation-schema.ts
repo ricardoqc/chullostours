@@ -17,6 +17,7 @@ export const reservationSubmitSchema = z.object({
   country: z.string().optional(),
   countryCode: z.string().optional(),
   dialCode: z.string().optional(),
+  dni: z.string().optional(),
   website: z.string().optional(),
   fillCompanions: z.boolean().optional(),
   companions: z

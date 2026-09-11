@@ -104,6 +104,7 @@ export function TourHeroGallery({ items, tourTitle }: TourHeroGalleryProps) {
               fallbackIndex={0}
               sizes="(max-width: 768px) 100vw, 55vw"
               priority
+              fetchPriority="high"
               className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
             />
             <span className="absolute bottom-3 left-3 right-3 z-[1] text-left text-xs font-semibold text-white drop-shadow-md line-clamp-2 pointer-events-none">

@@ -137,6 +137,12 @@ export const StepReview: React.FC<StepReviewProps> = ({
               <span>{formData.country}</span>
             </div>
           )}
+          {formData.dni && (
+            <div className="flex items-center gap-1.5">
+              <FaUser className="w-3 h-3 text-[#6b0014] shrink-0" />
+              <span>DNI: {formData.dni}</span>
+            </div>
+          )}
         </div>
         </div>
 

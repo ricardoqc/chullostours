@@ -95,15 +95,10 @@ export const WhyChooseUsSection: React.FC = () => {
 
           {/* Actions */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <Link href="/viaje-personalizado">
-              <Button size="lg" className="bg-[#6b0014] hover:bg-[#850019] text-white font-title font-bold text-xs sm:text-sm">
-                Diseñar Mi Itinerario a Medida
-                <ArrowRight className="w-4 h-4 ml-1.5" />
-              </Button>
-            </Link>
             <Link href="/acerca-de-chullos-tours">
-              <Button variant="outline" size="lg" className="border-slate-300 hover:border-[#6b0014] text-slate-700 font-title font-bold text-xs sm:text-sm">
+              <Button size="lg" className="bg-[#6b0014] hover:bg-[#850019] text-white font-title font-bold text-xs sm:text-sm">
                 Conoce Nuestra Historia
+                <ArrowRight className="w-4 h-4 ml-1.5" />
               </Button>
             </Link>
           </div>

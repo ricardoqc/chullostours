@@ -22,6 +22,8 @@ interface ToursClientProps {
   initialTours: Tour[];
 }
 
+const PAGE_SIZE = 12;
+
 function syncUrl(params: {
   destino: string;
   tipo: string[];
@@ -45,6 +47,7 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
   const [dayRange, setDayRange] = useState<[number, number]>([1, 30]);
   const [budgetLevel, setBudgetLevel] = useState<BudgetLevel>("all");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -117,6 +120,26 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
       return true;
     });
   }, [initialTours, searchQuery, selectedDestination, selectedProfiles, dayRange, budgetLevel]);
+
+  // Un cambio de filtro vuelve a arrancar la paginación — evita dejar al visitante
+  // "hundido" en la página 3 de un resultado que ya no tiene tantos tours. Ajustado
+  // durante el render (no en un efecto) siguiendo el patrón de React para "resetear
+  // estado cuando cambia un valor derivado", sin un ciclo extra de render.
+  const filterSignature = [
+    searchQuery,
+    selectedDestination,
+    selectedProfiles.join(","),
+    dayRange.join(","),
+    budgetLevel,
+  ].join("|");
+  const [prevFilterSignature, setPrevFilterSignature] = useState(filterSignature);
+  if (filterSignature !== prevFilterSignature) {
+    setPrevFilterSignature(filterSignature);
+    setVisibleCount(PAGE_SIZE);
+  }
+
+  const visibleTours = filteredTours.slice(0, visibleCount);
+  const hasMoreTours = visibleCount < filteredTours.length;
 
   const adaptTourToCardProps = (tour: Tour): TourProps =>
     toTourCardProps(tour, { currency });
@@ -199,11 +222,32 @@ export const ToursClient: React.FC<ToursClientProps> = ({ initialTours }) => {
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                {filteredTours.map((tour) => (
-                  <TourCard key={tour.slug} tour={adaptTourToCardProps(tour)} />
-                ))}
-              </div>
+              <>
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {visibleTours.map((tour, index) => (
+                    <TourCard
+                      key={tour.slug}
+                      tour={adaptTourToCardProps(tour)}
+                      priority={index < 2}
+                    />
+                  ))}
+                </div>
+
+                {hasMoreTours && (
+                  <div className="flex flex-col items-center gap-2 pt-2">
+                    <p className="text-xs text-slate-500">
+                      Viendo {visibleTours.length} de {filteredTours.length} resultados
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+                      className="bg-white border-2 border-[#6b0014] text-[#6b0014] text-sm font-bold px-6 py-3 rounded-xl hover:bg-[#6b0014] hover:text-white transition-colors cursor-pointer"
+                    >
+                      Ver más tours
+                    </button>
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>
