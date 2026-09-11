@@ -132,7 +132,7 @@ export default function MachuPicchuPromoPage() {
               </Button>
             </Link>
             <Link href="/viaje-personalizado/">
-              <Button variant="outline" size="lg" className="border-white/40 text-white hover:bg-white/10">
+              <Button variant="outline-white" size="lg">
                 Armar viaje a medida
               </Button>
             </Link>
@@ -297,7 +297,7 @@ export default function MachuPicchuPromoPage() {
             </p>
           </div>
           <Link href="/viaje-personalizado/">
-            <Button variant="primary" size="lg" className="bg-[#ffc000] text-[#1c1c1c] hover:bg-amber-400">
+            <Button variant="secondary" size="lg">
               Diseñar mi viaje
             </Button>
           </Link>

@@ -342,7 +342,7 @@ export default function Home() {
 
               <div className="pt-2">
                 <Link href="/viaje-personalizado">
-                  <Button variant="secondary" size="lg" className="w-full sm:w-auto font-title font-bold text-white shadow-lg hover:scale-105 transition-all">
+                  <Button variant="secondary" size="lg" className="w-full sm:w-auto font-title font-bold text-slate-900 shadow-lg hover:scale-105 transition-all">
                     Diseñar Mi Viaje Ahora →
                   </Button>
                 </Link>
