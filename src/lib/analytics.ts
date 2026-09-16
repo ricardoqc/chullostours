@@ -16,10 +16,12 @@ declare global {
 }
 
 /**
- * Safe helper to push events to window.dataLayer
+ * Safe helper to push events to window.dataLayer.
+ * Skips admin routes so CMS usage does not pollute public traffic metrics.
  */
 export function pushToDataLayer(event: string, params: Record<string, unknown> = {}): void {
   if (typeof window === "undefined") return;
+  if (window.location.pathname.startsWith("/admin")) return;
 
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
