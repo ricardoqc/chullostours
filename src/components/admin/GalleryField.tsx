@@ -10,6 +10,7 @@ import {
   Plus,
   Star,
   Trash2,
+  Upload,
 } from "lucide-react";
 import { TourImage } from "@/components/ui/TourImage";
 import type { TourDraft } from "@/lib/admin/tour-schema";
@@ -25,8 +26,55 @@ type GalleryFieldProps = {
   onMainChange: (src: string) => void;
 };
 
-type MediaFile = { src: string; name: string; folder?: string; usedBy?: string[] };
+type MediaFile = { src: string; name: string; folder?: string; usedBy?: string[]; kind?: string };
 type MediaFolder = { name: string; folder: string };
+
+function altFromName(name: string) {
+  const base = name.replace(/\.[^.]+$/, "").replace(/^[a-f0-9]{8}-/i, "");
+  const cleaned = base.replace(/[-_]+/g, " ").trim();
+  return cleaned || "Foto del tour";
+}
+
+/** Inserta fotos subidas/elegidas en la galería del tour (rellena huecos y agrega el resto). */
+function mergeUploadsIntoGallery(
+  current: GalleryItem[],
+  uploaded: Array<{ src: string; name: string }>,
+  pickerIndex: number | null
+): GalleryItem[] {
+  const existing = new Set(current.map((item) => item.src).filter(Boolean));
+  const unique = uploaded.filter((file) => file.src && !existing.has(file.src));
+  if (unique.length === 0) return current;
+
+  const next = current.map((item) => ({ ...item }));
+  const queue = [...unique];
+
+  if (pickerIndex !== null && pickerIndex < next.length && queue.length > 0) {
+    const first = queue.shift()!;
+    next[pickerIndex] = {
+      ...next[pickerIndex],
+      src: first.src,
+      alt: next[pickerIndex].alt?.trim() || altFromName(first.name),
+    };
+  }
+
+  for (let i = 0; i < next.length && queue.length > 0; i += 1) {
+    if (!next[i].src?.trim()) {
+      const file = queue.shift()!;
+      next[i] = {
+        ...next[i],
+        src: file.src,
+        alt: next[i].alt?.trim() || altFromName(file.name),
+      };
+    }
+  }
+
+  for (const file of queue) {
+    next.push({ src: file.src, alt: altFromName(file.name) });
+  }
+
+  const withSrc = next.filter((item) => Boolean(item.src?.trim()));
+  return withSrc.length > 0 ? withSrc : [{ src: "", alt: "" }];
+}
 
 export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: GalleryFieldProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -43,6 +91,8 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
   const [uploadNote, setUploadNote] = useState("");
   const fileInputRef = useRef<HTMLInputElement>(null);
   const folderInputRef = useRef<HTMLInputElement>(null);
+  const directFileRef = useRef<HTMLInputElement>(null);
+  const directFolderRef = useRef<HTMLInputElement>(null);
 
   const loadBrowse = (nextFolder: string) => {
     fetch(adminApi(`/api/admin/media?folder=${encodeURIComponent(nextFolder)}`))
@@ -50,7 +100,7 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
       .then((data) => {
         if (data.success) {
           setFolders(data.folders || []);
-          setFiles((data.files || []).filter((file: MediaFile & { kind?: string }) => file.kind !== "video"));
+          setFiles((data.files || []).filter((file: MediaFile) => file.kind !== "video"));
           setBrowseFolder(nextFolder);
         }
       })
@@ -115,6 +165,21 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
     onChange(next);
   };
 
+  const applyUploadsToGallery = (
+    uploaded: Array<{ src: string; name: string }>,
+    slotIndex: number | null,
+    options?: { closeDialog?: boolean }
+  ) => {
+    if (uploaded.length === 0) return 0;
+    const before = new Set(items.map((item) => item.src).filter(Boolean));
+    const next = mergeUploadsIntoGallery(items, uploaded, slotIndex);
+    const added = next.filter((item) => item.src && !before.has(item.src)).length;
+    onChange(next);
+    if (!mainSrc && next[0]?.src) onMainChange(next[0].src);
+    if (options?.closeDialog) dialogRef.current?.close();
+    return added;
+  };
+
   const openPicker = (index: number) => {
     setPickerIndex(index);
     setUploadError("");
@@ -126,22 +191,32 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
     dialogRef.current?.showModal();
   };
 
-  const applySrc = (src: string) => {
-    if (pickerIndex === null) return;
-    updateItem(pickerIndex, { src });
+  const applySrc = (src: string, name = "") => {
+    if (pickerIndex === null) {
+      applyUploadsToGallery([{ src, name: name || src.split("/").pop() || "foto" }], null);
+      return;
+    }
+    updateItem(pickerIndex, {
+      src,
+      alt: items[pickerIndex]?.alt?.trim() || altFromName(name || src.split("/").pop() || "foto"),
+    });
     if (!mainSrc || items.length === 0) onMainChange(src);
     dialogRef.current?.close();
   };
 
-  const uploadSelected = async (selected: FileList | null, preservePaths: boolean) => {
+  const uploadSelected = async (
+    selected: FileList | null,
+    preservePaths: boolean,
+    options?: { slotIndex?: number | null; fromDialog?: boolean }
+  ) => {
     if (!selected || selected.length === 0) return;
     const list = Array.from(selected);
+    const slotIndex = options?.slotIndex !== undefined ? options.slotIndex : pickerIndex;
     setUploading(true);
     setUploadError("");
     setUploadNote("");
-    let lastSrc = "";
+    const uploaded: Array<{ src: string; name: string }> = [];
     let reused = 0;
-    let ok = 0;
     try {
       for (const file of list) {
         const body = new FormData();
@@ -158,23 +233,28 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
           setUploadError(data.error || "No se pudo subir.");
           continue;
         }
-        ok += 1;
         if (data.reused) reused += 1;
-        if (data.file?.src) lastSrc = data.file.src;
+        if (data.file?.src) {
+          uploaded.push({ src: data.file.src, name: data.file.name || file.name });
+        }
       }
+
       loadBrowse(browseFolder || "library");
       refreshReusable();
-      if (ok > 0) {
+      setMode("all");
+
+      const added = applyUploadsToGallery(uploaded, slotIndex ?? null, {
+        closeDialog: Boolean(options?.fromDialog) && uploaded.length > 0,
+      });
+
+      if (uploaded.length > 0) {
         setUploadNote(
-          reused === ok
-            ? "Foto(s) ya existían; se reutilizaron sin duplicar."
-            : reused > 0
-              ? `${ok} listas (${reused} reutilizadas).`
-              : `${ok} imagen(es) subida(s).`
+          `${added} foto(s) agregada(s) a la galería del tour` +
+            (reused > 0 ? ` (${reused} reutilizada(s) sin duplicar en disco).` : ".") +
+            " Guarda el tour para publicarlas."
         );
-      }
-      if (pickerIndex !== null && lastSrc && list.length === 1) {
-        applySrc(lastSrc);
+      } else if (!uploadError) {
+        setUploadError("No se pudo obtener la ruta de ninguna imagen.");
       }
     } catch {
       setUploadError("Error de red al subir.");
@@ -182,7 +262,19 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
       setUploading(false);
       if (fileInputRef.current) fileInputRef.current.value = "";
       if (folderInputRef.current) folderInputRef.current.value = "";
+      if (directFileRef.current) directFileRef.current.value = "";
+      if (directFolderRef.current) directFolderRef.current.value = "";
     }
+  };
+
+  const addVisibleToGallery = () => {
+    const batch = visibleFiles.map((file) => ({ src: file.src, name: file.name }));
+    const added = applyUploadsToGallery(batch, pickerIndex);
+    setUploadNote(
+      added > 0
+        ? `${added} foto(s) agregada(s) a la galería. Guarda el tour para publicarlas.`
+        : "Esas fotos ya estaban en la galería."
+    );
   };
 
   const crumbs = browseFolder.split("/").filter(Boolean);
@@ -191,9 +283,54 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
     <fieldset className="space-y-4">
       <legend className="text-sm font-bold text-slate-800">Galería y portada</legend>
       <p className="text-xs text-slate-500">
-        Las fotos viven en la mediateca compartida <code className="mx-1">/media/library/</code>.
-        Puedes subir carpetas, navegar subcarpetas y reutilizar sin duplicar. Marca una como portada.
+        Sube fotos o carpetas y se añaden solas a la galería de este tour. Luego pulsa{" "}
+        <strong>Guardar</strong> para publicarlas en la web.
       </p>
+
+      <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-4 space-y-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <Upload className="w-4 h-4 text-[#6b0014]" aria-hidden="true" />
+          <p className="text-sm font-bold text-slate-800">Subir e incluir en esta galería</p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <label
+            htmlFor="gallery-direct-files"
+            className={`admin-ghost-btn cursor-pointer ${uploading ? "pointer-events-none opacity-60" : ""}`}
+          >
+            Elegir archivos
+          </label>
+          <label
+            htmlFor="gallery-direct-folder"
+            className={`admin-ghost-btn cursor-pointer ${uploading ? "pointer-events-none opacity-60" : ""}`}
+          >
+            <FolderOpen className="w-3.5 h-3.5" aria-hidden="true" />
+            Subir carpeta
+          </label>
+        </div>
+        <input
+          ref={directFileRef}
+          id="gallery-direct-files"
+          type="file"
+          multiple
+          accept="image/jpeg,image/png,image/webp,image/avif,image/gif,.jpg,.jpeg,.png,.webp,.avif,.gif"
+          className="sr-only"
+          disabled={uploading}
+          onChange={(event) => void uploadSelected(event.target.files, false, { slotIndex: null })}
+        />
+        <input
+          ref={directFolderRef}
+          id="gallery-direct-folder"
+          type="file"
+          multiple
+          className="sr-only"
+          disabled={uploading}
+          onChange={(event) => void uploadSelected(event.target.files, true, { slotIndex: null })}
+          {...({ webkitdirectory: "", directory: "" } as Record<string, string>)}
+        />
+        {uploading ? <p className="text-xs text-slate-500">Subiendo e incluyendo en la galería…</p> : null}
+        {uploadError ? <p className="text-xs text-red-600">{uploadError}</p> : null}
+        {uploadNote ? <p className="text-xs text-emerald-700">{uploadNote}</p> : null}
+      </div>
 
       <div className="space-y-4">
         {items.map((item, index) => {
@@ -208,7 +345,15 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
             >
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-slate-100 border border-slate-200">
                 {item.src ? (
-                  <TourImage src={item.src} alt={item.alt || "Vista previa"} fill className="object-cover" sizes="140px" fallbackIndex={index} />
+                  <TourImage
+                    src={item.src}
+                    alt={item.alt || "Vista previa"}
+                    fill
+                    className="object-cover"
+                    sizes="140px"
+                    fallbackIndex={index}
+                    unprotected
+                  />
                 ) : (
                   <div className="absolute inset-0 grid place-items-center text-slate-400 text-xs">Sin ruta</div>
                 )}
@@ -234,9 +379,12 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
                     className="admin-input font-mono text-xs"
                     aria-describedby={`gallery-src-status-${index}`}
                   />
-                  <p id={`gallery-src-status-${index}`} className={`text-[11px] mt-1 ${exists === false ? "text-red-600" : "text-slate-500"}`}>
+                  <p
+                    id={`gallery-src-status-${index}`}
+                    className={`text-[11px] mt-1 ${exists === false ? "text-red-600" : "text-slate-500"}`}
+                  >
                     {exists === false
-                      ? "No se encontró el archivo en /public. Revisa la ruta."
+                      ? "No se encontró el archivo. Revisa la ruta o vuelve a subirla."
                       : exists
                         ? "Archivo encontrado o URL externa."
                         : "Comprobando ruta…"}
@@ -289,7 +437,12 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
                   <ArrowUp className="w-4 h-4" aria-hidden="true" />
                   Subir
                 </button>
-                <button type="button" onClick={() => move(index, 1)} className="admin-ghost-btn" disabled={index === items.length - 1}>
+                <button
+                  type="button"
+                  onClick={() => move(index, 1)}
+                  className="admin-ghost-btn"
+                  disabled={index === items.length - 1}
+                >
                   <ArrowDown className="w-4 h-4" aria-hidden="true" />
                   Bajar
                 </button>
@@ -297,11 +450,11 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
                   type="button"
                   onClick={() => {
                     const next = items.filter((_, i) => i !== index);
-                    onChange(next);
+                    onChange(next.length > 0 ? next : [{ src: "", alt: "" }]);
                     if (isMain && next[0]?.src) onMainChange(next[0].src);
                   }}
                   className="admin-ghost-btn hover:text-red-600"
-                  disabled={items.length <= 1}
+                  disabled={items.length <= 1 && !item.src}
                 >
                   <Trash2 className="w-4 h-4" aria-hidden="true" />
                   Quitar
@@ -318,12 +471,15 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
         className="inline-flex items-center gap-1.5 text-xs font-bold text-[#6b0014] hover:underline"
       >
         <Plus className="w-3.5 h-3.5" aria-hidden="true" />
-        Agregar imagen
+        Agregar fila vacía
       </button>
 
       <dialog ref={dialogRef} className="admin-dialog rounded-2xl p-0 w-[min(780px,calc(100vw-2rem))] backdrop:bg-black/40">
         <form method="dialog" className="p-5 space-y-4">
           <h3 className="text-lg font-black text-slate-900 font-title">Mediateca compartida</h3>
+          <p className="text-xs text-slate-500">
+            Al subir, las fotos se agregan a la galería de este tour. También puedes elegir fotos ya existentes.
+          </p>
 
           <div className="flex flex-wrap gap-2">
             <button
@@ -336,9 +492,15 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
             <button
               type="button"
               className={`admin-ghost-btn ${mode === "all" ? "border-[#6b0014] text-[#6b0014]" : ""}`}
-              onClick={() => setMode("all")}
+              onClick={() => {
+                setMode("all");
+                refreshReusable();
+              }}
             >
               Todas las fotos
+            </button>
+            <button type="button" className="admin-ghost-btn" onClick={addVisibleToGallery} disabled={visibleFiles.length === 0}>
+              Añadir visibles a la galería
             </button>
           </div>
 
@@ -361,7 +523,7 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
           <div className="grid gap-2 sm:grid-cols-2">
             <div className="grid gap-2">
               <label htmlFor="gallery-upload" className="admin-label">
-                Subir archivos a /media/{browseFolder}/
+                Subir archivos
               </label>
               <input
                 ref={fileInputRef}
@@ -371,12 +533,14 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
                 accept="image/jpeg,image/png,image/webp,image/avif,image/gif,.jpg,.jpeg,.png,.webp,.avif,.gif"
                 className="admin-input"
                 disabled={uploading}
-                onChange={(event) => void uploadSelected(event.target.files, false)}
+                onChange={(event) =>
+                  void uploadSelected(event.target.files, false, { fromDialog: true, slotIndex: pickerIndex })
+                }
               />
             </div>
             <div className="grid gap-2">
               <label htmlFor="gallery-upload-folder" className="admin-label">
-                Subir carpeta (conserva estructura)
+                Subir carpeta
               </label>
               <input
                 ref={folderInputRef}
@@ -385,7 +549,9 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
                 multiple
                 className="admin-input"
                 disabled={uploading}
-                onChange={(event) => void uploadSelected(event.target.files, true)}
+                onChange={(event) =>
+                  void uploadSelected(event.target.files, true, { fromDialog: true, slotIndex: pickerIndex })
+                }
                 {...({ webkitdirectory: "", directory: "" } as Record<string, string>)}
               />
             </div>
@@ -426,20 +592,18 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
           ) : null}
 
           {visibleFiles.length === 0 ? (
-            <p className="text-sm text-slate-500">
-              No hay imágenes aquí. Sube archivos/carpeta o navega a otra carpeta.
-            </p>
+            <p className="text-sm text-slate-500">No hay imágenes aquí. Sube archivos/carpeta o navega a otra carpeta.</p>
           ) : (
             <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-80 overflow-auto">
               {visibleFiles.map((file) => (
                 <li key={file.src}>
                   <button
                     type="button"
-                    onClick={() => applySrc(file.src)}
+                    onClick={() => applySrc(file.src, file.name)}
                     className="w-full text-left rounded-xl border border-slate-200 overflow-hidden hover:border-[#6b0014]"
                   >
                     <div className="relative aspect-[4/3] bg-slate-100">
-                      <TourImage src={file.src} alt={file.name} fill className="object-cover" sizes="180px" />
+                      <TourImage src={file.src} alt={file.name} fill className="object-cover" sizes="180px" unprotected />
                     </div>
                     <span className="block px-2 pt-2 text-[11px] font-mono text-slate-600 truncate">{file.name}</span>
                     <span className="block px-2 pb-2 text-[10px] text-slate-400 truncate">
