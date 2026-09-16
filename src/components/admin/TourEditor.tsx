@@ -443,7 +443,13 @@ export function TourEditor({ slug, file, initialDraft }: TourEditorProps) {
             items={draft.galeria}
             mainSrc={draft.imagen_principal || draft.galeria[0]?.src || ""}
             onChange={(galeria) => patch("galeria", galeria)}
-            onMainChange={(src) => patch("imagen_principal", src)}
+            onMainChange={(src) => {
+              setDraft((prev) => ({
+                ...prev,
+                imagen_principal: src,
+                seo: { ...prev.seo, og_image: src },
+              }));
+            }}
           />
         </section>
       )}

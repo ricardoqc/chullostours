@@ -204,6 +204,19 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
     dialogRef.current?.close();
   };
 
+  const setAsMain = (index: number) => {
+    const item = items[index];
+    if (!item?.src) return;
+    onMainChange(item.src);
+    if (index !== 0) {
+      const next = [...items];
+      const [chosen] = next.splice(index, 1);
+      next.unshift(chosen);
+      onChange(next);
+    }
+    setUploadNote("Portada actualizada. Guarda el tour para verla en la web.");
+  };
+
   const uploadSelected = async (
     selected: FileList | null,
     preservePaths: boolean,
@@ -426,7 +439,7 @@ export function GalleryField({ slug, items, mainSrc, onChange, onMainChange }: G
                 </button>
                 <button
                   type="button"
-                  onClick={() => item.src && onMainChange(item.src)}
+                  onClick={() => setAsMain(index)}
                   className="admin-ghost-btn"
                   disabled={!item.src || isMain}
                 >

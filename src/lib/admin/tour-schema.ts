@@ -243,13 +243,13 @@ export function applyDraftToTour(existing: Tour, draft: TourDraft): Tour {
         og_title: draft.metas.og_title,
         og_description: draft.seo.meta_description,
         og_url: draft.metas.og_url,
-        og_image: draft.seo.og_image || mainSrc || existing.seo?.open_graph?.og_image,
+        og_image: mainSrc || draft.seo.og_image || existing.seo?.open_graph?.og_image,
       },
       twitter_card: {
         ...existing.seo?.twitter_card,
         title: draft.seo.meta_title,
         description: draft.seo.meta_description,
-        image: draft.seo.og_image || mainSrc || existing.seo?.twitter_card?.image,
+        image: mainSrc || draft.seo.og_image || existing.seo?.twitter_card?.image,
       },
     },
   };

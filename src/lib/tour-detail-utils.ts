@@ -75,6 +75,15 @@ export function getGalleryItems(tour: Tour): TourImagen[] {
     ];
   }
 
+  // Portada explícita primero (cards, hero y OG)
+  if (tour.imagen_principal) {
+    const mainIdx = valid.findIndex((item) => item.src === tour.imagen_principal);
+    if (mainIdx > 0) {
+      const [main] = valid.splice(mainIdx, 1);
+      valid.unshift(main);
+    }
+  }
+
   return valid;
 }
 
