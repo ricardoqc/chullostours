@@ -11,9 +11,16 @@
     "data:precio-pen": "node scripts/apply-precio-pen.mjs",
     "data:hotel-imagenes": "node scripts/enrich-hotel-imagenes.mjs",
     "media:scaffold": "node scripts/scaffold-media-folders.mjs",
-    "export:seo-excel": "node scripts/generate-meta-excel.mjs"
+    "export:seo-excel": "node scripts/generate-meta-excel.mjs",
+    "blog:migrate-json": "node scripts/migrate-blog-md-to-json.mjs"
   },
   "dependencies": {
+    "@tiptap/extension-image": "^3.31.3",
+    "@tiptap/extension-link": "^3.31.3",
+    "@tiptap/extension-placeholder": "^3.31.3",
+    "@tiptap/pm": "^3.31.3",
+    "@tiptap/react": "^3.31.3",
+    "@tiptap/starter-kit": "^3.31.3",
     "embla-carousel": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "leaflet": "^1.9.4",

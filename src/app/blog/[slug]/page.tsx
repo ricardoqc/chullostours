@@ -56,7 +56,8 @@ export async function generateMetadata({ params }: BlogPostProps) {
     return { title: "Post no encontrado | Chullos Tours" };
   }
 
-  const canonicalUrl = `https://chullostours.com/blog/${post.slug}`;
+  const canonicalUrl = post.seo.canonical || `https://chullostours.com/blog/${post.slug}`;
+  const ogImage = post.seo.og_image || post.featured_image;
 
   return {
     title: post.seo.title || `${post.title} | Chullos Tours`,
@@ -72,12 +73,14 @@ export async function generateMetadata({ params }: BlogPostProps) {
       type: "article",
       publishedTime: post.date,
       modifiedTime: post.modified || post.date,
-      authors: ["Alexandra Gamboa", "Chullos Tours"],
+      authors: [post.author || "Chullos Tours"],
+      images: ogImage ? [{ url: ogImage }] : undefined,
     },
     twitter: {
       card: "summary_large_image",
       title: post.seo.title || post.title,
       description: post.seo.description || post.excerpt,
+      images: ogImage ? [ogImage] : undefined,
     },
   };
 }
