@@ -50,36 +50,24 @@ export function publicSrcToRelative(src: string): string | null {
 }
 
 /**
- * Decide si servir el binario claro o el .enc.
- * - Vista embebida (img/video same-origin) → claro
- * - Admin / firma view → claro
- * - Abrir URL / descargar / curl → cifrado
+ * Por defecto sirve la imagen clara (Next Image, SSR, <img>).
+ * Solo cifra en descarga explícita o al abrir la URL en una pestaña.
  */
 export function shouldServeClearMedia(request: Request, relativePath: string): boolean {
   const url = new URL(request.url);
+
+  // Descarga forzada desde el bloqueador de clic derecho / Ctrl+S
   if (url.searchParams.get("download") === "1") return false;
 
   const view = url.searchParams.get("view");
   if (view && verifyMediaView(relativePath, view)) return true;
 
   const dest = (request.headers.get("sec-fetch-dest") || "").toLowerCase();
-  const site = (request.headers.get("sec-fetch-site") || "").toLowerCase();
   const mode = (request.headers.get("sec-fetch-mode") || "").toLowerCase();
 
-  // Navegación directa a la URL → archivo cifrado
+  // Abrir /media/... en el navegador como documento
   if (dest === "document" || mode === "navigate") return false;
 
-  // <img>, <video>, picture, CSS, next/image optimizer suele pedir como image
-  if (dest === "image" || dest === "video" || dest === "audio") {
-    if (site === "same-origin" || site === "same-site" || site === "none") return true;
-  }
-
-  // Next.js image optimizer (fetch servidor, a menudo sin Sec-Fetch-Dest)
-  const accept = request.headers.get("accept") || "";
-  const ua = request.headers.get("user-agent") || "";
-  if (!dest && (accept.includes("image/") || ua.includes("Next.js") || ua.includes("node"))) {
-    return true;
-  }
-
-  return false;
+  // Todo lo demás (img, next/image optimizer, fetch servidor, CMS) → claro
+  return true;
 }

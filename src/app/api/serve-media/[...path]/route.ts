@@ -94,7 +94,6 @@ export async function GET(request: NextRequest, context: RouteContext) {
       "Cache-Control": "public, max-age=31536000, immutable",
       "Content-Disposition": `inline; filename="${fileName.replace(/"/g, "")}"`,
       "X-Content-Type-Options": "nosniff",
-      "Cross-Origin-Resource-Policy": "same-site",
     },
   });
 }

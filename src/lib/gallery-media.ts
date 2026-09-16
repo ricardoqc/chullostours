@@ -3,9 +3,16 @@ import path from "path";
 import type { Tour, TourImagen } from "@/types/tour";
 import { getGalleryItems } from "@/lib/tour-detail-utils";
 import { galleryFallbackForIndex } from "@/lib/gallery-fallbacks";
+import { publicSrcExists } from "@/lib/admin/media-store";
 
+/**
+ * Comprueba assets en /public y también en el volumen MEDIA_ROOT (/media).
+ * En Coolify las fotos del CMS viven fuera de public/; no deben caer a Unsplash.
+ */
 export function publicAssetExists(src: string): boolean {
   if (!src.startsWith("/")) return true;
+  if (publicSrcExists(src)) return true;
+
   const relative = src.replace(/^\//, "").split("?")[0];
   return fs.existsSync(path.join(process.cwd(), "public", relative));
 }
