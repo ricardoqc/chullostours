@@ -2,19 +2,29 @@
   "version": 1,
   "basePath": "/public",
   "conventions": {
+    "library": {
+      "root": "media/library",
+      "naming": {
+        "{hash8}-{slug}.avif": "Asset canónico compartido (SHA-256). Tours y destinos referencian src, no copian archivo."
+      },
+      "formats": ["jpg", "jpeg", "webp", "avif", "png", "gif"],
+      "urlPrefix": "/media/library/",
+      "notes": "Única carpeta de subida para fotos de tours/destinos. Deduplicación por hash en data/media-index.json."
+    },
     "tours": {
       "root": "media/tours/{slug}",
       "naming": {
-        "01.jpg": "Hero principal (card + detalle)",
-        "02.jpg": "Galería",
-        "03.jpg": "Galería",
-        "04.jpg": "Galería",
-        "05.jpg": "Galería (también OG frecuente)",
+        "01.jpg": "Hero principal (card + detalle) — legacy",
+        "02.jpg": "Galería — legacy",
+        "03.jpg": "Galería — legacy",
+        "04.jpg": "Galería — legacy",
+        "05.jpg": "Galería (también OG frecuente) — legacy",
         "og/og.jpg": "Open Graph / redes (opcional, alternativa a 05.jpg)",
         "gallery/": "Extras sin renumerar hero (opcional)"
       },
       "formats": ["jpg", "jpeg", "webp", "avif"],
-      "urlPrefix": "/media/tours/{slug}/"
+      "urlPrefix": "/media/tours/{slug}/",
+      "notes": "Legacy. Nuevas subidas van a media/library y se referencian desde el JSON del tour."
     },
     "hoteles": {
       "root": "hoteles/{hotelSlug}",

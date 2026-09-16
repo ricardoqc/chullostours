@@ -3,6 +3,10 @@
  * Ver data/media-structure.json y public/MEDIA-ESTRUCTURA.txt
  */
 
+export function libraryImagePath(file: string): string {
+  return `/media/library/${file}`;
+}
+
 export function tourImagePath(slug: string, file = "01.jpg"): string {
   return `/media/tours/${slug}/${file}`;
 }

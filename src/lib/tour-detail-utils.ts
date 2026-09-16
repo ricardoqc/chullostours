@@ -3,6 +3,24 @@ import { parseDurationDays, estimateTourPrice } from './tour-filters';
 
 export { parseDurationDays, estimateTourPrice };
 
+/** Portada del tour: imagen_principal o primera de galería. */
+export function getTourMainImage(tour: Tour): TourImagen | undefined {
+  const items = tour.galeria || [];
+  if (tour.imagen_principal) {
+    const match = items.find((item) => item.src === tour.imagen_principal);
+    if (match) return match;
+    return {
+      src: tour.imagen_principal,
+      alt: `${tour.titulo} - imagen principal`,
+    };
+  }
+  return items[0];
+}
+
+export function getTourMainImageSrc(tour: Tour, fallback?: string): string {
+  return getTourMainImage(tour)?.src || fallback || "/img/placeholder.jpg";
+}
+
 /**
  * Filter out tracking pixels and tiny logo badges from tour gallery images.
  * Returns src URLs (legacy) — prefer getGalleryItems for alt text.

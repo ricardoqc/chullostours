@@ -60,6 +60,7 @@ export const tourDraftSchema = z.object({
   incluye: z.array(z.string()),
   no_incluye: z.array(z.string()),
   recomendaciones: z.array(z.string()),
+  imagen_principal: z.string().optional(),
   galeria: z.array(galleryItemSchema).min(1, "Agrega al menos una imagen."),
   itinerario: z.array(itineraryDaySchema).min(1),
   faqs: z.array(faqSchema),
@@ -133,6 +134,7 @@ export function tourToDraft(tour: Tour): TourDraft {
     incluye: tour.incluye || [],
     no_incluye: tour.no_incluye || [],
     recomendaciones: tour.recomendaciones || [],
+    imagen_principal: tour.imagen_principal || tour.galeria?.[0]?.src || "",
     galeria: (tour.galeria || []).map((item) => ({
       src: item.src,
       alt: item.alt,
@@ -158,16 +160,29 @@ export function tourToDraft(tour: Tour): TourDraft {
       meta_description: tour.seo?.meta_description || tour.resumen,
       canonical: tour.seo?.canonical || tour.url,
       focus_keyword: tour.seo?.focus_keyword || tour.titulo,
-      og_image: tour.seo?.open_graph?.og_image || tour.galeria?.[0]?.src,
+      og_image:
+        tour.seo?.open_graph?.og_image || tour.imagen_principal || tour.galeria?.[0]?.src,
     },
   };
+}
+
+function resolveMainSrc(draft: TourDraft): string {
+  const candidate = (draft.imagen_principal || "").trim();
+  if (candidate && draft.galeria.some((item) => item.src === candidate)) {
+    return candidate;
+  }
+  return draft.galeria[0]?.src || candidate || "";
 }
 
 function syncSchemaPricesAndImages(tour: Tour, draft: TourDraft) {
   const graph = tour.seo_schema?.["@graph"];
   if (!Array.isArray(graph)) return;
 
-  const images = draft.galeria.map((item) => item.src);
+  const main = resolveMainSrc(draft);
+  const images = [
+    ...(main ? [main] : []),
+    ...draft.galeria.map((item) => item.src).filter((src) => src !== main),
+  ];
   for (const node of graph) {
     if (!node || typeof node !== "object") continue;
     if (node["@type"] === "Product") {
@@ -184,6 +199,7 @@ function syncSchemaPricesAndImages(tour: Tour, draft: TourDraft) {
 }
 
 export function applyDraftToTour(existing: Tour, draft: TourDraft): Tour {
+  const mainSrc = resolveMainSrc(draft);
   const next: Tour = {
     ...existing,
     titulo: draft.titulo,
@@ -204,6 +220,7 @@ export function applyDraftToTour(existing: Tour, draft: TourDraft): Tour {
     incluye: draft.incluye,
     no_incluye: draft.no_incluye,
     recomendaciones: draft.recomendaciones,
+    imagen_principal: mainSrc || undefined,
     galeria: draft.galeria,
     itinerario: draft.itinerario.map((day, index) => ({
       ...existing.itinerario?.[index],
@@ -226,13 +243,13 @@ export function applyDraftToTour(existing: Tour, draft: TourDraft): Tour {
         og_title: draft.metas.og_title,
         og_description: draft.seo.meta_description,
         og_url: draft.metas.og_url,
-        og_image: draft.seo.og_image || draft.galeria[0]?.src || existing.seo?.open_graph?.og_image,
+        og_image: draft.seo.og_image || mainSrc || existing.seo?.open_graph?.og_image,
       },
       twitter_card: {
         ...existing.seo?.twitter_card,
         title: draft.seo.meta_title,
         description: draft.seo.meta_description,
-        image: draft.seo.og_image || draft.galeria[0]?.src || existing.seo?.twitter_card?.image,
+        image: draft.seo.og_image || mainSrc || existing.seo?.twitter_card?.image,
       },
     },
   };

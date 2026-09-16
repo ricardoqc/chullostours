@@ -5,6 +5,7 @@ import type { DisplayCurrency } from "@/lib/pricing";
 import { hasEntradasIncluidas, getEntradasIncluidasCopy } from "@/lib/tour-inclusions";
 import { getMetrics } from "@/lib/site-config";
 import { resolveTourDisplayPrice } from "@/lib/market";
+import { getTourMainImageSrc } from "@/lib/tour-detail-utils";
 
 function mapCardBadges(tour: Tour): TourProps["chips"] {
   return (tour.card_badges || [])
@@ -37,10 +38,10 @@ export function toTourCardProps(
   const originalPrice =
     resolvedCurrency === "USD" && compare.online > price ? compare.online : undefined;
 
-  const firstImage =
-    tour.galeria && tour.galeria.length > 0
-      ? tour.galeria[0].src
-      : "/media/tours/camino-inca-2-dias/01.jpg";
+  const firstImage = getTourMainImageSrc(
+    tour,
+    "/media/tours/camino-inca-2-dias/01.jpg"
+  );
 
   const entradas = hasEntradasIncluidas(tour)
     ? getEntradasIncluidasCopy(tour)

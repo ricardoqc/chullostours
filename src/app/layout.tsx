@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { I18nProvider } from "@/i18n/I18nContext";
 import { MarketProvider } from "@/components/layout/MarketProvider";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import { MediaProtection } from "@/components/ui/MediaProtection";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -149,6 +150,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <main className="flex-grow">{children}</main>
             <Footer />
             <ScrollToTop />
+            <MediaProtection />
           </MarketProvider>
         </I18nProvider>
       </body>

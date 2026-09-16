@@ -308,6 +308,31 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(15, 23, 42, 0.4);
 }
 
+/* --- Protección anti-descarga de medios (fotos nítidas; descarga → .enc) --- */
+html.media-protection-on img.media-protect-img,
+html.media-protection-on .media-protect img,
+html.media-protection-on .media-protect video {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.media-protect {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.media-protect-shield {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: transparent;
+  pointer-events: auto;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

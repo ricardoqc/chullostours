@@ -438,7 +438,13 @@ export function TourEditor({ slug, file, initialDraft }: TourEditorProps) {
 
       {tab === "galeria" && (
         <section className="bg-white rounded-3xl border border-slate-200 p-6">
-          <GalleryField slug={slug} items={draft.galeria} onChange={(galeria) => patch("galeria", galeria)} />
+          <GalleryField
+            slug={slug}
+            items={draft.galeria}
+            mainSrc={draft.imagen_principal || draft.galeria[0]?.src || ""}
+            onChange={(galeria) => patch("galeria", galeria)}
+            onMainChange={(src) => patch("imagen_principal", src)}
+          />
         </section>
       )}
 

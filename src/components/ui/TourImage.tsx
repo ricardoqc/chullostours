@@ -19,10 +19,16 @@ interface TourImageProps {
   contain?: boolean;
   /** Índice para variar el fallback Unsplash si la imagen falla */
   fallbackIndex?: number;
+  /** Desactiva la capa anti-descarga (p. ej. CMS). */
+  unprotected?: boolean;
 }
 
 function fallbackForIndex(index: number): string {
   return galleryFallbackForIndex(index);
+}
+
+function joinClass(...parts: Array<string | undefined | false>) {
+  return parts.filter(Boolean).join(" ");
 }
 
 /** Imagen optimizada con fallback si el asset local aún no existe en /public. */
@@ -38,6 +44,7 @@ export function TourImage({
   height = 800,
   contain = false,
   fallbackIndex = 0,
+  unprotected = false,
 }: TourImageProps) {
   const [currentSrc, setCurrentSrc] = useState(src);
   const fallbackSrc = fallbackForIndex(fallbackIndex);
@@ -52,33 +59,63 @@ export function TourImage({
     }
   };
 
+  const imageClass = joinClass(className, !unprotected && "media-protect-img");
+  const protectProps = unprotected
+    ? {}
+    : {
+        draggable: false as const,
+        "data-media-protect": "true",
+        onContextMenu: (event: React.MouseEvent) => event.preventDefault(),
+        onDragStart: (event: React.DragEvent) => event.preventDefault(),
+      };
+
   if (fill) {
-    return (
+    const image = (
       <Image
         src={currentSrc}
         alt={alt}
         fill
         sizes={sizes || "100vw"}
-        className={className}
+        className={imageClass}
         priority={priority}
         fetchPriority={fetchPriority}
         onError={handleError}
         style={contain ? { objectFit: "contain" } : undefined}
+        {...protectProps}
       />
+    );
+
+    if (unprotected) return image;
+
+    return (
+      <span className="media-protect absolute inset-0 block" data-media-protect="true">
+        {image}
+        <span className="media-protect-shield" aria-hidden="true" />
+      </span>
     );
   }
 
-  return (
+  const image = (
     <Image
       src={currentSrc}
       alt={alt}
       width={width}
       height={height}
       sizes={sizes}
-      className={className}
+      className={imageClass}
       priority={priority}
       fetchPriority={fetchPriority}
       onError={handleError}
+      {...protectProps}
     />
+  );
+
+  if (unprotected) return image;
+
+  return (
+    <span className="media-protect relative inline-block max-w-full" data-media-protect="true">
+      {image}
+      <span className="media-protect-shield" aria-hidden="true" />
+    </span>
   );
 }

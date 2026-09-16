@@ -3,7 +3,9 @@ import path from "path";
 import type { Tour } from "@/types/tour";
 import { clearToursJsonCache } from "@/lib/data/tours-json";
 import { applyDraftToTour, type TourDraft } from "@/lib/admin/tour-schema";
+import { syncMediaUsage, tourOwnerKey } from "@/lib/admin/media-index";
 import { revalidateTourPages } from "@/lib/admin/revalidate";
+import { getTourMainImageSrc } from "@/lib/tour-detail-utils";
 
 export const TOURS_DIR = path.join(process.cwd(), "data", "tours");
 
@@ -48,7 +50,7 @@ export function listAdminTours(): AdminTourSummary[] {
       duration: data.atributos?.duracion || "1 Día",
       price_usd: data.precio_usd || data.precio || 0,
       visible: data.visible !== false,
-      image: data.galeria?.[0]?.src || "/img/placeholder.jpg",
+      image: getTourMainImageSrc(data),
       destinations: data.destino_ids || [],
     };
   });
@@ -57,12 +59,22 @@ export function listAdminTours(): AdminTourSummary[] {
   return tours;
 }
 
+function syncTourMediaUsage(tour: Tour) {
+  const srcs = [
+    tour.imagen_principal,
+    ...(tour.galeria || []).map((item) => item.src),
+    tour.seo?.open_graph?.og_image,
+  ].filter((src): src is string => Boolean(src));
+  syncMediaUsage(tourOwnerKey(tour.slug), srcs);
+}
+
 export function writeTourFile(file: string, tour: Tour) {
   const fullPath = path.join(TOURS_DIR, file);
   const tempPath = `${fullPath}.tmp`;
   fs.writeFileSync(tempPath, `${JSON.stringify(tour, null, 2)}\n`, "utf-8");
   fs.renameSync(tempPath, fullPath);
   clearToursJsonCache();
+  syncTourMediaUsage(tour);
 }
 
 export function saveTourDraft(slug: string, draft: TourDraft) {

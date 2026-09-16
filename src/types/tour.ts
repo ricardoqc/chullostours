@@ -240,6 +240,8 @@ export interface Tour {
   propuesta_de_valor?: string[];
   tour_highlights?: TourHighlightItem[];
   destacados_highlights: string[];
+  /** Portada (cards, hero, OG). Si falta, se usa galeria[0]. */
+  imagen_principal?: string;
   galeria: TourImagen[];
   itinerario: DiaItinerario[];
   incluye: string[];

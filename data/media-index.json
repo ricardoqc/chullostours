@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "byHash": {
+    "9469bdf000fe711a432a7c5677e6195ff6afddca5ae8752b322ca45dc9cf53dc": {
+      "id": "9469bdf0",
+      "hash": "9469bdf000fe711a432a7c5677e6195ff6afddca5ae8752b322ca45dc9cf53dc",
+      "src": "/media/library/chinchero/9469bdf0-img-2772-jpg.jpg",
+      "name": "9469bdf0-img-2772-jpg.jpg",
+      "size": 4821695,
+      "kind": "image",
+      "createdAt": "2026-09-15T23:57:54.738Z",
+      "usedBy": [
+        "tour:cataratas-poc-poc-chinchero"
+      ]
+    }
+  }
+}

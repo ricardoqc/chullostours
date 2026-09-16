@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { getTourBySlug, getAllTours } from "@/lib/tours";
 import { resolveGalleryItems } from "@/lib/gallery-media";
+import { getTourMainImage } from "@/lib/tour-detail-utils";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { TourDetailClient } from "./tour-detail-client";
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }: TourPageProps): Promise<Metad
 
   const title = tour.seo?.meta_title || `${tour.titulo} | Chullos Tours`;
   const description = tour.seo?.meta_description || tour.resumen;
-  const ogImage = tour.seo?.open_graph?.og_image || (tour.galeria && tour.galeria[0]?.src);
+  const ogImage = tour.seo?.open_graph?.og_image || getTourMainImage(tour)?.src;
   const twitterImage = tour.seo?.twitter_card?.image || ogImage;
 
   return {
