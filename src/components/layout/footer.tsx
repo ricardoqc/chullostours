@@ -72,17 +72,17 @@ export const Footer: React.FC = () => {
     },
     {
       id: 2,
-      image: "/media/tours/montana-colores-vinicunca-tour/01.jpg",
+      image: "/media/tours/montana-colores-vinicunca-tour/06.avif",
       title: "Vinicunca",
     },
     {
       id: 3,
-      image: "/media/tours/laguna-humantay-tour-cusco/01.jpg",
+      image: "/media/tours/laguna-humantay-tour-cusco/05.avif",
       title: "Humantay",
     },
     {
       id: 4,
-      image: "/media/tours/valle-sagrado-vip-tour-cusco/01.jpg",
+      image: "/media/tours/valle-sagrado-vip-tour-cusco/05.avif",
       title: "Valle Sagrado",
     },
   ];

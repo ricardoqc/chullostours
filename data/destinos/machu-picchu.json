@@ -1,0 +1,35 @@
+{
+  "id": 2,
+  "title": "Machu Picchu",
+  "subtitle": "",
+  "slug": "machu-picchu",
+  "status": "publish",
+  "region": "Cusco, Perú",
+  "tipo": "landmark",
+  "excerpt": "Santuario Histórico de Machu Picchu, maravilla del mundo moderno.",
+  "body_html": "<p>Santuario Histórico de Machu Picchu, maravilla del mundo moderno.</p>",
+  "info_html": "<p></p>",
+  "lugares": [],
+  "tips": [],
+  "geo": {
+    "lat": -13.1631,
+    "lng": -72.545,
+    "country": "PE",
+    "region_label": "Cusco, Perú",
+    "schema_tourist_attraction": true
+  },
+  "featured_image": "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg",
+  "featured_image_alt": "Machu Picchu",
+  "gallery": [
+    "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg"
+  ],
+  "seo": {
+    "title": "Tours en Machu Picchu | Chullos Tours",
+    "description": "Santuario Histórico de Machu Picchu, maravilla del mundo moderno.",
+    "canonical": "https://chullostours.com/destinos/machu-picchu/",
+    "og_image": "/media/tours/machu-picchu-full-day-tren-expedition/05.jpg"
+  },
+  "related_place_ids": [],
+  "created": "2026-09-16",
+  "modified": "2026-09-16"
+}

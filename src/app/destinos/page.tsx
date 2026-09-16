@@ -3,7 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { MapPin, ArrowRight, Compass } from "lucide-react";
 import { getAllTours } from "@/lib/tours";
-import { getDestinationsWithTours } from "@/lib/places";
+import { getToursByDestination } from "@/lib/places";
+import { getPublishedDestinations } from "@/lib/destinos";
 import { TourImage } from "@/components/ui/TourImage";
 
 export const metadata: Metadata = {
@@ -17,7 +18,19 @@ export const metadata: Metadata = {
 
 export default function DestinationsPage() {
   const tours = getAllTours();
-  const destinations = getDestinationsWithTours(tours);
+  const destinations = getPublishedDestinations()
+    .map((doc) => ({
+      slug: doc.slug,
+      nombre: doc.title,
+      region: doc.region,
+      descripcion: doc.excerpt,
+      imagen: doc.featured_image,
+      toursCount: getToursByDestination(doc.slug, tours).length,
+    }))
+    .sort(
+      (a, b) =>
+        b.toursCount - a.toursCount || a.nombre.localeCompare(b.nombre, "es")
+    );
 
   return (
     <div className="flex flex-col gap-12 pb-16 bg-white">
@@ -53,7 +66,9 @@ export default function DestinationsPage() {
                 className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute top-3 left-3 bg-[#6b0014] text-white text-[11px] font-extrabold px-3 py-1 rounded-full shadow-md">
-                {dest.toursCount} {dest.toursCount === 1 ? "tour" : "tours"}
+                {dest.toursCount > 0
+                  ? `${dest.toursCount} ${dest.toursCount === 1 ? "tour" : "tours"}`
+                  : "Destino"}
               </div>
             </div>
 
@@ -72,7 +87,7 @@ export default function DestinationsPage() {
               </div>
 
               <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-extrabold text-slate-900 group-hover:text-[#6b0014] transition-colors">
-                <span>Ver tours disponibles</span>
+                <span>{dest.toursCount > 0 ? "Ver tours disponibles" : "Ver destino"}</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </div>
             </div>

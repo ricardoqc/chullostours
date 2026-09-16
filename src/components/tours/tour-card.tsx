@@ -74,7 +74,7 @@ export const TourCard: React.FC<{ tour: TourProps; priority?: boolean }> = ({ to
     <div className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 flex flex-col h-full hover:-translate-y-0.5">
       <div className="relative aspect-[5/4] overflow-hidden bg-slate-100">
         <TourImage
-          src={tour.imageUrl || "/media/tours/city-tour-cusco/01.jpg"}
+          src={tour.imageUrl || "/media/tours/city-tour-cusco/05.avif"}
           alt={tour.title}
           fill
           priority={priority}

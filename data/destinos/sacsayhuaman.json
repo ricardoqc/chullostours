@@ -1,0 +1,35 @@
+{
+  "id": 5,
+  "title": "Sacsayhuamán",
+  "subtitle": "",
+  "slug": "sacsayhuaman",
+  "status": "publish",
+  "region": "Cusco, Perú",
+  "tipo": "landmark",
+  "excerpt": "Impresionante complejo arqueológico sobre la ciudad de Cusco.",
+  "body_html": "<p>Impresionante complejo arqueológico sobre la ciudad de Cusco.</p>",
+  "info_html": "<p></p>",
+  "lugares": [],
+  "tips": [],
+  "geo": {
+    "lat": -13.5097,
+    "lng": -71.9817,
+    "country": "PE",
+    "region_label": "Cusco, Perú",
+    "schema_tourist_attraction": true
+  },
+  "featured_image": "/media/tours/city-tour-cusco/06.jpg",
+  "featured_image_alt": "Sacsayhuamán",
+  "gallery": [
+    "/media/tours/city-tour-cusco/06.jpg"
+  ],
+  "seo": {
+    "title": "Tours en Sacsayhuamán | Chullos Tours",
+    "description": "Impresionante complejo arqueológico sobre la ciudad de Cusco.",
+    "canonical": "https://chullostours.com/destinos/sacsayhuaman/",
+    "og_image": "/media/tours/city-tour-cusco/06.jpg"
+  },
+  "related_place_ids": [],
+  "created": "2026-09-16",
+  "modified": "2026-09-16"
+}

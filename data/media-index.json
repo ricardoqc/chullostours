@@ -12,6 +12,18 @@
       "usedBy": [
         "tour:cataratas-poc-poc-chinchero"
       ]
+    },
+    "8e5c581a3392af7790078709ace65e9075d78e939a45c29fb811a52822e37a30": {
+      "id": "8e5c581a",
+      "hash": "8e5c581a3392af7790078709ace65e9075d78e939a45c29fb811a52822e37a30",
+      "src": "/media/library/8e5c581a-stock-chullostours-lima-32.webp",
+      "name": "8e5c581a-stock-chullostours-lima-32.webp",
+      "size": 153144,
+      "kind": "image",
+      "createdAt": "2026-09-16T22:36:43.781Z",
+      "usedBy": [
+        "destino:lima"
+      ]
     }
   }
 }

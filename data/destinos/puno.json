@@ -1,0 +1,35 @@
+{
+  "id": 9,
+  "title": "Puno",
+  "subtitle": "",
+  "slug": "puno",
+  "status": "publish",
+  "region": "Puno, Perú",
+  "tipo": "city",
+  "excerpt": "Ciudad a orillas del Lago Titicaca, capital folklórica del Perú.",
+  "body_html": "<p>Ciudad a orillas del Lago Titicaca, capital folklórica del Perú.</p>",
+  "info_html": "<p></p>",
+  "lugares": [],
+  "tips": [],
+  "geo": {
+    "lat": -15.8402,
+    "lng": -70.0219,
+    "country": "PE",
+    "region_label": "Puno, Perú",
+    "schema_tourist_attraction": false
+  },
+  "featured_image": "/media/tours/tour-lago-titicaca-2-dias/05.avif",
+  "featured_image_alt": "Puno",
+  "gallery": [
+    "/media/tours/tour-lago-titicaca-2-dias/05.avif"
+  ],
+  "seo": {
+    "title": "Tours en Puno | Chullos Tours",
+    "description": "Ciudad a orillas del Lago Titicaca, capital folklórica del Perú.",
+    "canonical": "https://chullostours.com/destinos/puno/",
+    "og_image": "/media/tours/tour-lago-titicaca-2-dias/05.avif"
+  },
+  "related_place_ids": [],
+  "created": "2026-09-16",
+  "modified": "2026-09-16"
+}

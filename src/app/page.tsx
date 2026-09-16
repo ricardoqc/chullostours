@@ -91,13 +91,13 @@ export default function Home() {
     {
       name: "Cusco & Alrededores",
       toursCount: "5 Tours",
-      image: getTour("city-tour-cusco")?.galeria?.[0]?.src || "/media/tours/city-tour-cusco/01.jpg",
+      image: getTour("city-tour-cusco")?.galeria?.[0]?.src || "/media/tours/city-tour-cusco/05.avif",
       slug: "cusco",
     },
     {
       name: "Valle Sagrado Inca",
       toursCount: "4 Tours",
-      image: getTour("valle-sagrado-vip-tour-cusco")?.galeria?.[0]?.src || "/media/tours/valle-sagrado-vip-tour-cusco/01.jpg",
+      image: getTour("valle-sagrado-vip-tour-cusco")?.galeria?.[0]?.src || "/media/tours/valle-sagrado-vip-tour-cusco/05.avif",
       slug: "valle-sagrado",
     },
     {
@@ -116,7 +116,7 @@ export default function Home() {
 
   // Promo Banner Tour
   const promoTour = getTour("cusco-magico-5-dias");
-  const promoBgImage = promoTour?.galeria?.[0]?.src || "/media/tours/cusco-magico-5-dias/01.jpg";
+  const promoBgImage = promoTour?.galeria?.[0]?.src || "/media/tours/cusco-magico-5-dias/05.avif";
 
   return (
     <>

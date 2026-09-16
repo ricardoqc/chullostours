@@ -14,3 +14,10 @@ export function revalidateBlogPages(slug?: string) {
   if (slug) revalidatePath(`/blog/${slug}`);
   revalidatePath("/sitemap.xml");
 }
+
+export function revalidateDestinoPages(slug?: string) {
+  revalidatePath("/destinos");
+  if (slug) revalidatePath(`/destinos/${slug}`);
+  revalidatePath("/");
+  revalidatePath("/sitemap.xml");
+}

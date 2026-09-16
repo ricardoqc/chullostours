@@ -7,18 +7,18 @@ import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blogs";
 import { TourImage } from "@/components/ui/TourImage";
 
 const BLOG_THUMBNAILS: Record<string, string> = {
-  "camino-inca-4-dias-guia-definitiva": "/media/tours/camino-inca-4-dias/01.jpg",
-  "como-comprar-tu-boleto-a-machu-picchu-guia-completa": "/media/tours/machu-picchu-full-day-tren-expedition/01.jpg",
+  "camino-inca-4-dias-guia-definitiva": "/media/tours/camino-inca-4-dias/05.jpg",
+  "como-comprar-tu-boleto-a-machu-picchu-guia-completa": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
   "como-llegar-a-machu-picchu-guia-completa-para-tu-visita": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
-  "cuanto-cuesta-viajar-a-machu-picchu-2026": "/media/tours/cusco-magico-5-dias/01.jpg",
-  "explora-las-maravillas-de-machu-picchu-vacaciones-inolvidables-en-el-corazon-de-los-andes": "/media/tours/descubre-cusco-3-dias/01.jpg",
-  "guia-completa-para-visitar-machu-picchu-en-un-dia": "/media/tours/machupicchu-full-day-con-tren-vistadome/01.jpg",
-  "guia-para-viajar-a-machu-picchu-por-tu-cuenta": "/media/tours/machupicchu-full-day-con-tren-observatory/01.jpg",
-  "la-guia-definitiva-para-visitar-la-montana-de-7-colores-vinicunca": "/media/tours/montana-colores-vinicunca-tour/01.jpg",
-  "laguna-humantay-todo-lo-que-necesitas-saber-antes-de-ir": "/media/tours/laguna-humantay-tour-cusco/01.jpg",
+  "cuanto-cuesta-viajar-a-machu-picchu-2026": "/media/tours/cusco-magico-5-dias/05.avif",
+  "explora-las-maravillas-de-machu-picchu-vacaciones-inolvidables-en-el-corazon-de-los-andes": "/media/tours/city-tour-cusco/05.avif",
+  "guia-completa-para-visitar-machu-picchu-en-un-dia": "/media/tours/tour-machu-picchu-2-dias/02.jpg",
+  "guia-para-viajar-a-machu-picchu-por-tu-cuenta": "/media/tours/tour-machu-picchu-2-dias/03.jpg",
+  "la-guia-definitiva-para-visitar-la-montana-de-7-colores-vinicunca": "/media/tours/montana-colores-vinicunca-tour/06.avif",
+  "laguna-humantay-todo-lo-que-necesitas-saber-antes-de-ir": "/media/tours/laguna-humantay-tour-cusco/05.avif",
   "machu-picchu-todo-lo-que-necesitas-saber-para-tu-viaje": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
   "que-llevar-en-la-mochila-a-machu-picchu-lista-esencial": "/media/tours/camino-inca-2-dias/01.jpg",
-  "valle-sagrado-de-los-incas-itinerario-y-que-ver": "/media/tours/valle-sagrado-vip-tour-cusco/01.jpg",
+  "valle-sagrado-de-los-incas-itinerario-y-que-ver": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif",
 };
 
 export function BlogSection() {

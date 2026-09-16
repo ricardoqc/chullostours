@@ -1,0 +1,35 @@
+{
+  "id": 3,
+  "title": "Aguas Calientes",
+  "subtitle": "",
+  "slug": "aguas-calientes",
+  "status": "publish",
+  "region": "Urubamba, Cusco",
+  "tipo": "city",
+  "excerpt": "Pueblo base en el valle del Urubamba, puerta de entrada a Machu Picchu.",
+  "body_html": "<p>Pueblo base en el valle del Urubamba, puerta de entrada a Machu Picchu.</p>",
+  "info_html": "<p></p>",
+  "lugares": [],
+  "tips": [],
+  "geo": {
+    "lat": -13.1547,
+    "lng": -72.5253,
+    "country": "PE",
+    "region_label": "Urubamba, Cusco",
+    "schema_tourist_attraction": false
+  },
+  "featured_image": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
+  "featured_image_alt": "Aguas Calientes",
+  "gallery": [
+    "/media/tours/tour-machu-picchu-2-dias/01.jpg"
+  ],
+  "seo": {
+    "title": "Tours en Aguas Calientes | Chullos Tours",
+    "description": "Pueblo base en el valle del Urubamba, puerta de entrada a Machu Picchu.",
+    "canonical": "https://chullostours.com/destinos/aguas-calientes/",
+    "og_image": "/media/tours/tour-machu-picchu-2-dias/01.jpg"
+  },
+  "related_place_ids": [],
+  "created": "2026-09-16",
+  "modified": "2026-09-16"
+}

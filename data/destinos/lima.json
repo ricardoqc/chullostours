@@ -1,0 +1,39 @@
+{
+  "id": 10,
+  "title": "Lima",
+  "subtitle": "",
+  "slug": "lima",
+  "status": "publish",
+  "region": "Lima, Perú",
+  "tipo": "city",
+  "excerpt": "Capital del Perú y centro histórico patrimonio de la humanidad.",
+  "body_html": "<p>Capital del Perú y centro histórico patrimonio de la humanidad.</p>",
+  "info_html": "<p></p>",
+  "lugares": [],
+  "tips": [],
+  "geo": {
+    "lat": -12.0464,
+    "lng": -77.0428,
+    "country": "PE",
+    "region_label": "Lima, Perú",
+    "best_season": "",
+    "climate_summary": "",
+    "schema_tourist_attraction": false
+  },
+  "featured_image": "/media/library/8e5c581a-stock-chullostours-lima-32.webp",
+  "featured_image_alt": "Lima",
+  "gallery": [
+    "/media/library/8e5c581a-stock-chullostours-lima-32.webp"
+  ],
+  "seo": {
+    "title": "Tours en Lima | Chullos Tours",
+    "description": "Capital del Perú y centro histórico patrimonio de la humanidad.",
+    "focus_keyword": "",
+    "synonyms": "",
+    "canonical": "https://chullostours.com/destinos/lima/",
+    "og_image": "/media/library/8e5c581a-stock-chullostours-lima-32.webp"
+  },
+  "related_place_ids": [],
+  "created": "2026-09-16",
+  "modified": "2026-09-16"
+}

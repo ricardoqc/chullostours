@@ -1,0 +1,35 @@
+{
+  "id": 8,
+  "title": "Montaña de 7 Colores",
+  "subtitle": "",
+  "slug": "vinicunca",
+  "status": "publish",
+  "region": "Canchis, Cusco",
+  "tipo": "trek",
+  "excerpt": "Vinicunca, famosa montaña arcoíris de los Andes del sur.",
+  "body_html": "<p>Vinicunca, famosa montaña arcoíris de los Andes del sur.</p>",
+  "info_html": "<p></p>",
+  "lugares": [],
+  "tips": [],
+  "geo": {
+    "lat": -13.8694,
+    "lng": -71.3025,
+    "country": "PE",
+    "region_label": "Canchis, Cusco",
+    "schema_tourist_attraction": true
+  },
+  "featured_image": "/media/tours/montana-colores-vinicunca-tour/06.avif",
+  "featured_image_alt": "Montaña de 7 Colores",
+  "gallery": [
+    "/media/tours/montana-colores-vinicunca-tour/06.avif"
+  ],
+  "seo": {
+    "title": "Tours en Montaña de 7 Colores | Chullos Tours",
+    "description": "Vinicunca, famosa montaña arcoíris de los Andes del sur.",
+    "canonical": "https://chullostours.com/destinos/vinicunca/",
+    "og_image": "/media/tours/montana-colores-vinicunca-tour/06.avif"
+  },
+  "related_place_ids": [],
+  "created": "2026-09-16",
+  "modified": "2026-09-16"
+}

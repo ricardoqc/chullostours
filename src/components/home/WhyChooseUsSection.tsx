@@ -26,7 +26,7 @@ export const WhyChooseUsSection: React.FC = () => {
         <Reveal as="div" className="lg:col-span-5 relative" direction="right">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-100 aspect-[4/5] bg-slate-900 group">
             <TourImage
-              src={whyConfig.teamImage || "/media/tours/city-tour-cusco/01.jpg"}
+              src={whyConfig.teamImage || "/media/tours/city-tour-cusco/05.avif"}
               alt="Guías locales de Chullos Tours en Cusco"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"

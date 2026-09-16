@@ -31,7 +31,9 @@ function joinClass(...parts: Array<string | undefined | false>) {
   return parts.filter(Boolean).join(" ");
 }
 
-/** Imagen optimizada con fallback si el asset local aún no existe en /public. */
+/** Imagen con fallback si el asset local no existe. /media usa unoptimized
+ *  para no pasar por el optimizador de Next (evita ruido cuando falta el archivo
+ *  o la ruta pasa por /api/serve-media). */
 export function TourImage({
   src,
   alt,
@@ -48,6 +50,8 @@ export function TourImage({
 }: TourImageProps) {
   const [currentSrc, setCurrentSrc] = useState(src);
   const fallbackSrc = fallbackForIndex(fallbackIndex);
+  const unoptimized =
+    currentSrc.startsWith("/media/") || currentSrc.startsWith("data:");
 
   useEffect(() => {
     setCurrentSrc(src);
@@ -80,6 +84,7 @@ export function TourImage({
         priority={priority}
         fetchPriority={fetchPriority}
         onError={handleError}
+        unoptimized={unoptimized}
         style={contain ? { objectFit: "contain" } : undefined}
         {...protectProps}
       />
@@ -106,6 +111,7 @@ export function TourImage({
       priority={priority}
       fetchPriority={fetchPriority}
       onError={handleError}
+      unoptimized={unoptimized}
       {...protectProps}
     />
   );

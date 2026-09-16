@@ -1,0 +1,35 @@
+{
+  "id": 1,
+  "title": "Cusco",
+  "subtitle": "",
+  "slug": "cusco",
+  "status": "publish",
+  "region": "Cusco, Perú",
+  "tipo": "city",
+  "excerpt": "Capital histórica del Imperio Inca y punto de partida de la mayoría de tours.",
+  "body_html": "<p>Capital histórica del Imperio Inca y punto de partida de la mayoría de tours.</p>",
+  "info_html": "<p></p>",
+  "lugares": [],
+  "tips": [],
+  "geo": {
+    "lat": -13.5319,
+    "lng": -71.9675,
+    "country": "PE",
+    "region_label": "Cusco, Perú",
+    "schema_tourist_attraction": false
+  },
+  "featured_image": "/media/tours/city-tour-cusco/05.avif",
+  "featured_image_alt": "Cusco",
+  "gallery": [
+    "/media/tours/city-tour-cusco/05.avif"
+  ],
+  "seo": {
+    "title": "Tours en Cusco | Chullos Tours",
+    "description": "Capital histórica del Imperio Inca y punto de partida de la mayoría de tours.",
+    "canonical": "https://chullostours.com/destinos/cusco/",
+    "og_image": "/media/tours/city-tour-cusco/05.avif"
+  },
+  "related_place_ids": [],
+  "created": "2026-09-16",
+  "modified": "2026-09-16"
+}

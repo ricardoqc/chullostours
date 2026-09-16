@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { AlertCircle, CheckCircle2, Copy, ExternalLink, RefreshCw, Save } from "lucide-react";
 import { DESTINO_OPTIONS, type TourDraft } from "@/lib/admin/tour-schema";
@@ -37,6 +37,23 @@ export function TourEditor({ slug, file, initialDraft }: TourEditorProps) {
   const [duplicateOpen, setDuplicateOpen] = useState(false);
   const [duplicateSlug, setDuplicateSlug] = useState(`${slug}-copia`);
   const [duplicateTitle, setDuplicateTitle] = useState(`${initialDraft.titulo} (copia)`);
+  const [destinoOptions, setDestinoOptions] = useState<{ id: string; label: string }[]>(
+    [...DESTINO_OPTIONS]
+  );
+
+  useEffect(() => {
+    fetch(adminApi("/api/admin/destinos"))
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data?.options?.length) {
+          const legacy = DESTINO_OPTIONS.filter(
+            (o) => !data.options.some((d: { id: string }) => d.id === o.id)
+          );
+          setDestinoOptions([...data.options, ...legacy]);
+        }
+      })
+      .catch(() => undefined);
+  }, []);
 
   const dirty = useMemo(() => JSON.stringify(draft) !== JSON.stringify(savedDraft), [draft, savedDraft]);
 
@@ -216,7 +233,7 @@ export function TourEditor({ slug, file, initialDraft }: TourEditorProps) {
           <fieldset>
             <legend className="admin-label mb-2">Destinos</legend>
             <div className="flex flex-wrap gap-3">
-              {DESTINO_OPTIONS.map((option) => (
+              {destinoOptions.map((option) => (
                 <label key={option.id} className="inline-flex items-center gap-2 text-sm text-slate-700">
                   <input
                     type="checkbox"
@@ -442,6 +459,7 @@ export function TourEditor({ slug, file, initialDraft }: TourEditorProps) {
             slug={slug}
             items={draft.galeria}
             mainSrc={draft.imagen_principal || draft.galeria[0]?.src || ""}
+            mediaFolder={`tours/${slug}`}
             onChange={(galeria) => patch("galeria", galeria)}
             onMainChange={(src) => {
               setDraft((prev) => ({

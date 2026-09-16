@@ -1,0 +1,35 @@
+{
+  "id": 4,
+  "title": "Ollantaytambo",
+  "subtitle": "",
+  "slug": "ollantaytambo",
+  "status": "publish",
+  "region": "Valle Sagrado, Cusco",
+  "tipo": "landmark",
+  "excerpt": "Fortaleza inca y estación de tren hacia Aguas Calientes.",
+  "body_html": "<p>Fortaleza inca y estación de tren hacia Aguas Calientes.</p>",
+  "info_html": "<p></p>",
+  "lugares": [],
+  "tips": [],
+  "geo": {
+    "lat": -13.2592,
+    "lng": -72.2644,
+    "country": "PE",
+    "region_label": "Valle Sagrado, Cusco",
+    "schema_tourist_attraction": true
+  },
+  "featured_image": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif",
+  "featured_image_alt": "Ollantaytambo",
+  "gallery": [
+    "/media/tours/valle-sagrado-vip-tour-cusco/05.avif"
+  ],
+  "seo": {
+    "title": "Tours en Ollantaytambo | Chullos Tours",
+    "description": "Fortaleza inca y estación de tren hacia Aguas Calientes.",
+    "canonical": "https://chullostours.com/destinos/ollantaytambo/",
+    "og_image": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif"
+  },
+  "related_place_ids": [],
+  "created": "2026-09-16",
+  "modified": "2026-09-16"
+}

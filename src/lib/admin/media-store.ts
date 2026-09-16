@@ -341,6 +341,12 @@ function rewriteMediaPrefixReferences(oldPrefix: string, newPrefix: string) {
   }
   files.push(path.join(process.cwd(), "data", "places.json"));
   files.push(path.join(process.cwd(), "data", "home-hero.json"));
+  const destinosDir = path.join(process.cwd(), "data", "destinos");
+  if (fs.existsSync(destinosDir)) {
+    for (const name of fs.readdirSync(destinosDir)) {
+      if (name.endsWith(".json")) files.push(path.join(destinosDir, name));
+    }
+  }
 
   for (const filePath of files) {
     if (!fs.existsSync(filePath)) continue;

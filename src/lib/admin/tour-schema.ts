@@ -92,6 +92,7 @@ export const tourDuplicateSchema = z.object({
 
 export type TourDraft = z.infer<typeof tourDraftSchema>;
 
+/** Fallback estático; en admin tours/blog se complementa vía API de destinos. */
 export const DESTINO_OPTIONS = [
   { id: "cusco", label: "Cusco & Alrededores" },
   { id: "cusco-ciudad", label: "Cusco Ciudad" },

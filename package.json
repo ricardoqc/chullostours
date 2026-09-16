@@ -12,7 +12,8 @@
     "data:hotel-imagenes": "node scripts/enrich-hotel-imagenes.mjs",
     "media:scaffold": "node scripts/scaffold-media-folders.mjs",
     "export:seo-excel": "node scripts/generate-meta-excel.mjs",
-    "blog:migrate-json": "node scripts/migrate-blog-md-to-json.mjs"
+    "blog:migrate-json": "node scripts/migrate-blog-md-to-json.mjs",
+    "destinos:migrate-json": "node scripts/migrate-places-to-destinos.mjs"
   },
   "dependencies": {
     "@tiptap/extension-image": "^3.31.3",

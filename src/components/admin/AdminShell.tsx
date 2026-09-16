@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FileText, Images, Map } from "lucide-react";
+import { Compass, FileText, Images, Map } from "lucide-react";
 
 type AdminShellProps = {
   children: React.ReactNode;
@@ -12,6 +12,7 @@ type AdminShellProps = {
 export function AdminShell({ children, wide = false }: AdminShellProps) {
   const pathname = usePathname();
   const toursActive = pathname.startsWith("/admin/tours");
+  const destinosActive = pathname.startsWith("/admin/destinos");
   const blogActive = pathname.startsWith("/admin/blog");
   const mediaActive = pathname.startsWith("/admin/media");
 
@@ -29,6 +30,17 @@ export function AdminShell({ children, wide = false }: AdminShellProps) {
           >
             <Map className="w-4 h-4" aria-hidden="true" />
             Tours
+          </Link>
+          <Link
+            href="/admin/destinos/"
+            className={`inline-flex items-center gap-1.5 min-h-11 px-3 rounded-xl text-xs font-bold border ${
+              destinosActive
+                ? "bg-slate-900 text-white border-slate-900"
+                : "bg-white text-slate-600 border-slate-200 hover:border-slate-300"
+            }`}
+          >
+            <Compass className="w-4 h-4" aria-hidden="true" />
+            Destinos
           </Link>
           <Link
             href="/admin/blog/"
