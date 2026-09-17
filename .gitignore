@@ -36,6 +36,8 @@ yarn-error.log*
 
 # CMS export snapshots (regenerate with scripts/export-tours-for-cms.mjs)
 /data/exports/
+/data/leads/*.json
+!/data/leads/.gitkeep
 
 # vercel
 .vercel

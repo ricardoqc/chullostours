@@ -42,6 +42,10 @@ export const reservationSubmitSchema = z.object({
   hotelName: z.string().optional(),
   otherCountry: z.string().optional(),
   termsAccepted: z.boolean().optional(),
+  /** Timestamp ms cuando el usuario abrió el formulario (antibot). */
+  formStartedAt: z.number().optional(),
+  /** Token Cloudflare Turnstile (si está configurado). */
+  captchaToken: z.string().optional(),
 });
 
 export type ReservationSubmitBody = z.infer<typeof reservationSubmitSchema>;

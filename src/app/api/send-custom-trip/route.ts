@@ -1,8 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendCustomTripEmails } from "@/lib/email";
 import { customTripSubmitSchema } from "@/lib/custom-trip-schema";
+import { checkFormTiming, verifyTurnstileToken } from "@/lib/captcha";
+import {
+  createLeadId,
+  createTicketId,
+  saveLead,
+  updateLead,
+} from "@/lib/leads-store";
+import { isMailConfigured } from "@/lib/nodemailer";
 
-/** Simple in-memory rate limit (per instance). */
 const hits = new Map<string, { count: number; resetAt: number }>();
 const RATE_LIMIT = 8;
 const WINDOW_MS = 60_000;
@@ -36,6 +43,17 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    if (process.env.NODE_ENV === "production" && !isMailConfigured()) {
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "Correo no configurado en el servidor. Define GOOGLE_MAIL_USER y GOOGLE_MAIL_APP_PASSWORD.",
+        },
+        { status: 503 }
+      );
+    }
+
     const raw = await req.json();
     const parsed = customTripSubmitSchema.safeParse(raw);
 
@@ -54,6 +72,16 @@ export async function POST(req: NextRequest) {
       });
     }
 
+    const timing = checkFormTiming(body.formStartedAt);
+    if (!timing.ok) {
+      return NextResponse.json({ success: false, error: timing.error }, { status: 400 });
+    }
+
+    const captcha = await verifyTurnstileToken(body.captchaToken, ip);
+    if (!captcha.ok) {
+      return NextResponse.json({ success: false, error: captcha.error }, { status: 400 });
+    }
+
     if (!body.termsAccepted) {
       return NextResponse.json(
         { success: false, error: "Debes aceptar los términos y condiciones." },
@@ -65,7 +93,10 @@ export async function POST(req: NextRequest) {
       ? "Fechas flexibles"
       : body.startDate?.trim() || "Por definir";
 
-    const result = await sendCustomTripEmails({
+    const ticketId = createTicketId();
+    const leadId = createLeadId("trip");
+
+    const emailPayload = {
       fullName: body.fullName,
       email: body.email,
       phone: body.phone,
@@ -78,11 +109,41 @@ export async function POST(req: NextRequest) {
       fitness: body.fitness,
       hasFlights: body.hasFlights,
       notes: body.notes,
+    };
+
+    saveLead({
+      id: leadId,
+      type: "custom_trip",
+      status: "new",
+      createdAt: new Date().toISOString(),
+      ticketId,
+      fullName: body.fullName,
+      email: body.email,
+      phone: body.phone,
+      tourTitle: `Viaje a medida: ${body.destinations.join(", ")}`,
+      travelDate,
+      travelers: body.travelers,
+      source: "custom_trip_form",
+      ip,
+      userAgent: req.headers.get("user-agent") || undefined,
+      payload: emailPayload as unknown as Record<string, unknown>,
+    });
+
+    const result = await sendCustomTripEmails(emailPayload);
+
+    updateLead(leadId, {
+      emailOk: result.success,
+      emailMessageId: result.messageId,
     });
 
     if (!result.success) {
       return NextResponse.json(
-        { success: false, error: result.error || "No se pudo enviar el correo." },
+        {
+          success: false,
+          error: result.error || "No se pudo enviar el correo.",
+          leadId,
+          ticketId,
+        },
         { status: 500 }
       );
     }
@@ -91,6 +152,8 @@ export async function POST(req: NextRequest) {
       success: true,
       message: "Solicitud de viaje a medida recibida y notificada con éxito.",
       messageId: result.messageId,
+      leadId,
+      ticketId,
     });
   } catch (error: unknown) {
     const message =

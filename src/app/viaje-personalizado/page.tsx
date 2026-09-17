@@ -21,6 +21,9 @@ import { Button } from "@/components/ui/button";
 import { DESTINATION_FILTERS } from "@/lib/tour-filters";
 import { getWhatsappAgents, buildAgentWhatsappUrl } from "@/lib/site-config";
 import { trackGenerateLead, trackWhatsAppClick } from "@/lib/analytics";
+import { TurnstileWidget } from "@/components/ui/TurnstileWidget";
+
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "";
 
 const TRAVEL_STYLES = [
   "Cultural / Historia",
@@ -54,6 +57,8 @@ export default function CustomTripPage() {
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [formStartedAt] = useState(() => Date.now());
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [selectedDests, setSelectedDests] = useState<string[]>([]);
   const [form, setForm] = useState({
     name: "",
@@ -106,6 +111,9 @@ export default function CustomTripPage() {
     if (!form.termsAccepted) {
       newErrors.termsAccepted = "Debes aceptar los términos para continuar.";
     }
+    if (TURNSTILE_SITE_KEY && !captchaToken) {
+      newErrors.captcha = "Completa la verificación antibot.";
+    }
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       return;
@@ -134,6 +142,8 @@ export default function CustomTripPage() {
           notes: form.notes,
           termsAccepted: form.termsAccepted,
           website: form.website,
+          formStartedAt,
+          captchaToken: captchaToken || undefined,
         }),
       });
 
@@ -143,6 +153,7 @@ export default function CustomTripPage() {
         setErrors({
           submit: data.error || "No se pudo enviar la solicitud. Intenta de nuevo.",
         });
+        setCaptchaToken(null);
         return;
       }
 
@@ -159,6 +170,7 @@ export default function CustomTripPage() {
         submit:
           "No pudimos conectar con nuestro servidor. Revisa tu conexión e inténtalo otra vez.",
       });
+      setCaptchaToken(null);
     } finally {
       setSending(false);
     }
@@ -444,6 +456,15 @@ export default function CustomTripPage() {
             <span className="text-[11px] text-rose-600 font-semibold">{errors.termsAccepted}</span>
           )}
 
+          {TURNSTILE_SITE_KEY ? (
+            <div className="rounded-xl border border-slate-100 bg-slate-50/80 p-2">
+              <TurnstileWidget siteKey={TURNSTILE_SITE_KEY} onToken={setCaptchaToken} />
+            </div>
+          ) : null}
+          {errors.captcha && (
+            <span className="text-[11px] text-rose-600 font-semibold">{errors.captcha}</span>
+          )}
+
           {errors.submit && (
             <div className="bg-rose-50 border border-rose-200 rounded-xl p-3.5 flex flex-col gap-2.5">
               <p className="text-[11px] text-rose-600 font-semibold">{errors.submit}</p>
@@ -465,7 +486,7 @@ export default function CustomTripPage() {
             type="submit"
             variant="primary"
             size="lg"
-            disabled={sending}
+            disabled={sending || (Boolean(TURNSTILE_SITE_KEY) && !captchaToken)}
             className="w-full flex items-center justify-center gap-2 bg-[#6b0014] hover:bg-[#850019] text-white font-title font-bold py-4 rounded-xl cursor-pointer"
           >
             <Send className="w-4 h-4" />

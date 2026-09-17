@@ -93,12 +93,13 @@ export async function sendReservationEmails(
 
     return await sendDualEmails({
       customerEmail: data.email,
-      customerSubject: `Solicitud de Reserva Recibida: ${data.tourTitle} - Chullos Tours`,
+      customerSubject: `Confirmación de solicitud ${data.ticketId}: ${data.tourTitle}`,
       customerHtml,
-      adminSubject: `Nueva Reserva Web: ${data.fullName} - ${data.tourTitle}`,
+      adminSubject: `Ticket ${data.ticketId} · ${data.fullName} · ${data.tourTitle}`,
       adminHtml: staffHtml,
       devLabel: "Simulating reservation email dispatch",
       devDetails: {
+        Ticket: data.ticketId,
         Lead: `${data.email} (${data.fullName})`,
         Tour: `${data.tourTitle} | Date: ${data.travelDate} | Pax: ${String(data.travelers)}`,
       },

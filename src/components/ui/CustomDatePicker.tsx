@@ -133,7 +133,7 @@ export const CustomDatePicker: React.FC<CustomDatePickerProps> = ({
 
       {/* Interactive Dropdown Calendar */}
       {isOpen && (
-        <div className="absolute top-full mt-2 left-0 right-0 sm:right-auto sm:w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 p-4 z-50 animate-fadeIn animate-slideDown">
+        <div className="relative mt-2 w-full sm:w-80 max-w-full bg-white rounded-2xl shadow-lg border border-slate-200 p-4 z-20">
           {/* Calendar Header */}
           <div className="flex items-center justify-between mb-3 pb-2 border-b border-slate-100">
             <button

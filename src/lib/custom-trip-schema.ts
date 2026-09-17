@@ -26,6 +26,8 @@ export const customTripSubmitSchema = z.object({
   notes: z.string().max(2000, "Las notas son demasiado largas.").optional(),
   termsAccepted: z.boolean().optional(),
   website: z.string().optional(),
+  formStartedAt: z.number().optional(),
+  captchaToken: z.string().optional(),
 });
 
 export type CustomTripSubmitBody = z.infer<typeof customTripSubmitSchema>;

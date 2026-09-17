@@ -118,8 +118,9 @@ export function trackBookingSubmitted(data: {
   travelDate?: string;
   customerEmail?: string;
   customerPhone?: string;
+  leadId?: string;
+  ticketId?: string;
 }): void {
-  // Push standard GA4 generate_lead event
   pushToDataLayer("generate_lead", {
     lead_type: "booking_reservation",
     currency: data.currency || "USD",
@@ -128,15 +129,18 @@ export function trackBookingSubmitted(data: {
     tour_title: data.tourTitle,
     travelers_count: data.travelersCount || 1,
     travel_date: data.travelDate || null,
+    lead_id: data.leadId || null,
+    ticket_id: data.ticketId || null,
   });
 
-  // Also push purchase/conversion custom event for GTM triggers
   pushToDataLayer("booking_lead_submitted", {
     tour_slug: data.tourSlug,
     tour_title: data.tourTitle,
     value: data.totalPrice,
     currency: data.currency || "USD",
     travelers_count: data.travelersCount || 1,
+    lead_id: data.leadId || null,
+    ticket_id: data.ticketId || null,
   });
 }
 

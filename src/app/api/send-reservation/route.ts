@@ -1,8 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendReservationEmails } from "@/lib/email";
 import { getTourBySlug } from "@/lib/tours";
-import { calculateTourTotal } from "@/lib/pricing";
+import { calculateTourTotal, getEnabledExtras } from "@/lib/pricing";
 import { reservationSubmitSchema } from "@/lib/reservation-schema";
+import { checkFormTiming, verifyTurnstileToken } from "@/lib/captcha";
+import {
+  createLeadId,
+  createTicketId,
+  saveLead,
+  updateLead,
+} from "@/lib/leads-store";
+import { isMailConfigured } from "@/lib/nodemailer";
 
 /** Simple in-memory rate limit (per instance). */
 const hits = new Map<string, { count: number; resetAt: number }>();
@@ -38,6 +46,17 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    if (process.env.NODE_ENV === "production" && !isMailConfigured()) {
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "Correo no configurado en el servidor. Define GOOGLE_MAIL_USER y GOOGLE_MAIL_APP_PASSWORD.",
+        },
+        { status: 503 }
+      );
+    }
+
     const raw = await req.json();
     const parsed = reservationSubmitSchema.safeParse(raw);
 
@@ -54,6 +73,16 @@ export async function POST(req: NextRequest) {
         message: "Solicitud recibida.",
         messageId: "honeypot",
       });
+    }
+
+    const timing = checkFormTiming(body.formStartedAt);
+    if (!timing.ok) {
+      return NextResponse.json({ success: false, error: timing.error }, { status: 400 });
+    }
+
+    const captcha = await verifyTurnstileToken(body.captchaToken, ip);
+    if (!captcha.ok) {
+      return NextResponse.json({ success: false, error: captcha.error }, { status: 400 });
     }
 
     if (!body.termsAccepted) {
@@ -79,23 +108,34 @@ export async function POST(req: NextRequest) {
       currency: body.currency || "USD",
     });
 
-    const travelers =
-      body.adults +
-      (body.withChildren
-        ? Object.values(body.childrenByTarifa || {}).reduce((a, b) => a + b, 0)
-        : 0);
+    const childrenCount = body.withChildren
+      ? Object.values(body.childrenByTarifa || {}).reduce((a, b) => a + b, 0)
+      : 0;
+    const travelers = body.adults + childrenCount;
 
     const selectedHotel = tour.opciones_hotel?.find(
       (h) => h.id === body.selectedHotelOptionId
     );
 
+    const extrasLabels = getEnabledExtras(tour)
+      .filter((extra) => (body.selectedExtraIds || []).includes(extra.id))
+      .map((extra) => extra.label);
+
+    const ticketId = createTicketId();
+    const leadId = createLeadId("res");
+
     const emailPayload = {
+      ticketId,
       tourTitle: body.tourTitle,
+      tourSlug: body.tourSlug,
       travelDate: body.travelDate,
       selectedHorario: body.selectedHorario,
       travelers,
+      adults: body.adults,
+      childrenCount,
       totalPrice: pricing.total,
       isSoles: (body.currency || "USD") === "PEN",
+      currencyLabel: body.currency || "USD",
       fullName: body.fullName,
       email: body.email,
       phone: body.dialCode ? `${body.dialCode} ${body.phone}` : body.phone,
@@ -103,6 +143,7 @@ export async function POST(req: NextRequest) {
       dni: body.dni,
       hotelOption: selectedHotel?.nombre || body.hotelOption,
       hotelName: body.hotelName,
+      extrasLabels,
       includeHuaynaPicchu: body.includeHuaynaPicchu,
       flightNumber: body.flightNumber,
       flightDate: body.flightDate,
@@ -110,13 +151,50 @@ export async function POST(req: NextRequest) {
       allergies: body.allergies,
       specialNeeds: body.specialNeeds,
       howDidYouFindUs: body.howDidYouFindUs,
+      companions: body.fillCompanions ? body.companions : [],
     };
+
+    saveLead({
+      id: leadId,
+      type: "reservation",
+      status: "new",
+      createdAt: new Date().toISOString(),
+      ticketId,
+      fullName: body.fullName,
+      email: body.email,
+      phone: emailPayload.phone,
+      country: body.country,
+      tourSlug: body.tourSlug,
+      tourTitle: body.tourTitle,
+      travelDate: body.travelDate,
+      travelers,
+      totalPrice: pricing.total,
+      currency: body.currency || "USD",
+      source: body.howDidYouFindUs,
+      ip,
+      userAgent: req.headers.get("user-agent") || undefined,
+      payload: {
+        ...emailPayload,
+        selectedExtraIds: body.selectedExtraIds || [],
+        selectedHotelOptionId: body.selectedHotelOptionId,
+      },
+    });
 
     const result = await sendReservationEmails(emailPayload);
 
+    updateLead(leadId, {
+      emailOk: result.success,
+      emailMessageId: result.messageId,
+    });
+
     if (!result.success) {
       return NextResponse.json(
-        { success: false, error: result.error || "No se pudo enviar el correo." },
+        {
+          success: false,
+          error: result.error || "No se pudo enviar el correo.",
+          leadId,
+          ticketId,
+        },
         { status: 500 }
       );
     }
@@ -126,6 +204,8 @@ export async function POST(req: NextRequest) {
       message: "Solicitud de reserva recibida y notificada con éxito.",
       messageId: result.messageId,
       serverTotal: pricing.total,
+      leadId,
+      ticketId,
     });
   } catch (error: unknown) {
     const message =

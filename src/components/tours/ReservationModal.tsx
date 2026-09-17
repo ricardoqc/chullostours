@@ -32,8 +32,10 @@ import {
 } from "@/lib/pricing";
 import { hotelOpcionIncludesLodging } from "@/lib/hotel-options";
 import { trackBookingSubmitted } from "@/lib/analytics";
+import { TurnstileWidget } from "@/components/ui/TurnstileWidget";
 
 const STEPS = ["Tu viaje", "Tus datos", "Confirmar"];
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "";
 
 export const ReservationModal: React.FC<ReservationModalProps> = ({
   isOpen,
@@ -56,6 +58,8 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
 
   const [currentStep, setCurrentStep] = useState(1);
   const [submitting, setSubmitting] = useState(false);
+  const [formStartedAt] = useState(() => Date.now());
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [formData, setFormData] = useState<ReservationFormData>(() => ({
     tourTitle: title,
     tourSlug: slug,
@@ -187,6 +191,11 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
       return;
     }
 
+    if (TURNSTILE_SITE_KEY && !captchaToken) {
+      setErrors({ submit: "Completa la verificación antibot antes de enviar." });
+      return;
+    }
+
     setSubmitting(true);
     setErrors({});
 
@@ -234,23 +243,31 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
           howDidYouFindUs: formData.howDidYouFindUs,
           termsAccepted: formData.termsAccepted,
           website: formData.website,
+          formStartedAt,
+          captchaToken: captchaToken || undefined,
         }),
       });
 
-      const data = (await res.json()) as { success?: boolean; error?: string };
+      const data = (await res.json()) as {
+        success?: boolean;
+        error?: string;
+        leadId?: string;
+        ticketId?: string;
+      };
 
       if (!res.ok || !data.success) {
         setErrors({
           submit: data.error || "No se pudo enviar la solicitud. Intenta de nuevo.",
         });
+        setCaptchaToken(null);
         return;
       }
 
       if (typeof window !== "undefined" && slug) {
         sessionStorage.setItem(`chullos_reserved_${slug}`, "1");
+        sessionStorage.removeItem(`chullos_reserved_${slug}_dismissed`);
       }
 
-      // Track conversion in GA4 / GTM
       trackBookingSubmitted({
         tourSlug: slug,
         tourTitle: title,
@@ -260,6 +277,8 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
         travelDate: formData.travelDate,
         customerEmail: formData.email,
         customerPhone: formData.phone,
+        leadId: data.leadId,
+        ticketId: data.ticketId,
       });
 
       onClose();
@@ -269,6 +288,7 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
     } catch (e) {
       console.error("Email dispatch error", e);
       setErrors({ submit: "Error de conexión. Verifica tu red e intenta de nuevo." });
+      setCaptchaToken(null);
     } finally {
       setSubmitting(false);
     }
@@ -282,10 +302,10 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[92dvh] overflow-y-auto border border-slate-100 flex flex-col"
+        className="bg-white rounded-3xl shadow-2xl w-full max-w-4xl max-h-[92dvh] overflow-hidden border border-slate-100 flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="bg-[#6b0014] text-white p-4 sm:p-6 rounded-t-3xl flex items-center justify-between sticky top-0 z-10">
+        <div className="bg-[#6b0014] text-white p-4 sm:p-6 rounded-t-3xl flex items-center justify-between shrink-0">
           <div className="min-w-0 flex-1 pr-2">
             <span className="text-[10px] text-amber-300 font-bold uppercase tracking-wider">
               Solicitud de reserva
@@ -296,16 +316,18 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center"
+            className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center shrink-0"
             aria-label="Cerrar"
           >
             <FaTimes className="w-4 h-4" />
           </button>
         </div>
 
-        <StepIndicator currentStep={currentStep} steps={STEPS} />
+        <div className="shrink-0">
+          <StepIndicator currentStep={currentStep} steps={STEPS} />
+        </div>
 
-        <div className="p-4 sm:p-6 pt-2 flex flex-col gap-4">
+        <div className="p-4 sm:p-6 pt-2 flex flex-col gap-4 overflow-y-auto overscroll-contain min-h-0 flex-1">
           <input
             type="text"
             name="website"
@@ -375,7 +397,7 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
                       <select
                         value={formData.selectedHorario}
                         onChange={(e) => updateFormData({ selectedHorario: e.target.value })}
-                        className="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-xs font-semibold"
+                        className="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-xs font-semibold bg-white appearance-auto"
                       >
                         {horarios.map((h) => (
                           <option key={h} value={h}>
@@ -396,7 +418,7 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
                         onChange={(e) =>
                           updateFormData({ selectedHotelOptionId: e.target.value })
                         }
-                        className="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-xs font-semibold"
+                        className="w-full border border-slate-200 rounded-xl px-3 py-2.5 text-xs font-semibold bg-white appearance-auto"
                       >
                         {opcionesHotel.map((opt) => (
                           <option key={opt.id} value={opt.id}>
@@ -517,6 +539,13 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
                   {errors.termsAccepted}
                 </span>
               )}
+              {TURNSTILE_SITE_KEY ? (
+                <TurnstileWidget
+                  siteKey={TURNSTILE_SITE_KEY}
+                  onToken={setCaptchaToken}
+                  className="rounded-xl border border-slate-100 bg-slate-50/80 p-2"
+                />
+              ) : null}
               {errors.submit && (
                 <div className="text-[11px] text-rose-600 font-semibold bg-rose-50 border border-rose-200 rounded-xl p-3">
                   {errors.submit}
@@ -525,8 +554,8 @@ export const ReservationModal: React.FC<ReservationModalProps> = ({
               <button
                 type="button"
                 onClick={() => void handleSubmit()}
-                disabled={submitting}
-                className="w-full bg-[#25D366] hover:bg-[#20ba59] disabled:opacity-60 text-white font-black py-4 px-4 rounded-2xl flex items-center justify-center gap-2.5 text-sm"
+                disabled={submitting || (Boolean(TURNSTILE_SITE_KEY) && !captchaToken)}
+                className="w-full bg-[#25D366] hover:bg-[#20ba59] disabled:opacity-60 text-white font-black py-4 px-4 rounded-2xl flex items-center justify-center gap-2.5 text-sm shrink-0"
               >
                 {submitting ? "Enviando solicitud…" : "Enviar solicitud de reserva"}
               </button>

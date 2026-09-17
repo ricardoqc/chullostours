@@ -1,9 +1,18 @@
 import nodemailer from "nodemailer";
 import type { Transporter } from "nodemailer";
 
+function mailUser() {
+  return process.env.GOOGLE_MAIL_USER?.trim() || "";
+}
+
+/** Gmail App Passwords suelen pegarse con espacios; SMTP los rechaza. */
+function mailPass() {
+  return (process.env.GOOGLE_MAIL_APP_PASSWORD || "").replace(/\s+/g, "");
+}
+
 export function getMailTransporter() {
-  const user = process.env.GOOGLE_MAIL_USER;
-  const pass = process.env.GOOGLE_MAIL_APP_PASSWORD;
+  const user = mailUser();
+  const pass = mailPass();
 
   if (!user || !pass) {
     return null;
@@ -19,11 +28,11 @@ export function getMailTransporter() {
 }
 
 export function isMailConfigured(): boolean {
-  return Boolean(process.env.GOOGLE_MAIL_USER && process.env.GOOGLE_MAIL_APP_PASSWORD);
+  return Boolean(mailUser() && mailPass());
 }
 
 export function getSenderEmail(): string | null {
-  return process.env.GOOGLE_MAIL_USER?.trim() || null;
+  return mailUser() || null;
 }
 
 export function getFromAddress(): string {
