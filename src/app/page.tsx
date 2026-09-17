@@ -19,6 +19,9 @@ import { Reveal } from "@/components/ui/Reveal";
 import { TourImage } from "@/components/ui/TourImage";
 import { getHomeHero } from "@/lib/home-hero";
 
+/** ISR: la home lista tours/portadas editables desde el CMS. */
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "Chullos Tours | Tours a Machu Picchu, Camino Inca y Cusco 2026",
   description:

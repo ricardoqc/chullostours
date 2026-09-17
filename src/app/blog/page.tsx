@@ -2,6 +2,8 @@ import React from "react";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blogs";
 import { BlogFilterGrid } from "@/components/blog/BlogFilterGrid";
 
+export const revalidate = 60;
+
 export const metadata = {
   title: "Blog y Guías de Viaje a Machu Picchu, Cusco y Perú 2026 | Chullos Tours",
   description: "Descubre las mejores guías de viaje, consejos de expertos, circuitos de Machu Picchu, itinerarios y precios actualizados para tu aventura en Perú.",

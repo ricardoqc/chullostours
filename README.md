@@ -84,7 +84,7 @@ Los tours viven en JSON tipados (`data/tours/*.json`). El acceso pasa por `src/l
    - `NEXT_PUBLIC_SITE_URL`
 4. En Gmail: activa verificación en 2 pasos y genera una [contraseña de aplicación](https://myaccount.google.com/apppasswords).
 5. Healthcheck: `GET /` (HTTP 200).
-6. Tras editar JSON de tours, haz **rebuild/redeploy** para regenerar páginas.
+6. Tras editar tours en el CMS, los cambios se invalidan con `revalidatePath` (ISR ~60s). Si no aparecen, revisa volúmenes `/app/data` y `/app/public/media`.
 
 Para hosting compartido / export estático, la API de emails no estará disponible; usa el modo Node en Coolify.
 

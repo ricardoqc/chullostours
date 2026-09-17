@@ -7,6 +7,8 @@ import { getToursByDestination } from "@/lib/places";
 import { getPublishedDestinations } from "@/lib/destinos";
 import { TourImage } from "@/components/ui/TourImage";
 
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "Destinos Turísticos en Perú | Chullos Tours",
   description:

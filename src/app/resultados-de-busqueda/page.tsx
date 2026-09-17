@@ -2,6 +2,8 @@ import React, { Suspense } from "react";
 import { getAllTours } from "@/lib/tours";
 import { SearchResultsClient } from "./search-results-client";
 
+export const revalidate = 60;
+
 export default function SearchResultsPage() {
   const tours = getAllTours();
 

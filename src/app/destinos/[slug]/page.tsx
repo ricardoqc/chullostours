@@ -34,6 +34,7 @@ interface DestinationPageProps {
 }
 
 export const dynamicParams = true;
+export const revalidate = 60;
 
 export async function generateStaticParams() {
   return getPublishedDestinations().map((destination) => ({

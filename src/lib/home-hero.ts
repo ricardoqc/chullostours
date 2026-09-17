@@ -70,6 +70,7 @@ export function saveHomeHero(next: HomeHeroConfig) {
   fs.writeFileSync(tempPath, `${JSON.stringify(payload, null, 2)}\n`, "utf-8");
   fs.renameSync(tempPath, HERO_FILE);
   revalidatePath("/");
+  revalidatePath("/", "layout");
   return payload;
 }
 

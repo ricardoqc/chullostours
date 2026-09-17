@@ -24,6 +24,18 @@
       "usedBy": [
         "destino:lima"
       ]
+    },
+    "7e3a4bc669d842eb73bed1999818bc7636cc2e4e029d194378558f5699edfba7": {
+      "id": "7e3a4bc6",
+      "hash": "7e3a4bc669d842eb73bed1999818bc7636cc2e4e029d194378558f5699edfba7",
+      "src": "/media/library/7e3a4bc6-prueba.jpg",
+      "name": "7e3a4bc6-prueba.jpg",
+      "size": 165495,
+      "kind": "image",
+      "createdAt": "2026-09-17T16:15:44.641Z",
+      "usedBy": [
+        "tour:atv-maras-moray-cuatrimotos"
+      ]
     }
   }
 }

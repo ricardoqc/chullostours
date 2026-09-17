@@ -20,6 +20,17 @@ const MIME: Record<string, string> = {
 
 type RouteContext = { params: Promise<{ path: string[] }> };
 
+function mediaCacheHeaders(stat: fs.Stats) {
+  // Sin `immutable`: el CMS puede sustituir el mismo path (portada / galería).
+  // ETag por mtime+size para que el navegador/CDN revalide cuando cambian los bytes.
+  const etag = `"${stat.size.toString(16)}-${Math.floor(stat.mtimeMs).toString(16)}"`;
+  return {
+    ETag: etag,
+    "Last-Modified": stat.mtime.toUTCString(),
+    "Cache-Control": "public, max-age=300, must-revalidate",
+  };
+}
+
 export async function GET(request: NextRequest, context: RouteContext) {
   const { path: parts } = await context.params;
   if (!parts?.length) {
@@ -40,6 +51,18 @@ export async function GET(request: NextRequest, context: RouteContext) {
   const stat = fs.statSync(filePath);
   const admin = await isAdminAuthenticated(request);
   const serveClear = admin || shouldServeClearMedia(request, relative);
+  const cacheHeaders = mediaCacheHeaders(stat);
+
+  const ifNoneMatch = request.headers.get("if-none-match");
+  if (serveClear && ifNoneMatch && ifNoneMatch === cacheHeaders.ETag) {
+    return new NextResponse(null, {
+      status: 304,
+      headers: {
+        ...cacheHeaders,
+        "Accept-Ranges": "bytes",
+      },
+    });
+  }
 
   const range = request.headers.get("range");
   if (serveClear && range && (ext === ".mp4" || ext === ".webm")) {
@@ -91,7 +114,7 @@ export async function GET(request: NextRequest, context: RouteContext) {
       "Content-Type": contentType,
       "Content-Length": String(buffer.length),
       "Accept-Ranges": "bytes",
-      "Cache-Control": "public, max-age=31536000, immutable",
+      ...cacheHeaders,
       "Content-Disposition": `inline; filename="${fileName.replace(/"/g, "")}"`,
       "X-Content-Type-Options": "nosniff",
     },

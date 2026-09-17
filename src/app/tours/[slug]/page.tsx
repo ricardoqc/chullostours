@@ -13,6 +13,8 @@ interface TourPageProps {
 }
 
 export const dynamicParams = true;
+/** ISR: refresca HTML tras ediciones del CMS aunque falle revalidatePath. */
+export const revalidate = 60;
 
 export async function generateStaticParams() {
   const tours = getAllTours();
