@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/admin/auth";
 import {
+  ensureDestinosIndex,
   readDestinoDocument,
   saveDestinoDraft,
   setDestinoStatus,
@@ -23,6 +24,7 @@ export async function GET(request: Request, context: RouteContext) {
   if (denied) return denied;
 
   const { slug } = await context.params;
+  ensureDestinosIndex();
   const found = readDestinoDocument(slug);
   if (!found) {
     return NextResponse.json({ error: `No se encontró el destino '${slug}'.` }, { status: 404 });

@@ -174,6 +174,19 @@ export default function AdminDestinosListPage() {
         <p className="text-sm text-slate-500 inline-flex items-center gap-2">
           <RefreshCw className="w-4 h-4 animate-spin" /> Cargando…
         </p>
+      ) : filtered.length === 0 ? (
+        <div className="bg-white rounded-2xl border border-dashed border-slate-300 p-8 text-center space-y-2">
+          <p className="text-sm font-semibold text-slate-700">
+            {items.length === 0
+              ? "No hay destinos en el CMS."
+              : "Ningún destino coincide con la búsqueda."}
+          </p>
+          <p className="text-xs text-slate-500">
+            {items.length === 0
+              ? "Crea uno con “Nuevo destino” o verifica que data/destinos exista en el volumen de producción."
+              : "Prueba otro filtro o limpia la búsqueda."}
+          </p>
+        </div>
       ) : (
         <ul className="grid gap-3">
           {filtered.map((item) => (

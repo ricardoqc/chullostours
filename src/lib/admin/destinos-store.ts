@@ -14,7 +14,8 @@ import { syncMediaUsage } from "@/lib/admin/media-index";
 import { revalidateDestinoPages } from "@/lib/admin/revalidate";
 import {
   getDestinosIndex,
-  readDestinationDocument,
+  getPlacesAsDestinationDocuments,
+  listDestinationJsonFiles,
 } from "@/lib/destinos";
 
 export const DESTINOS_DIR = path.join(process.cwd(), "data", "destinos");
@@ -43,22 +44,55 @@ function writeJsonAtomic(filePath: string, data: unknown) {
 export function readDestinoDocument(
   slug: string
 ): { file: string; doc: DestinationDocument } | null {
-  const doc = readDestinationDocument(slug);
-  if (!doc) return null;
-  return { file: `${slug}.json`, doc };
+  const filePath = path.join(DESTINOS_DIR, `${slug}.json`);
+  if (!fs.existsSync(filePath)) return null;
+  try {
+    const doc = JSON.parse(fs.readFileSync(filePath, "utf-8")) as DestinationDocument;
+    return { file: `${slug}.json`, doc };
+  } catch (err) {
+    console.error(`Error reading destino ${slug}:`, err);
+    return null;
+  }
 }
 
+/**
+ * Lista destinos desde JSON en disco (igual que tours), no solo desde index.json.
+ * Así el CMS no queda vacío si el volumen de prod tiene places/archivos pero índice vacío.
+ */
 export function listAdminDestinos(): AdminDestinoSummary[] {
-  const index = getDestinosIndex();
-  const items = index.destinations.map((item) => ({
-    file: item.filename || `${item.slug}.json`,
-    slug: item.slug,
-    title: item.title,
-    status: item.status,
-    region: item.region,
-    tipo: item.tipo,
-    image: item.featured_image || "/img/placeholder.jpg",
-  }));
+  ensureDestinosIndex();
+  const items: AdminDestinoSummary[] = [];
+  for (const file of listDestinationJsonFiles()) {
+    const slug = file.replace(/\.json$/, "");
+    const found = readDestinoDocument(slug);
+    if (!found) continue;
+    const { doc } = found;
+    items.push({
+      file,
+      slug: doc.slug || slug,
+      title: doc.title || slug,
+      status: doc.status || "draft",
+      region: doc.region || "",
+      tipo: doc.tipo || "",
+      image: doc.featured_image || "/img/placeholder.jpg",
+    });
+  }
+
+  // Disco sin JSON editables (volumen vacío / solo lectura): alinear con la web pública
+  if (items.length === 0) {
+    for (const doc of getPlacesAsDestinationDocuments()) {
+      items.push({
+        file: `${doc.slug}.json`,
+        slug: doc.slug,
+        title: doc.title,
+        status: doc.status || "publish",
+        region: doc.region || "",
+        tipo: doc.tipo || "",
+        image: doc.featured_image || "/img/placeholder.jpg",
+      });
+    }
+  }
+
   items.sort((a, b) => a.title.localeCompare(b.title, "es"));
   return items;
 }
@@ -231,17 +265,61 @@ export function duplicateDestino(sourceSlug: string, nextSlug: string, title: st
   return { file: `${nextSlug}.json`, doc: copy };
 }
 
-/** Ensure index exists and points at JSON files. */
+/**
+ * Asegura index.json alineado con los JSON en disco.
+ * Si no hay archivos (p. ej. volumen Coolify sin data/destinos), materializa desde places.json
+ * para que el admin muestre lo mismo que la web pública.
+ */
 export function ensureDestinosIndex(): DestinationIndexData {
   fs.mkdirSync(DESTINOS_DIR, { recursive: true });
-  if (!fs.existsSync(INDEX_PATH)) {
-    const empty: DestinationIndexData = {
-      total: 0,
-      updated_at: new Date().toISOString(),
-      destinations: [],
-    };
-    writeJsonAtomic(INDEX_PATH, empty);
-    return empty;
+
+  let files = listDestinationJsonFiles();
+  if (files.length === 0) {
+    try {
+      const places = getPlacesAsDestinationDocuments();
+      places.forEach((place, idx) => {
+        const doc: DestinationDocument = {
+          ...place,
+          id: place.id > 0 ? place.id : idx + 1,
+          body_html: place.body_html || `<p>${place.excerpt || ""}</p>`,
+          info_html: place.info_html || "<p></p>",
+          lugares: place.lugares || [],
+          tips: place.tips || [],
+          gallery: place.gallery?.length
+            ? place.gallery
+            : place.featured_image
+              ? [place.featured_image]
+              : [],
+          created: place.created || new Date().toISOString().slice(0, 10),
+          modified: place.modified || new Date().toISOString().slice(0, 10),
+        };
+        writeJsonAtomic(path.join(DESTINOS_DIR, `${doc.slug}.json`), doc);
+      });
+      files = listDestinationJsonFiles();
+    } catch (err) {
+      console.error("No se pudieron materializar destinos desde places.json:", err);
+    }
   }
-  return getDestinosIndex();
+
+  const destinations: DestinationIndexItem[] = [];
+  for (const file of files) {
+    const slug = file.replace(/\.json$/, "");
+    const found = readDestinoDocument(slug);
+    if (!found) continue;
+    destinations.push(toIndexItem(found.doc));
+  }
+
+  const index: DestinationIndexData = {
+    total: destinations.length,
+    updated_at: new Date().toISOString(),
+    destinations,
+  };
+
+  try {
+    writeJsonAtomic(INDEX_PATH, index);
+  } catch (err) {
+    console.error("No se pudo escribir data/destinos/index.json:", err);
+  }
+
+  return index;
 }

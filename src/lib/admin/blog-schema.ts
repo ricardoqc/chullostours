@@ -107,7 +107,13 @@ export function applyDraftToDocument(
   existing: BlogPostDocument,
   draft: BlogDraft
 ): BlogPostDocument {
-  const og = draft.seo.og_image || draft.featured_image || existing.seo?.og_image;
+  // Si la OG seguía apuntando a la portada anterior (o estaba vacía), seguir a la nueva featured
+  const previousOg = existing.seo?.og_image || existing.featured_image || "";
+  const draftOg = draft.seo.og_image || "";
+  const ogTiedToCover = !draftOg || draftOg === previousOg || draftOg === existing.featured_image;
+  const og = ogTiedToCover
+    ? draft.featured_image || draftOg || previousOg
+    : draftOg;
   return {
     ...existing,
     title: draft.title,

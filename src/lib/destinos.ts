@@ -42,6 +42,14 @@ export function getDestinosIndex(): DestinationIndexData {
   }
 }
 
+/** JSON de destino en disco (excluye index.json). */
+export function listDestinationJsonFiles(): string[] {
+  if (!fs.existsSync(DESTINOS_DIR)) return [];
+  return fs
+    .readdirSync(DESTINOS_DIR)
+    .filter((name) => name.endsWith(".json") && name !== "index.json");
+}
+
 export function readDestinationDocument(slug: string): DestinationDocument | null {
   const filePath = path.join(DESTINOS_DIR, `${slug}.json`);
   if (fs.existsSync(filePath)) {
@@ -53,6 +61,13 @@ export function readDestinationDocument(slug: string): DestinationDocument | nul
     }
   }
   return placeFallbackToDocument(slug);
+}
+
+/** Catálogo legacy (places.json) como documentos editables. */
+export function getPlacesAsDestinationDocuments(): DestinationDocument[] {
+  return Object.keys(placesFallback)
+    .map((slug) => placeFallbackToDocument(slug))
+    .filter((doc): doc is DestinationDocument => Boolean(doc));
 }
 
 function placeFallbackToDocument(slug: string): DestinationDocument | null {
@@ -101,8 +116,16 @@ export function getAllDestinationDocuments(): DestinationDocument[] {
       .map((item) => readDestinationDocument(item.slug))
       .filter((doc): doc is DestinationDocument => Boolean(doc));
   }
-  // Fallback: places.json keys
-  return Object.keys(placesFallback).map((slug) => placeFallbackToDocument(slug)!).filter(Boolean);
+
+  // Índice vacío/ausente: preferir JSON en disco antes del fallback places.json
+  const files = listDestinationJsonFiles();
+  if (files.length > 0) {
+    return files
+      .map((file) => readDestinationDocument(file.replace(/\.json$/, "")))
+      .filter((doc): doc is DestinationDocument => Boolean(doc));
+  }
+
+  return getPlacesAsDestinationDocuments();
 }
 
 export function getPublishedDestinations(): DestinationDocument[] {

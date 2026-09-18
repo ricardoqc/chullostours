@@ -282,7 +282,21 @@ export function BlogEditor({ slug, file, initialDraft }: BlogEditorProps) {
               alt={draft.featured_image_alt || ""}
               caption={draft.featured_image_caption || ""}
               credito={draft.featured_image_credito || ""}
-              onChange={(patchFields) => setDraft((prev) => ({ ...prev, ...patchFields }))}
+              onChange={(patchFields) =>
+                setDraft((prev) => {
+                  const next = { ...prev, ...patchFields };
+                  // Mantener OG alineado con la portada salvo que el usuario tenga otra distinta
+                  if (
+                    patchFields.featured_image !== undefined &&
+                    (!prev.seo.og_image ||
+                      prev.seo.og_image === prev.featured_image ||
+                      prev.seo.og_image === patchFields.featured_image)
+                  ) {
+                    next.seo = { ...prev.seo, og_image: patchFields.featured_image };
+                  }
+                  return next;
+                })
+              }
             />
           </section>
         )}

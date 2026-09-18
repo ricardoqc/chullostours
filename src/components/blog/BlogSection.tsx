@@ -4,25 +4,12 @@ import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blogs";
+import { getBlogCoverImage } from "@/lib/blog-images";
 import { TourImage } from "@/components/ui/TourImage";
-
-const BLOG_THUMBNAILS: Record<string, string> = {
-  "camino-inca-4-dias-guia-definitiva": "/media/tours/camino-inca-4-dias/05.jpg",
-  "como-comprar-tu-boleto-a-machu-picchu-guia-completa": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
-  "como-llegar-a-machu-picchu-guia-completa-para-tu-visita": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
-  "cuanto-cuesta-viajar-a-machu-picchu-2026": "/media/tours/cusco-magico-5-dias/05.avif",
-  "guia-completa-para-visitar-machu-picchu-en-un-dia": "/media/tours/tour-machu-picchu-2-dias/02.jpg",
-  "guia-para-viajar-a-machu-picchu-por-tu-cuenta": "/media/tours/tour-machu-picchu-2-dias/03.jpg",
-  "la-guia-definitiva-para-visitar-la-montana-de-7-colores-vinicunca": "/media/tours/montana-colores-vinicunca-tour/06.avif",
-  "laguna-humantay-todo-lo-que-necesitas-saber-antes-de-ir": "/media/tours/laguna-humantay-tour-cusco/05.avif",
-  "machu-picchu-todo-lo-que-necesitas-saber-para-tu-viaje": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
-  "que-llevar-en-la-mochila-a-machu-picchu-lista-esencial": "/media/tours/camino-inca-2-dias/01.jpg",
-  "valle-sagrado-de-los-incas-itinerario-y-que-ver": "/media/tours/valle-sagrado-vip-tour-cusco/05.avif",
-};
 
 export function BlogSection() {
   const postsList = getAllBlogPosts();
-  
+
   const featuredPosts = postsList
     .slice(0, 3)
     .map((item) => getBlogPostBySlug(item.slug))
@@ -60,9 +47,7 @@ export function BlogSection() {
         {featuredPosts.map((post) => {
           const categoryName =
             post.categories && post.categories.length > 0 ? post.categories[0] : "Guía de Viaje";
-          const imageUrl =
-            BLOG_THUMBNAILS[post.slug] ||
-            "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&q=80";
+          const imageUrl = getBlogCoverImage(post);
 
           return (
             <Link href={`/blog/${post.slug}`} key={post.slug} className="group flex flex-col h-full">
@@ -70,7 +55,7 @@ export function BlogSection() {
                 <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
                   <TourImage
                     src={imageUrl}
-                    alt={post.title}
+                    alt={post.featured_image_alt || post.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -117,4 +102,3 @@ export function BlogSection() {
     </section>
   );
 }
-

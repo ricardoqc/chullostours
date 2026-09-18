@@ -26,6 +26,7 @@ export function revalidateTourPages(slug: string) {
 }
 
 export function revalidateBlogPages(slug?: string) {
+  bust("/");
   bust("/blog");
   if (slug) bust(`/blog/${slug}`);
   bust("/sitemap.xml");

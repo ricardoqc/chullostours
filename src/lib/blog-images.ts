@@ -13,8 +13,21 @@ const SLUG_COVERS: Record<string, string> = {
   puno: "/media/tours/tour-lago-titicaca-2-dias/05.avif",
 };
 
-/** Prioritizes post.featured_image, then first image in markdown body, then slug fallback. */
-export function getBlogCoverImage(post: Pick<BlogPost, "slug" | "rawMarkdown" | "featured_image">): string {
+function firstMediaFromHtml(html?: string): string | null {
+  if (!html) return null;
+  const match = html.match(/src=["']([^"']+)["']/i);
+  const src = match?.[1]?.trim();
+  if (src && (src.startsWith("http") || src.startsWith("/"))) return src;
+  return null;
+}
+
+/** Prioritizes post.featured_image, then body/markdown images, then slug fallback. */
+export function getBlogCoverImage(
+  post: Pick<BlogPost, "slug" | "rawMarkdown" | "featured_image"> & {
+    body_html?: string;
+    contentHtml?: string;
+  }
+): string {
   if (post.featured_image && (post.featured_image.startsWith("http") || post.featured_image.startsWith("/"))) {
     return post.featured_image;
   }
@@ -24,6 +37,9 @@ export function getBlogCoverImage(post: Pick<BlogPost, "slug" | "rawMarkdown" | 
     const src = fromMarkdown[1].trim();
     if (src.startsWith("http") || src.startsWith("/")) return src;
   }
+
+  const fromHtml = firstMediaFromHtml(post.body_html || post.contentHtml);
+  if (fromHtml) return fromHtml;
 
   const slug = post.slug.toLowerCase();
   for (const [key, url] of Object.entries(SLUG_COVERS)) {

@@ -1,7 +1,20 @@
 {
   "total": 10,
-  "updated_at": "2026-09-16T22:36:51.249Z",
+  "updated_at": "2026-09-18T17:44:09.905Z",
   "destinations": [
+    {
+      "id": 3,
+      "title": "Aguas Calientes",
+      "slug": "aguas-calientes",
+      "status": "publish",
+      "region": "Urubamba, Cusco",
+      "tipo": "city",
+      "excerpt": "Pueblo base en el valle del Urubamba, puerta de entrada a Machu Picchu.",
+      "featured_image": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
+      "lat": -13.1547,
+      "lng": -72.5253,
+      "filename": "aguas-calientes.json"
+    },
     {
       "id": 1,
       "title": "Cusco",
@@ -14,6 +27,32 @@
       "lat": -13.5319,
       "lng": -71.9675,
       "filename": "cusco.json"
+    },
+    {
+      "id": 7,
+      "title": "Laguna Humantay",
+      "slug": "humantay",
+      "status": "publish",
+      "region": "Anta, Cusco",
+      "tipo": "nature",
+      "excerpt": "Laguna turquesa a los pies del nevado Salkantay.",
+      "featured_image": "/media/tours/laguna-humantay-tour-cusco/05.avif",
+      "lat": -13.4092,
+      "lng": -72.6497,
+      "filename": "humantay.json"
+    },
+    {
+      "id": 10,
+      "title": "Lima",
+      "slug": "lima",
+      "status": "publish",
+      "region": "Lima, Perú",
+      "tipo": "city",
+      "excerpt": "Capital del Perú y centro histórico patrimonio de la humanidad.",
+      "featured_image": "/media/library/8e5c581a-stock-chullostours-lima-32.webp",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "filename": "lima.json"
     },
     {
       "id": 2,
@@ -29,19 +68,6 @@
       "filename": "machu-picchu.json"
     },
     {
-      "id": 3,
-      "title": "Aguas Calientes",
-      "slug": "aguas-calientes",
-      "status": "publish",
-      "region": "Urubamba, Cusco",
-      "tipo": "city",
-      "excerpt": "Pueblo base en el valle del Urubamba, puerta de entrada a Machu Picchu.",
-      "featured_image": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
-      "lat": -13.1547,
-      "lng": -72.5253,
-      "filename": "aguas-calientes.json"
-    },
-    {
       "id": 4,
       "title": "Ollantaytambo",
       "slug": "ollantaytambo",
@@ -53,6 +79,19 @@
       "lat": -13.2592,
       "lng": -72.2644,
       "filename": "ollantaytambo.json"
+    },
+    {
+      "id": 9,
+      "title": "Puno",
+      "slug": "puno",
+      "status": "publish",
+      "region": "Puno, Perú",
+      "tipo": "city",
+      "excerpt": "Ciudad a orillas del Lago Titicaca, capital folklórica del Perú.",
+      "featured_image": "/media/tours/tour-lago-titicaca-2-dias/05.avif",
+      "lat": -15.8402,
+      "lng": -70.0219,
+      "filename": "puno.json"
     },
     {
       "id": 5,
@@ -81,19 +120,6 @@
       "filename": "valle-sagrado.json"
     },
     {
-      "id": 7,
-      "title": "Laguna Humantay",
-      "slug": "humantay",
-      "status": "publish",
-      "region": "Anta, Cusco",
-      "tipo": "nature",
-      "excerpt": "Laguna turquesa a los pies del nevado Salkantay.",
-      "featured_image": "/media/tours/laguna-humantay-tour-cusco/05.avif",
-      "lat": -13.4092,
-      "lng": -72.6497,
-      "filename": "humantay.json"
-    },
-    {
       "id": 8,
       "title": "Montaña de 7 Colores",
       "slug": "vinicunca",
@@ -105,32 +131,6 @@
       "lat": -13.8694,
       "lng": -71.3025,
       "filename": "vinicunca.json"
-    },
-    {
-      "id": 9,
-      "title": "Puno",
-      "slug": "puno",
-      "status": "publish",
-      "region": "Puno, Perú",
-      "tipo": "city",
-      "excerpt": "Ciudad a orillas del Lago Titicaca, capital folklórica del Perú.",
-      "featured_image": "/media/tours/tour-lago-titicaca-2-dias/05.avif",
-      "lat": -15.8402,
-      "lng": -70.0219,
-      "filename": "puno.json"
-    },
-    {
-      "id": 10,
-      "title": "Lima",
-      "slug": "lima",
-      "status": "publish",
-      "region": "Lima, Perú",
-      "tipo": "city",
-      "excerpt": "Capital del Perú y centro histórico patrimonio de la humanidad.",
-      "featured_image": "/media/library/8e5c581a-stock-chullostours-lima-32.webp",
-      "lat": -12.0464,
-      "lng": -77.0428,
-      "filename": "lima.json"
     }
   ]
 }
