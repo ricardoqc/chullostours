@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: process.env.OUTPUT_STANDALONE === "true" ? "standalone" : undefined,
+  // Permite probar el servidor de desarrollo desde otros dispositivos en la misma red local
+  // (ej. celular) usando la IP de red en vez de localhost.
+  allowedDevOrigins: ["192.168.18.31"],
   experimental: {
     proxyClientMaxBodySize: "80mb",
     serverActions: {
@@ -10,6 +13,7 @@ const nextConfig: NextConfig = {
   },
   images: {
     unoptimized: false,
+    qualities: [75, 90],
     remotePatterns: [
       {
         protocol: "https",

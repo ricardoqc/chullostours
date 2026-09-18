@@ -52,6 +52,9 @@ export interface DestinationDocument {
   gallery: string[];
   seo: DestinationSEO;
   related_place_ids?: string[];
+  /** Landing hub dedicada (ej. /machu-picchu-2026/) a la que este destino debe funnelear en vez de competir por las mismas keywords. */
+  featured_guide_url?: string;
+  featured_guide_label?: string;
   created?: string;
   modified?: string;
 }

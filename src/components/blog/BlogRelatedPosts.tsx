@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blogs";
+import { getRelatedBlogPosts } from "@/lib/blogs";
 import { getBlogCoverImage } from "@/lib/blog-images";
 import { TourImage } from "@/components/ui/TourImage";
 
@@ -11,16 +11,7 @@ interface BlogRelatedPostsProps {
 }
 
 export function BlogRelatedPosts({ currentSlug }: BlogRelatedPostsProps) {
-  const allPosts = getAllBlogPosts();
-
-  // Filter out current post
-  const relatedList = allPosts
-    .filter((p) => p.slug !== currentSlug)
-    .slice(0, 3);
-
-  const relatedPosts = relatedList
-    .map((item) => getBlogPostBySlug(item.slug))
-    .filter((post): post is NonNullable<typeof post> => post !== null);
+  const relatedPosts = getRelatedBlogPosts(currentSlug, 3);
 
   if (relatedPosts.length === 0) return null;
 

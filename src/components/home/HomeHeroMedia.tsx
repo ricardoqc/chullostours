@@ -51,11 +51,20 @@ export function HomeHeroMedia({ hero, fallbackSrc }: HomeHeroMediaProps) {
 
   useEffect(() => {
     if (isVideo || sliderSources.length <= 1) return;
+    let stalledTicks = 0;
     const timer = window.setInterval(() => {
       setActiveIndex((prev) => {
         const next = (prev + 1) % sliderSources.length;
         const nextSrc = sliderSources[next]?.src;
-        if (nextSrc && !readyRef.current[nextSrc]) return prev;
+        // Espera a que la siguiente imagen termine de cargar (evita el "flash" de una imagen en
+        // blanco), pero si un navegador nunca dispara onLoad (p. ej. imagen ya cacheada antes de
+        // que React registre el handler), no se queda trabado para siempre: avanza igual tras un
+        // par de intentos.
+        if (nextSrc && !readyRef.current[nextSrc] && stalledTicks < 2) {
+          stalledTicks += 1;
+          return prev;
+        }
+        stalledTicks = 0;
         return next;
       });
     }, 3000);
@@ -72,6 +81,7 @@ export function HomeHeroMedia({ hero, fallbackSrc }: HomeHeroMediaProps) {
               alt={slide.alt}
               fill
               priority={index === 0}
+              loading={index === 0 ? undefined : "eager"}
               fetchPriority={index === 0 ? "high" : "auto"}
               quality={90}
               sizes="(max-width: 768px) 100vw, 1280px"

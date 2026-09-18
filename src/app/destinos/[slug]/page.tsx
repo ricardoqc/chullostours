@@ -10,6 +10,7 @@ import {
   Mountain,
   Thermometer,
   Calendar,
+  Sparkles,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { getAllTours } from "@/lib/tours";
@@ -179,6 +180,21 @@ export default async function DestinationPage({
           <ChevronRight className="w-3 h-3" />
           <span className="text-slate-700">{doc.title}</span>
         </nav>
+
+        {doc.featured_guide_url ? (
+          <Link
+            href={doc.featured_guide_url}
+            className="group flex items-center justify-between gap-4 flex-wrap bg-[#111330] text-white rounded-2xl px-5 py-4 hover:bg-[#1a1d4d] transition-colors"
+          >
+            <span className="flex items-center gap-2.5 text-sm font-bold">
+              <Sparkles className="w-4 h-4 text-[#ffc000] shrink-0" />
+              {doc.featured_guide_label || `Ver la guía completa de ${doc.title}`}
+            </span>
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#ffc000] group-hover:underline shrink-0">
+              Ver guía <ArrowRight className="w-3.5 h-3.5" />
+            </span>
+          </Link>
+        ) : null}
 
         {doc.featured_image ? (
           <div className="relative aspect-[21/9] w-full rounded-3xl overflow-hidden bg-slate-100 border border-slate-200">

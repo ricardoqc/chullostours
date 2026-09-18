@@ -257,7 +257,7 @@ export const Header: React.FC = () => {
 
         {/* Search Drawer / Input Bar */}
         {searchOpen && (
-          <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 p-5 mt-2 max-w-2xl mx-auto flex flex-col gap-3 z-40 relative animate-slideDown">
+          <div className="absolute left-0 right-0 top-full mt-2 bg-white rounded-3xl shadow-2xl border border-gray-100 p-5 max-w-2xl mx-auto flex flex-col gap-3 z-40 animate-slideDown max-h-[calc(100vh-7rem)] overflow-y-auto">
             <form
               id="gtm-header-search-form"
               onSubmit={(e) => {
@@ -321,7 +321,7 @@ export const Header: React.FC = () => {
 
         {/* Mobile Menu Drawer with Animation */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white rounded-2xl shadow-2xl border border-gray-100 mt-2 p-5 z-40 relative flex flex-col gap-4 animate-slideDown">
+          <div className="lg:hidden absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 z-40 flex flex-col gap-4 animate-slideDown max-h-[calc(100vh-7rem)] overflow-y-auto">
             <nav className="flex flex-col gap-2">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;

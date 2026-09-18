@@ -11,7 +11,6 @@ const BLOG_THUMBNAILS: Record<string, string> = {
   "como-comprar-tu-boleto-a-machu-picchu-guia-completa": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
   "como-llegar-a-machu-picchu-guia-completa-para-tu-visita": "/media/tours/tour-machu-picchu-2-dias/01.jpg",
   "cuanto-cuesta-viajar-a-machu-picchu-2026": "/media/tours/cusco-magico-5-dias/05.avif",
-  "explora-las-maravillas-de-machu-picchu-vacaciones-inolvidables-en-el-corazon-de-los-andes": "/media/tours/city-tour-cusco/05.avif",
   "guia-completa-para-visitar-machu-picchu-en-un-dia": "/media/tours/tour-machu-picchu-2-dias/02.jpg",
   "guia-para-viajar-a-machu-picchu-por-tu-cuenta": "/media/tours/tour-machu-picchu-2-dias/03.jpg",
   "la-guia-definitiva-para-visitar-la-montana-de-7-colores-vinicunca": "/media/tours/montana-colores-vinicunca-tour/06.avif",

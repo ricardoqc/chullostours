@@ -206,6 +206,64 @@ function parseMarkdownFile(filePath: string, item?: BlogIndexItem): BlogPost | n
   }
 }
 
+/** Categorías demasiado genéricas para usarse como señal de clúster temático. */
+const GENERIC_CATEGORIES = new Set([
+  "recomendaciones",
+  "viajes",
+  "información turística",
+  "informacion turistica",
+  "informacion machu picchu",
+  "tours",
+  "travel",
+  "adventure",
+  "uncategorized",
+]);
+
+/**
+ * Posts relacionados por clúster temático (categorías específicas compartidas, ej. "Machu Picchu",
+ * "Cusco", "Perú"), no por orden de archivo. Cae de vuelta a los más recientes si no hay suficientes
+ * coincidencias para completar `limit`.
+ */
+export function getRelatedBlogPosts(currentSlug: string, limit = 3): BlogPost[] {
+  const current = getBlogPostBySlug(currentSlug);
+  const candidates = getAllBlogPosts().filter((p) => p.slug !== currentSlug);
+
+  const currentSpecific = new Set(
+    (current?.categories || [])
+      .map((c) => c.toLowerCase())
+      .filter((c) => !GENERIC_CATEGORIES.has(c))
+  );
+
+  const scored = candidates
+    .map((item) => {
+      const post = getBlogPostBySlug(item.slug);
+      if (!post) return null;
+      const shared = (post.categories || [])
+        .map((c) => c.toLowerCase())
+        .filter((c) => currentSpecific.has(c)).length;
+      return { post, shared };
+    })
+    .filter((x): x is { post: BlogPost; shared: number } => x !== null);
+
+  scored.sort((a, b) => {
+    if (b.shared !== a.shared) return b.shared - a.shared;
+    return new Date(b.post.date).getTime() - new Date(a.post.date).getTime();
+  });
+
+  const related = scored.filter((x) => x.shared > 0).slice(0, limit);
+  if (related.length < limit) {
+    const fillSlugs = new Set(related.map((x) => x.post.slug));
+    for (const x of scored) {
+      if (related.length >= limit) break;
+      if (x.shared > 0 || fillSlugs.has(x.post.slug)) continue;
+      related.push(x);
+      fillSlugs.add(x.post.slug);
+    }
+  }
+
+  return related.slice(0, limit).map((x) => x.post);
+}
+
 export function getBlogPostBySlug(slug: string): BlogPost | null {
   const index = getBlogIndex();
   const item = index.posts.find((p) => p.slug === slug);
