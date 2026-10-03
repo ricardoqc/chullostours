@@ -1,0 +1,258 @@
+================================================================================
+TUTORIAL: GOOGLE TAG MANAGER + GA4 — MEDICIÓN DE LEADS Y RESERVAS
+Chullos Tours (chullostours.com)
+================================================================================
+
+Este documento explica cómo conectar y configurar GTM + GA4 para medir
+reservas, leads, WhatsApp y el embudo del sitio. El código ya dispara los
+eventos desde la web.
+
+
+--------------------------------------------------------------------------------
+1. QUÉ YA TIENES EN LA WEB
+--------------------------------------------------------------------------------
+
+Pieza                          ID / detalle
+-----------------------------  --------------------------------
+GA4                            G-3F1NEC8RPK
+GTM                            GTM-TD75GXZM
+Hotjar                         6779207
+Exclusión                      No se carga en /admin/*
+
+
+Eventos que dispara el sitio (vía dataLayer):
+
+Evento                       Cuándo
+---------------------------  ----------------------------------
+view_item                    Ver ficha de tour
+begin_checkout               Abrir reserva
+generate_lead                Enviar reserva o viaje a medida
+booking_lead_submitted       Reserva enviada (extra para GTM)
+whatsapp_click               Clic en WhatsApp
+contact_click                Teléfono / email
+search                       Búsqueda
+newsletter_subscribe         Newsletter
+
+En reserva también van: lead_id, ticket_id, tour_slug, tour_title,
+value, currency, travelers_count.
+
+
+--------------------------------------------------------------------------------
+2. VINCULAR GTM ↔ GA4 (UNA SOLA VEZ)
+--------------------------------------------------------------------------------
+
+1. Entra a https://analytics.google.com → propiedad G-3F1NEC8RPK.
+2. Admin → Vínculos de productos / Google Tag Manager
+   (o abre el contenedor GTM-TD75GXZM).
+3. En https://tagmanager.google.com abre GTM-TD75GXZM.
+4. Confirma que hay una etiqueta "Google Analytics: GA4 Configuration"
+   (o "Google tag") con Measurement ID G-3F1NEC8RPK.
+5. Si no existe:
+   - Etiquetas → Nueva
+   - Tipo: Google Analytics: configuración de GA4
+   - ID: G-3F1NEC8RPK
+   - Activador: All Pages
+   - Guarda
+
+La web ya carga GTM y gtag; GTM debe reenviar los eventos personalizados a GA4.
+
+
+--------------------------------------------------------------------------------
+3. VARIABLES DE CAPA DE DATOS (GTM)
+--------------------------------------------------------------------------------
+
+En GTM → Variables → Nueva → Variable de capa de datos.
+
+Crea estas (nombre sugerido → clave dataLayer):
+
+  dlv - tour_slug         →  tour_slug
+  dlv - tour_title        →  tour_title
+  dlv - value             →  value
+  dlv - currency          →  currency
+  dlv - travelers_count   →  travelers_count
+  dlv - lead_id           →  lead_id
+  dlv - ticket_id         →  ticket_id
+  dlv - lead_type         →  lead_type
+  dlv - form_name         →  form_name
+  dlv - click_location    →  click_location
+  dlv - contact_channel   →  contact_channel
+
+
+--------------------------------------------------------------------------------
+4. ACTIVADORES (TRIGGERS)
+--------------------------------------------------------------------------------
+
+Activadores → Nueva → Evento personalizado:
+
+Nombre                         Event name (exacto)
+-----------------------------  ------------------------
+CE - generate_lead             generate_lead
+CE - booking_lead_submitted    booking_lead_submitted
+CE - whatsapp_click            whatsapp_click
+CE - begin_checkout            begin_checkout
+CE - view_item                 view_item
+CE - contact_click             contact_click
+CE - search                    search
+
+
+--------------------------------------------------------------------------------
+5. ETIQUETAS DE EVENTO GA4
+--------------------------------------------------------------------------------
+
+Para cada conversión: Etiquetas → Nueva → Google Analytics: evento de GA4.
+
+
+A) Lead de reserva (recomendado como conversión)
+------------------------------------------------
+- Nombre: GA4 - generate_lead
+- Configuration tag: tu GA4 (G-3F1NEC8RPK)
+- Nombre del evento: generate_lead
+- Parámetros:
+    lead_type         → {{dlv - lead_type}}
+    form_name         → {{dlv - form_name}}
+    tour_slug         → {{dlv - tour_slug}}
+    tour_title        → {{dlv - tour_title}}
+    value             → {{dlv - value}}
+    currency          → {{dlv - currency}}
+    travelers_count   → {{dlv - travelers_count}}
+    lead_id           → {{dlv - lead_id}}
+    ticket_id         → {{dlv - ticket_id}}
+- Activador: CE - generate_lead
+
+
+B) Reserva enviada (opcional, más específico)
+---------------------------------------------
+- Nombre: GA4 - booking_lead_submitted
+- Evento: booking_lead_submitted
+- Parámetros útiles: value, currency, tour_slug, lead_id, ticket_id
+- Activador: CE - booking_lead_submitted
+
+
+C) WhatsApp
+-----------
+- Evento: whatsapp_click
+- Parámetros: click_location, tour_slug, contact_channel
+- Activador: CE - whatsapp_click
+
+
+D) Inicio de reserva
+--------------------
+- Evento: begin_checkout
+- Activador: CE - begin_checkout
+  (Si usas ecommerce en dataLayer, GTM puede mapear el objeto ecommerce;
+   si no, al menos envía value / currency si los expones como DLV.)
+
+
+IMPORTANTE: Publica el contenedor GTM (Enviar → Publicar).
+
+
+--------------------------------------------------------------------------------
+6. MARCAR CONVERSIONES EN GA4
+--------------------------------------------------------------------------------
+
+1. GA4 → Admin → Eventos (o Conversiones / "Eventos clave").
+2. Cuando veas generate_lead y/o booking_lead_submitted en tiempo real,
+   márcalos como evento clave / conversión.
+3. Opcional: también whatsapp_click como conversión secundaria.
+
+Dimensiones personalizadas (recomendado):
+Admin → Definiciones personalizadas
+
+Dimensión       Parámetro del evento   Alcance
+--------------  ---------------------  --------
+Tour slug       tour_slug              Evento
+Ticket          ticket_id              Evento
+Lead ID         lead_id                Evento
+Tipo de lead    lead_type              Evento
+Formulario      form_name              Evento
+
+Sin esto, GA4 recibe los params pero no los usa bien en informes.
+
+
+--------------------------------------------------------------------------------
+7. CÓMO PROBAR (15 MINUTOS)
+--------------------------------------------------------------------------------
+
+1. Instala Tag Assistant / usa Vista previa de GTM.
+2. Abre https://chullostours.com/ con preview GTM.
+3. Abre un tour → reserva → envía una prueba (puedes usar tu email).
+4. En Tag Assistant debe dispararse generate_lead y la etiqueta GA4.
+5. En GA4 → Informes → Tiempo real → Eventos: aparece generate_lead.
+6. En el CMS → /admin/leads/: debe existir el mismo lead
+   (fuente de verdad del negocio).
+
+Consola del navegador (opcional):
+
+  dataLayer.filter(e => e.event === 'generate_lead' || e.event === 'booking_lead_submitted')
+
+
+--------------------------------------------------------------------------------
+8. INFORMES ÚTILES DE CONVERSIÓN
+--------------------------------------------------------------------------------
+
+Embudo sugerido en GA4 (exploraciones / funnels):
+
+  1. Vista de tour          (view_item)
+  2. Abrir reserva          (begin_checkout)
+  3. Lead enviado           (generate_lead / booking_lead_submitted)
+  4. WhatsApp               (whatsapp_click) como canal paralelo
+
+Métricas sugeridas:
+
+  - Tasa lead = generate_lead / sesiones (o usuarios)
+  - Valor estimado = suma de value en leads
+  - Por tour = desglose por tour_slug
+  - Ticket = filtrar por ticket_id si cruzas con el CMS
+
+
+--------------------------------------------------------------------------------
+9. BUENAS PRÁCTICAS
+--------------------------------------------------------------------------------
+
+- No uses emails/teléfonos como dimensiones (privacidad);
+  ya van lead_id / ticket_id.
+- /admin no debe contaminar métricas (ya está excluido en código).
+- Tras cambios en GTM, siempre Publicar.
+- En Coolify no hace falta ninguna variable extra para GA4/GTM:
+  los IDs van en el código.
+
+
+--------------------------------------------------------------------------------
+10. CHECKLIST RÁPIDO
+--------------------------------------------------------------------------------
+
+[ ] GTM GTM-TD75GXZM abierto y publicado
+[ ] Etiqueta config GA4 G-3F1NEC8RPK
+[ ] Variables DLV creadas
+[ ] Activadores de eventos personalizados
+[ ] Etiqueta GA4 generate_lead
+[ ] generate_lead marcado como conversión
+[ ] Dimensiones tour_slug, ticket_id, lead_id
+[ ] Prueba real + Realtime OK + lead en /admin/leads/
+
+
+--------------------------------------------------------------------------------
+CORREO (RECORDATORIO — COOLIFY)
+--------------------------------------------------------------------------------
+
+Variables que SÍ usa esta app (no uses SMTP_HOST / SMTP_USER / SMTP_PASS):
+
+  GOOGLE_MAIL_USER=tu-gmail@gmail.com
+  GOOGLE_MAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx
+  ADMIN_EMAIL=correo-donde-recibes@gmail.com
+  MAIL_FROM_NAME=Chullos Tours
+
+Opcional antibot (Cloudflare Turnstile):
+
+  NEXT_PUBLIC_TURNSTILE_SITE_KEY=
+  TURNSTILE_SECRET_KEY=
+
+Volúmenes recomendados en Coolify:
+
+  /app/public/media
+  /app/data
+
+
+================================================================================
+Fin del tutorial
+================================================================================
